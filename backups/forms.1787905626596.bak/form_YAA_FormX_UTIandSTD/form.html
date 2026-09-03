@@ -1,0 +1,78 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="YAA_FormX_UTIandSTD">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">Youth UTI and STD</h3>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/data/inputs" data-relevant="./source = 'user'"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/user"><h4><span lang="" class="question-label active">User</span></h4>
+<label class="question non-select or-appearance-select-contact or-appearance-type-person "><span lang="" class="question-label active">Contact ID</span><input type="text" name="/data/inputs/user/contact_id" data-type-xml="string"></label><section class="or-group " name="/data/inputs/user/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section><section class="or-group " name="/data/inputs/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<label class="question non-select or-appearance-db-object "><span lang="" class="question-label active">What is the patient's name?</span><input type="text" name="/data/inputs/contact/_id" data-type-xml="person"></label><section class="or-group " name="/data/inputs/contact/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section>
+      </section>
+      </section>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/data/form_purpose_group"><h4><span lang="" class="question-label active">Form purpose</span></h4>
+<label class="question non-select "><span lang="" class="question-label active"><optional note></span><input type="text" name="/data/form_purpose_group/optional_note" data-type-xml="string" readonly></label><fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Select the reason for filling out the UTI and STD form.</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('Form_purpose')/root/item"><input type="radio" name="/data/form_purpose_group/form_purpose" data-name="/data/form_purpose_group/form_purpose" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/data/perform_followup_group" data-relevant=" /data/form_purpose_group/form_purpose  = 'perform_followup'"><h4><span lang="" class="question-label active">Perform followup</span></h4>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the youth exhibit any of the following UTI or STD symptoms?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('uti_std_symptoms')/root/item"><input type="checkbox" name="/data/perform_followup_group/uti_std_symptoms" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">What is the youth's temperature?</span><span class="required">*</span><input type="number" name="/data/perform_followup_group/temperature" data-required="true()" data-relevant="selected( /data/perform_followup_group/uti_std_symptoms , 'fever_above_38')" data-type-xml="decimal" step="any"><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label><fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Can a urinary strip be run?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/perform_followup_group/urinary_strip_feasibility" data-name="/data/perform_followup_group/urinary_strip_feasibility" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select or-branch pre-init ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the urinary strip contain white blood cells?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/perform_followup_group/urinary_strip_result" data-name="/data/perform_followup_group/urinary_strip_result" data-required="true()" data-relevant=" /data/perform_followup_group/urinary_strip_feasibility  = 'yes'" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+    <section class="or-group or-appearance-field-list or-appearance-summary " name="/data/results_group"><h4><span lang="" class="question-label active">Results</span></h4>
+<label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">UTI</span><input type="text" name="/data/results_group/res_uti" data-relevant=" /data/results_group/calc_uti  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The youth has a Urinary Tract Infection.</p>Procedure:<ul><li>Trimetoprim sulfate tablets 400/80mg</li><li>Counselling: encourage to drink a lot of treated water</li></ul></span><input type="text" name="/data/results_group/res_uti_action" data-relevant=" /data/results_group/calc_uti  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Risk of glomerulonephritis</span><input type="text" name="/data/results_group/res_glomerulonephritis" data-relevant=" /data/results_group/calc_glomerulonephritis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The youth is at risk of glomerulonephritis.</p>Procedure:<ul><li>Furosemide IV one dose 20 mg IM</li><li>Refer immediately</li></ul></span><input type="text" name="/data/results_group/res_glomerulonephritis_action" data-relevant=" /data/results_group/calc_glomerulonephritis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Risk of Syphilis</span><input type="text" name="/data/results_group/res_syphilis" data-relevant=" /data/results_group/calc_syphilis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The youth is at risk of Syphilis.</p>Procedure:<ul><li>Benzatine penicillin 2.4 Mio Units intramuscular injection (slowly!!) – single dose</li><li>Treat all partners</li><li>Counsel on condom use</li></ul></span><input type="text" name="/data/results_group/res_syphilis_action" data-relevant=" /data/results_group/calc_syphilis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Risk of other STD</span><input type="text" name="/data/results_group/res_other_std" data-relevant=" /data/results_group/calc_other_std  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The youth is at risk of other STD.</p>Procedure:<ul><li>Ciprofloxacine 500 mg, two times per day for 3 days</li><li>And Doxycicline 100mg, twice a day for 14 days</li><li>Treat all partners</li><li>Make sure to provide counselling on condom use</li></ul></span><input type="text" name="/data/results_group/res_other_std_action" data-relevant=" /data/results_group/calc_other_std  = 'true'" data-type-xml="string" readonly></label>
+      </section>
+  
+<fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/data/meta/instanceID" data-preload="uid" data-preload-params="" data-type-xml="string"></label></fieldset>
+<fieldset id="or-calculated-items" style="display:none;">
+<label class="calculation non-select "><input type="hidden" name="/data/source" data-calculate="../inputs/source" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/source_id" data-calculate="../inputs/source_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_uuid" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_id" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_name" data-calculate="../inputs/contact/name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_short_name" data-calculate="../inputs/contact/short_name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_sex" data-calculate="../inputs/contact/sex" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_date_of_birth" data-calculate="../inputs/contact/date_of_birth" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_years" data-calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_months" data-calculate="difference-in-months(  /data/client_date_of_birth , today() )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_days" data-calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_weeks" data-calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_uti" data-calculate="if((selected( /data/perform_followup_group/uti_std_symptoms , 'fever_above_38') or selected( /data/perform_followup_group/uti_std_symptoms , 'nausea') or selected( /data/perform_followup_group/uti_std_symptoms , 'diarrhea') or selected( /data/perform_followup_group/uti_std_symptoms , 'abdominal_pain') or selected( /data/perform_followup_group/uti_std_symptoms , 'yellow_urine') or  /data/perform_followup_group/urinary_strip_result  = 'yes') and not(selected( /data/perform_followup_group/uti_std_symptoms , 'vaginal_or_urethral_discharge')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'ulcer_of_genital_parts')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'oedema')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'brown_urine')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'high_blood_pressure')), 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_glomerulonephritis" data-calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'oedema') or selected( /data/perform_followup_group/uti_std_symptoms , 'brown_urine') or selected( /data/perform_followup_group/uti_std_symptoms , 'high_blood_pressure'), 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_syphilis" data-calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'ulcer_of_genital_parts'), 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_other_std" data-calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'vaginal_or_urethral_discharge'), 'true', 'false')" data-type-xml="string"></label>
+</fieldset>
+</form>

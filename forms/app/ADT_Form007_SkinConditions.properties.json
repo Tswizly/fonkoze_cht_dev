@@ -1,0 +1,9 @@
+{
+  "title": "Skin Conditions",
+  "icon": "icon-condition-rash",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64"
+  }
+}

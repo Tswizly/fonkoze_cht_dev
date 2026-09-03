@@ -1,0 +1,117 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="YAA_FormX_RespiratoryConditions" version="20260827123749" prefix="J1!YAA_FormX_RespiratoryConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <client_uuid/>
+          <client_id/>
+          <client_name/>
+          <client_short_name/>
+          <client_sex/>
+          <client_date_of_birth/>
+          <client_age_in_years/>
+          <client_age_in_months/>
+          <client_age_in_days/>
+          <client_age_in_weeks/>
+          <respiratory_assessment>
+            <fever_presence/>
+            <patient_temperature/>
+            <fever_duration/>
+            <extended_fever_duration/>
+            <oxygen_saturation/>
+            <breathing_rate/>
+            <cough_presence/>
+            <cough_duration/>
+            <cough_danger_signs/>
+            <runny_nose/>
+            <poor_appetite/>
+            <sore_throat/>
+            <throat_appearance/>
+          </respiratory_assessment>
+          <results_group>
+            <calc_flu_like_syndrome/>
+            <calc_pneumonia_pink/>
+            <calc_pneumonia_yellow/>
+            <calc_tonsillitis/>
+            <res_flu_like_syndrome/>
+            <res_flu_like_syndrome_action/>
+            <res_pneumonia_pink/>
+            <res_pneumonia_pink_action/>
+            <res_pneumonia_yellow/>
+            <res_pneumonia_yellow_action/>
+            <res_tonsillitis/>
+            <res_tonsillitis_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="cough_danger_signs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>chest_indrawing</name>
+            <label>Chest indrawing</label>
+          </item>
+          <item>
+            <name>stridor</name>
+            <label>Stridor</label>
+          </item>
+          <item>
+            <name>wheezing</name>
+            <label>Wheezing</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

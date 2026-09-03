@@ -1,0 +1,154 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="YAA_FormX_DigestiveConditions" version="20260829181614" prefix="J1!YAA_FormX_DigestiveConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <digestive_assessment_group>
+            <diarrhea/>
+            <diarrhea_duration/>
+            <diarrhea_frequency/>
+            <diarrhea_color/>
+            <diarrhea_blood/>
+            <vomiting_repeatedly/>
+            <physical_demeanor/>
+            <skin_pinch/>
+            <sunken_eyes/>
+          </digestive_assessment_group>
+          <results_group>
+            <calc_gastritis/>
+            <calc_dehydration/>
+            <calc_dysentery/>
+            <res_gastritis/>
+            <res_gastritis_action/>
+            <res_dehydration/>
+            <res_dehydration_action/>
+            <res_dysentery/>
+            <res_dysentery_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="stool_color">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>greenish</name>
+            <label>Greenish</label>
+          </item>
+          <item>
+            <name>red</name>
+            <label>Red</label>
+          </item>
+          <item>
+            <name>blackish</name>
+            <label>Blackish</label>
+          </item>
+          <item>
+            <name>yellowish</name>
+            <label>Yellowish</label>
+          </item>
+          <item>
+            <name>gray_or_white</name>
+            <label>Gray or white</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="physical_demeanor">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>lethargic_or_unconscious</name>
+            <label>Lethargic or unconscious</label>
+          </item>
+          <item>
+            <name>restless_or_irritable</name>
+            <label>Restless or irritable</label>
+          </item>
+          <item>
+            <name>drinking_difficulty</name>
+            <label>Drinking difficulty</label>
+          </item>
+          <item>
+            <name>drinking_eagerly</name>
+            <label>Drinking eagerly</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="skin_pinch">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>very_slowly</name>
+            <label>Very slowly</label>
+          </item>
+          <item>
+            <name>slowly</name>
+            <label>Slowly</label>
+          </item>
+          <item>
+            <name>regular</name>
+            <label>Regular</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

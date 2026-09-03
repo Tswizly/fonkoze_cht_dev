@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Youth Digestive Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="YAA_FormX_DigestiveConditions" version="20260829181614" prefix="J1!YAA_FormX_DigestiveConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <digestive_assessment_group>
+            <diarrhea/>
+            <diarrhea_duration/>
+            <diarrhea_frequency/>
+            <diarrhea_color/>
+            <diarrhea_blood/>
+            <vomiting_repeatedly/>
+            <physical_demeanor/>
+            <skin_pinch/>
+            <sunken_eyes/>
+          </digestive_assessment_group>
+          <results_group>
+            <calc_gastritis/>
+            <calc_dehydration/>
+            <calc_dysentery/>
+            <res_gastritis/>
+            <res_gastritis_action/>
+            <res_dehydration/>
+            <res_dehydration_action/>
+            <res_dysentery/>
+            <res_dysentery_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="stool_color">
+        <root>
+          <item>
+            <name>greenish</name>
+            <label>Greenish</label>
+          </item>
+          <item>
+            <name>red</name>
+            <label>Red</label>
+          </item>
+          <item>
+            <name>blackish</name>
+            <label>Blackish</label>
+          </item>
+          <item>
+            <name>yellowish</name>
+            <label>Yellowish</label>
+          </item>
+          <item>
+            <name>gray_or_white</name>
+            <label>Gray or white</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="physical_demeanor">
+        <root>
+          <item>
+            <name>lethargic_or_unconscious</name>
+            <label>Lethargic or unconscious</label>
+          </item>
+          <item>
+            <name>restless_or_irritable</name>
+            <label>Restless or irritable</label>
+          </item>
+          <item>
+            <name>drinking_difficulty</name>
+            <label>Drinking difficulty</label>
+          </item>
+          <item>
+            <name>drinking_eagerly</name>
+            <label>Drinking eagerly</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="skin_pinch">
+        <root>
+          <item>
+            <name>very_slowly</name>
+            <label>Very slowly</label>
+          </item>
+          <item>
+            <name>slowly</name>
+            <label>Slowly</label>
+          </item>
+          <item>
+            <name>regular</name>
+            <label>Regular</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/digestive_assessment_group/diarrhea" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_assessment_group/diarrhea_duration" type="int" relevant=" /data/digestive_assessment_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_assessment_group/diarrhea_frequency" type="int" relevant=" /data/digestive_assessment_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_assessment_group/diarrhea_color" type="string" relevant=" /data/digestive_assessment_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_assessment_group/diarrhea_blood" type="string" relevant=" /data/digestive_assessment_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_assessment_group/vomiting_repeatedly" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_assessment_group/physical_demeanor" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_assessment_group/skin_pinch" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_assessment_group/sunken_eyes" type="string" required="true()"/>
+      <bind nodeset="/data/results_group/calc_gastritis" type="string" calculate="if( /data/digestive_assessment_group/vomiting_repeatedly  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_dehydration" type="string" calculate="if( /data/digestive_assessment_group/diarrhea  = 'yes' and  /data/digestive_assessment_group/diarrhea_blood  = 'no' and (selected( /data/digestive_assessment_group/physical_demeanor , 'lethargic_or_unconscious') or selected( /data/digestive_assessment_group/physical_demeanor , 'restless_or_irritable') or selected( /data/digestive_assessment_group/physical_demeanor , 'drinking_difficulty') or selected( /data/digestive_assessment_group/physical_demeanor , 'drinking_eagerly') or  /data/digestive_assessment_group/sunken_eyes  = 'yes' or  /data/digestive_assessment_group/skin_pinch  = 'very_slowly' or  /data/digestive_assessment_group/skin_pinch  = 'slowly'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_dysentery" type="string" calculate="if( /data/digestive_assessment_group/diarrhea  = 'yes' and  /data/digestive_assessment_group/diarrhea_blood  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_gastritis" readonly="true()" type="string" relevant=" /data/results_group/calc_gastritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_gastritis_action" readonly="true()" type="string" relevant=" /data/results_group/calc_gastritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dehydration" readonly="true()" type="string" relevant=" /data/results_group/calc_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dehydration_action" readonly="true()" type="string" relevant=" /data/results_group/calc_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dysentery" readonly="true()" type="string" relevant=" /data/results_group/calc_dysentery  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dysentery_action" readonly="true()" type="string" relevant=" /data/results_group/calc_dysentery  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/digestive_assessment_group">
+      <label>Digestive Assessment</label>
+      <select1 ref="/data/digestive_assessment_group/diarrhea">
+        <label>Does the youth have diarrhea?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/digestive_assessment_group/diarrhea_duration">
+        <label>How long has the youth had diarrhea?</label>
+      </input>
+      <input ref="/data/digestive_assessment_group/diarrhea_frequency">
+        <label>How often does the youth pass stool per day?</label>
+      </input>
+      <select1 ref="/data/digestive_assessment_group/diarrhea_color">
+        <label>What color is the stool?</label>
+        <itemset nodeset="instance('stool_color')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_assessment_group/diarrhea_blood">
+        <label>Is there blood in the youth's stool?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_assessment_group/vomiting_repeatedly">
+        <label>Is the youth vomiting repeatedly?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select ref="/data/digestive_assessment_group/physical_demeanor">
+        <label>What is the youth's physical demeanor?</label>
+        <itemset nodeset="instance('physical_demeanor')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/digestive_assessment_group/skin_pinch">
+        <label>After being pinched, does the skin of the abdomen go back regularly, slowly, or very slowly?</label>
+        <itemset nodeset="instance('skin_pinch')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_assessment_group/sunken_eyes">
+        <label>Does the youth exhibit sunken eyes?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_gastritis" appearance="h1 red">
+        <label>Gastritis</label>
+      </input>
+      <input ref="/data/results_group/res_gastritis_action">
+        <label>The youth has gastritis.
+
+Procedure:
+- Oral rehydration (ORS test) and then send home with 2 packets of ORS and Litacid gel
+- Advise hospital visit for investigation if repeated occurence</label>
+      </input>
+      <input ref="/data/results_group/res_dehydration" appearance="h1 yellow">
+        <label>Dehydration</label>
+      </input>
+      <input ref="/data/results_group/res_dehydration_action">
+        <label>The youth has dehydration.
+
+Procedure:
+- ORS – explain how to prepare and send home with 2 paquets
+- Continue feeding, particularly soup, juice, thee
+- Zinc supplementation
+- Warn mother to go to hospital if youth cannot drink or altered consciousness, or blood in stool or high fever</label>
+      </input>
+      <input ref="/data/results_group/res_dysentery" appearance="h1 yellow">
+        <label>Bacterial or parasitic dysenteria</label>
+      </input>
+      <input ref="/data/results_group/res_dysentery_action">
+        <label>The youth has dysentery.
+
+Procedure:
+- Trimetoprim tablets – 400/80 mg – 7 days
+- And Metronidazole tablets – 200mg – 7 days
+- Counselling on drinking treated water. Continue feeding as much as child will eat but no spicy or too salty food</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

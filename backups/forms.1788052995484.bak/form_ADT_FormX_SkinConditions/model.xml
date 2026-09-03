@@ -1,0 +1,123 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_FormX_SkinConditions" version="20260829181612" prefix="J1!ADT_FormX_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_conditions_group>
+            <skin_symptoms/>
+            <skin_appearance/>
+            <sclera_appearance/>
+          </skin_conditions_group>
+          <results_group>
+            <calc_impetigo_folliculitis/>
+            <calc_ring_worm/>
+            <calc_scabies/>
+            <calc_moderate_anemia/>
+            <res_impetigo_folliculitis/>
+            <res_impetigo_folliculitis_action/>
+            <res_ring_worm/>
+            <res_ring_worm_action/>
+            <res_scabies/>
+            <res_scabies_action/>
+            <res_moderate_anemia/>
+            <res_moderate_anemia_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="skin_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>itching</name>
+            <label>Skin is itchy</label>
+          </item>
+          <item>
+            <name>blisters_sores_pustules</name>
+            <label>Skin has blisters, sores, or pustules</label>
+          </item>
+          <item>
+            <name>crusts_or_lesions</name>
+            <label>Skin has red, tender, warm crusts or small lesions</label>
+          </item>
+          <item>
+            <name>itchy_lesions</name>
+            <label>Itchy circular lesion with a raised edge and fine scaly area in the center with loss of hair .</label>
+          </item>
+          <item>
+            <name>rash</name>
+            <label>Rash and excoriations on turoso</label>
+          </item>
+          <item>
+            <name>web_space_and_wrists</name>
+            <label>Rash burrows in web space and wrists</label>
+          </item>
+          <item>
+            <name>face_spared</name>
+            <label>Rash on body but not face</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -1,0 +1,2 @@
+username,password,roles,phone,contact:person WHERE reference_id=COL_VAL,place:_id OF place WHERE reference_id=COL_VAL
+nurse,Bcdrtzt5,nurse,+9779841608188,person_4,area_1

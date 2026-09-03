@@ -1,0 +1,187 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_FormX_Pregnancy" version="20260829181611" prefix="J1!ADT_FormX_Pregnancy!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <form_purpose_group>
+            <optional_note/>
+            <form_purpose/>
+          </form_purpose_group>
+          <register_pregnancy_group>
+            <register_last_menstruation/>
+            <pregnancy_test_result/>
+          </register_pregnancy_group>
+          <perform_followup_group>
+            <confirm_pregnancy_duration_menstruation/>
+            <confirm_pregnancy_duration_approximation/>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <concerning_pregnancy_symptoms/>
+          </perform_followup_group>
+          <results_group>
+            <calc_gestational_hypertension_no_serious/>
+            <calc_gestational_hypertension_serious/>
+            <calc_pre_eclampsia/>
+            <calc_genitourinary_infections/>
+            <calc_threatened_miscarriage_less20/>
+            <calc_threatened_miscarriage_greater20/>
+            <res_gestational_hypertension_no_serious/>
+            <res_gestational_hypertension_no_serious_action/>
+            <res_gestational_hypertension_serious/>
+            <res_gestational_hypertesnion_serious_action/>
+            <res_pre_eclampsia/>
+            <res_pre_eclampsia_action/>
+            <res_genitourinary_infections/>
+            <res_genitourinary_infections_action/>
+            <res_threatened_miscarriage_less20/>
+            <res_threatened_miscarriage_less20_action/>
+            <res_threatened_miscarriage_greater20/>
+            <res_threatened_miscarriage_greater20_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="Form_purpose">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>register_pregnancy</name>
+            <label>Register pregnancy</label>
+          </item>
+          <item>
+            <name>perform_followup</name>
+            <label>Perform followup</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="concerning_pregnancy_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>burning_urination</name>
+            <label>Burning urination</label>
+          </item>
+          <item>
+            <name>vaginal_itching</name>
+            <label>Vaginal itching</label>
+          </item>
+          <item>
+            <name>vaginal_discharge</name>
+            <label>Vaginal discharge</label>
+          </item>
+          <item>
+            <name>positive_white_bloodcell_strip_in_urine</name>
+            <label>Positive white bloodcell strip in urine</label>
+          </item>
+          <item>
+            <name>headache</name>
+            <label>Headache</label>
+          </item>
+          <item>
+            <name>neck_stiffness</name>
+            <label>Neck stiffness</label>
+          </item>
+          <item>
+            <name>blurred_vision</name>
+            <label>Blurred vision</label>
+          </item>
+          <item>
+            <name>epigastric_pain</name>
+            <label>Epigastric pain</label>
+          </item>
+          <item>
+            <name>pain_general</name>
+            <label>Pain general</label>
+          </item>
+          <item>
+            <name>edema</name>
+            <label>Edema</label>
+          </item>
+          <item>
+            <name>bleeding</name>
+            <label>Bleeding</label>
+          </item>
+          <item>
+            <name>contractions</name>
+            <label>Contractions</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="pregnancy_test_result">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>positive</name>
+            <label>Positive</label>
+          </item>
+          <item>
+            <name>negative</name>
+            <label>Negative</label>
+          </item>
+          <item>
+            <name>inconculsive</name>
+            <label>Inconclusive</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -1,0 +1,148 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="CHD_FormX_RespiratoryInfections" version="20260827123728" prefix="J1!CHD_FormX_RespiratoryInfections!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <client_uuid/>
+          <client_id/>
+          <client_name/>
+          <client_short_name/>
+          <client_sex/>
+          <client_date_of_birth/>
+          <client_age_in_years/>
+          <client_age_in_months/>
+          <client_age_in_days/>
+          <client_age_in_weeks/>
+          <respiratory_checkup_group>
+            <respiratory_danger_signs/>
+            <fever_presence/>
+            <child_temperature/>
+            <fever_duration/>
+            <extended_fever_duration/>
+            <child_coughing/>
+            <cough_duration/>
+            <breathing_rate/>
+            <oxygen_saturation/>
+            <cough_danger_signs/>
+            <after_nebulising_breathing/>
+            <after_nebulising_chest_indrawing/>
+            <runny_nose/>
+            <poor_appetite/>
+            <sore_throat/>
+            <throat_appearance/>
+          </respiratory_checkup_group>
+          <results_group>
+            <calc_severe_pneumonia/>
+            <calc_pneumonia/>
+            <calc_tonsillitis/>
+            <calc_cough_or_cold/>
+            <res_severe_pneumonia/>
+            <res_severe_pneumonia_action/>
+            <res_pneumonia/>
+            <res_pneumonia_action/>
+            <res_cough_or_cold/>
+            <res_cough_or_cold_action/>
+            <res_tonsillitis/>
+            <res_tonsillitis_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="respiratory_danger_signs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>feeding_difficulty</name>
+            <label>The child is unable to drink or breastfeed</label>
+          </item>
+          <item>
+            <name>vomiting</name>
+            <label>The child vomits everything</label>
+          </item>
+          <item>
+            <name>convulsions</name>
+            <label>The child has had convulsions or is actively convulsing now</label>
+          </item>
+          <item>
+            <name>lethargy_unconscious</name>
+            <label>The child is lethargic or unconscious</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="cough_danger_signs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>chest_indrawing</name>
+            <label>Chest indrawing</label>
+          </item>
+          <item>
+            <name>stridor</name>
+            <label>Stridor</label>
+          </item>
+          <item>
+            <name>wheezing</name>
+            <label>Wheezing</label>
+          </item>
+          <item>
+            <name>nasal_flaring</name>
+            <label>Nasal flaring</label>
+          </item>
+          <item>
+            <name>fast_breathing</name>
+            <label>Fast breathing</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

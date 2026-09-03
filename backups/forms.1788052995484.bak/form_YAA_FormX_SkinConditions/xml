@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Youth Skin Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="YAA_FormX_SkinConditions" version="20260829181613" prefix="J1!YAA_FormX_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_conditions_group>
+            <skin_symptoms/>
+            <skin_appearance_pale/>
+            <sclera_appearance_abnormal/>
+          </skin_conditions_group>
+          <results_group>
+            <calc_impetigo/>
+            <calc_ring_worm/>
+            <calc_scabies/>
+            <calc_anemia/>
+            <res_impetigo/>
+            <res_impetigo_action/>
+            <res_ring_worm/>
+            <res_ring_worm_action/>
+            <res_scabies/>
+            <res_scabies_action/>
+            <res_anemia/>
+            <res_anemia_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="skin_symptoms">
+        <root>
+          <item>
+            <name>itching</name>
+            <label>Itching</label>
+          </item>
+          <item>
+            <name>blisters_sores</name>
+            <label>Blisters, sores, and pustules</label>
+          </item>
+          <item>
+            <name>crusts_lesions</name>
+            <label>Crusts or lesions</label>
+          </item>
+          <item>
+            <name>itchy_circular</name>
+            <label>Itchy circular lesion with a raised edge and fine scaly area in the center with loss of hair</label>
+          </item>
+          <item>
+            <name>rash_torso</name>
+            <label>Rash and excoriations on torso</label>
+          </item>
+          <item>
+            <name>rash_web</name>
+            <label>Burrows in web space and wrists</label>
+          </item>
+          <item>
+            <name>face_spared</name>
+            <label>Face spared</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/skin_conditions_group/skin_symptoms" type="string"/>
+      <bind nodeset="/data/skin_conditions_group/skin_appearance_pale" type="string"/>
+      <bind nodeset="/data/skin_conditions_group/sclera_appearance_abnormal" type="string"/>
+      <bind nodeset="/data/results_group/calc_impetigo" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'crusts_lesions') or selected( /data/skin_conditions_group/skin_symptoms , 'blisters_sores'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_ring_worm" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'itchy_circular'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_scabies" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'rash_torso') and selected( /data/skin_conditions_group/skin_symptoms , 'rash_web') and selected( /data/skin_conditions_group/skin_symptoms , 'face_spared'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_anemia" type="string" calculate="if( /data/skin_conditions_group/skin_appearance_pale  = 'yes' or  /data/skin_conditions_group/sclera_appearance_abnormal  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_impetigo" readonly="true()" type="string" relevant=" /data/results_group/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo_action" readonly="true()" type="string" relevant=" /data/results_group/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm" readonly="true()" type="string" relevant=" /data/results_group/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm_action" readonly="true()" type="string" relevant=" /data/results_group/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies" readonly="true()" type="string" relevant=" /data/results_group/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies_action" readonly="true()" type="string" relevant=" /data/results_group/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_anemia" readonly="true()" type="string" relevant=" /data/results_group/calc_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_anemia_action" readonly="true()" type="string" relevant=" /data/results_group/calc_anemia  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/skin_conditions_group">
+      <label>Skin conditions</label>
+      <select ref="/data/skin_conditions_group/skin_symptoms">
+        <label>Skin symptoms to look and ask for.</label>
+        <itemset nodeset="instance('skin_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/skin_conditions_group/skin_appearance_pale">
+        <label>Does the skin appear pale or light?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/skin_conditions_group/sclera_appearance_abnormal">
+        <label>Does the sclera appear abnormal, or tinted a strange color?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_impetigo" appearance="h1 yellow">
+        <label>Impetigo or Folliculitis</label>
+      </input>
+      <input ref="/data/results_group/res_impetigo_action">
+        <label>The youth may have impetigo or folliculitis. Clean sores with antiseptic. Drain pus if fluctuant. Start cloxacillin tablets if &gt;4cm or red streaks or tender nodes or multiple abscesses for 5 days (Apply antibiotic cream – triple antibiotic ointment).</label>
+      </input>
+      <input ref="/data/results_group/res_ring_worm" appearance="h1 yellow">
+        <label>Ring Worm (Tinea)</label>
+      </input>
+      <input ref="/data/results_group/res_ring_worm_action">
+        <label>The youth may have ring worm. If limited to a few patches: Grisefulvine or Ketoconazole cream. If extensive give: griseofulvin tablets, 125 mg with fatty meal (10mg/kg/day), 2 tablets once a day for 6 weeks. If in hair: shave hair, treat as above. If infected (red, warm, pus) add cloxacilline.</label>
+      </input>
+      <input ref="/data/results_group/res_scabies" appearance="h1 yellow">
+        <label>Scabies</label>
+      </input>
+      <input ref="/data/results_group/res_scabies_action">
+        <label>The youth may have scabies. Treat itching: Calamine lotion. Apply: 25% topical Benzyl Benzoate at night, repeat for 3 days after washing. Council hygiene measures: treat all people in the household who are affected, wash bed linen and clothes with warm water and put in the sun, wash affected persons. When infected add cloxaciline.</label>
+      </input>
+      <input ref="/data/results_group/res_anemia" appearance="h1 yellow">
+        <label>Moderate Anemia</label>
+      </input>
+      <input ref="/data/results_group/res_anemia_action">
+        <label>The youth may have moderate anemia. Iron, folic acid – 1 tablet once a day, give for 14 days. Albendazole (400 mg) 1 tablet. Nutrition counseling: green leaves (panzou, lyann panye, moringa, boujon pwa, boujon manyok), fruits, rasped carots and red beet.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

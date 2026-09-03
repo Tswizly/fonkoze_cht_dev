@@ -1,0 +1,364 @@
+{
+  "languages": [
+    {
+      "locale": "en",
+      "enabled": true
+    },
+    {
+      "locale": "es",
+      "enabled": false
+    },
+    {
+      "locale": "fr",
+      "enabled": false
+    }
+  ],
+  "locale": "en",
+  "locale_outgoing": "en",
+  "date_format": "D MMM, YYYY",
+  "reported_date_format": "DD-MMM-YYYY HH:mm:ss",
+  "forms_only_mode": false,
+  "place_hierarchy_types": [
+    "district_hospital",
+    "health_center"
+  ],
+  "default_responses": {
+    "start_date": ""
+  },
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": 509,
+  "gateway_number": "",
+  "dhis_data_sets": [
+    {
+      "id": "",
+      "translation_key": ""
+    }
+  ],
+  "schedule_morning_hours": 0,
+  "schedule_morning_minutes": 0,
+  "schedule_evening_hours": 23,
+  "schedule_evening_minutes": 0,
+  "synthetic_date": "",
+  "contact_display_short": "clinic.name",
+  "roles": {
+    "national_admin": {
+      "name": "usertype.national_admin"
+    },
+    "data_entry": {
+      "name": "usertype.data-entry"
+    },
+    "analytics": {
+      "name": "usertype.analytics"
+    },
+    "gateway": {
+      "name": "usertype.gateway"
+    },
+    "program_officer": {
+      "name": "usertype.program-officer"
+    },
+    "crfo": {
+      "name": "usertype.crfo"
+    },
+    "nurse_supervisor": {
+      "name": "usertype.nurse-supervisor",
+      "offline": true
+    },
+    "nurse": {
+      "name": "usertype.nurse",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_access_gateway_api": [
+      "gateway"
+    ],
+    "can_bulk_delete_reports": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_configure": [
+      "program_officer",
+      "crfo"
+    ],
+    "can_create_people": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_create_places": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_create_records": [
+      "data_entry",
+      "gateway",
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_create_users": [
+      "program_officer"
+    ],
+    "can_delete_contacts": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_delete_messages": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_delete_reports": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_delete_users": [
+      "program_officer"
+    ],
+    "can_edit": [
+      "gateway",
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_edit_profile": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_edit_verification": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_export_all": [
+      "program_officer",
+      "crfo"
+    ],
+    "can_export_contacts": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_export_feedback": [
+      "program_officer"
+    ],
+    "can_export_messages": [
+      "analytics",
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_log_out_on_android": [],
+    "can_update_places": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_update_reports": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_update_users": [
+      "program_officer"
+    ],
+    "can_export_dhis": [
+      "national_admin",
+      "crfo"
+    ],
+    "can_verify_reports": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_analytics": [
+      "analytics",
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_analytics_tab": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_call_action": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_contacts": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_contacts_tab": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_last_visited_date": [],
+    "can_view_uhc_stats": [],
+    "can_view_message_action": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_messages": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_messages_tab": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_outgoing_messages": [
+      "program_officer"
+    ],
+    "can_view_reports": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_reports_tab": [
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_tasks": [
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_tasks_tab": [
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_tasks_group": [
+      "nurse"
+    ],
+    "can_track_task_interactions": [],
+    "can_view_unallocated_data_records": [
+      "gateway",
+      "program_officer",
+      "nurse_supervisor",
+      "nurse"
+    ],
+    "can_view_users": [
+      "program_officer"
+    ],
+    "can_write_wealth_quintiles": [],
+    "can_aggregate_targets": [
+      "nurse_supervisor"
+    ],
+    "can_upgrade": [
+      "program_officer"
+    ],
+    "can_view_old_navigation": [],
+    "can_default_facility_filter": [],
+    "can_have_multiple_places": [],
+    "can_skip_password_change": [],
+    "can_get_task_notifications": [
+      "nurse",
+      "nurse_supervisor"
+    ],
+    "can_export_devices_details": [
+      "national_admin"
+    ]
+  },
+  "uhc": {},
+  "death_reporting": {},
+  "contact_types": [
+    {
+      "id": "district_hospital",
+      "name_key": "contact.type.district_hospital",
+      "group_key": "contact.type.district_hospital.plural",
+      "create_key": "contact.type.district_hospital.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-district-hospital",
+      "create_form": "form:contact:district_hospital:create",
+      "edit_form": "form:contact:district_hospital:edit"
+    },
+    {
+      "id": "health_center",
+      "name_key": "contact.type.health_center",
+      "group_key": "contact.type.health_center.plural",
+      "create_key": "contact.type.health_center.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "district_hospital"
+      ],
+      "icon": "medic-health-center",
+      "create_form": "form:contact:health_center:create",
+      "edit_form": "form:contact:health_center:edit"
+    },
+    {
+      "id": "clinic",
+      "name_key": "contact.type.clinic",
+      "group_key": "contact.type.clinic.plural",
+      "create_key": "contact.type.clinic.new",
+      "edit_key": "contact.type.place.edit",
+      "parents": [
+        "health_center"
+      ],
+      "icon": "medic-clinic",
+      "create_form": "form:contact:clinic:create",
+      "edit_form": "form:contact:clinic:edit",
+      "count_visits": true
+    },
+    {
+      "id": "person",
+      "name_key": "contact.type.person",
+      "group_key": "contact.type.person.plural",
+      "create_key": "contact.type.person.new",
+      "edit_key": "contact.type.person.edit",
+      "primary_contact_key": "clinic.field.contact",
+      "parents": [
+        "district_hospital",
+        "health_center",
+        "clinic"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:person:create",
+      "edit_form": "form:contact:person:edit",
+      "person": true
+    }
+  ],
+  "contact_summary": "var ContactSummary = {}; !function(e,t){if('object'==typeof exports&&'object'==typeof module)module.exports=t();else if('function'==typeof define&&define.amd)define([],t);else{var r=t();for(var n in r)('object'==typeof exports?exports:e)[n]=r[n]}}(ContactSummary,()=>{return e={984(e){function t(e){return e?Array.isArray(e)?e:[e]:[]}function r(e){return e&&!(e.errors&&e.errors.length)}function n(e,t){switch(typeof e){case'undefined':return!0;case'function':return e(t);default:return e}}function o(e,t,r){if(!n(e.appliesIf,r))return;function o(e,t,n){switch(typeof e[n]){case'undefined':return;case'function':t[n]=e[n](r);break;default:t[n]=e[n]}}var i='function'==typeof e.fields?e.fields(r):e.fields.filter(function(e){return n(e.appliesIf,r)}).map(function(e){var t={};return o(e,t,'label'),o(e,t,'value'),o(e,t,'translate'),o(e,t,'filter'),o(e,t,'width'),o(e,t,'icon'),e.context&&(t.context={},o(e.context,t.context,'count'),o(e.context,t.context,'total')),t});e.modifyContext&&e.modifyContext(t,r);const c={label:e.label,fields:i};return void 0!==e.collapsed&&(c.collapsed=e.collapsed),c}e.exports=function(e,n,i){var c=e.fields||[],f=e.context||{},a=e.cards||[],s=n&&('contact'===n.type?n.contact_type:n.type),l={cards:[],fields:c.filter(function(e){var r=t(e.appliesToType),n=r.filter(function(e){return e&&'!'===e.charAt(0)});if((0===r.length||r.includes(s)||n.length>0&&!n.includes('!'+s))&&(!e.appliesIf||e.appliesIf()))return delete e.appliesToType,delete e.appliesIf,!0})};return a.forEach(function(e){var n,c,a,p=t(e.appliesToType);if(p.includes('report')&&p.length>1)throw new Error('You cannot set appliesToType to an array which includes the type \\'report\\' and another type.');if(p.includes('report'))for(n=0;n<i.length;++n)r(c=i[n])&&(a=o(e,f,c))&&l.cards.push(a);else{if(!p.includes(s)&&p.length>0)return;(a=o(e,f))&&l.cards.push(a)}}),l.context=f,l}},873(e,t,r){var n=r(972),o=r(984);e.exports=o(n,contact,reports)},972(e){e.exports={fields:[],cards:[],context:{}}}},t={},function r(n){var o=t[n];if(void 0!==o)return o.exports;var i=t[n]={exports:{}};return e[n](i,i.exports,r),i.exports}(873);var e,t}); return ContactSummary;",
+  "tasks": {
+    "rules": "(()=>{var e={813(e){function t(e,i){var a=Object.keys(e);for(var o in a){var r=a[o];switch(typeof e[r]){case'object':t(e[r],i);break;case'function':e[r]=e[r].bind(i)}}}function i(e){var t=Object.assign({},e),a=Object.keys(t);for(var o in a){var r=a[o];if(Array.isArray(t[r])){t[r]=t[r].slice(0);for(var n=0;n<t[r].length;++n)'object'==typeof t[r][n]&&(t[r][n]=i(t[r][n]))}else'object'==typeof t[r]&&(t[r]=i(t[r]))}return t}e.exports=function(e){var a={};t(e,a),a.definition=i(e)}},46(e,t,i){var a=i(813);function o(e,t,i,a,o,r){var n=!!r;if(o.contact){var s='contact'===o.contact.type?o.contact.contact_type:o.contact.type,p=n?r.form:s;if(!(e.appliesToType&&e.appliesToType.indexOf(p)<0)&&(!e.appliesIf||e.appliesIf(o,r)))for(var _=n?r:o.contact,l=function(e,t,i){var a;return a='function'==typeof e.idType?e.idType(t,i):'report'===e.idType?i&&i._id:t.contact&&t.contact._id,Array.isArray(a)||(a=[a]),a}(e,o,r),d=!e.passesIf||!!e.passesIf(o,r),c=function(e,t,i,a){if('function'==typeof e.date)return e.date(i,a)||t.now().getTime();if(void 0===e.date||null===e.date||'now'===e.date)return t.now().getTime();if('reported'===e.date)return a?a.reported_date:i.contact.reported_date;throw new Error('Unrecognised value for target.date: '+e.date)}(e,i,o,r),u=e.groupBy&&e.groupBy(o,r),f=0;f<l.length;++f){var m=new t({_id:l[f]+'~'+e.id,contact:o.contact,deleted:!!_.deleted,type:e.id,pass:d,groupBy:u,date:c});e.emitCustom?e.emitCustom(T,m,o,r):T(m)}}function T(e){a('target',e)}}e.exports=function(e,t,i,r,n){for(var s=0;s<e.length;++s){var p=e[s];switch(a(p),p.appliesTo){case'contacts':o(p,r,i,n,t);break;case'reports':for(var _=0;_<t.reports.length;++_){o(p,r,i,n,t,t.reports[_])}break;default:throw new Error('Unrecognised target.appliesTo: '+p.appliesTo)}}}},832(e){e.exports={defaultResolvedIf:function(e,t,i,a,o){var r,n;o||(o=Utils);var s=function(e){var t;if(!e||!e.actions)return;return(t=e.actions.find(function(e){return!e.type||'report'===e.type}))&&t.form}(this.definition);if(!s)throw new Error('Could not find the default resolving form!');return r=0,r=t?Math.max(o.addDate(a,-i.start).getTime(),t.reported_date+1):o.addDate(a,-i.start).getTime(),n=o.addDate(a,i.end+1).getTime(),o.isFormSubmittedInWindow(e.reports,s,r,n)}}},682(e,t,i){var a=i(813),o=i(832);function r(e,t,i,a,o,r){var n;if(e.appliesToType){var s;if('contacts'===e.appliesTo){if(!o.contact)return;s='contact'===o.contact.type?o.contact.contact_type:o.contact.type}else{if(!r)return;s=r.form}if(-1===e.appliesToType.indexOf(s))return}if('scheduled_tasks'===e.appliesTo||!e.appliesIf||e.appliesIf(o,r))if('scheduled_tasks'===e.appliesTo){if(r&&e.appliesIf){if(!r.scheduled_tasks)return;for(n=0;n<r.scheduled_tasks.length;n++)e.appliesIf(o,r,n)&&_(n)}}else _();function p(e,t,i){var a;return(a='function'==typeof e.contactLabel?e.contactLabel(t,i):e.contactLabel)?{name:a}:t.contact}function _(n){var s,_,d,c,u=null;for(s=0;s<e.events.length;s++){if((_=e.events[s]).dueDate)u=_.dueDate(_,o,r,n);else if(r)u=void 0!==n?new Date(t.addDate(new Date(r.scheduled_tasks[n].due),_.days)):new Date(t.addDate(new Date(r.reported_date),_.days));else if(_.dueDate)u=_.dueDate(_,o);else{var f=o.contact&&o.contact.reported_date?new Date(o.contact.reported_date):new Date;u=new Date(t.addDate(f,_.days))}t.isTimely(u,_)&&(c={_id:(r?r._id:o.contact&&o.contact._id)+'~'+(_.id||s)+'~'+e.name,deleted:!(!(o.contact&&o.contact.deleted||r)||!r.deleted),doc:o,contact:p(e,o,r),icon:e.icon,date:u,readyStart:_.start||0,readyEnd:_.end||0,title:e.title,resolved:e.resolvedIf(o,r,_,u,n),actions:l(e.actions,_)},void 0!==n&&(c._id+='-'+n),'function'==typeof(d=e.priority)&&(d=d(o,r,_,u,n)),d&&(c.priority=d.level,c.priorityLabel=d.label),a('task',new i(c)))}}function l(t,i){return e.actions.map(function(e){return function(e,t){var i={source:'task',source_id:r?r._id:o.contact&&o.contact._id,contact:o.contact};e.modifyContent&&e.modifyContent(i,o,r,t);return{type:e.type||'report',form:e.form,label:e.label||'Follow up',content:i}}(e,i)})}}e.exports=function(e,t,i,n,s){if(e)for(var p,_,l=0;l<e.length;++l)switch('function'!=typeof(p=Object.assign({},e[l],o)).resolvedIf&&(p.resolvedIf=function(e,t,a,o){return p.defaultResolvedIf(e,t,a,o,i)}),a(p),p.appliesTo){case'reports':case'scheduled_tasks':for(var d=0;d<t.reports.length;++d)_=t.reports[d],r(p,i,n,s,t,_);break;case'contacts':t.contact&&r(p,i,n,s,t);break;default:throw new Error('Unrecognised task.appliesTo: '+p.appliesTo)}}},931(e){e.exports=[]},991(e){e.exports=[{name:'children_triage_route_digestive',title:'Digestive Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_digestive&&t.fields.patient_age_in_years>=0&&t.fields.patient_age_in_years<=5},actions:[{form:'CHD_Form001_DigestiveConditions'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_digestive',title:'Digestive Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_digestive&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form001_DigestiveConditions'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_digestive',title:'Digestive Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_digestive&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form002_DigestiveConditions'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_digestive',title:'Digestive Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_digestive&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form003_DigestiveConditions'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_fever',title:'Fever Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_fever&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form003_Fever'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_fever',title:'Fever Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_fever&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form004_Fever'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_hypertension',title:'Hypertension Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_hypertension&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form004_Hypertension'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_hypertension',title:'Hypertension Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_hypertension&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form005_Hypertension'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_pregnancy',title:'Pregnancy Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_pregnancy&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form005_Pregnancy'}],events:[{start:1,days:1,end:0}]},{name:'children_triage_route_respiratory',title:'Respiratory Infections Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_respiratory&&t.fields.patient_age_in_years>=0&&t.fields.patient_age_in_years<=5},actions:[{form:'CHD_Form002_RespiratoryInfections'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_respiratory',title:'Respiratory Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_respiratory&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form002_RespiratoryConditions'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_respiratory',title:'Respiratory Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_respiratory&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form006_RespiratoryConditions'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_respiratory',title:'Respiratory Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_respiratory&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form006_RespiratoryConditions'}],events:[{start:1,days:1,end:0}]},{name:'children_triage_route_skin',title:'Skin Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_skin&&t.fields.patient_age_in_years>=0&&t.fields.patient_age_in_years<=5},actions:[{form:'CHD_Form003_SkinConditions'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_skin',title:'Skin Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_skin&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form003_SkinConditions'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_skin',title:'Skin Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_skin&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form007_SkinConditions'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_skin',title:'Skin Conditions Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_skin&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form007_SkinConditions'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_stroke',title:'Stroke Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_stroke&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form008_Stroke'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_stroke',title:'Stroke Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_stroke&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form008_Stroke'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_uti_std',title:'UTI and STD Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_uti_std&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form004_UTIandSTD'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_uti_std',title:'UTI and STD Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_uti_std&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form009_UTIandSTD'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_uti_std',title:'UTI and STD Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_uti_std&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form009_UTIandSTD'}],events:[{start:1,days:1,end:0}]},{name:'children_triage_route_wound',title:'Wounds Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_wound&&t.fields.patient_age_in_years>=0&&t.fields.patient_age_in_years<=5},actions:[{form:'CHD_Form005_Wounds'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_wound',title:'Wounds Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_wound&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form006_Wounds'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_wound',title:'Wounds Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_wound&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form011_Wounds'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_wound',title:'Wounds Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_wound&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form011_Wounds'}],events:[{start:1,days:1,end:0}]},{name:'children_triage_route_vision',title:'Vision Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_vision&&t.fields.patient_age_in_years>=0&&t.fields.patient_age_in_years<=5},actions:[{form:'CHD_Form004_Vision'}],events:[{start:1,days:1,end:0}]},{name:'youth_triage_route_vision',title:'Vision Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_vision&&t.fields.patient_age_in_years>=6&&t.fields.patient_age_in_years<=17},actions:[{form:'YAA_Form005_Vision'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_vision',title:'Vision Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_vision&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form010_Vision'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_vision',title:'Vision Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_vision&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form010_Vision'}],events:[{start:1,days:1,end:0}]},{name:'adult_triage_route_diabetes',title:'Diabetes Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_diabetes&&t.fields.patient_age_in_years>=18&&t.fields.patient_age_in_years<=64},actions:[{form:'ADT_Form001_Diabetes'}],events:[{start:1,days:1,end:0}]},{name:'elderly_triage_route_diabetes',title:'Diabetes Follow-up Assessment',icon:'icon-healthcare',appliesTo:'reports',appliesToType:['TRI_Form001_Triage'],appliesIf:function(e,t){return!e.contact.muted&&'true'===t.fields.route_diabetes&&t.fields.patient_age_in_years>64},actions:[{form:'ELD_Form002_Diabetes'}],events:[{start:1,days:1,end:0}]}]}},t={};function i(a){var o=t[a];if(void 0!==o)return o.exports;var r=t[a]={exports:{}};return e[a](r,r.exports,i),r.exports}var a=i(991),o=i(931),r=i(682);i(46)(o,c,Utils,Target,emit),r(a,c,Utils,Task,emit),emit('_complete',{_id:!0})})();",
+    "isDeclarative": true,
+    "targets": {
+      "enabled": true,
+      "items": []
+    }
+  },
+  "create_user_for_contacts": {
+    "replace_forms": [
+      "replace_user"
+    ]
+  },
+  "transitions": {
+    "accept_patient_reports": false,
+    "conditional_alerts": false,
+    "default_responses": false,
+    "update_sent_by": false,
+    "registration": false,
+    "update_clinics": false,
+    "update_notifications": false,
+    "update_scheduled_reports": false,
+    "generate_patient_id_on_people": true,
+    "death_reporting": true,
+    "create_user_for_contacts": false
+  },
+  "purge": {},
+  "forms": {},
+  "schedules": []
+}

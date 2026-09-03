@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Skin Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="CHD_Form003_SkinConditions" version="20260902220537" prefix="J1!CHD_Form003_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_checkup_group>
+            <skin_symptoms/>
+            <anemia_symptoms/>
+            <muac_result/>
+          </skin_checkup_group>
+          <calc_impetigo/>
+          <calc_ring_worm/>
+          <calc_scabies/>
+          <calc_severe_malnutrition_anemia/>
+          <calc_severe_anemia/>
+          <calc_moderate_anemia/>
+          <results_group>
+            <res_impetigo/>
+            <res_impetigo_action/>
+            <res_ring_worm/>
+            <res_ring_worm_action/>
+            <res_scabies/>
+            <res_scabies_action/>
+            <res_severe_malnutrition_anemia/>
+            <res_severe_malnutrition_anemia_action/>
+            <res_severe_anemia/>
+            <res_severe_anemia_action/>
+            <res_moderate_anemia/>
+            <res_moderate_anemia_action/>
+          </results_group>
+          <null_results_group>
+            <res_null_results/>
+          </null_results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="skin_symptoms">
+        <root>
+          <item>
+            <name>itching</name>
+            <label>Skin is itchy</label>
+          </item>
+          <item>
+            <name>blisters_sores_pustules</name>
+            <label>Skin has blisters, sores, or pustules</label>
+          </item>
+          <item>
+            <name>crusts_lesions</name>
+            <label>Skin has red, tender, warm crusts or small lesions</label>
+          </item>
+          <item>
+            <name>itchy_lesions</name>
+            <label>Itchy circular lesion with a raised edge and fine scaly area in the center with loss of hair .</label>
+          </item>
+          <item>
+            <name>rash</name>
+            <label>Rash and excoriations on turoso</label>
+          </item>
+          <item>
+            <name>web_space_wrists</name>
+            <label>Rash burrows in web space and wrists</label>
+          </item>
+          <item>
+            <name>face_spared</name>
+            <label>Rash on body but not face</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="anemia_symptoms">
+        <root>
+          <item>
+            <name>lethargy</name>
+            <label>Lethargy</label>
+          </item>
+          <item>
+            <name>oedema</name>
+            <label>Oedema</label>
+          </item>
+          <item>
+            <name>respiratory_distress</name>
+            <label>Respiratory distress</label>
+          </item>
+          <item>
+            <name>pale_complexion</name>
+            <label>Pale complexion</label>
+          </item>
+          <item>
+            <name>sclera_abnormal</name>
+            <label>Sclera / light sclera</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="muac_result">
+        <root>
+          <item>
+            <name>muac_yellow_red</name>
+            <label>MUAC yellow/red</label>
+          </item>
+          <item>
+            <name>muac_green</name>
+            <label>MUAC green</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/skin_checkup_group/skin_symptoms" type="string"/>
+      <bind nodeset="/data/skin_checkup_group/anemia_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/skin_checkup_group/muac_result" type="string" required="true()"/>
+      <bind nodeset="/data/calc_impetigo" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'crusts_lesions') or selected( /data/skin_checkup_group/skin_symptoms , 'blisters_sores_pustules'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_ring_worm" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'itchy_lesions'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_scabies" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'rash') and selected( /data/skin_checkup_group/skin_symptoms , 'web_space_wrists') and selected( /data/skin_checkup_group/skin_symptoms , 'face_spared'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_severe_malnutrition_anemia" type="string" calculate="if(selected( /data/skin_checkup_group/anemia_symptoms , 'lethargy') or selected( /data/skin_checkup_group/anemia_symptoms , 'oedema') or selected( /data/skin_checkup_group/anemia_symptoms , 'respiratory_distress') or selected( /data/skin_checkup_group/muac_result , 'muac_yellow_red'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_severe_anemia" type="string" calculate="if((selected( /data/skin_checkup_group/anemia_symptoms , 'lethargy') or selected( /data/skin_checkup_group/anemia_symptoms , 'oedema') or selected( /data/skin_checkup_group/anemia_symptoms , 'respiratory_distress')) and selected( /data/skin_checkup_group/muac_result , 'muac_green'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_moderate_anemia" type="string" calculate="if(selected( /data/skin_checkup_group/anemia_symptoms , 'pale_complexion') or selected( /data/skin_checkup_group/anemia_symptoms , 'sclera_abnormal'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_impetigo  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true' or  /data/calc_severe_malnutrition_anemia  = 'true' or  /data/calc_severe_anemia  = 'true' or  /data/calc_moderate_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo" readonly="true()" type="string" relevant=" /data/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo_action" readonly="true()" type="string" relevant=" /data/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm_action" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies_action" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_malnutrition_anemia" readonly="true()" type="string" relevant=" /data/calc_severe_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_malnutrition_anemia_action" readonly="true()" type="string" relevant=" /data/calc_severe_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_anemia" readonly="true()" type="string" relevant=" /data/calc_severe_anemia  = 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_anemia_action" readonly="true()" type="string" relevant=" /data/calc_severe_anemia  = 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_moderate_anemia" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_moderate_anemia_action" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_impetigo  != 'true' and  /data/calc_ring_worm  != 'true' and  /data/calc_scabies  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_moderate_anemia  != 'true'"/>
+      <bind nodeset="/data/null_results_group/res_null_results" readonly="true()" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/skin_checkup_group">
+      <label>Skin Checkup</label>
+      <select ref="/data/skin_checkup_group/skin_symptoms">
+        <label>Skin symptoms to look and ask for.</label>
+        <itemset nodeset="instance('skin_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select ref="/data/skin_checkup_group/anemia_symptoms">
+        <label>Looks at the color of the conjunctiva and skin, as well as other anemia symptoms.</label>
+        <itemset nodeset="instance('anemia_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select ref="/data/skin_checkup_group/muac_result">
+        <label>Use MAUC band and record result.</label>
+        <itemset nodeset="instance('muac_result')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_impetigo" appearance="h1 red">
+        <label>Impetigo or Folliculitis</label>
+      </input>
+      <input ref="/data/results_group/res_impetigo_action">
+        <label>The child may have Impetigo or Folliculitis.\n\nProcedure:\n- Clean sores with antiseptic\n- Drain pus if fluctuant\n- Start cloxacillin sirup (125mg/5ml) if size &gt;4cm or red streaks or tender nodes or multiple abscesses for 5 days (50mg/kg every 6 hours)\n- Refer URGENTLY if child has fever and / or if infection extends to the muscle\n- Apply antibiotic cream – triple antibiotic ointment</label>
+      </input>
+      <input ref="/data/results_group/res_ring_worm" appearance="h1 yellow">
+        <label>Ring Worm (Tinea)</label>
+      </input>
+      <input ref="/data/results_group/res_ring_worm_action">
+        <label>The child may have Ring Worm.\n\nProcedure:\n- If limited to a few patches: Grisefulvine or Ketoconazole cream\n- If extensive give: Ketoconazole 2-12month(6-10kg): 40mg/day 12mo-5yrs: 60 mg/day Or if: Age &gt;2: give griseofulvin, tablets, 125 mg with fatty meal (10mg/kg/day), 2 tablets once a day for 6 weeks\n- If in hair: shave hair, treat as above\n- If infected (red, warm, pus) add cloxacilline</label>
+      </input>
+      <input ref="/data/results_group/res_scabies" appearance="h1 yellow">
+        <label>Scabies</label>
+      </input>
+      <input ref="/data/results_group/res_scabies_action">
+        <label>The child may have Scabies.\n\nProcedure:\n- Treat itching: Calamine lotion\n- Apply: 25% topical Benzyl Benzoate at night, repeat for 3 days after washing.\n- Council hygiene measures: treat all people in the household who are affected, wash bed linen and clothes with warm water and put in the sun, wash affected persons\n- When infected add cloxaciline</label>
+      </input>
+      <input ref="/data/results_group/res_severe_malnutrition_anemia" appearance="h1 red">
+        <label>Moderate or Severe Acute Malnutrition with Anemia</label>
+      </input>
+      <input ref="/data/results_group/res_severe_malnutrition_anemia_action">
+        <label>The child may have moderate or severe acute malnutrition with anemia.\n\nProcedure:\n- Refer to malnutrition clinic\n- Iron-Folic Acid tablets – 1 per day</label>
+      </input>
+      <input ref="/data/results_group/res_severe_anemia" appearance="h1 red">
+        <label>Severe Anemia</label>
+      </input>
+      <input ref="/data/results_group/res_severe_anemia_action">
+        <label>The child may have severe anemia.\n\nProcedure:\n- Iron folic acid\n- Refer for investigation</label>
+      </input>
+      <input ref="/data/results_group/res_moderate_anemia" appearance="h1 yellow">
+        <label>Moderate Anemia</label>
+      </input>
+      <input ref="/data/results_group/res_moderate_anemia_action">
+        <label>The child may have moderate anemia.\n\nProcedure:\n- Iron, folic acid – 1 tablet once a day, give for 14 days\n- Albendazole (400 mg) 12-23 months – ½ co every 6 months 24-59 months – 1 co every 6 months\n- Nutrition counseling: green leaves, fruits, rasped carots and red beet</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label>Null Results Group</label>
+      <input ref="/data/null_results_group/res_null_results">
+        <label>No conditions were met and the patient does not require additional treatment, submit the form.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

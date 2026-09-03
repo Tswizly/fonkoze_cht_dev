@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Fever and Malaria</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ADT_FormX_Fever" version="20260829181611" prefix="J1!ADT_FormX_Fever!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <fever_malaria_group>
+            <fever_presence/>
+            <temperature/>
+            <fever_duration/>
+            <previous_fever/>
+            <fever_recurrance/>
+            <malaria_symptoms/>
+          </fever_malaria_group>
+          <calc_risk_malaria/>
+          <rapid_test_group>
+            <rapid_test/>
+            <rapid_test_result/>
+          </rapid_test_group>
+          <results_group>
+            <calc_malaria_positive/>
+            <calc_malaria_negative/>
+            <res_malaria_positive/>
+            <res_malaria_positive_action/>
+            <res_malaria_negative/>
+            <res_malaria_negative_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="malaria_symptoms">
+        <root>
+          <item>
+            <name>chills</name>
+            <label>Chills</label>
+          </item>
+          <item>
+            <name>heavy_headache</name>
+            <label>Heavy headache</label>
+          </item>
+          <item>
+            <name>profuse_sweating</name>
+            <label>Profuse sweating</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="positive_negative">
+        <root>
+          <item>
+            <name>positive</name>
+            <label>Positive</label>
+          </item>
+          <item>
+            <name>negative</name>
+            <label>Negative</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/fever_malaria_group/fever_presence" type="string" required="true()"/>
+      <bind nodeset="/data/fever_malaria_group/temperature" type="int" relevant=" /data/fever_malaria_group/fever_presence  = 'yes'"/>
+      <bind nodeset="/data/fever_malaria_group/fever_duration" type="int" relevant=" /data/fever_malaria_group/fever_presence  = 'yes'"/>
+      <bind nodeset="/data/fever_malaria_group/previous_fever" type="string" required="true()"/>
+      <bind nodeset="/data/fever_malaria_group/fever_recurrance" type="string" relevant=" /data/fever_malaria_group/fever_presence  = 'yes' or  /data/fever_malaria_group/previous_fever  = 'yes'"/>
+      <bind nodeset="/data/fever_malaria_group/malaria_symptoms" type="string" relevant=" /data/fever_malaria_group/fever_presence  = 'yes' or  /data/fever_malaria_group/previous_fever  = 'yes'"/>
+      <bind nodeset="/data/calc_risk_malaria" type="string" calculate="if(selected( /data/fever_malaria_group/malaria_symptoms , 'chills') or selected( /data/fever_malaria_group/malaria_symptoms , 'heavy_headache') or selected( /data/fever_malaria_group/malaria_symptoms , 'profuse_sweating') or  /data/fever_malaria_group/fever_presence  = 'yes' or  /data/fever_malaria_group/fever_recurrance  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/rapid_test_group" relevant=" /data/calc_risk_malaria  = 'true'"/>
+      <bind nodeset="/data/rapid_test_group/rapid_test" type="string" required="true()"/>
+      <bind nodeset="/data/rapid_test_group/rapid_test_result" type="string" relevant=" /data/rapid_test_group/rapid_test  = 'yes'"/>
+      <bind nodeset="/data/results_group/calc_malaria_positive" type="string" calculate="if( /data/rapid_test_group/rapid_test_result  = 'positive', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_malaria_negative" type="string" calculate="if( /data/rapid_test_group/rapid_test_result  = 'negative', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_malaria_positive" readonly="true()" type="string" relevant=" /data/results_group/calc_malaria_positive  = 'true'"/>
+      <bind nodeset="/data/results_group/res_malaria_positive_action" readonly="true()" type="string" relevant=" /data/results_group/calc_malaria_positive  = 'true'"/>
+      <bind nodeset="/data/results_group/res_malaria_negative" readonly="true()" type="string" relevant=" /data/results_group/calc_malaria_negative  = 'true'"/>
+      <bind nodeset="/data/results_group/res_malaria_negative_action" readonly="true()" type="string" relevant=" /data/results_group/calc_malaria_negative  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/fever_malaria_group">
+      <label>Fever and Malaria Assessment</label>
+      <select1 ref="/data/fever_malaria_group/fever_presence">
+        <label>Does the patient have a fever?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/fever_malaria_group/temperature">
+        <label>What is their temperature?</label>
+      </input>
+      <input ref="/data/fever_malaria_group/fever_duration">
+        <label>How long have they had the fever, in days?</label>
+      </input>
+      <select1 ref="/data/fever_malaria_group/previous_fever">
+        <label>If the patient does not have a fever but reports previously having a fever, or fever like symptoms, select yes to screen for symptoms.</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/fever_malaria_group/fever_recurrance">
+        <label>Is the fever intermittent or recurring? When does the fever come up?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select ref="/data/fever_malaria_group/malaria_symptoms">
+        <label>List of malaria symptoms to determine if fever is malaria.</label>
+        <itemset nodeset="instance('malaria_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/data/rapid_test_group">
+      <label>Rapid Test</label>
+      <select1 ref="/data/rapid_test_group/rapid_test">
+        <label>Did you give patient a rapid test?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/rapid_test_group/rapid_test_result">
+        <label>What is rapid test result?</label>
+        <itemset nodeset="instance('positive_negative')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_malaria_positive">
+        <label>Malaria</label>
+      </input>
+      <input ref="/data/results_group/res_malaria_positive_action">
+        <label>The patient has tested positive for Malaria. 
+
+Protocol: 
+-Chloroquine 150 mg, 4 tablets the first day, 3 tablets the following day, 3 tablets the third day
+
+Counselling:
+- drink lots of fluids
+- watch out for danger signs: alteration of consciousness, respiratory distress or abdominal pain, in which case you have to go to the hospital</label>
+      </input>
+      <input ref="/data/results_group/res_malaria_negative">
+        <label>Negative for Malaria</label>
+      </input>
+      <input ref="/data/results_group/res_malaria_negative_action">
+        <label>The patient has tested negative for Malaria. 
+
+Protocol:
+-Paracetamol 500 mg, 1 to 2 tablets, three times per day for 3 days. 
+
+Counselling:
+- drink lots of fluids
+- watch out for danger signs: alteration of consciousness, respiratory distress or abdominal pain, in which case you have to go to the hospital</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

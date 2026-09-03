@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Chronic Pain</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ELD_FormX_ChronicPain" version="20260827123729" prefix="J1!ELD_FormX_ChronicPain!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <client_uuid/>
+          <client_id/>
+          <client_name/>
+          <client_short_name/>
+          <client_sex/>
+          <client_date_of_birth/>
+          <client_age_in_years/>
+          <client_age_in_months/>
+          <client_age_in_days/>
+          <client_age_in_weeks/>
+          <chronic_pain_group>
+            <chronic_pain_symptoms/>
+          </chronic_pain_group>
+          <results_group>
+            <calc_arthroses_arthritis/>
+            <res_arthroses_arthritis/>
+            <res_arthroses_arthritis_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="chronic_pain_symptoms">
+        <root>
+          <item>
+            <name>joint_pain</name>
+            <label>Joint pain</label>
+          </item>
+          <item>
+            <name>swollen_joints</name>
+            <label>Swollen joints</label>
+          </item>
+          <item>
+            <name>morning_stiffness</name>
+            <label>Morning stiffness</label>
+          </item>
+          <item>
+            <name>worsened_by_use</name>
+            <label>Worsened by use</label>
+          </item>
+          <item>
+            <name>chronic_or_recurring_pain</name>
+            <label>Chronic or recurring pain</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/client_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/client_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/client_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/client_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/client_age_in_years" type="string" calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/client_age_in_months" type="string" calculate="difference-in-months(  /data/client_date_of_birth , today() )"/>
+      <bind nodeset="/data/client_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )"/>
+      <bind nodeset="/data/client_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/chronic_pain_group/chronic_pain_symptoms" type="string"/>
+      <bind nodeset="/data/results_group/calc_arthroses_arthritis" type="string" calculate="if(selected( /data/chronic_pain_group/chronic_pain_symptoms , 'joint_pain') or selected( /data/chronic_pain_group/chronic_pain_symptoms , 'swollen_joints') or selected( /data/chronic_pain_group/chronic_pain_symptoms , 'morning_stiffness') or selected( /data/chronic_pain_group/chronic_pain_symptoms , 'worsened_by_use') or selected( /data/chronic_pain_group/chronic_pain_symptoms , 'chronic_or_recurring_pain'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_arthroses_arthritis" readonly="true()" type="string" relevant=" /data/results_group/calc_arthroses_arthritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_arthroses_arthritis_action" readonly="true()" type="string" relevant=" /data/results_group/calc_arthroses_arthritis  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/chronic_pain_group">
+      <label>Chronic Pain</label>
+      <select ref="/data/chronic_pain_group/chronic_pain_symptoms">
+        <label>Is the patient experiencing any of the following?</label>
+        <itemset nodeset="instance('chronic_pain_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_arthroses_arthritis" appearance="h1 yellow">
+        <label>Arthroses / Arthritis</label>
+      </input>
+      <input ref="/data/results_group/res_arthroses_arthritis_action">
+        <label>The patient may have Arthroses / Arthritis.
+
+Procedure:
+- If joint isn't hot to the touch, massage with Dolex or local remedy
+- Co mioflex, one tablet every 8 hours after meals.
+- Counseling: continue regular daily activities as much as possible. Avoid prolonged bedrest or sitting
+- Gentle exercise helps reduce pain and stiffness.
+- Don't carry heavy loads</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

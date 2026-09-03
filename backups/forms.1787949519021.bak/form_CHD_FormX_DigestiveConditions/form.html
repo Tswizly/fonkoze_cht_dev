@@ -1,0 +1,112 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="CHD_FormX_DigestiveConditions">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">Child Digestive Conditions</h3>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/data/inputs" data-relevant="./source = 'user'"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/user"><h4><span lang="" class="question-label active">User</span></h4>
+<label class="question non-select or-appearance-select-contact or-appearance-type-person "><span lang="" class="question-label active">Contact ID</span><input type="text" name="/data/inputs/user/contact_id" data-type-xml="string"></label><section class="or-group " name="/data/inputs/user/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section><section class="or-group " name="/data/inputs/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<label class="question non-select or-appearance-db-object "><span lang="" class="question-label active">What is the patient's name?</span><input type="text" name="/data/inputs/contact/_id" data-type-xml="person"></label><section class="or-group " name="/data/inputs/contact/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section>
+      </section>
+      </section>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/data/digestive_checkup_group"><h4><span lang="" class="question-label active">Digestive Checkup</span></h4>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child have diarrhea?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/digestive_checkup_group/diarrhea" data-name="/data/digestive_checkup_group/diarrhea" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How long has the child had diarrhea (days)?</span><span class="required">*</span><input type="number" name="/data/digestive_checkup_group/diarrhea_duration" data-required="true()" data-constraint=". &lt;= 99" data-relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" data-type-xml="int"><span lang="" class="or-constraint-msg active">Cannot exceed 99</span><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How often does the child pass stool per day?</span><span class="required">*</span><input type="number" name="/data/digestive_checkup_group/diarrhea_frequency" data-required="true()" data-constraint=". &lt;= 99" data-relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" data-type-xml="int"><span lang="" class="or-constraint-msg active">Cannot exceed 99</span><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label><fieldset class="question simple-select or-branch pre-init ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">What color is the stool?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('diarrhea_color')/root/item"><input type="radio" name="/data/digestive_checkup_group/diarrhea_color" data-name="/data/digestive_checkup_group/diarrhea_color" data-required="true()" data-relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select or-branch pre-init ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is there blood in the child's stool?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/digestive_checkup_group/diarrhea_blood" data-name="/data/digestive_checkup_group/diarrhea_blood" data-required="true()" data-relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is the child vomiting repeatedly?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/digestive_checkup_group/vomiting_repeatedly" data-name="/data/digestive_checkup_group/vomiting_repeatedly" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">What is the child's physical demeanor?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('physical_demeanor')/root/item"><input type="checkbox" name="/data/digestive_checkup_group/physical_demeanor" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">After being pinched, does the skin of the abdomen go back regularly, slowly, or very slowly?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('skin_pinch')/root/item"><input type="radio" name="/data/digestive_checkup_group/skin_pinch" data-name="/data/digestive_checkup_group/skin_pinch" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child exhibit sunken eyes?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/digestive_checkup_group/sunken_eyes" data-name="/data/digestive_checkup_group/sunken_eyes" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+    <section class="or-group or-appearance-field-list or-appearance-summary " name="/data/results_group"><h4><span lang="" class="question-label active">Results</span></h4>
+<label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Severe Dehydration</span><input type="text" name="/data/results_group/res_severe_dehydration" data-relevant=" /data/results_group/calc_severe_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Place Levine tube, and use siringe to provide ORS through the tube, Then Refer URGENTLY to hospital with mother giving frequent sips of ORS on the way. Advise the mother to continue breastfeeding.</span><input type="text" name="/data/results_group/res_severe_dehydration_action" data-relevant=" /data/results_group/calc_severe_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">Some Dehydration</span><input type="text" name="/data/results_group/res_some_dehydration" data-relevant=" /data/results_group/calc_some_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give ORS, zinc supplements, and food for some dehydration (Plan B - DOSING). If child also has a severe classification: Refer URGENTLY to hospital with mother giving frequent sips of ORS on the way. Advise the mother to continue breastfeeding. Go to hospital in 5 days if not improving.</span><input type="text" name="/data/results_group/res_some_dehydration_action" data-relevant=" /data/results_group/calc_some_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-green "><span lang="" class="question-label active">No Dehydration</span><input type="text" name="/data/results_group/res_no_dehydration" data-relevant=" /data/results_group/calc_no_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give 4 packets of ORS to go home with as well as zinc supplements, and food to treat diarrhea at home (Plan A - DOSING). Advise mother when to go to hospital immediately.</span><input type="text" name="/data/results_group/res_no_dehydration_action" data-relevant=" /data/results_group/calc_no_dehydration  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Persistent Diarrhea</span><input type="text" name="/data/results_group/res_persistent_diarrhea" data-relevant=" /data/results_group/calc_persistent_diarrhea  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">ORS Treat dehydration before referral unless the child has another severe classification (DOSING). Refer to hospital.</span><input type="text" name="/data/results_group/res_persistent_diarrhea_action" data-relevant=" /data/results_group/calc_persistent_diarrhea  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">Dysentery</span><input type="text" name="/data/results_group/res_dysentery" data-relevant=" /data/results_group/calc_dysentery  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give trimetoprim sulfate (TMS) for 3 days (200/40 mg per 5 ml – 4 a 5 mg per kg per day in two doses) and metronidazole 250mg/5ml suspension – 20 mg par kg par jour en trois doses). Breastfeeding. Treated water.</span><input type="text" name="/data/results_group/res_dysentery_action" data-relevant=" /data/results_group/calc_dysentery  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">Gastritis</span><input type="text" name="/data/results_group/res_gastritis" data-relevant=" /data/results_group/calc_gastritis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give ORS. Metoclopramide IM – dosing: 0.1 mg par kg max 0.5 mg. Antacid: Litacid Gel. Counseling on good feeding practices: no spicy food, no salty food, no tomato sauce or mayonaise, regular small meals. Soup, vegetables, soup. Recommendation for hygiene: washing hands, no raw food, washing fruit with soap.</span><input type="text" name="/data/results_group/res_gastritis_action" data-relevant=" /data/results_group/calc_gastritis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">Risk of Cholera</span><input type="text" name="/data/results_group/res_cholera" data-relevant=" /data/results_group/calc_cholera  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">IV fluid – Ringer/lactate if severely dehydrated. ORS. Refer to cholera treatment center or hospital.</span><input type="text" name="/data/results_group/res_cholera_action" data-relevant=" /data/results_group/calc_cholera  = 'true'" data-type-xml="string" readonly></label>
+      </section>
+  
+<fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/data/meta/instanceID" data-preload="uid" data-preload-params="" data-type-xml="string"></label></fieldset>
+<fieldset id="or-calculated-items" style="display:none;">
+<label class="calculation non-select "><input type="hidden" name="/data/source" data-calculate="../inputs/source" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/source_id" data-calculate="../inputs/source_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_uuid" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_id" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_name" data-calculate="../inputs/contact/name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_short_name" data-calculate="../inputs/contact/short_name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_sex" data-calculate="../inputs/contact/sex" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_date_of_birth" data-calculate="../inputs/contact/date_of_birth" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_years" data-calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_months" data-calculate="difference-in-months(  /data/client_date_of_birth , today() )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_days" data-calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_weeks" data-calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_severe_dehydration_signs" data-calculate="if(selected( /data/digestive_checkup_group/physical_demeanor , 'lethargic_unconscious'), 1, 0) + if( /data/digestive_checkup_group/sunken_eyes  = 'yes', 1, 0) + if(selected( /data/digestive_checkup_group/physical_demeanor , 'drinking_difficulty'), 1, 0) + if( /data/digestive_checkup_group/skin_pinch  = 'very_slowly', 1, 0)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_severe_dehydration" data-calculate="if( /data/results_group/calc_severe_dehydration_signs  &gt;= 2, 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_some_dehydration_signs" data-calculate="if(selected( /data/digestive_checkup_group/physical_demeanor , 'restless_irritable'), 1, 0) + if( /data/digestive_checkup_group/sunken_eyes  = 'yes', 1, 0) + if(selected( /data/digestive_checkup_group/physical_demeanor , 'drinking_eagerly'), 1, 0) + if( /data/digestive_checkup_group/skin_pinch  = 'slowly', 1, 0)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_some_dehydration" data-calculate="if( /data/results_group/calc_some_dehydration_signs  &gt;= 2 and  /data/results_group/calc_severe_dehydration  != 'true', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_no_dehydration" data-calculate="if( /data/results_group/calc_severe_dehydration  != 'true' and  /data/results_group/calc_some_dehydration  != 'true' and  /data/digestive_checkup_group/diarrhea  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_persistent_diarrhea" data-calculate="if( /data/digestive_checkup_group/diarrhea_duration  &gt;= 14, 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_dysentery" data-calculate="if( /data/digestive_checkup_group/diarrhea_duration  &gt;= 14 and  /data/digestive_checkup_group/diarrhea_blood  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_gastritis" data-calculate="if( /data/digestive_checkup_group/vomiting_repeatedly  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_cholera" data-calculate="if( /data/digestive_checkup_group/diarrhea_color  = 'gray_white' and  /data/digestive_checkup_group/diarrhea_frequency  &gt;= 3, 'true', 'false')" data-type-xml="string"></label>
+</fieldset>
+</form>

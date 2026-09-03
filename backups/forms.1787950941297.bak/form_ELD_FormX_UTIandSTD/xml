@@ -1,0 +1,292 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Elderly UTI and STD</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ELD_FormX_UTIandSTD" version="20260827123730" prefix="J1!ELD_FormX_UTIandSTD!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <client_uuid/>
+          <client_id/>
+          <client_name/>
+          <client_short_name/>
+          <client_sex/>
+          <client_date_of_birth/>
+          <client_age_in_years/>
+          <client_age_in_months/>
+          <client_age_in_days/>
+          <client_age_in_weeks/>
+          <uti_std_assessment>
+            <urination_qualifiers/>
+            <pain_during_sex/>
+            <ulcer_presence/>
+            <discharge_qualifiers/>
+            <urethral_discharge/>
+            <urinary_retention_globus/>
+          </uti_std_assessment>
+          <results_group>
+            <calc_uti/>
+            <calc_std_discharge/>
+            <calc_std_ulcer/>
+            <calc_prostate_concerns/>
+            <res_uti/>
+            <res_uti_action/>
+            <res_std_discharge/>
+            <res_std_discharge_action/>
+            <res_std_ulcer/>
+            <res_std_ulcer_action/>
+            <res_prostate_concerns/>
+            <res_prostate_concerns_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="urination_qualifiers">
+        <root>
+          <item>
+            <name>frequent_urination</name>
+            <label>Frequent urination</label>
+          </item>
+          <item>
+            <name>pain_when_urinating</name>
+            <label>Pain when urinating</label>
+          </item>
+          <item>
+            <name>dark_urine</name>
+            <label>Dark urine</label>
+          </item>
+          <item>
+            <name>yellow_urine</name>
+            <label>Yellow urine</label>
+          </item>
+          <item>
+            <name>red_urine</name>
+            <label>Red urine</label>
+          </item>
+          <item>
+            <name>not_urinating_well</name>
+            <label>Not urinating well</label>
+          </item>
+          <item>
+            <name>impaired_urination</name>
+            <label>Impaired urination</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="discharge_qualifiers">
+        <root>
+          <item>
+            <name>dark_discharge</name>
+            <label>Dark discharge</label>
+          </item>
+          <item>
+            <name>more_discharge_than_usual</name>
+            <label>More discharge than usual</label>
+          </item>
+          <item>
+            <name>smelly_discharge</name>
+            <label>Smelly discharge</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/client_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/client_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/client_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/client_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/client_age_in_years" type="string" calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/client_age_in_months" type="string" calculate="difference-in-months(  /data/client_date_of_birth , today() )"/>
+      <bind nodeset="/data/client_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )"/>
+      <bind nodeset="/data/client_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/uti_std_assessment/urination_qualifiers" type="string"/>
+      <bind nodeset="/data/uti_std_assessment/pain_during_sex" type="string"/>
+      <bind nodeset="/data/uti_std_assessment/ulcer_presence" type="string"/>
+      <bind nodeset="/data/uti_std_assessment/discharge_qualifiers" type="string" relevant=" /data/client_sex  = 'female'"/>
+      <bind nodeset="/data/uti_std_assessment/urethral_discharge" type="string" relevant=" /data/client_sex  = 'male'"/>
+      <bind nodeset="/data/uti_std_assessment/urinary_retention_globus" type="string" relevant=" /data/client_sex  = 'male'"/>
+      <bind nodeset="/data/results_group/calc_uti" type="string" calculate="if(selected( /data/uti_std_assessment/urination_qualifiers , 'pain_when_urinating') or selected( /data/uti_std_assessment/urination_qualifiers , 'frequent_urination') or selected( /data/uti_std_assessment/urination_qualifiers , 'dark_urine'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_std_discharge" type="string" calculate="if(( /data/client_sex  = 'female' and (selected( /data/uti_std_assessment/discharge_qualifiers , 'dark_discharge') or selected( /data/uti_std_assessment/discharge_qualifiers , 'more_discharge_than_usual') or selected( /data/uti_std_assessment/discharge_qualifiers , 'smelly_discharge')) and  /data/uti_std_assessment/ulcer_presence  = 'no') or ( /data/client_sex  = 'male' and  /data/uti_std_assessment/urethral_discharge  = 'yes' and  /data/uti_std_assessment/ulcer_presence  = 'no'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_std_ulcer" type="string" calculate="if( /data/uti_std_assessment/ulcer_presence  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_prostate_concerns" type="string" calculate="if( /data/client_sex  = 'male' and (selected( /data/uti_std_assessment/urination_qualifiers , 'not_urinating_well') or selected( /data/uti_std_assessment/urination_qualifiers , 'impaired_urination') or  /data/uti_std_assessment/urinary_retention_globus  = 'yes'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_uti" readonly="true()" type="string" relevant=" /data/results_group/calc_uti  = 'true'"/>
+      <bind nodeset="/data/results_group/res_uti_action" readonly="true()" type="string" relevant=" /data/results_group/calc_uti  = 'true'"/>
+      <bind nodeset="/data/results_group/res_std_discharge" readonly="true()" type="string" relevant=" /data/results_group/calc_std_discharge  = 'true'"/>
+      <bind nodeset="/data/results_group/res_std_discharge_action" readonly="true()" type="string" relevant=" /data/results_group/calc_std_discharge  = 'true'"/>
+      <bind nodeset="/data/results_group/res_std_ulcer" readonly="true()" type="string" relevant=" /data/results_group/calc_std_ulcer  = 'true'"/>
+      <bind nodeset="/data/results_group/res_std_ulcer_action" readonly="true()" type="string" relevant=" /data/results_group/calc_std_ulcer  = 'true'"/>
+      <bind nodeset="/data/results_group/res_prostate_concerns" readonly="true()" type="string" relevant=" /data/results_group/calc_prostate_concerns  = 'true'"/>
+      <bind nodeset="/data/results_group/res_prostate_concerns_action" readonly="true()" type="string" relevant=" /data/results_group/calc_prostate_concerns  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/uti_std_assessment">
+      <label>UTI and STD Assessment</label>
+      <select ref="/data/uti_std_assessment/urination_qualifiers">
+        <label>Describe urine symptoms</label>
+        <itemset nodeset="instance('urination_qualifiers')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/uti_std_assessment/pain_during_sex">
+        <label>Does the patient experience pain during sex?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/uti_std_assessment/ulcer_presence">
+        <label>Is there an ulcer in the genital region?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select ref="/data/uti_std_assessment/discharge_qualifiers">
+        <label>Qualifiers of vaginal discharge.</label>
+        <itemset nodeset="instance('discharge_qualifiers')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/uti_std_assessment/urethral_discharge">
+        <label>Is the male experiencing urethral discharge?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/uti_std_assessment/urinary_retention_globus">
+        <label>Can the nurse feel a globus in the lower abdomen due to urinary retention?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_uti" appearance="h1 yellow">
+        <label>Urinary Tract Infection</label>
+      </input>
+      <input ref="/data/results_group/res_uti_action">
+        <label>The patient may have a Urinary Tract Infection. Procedure: Hydration – drink lots of fluids and treated water. Antibiotics (Ciprofloxacin 500 mg three times a day for 7 days. Counseling on hygiene.</label>
+      </input>
+      <input ref="/data/results_group/res_std_discharge" appearance="h1 yellow">
+        <label>STD - Syndromic treatment (discharge)</label>
+      </input>
+      <input ref="/data/results_group/res_std_discharge_action">
+        <label>The patient may have an STD. Procedure: Ciprofloxacine 500 mg, two times per day for 3 days And Doxycicline 100mg, twice a day for 14 days. Treat all partners. Counsel on condom use.</label>
+      </input>
+      <input ref="/data/results_group/res_std_ulcer" appearance="h1 red">
+        <label>Risk of Syphilis / STD (Ulcer)</label>
+      </input>
+      <input ref="/data/results_group/res_std_ulcer_action">
+        <label>The patient may have Syphilis or another STD. Procedure: Benzatine penicillin 2.4 Mio Units intramuscular injection (slowly!!) – single dose. Treat all partners. Counsel on condom use.</label>
+      </input>
+      <input ref="/data/results_group/res_prostate_concerns" appearance="h1 red">
+        <label>Prostatitis / Urinary Retention</label>
+      </input>
+      <input ref="/data/results_group/res_prostate_concerns_action">
+        <label>The patient may have prostatitis or urinary retention. Procedure: Urethral catheterization using a Nelaton catheter.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

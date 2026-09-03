@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Elderly Respiratory Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ELD_FormX_RespiratoryConditions" version="20260829181617" prefix="J1!ELD_FormX_RespiratoryConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <respiratory_conditions_group>
+            <respiratory_symptoms/>
+          </respiratory_conditions_group>
+          <results_group>
+            <calc_tuberculosis/>
+            <calc_asthma/>
+            <calc_pneumonia/>
+            <calc_cardiac_decompensation_risk/>
+            <calc_cardiac_decompensation/>
+            <res_tuberculosis/>
+            <res_tuberculosis_action/>
+            <res_asthma/>
+            <res_asthma_action/>
+            <res_pneumonia/>
+            <res_pneumonia_action/>
+            <res_cardiac_decompensation_risk/>
+            <res_cardiac_decompensation_risk_action/>
+            <res_cardiac_decompensation/>
+            <res_cardiac_decompensation_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="respiratory_symptoms">
+        <root>
+          <item>
+            <name>cough_greater_2_weeks</name>
+            <label>Cough &gt;2 weeks</label>
+          </item>
+          <item>
+            <name>weight_loss</name>
+            <label>Weight loss</label>
+          </item>
+          <item>
+            <name>night_sweats</name>
+            <label>Night sweats</label>
+          </item>
+          <item>
+            <name>wheezing</name>
+            <label>Wheezing</label>
+          </item>
+          <item>
+            <name>respiratory_distress</name>
+            <label>Respiratory distress</label>
+          </item>
+          <item>
+            <name>recurring_condition</name>
+            <label>Recurring condition</label>
+          </item>
+          <item>
+            <name>fever_over_38_greater_1_week</name>
+            <label>Fever over 38 for more than 1 week</label>
+          </item>
+          <item>
+            <name>cough</name>
+            <label>Cough</label>
+          </item>
+          <item>
+            <name>jugular_venous_distention</name>
+            <label>Jugular venous distention</label>
+          </item>
+          <item>
+            <name>oedema_feet_ankles</name>
+            <label>Oedema of feet and ankles</label>
+          </item>
+          <item>
+            <name>respiratory_distress_after_exercise</name>
+            <label>Respiratory distress especially after exercise</label>
+          </item>
+          <item>
+            <name>tiredness</name>
+            <label>Tiredness</label>
+          </item>
+          <item>
+            <name>symptoms_ongoing_several_weeks</name>
+            <label>Symptoms ongoing for several weeks</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/respiratory_conditions_group/respiratory_symptoms" type="string"/>
+      <bind nodeset="/data/results_group/calc_tuberculosis" type="string" calculate="if(selected( /data/respiratory_conditions_group/respiratory_symptoms , 'cough_greater_2_weeks') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'weight_loss') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'night_sweats'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_asthma" type="string" calculate="if(selected( /data/respiratory_conditions_group/respiratory_symptoms , 'wheezing') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'respiratory_distress') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'recurring_condition'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_pneumonia" type="string" calculate="if(selected( /data/respiratory_conditions_group/respiratory_symptoms , 'fever_over_38_greater_1_week') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'cough') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'respiratory_distress'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_cardiac_decompensation_risk" type="string" calculate="if(selected( /data/respiratory_conditions_group/respiratory_symptoms , 'jugular_venous_distention') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'oedema_feet_ankles') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'respiratory_distress_after_exercise'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_cardiac_decompensation" type="string" calculate="if(selected( /data/respiratory_conditions_group/respiratory_symptoms , 'tiredness') or selected( /data/respiratory_conditions_group/respiratory_symptoms , 'symptoms_ongoing_several_weeks'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_tuberculosis" readonly="true()" type="string" relevant=" /data/results_group/calc_tuberculosis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_tuberculosis_action" readonly="true()" type="string" relevant=" /data/results_group/calc_tuberculosis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/results_group/calc_asthma  = 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/results_group/calc_asthma  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/results_group/calc_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pneumonia_action" readonly="true()" type="string" relevant=" /data/results_group/calc_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cardiac_decompensation_risk" readonly="true()" type="string" relevant=" /data/results_group/calc_cardiac_decompensation_risk  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cardiac_decompensation_risk_action" readonly="true()" type="string" relevant=" /data/results_group/calc_cardiac_decompensation_risk  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cardiac_decompensation" readonly="true()" type="string" relevant=" /data/results_group/calc_cardiac_decompensation  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cardiac_decompensation_action" readonly="true()" type="string" relevant=" /data/results_group/calc_cardiac_decompensation  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/respiratory_conditions_group">
+      <label>Respiratory Conditions</label>
+      <select ref="/data/respiratory_conditions_group/respiratory_symptoms">
+        <label>Is the patient experiencing any of the following?</label>
+        <itemset nodeset="instance('respiratory_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_tuberculosis" appearance="h1 red">
+        <label>Tuberculosis</label>
+      </input>
+      <input ref="/data/results_group/res_tuberculosis_action">
+        <label>The patient may have Tuberculosis.
+
+Procedure:
+- Refer for diagnosis and treatment
+- Really motivate for referal (free treatment!)</label>
+      </input>
+      <input ref="/data/results_group/res_asthma" appearance="h1 yellow">
+        <label>Asthma</label>
+      </input>
+      <input ref="/data/results_group/res_asthma_action">
+        <label>The patient may have Asthma.
+
+Procedure:
+- Nebulizer for immediate treatment
+- Dexamethasone IM 8 mg
+- Send home with: Salbutamol tablet 4mg – 2 times day during one week
+- If condition does not improve after two days, go to the hospital</label>
+      </input>
+      <input ref="/data/results_group/res_pneumonia" appearance="h1 yellow">
+        <label>Pneumonia</label>
+      </input>
+      <input ref="/data/results_group/res_pneumonia_action">
+        <label>The patient may have Pneumonia.
+
+Procedure:
+- Azythromycine tablets 500 mg – 1 co per day for 5 days
+- Go to the hospital if no improvement after two days</label>
+      </input>
+      <input ref="/data/results_group/res_cardiac_decompensation_risk" appearance="h1 red">
+        <label>Risk of cardiac decompensation</label>
+      </input>
+      <input ref="/data/results_group/res_cardiac_decompensation_risk_action">
+        <label>The patient is at risk of cardiac decompensation.
+
+Procedure:
+- Refer</label>
+      </input>
+      <input ref="/data/results_group/res_cardiac_decompensation" appearance="h1 red">
+        <label>Decompensation cardiaque</label>
+      </input>
+      <input ref="/data/results_group/res_cardiac_decompensation_action">
+        <label>The patient may have decompensation cardiaque.
+
+Procedure:
+- Refer to hospital</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

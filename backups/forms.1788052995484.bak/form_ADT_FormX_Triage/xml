@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Triage</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ADT_FormX_Triage" version="20260828140033" prefix="J1!ADT_FormX_Triage!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <emergency_triage_group>
+            <has_emergency_symptoms/>
+            <emergency_symptoms/>
+          </emergency_triage_group>
+          <emergency_triage_summary>
+            <emergency_action/>
+          </emergency_triage_summary>
+          <vitals_general_group>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <temperature/>
+            <pulse_ox/>
+            <respiratory_rate/>
+            <heart_rate/>
+            <pregnancy_status/>
+            <general_symptoms/>
+          </vitals_general_group>
+          <route_diabetes/>
+          <route_digestive/>
+          <route_fever/>
+          <route_hypertension/>
+          <route_pregnancy/>
+          <route_respiratory/>
+          <route_skin/>
+          <route_stroke/>
+          <route_uti_std/>
+          <next_steps_group>
+            <note_diabetes/>
+            <note_digestive/>
+            <note_fever/>
+            <note_hypertension/>
+            <note_pregnancy/>
+            <note_respiratory/>
+            <note_skin/>
+            <note_stroke/>
+            <note_uti_std/>
+            <note_no_forms/>
+          </next_steps_group>
+          <child_assessment>
+            <vaccination_card/>
+            <vaccinated_expected/>
+            <refer_vaccination/>
+            <received_albendazole/>
+            <received_vitamin_a/>
+          </child_assessment>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="emergency_symptoms">
+        <root>
+          <item>
+            <name>altered_consciousness</name>
+            <label>Altered consciousness, seizures, inability to drink, respiratory distress</label>
+          </item>
+          <item>
+            <name>shock</name>
+            <label>Shock, hypotension, significant bleeding, severe dehydration</label>
+          </item>
+          <item>
+            <name>chest_pain</name>
+            <label>Severe chest pain, acute neurological deficit, suspected surgical abdomen</label>
+          </item>
+          <item>
+            <name>pregnancy_complications</name>
+            <label>Pregnant woman with bleeding, seizures, severe hypertension, severe pain, or complicated labor</label>
+          </item>
+          <item>
+            <name>severe_ill_child</name>
+            <label>Severely ill infant/child, complicated acute malnutrition</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="general_symptoms">
+        <root>
+          <item>
+            <name>diabetes</name>
+            <label>Excessive thirst, frequent urination, unexplained weight loss</label>
+          </item>
+          <item>
+            <name>digestive</name>
+            <label>Diarrhea, vomiting, nausea, or abdominal pain</label>
+          </item>
+          <item>
+            <name>fever</name>
+            <label>Fever or recent history of fever</label>
+          </item>
+          <item>
+            <name>respiratory</name>
+            <label>Cough, wheezing, or difficulty breathing</label>
+          </item>
+          <item>
+            <name>skin</name>
+            <label>Skin rash, itching, sores, or pale skin</label>
+          </item>
+          <item>
+            <name>stroke</name>
+            <label>Sudden loss of motricity, facial paralysis, or altered speech</label>
+          </item>
+          <item>
+            <name>uti_std</name>
+            <label>Painful urination, unusual discharge, or genital ulcers</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/emergency_triage_group/has_emergency_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/emergency_triage_group/emergency_symptoms" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/emergency_action" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/vitals_general_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required="true()" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/route_diabetes" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'diabetes'), 'true', 'false')"/>
+      <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'digestive'), 'true', 'false')"/>
+      <bind nodeset="/data/route_fever" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'fever') or  /data/vitals_general_group/temperature  &gt; 38, 'true', 'false')"/>
+      <bind nodeset="/data/route_hypertension" type="string" calculate="if( /data/vitals_general_group/bp_systolic  &gt;= 140 or  /data/vitals_general_group/bp_diastolic  &gt;= 90, 'true', 'false')"/>
+      <bind nodeset="/data/route_pregnancy" type="string" calculate="if( /data/vitals_general_group/pregnancy_status  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/route_respiratory" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'respiratory') or  /data/vitals_general_group/respiratory_rate  &gt; 20 or  /data/vitals_general_group/pulse_ox  &lt; 95, 'true', 'false')"/>
+      <bind nodeset="/data/route_skin" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'skin'), 'true', 'false')"/>
+      <bind nodeset="/data/route_stroke" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'stroke'), 'true', 'false')"/>
+      <bind nodeset="/data/route_uti_std" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms , 'uti_std'), 'true', 'false')"/>
+      <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_fever" readonly="true()" type="string" relevant=" /data/route_fever  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_hypertension" readonly="true()" type="string" relevant=" /data/route_hypertension  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_pregnancy" readonly="true()" type="string" relevant=" /data/route_pregnancy  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_respiratory" readonly="true()" type="string" relevant=" /data/route_respiratory  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_skin" readonly="true()" type="string" relevant=" /data/route_skin  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_stroke" readonly="true()" type="string" relevant=" /data/route_stroke  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_uti_std" readonly="true()" type="string" relevant=" /data/route_uti_std  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false'"/>
+      <bind nodeset="/data/child_assessment" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no' and  /data/patient_age_in_years  &lt; 5"/>
+      <bind nodeset="/data/child_assessment/vaccination_card" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/vaccinated_expected" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/refer_vaccination" readonly="true()" type="string" relevant=" /data/child_assessment/vaccinated_expected  = 'no'"/>
+      <bind nodeset="/data/child_assessment/received_albendazole" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/received_vitamin_a" type="string" required="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/emergency_triage_group">
+      <label>Emergency Triage</label>
+      <select1 ref="/data/emergency_triage_group/has_emergency_symptoms">
+        <label>Are any emergency symptoms present?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select ref="/data/emergency_triage_group/emergency_symptoms">
+        <label>Which emergency symptoms are present?</label>
+        <itemset nodeset="instance('emergency_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/data/emergency_triage_summary">
+      <label>Emergency Triage Summary</label>
+      <input ref="/data/emergency_triage_summary/emergency_action">
+        <label>Emergency! Refer patient immediately. Position patient, establish IV line if needed. Alert referral hospital. Inform patient about specific measures to take during referral. Make sure to note triage time and vital signs in application for referral.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/vitals_general_group">
+      <label>Vitals and General Assessment</label>
+      <input ref="/data/vitals_general_group/bp_systolic">
+        <label>Systolic blood pressure</label>
+      </input>
+      <input ref="/data/vitals_general_group/bp_diastolic">
+        <label>Diastolic blood pressure</label>
+      </input>
+      <input ref="/data/vitals_general_group/temperature">
+        <label>Temperature</label>
+      </input>
+      <input ref="/data/vitals_general_group/pulse_ox">
+        <label>Oxygen saturation (SpO2)</label>
+      </input>
+      <input ref="/data/vitals_general_group/respiratory_rate">
+        <label>Respiratory rate</label>
+      </input>
+      <input ref="/data/vitals_general_group/heart_rate">
+        <label>Heart rate</label>
+      </input>
+      <select1 ref="/data/vitals_general_group/pregnancy_status">
+        <label>Is the patient pregnant?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select ref="/data/vitals_general_group/general_symptoms">
+        <label>What symptoms is the patient experiencing?</label>
+        <itemset nodeset="instance('general_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/data/next_steps_group">
+      <label>Next Steps</label>
+      <input ref="/data/next_steps_group/note_diabetes">
+        <label>Please fill out the Diabetes form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_digestive">
+        <label>Please fill out the Digestive Conditions form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_fever">
+        <label>Please fill out the Fever and Malaria form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_hypertension">
+        <label>Please fill out the Hypertension form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_pregnancy">
+        <label>Please fill out the Pregnancy form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_respiratory">
+        <label>Please fill out the Respiratory Conditions form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_skin">
+        <label>Please fill out the Skin Conditions form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_stroke">
+        <label>Please fill out the Stroke form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_uti_std">
+        <label>Please fill out the UTI and STD form next.</label>
+      </input>
+      <input ref="/data/next_steps_group/note_no_forms">
+        <label>No additional forms are required based on the current assessment.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/child_assessment">
+      <label>Child Assessment</label>
+      <select1 ref="/data/child_assessment/vaccination_card">
+        <label>Does the child have a vaccination card?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/child_assessment/vaccinated_expected">
+        <label>Is the child vaccinated as expected?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/child_assessment/refer_vaccination">
+        <label>Refer the child to a vaccination post.</label>
+      </input>
+      <select1 ref="/data/child_assessment/received_albendazole">
+        <label>Has the child received Albendazole (deworming)?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/child_assessment/received_vitamin_a">
+        <label>Has the child received Vitamin A?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

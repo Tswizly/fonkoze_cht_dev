@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Diabetes</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ADT_FormX_Diabetes" version="20260827124010" prefix="J1!ADT_FormX_Diabetes!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <client_uuid/>
+          <client_id/>
+          <client_name/>
+          <client_short_name/>
+          <client_sex/>
+          <client_date_of_birth/>
+          <client_age_in_years/>
+          <client_age_in_months/>
+          <client_age_in_days/>
+          <client_age_in_weeks/>
+          <diabetes_checkup_group>
+            <diabetes_symptoms/>
+            <hereditary_diabetes/>
+            <blood_glucose/>
+            <time_of_last_meal/>
+          </diabetes_checkup_group>
+          <results_group>
+            <calc_hyperglycemia_mild/>
+            <calc_hyperglycemia_moderate/>
+            <calc_hyperglycemia_severe/>
+            <res_hyperglycemia_mild/>
+            <res_hyperglycemia_mild_action/>
+            <res_hyperglycemia_moderate/>
+            <res_hyperglycemia_moderate_action/>
+            <res_hyperglycemia_severe/>
+            <res_hyperglycemia_severe_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="diabetes_symptoms">
+        <root>
+          <item>
+            <name>tiredness</name>
+            <label>Appears tired or lethargic</label>
+          </item>
+          <item>
+            <name>weight_loss</name>
+            <label>Experienced weight loss</label>
+          </item>
+          <item>
+            <name>frequent_urination</name>
+            <label>Frequent urination</label>
+          </item>
+          <item>
+            <name>frequent_eating</name>
+            <label>Wants to eat a lot</label>
+          </item>
+          <item>
+            <name>frequent_drinking</name>
+            <label>Drinks a lot</label>
+          </item>
+          <item>
+            <name>excessive_sweating</name>
+            <label>Excessive sweating / night sweats</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/client_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/client_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/client_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/client_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/client_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/client_age_in_years" type="string" calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/client_age_in_months" type="string" calculate="difference-in-months(  /data/client_date_of_birth , today() )"/>
+      <bind nodeset="/data/client_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )"/>
+      <bind nodeset="/data/client_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/diabetes_checkup_group/diabetes_symptoms" type="string"/>
+      <bind nodeset="/data/diabetes_checkup_group/hereditary_diabetes" type="string" required="true()"/>
+      <bind nodeset="/data/diabetes_checkup_group/blood_glucose" type="int" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/diabetes_checkup_group/time_of_last_meal" type="dateTime" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0" constraint="decimal-date-time(.) &gt;= decimal-date-time(today()) - 3" jr:constraintMsg="Cannot be more than 3 days prior to today."/>
+      <bind nodeset="/data/results_group/calc_hyperglycemia_mild" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt;= 120 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 200, 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_hyperglycemia_moderate" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 200 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 400, 'true', 'false')"/>
+      <bind nodeset="/data/results_group/calc_hyperglycemia_severe" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 400, 'true', 'false')"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild_action" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate_action" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_severe" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_severe_action" readonly="true()" type="string" relevant=" /data/results_group/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/diabetes_checkup_group">
+      <label>Diabetes Checkup</label>
+      <select ref="/data/diabetes_checkup_group/diabetes_symptoms">
+        <label>Is the patient experiencing any of the following symptoms?</label>
+        <itemset nodeset="instance('diabetes_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/diabetes_checkup_group/hereditary_diabetes">
+        <label>Do any of the patient's relatives have diabetes?</label>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+      <input ref="/data/diabetes_checkup_group/blood_glucose">
+        <label>Blood glucose value measured by diabetes finger prick test (mg/dL):</label>
+      </input>
+      <input ref="/data/diabetes_checkup_group/time_of_last_meal">
+        <label>When did the patient last eat?</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_hyperglycemia_mild">
+        <label>Hyperglycemia</label>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_mild_action">
+        <label>The patient is hyperglycemic. 
+
+Protocol: 
+Counseling
+-Explain that the blood sugar is higher than normal but is not dangerously high. 
+-If measurement was after a meal, request to come back to following kwen Sante Pam without having eaten for a repeat test to confirm diabetes or not
+
+Advise the patient to:
+-Eat regular meals and avoid skipping meals. 
+-Reduce foods and drinks with added sugar, including soft drinks, sweetened juices, candies, cakes, and pastries. 
+-Limit large portions of rice, bread, pasta, and other refined starches. 
+-Choose whole grains, beans, vegetables, and fresh fruit. 
+-Include lean protein (beans, fish, eggs, poultry) with meals. 
+-Avoid excessive fried and fatty foods</label>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate">
+        <label>Diabetes - Hyperglycemia</label>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate_action">
+        <label>The patient has diabetes. 
+
+Protocol:
+-Metformin, newly diagnosed type 2 diabetes, 500 mg with breakfast during one week 
+-If well tolerated, 500 mg twice daily with meals and then back for blood glucose test,
+-If glycaemic control remains inadequate after 1–2 weeks, 
+increase by 500 mg per week
+Increase by 500 mg/day each week as tolerated
+
+Maintenance
+1,000 mg twice daily 
+(maximum 2 g/day)
+
+Counseling – see above and leaflet</label>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_severe">
+        <label>Diabetes - Hyperglycemia</label>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_severe_action">
+        <label>The patient has diabetes and extreme hyperglycemia. 
+
+Protocol:
+Refer</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

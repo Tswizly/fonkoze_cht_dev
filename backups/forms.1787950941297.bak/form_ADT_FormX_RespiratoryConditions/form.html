@@ -1,0 +1,133 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="ADT_FormX_RespiratoryConditions">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">Respiratory Conditions</h3>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/data/inputs" data-relevant="./source = 'user'"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/user"><h4><span lang="" class="question-label active">User</span></h4>
+<label class="question non-select or-appearance-select-contact or-appearance-type-person "><span lang="" class="question-label active">Contact ID</span><input type="text" name="/data/inputs/user/contact_id" data-type-xml="string"></label><section class="or-group " name="/data/inputs/user/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section><section class="or-group " name="/data/inputs/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<label class="question non-select or-appearance-db-object "><span lang="" class="question-label active">What is the patient's name?</span><input type="text" name="/data/inputs/contact/_id" data-type-xml="person"></label><section class="or-group " name="/data/inputs/contact/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section>
+      </section>
+      </section>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/data/respiratory_conditions_group"><h4><span lang="" class="question-label active">Respiratory Conditions</span></h4>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the adult have a cough?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/adult_coughing" data-name="/data/respiratory_conditions_group/adult_coughing" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How long has the adult had this cough, in days?</span><input type="number" name="/data/respiratory_conditions_group/cough_duration" data-constraint=". &lt;= 999" data-relevant=" /data/respiratory_conditions_group/adult_coughing  = 'yes'" data-type-xml="int"><span class="or-constraint-msg active" lang="" data-i18n="constraint.invalid">Value not allowed</span></label><fieldset class="question simple-select or-branch pre-init "><fieldset>
+<legend>
+<span lang="" class="question-label active">What is the cough like?</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('qualify_cough')/root/item"><input type="checkbox" name="/data/respiratory_conditions_group/qualify_cough" data-relevant=" /data/respiratory_conditions_group/adult_coughing  = 'yes'" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset></fieldset>
+<label class="question non-select "><span lang="" class="question-label active">What is the adults breathing rate?</span><span class="required">*</span><span lang="" class="or-hint active">Determine with pulse oximeter if possible.</span><input type="number" name="/data/respiratory_conditions_group/breathing_rate" data-required="true()" data-constraint=". &lt;= 999" data-type-xml="int"><span class="or-constraint-msg active" lang="" data-i18n="constraint.invalid">Value not allowed</span><span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span></label><label class="question non-select "><span lang="" class="question-label active">What is the adults oxygen saturation</span><input type="number" name="/data/respiratory_conditions_group/oxygen_saturation" data-constraint=". &lt;= 100" data-type-xml="decimal" step="any"><span class="or-constraint-msg active" lang="" data-i18n="constraint.invalid">Value not allowed</span></label><fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the adult have a fever?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/fever" data-name="/data/respiratory_conditions_group/fever" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">What is the adults temperature?</span><input type="number" name="/data/respiratory_conditions_group/temperature" data-constraint=". &lt;= 999" data-relevant=" /data/respiratory_conditions_group/fever  = 'yes'" data-type-xml="decimal" step="any"><span class="or-constraint-msg active" lang="" data-i18n="constraint.invalid">Value not allowed</span></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How long has the adult had this fever?</span><span lang="" class="or-hint active">Unit is days</span><input type="number" name="/data/respiratory_conditions_group/fever_duration" data-relevant=" /data/respiratory_conditions_group/fever  = 'yes'" data-type-xml="int"></label><fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is the adult wheezing?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/wheezing" data-name="/data/respiratory_conditions_group/wheezing" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the adult exhibit respiratory distress?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/respiratory_distress" data-name="/data/respiratory_conditions_group/respiratory_distress" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is the adult experiencing weight loss?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/weight_loss" data-name="/data/respiratory_conditions_group/weight_loss" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is the adult experiencing night sweats?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/night_sweats" data-name="/data/respiratory_conditions_group/night_sweats" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Are these symptoms recurring?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/recurring_condition" data-name="/data/respiratory_conditions_group/recurring_condition" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the adult have friends or family with TB?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_conditions_group/tb_exposure" data-name="/data/respiratory_conditions_group/tb_exposure" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/data/results_group"><h4><span lang="" class="question-label active">Results</span></h4>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Risk of TUBERCULOSIS</span><input type="text" name="/data/results_group/res_tuberculosis" data-relevant=" /data/results_group/calc_tuberculosis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The patient has a risk of tuberculosis.</p>Procedure:<ul><li>Refer for diagnosis and treatment</li><li>Really motivate for referal (free treatment!)</li></ul></span><input type="text" name="/data/results_group/res_tuberculosis_action" data-relevant=" /data/results_group/calc_tuberculosis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Asthma</span><input type="text" name="/data/results_group/res_asthma" data-relevant=" /data/results_group/calc_asthma  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The patient has asthma.</p>Procedure:<ul><li>Nebulizer for immediate treatment</li><li>Dexamethasone IM 8 mg</li><li>Send home with: Salbutamol tablet 4mg – 2 times day during one week</li><li>If condition does not improve after two days, go to the hospital</li></ul></span><input type="text" name="/data/results_group/res_asthma_action" data-relevant=" /data/results_group/calc_asthma  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Risk of Pneumonia</span><input type="text" name="/data/results_group/res_pneumonia" data-relevant=" /data/results_group/calc_pneumonia  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active"><p>The patient has a risk of pneumonia.</p>Procedure:<ul><li>Azythromycine tablets 500 mg – 1 co per day for 5 days</li><li>Go to the hospital if no improvement after two days</li></ul></span><input type="text" name="/data/results_group/res_pneumonia_action" data-relevant=" /data/results_group/calc_pneumonia  = 'true'" data-type-xml="string" readonly></label>
+      </section>
+  
+<fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/data/meta/instanceID" data-preload="uid" data-preload-params="" data-type-xml="string"></label></fieldset>
+<fieldset id="or-calculated-items" style="display:none;">
+<label class="calculation non-select "><input type="hidden" name="/data/source" data-calculate="../inputs/source" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/source_id" data-calculate="../inputs/source_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_uuid" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_id" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_name" data-calculate="../inputs/contact/name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_short_name" data-calculate="../inputs/contact/short_name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_sex" data-calculate="../inputs/contact/sex" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_date_of_birth" data-calculate="../inputs/contact/date_of_birth" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_years" data-calculate="floor( difference-in-months(  /data/client_date_of_birth , today() ) div 12 )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_months" data-calculate="difference-in-months(  /data/client_date_of_birth , today() )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_days" data-calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth ) )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/client_age_in_weeks" data-calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/client_date_of_birth )) div 7)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_tuberculosis" data-calculate="if( /data/respiratory_conditions_group/cough_duration  &gt; 14 and  /data/respiratory_conditions_group/weight_loss  = 'yes' and  /data/respiratory_conditions_group/night_sweats  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_asthma" data-calculate="if( /data/respiratory_conditions_group/wheezing  = 'yes' and  /data/respiratory_conditions_group/respiratory_distress  = 'yes' and  /data/respiratory_conditions_group/recurring_condition  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_pneumonia" data-calculate="if( /data/respiratory_conditions_group/temperature  &gt; 38 and  /data/respiratory_conditions_group/fever_duration  &gt; 7 and  /data/respiratory_conditions_group/adult_coughing  = 'yes' and  /data/respiratory_conditions_group/respiratory_distress  = 'yes', 'true', 'false')" data-type-xml="string"></label>
+</fieldset>
+</form>

@@ -1,0 +1,117 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ELD_FormX_Diabetes" version="20260829181616" prefix="J1!ELD_FormX_Diabetes!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <diabetes_checkup_group>
+            <diabetes_symptoms/>
+            <hereditary_diabetes/>
+            <blood_glucose/>
+            <time_of_last_meal/>
+          </diabetes_checkup_group>
+          <results_group>
+            <calc_hyperglycemia_mild/>
+            <calc_hyperglycemia_moderate/>
+            <calc_hyperglycemia_severe/>
+            <res_hyperglycemia_mild/>
+            <res_hyperglycemia_mild_action/>
+            <res_hyperglycemia_moderate/>
+            <res_hyperglycemia_moderate_action/>
+            <res_hyperglycemia_severe/>
+            <res_hyperglycemia_severe_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="diabetes_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>tiredness</name>
+            <label>Appears tired or lethargic</label>
+          </item>
+          <item>
+            <name>weight_loss</name>
+            <label>Experienced weight loss</label>
+          </item>
+          <item>
+            <name>frequent_urination</name>
+            <label>Frequent urination</label>
+          </item>
+          <item>
+            <name>frequent_eating</name>
+            <label>Wants to eat a lot</label>
+          </item>
+          <item>
+            <name>frequent_drinking</name>
+            <label>Drinks a lot</label>
+          </item>
+          <item>
+            <name>excessive_sweating</name>
+            <label>Excessive sweating / night sweats</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

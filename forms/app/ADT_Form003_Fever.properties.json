@@ -1,0 +1,9 @@
+{
+  "title": "Fever",
+  "icon": "icon-condition-fever@2x",
+  "context": {
+    "person": true,
+    "place": false,
+    "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64"
+  }
+}

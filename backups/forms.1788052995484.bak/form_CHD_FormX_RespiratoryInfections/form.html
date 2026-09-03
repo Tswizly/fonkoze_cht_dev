@@ -1,0 +1,148 @@
+<form autocomplete="off" novalidate="novalidate" class="or clearfix pages" dir="ltr" data-form-id="CHD_FormX_RespiratoryInfections">
+<section class="form-logo"></section><h3 dir="auto" id="form-title">Child Respiratory Infections</h3>
+  
+  
+    <section class="or-group or-branch pre-init or-appearance-field-list " name="/data/inputs" data-relevant="./source = 'user'"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/user"><h4><span lang="" class="question-label active">User</span></h4>
+<label class="question non-select or-appearance-select-contact or-appearance-type-person "><span lang="" class="question-label active">Contact ID</span><input type="text" name="/data/inputs/user/contact_id" data-type-xml="string"></label><section class="or-group " name="/data/inputs/user/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section><section class="or-group " name="/data/inputs/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<label class="question non-select or-appearance-db-object "><span lang="" class="question-label active">What is the patient's name?</span><input type="text" name="/data/inputs/contact/_id" data-type-xml="person"></label><section class="or-group " name="/data/inputs/contact/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+<section class="or-group " name="/data/inputs/contact/parent/parent/contact"><h4><span lang="" class="question-label active">NO_LABEL</span></h4>
+      </section>
+      </section>
+      </section>
+      </section>
+      </section>
+    <section class="or-group or-appearance-field-list " name="/data/respiratory_checkup_group"><h4><span lang="" class="question-label active">Respiratory Checkup</span></h4>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child exhibit any of the following danger signs?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('respiratory_danger_signs')/root/item"><input type="checkbox" name="/data/respiratory_checkup_group/respiratory_danger_signs" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child have a fever?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/fever_presence" data-name="/data/respiratory_checkup_group/fever_presence" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">The temperature of the child.</span><input type="number" name="/data/respiratory_checkup_group/child_temperature" data-constraint=". &gt;= 90 and . &lt;= 110" data-relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes'" data-type-xml="decimal" step="any"><span lang="" class="or-constraint-msg active">Cannot be below 90, cannot exceed 110</span></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How long has the child had a fever?</span><input type="number" name="/data/respiratory_checkup_group/fever_duration" data-constraint=". &lt;= 99" data-relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes'" data-type-xml="int"><span lang="" class="or-constraint-msg active">Cannot exceed 99 days</span></label><fieldset class="question simple-select or-branch pre-init "><fieldset>
+<legend>
+<span lang="" class="question-label active">If the child has had a fever longer than 7 days, has the fever been present every day?</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/extended_fever_duration" data-name="/data/respiratory_checkup_group/extended_fever_duration" data-relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/fever_duration  &gt;= 7" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset></fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Is the child coughing or having difficulty breathing?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/child_coughing" data-name="/data/respiratory_checkup_group/child_coughing" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<label class="question or-branch pre-init non-select "><span lang="" class="question-label active">How long as the child been coughing, in days?</span><input type="number" name="/data/respiratory_checkup_group/cough_duration" data-constraint=". &lt;= 99" data-relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" data-type-xml="int"><span lang="" class="or-constraint-msg active">Cannot exceed 99 days</span></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Count the number of breaths for one minute. Pulse oximeter may be used.</span><span lang="" class="or-hint active">Child must be calm.</span><input type="number" name="/data/respiratory_checkup_group/breathing_rate" data-constraint=". &lt;= 999" data-relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" data-type-xml="int"><span lang="" class="or-constraint-msg active">Cannot exceed 999</span></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Using the pulse oximeter, determin the child's oxygen saturation.</span><input type="number" name="/data/respiratory_checkup_group/oxygen_saturation" data-constraint=". &lt;= 100" data-relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" data-type-xml="decimal" step="any"><span lang="" class="or-constraint-msg active">Cannot exceed 100</span></label><fieldset class="question simple-select or-branch pre-init "><fieldset>
+<legend>
+<span lang="" class="question-label active">Which of the following coughing danger signs does the child exhibit, if any?</span><span lang="" class="or-hint active">Look, listen and feel for chest indrawing, stridor, wheezing, and nasal flaring. Child must be calm.</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('cough_danger_signs')/root/item"><input type="checkbox" name="/data/respiratory_checkup_group/cough_danger_signs" data-relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset></fieldset>
+<fieldset class="question simple-select or-branch pre-init "><fieldset>
+<legend>
+<span lang="" class="question-label active">After nebulising, does the child still exhibit fast breathing?</span><span lang="" class="or-hint active">If child is wheezing with fast breathing or chest indrawing, nurse will nebulizer then reperform breath count and look for chest indrawing, then classify.</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/after_nebulising_breathing" data-name="/data/respiratory_checkup_group/after_nebulising_breathing" data-relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset></fieldset>
+<fieldset class="question simple-select or-branch pre-init "><fieldset>
+<legend>
+<span lang="" class="question-label active">After nebulising, does the child still exhibit chest indrawing?</span><span lang="" class="or-hint active">If child is wheezing with fast breathing or chest indrawing, nurse will nebulizer then reperform breath count and look for chest indrawing, then classify.</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/after_nebulising_chest_indrawing" data-name="/data/respiratory_checkup_group/after_nebulising_chest_indrawing" data-relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset></fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child have a runny nose?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/runny_nose" data-name="/data/respiratory_checkup_group/runny_nose" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child have a poor appetite?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/poor_appetite" data-name="/data/respiratory_checkup_group/poor_appetite" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the child have a sore throat?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/sore_throat" data-name="/data/respiratory_checkup_group/sore_throat" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+<fieldset class="question simple-select ">
+<fieldset>
+<legend>
+<span lang="" class="question-label active">Does the throat appear red, swollen, or covered in pus upon inspection?</span><span class="required">*</span>
+          </legend>
+<div class="option-wrapper">
+<label class="itemset-template" data-items-path="instance('yes_no')/root/item"><input type="radio" name="/data/respiratory_checkup_group/throat_appearance" data-name="/data/respiratory_checkup_group/throat_appearance" data-required="true()" data-type-xml="string" value=""></label><span class="itemset-labels" data-value-ref="name" data-label-ref="label">
+      </span>
+</div>
+</fieldset>
+<span class="or-required-msg active" lang="" data-i18n="constraint.required">This field is required</span>
+</fieldset>
+      </section>
+    <section class="or-group or-appearance-field-list or-appearance-summary " name="/data/results_group"><h4><span lang="" class="question-label active">Results</span></h4>
+<label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-red "><span lang="" class="question-label active">SEVERE PNEUMONIA or VERY SEVERE DISEASE</span><input type="text" name="/data/results_group/res_severe_pneumonia" data-relevant=" /data/results_group/calc_severe_pneumonia  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give first dose of an appropriate antibiotic. Acetaminophen. Refer URGENTLY to the hospital. Strict referral: warn parent that if they don't go they'll lose the child</span><input type="text" name="/data/results_group/res_severe_pneumonia_action" data-relevant=" /data/results_group/calc_severe_pneumonia  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">PNEUMONIA</span><input type="text" name="/data/results_group/res_pneumonia" data-relevant=" /data/results_group/calc_pneumonia  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Give oral Amoxicillin oral suspension for 5 days. If wheezing: Nebulization. Advise mother to go to hospital if fever doesn't go down.</span><input type="text" name="/data/results_group/res_pneumonia_action" data-relevant=" /data/results_group/calc_pneumonia  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-green "><span lang="" class="question-label active">COUGH OR COLD</span><input type="text" name="/data/results_group/res_cough_or_cold" data-relevant=" /data/results_group/calc_cough_or_cold  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">If wheezing: nebulizer. Prescribe a syringe and saline solution to clear out nose.</span><input type="text" name="/data/results_group/res_cough_or_cold_action" data-relevant=" /data/results_group/calc_cough_or_cold  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select or-appearance-h1 or-appearance-yellow "><span lang="" class="question-label active">TONSILLITIS</span><input type="text" name="/data/results_group/res_tonsillitis" data-relevant=" /data/results_group/calc_tonsillitis  = 'true'" data-type-xml="string" readonly></label><label class="question or-branch pre-init non-select "><span lang="" class="question-label active">Acetaminophen sirup. Give oral Amoxicillin oral suspension for 5 days. Nurse will call in 7 days to find out how child is doing.</span><input type="text" name="/data/results_group/res_tonsillitis_action" data-relevant=" /data/results_group/calc_tonsillitis  = 'true'" data-type-xml="string" readonly></label>
+      </section>
+  
+<fieldset id="or-preload-items" style="display:none;"><label class="calculation non-select "><input type="hidden" name="/data/meta/instanceID" data-preload="uid" data-preload-params="" data-type-xml="string"></label></fieldset>
+<fieldset id="or-calculated-items" style="display:none;">
+<label class="calculation non-select "><input type="hidden" name="/data/source" data-calculate="../inputs/source" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/source_id" data-calculate="../inputs/source_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_uuid" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_id" data-calculate="../inputs/contact/_id" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_name" data-calculate="../inputs/contact/name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_short_name" data-calculate="../inputs/contact/short_name" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_sex" data-calculate="../inputs/contact/sex" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_date_of_birth" data-calculate="../inputs/contact/date_of_birth" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_age_in_years" data-calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_age_in_months" data-calculate="difference-in-months(  /data/patient_date_of_birth , today() )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_age_in_days" data-calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/patient_age_in_weeks" data-calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_severe_pneumonia" data-calculate="if(count-selected( /data/respiratory_checkup_group/respiratory_danger_signs ) &gt; 0 or selected( /data/respiratory_checkup_group/cough_danger_signs , 'stridor') or  /data/respiratory_checkup_group/oxygen_saturation  &lt; 90, 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_pneumonia" data-calculate="if( /data/results_group/calc_severe_pneumonia  != 'true' and (selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing') or selected( /data/respiratory_checkup_group/cough_danger_signs , 'fast_breathing') or selected( /data/respiratory_checkup_group/cough_danger_signs , 'nasal_flaring')), 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_tonsillitis" data-calculate="if( /data/results_group/calc_severe_pneumonia  != 'true' and  /data/results_group/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/sore_throat  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes' and  /data/respiratory_checkup_group/throat_appearance  = 'yes', 'true', 'false')" data-type-xml="string"></label><label class="calculation non-select "><input type="hidden" name="/data/results_group/calc_cough_or_cold" data-calculate="if( /data/results_group/calc_severe_pneumonia  != 'true' and  /data/results_group/calc_pneumonia  != 'true' and  /data/results_group/calc_tonsillitis  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')" data-type-xml="string"></label>
+</fieldset>
+</form>
