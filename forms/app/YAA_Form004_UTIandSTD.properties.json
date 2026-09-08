@@ -2,7 +2,7 @@
   "title": "UTI and STD",
   "icon": "no_image_selected",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 17"
   }

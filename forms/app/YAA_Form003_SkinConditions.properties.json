@@ -2,7 +2,7 @@
   "title": "Skin Conditions",
   "icon": "icon-condition-rash",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 17"
   }

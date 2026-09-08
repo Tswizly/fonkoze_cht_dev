@@ -1,0 +1,8 @@
+{
+  "title": "Form Select",
+  "icon": "no_image_selected",
+  "context": {
+    "person": true,
+    "place": false
+  }
+}

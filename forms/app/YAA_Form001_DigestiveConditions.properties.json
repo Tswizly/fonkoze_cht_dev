@@ -2,7 +2,7 @@
   "title": "Digestive Conditions",
   "icon": "icon-condition-diarrhea@2x",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 17"
   }
