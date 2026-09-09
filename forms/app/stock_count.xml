@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Count</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine - Distributable drugs</value>
+          </text>
+          <text id="/data/Medicine/test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/test_drug:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:hint">
+            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_test_drug:label">
+            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_second_test_drug:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine - Distributable drugs</value>
+          </text>
+          <text id="/data/Medicine/test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/test_drug:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:hint">
+            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_test_drug:label">
+            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_second_test_drug:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine - Distributable drugs</value>
+          </text>
+          <text id="/data/Medicine/test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/test_drug:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/second_test_drug:hint">
+            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/s_test_drug:label">
+            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_second_test_drug:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_count" version="now()" prefix="J1!stock_count!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <date_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <Medicine>
+            <test_drug>0</test_drug>
+            <test_drug___count/>
+            <second_test_drug___set>0/0</second_test_drug___set>
+            <second_test_drug___unit>0/0</second_test_drug___unit>
+            <second_test_drug>0/0</second_test_drug>
+            <second_test_drug___count/>
+          </Medicine>
+          <place_id/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <s_test_drug/>
+            <s_second_test_drug/>
+          </summary>
+          <out>
+            <test_drug_availables/>
+            <second_test_drug_availables/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/date_id" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/Medicine/test_drug" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/test_drug___count" type="string" calculate=" /data/Medicine/test_drug "/>
+      <bind nodeset="/data/Medicine/second_test_drug___set" type="string" calculate="if(count-selected( /data/Medicine/second_test_drug ) &gt; 0 and count-selected(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/second_test_drug___unit" type="string" calculate="if(count-selected( /data/Medicine/second_test_drug ) &gt; 0 and count-selected(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/second_test_drug" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of 12 and y pill"/>
+      <bind nodeset="/data/Medicine/second_test_drug___count" type="string" calculate=" /data/Medicine/second_test_drug___set  * 12 +  /data/Medicine/second_test_drug___unit "/>
+      <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/s_test_drug" readonly="true()" type="string" relevant=" /data/Medicine/test_drug___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_second_test_drug" readonly="true()" type="string" relevant=" /data/Medicine/second_test_drug___count  &gt; 0"/>
+      <bind nodeset="/data/out/test_drug_availables" type="string" calculate=" /data/Medicine/test_drug___count "/>
+      <bind nodeset="/data/out/second_test_drug_availables" type="string" calculate=" /data/Medicine/second_test_drug___count "/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/Medicine">
+      <label ref="jr:itext('/data/Medicine:label')"/>
+      <input ref="/data/Medicine/test_drug">
+        <label ref="jr:itext('/data/Medicine/test_drug:label')"/>
+        <hint ref="jr:itext('/data/Medicine/test_drug:hint')"/>
+      </input>
+      <input ref="/data/Medicine/second_test_drug">
+        <label ref="jr:itext('/data/Medicine/second_test_drug:label')"/>
+        <hint ref="jr:itext('/data/Medicine/second_test_drug:hint')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/s_test_drug" appearance="li">
+        <label ref="jr:itext('/data/summary/s_test_drug:label')"/>
+      </input>
+      <input ref="/data/summary/s_second_test_drug" appearance="li">
+        <label ref="jr:itext('/data/summary/s_second_test_drug:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out"/>
+  </h:body>
+</h:html>

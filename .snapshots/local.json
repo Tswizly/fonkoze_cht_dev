@@ -174,7 +174,7 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "FnkHYwizssQanEq6w0NnFg=="
   },
   "form:ADT_Form002_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "FiYr7I3DGK3hZkytapSh8w=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "CYjFBwCNj86MHNWD8ery/w=="
   },
   "form:ADT_Form003_Fever": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "a6YsAhRrbTbgm5zqDimH9Q=="
@@ -186,7 +186,7 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "VT6BhFyAv4EyAcxZr3w0tQ=="
   },
   "form:ADT_Form006_RespiratoryConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "KHQ1TinM2jC2y7J6LnyBJw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "yJDWcc8NI+DMXqGRWc9MaA=="
   },
   "form:ADT_Form007_SkinConditions": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "Hdd6ZPl8cu/Q7BiZyCLfYA=="
@@ -277,5 +277,17 @@
   },
   "form:GEN.Form001.FormSelect": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "fi0mi3QzDxp44EpYtgeqBg=="
+  },
+  "form:stock_count": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Vw/2A46VMuqMelcksW3RdQ=="
+  },
+  "messages-en": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "OfvA066URLkedgAovgzRTQ=="
+  },
+  "messages-es": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "oVLMlsSK3wIVi4os2oUTwA=="
+  },
+  "messages-fr": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "88BLL1riFqJ+jsDOIQZ/sg=="
   }
 }

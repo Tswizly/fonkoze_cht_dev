@@ -1,4 +1,19 @@
 {
+  "_comment": "This is a note that locales below was added in order to catch errors thrown by the stock management system", 
+  "locales": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "es",
+      "name": "Spanish"
+    },
+    {
+      "code": "fr",
+      "name": "French"
+    }
+  ], 
   "languages": [
     {
       "locale": "en",

@@ -1,0 +1,183 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form006_RespiratoryConditions" version="20260908185725" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <respiratory_conditions_group>
+            <adult_coughing/>
+            <cough_duration/>
+            <qualify_cough/>
+            <breathing_rate/>
+            <oxygen_saturation/>
+            <fever/>
+            <temperature/>
+            <fever_duration/>
+            <wheezing/>
+            <respiratory_distress/>
+            <weight_loss/>
+            <night_sweats/>
+            <recurring_condition/>
+            <tb_exposure/>
+          </respiratory_conditions_group>
+          <calc_tuberculosis/>
+          <calc_asthma/>
+          <calc_pneumonia/>
+          <results_group>
+            <results_note/>
+            <res_tuberculosis/>
+            <res_tuberculosis_action/>
+            <res_asthma/>
+            <res_asthma_action/>
+            <res_pneumonia/>
+            <res_pneumonia_action/>
+          </results_group>
+          <treatment_decision_group>
+            <confirmed_conditions/>
+          </treatment_decision_group>
+          <treatments_administered_group>
+            <tuberculosis_instructions/>
+            <tb_referral>1</tb_referral>
+            <asthma_instructions/>
+            <nebulizer>1</nebulizer>
+            <dexamethasone>1</dexamethasone>
+            <salbutamol>1</salbutamol>
+            <pneumonia_instructions/>
+            <azythromycine>1</azythromycine>
+            <hospital_referral>1</hospital_referral>
+          </treatments_administered_group>
+          <treatments_provided/>
+          <encounter_summary_group>
+            <summary_conditions_note/>
+            <summary_treatments_note/>
+            <summary_followup_note/>
+          </encounter_summary_group>
+          <null_results_group>
+            <no_treatment_note/>
+          </null_results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="qualify_cough">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>dry_cough</name>
+            <label>Dry cough</label>
+          </item>
+          <item>
+            <name>mucus_cough</name>
+            <label>Mucus cough</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="confirmed_conditions">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>tuberculosis</name>
+            <label>Tuberculosis</label>
+          </item>
+          <item>
+            <name>asthma</name>
+            <label>Asthma</label>
+          </item>
+          <item>
+            <name>pneumonia</name>
+            <label>Pneumonia</label>
+          </item>
+          <item>
+            <name>none</name>
+            <label>None of the above</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="treatments_provided">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>tb_referral</name>
+            <label>Refer for diagnosis and treatment (TB)</label>
+          </item>
+          <item>
+            <name>nebulizer</name>
+            <label>Nebulizer for immediate treatment</label>
+          </item>
+          <item>
+            <name>dexamethasone</name>
+            <label>Dexamethasone IM 8 mg</label>
+          </item>
+          <item>
+            <name>salbutamol</name>
+            <label>Salbutamol tablet 4mg – 2 times day during 1 week</label>
+          </item>
+          <item>
+            <name>azythromycine</name>
+            <label>Azythromycine tablets 500 mg – 1 co per day for 5 days</label>
+          </item>
+          <item>
+            <name>hospital_referral</name>
+            <label>Referral to hospital if no improvement after 2 days</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

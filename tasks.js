@@ -1,4 +1,8 @@
+const configs = require('./stock-monitoring.config.json');
+const { getStockMonitoringTasks } = require('@medic/cht-stock-monitoring-workflow');
+
 module.exports = [
+  ...getStockMonitoringTasks(configs),
   // ----------------------------------------------------
   // DIGESTIVE CONDITIONS
   // ----------------------------------------------------

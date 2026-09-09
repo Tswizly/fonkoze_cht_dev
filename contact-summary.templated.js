@@ -1,6 +1,10 @@
 const thisContact = contact;
 const thisLineage = lineage;
 
+//stock monitoring
+const configs = require('./stock-monitoring.config.json');
+const { getStockMonitoringSummaryCards } = require('@medic/cht-stock-monitoring-workflow');
+
 const fields = [
   { appliesToType: 'person', label: 'patient_id', value: thisContact.patient_id, width: 4 },
   { appliesToType: 'person', label: 'contact.age', value: thisContact.date_of_birth, width: 4, filter: 'age' },
@@ -11,7 +15,9 @@ const fields = [
 
 module.exports = {
   fields: fields,
-  //cards: [],
+  cards: [
+    ...getStockMonitoringSummaryCards(configs,reports)
+  ],
   //context: {}
 };
 

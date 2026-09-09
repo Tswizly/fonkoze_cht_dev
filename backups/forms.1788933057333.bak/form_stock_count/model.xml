@@ -1,0 +1,53 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_count" version="now()" prefix="J1!stock_count!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <date_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <Medicine>
+            <test_drug>0</test_drug>
+            <test_drug___count/>
+            <second_test_drug___set>0/0</second_test_drug___set>
+            <second_test_drug___unit>0/0</second_test_drug___unit>
+            <second_test_drug>0/0</second_test_drug>
+            <second_test_drug___count/>
+          </Medicine>
+          <place_id/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <s_test_drug/>
+            <s_second_test_drug/>
+          </summary>
+          <out>
+            <test_drug_availables/>
+            <second_test_drug_availables/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

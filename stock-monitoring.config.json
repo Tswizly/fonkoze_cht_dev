@@ -1,0 +1,133 @@
+{
+    "useItemCategory": true,
+    "features": {
+        "stock_count": {
+            "form_name": "stock_count",
+            "contact_types": [
+                {
+                    "contact_type": "person",
+                    "role": "nurse",
+                    "place_type": "clinic"
+                },
+                {
+                    "contact_type": "person",
+                    "role": "nurse_supervisor",
+                    "place_type": "health_center"
+                }
+            ],
+            "type": "action",
+            "title": {
+                "en": "Stock Count",
+                "es": "Stocko Counto",
+                "fr": "Stock Count"
+            }
+        }
+    },
+    "levels": {
+        "1": {
+            "contact_type": "person",
+            "role": "nurse",
+            "place_type": "clinic"
+        },
+        "2": {
+            "contact_type": "person",
+            "role": "nurse_supervisor",
+            "place_type": "health_center"
+        }
+    },
+    "languages": [
+        "en",
+        "es",
+        "fr"
+    ],
+    "defaultLanguage": "en",
+    "forms": {
+        "ADT_Form006_RespiratoryConditions": {
+            "items": {
+                "test_drug": {
+                    "deduced_type": "formula",
+                    "formular": "calculation"
+                }
+            },
+            "name": "ADT_Form006_RespiratoryConditions",
+            "reportedDate": "now()"
+        },
+        "ADT_Form002_DigestiveConditions": {
+            "items": {
+                "second_test_drug": {
+                    "deduction_type": "by_user",
+                    "formular": "relevant"
+                }
+            },
+            "name": "ADT_Form002_DigestiveConditions",
+            "reportedDate": "now()"
+        }
+    },
+    "items": {
+        "test_drug": {
+            "name": "test_drug",
+            "label": {
+                "en": "Test Drug",
+                "es": "Test Drug",
+                "fr": "Test Drug"
+            },
+            "isInSet": false,
+            "unit": {
+                "label": {
+                    "en": "Tablet",
+                    "es": "Tablet",
+                    "fr": "Tablet"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 0,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "second_test_drug": {
+            "name": "second_test_drug",
+            "label": {
+                "en": "Second Test Drug",
+                "es": "Second Test Drug",
+                "fr": "Second Test Drug"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of 12",
+                    "es": "Box of 12",
+                    "fr": "Box of 12"
+                },
+                "count": 12
+            },
+            "unit": {
+                "label": {
+                    "en": "Pill",
+                    "es": "Pill",
+                    "fr": "Pill"
+                }
+            },
+            "warning_total": 5,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        }
+    },
+    "categories": {
+        "Medicine": {
+            "name": "Medicine",
+            "label": {
+                "en": "Medicine",
+                "es": "Medicine",
+                "fr": "Medicine"
+            },
+            "description": {
+                "en": "Distributable drugs ",
+                "es": "Distributable drugs ",
+                "fr": "Distributable drugs "
+            }
+        }
+    },
+    "version": "1.2.2",
+    "last_update_date": "2026-09-09T04:00:31.385Z"
+}

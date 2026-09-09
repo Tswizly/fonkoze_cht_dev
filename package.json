@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@medic/cht-stock-monitoring-workflow": "^1.2.2",
+    "cht-nootils": "^4.2.0"
+  }
+}

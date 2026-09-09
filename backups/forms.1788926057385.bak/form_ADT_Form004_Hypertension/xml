@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Hypertension</h:title>
+    <model odk:xforms-version="1.0.0">
+      <instance>
+        <data id="ADT_Form004_Hypertension" version="20260902215904" prefix="J1!ADT_Form004_Hypertension!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <form_purpose_group>
+            <optional_note/>
+            <form_purpose/>
+          </form_purpose_group>
+          <hypertension_assessment_group>
+            <danger_signs/>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <bp_remeasure/>
+            <bp_systolic_remeasure/>
+            <bp_diastolic_remeasure/>
+          </hypertension_assessment_group>
+          <final_bp_systolic/>
+          <final_bp_diastolic/>
+          <calc_hypertensive_urgency/>
+          <calc_hypertension_grade_3/>
+          <calc_hypertension_grade_2/>
+          <calc_hypertension_grade_1/>
+          <results_group>
+            <res_hypertensive_urgency/>
+            <res_hypertensive_urgency_action/>
+            <res_hypertension_grade_1/>
+            <res_hypertension_grade_1_action/>
+            <res_hypertension_grade_2/>
+            <res_hypertension_grade_2_action/>
+            <res_hypertension_grade_3/>
+            <res_hypertension_grade_3_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <name>yes</name>
+            <label>Yes</label>
+          </item>
+          <item>
+            <name>no</name>
+            <label>No</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="Form_purpose">
+        <root>
+          <item>
+            <name>register_hypertension</name>
+            <label>Screen for hypertension</label>
+          </item>
+          <item>
+            <name>perform_followup</name>
+            <label>Perform followup on known hypertensive patient</label>
+          </item>
+        </root>
+      </instance>
+      <instance id="danger_signs">
+        <root>
+          <item>
+            <name>headache</name>
+            <label>Headache</label>
+          </item>
+          <item>
+            <name>neck_pain</name>
+            <label>Neck pain</label>
+          </item>
+          <item>
+            <name>neck_stiffness</name>
+            <label>Neck stiffness</label>
+          </item>
+          <item>
+            <name>vertigo</name>
+            <label>Vertigo</label>
+          </item>
+          <item>
+            <name>nausea</name>
+            <label>Nausea</label>
+          </item>
+          <item>
+            <name>blurry_vision</name>
+            <label>Blurry vision</label>
+          </item>
+          <item>
+            <name>difficulty_speaking</name>
+            <label>Difficulty speaking</label>
+          </item>
+          <item>
+            <name>disoriented</name>
+            <label>Disoriented</label>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/form_purpose_group/optional_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/form_purpose_group/form_purpose" type="string" required="true()"/>
+      <bind nodeset="/data/hypertension_assessment_group/danger_signs" type="string"/>
+      <bind nodeset="/data/hypertension_assessment_group/bp_systolic" type="int" required="true()" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/hypertension_assessment_group/bp_diastolic" type="int" required="true()" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/hypertension_assessment_group/bp_remeasure" type="string" calculate="if( /data/hypertension_assessment_group/bp_systolic  &gt;= 130 or  /data/hypertension_assessment_group/bp_diastolic  &gt;= 85, 'true', 'false')"/>
+      <bind nodeset="/data/hypertension_assessment_group/bp_systolic_remeasure" type="int" relevant=" /data/hypertension_assessment_group/bp_remeasure  = 'true'" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/hypertension_assessment_group/bp_diastolic_remeasure" type="int" relevant=" /data/hypertension_assessment_group/bp_remeasure  = 'true'" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/final_bp_systolic" type="string" calculate="if( /data/hypertension_assessment_group/bp_remeasure  = 'true', if( /data/hypertension_assessment_group/bp_systolic_remeasure  &lt;  /data/hypertension_assessment_group/bp_systolic ,  /data/hypertension_assessment_group/bp_systolic_remeasure ,  /data/hypertension_assessment_group/bp_systolic ),  /data/hypertension_assessment_group/bp_systolic )"/>
+      <bind nodeset="/data/final_bp_diastolic" type="string" calculate="if( /data/hypertension_assessment_group/bp_remeasure  = 'true', if( /data/hypertension_assessment_group/bp_diastolic_remeasure  &lt;  /data/hypertension_assessment_group/bp_diastolic ,  /data/hypertension_assessment_group/bp_diastolic_remeasure ,  /data/hypertension_assessment_group/bp_diastolic ),  /data/hypertension_assessment_group/bp_diastolic )"/>
+      <bind nodeset="/data/calc_hypertensive_urgency" type="string" calculate="if(selected( /data/hypertension_assessment_group/danger_signs , 'headache') or selected( /data/hypertension_assessment_group/danger_signs , 'neck_pain') or selected( /data/hypertension_assessment_group/danger_signs , 'neck_stiffness') or selected( /data/hypertension_assessment_group/danger_signs , 'vertigo') or selected( /data/hypertension_assessment_group/danger_signs , 'nausea') or selected( /data/hypertension_assessment_group/danger_signs , 'blurry_vision') or selected( /data/hypertension_assessment_group/danger_signs , 'difficulty_speaking') or selected( /data/hypertension_assessment_group/danger_signs , 'disoriented'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_hypertension_grade_3" type="string" calculate="if(( /data/final_bp_systolic  &gt; 180 or  /data/final_bp_diastolic  &gt; 110) and  /data/calc_hypertensive_urgency  != 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_hypertension_grade_2" type="string" calculate="if(( /data/final_bp_systolic  &gt; 150 or  /data/final_bp_diastolic  &gt; 100) and  /data/calc_hypertension_grade_3  != 'true' and  /data/calc_hypertensive_urgency  != 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_hypertension_grade_1" type="string" calculate="if(( /data/final_bp_systolic  &gt;= 140 or  /data/final_bp_diastolic  &gt;= 90) and  /data/calc_hypertension_grade_2  != 'true' and  /data/calc_hypertension_grade_3  != 'true' and  /data/calc_hypertensive_urgency  != 'true', 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_hypertensive_urgency  = 'true' or  /data/calc_hypertension_grade_3  = 'true' or  /data/calc_hypertension_grade_2  = 'true' or  /data/calc_hypertension_grade_1  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertensive_urgency" readonly="true()" type="string" relevant=" /data/calc_hypertensive_urgency  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertensive_urgency_action" readonly="true()" type="string" relevant=" /data/calc_hypertensive_urgency  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_1" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_1  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_1_action" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_1  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_2" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_2  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_2_action" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_2  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_3" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_3  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hypertension_grade_3_action" readonly="true()" type="string" relevant=" /data/calc_hypertension_grade_3  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_hypertensive_urgency  != 'true' and  /data/calc_hypertension_grade_3  != 'true' and  /data/calc_hypertension_grade_2  != 'true' and  /data/calc_hypertension_grade_1  != 'true'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label>NO_LABEL</label>
+      <group ref="/data/inputs/user">
+        <label>User</label>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label>Contact ID</label>
+        </input>
+        <group ref="/data/inputs/user/parent">
+          <label>NO_LABEL</label>
+        </group>
+      </group>
+      <group ref="/data/inputs/contact">
+        <label>NO_LABEL</label>
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label>What is the patient's name?</label>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <label>NO_LABEL</label>
+          <group ref="/data/inputs/contact/parent/parent">
+            <label>NO_LABEL</label>
+            <group ref="/data/inputs/contact/parent/parent/contact">
+              <label>NO_LABEL</label>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/form_purpose_group">
+      <label>Form purpose</label>
+      <input ref="/data/form_purpose_group/optional_note">
+        <label>&lt;optional note&gt;</label>
+      </input>
+      <select1 ref="/data/form_purpose_group/form_purpose">
+        <label>Select the reason for filling out the hypertension form.</label>
+        <itemset nodeset="instance('Form_purpose')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/hypertension_assessment_group">
+      <label>Hypertension Assessment</label>
+      <select ref="/data/hypertension_assessment_group/danger_signs">
+        <label>Danger signs</label>
+        <itemset nodeset="instance('danger_signs')/root/item">
+          <value ref="name"/>
+          <label ref="label"/>
+        </itemset>
+      </select>
+      <input ref="/data/hypertension_assessment_group/bp_systolic">
+        <label>Systolic blood pressure:</label>
+      </input>
+      <input ref="/data/hypertension_assessment_group/bp_diastolic">
+        <label>Diastolic blood pressure:</label>
+      </input>
+      <input ref="/data/hypertension_assessment_group/bp_systolic_remeasure">
+        <label>Systolic BP Remeasure</label>
+      </input>
+      <input ref="/data/hypertension_assessment_group/bp_diastolic_remeasure">
+        <label>Diastolic BP Remeasure</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label>Results</label>
+      <input ref="/data/results_group/res_hypertensive_urgency" appearance="h1 red">
+        <label>Hypertensive Urgency</label>
+      </input>
+      <input ref="/data/results_group/res_hypertensive_urgency_action">
+        <label>The patient has hypertensive urgency.
+
+Procedure:
+- Nifedipine 10 mg Rapid Release under the tongue
+- Send home with treatment as follows</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_1" appearance="h1 yellow">
+        <label>Hypertension Grade 1</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_1_action">
+        <label>The patient has Grade 1 Hypertension.
+
+Procedure:
+- Hydrochlorotiazide 25 mg, every morning
+- Give for one month and ask to come back for control.
+- Counseling on danger signs: go to hospital if blurry vision, headache, neck stiffness, difficulty speaking.
+- Healthy diet: reduce salt, reduce fried food, eat more fruit and vegeatables.
+- Counseling on the need to never stop the medication</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_2" appearance="h1 yellow">
+        <label>Hypertension Grade 2</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_2_action">
+        <label>The patient has Grade 2 Hypertension.
+
+Procedure:
+- Hydrochlorothiazide 25 mg every morning
+- Enalapril 10 mg twice per day
+- Give for one month and ask to come back for control.
+- Counseling on danger signs and healthy diet.</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_3" appearance="h1 red">
+        <label>Hypertension Grade 3</label>
+      </input>
+      <input ref="/data/results_group/res_hypertension_grade_3_action">
+        <label>The patient has Grade 3 Hypertension.
+
+Procedure:
+- Refer immediately</label>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label>No Results</label>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label>No conditions were met and the patient does not require additional treatment, submit the form.</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>
