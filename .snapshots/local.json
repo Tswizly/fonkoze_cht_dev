@@ -174,7 +174,7 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "FnkHYwizssQanEq6w0NnFg=="
   },
   "form:ADT_Form002_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "CYjFBwCNj86MHNWD8ery/w=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "IeserQWvusSYQN+dUbmKWA=="
   },
   "form:ADT_Form003_Fever": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "a6YsAhRrbTbgm5zqDimH9Q=="
@@ -186,7 +186,7 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "VT6BhFyAv4EyAcxZr3w0tQ=="
   },
   "form:ADT_Form006_RespiratoryConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "yJDWcc8NI+DMXqGRWc9MaA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "hdxdnx+YGOezxKwLfZNt/g=="
   },
   "form:ADT_Form007_SkinConditions": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "Hdd6ZPl8cu/Q7BiZyCLfYA=="
@@ -279,15 +279,39 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "fi0mi3QzDxp44EpYtgeqBg=="
   },
   "form:stock_count": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "Vw/2A46VMuqMelcksW3RdQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "3cUIgwmJyXeZiFJ2fNIXqw=="
   },
   "messages-en": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "OfvA066URLkedgAovgzRTQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Ev7RYDWOSnJlmtYWJAzcVA=="
   },
   "messages-es": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "oVLMlsSK3wIVi4os2oUTwA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "uDxh9GCLHV0uhmkU5iCYbQ=="
   },
   "messages-fr": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "88BLL1riFqJ+jsDOIQZ/sg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "leAHWBb0SZfabdQPY6sPXQ=="
+  },
+  "form:stock_discrepancy_resolution": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "8lKbDflBm3RTCT0HRUT8ow=="
+  },
+  "form:stock_recieved": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "KnWRdZXHdyGBoclxwTdHhg=="
+  },
+  "form:stock_supply": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "UlM6Mh8NaZMXGhciP9dgEA=="
+  },
+  "form:stock_order": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Gub5m/6eBA/+Mv09LP4Cfw=="
+  },
+  "form:stock_order_supply": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "sYjQiaFsrCSKdj5VLs34+g=="
+  },
+  "form:stock_out": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "RhUZwrPVmqUr01feJ/VL5A=="
+  },
+  "form:stock_return": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Oe2ZmazhlEStWHiVvr2H6Q=="
+  },
+  "form:stock_returned": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "zkJEL8A7Q48cIqlfgelQ4g=="
   }
 }

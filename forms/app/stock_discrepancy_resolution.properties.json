@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.parent.contact_type === 'health_center' && user.role === 'nurse_supervisor'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Discrepancy Resolution"
+        },
+        {
+            "locale": "es",
+            "content": "Stock Discrepancy Resolution"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Discrepancy Resolution"
+        }
+    ]
+}

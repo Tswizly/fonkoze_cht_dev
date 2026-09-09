@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Out</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_name:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/summary/test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/inputs/test_drug_at_hand "/> tablet**</value>
+          </text>
+          <text id="/data/summary/test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/inputs/test_drug_required "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_name:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/second_test_drug_at_hand___set "/> box of 12 <output value=" /data/summary/second_test_drug_at_hand___unit "/> pill**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/second_test_drug_required___set "/> box of 12 <output value=" /data/summary/second_test_drug_required___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_name:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/summary/test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/inputs/test_drug_at_hand "/> tablet**</value>
+          </text>
+          <text id="/data/summary/test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/inputs/test_drug_required "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_name:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/second_test_drug_at_hand___set "/> box of 12 <output value=" /data/summary/second_test_drug_at_hand___unit "/> pill**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/second_test_drug_required___set "/> box of 12 <output value=" /data/summary/second_test_drug_required___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_name:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/summary/test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/inputs/test_drug_at_hand "/> tablet**</value>
+          </text>
+          <text id="/data/summary/test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/inputs/test_drug_required "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_name:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/second_test_drug_at_hand___set "/> box of 12 <output value=" /data/summary/second_test_drug_at_hand___unit "/> pill**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/second_test_drug_required___set "/> box of 12 <output value=" /data/summary/second_test_drug_required___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="default">
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/test_drug_name:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/test_drug_note_at_hand:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/test_drug_note_required:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/second_test_drug_name:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_at_hand:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/summary/second_test_drug_note_required:label">
+            <value>&lt;note&gt;</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/test_drug_required:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/test_drug_at_hand:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/second_test_drug_required:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/second_test_drug_at_hand:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>-</value>
+          </text>
+          <text id="/data/out:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_out" version="now()" prefix="J1!stock_out!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <test_drug_required/>
+            <test_drug_at_hand/>
+            <second_test_drug_required/>
+            <second_test_drug_at_hand/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <contact_name/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine/>
+            <test_drug_name/>
+            <test_drug_note_at_hand/>
+            <test_drug_note_required/>
+            <second_test_drug_name/>
+            <second_test_drug_note_at_hand/>
+            <second_test_drug_note_required/>
+            <second_test_drug_at_hand___set/>
+            <second_test_drug_at_hand___unit/>
+            <second_test_drug_required___set/>
+            <second_test_drug_required___unit/>
+          </summary>
+          <out>
+            <end_group_note/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/test_drug_required" type="string"/>
+      <bind nodeset="/data/inputs/test_drug_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/second_test_drug_required" type="string"/>
+      <bind nodeset="/data/inputs/second_test_drug_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/contact_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/Medicine" readonly="true()" type="string" relevant=" /data/inputs/test_drug_at_hand  &lt; /data/inputs/test_drug_required  or  /data/inputs/second_test_drug_at_hand  &lt; /data/inputs/second_test_drug_required "/>
+      <bind nodeset="/data/summary/test_drug_name" readonly="true()" type="string" relevant=" /data/inputs/test_drug_at_hand  &lt;= /data/inputs/test_drug_required "/>
+      <bind nodeset="/data/summary/test_drug_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/test_drug_at_hand  &lt;= /data/inputs/test_drug_required "/>
+      <bind nodeset="/data/summary/test_drug_note_required" readonly="true()" type="string" relevant=" /data/inputs/test_drug_at_hand  &lt;= /data/inputs/test_drug_required "/>
+      <bind nodeset="/data/summary/second_test_drug_name" readonly="true()" type="string" relevant=" /data/inputs/second_test_drug_at_hand  &lt;= /data/inputs/second_test_drug_required "/>
+      <bind nodeset="/data/summary/second_test_drug_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/second_test_drug_at_hand  &lt;= /data/inputs/second_test_drug_required "/>
+      <bind nodeset="/data/summary/second_test_drug_note_required" readonly="true()" type="string" relevant=" /data/inputs/second_test_drug_at_hand  &lt;= /data/inputs/second_test_drug_required "/>
+      <bind nodeset="/data/summary/second_test_drug_at_hand___set" type="string" calculate="int( /data/inputs/second_test_drug_at_hand  div 12)"/>
+      <bind nodeset="/data/summary/second_test_drug_at_hand___unit" type="string" calculate=" /data/inputs/second_test_drug_at_hand  mod 12"/>
+      <bind nodeset="/data/summary/second_test_drug_required___set" type="string" calculate="int( /data/inputs/second_test_drug_required  div 12)"/>
+      <bind nodeset="/data/summary/second_test_drug_required___unit" type="string" calculate=" /data/inputs/second_test_drug_required  mod 12"/>
+      <bind nodeset="/data/out/end_group_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+        <group appearance="hidden" ref="/data/inputs/contact/parent">
+          <input ref="/data/inputs/contact/parent/_id"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/Medicine" appearance="h1 green">
+        <label ref="jr:itext('/data/summary/Medicine:label')"/>
+      </input>
+      <input ref="/data/summary/test_drug_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/test_drug_name:label')"/>
+      </input>
+      <input ref="/data/summary/test_drug_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/test_drug_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/test_drug_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/test_drug_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/second_test_drug_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/second_test_drug_name:label')"/>
+      </input>
+      <input ref="/data/summary/second_test_drug_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/second_test_drug_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/second_test_drug_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/second_test_drug_note_required:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out">
+      <input ref="/data/out/end_group_note">
+        <label>&lt;NOTE&gt;</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

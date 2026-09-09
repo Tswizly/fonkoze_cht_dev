@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "contact.contact_type === 'clinic' && user.parent.contact_type === 'health_center' && user.role === 'nurse_supervisor'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Supply"
+        },
+        {
+            "locale": "es",
+            "content": "Stock Supply"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Supply"
+        }
+    ]
+}

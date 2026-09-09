@@ -1,9 +1,9 @@
 {
+    "_NOTE": "expression <add colon here> ((contact.contact_type === 'clinic' || contact.type === 'clinic') && (user.role === 'nurse')) || ((contact.contact_type === 'health_center' || contact.type === 'health_center') && (user.role === 'nurse_supervisor'))",
     "icon": "icon-healthcare-medicine",
     "context": {
         "person": false,
-        "place": true,
-        "expression": "((contact.contact_type === 'clinic' || contact.type === 'clinic') && (user.role === 'nurse')) || ((contact.contact_type === 'health_center' || contact.type === 'health_center') && (user.role === 'nurse_supervisor'))"
+        "place": true
     },
     "title": [
         {

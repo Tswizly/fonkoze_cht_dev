@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Discrepancy Resolution</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/inputs/test_drug_received "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/inputs/test_drug_confirmed "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:hint">
+            <value><output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Discrepancy resolution&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_summary:label">
+            <value> Test Drug: **<output value=" /data/Medicine/___test_drug/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_summary:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/inputs/test_drug_received "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/inputs/test_drug_confirmed "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:hint">
+            <value><output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Discrepancy resolution&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_summary:label">
+            <value> Test Drug: **<output value=" /data/Medicine/___test_drug/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_summary:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___test_drug:label">
+            <value>Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/inputs/test_drug_received "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/inputs/test_drug_confirmed "/></value>
+          </text>
+          <text id="/data/Medicine/___test_drug/test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug:label">
+            <value>Second Test Drug</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_issued:label">
+            <value> Quantity issued: <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__issued___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_note_confirmed:label">
+            <value> Quantity confirmed: <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug__confirmed___unit "/> pill</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:label">
+            <value>What is the final quantity ?</value>
+          </text>
+          <text id="/data/Medicine/___second_test_drug/second_test_drug_qty:hint">
+            <value><output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Discrepancy resolution&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/test_drug_summary:label">
+            <value> Test Drug: **<output value=" /data/Medicine/___test_drug/test_drug___count "/> tablet**</value>
+          </text>
+          <text id="/data/summary/second_test_drug_summary:label">
+            <value> Second Test Drug: **<output value=" /data/Medicine/___second_test_drug/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/___second_test_drug/second_test_drug___unit "/> pill**</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_discrepancy_resolution" version="now()" prefix="J1!stock_discrepancy_resolution!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <test_drug_received/>
+            <test_drug_confirmed/>
+            <second_test_drug_received/>
+            <second_test_drug_confirmed/>
+            <level_1_place_id/>
+            <supply_confirm_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <user_contact_id/>
+          <supply_place_id/>
+          <Medicine>
+            <___test_drug>
+              <test_drug_note_issued/>
+              <test_drug_note_confirmed/>
+              <test_drug_qty/>
+              <test_drug___count/>
+            </___test_drug>
+            <___second_test_drug>
+              <second_test_drug__issued___set/>
+              <second_test_drug__issued___unit/>
+              <second_test_drug_note_issued/>
+              <second_test_drug__confirmed___set/>
+              <second_test_drug__confirmed___unit/>
+              <second_test_drug_note_confirmed/>
+              <second_test_drug___set/>
+              <second_test_drug___unit/>
+              <second_test_drug_qty>0/0</second_test_drug_qty>
+              <second_test_drug___count/>
+            </___second_test_drug>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <test_drug_summary/>
+            <second_test_drug_summary/>
+          </summary>
+          <out>
+            <test_drug_in/>
+            <second_test_drug_in/>
+          </out>
+          <descrepancy_doc db-doc="true">
+            <form/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <content_type/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <test_drug_out/>
+              <second_test_drug_out/>
+              <confirmation_id/>
+            </fields>
+          </descrepancy_doc>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/test_drug_received" type="string"/>
+      <bind nodeset="/data/inputs/test_drug_confirmed" type="string"/>
+      <bind nodeset="/data/inputs/second_test_drug_received" type="string"/>
+      <bind nodeset="/data/inputs/second_test_drug_confirmed" type="string"/>
+      <bind nodeset="/data/inputs/level_1_place_id" type="string"/>
+      <bind nodeset="/data/inputs/supply_confirm_id" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/place_id" type="string" calculate=" /data/supply_place_id "/>
+      <bind nodeset="/data/user_contact_id" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/supply_place_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/Medicine" relevant=" /data/inputs/test_drug_received  != /data/inputs/test_drug_confirmed  or  /data/inputs/second_test_drug_received  != /data/inputs/second_test_drug_confirmed "/>
+      <bind nodeset="/data/Medicine/___test_drug" relevant=" /data/inputs/test_drug_received  != /data/inputs/test_drug_confirmed "/>
+      <bind nodeset="/data/Medicine/___test_drug/test_drug_note_issued" readonly="true()" type="string"/>
+      <bind nodeset="/data/Medicine/___test_drug/test_drug_note_confirmed" readonly="true()" type="string"/>
+      <bind nodeset="/data/Medicine/___test_drug/test_drug_qty" type="decimal" required="true()" constraint=". &gt; 0"/>
+      <bind nodeset="/data/Medicine/___test_drug/test_drug___count" type="string" calculate=" /data/Medicine/___test_drug/test_drug_qty "/>
+      <bind nodeset="/data/Medicine/___second_test_drug" relevant=" /data/inputs/second_test_drug_received  != /data/inputs/second_test_drug_confirmed "/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug__issued___set" type="string" calculate="int( /data/inputs/second_test_drug_received  div 12)"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug__issued___unit" type="string" calculate=" /data/inputs/second_test_drug_received  mod 12"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug_note_issued" readonly="true()" type="string"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug__confirmed___set" type="string" calculate="int( /data/inputs/second_test_drug_confirmed  div 12)"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug__confirmed___unit" type="string" calculate=" /data/inputs/second_test_drug_confirmed  mod 12"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug_note_confirmed" readonly="true()" type="string"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug___set" type="string" calculate="if(count-selected( /data/Medicine/___second_test_drug/second_test_drug_qty ) &gt; 0 and count-selected(substring-before( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug___unit" type="string" calculate="if(count-selected( /data/Medicine/___second_test_drug/second_test_drug_qty ) &gt; 0 and count-selected(substring-after( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/___second_test_drug/second_test_drug_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug_qty" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')"/>
+      <bind nodeset="/data/Medicine/___second_test_drug/second_test_drug___count" type="string" calculate=" /data/Medicine/___second_test_drug/second_test_drug___set  * 12 +  /data/Medicine/___second_test_drug/second_test_drug___unit "/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/Medicine_summary" readonly="true()" type="string" relevant=" /data/Medicine/___test_drug/test_drug_qty  &gt; 0 or  /data/Medicine/___second_test_drug/second_test_drug_qty  &gt; 0"/>
+      <bind nodeset="/data/summary/test_drug_summary" readonly="true()" type="string" relevant=" /data/Medicine/___test_drug/test_drug___count  &gt; 0"/>
+      <bind nodeset="/data/summary/second_test_drug_summary" readonly="true()" type="string" relevant=" /data/Medicine/___second_test_drug/second_test_drug___count  &gt; 0"/>
+      <bind nodeset="/data/out/test_drug_in" type="string" calculate="if( /data/Medicine/___test_drug/test_drug_qty  != '' and  /data/Medicine/___test_drug/test_drug___count  &gt; 0, /data/inputs/test_drug_received - /data/Medicine/___test_drug/test_drug___count ,0)"/>
+      <bind nodeset="/data/out/second_test_drug_in" type="string" calculate="if( /data/Medicine/___second_test_drug/second_test_drug_qty  != '' and  /data/Medicine/___second_test_drug/second_test_drug___count  &gt; 0, /data/inputs/second_test_drug_received - /data/Medicine/___second_test_drug/second_test_drug___count ,0)"/>
+      <bind nodeset="/data/descrepancy_doc/form" type="string" calculate="&quot;descrepancy_doc&quot;"/>
+      <bind nodeset="/data/descrepancy_doc/place_id" type="string" calculate=" /data/inputs/level_1_place_id "/>
+      <bind nodeset="/data/descrepancy_doc/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/descrepancy_doc/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/descrepancy_doc/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/descrepancy_doc/contact/_id" type="string" calculate=" /data/user_contact_id "/>
+      <bind nodeset="/data/descrepancy_doc/fields/test_drug_out" type="string" calculate="if( /data/Medicine/___test_drug/test_drug_qty  != '' and  /data/Medicine/___test_drug/test_drug___count  &gt; 0, /data/Medicine/___test_drug/test_drug___count - /data/inputs/test_drug_confirmed ,0)"/>
+      <bind nodeset="/data/descrepancy_doc/fields/second_test_drug_out" type="string" calculate="if( /data/Medicine/___second_test_drug/second_test_drug_qty  != '' and  /data/Medicine/___second_test_drug/second_test_drug___count  &gt; 0, /data/Medicine/___second_test_drug/second_test_drug___count - /data/inputs/second_test_drug_confirmed ,0)"/>
+      <bind nodeset="/data/descrepancy_doc/fields/confirmation_id" type="string" calculate=" /data/inputs/supply_confirm_id "/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+        <group appearance="hidden" ref="/data/inputs/contact/parent">
+          <input ref="/data/inputs/contact/parent/_id"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/Medicine">
+      <label ref="jr:itext('/data/Medicine:label')"/>
+      <group ref="/data/Medicine/___test_drug">
+        <label ref="jr:itext('/data/Medicine/___test_drug:label')"/>
+        <input ref="/data/Medicine/___test_drug/test_drug_note_issued">
+          <label ref="jr:itext('/data/Medicine/___test_drug/test_drug_note_issued:label')"/>
+        </input>
+        <input ref="/data/Medicine/___test_drug/test_drug_note_confirmed">
+          <label ref="jr:itext('/data/Medicine/___test_drug/test_drug_note_confirmed:label')"/>
+        </input>
+        <input ref="/data/Medicine/___test_drug/test_drug_qty">
+          <label ref="jr:itext('/data/Medicine/___test_drug/test_drug_qty:label')"/>
+        </input>
+      </group>
+      <group ref="/data/Medicine/___second_test_drug">
+        <label ref="jr:itext('/data/Medicine/___second_test_drug:label')"/>
+        <input ref="/data/Medicine/___second_test_drug/second_test_drug_note_issued">
+          <label ref="jr:itext('/data/Medicine/___second_test_drug/second_test_drug_note_issued:label')"/>
+        </input>
+        <input ref="/data/Medicine/___second_test_drug/second_test_drug_note_confirmed">
+          <label ref="jr:itext('/data/Medicine/___second_test_drug/second_test_drug_note_confirmed:label')"/>
+        </input>
+        <input ref="/data/Medicine/___second_test_drug/second_test_drug_qty">
+          <label ref="jr:itext('/data/Medicine/___second_test_drug/second_test_drug_qty:label')"/>
+          <hint ref="jr:itext('/data/Medicine/___second_test_drug/second_test_drug_qty:hint')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/Medicine_summary" appearance="h1 blue">
+        <label ref="jr:itext('/data/summary/Medicine_summary:label')"/>
+      </input>
+      <input ref="/data/summary/test_drug_summary" appearance="li">
+        <label ref="jr:itext('/data/summary/test_drug_summary:label')"/>
+      </input>
+      <input ref="/data/summary/second_test_drug_summary" appearance="li">
+        <label ref="jr:itext('/data/summary/second_test_drug_summary:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out"/>
+    <group appearance="field-list" ref="/data/descrepancy_doc">
+      <group ref="/data/descrepancy_doc/contact"/>
+      <group ref="/data/descrepancy_doc/fields"/>
+    </group>
+  </h:body>
+</h:html>

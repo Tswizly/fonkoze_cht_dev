@@ -4,7 +4,7 @@
     <h:title>Digestive Conditions Form</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
-        <data id="ADT_Form002_DigestiveConditions" version="20260908193403" prefix="J1!ADT_Form002_DigestiveConditions!" delimiter="#">
+        <data id="ADT_Form002_DigestiveConditions" version="20260909110759" prefix="J1!ADT_Form002_DigestiveConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -536,10 +536,10 @@ Procedure:
       <group ref="/data/prescription_summary/contact"/>
       <group ref="/data/prescription_summary/fields">
         <input ref="/data/prescription_summary/fields/Medicine_out" appearance="h1 lime">
-          <label>NOTE</label>
+          <label>&lt;note&gt;</label>
         </input>
         <input ref="/data/prescription_summary/fields/second_test_drug_used_in">
-          <label>Fill something in?</label>
+          <label>&lt;string&gt;</label>
         </input>
       </group>
     </group>

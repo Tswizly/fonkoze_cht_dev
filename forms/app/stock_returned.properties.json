@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.role === 'nurse_supervisor'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Returned"
+        },
+        {
+            "locale": "es",
+            "content": "Stock Returned"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Returned"
+        }
+    ]
+}

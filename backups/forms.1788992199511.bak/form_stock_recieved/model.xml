@@ -1,0 +1,79 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_recieved" version="now()" prefix="J1!stock_recieved!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <test_drug_received/>
+            <second_test_drug_received/>
+            <supplier_id/>
+            <supply_doc_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <place_id/>
+          <Medicine>
+            <___test_drug>
+              <have_receive_test_drug_qty/>
+              <test_drug_real_qty>0</test_drug_real_qty>
+              <test_drug___count/>
+            </___test_drug>
+            <___second_test_drug>
+              <second_test_drug__received___set>0</second_test_drug__received___set>
+              <second_test_drug__received___unit>0</second_test_drug__received___unit>
+              <have_receive_second_test_drug_qty/>
+              <second_test_drug___set>0/0</second_test_drug___set>
+              <second_test_drug___unit>0/0</second_test_drug___unit>
+              <second_test_drug_real_qty>0/0</second_test_drug_real_qty>
+              <second_test_drug___count/>
+            </___second_test_drug>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <test_drug_summary_yes/>
+            <second_test_drug_summary_yes/>
+            <test_drug_summary_no/>
+            <second_test_drug_summary_no/>
+          </summary>
+          <out>
+            <test_drug_confirmed/>
+            <second_test_drug_confirmed/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -21,6 +21,73 @@
                 "es": "Stocko Counto",
                 "fr": "Stock Count"
             }
+        },
+        "stock_supply": {
+            "form_name": "stock_supply",
+            "title": {
+                "en": "Stock Supply",
+                "es": "Stock Supply",
+                "fr": "Stock Supply"
+            },
+            "confirm_supply": {
+                "form_name": "stock_recieved",
+                "title": {
+                    "en": "Stock Recieved",
+                    "es": "Stock Recieved",
+                    "fr": "Stock Recieved"
+                },
+                "active": true
+            },
+            "discrepancy": {
+                "form_name": "stock_discrepancy_resolution",
+                "title": {
+                    "en": "Stock Discrepancy Resolution",
+                    "es": "Stock Discrepancy Resolution",
+                    "fr": "Stock Discrepancy Resolution"
+                }
+            }
+        },
+        "stock_out": {
+            "form_name": "stock_out",
+            "formular": "item_danger_qty",
+            "title": {
+                "en": "Stock Out",
+                "es": "Stock Out",
+                "fr": "Stock Out"
+            }
+        },
+        "stock_return": {
+            "form_name": "stock_return",
+            "title": {
+                "en": "Stock Return",
+                "es": "Stock Return",
+                "fr": "Stock Return"
+            },
+            "confirmation": {
+                "form_name": "stock_returned",
+                "title": {
+                    "en": "Stock Returned",
+                    "es": "Stock Returned",
+                    "fr": "Stock Returned"
+                }
+            }
+        },
+        "stock_order": {
+            "actors": [],
+            "form_name": "stock_order",
+            "title": {
+                "en": "Stock Order",
+                "es": "Stock Order",
+                "fr": "Stock Order"
+            },
+            "stock_supply": {
+                "form_name": "stock_order_supply",
+                "title": {
+                    "en": "Stock Order Supply",
+                    "es": "Stock Order Supply",
+                    "fr": "Stock Order Supply"
+                }
+            }
         }
     },
     "levels": {
@@ -129,5 +196,5 @@
         }
     },
     "version": "1.2.2",
-    "last_update_date": "2026-09-09T04:00:31.385Z"
+    "last_update_date": "2026-09-09T21:00:19.807Z"
 }

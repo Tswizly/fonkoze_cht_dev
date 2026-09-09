@@ -1,0 +1,91 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_discrepancy_resolution" version="now()" prefix="J1!stock_discrepancy_resolution!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <test_drug_received/>
+            <test_drug_confirmed/>
+            <second_test_drug_received/>
+            <second_test_drug_confirmed/>
+            <level_1_place_id/>
+            <supply_confirm_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <user_contact_id/>
+          <supply_place_id/>
+          <Medicine>
+            <___test_drug>
+              <test_drug_note_issued/>
+              <test_drug_note_confirmed/>
+              <test_drug_qty/>
+              <test_drug___count/>
+            </___test_drug>
+            <___second_test_drug>
+              <second_test_drug__issued___set/>
+              <second_test_drug__issued___unit/>
+              <second_test_drug_note_issued/>
+              <second_test_drug__confirmed___set/>
+              <second_test_drug__confirmed___unit/>
+              <second_test_drug_note_confirmed/>
+              <second_test_drug___set/>
+              <second_test_drug___unit/>
+              <second_test_drug_qty>0/0</second_test_drug_qty>
+              <second_test_drug___count/>
+            </___second_test_drug>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <test_drug_summary/>
+            <second_test_drug_summary/>
+          </summary>
+          <out>
+            <test_drug_in/>
+            <second_test_drug_in/>
+          </out>
+          <descrepancy_doc db-doc="true">
+            <form/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <content_type/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <test_drug_out/>
+              <second_test_drug_out/>
+              <confirmation_id/>
+            </fields>
+          </descrepancy_doc>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

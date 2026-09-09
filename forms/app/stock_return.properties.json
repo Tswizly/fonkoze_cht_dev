@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": "user.parent.contact_type === 'clinic' && contact.contact_type === 'clinic'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Return"
+        },
+        {
+            "locale": "es",
+            "content": "Stock Return"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Return"
+        }
+    ]
+}

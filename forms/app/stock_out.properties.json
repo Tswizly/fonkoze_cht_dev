@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.parent.contact_type === 'health_center'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Out"
+        },
+        {
+            "locale": "es",
+            "content": "Stock Out"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Out"
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_supply" version="now()" prefix="J1!stock_supply!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <test_drug_current/>
+          <second_test_drug_current/>
+          <supply_place_id/>
+          <user_contact_id/>
+          <select_items>
+            <categories/>
+          </select_items>
+          <Medicine>
+            <Medicine_items_selected/>
+            <___test_drug>
+              <supply_test_drug>0</supply_test_drug>
+              <test_drug___count/>
+            </___test_drug>
+            <___second_test_drug>
+              <second_test_drug___set>0/0</second_test_drug___set>
+              <second_test_drug___unit>0/0</second_test_drug___unit>
+              <supply_second_test_drug>0/0</supply_second_test_drug>
+              <second_test_drug___count/>
+            </___second_test_drug>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <s_test_drug/>
+            <s_second_test_drug/>
+          </summary>
+          <out>
+            <test_drug_supply/>
+            <second_test_drug_supply/>
+          </out>
+          <needs_signoff/>
+          <stock_supply_doc db-doc="true">
+            <form/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <content_type/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <supplier_id/>
+              <place_id/>
+              <need_confirmation/>
+              <test_drug_in/>
+              <second_test_drug_in/>
+            </fields>
+          </stock_supply_doc>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="categories">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>categories-0</itextId>
+            <name>Medicine</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="items">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>items-0</itextId>
+            <name>test_drug</name>
+            <category_filter>Medicine</category_filter>
+          </item>
+          <item>
+            <itextId>items-1</itextId>
+            <name>second_test_drug</name>
+            <category_filter>Medicine</category_filter>
+          </item>
+        </root>
+      </instance>
+  </model>
+

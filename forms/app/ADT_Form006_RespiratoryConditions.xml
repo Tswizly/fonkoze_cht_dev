@@ -4,7 +4,7 @@
     <h:title>Respiratory Conditions</h:title>
     <model odk:xforms-version="1.0.0">
       <instance>
-        <data id="ADT_Form006_RespiratoryConditions" version="20260908193431" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
+        <data id="ADT_Form006_RespiratoryConditions" version="20260909110821" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -73,7 +73,6 @@
           <calc_asthma/>
           <calc_pneumonia/>
           <results_group>
-            <results_note/>
             <res_tuberculosis/>
             <res_tuberculosis_action/>
             <res_asthma/>
@@ -81,26 +80,6 @@
             <res_pneumonia/>
             <res_pneumonia_action/>
           </results_group>
-          <treatment_decision_group>
-            <confirmed_conditions/>
-          </treatment_decision_group>
-          <treatments_administered_group>
-            <tuberculosis_instructions/>
-            <tb_referral>1</tb_referral>
-            <asthma_instructions/>
-            <nebulizer>1</nebulizer>
-            <dexamethasone>1</dexamethasone>
-            <salbutamol>1</salbutamol>
-            <pneumonia_instructions/>
-            <azythromycine>1</azythromycine>
-            <hospital_referral>1</hospital_referral>
-          </treatments_administered_group>
-          <treatments_provided/>
-          <encounter_summary_group>
-            <summary_conditions_note/>
-            <summary_treatments_note/>
-            <summary_followup_note/>
-          </encounter_summary_group>
           <null_results_group>
             <no_treatment_note/>
           </null_results_group>
@@ -152,54 +131,6 @@
           </item>
         </root>
       </instance>
-      <instance id="confirmed_conditions">
-        <root>
-          <item>
-            <name>tuberculosis</name>
-            <label>Tuberculosis</label>
-          </item>
-          <item>
-            <name>asthma</name>
-            <label>Asthma</label>
-          </item>
-          <item>
-            <name>pneumonia</name>
-            <label>Pneumonia</label>
-          </item>
-          <item>
-            <name>none</name>
-            <label>None of the above</label>
-          </item>
-        </root>
-      </instance>
-      <instance id="treatments_provided">
-        <root>
-          <item>
-            <name>tb_referral</name>
-            <label>Refer for diagnosis and treatment (TB)</label>
-          </item>
-          <item>
-            <name>nebulizer</name>
-            <label>Nebulizer for immediate treatment</label>
-          </item>
-          <item>
-            <name>dexamethasone</name>
-            <label>Dexamethasone IM 8 mg</label>
-          </item>
-          <item>
-            <name>salbutamol</name>
-            <label>Salbutamol tablet 4mg – 2 times day during 1 week</label>
-          </item>
-          <item>
-            <name>azythromycine</name>
-            <label>Azythromycine tablets 500 mg – 1 co per day for 5 days</label>
-          </item>
-          <item>
-            <name>hospital_referral</name>
-            <label>Referral to hospital if no improvement after 2 days</label>
-          </item>
-        </root>
-      </instance>
       <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/data/inputs/source" type="string"/>
       <bind nodeset="/data/inputs/source_id" type="string"/>
@@ -245,30 +176,12 @@
       <bind nodeset="/data/calc_asthma" type="string" calculate="if( /data/respiratory_conditions_group/wheezing  = 'yes' and  /data/respiratory_conditions_group/respiratory_distress  = 'yes' and  /data/respiratory_conditions_group/recurring_condition  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/respiratory_conditions_group/temperature  &gt; 38 and  /data/respiratory_conditions_group/fever_duration  &gt; 7 and  /data/respiratory_conditions_group/adult_coughing  = 'yes' and  /data/respiratory_conditions_group/respiratory_distress  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/results_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true'"/>
-      <bind nodeset="/data/results_group/results_note" readonly="true()" type="string"/>
       <bind nodeset="/data/results_group/res_tuberculosis" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
       <bind nodeset="/data/results_group/res_tuberculosis_action" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
       <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
       <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
-      <bind nodeset="/data/treatment_decision_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true'"/>
-      <bind nodeset="/data/treatment_decision_group/confirmed_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/treatments_administered_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true'"/>
-      <bind nodeset="/data/treatments_administered_group/tuberculosis_instructions" readonly="true()" type="string" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'tuberculosis')"/>
-      <bind nodeset="/data/treatments_administered_group/tb_referral" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'tuberculosis')"/>
-      <bind nodeset="/data/treatments_administered_group/asthma_instructions" readonly="true()" type="string" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'asthma')"/>
-      <bind nodeset="/data/treatments_administered_group/nebulizer" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'asthma')"/>
-      <bind nodeset="/data/treatments_administered_group/dexamethasone" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'asthma')"/>
-      <bind nodeset="/data/treatments_administered_group/salbutamol" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'asthma')"/>
-      <bind nodeset="/data/treatments_administered_group/pneumonia_instructions" readonly="true()" type="string" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'pneumonia')"/>
-      <bind nodeset="/data/treatments_administered_group/azythromycine" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'pneumonia')"/>
-      <bind nodeset="/data/treatments_administered_group/hospital_referral" type="int" relevant="selected( /data/treatment_decision_group/confirmed_conditions , 'pneumonia') or selected( /data/treatment_decision_group/confirmed_conditions , 'asthma')"/>
-      <bind nodeset="/data/treatments_provided" type="string" calculate="concat(if( /data/treatments_administered_group/tb_referral  = 1, 'tb_referral ', ''), if( /data/treatments_administered_group/nebulizer  = 1, 'nebulizer ', ''), if( /data/treatments_administered_group/dexamethasone  = 1, 'dexamethasone ', ''), if( /data/treatments_administered_group/salbutamol  = 1, 'salbutamol ', ''), if( /data/treatments_administered_group/azythromycine  = 1, 'azythromycine ', ''), if( /data/treatments_administered_group/hospital_referral  = 1, 'hospital_referral ', ''))"/>
-      <bind nodeset="/data/encounter_summary_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true'"/>
-      <bind nodeset="/data/encounter_summary_group/summary_conditions_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/encounter_summary_group/summary_treatments_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/encounter_summary_group/summary_followup_note" readonly="true()" type="string"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_tuberculosis  = 'false' and  /data/calc_asthma  = 'false' and  /data/calc_pneumonia  = 'false'"/>
       <bind nodeset="/data/null_results_group/no_treatment_note" readonly="true()" type="string"/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
@@ -398,9 +311,6 @@
     </group>
     <group appearance="field-list summary" ref="/data/results_group">
       <label>Results</label>
-      <input ref="/data/results_group/results_note">
-        <label>Listed below are the results of the screening. Numerous results may be presented. Proceed to next page to select how you will proceed.</label>
-      </input>
       <input ref="/data/results_group/res_tuberculosis" appearance="h1 red">
         <label>Risk of TUBERCULOSIS</label>
       </input>
@@ -434,76 +344,6 @@ Procedure:
 - Go to the hospital if no improvement after two days</label>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/treatment_decision_group">
-      <label>Treatment Decision</label>
-      <select ref="/data/treatment_decision_group/confirmed_conditions">
-        <label>Which results have you decided are true and will treat?</label>
-        <itemset nodeset="instance('confirmed_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="label"/>
-        </itemset>
-      </select>
-    </group>
-    <group appearance="field-list" ref="/data/treatments_administered_group">
-      <label>Treatments Administered</label>
-      <input ref="/data/treatments_administered_group/tuberculosis_instructions">
-        <label>The patient has a risk of tuberculosis.
-
-Procedure:
-- Refer for diagnosis and treatment
-- Really motivate for referal (free treatment!)</label>
-      </input>
-      <input ref="/data/treatments_administered_group/tb_referral">
-        <label>Refer for diagnosis and treatment (TB)</label>
-      </input>
-      <input ref="/data/treatments_administered_group/asthma_instructions">
-        <label>The patient has asthma.
-
-Procedure:
-- Nebulizer for immediate treatment
-- Dexamethasone IM 8 mg
-- Send home with: Salbutamol tablet 4mg – 2 times day during one week
-- If condition does not improve after two days, go to the hospital</label>
-      </input>
-      <input ref="/data/treatments_administered_group/nebulizer">
-        <label>Nebulizer for immediate treatment</label>
-      </input>
-      <input ref="/data/treatments_administered_group/dexamethasone">
-        <label>Dexamethasone IM 8 mg</label>
-      </input>
-      <input ref="/data/treatments_administered_group/salbutamol">
-        <label>Salbutamol tablet 4mg – 2 times day during 1 week</label>
-      </input>
-      <input ref="/data/treatments_administered_group/pneumonia_instructions">
-        <label>The patient has a risk of pneumonia.
-
-Procedure:
-- Azythromycine tablets 500 mg – 1 co per day for 5 days
-- Go to the hospital if no improvement after two days</label>
-      </input>
-      <input ref="/data/treatments_administered_group/azythromycine">
-        <label>Azythromycine tablets 500 mg – 1 co per day for 5 days</label>
-      </input>
-      <input ref="/data/treatments_administered_group/hospital_referral">
-        <label>Referral to hospital if no improvement after 2 days</label>
-      </input>
-    </group>
-    <group appearance="field-list summary" ref="/data/encounter_summary_group">
-      <label>Encounter Summary</label>
-      <input ref="/data/encounter_summary_group/summary_conditions_note">
-        <label>
-          <output value=" /data/treatment_decision_group/confirmed_conditions "/>
-        </label>
-      </input>
-      <input ref="/data/encounter_summary_group/summary_treatments_note">
-        <label>
-          <output value=" /data/treatments_provided "/>
-        </label>
-      </input>
-      <input ref="/data/encounter_summary_group/summary_followup_note">
-        <label>&lt; TODO: Follow up notes &gt;</label>
-      </input>
-    </group>
     <group appearance="field-list summary" ref="/data/null_results_group">
       <label>No Results</label>
       <input ref="/data/null_results_group/no_treatment_note" appearance="h1 green">
@@ -514,10 +354,10 @@ Procedure:
       <group ref="/data/prescription_summary/contact"/>
       <group ref="/data/prescription_summary/fields">
         <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden">
-          <label>note</label>
+          <label>&lt;note&gt;</label>
         </input>
         <input ref="/data/prescription_summary/fields/test_drug_used_in_ADT_Form006_RespiratoryConditions">
-          <label>Fill something in?</label>
+          <label>&lt;Integer input&gt;</label>
         </input>
       </group>
     </group>
