@@ -93,6 +93,10 @@
       "nurse_supervisor",
       "nurse"
     ],
+    "can_conduct_assessment_forms": [
+      "nurse_supervisor",
+      "nurse"
+    ],
     "can_configure": [
       "program_officer",
       "crfo"

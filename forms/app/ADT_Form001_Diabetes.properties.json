@@ -4,6 +4,7 @@
   "context": {
     "person": true,
     "place": false,
-    "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64"
+    "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64",
+    "permission": "can_conduct_assessment_forms"
   }
 }

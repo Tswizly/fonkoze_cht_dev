@@ -1,0 +1,96 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_order_supply" version="now()" prefix="J1!stock_order_supply!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <metformin_500mg_ordered/>
+            <notinset_ordered/>
+            <InSet_ordered/>
+            <order_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <supply_place_id/>
+          <user_contact_id/>
+          <Medicine>
+            <___metformin_500mg>
+              <supply_metformin_500mg_note/>
+              <metformin_500mg_ordered___set/>
+              <metformin_500mg_ordered___unit/>
+              <metformin_500mg___set/>
+              <metformin_500mg___unit/>
+              <supply_metformin_500mg>0/0</supply_metformin_500mg>
+            </___metformin_500mg>
+            <___notinset>
+              <supply_notinset_note/>
+              <supply_notinset/>
+            </___notinset>
+            <___InSet>
+              <supply_InSet_note/>
+              <InSet_ordered___set/>
+              <InSet_ordered___unit/>
+              <InSet___set/>
+              <InSet___unit/>
+              <supply_InSet>0/0</supply_InSet>
+            </___InSet>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <metformin_500mg_summary/>
+            <notinset_summary/>
+            <InSet_summary/>
+          </summary>
+          <out>
+            <metformin_500mg_supply/>
+            <notinset_supply/>
+            <InSet_supply/>
+          </out>
+          <needs_signoff/>
+          <stock_supply_doc db-doc="true">
+            <form/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <content_type/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <place_id/>
+              <s_order_id/>
+              <supplier_id/>
+              <need_confirmation/>
+              <metformin_500mg_in/>
+              <notinset_in/>
+              <InSet_in/>
+            </fields>
+          </stock_supply_doc>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

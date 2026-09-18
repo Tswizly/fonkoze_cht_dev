@@ -1,0 +1,92 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_recieved" version="now()" prefix="J1!stock_recieved!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <metformin_500mg_received/>
+            <notinset_received/>
+            <InSet_received/>
+            <supplier_id/>
+            <supply_doc_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <place_id/>
+          <Medicine>
+            <___metformin_500mg>
+              <metformin_500mg__received___set>0</metformin_500mg__received___set>
+              <metformin_500mg__received___unit>0</metformin_500mg__received___unit>
+              <have_receive_metformin_500mg_qty/>
+              <metformin_500mg___set>0/0</metformin_500mg___set>
+              <metformin_500mg___unit>0/0</metformin_500mg___unit>
+              <metformin_500mg_real_qty>0/0</metformin_500mg_real_qty>
+              <metformin_500mg___count/>
+            </___metformin_500mg>
+            <___notinset>
+              <have_receive_notinset_qty/>
+              <notinset_real_qty>0</notinset_real_qty>
+              <notinset___count/>
+            </___notinset>
+            <___InSet>
+              <InSet__received___set>0</InSet__received___set>
+              <InSet__received___unit>0</InSet__received___unit>
+              <have_receive_InSet_qty/>
+              <InSet___set>0/0</InSet___set>
+              <InSet___unit>0/0</InSet___unit>
+              <InSet_real_qty>0/0</InSet_real_qty>
+              <InSet___count/>
+            </___InSet>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <metformin_500mg_summary_yes/>
+            <notinset_summary_yes/>
+            <InSet_summary_yes/>
+            <metformin_500mg_summary_no/>
+            <notinset_summary_no/>
+            <InSet_summary_no/>
+          </summary>
+          <out>
+            <metformin_500mg_confirmed/>
+            <notinset_confirmed/>
+            <InSet_confirmed/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

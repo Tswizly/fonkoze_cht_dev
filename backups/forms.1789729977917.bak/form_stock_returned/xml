@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Returned</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg:label">
+            <value>Metformin 500mg</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> box of 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tablet ?</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:hint">
+            <value><output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> box of 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/___notinset:label">
+            <value>Not Set</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received:label">
+            <value> Did you receive <output value=" /data/inputs/notinset_return "/> notset ?</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet:label">
+            <value>Inset</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet ?</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:hint">
+            <value><output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you returned.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_no:label">
+            <value> Metformin 500mg: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> box of 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tablet**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> box of 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> tablet**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_yes:label">
+            <value> Metformin 500mg: ****<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> box of 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tablet****</value>
+          </text>
+          <text id="/data/summary/notinset_summary_no:label">
+            <value> Not Set: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/inputs/notinset_return "/> notset**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___notinset/notinset___count "/> notset**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/notinset_summary_yes:label">
+            <value> Not Set: ****<output value=" /data/inputs/notinset_return "/> notset****</value>
+          </text>
+          <text id="/data/summary/InSet_summary_no:label">
+            <value> Inset: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/InSet_summary_yes:label">
+            <value> Inset: ****<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet****</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg:label">
+            <value>Metformin 500mg</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> caja de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tableta ?</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:hint">
+            <value><output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> caja de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> tableta</value>
+          </text>
+          <text id="/data/Medicine/___notinset:label">
+            <value>Not Set</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received:label">
+            <value> Did you receive <output value=" /data/inputs/notinset_return "/> notset ?</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet:label">
+            <value>Inset</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet ?</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:hint">
+            <value><output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you returned.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_no:label">
+            <value> Metformin 500mg: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> caja de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tableta**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> caja de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> tableta**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_yes:label">
+            <value> Metformin 500mg: ****<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> caja de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> tableta****</value>
+          </text>
+          <text id="/data/summary/notinset_summary_no:label">
+            <value> Not Set: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/inputs/notinset_return "/> notset**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___notinset/notinset___count "/> notset**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/notinset_summary_yes:label">
+            <value> Not Set: ****<output value=" /data/inputs/notinset_return "/> notset****</value>
+          </text>
+          <text id="/data/summary/InSet_summary_no:label">
+            <value> Inset: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/InSet_summary_yes:label">
+            <value> Inset: ****<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet****</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg:label">
+            <value>Metformin 500mg</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> boîte de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> comprimé ?</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:hint">
+            <value><output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> boîte de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> comprimé</value>
+          </text>
+          <text id="/data/Medicine/___notinset:label">
+            <value>Not Set</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received:label">
+            <value> Did you receive <output value=" /data/inputs/notinset_return "/> notset ?</value>
+          </text>
+          <text id="/data/Medicine/___notinset/notinset_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet:label">
+            <value>Inset</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received:label">
+            <value> Did you receive <output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet ?</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:label">
+            <value>Enter the quantity received</value>
+          </text>
+          <text id="/data/Medicine/___InSet/InSet_received_qty:hint">
+            <value><output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Results/Summary page</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock items you returned.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/data/summary/Medicine_summary:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_no:label">
+            <value> Metformin 500mg: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> boîte de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> comprimé**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___metformin_500mg/metformin_500mg___set "/> boîte de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg___unit "/> comprimé**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_summary_yes:label">
+            <value> Metformin 500mg: ****<output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___set "/> boîte de 100 <output value=" /data/Medicine/___metformin_500mg/metformin_500mg__return___unit "/> comprimé****</value>
+          </text>
+          <text id="/data/summary/notinset_summary_no:label">
+            <value> Not Set: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/inputs/notinset_return "/> notset**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___notinset/notinset___count "/> notset**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/notinset_summary_yes:label">
+            <value> Not Set: ****<output value=" /data/inputs/notinset_return "/> notset****</value>
+          </text>
+          <text id="/data/summary/InSet_summary_no:label">
+            <value> Inset: &lt;span style="color:red"&gt;&lt;s&gt;**<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet**&lt;/s&gt;&lt;/span&gt; | &lt;b&gt;&lt;span style="color:green"&gt;**<output value=" /data/Medicine/___InSet/InSet___set "/> box of <output value=" /data/Medicine/___InSet/InSet___unit "/> tablet**&lt;/span&gt;&lt;/b&gt;</value>
+          </text>
+          <text id="/data/summary/InSet_summary_yes:label">
+            <value> Inset: ****<output value=" /data/Medicine/___InSet/InSet__return___set "/> box of <output value=" /data/Medicine/___InSet/InSet__return___unit "/> tablet****</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_returned" version="now()" prefix="J1!stock_returned!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <metformin_500mg_return/>
+            <notinset_return/>
+            <InSet_return/>
+            <level_1_place_id/>
+            <stock_return_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <user_contact_id/>
+          <Medicine>
+            <___metformin_500mg>
+              <metformin_500mg__return___set/>
+              <metformin_500mg__return___unit/>
+              <metformin_500mg_received/>
+              <metformin_500mg___set/>
+              <metformin_500mg___unit/>
+              <metformin_500mg_received_qty>0/0</metformin_500mg_received_qty>
+              <metformin_500mg___count/>
+            </___metformin_500mg>
+            <___notinset>
+              <notinset_received/>
+              <notinset_received_qty/>
+              <notinset___count/>
+            </___notinset>
+            <___InSet>
+              <InSet__return___set/>
+              <InSet__return___unit/>
+              <InSet_received/>
+              <InSet___set/>
+              <InSet___unit/>
+              <InSet_received_qty>0/0</InSet_received_qty>
+              <InSet___count/>
+            </___InSet>
+          </Medicine>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine_summary/>
+            <metformin_500mg_summary_no/>
+            <metformin_500mg_summary_yes/>
+            <notinset_summary_no/>
+            <notinset_summary_yes/>
+            <InSet_summary_no/>
+            <InSet_summary_yes/>
+          </summary>
+          <out>
+            <metformin_500mg_in/>
+            <notinset_in/>
+            <InSet_in/>
+          </out>
+          <needs_signoff/>
+          <sm---stock_returned db-doc="true">
+            <form/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <content_type/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <metformin_500mg_return_difference/>
+              <notinset_return_difference/>
+              <InSet_return_difference/>
+              <return_id/>
+            </fields>
+          </sm---stock_returned>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/metformin_500mg_return" type="string"/>
+      <bind nodeset="/data/inputs/notinset_return" type="string"/>
+      <bind nodeset="/data/inputs/InSet_return" type="string"/>
+      <bind nodeset="/data/inputs/level_1_place_id" type="string"/>
+      <bind nodeset="/data/inputs/stock_return_id" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/user_contact_id" type="string" calculate="../inputs/user/contact_id"/>
+      <bind nodeset="/data/Medicine" relevant=" /data/inputs/metformin_500mg_return  &gt; 0 or  /data/inputs/notinset_return  &gt; 0 or  /data/inputs/InSet_return  &gt; 0"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg" relevant=" /data/inputs/metformin_500mg_return  &gt; 0"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg__return___set" type="string" calculate="int( /data/inputs/metformin_500mg_return  div 100)"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg__return___unit" type="string" calculate=" /data/inputs/metformin_500mg_return  mod 100"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg_received" type="string" required="true()"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty ) &gt; 0 and count-selected(substring-before( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty ) &gt; 0 and count-selected(substring-after( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/___metformin_500mg/metformin_500mg_received_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty" type="string" required="true()" relevant=" /data/Medicine/___metformin_500mg/metformin_500mg_received  = 'no'" constraint="regex(., '^\d+\/\d+$')"/>
+      <bind nodeset="/data/Medicine/___metformin_500mg/metformin_500mg___count" type="string" calculate=" /data/Medicine/___metformin_500mg/metformin_500mg___set  * 100 +  /data/Medicine/___metformin_500mg/metformin_500mg___unit "/>
+      <bind nodeset="/data/Medicine/___notinset" relevant=" /data/inputs/notinset_return  &gt; 0"/>
+      <bind nodeset="/data/Medicine/___notinset/notinset_received" type="string" required="true()"/>
+      <bind nodeset="/data/Medicine/___notinset/notinset_received_qty" type="decimal" required="true()" relevant=" /data/Medicine/___notinset/notinset_received  = 'no'" constraint=". &gt; 0"/>
+      <bind nodeset="/data/Medicine/___notinset/notinset___count" type="string" calculate=" /data/Medicine/___notinset/notinset_received_qty "/>
+      <bind nodeset="/data/Medicine/___InSet" relevant=" /data/inputs/InSet_return  &gt; 0"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet__return___set" type="string" calculate="int( /data/inputs/InSet_return  div 10)"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet__return___unit" type="string" calculate=" /data/inputs/InSet_return  mod 10"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet_received" type="string" required="true()"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet___set" type="string" calculate="if(count-selected( /data/Medicine/___InSet/InSet_received_qty ) &gt; 0 and count-selected(substring-before( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet___unit" type="string" calculate="if(count-selected( /data/Medicine/___InSet/InSet_received_qty ) &gt; 0 and count-selected(substring-after( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/___InSet/InSet_received_qty , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet_received_qty" type="string" required="true()" relevant=" /data/Medicine/___InSet/InSet_received  = 'no'" constraint="regex(., '^\d+\/\d+$')"/>
+      <bind nodeset="/data/Medicine/___InSet/InSet___count" type="string" calculate=" /data/Medicine/___InSet/InSet___set  * 10 +  /data/Medicine/___InSet/InSet___unit "/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/Medicine_summary" readonly="true()" type="string" relevant=" /data/inputs/metformin_500mg_return  &gt; 0 or  /data/inputs/notinset_return  &gt; 0 or  /data/inputs/InSet_return  &gt; 0"/>
+      <bind nodeset="/data/summary/metformin_500mg_summary_no" readonly="true()" type="string" relevant=" /data/Medicine/___metformin_500mg/metformin_500mg_received  = 'no'"/>
+      <bind nodeset="/data/summary/metformin_500mg_summary_yes" readonly="true()" type="string" relevant=" /data/Medicine/___metformin_500mg/metformin_500mg_received  = 'yes'"/>
+      <bind nodeset="/data/summary/notinset_summary_no" readonly="true()" type="string" relevant=" /data/Medicine/___notinset/notinset_received  = 'no'"/>
+      <bind nodeset="/data/summary/notinset_summary_yes" readonly="true()" type="string" relevant=" /data/Medicine/___notinset/notinset_received  = 'yes'"/>
+      <bind nodeset="/data/summary/InSet_summary_no" readonly="true()" type="string" relevant=" /data/Medicine/___InSet/InSet_received  = 'no'"/>
+      <bind nodeset="/data/summary/InSet_summary_yes" readonly="true()" type="string" relevant=" /data/Medicine/___InSet/InSet_received  = 'yes'"/>
+      <bind nodeset="/data/out/metformin_500mg_in" type="string" calculate="if( /data/Medicine/___metformin_500mg/metformin_500mg_received  = 'no', /data/Medicine/___metformin_500mg/metformin_500mg___count , /data/inputs/metformin_500mg_return )"/>
+      <bind nodeset="/data/out/notinset_in" type="string" calculate="if( /data/Medicine/___notinset/notinset_received  = 'no', /data/Medicine/___notinset/notinset___count , /data/inputs/notinset_return )"/>
+      <bind nodeset="/data/out/InSet_in" type="string" calculate="if( /data/Medicine/___InSet/InSet_received  = 'no', /data/Medicine/___InSet/InSet___count , /data/inputs/InSet_return )"/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/sm---stock_returned/form" type="string" calculate="&quot;sm---stock_returned&quot;"/>
+      <bind nodeset="/data/sm---stock_returned/place_id" type="string" calculate=" /data/inputs/level_1_place_id "/>
+      <bind nodeset="/data/sm---stock_returned/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/sm---stock_returned/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/sm---stock_returned/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/sm---stock_returned/contact/_id" type="string" calculate=" /data/user_contact_id "/>
+      <bind nodeset="/data/sm---stock_returned/fields/metformin_500mg_return_difference" type="string" calculate="if( /data/Medicine/___metformin_500mg/metformin_500mg_received  = 'no', /data/inputs/metformin_500mg_return - /data/Medicine/___metformin_500mg/metformin_500mg___count ,0)"/>
+      <bind nodeset="/data/sm---stock_returned/fields/notinset_return_difference" type="string" calculate="if( /data/Medicine/___notinset/notinset_received  = 'no', /data/inputs/notinset_return - /data/Medicine/___notinset/notinset___count ,0)"/>
+      <bind nodeset="/data/sm---stock_returned/fields/InSet_return_difference" type="string" calculate="if( /data/Medicine/___InSet/InSet_received  = 'no', /data/inputs/InSet_return - /data/Medicine/___InSet/InSet___count ,0)"/>
+      <bind nodeset="/data/sm---stock_returned/fields/return_id" type="string" calculate=" /data/inputs/stock_return_id "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+        <group appearance="hidden" ref="/data/inputs/contact/parent">
+          <input ref="/data/inputs/contact/parent/_id"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/Medicine">
+      <label ref="jr:itext('/data/Medicine:label')"/>
+      <group ref="/data/Medicine/___metformin_500mg">
+        <label ref="jr:itext('/data/Medicine/___metformin_500mg:label')"/>
+        <select1 ref="/data/Medicine/___metformin_500mg/metformin_500mg_received">
+          <label ref="jr:itext('/data/Medicine/___metformin_500mg/metformin_500mg_received:label')"/>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <input ref="/data/Medicine/___metformin_500mg/metformin_500mg_received_qty">
+          <label ref="jr:itext('/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:label')"/>
+          <hint ref="jr:itext('/data/Medicine/___metformin_500mg/metformin_500mg_received_qty:hint')"/>
+        </input>
+      </group>
+      <group ref="/data/Medicine/___notinset">
+        <label ref="jr:itext('/data/Medicine/___notinset:label')"/>
+        <select1 ref="/data/Medicine/___notinset/notinset_received">
+          <label ref="jr:itext('/data/Medicine/___notinset/notinset_received:label')"/>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <input ref="/data/Medicine/___notinset/notinset_received_qty">
+          <label ref="jr:itext('/data/Medicine/___notinset/notinset_received_qty:label')"/>
+        </input>
+      </group>
+      <group ref="/data/Medicine/___InSet">
+        <label ref="jr:itext('/data/Medicine/___InSet:label')"/>
+        <select1 ref="/data/Medicine/___InSet/InSet_received">
+          <label ref="jr:itext('/data/Medicine/___InSet/InSet_received:label')"/>
+          <itemset nodeset="instance('yes_no')/root/item">
+            <value ref="name"/>
+            <label ref="jr:itext(itextId)"/>
+          </itemset>
+        </select1>
+        <input ref="/data/Medicine/___InSet/InSet_received_qty">
+          <label ref="jr:itext('/data/Medicine/___InSet/InSet_received_qty:label')"/>
+          <hint ref="jr:itext('/data/Medicine/___InSet/InSet_received_qty:hint')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/Medicine_summary" appearance="h1 blue">
+        <label ref="jr:itext('/data/summary/Medicine_summary:label')"/>
+      </input>
+      <input ref="/data/summary/metformin_500mg_summary_no" appearance="li">
+        <label ref="jr:itext('/data/summary/metformin_500mg_summary_no:label')"/>
+      </input>
+      <input ref="/data/summary/metformin_500mg_summary_yes" appearance="li">
+        <label ref="jr:itext('/data/summary/metformin_500mg_summary_yes:label')"/>
+      </input>
+      <input ref="/data/summary/notinset_summary_no" appearance="li">
+        <label ref="jr:itext('/data/summary/notinset_summary_no:label')"/>
+      </input>
+      <input ref="/data/summary/notinset_summary_yes" appearance="li">
+        <label ref="jr:itext('/data/summary/notinset_summary_yes:label')"/>
+      </input>
+      <input ref="/data/summary/InSet_summary_no" appearance="li">
+        <label ref="jr:itext('/data/summary/InSet_summary_no:label')"/>
+      </input>
+      <input ref="/data/summary/InSet_summary_yes" appearance="li">
+        <label ref="jr:itext('/data/summary/InSet_summary_yes:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out"/>
+    <group appearance="field-list" ref="/data/sm---stock_returned">
+      <group ref="/data/sm---stock_returned/contact"/>
+      <group ref="/data/sm---stock_returned/fields"/>
+    </group>
+  </h:body>
+</h:html>

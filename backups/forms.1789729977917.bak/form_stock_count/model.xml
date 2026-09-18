@@ -1,0 +1,59 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="stock_count" version="now()" prefix="J1!stock_count!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <date_id/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+            </contact>
+          </inputs>
+          <Medicine>
+            <metformin_500mg___set>0/0</metformin_500mg___set>
+            <metformin_500mg___unit>0/0</metformin_500mg___unit>
+            <metformin_500mg>0/0</metformin_500mg>
+            <metformin_500mg___count/>
+            <notinset>0</notinset>
+            <notinset___count/>
+            <InSet___set>0/0</InSet___set>
+            <InSet___unit>0/0</InSet___unit>
+            <InSet>0/0</InSet>
+            <InSet___count/>
+          </Medicine>
+          <place_id/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <s_metformin_500mg/>
+            <s_notinset/>
+            <s_InSet/>
+          </summary>
+          <out>
+            <metformin_500mg_availables/>
+            <notinset_availables/>
+            <InSet_availables/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+  </model>
+

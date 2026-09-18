@@ -17,17 +17,329 @@
           <text id="/data/Medicine:label">
             <value>Medicine - Distributable drugs</value>
           </text>
-          <text id="/data/Medicine/test_drug:label">
-            <value>Test Drug</value>
+          <text id="/data/Medicine/metformin_500mg:label">
+            <value>Metformin 500Mg</value>
           </text>
-          <text id="/data/Medicine/test_drug:hint">
-            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          <text id="/data/Medicine/metformin_500mg:hint">
+            <value><output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:label">
-            <value>Second Test Drug</value>
+          <text id="/data/Medicine/litacid_gel_200ml:label">
+            <value>Litacid Gel 200Ml</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:hint">
-            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          <text id="/data/Medicine/litacid_gel_200ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/litacid_gel_200ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:label">
+            <value>Omeprazole Injectable</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/omeprazole_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:label">
+            <value>Omeprazole 20Mg</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:hint">
+            <value><output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/buscopan_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:label">
+            <value>Amoxycillin 500Mg</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:hint">
+            <value><output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:label">
+            <value>Metronidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:label">
+            <value>Ringer Lactate Iv Fluid 500Ml</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ors:label">
+            <value>Ors</value>
+          </text>
+          <text id="/data/Medicine/ors:hint">
+            <value><output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:label">
+            <value>Tinidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:hint">
+            <value><output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:label">
+            <value>H Pylori Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/h_pylori_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:label">
+            <value>Chloroquine 150Mg</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:hint">
+            <value><output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:label">
+            <value>Paracetamol 500Mg</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:hint">
+            <value><output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:label">
+            <value>Malaria Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/malaria_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:label">
+            <value>Nifedipine 10Mg</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:hint">
+            <value><output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:label">
+            <value>Hydrochlorotiazide 25Mg</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:hint">
+            <value><output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:label">
+            <value>Enalapril 10Mg</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:hint">
+            <value><output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:label">
+            <value>Nifedipine 20Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:hint">
+            <value><output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:label">
+            <value>Dexamethasone Im 8Mg</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dexamethasone_im_8mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:label">
+            <value>Salbutamol Tablet 4Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:hint">
+            <value><output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:label">
+            <value>Azythromycine Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:label">
+            <value>Triple Antibiotic Ointment</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/triple_antibiotic_ointment "/> notset</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:label">
+            <value>Antiseptic Cleaner</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/antiseptic_cleaner "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:label">
+            <value>Ketoconazole Cream 2</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ketoconazole_cream_2 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:label">
+            <value>Ciprofloxacine 500Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:hint">
+            <value><output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:label">
+            <value>Doxycicline 100Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:hint">
+            <value><output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:label">
+            <value>Benzatine Penicillin 2 4 Mio Units</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:label">
+            <value>Amoxicillin Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:label">
+            <value>Acetaminophen Oral Suspension 120Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:label">
+            <value>Salbutamol Nebules 2 5Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_nebules_2_5mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:label">
+            <value>Salbutamol Sirup 2Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_sirup_2mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:label">
+            <value>Ceftriaxole Im 50Mg Kg</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ceftriaxole_im_50mg_kg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:label">
+            <value>Ipratropium</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ipratropium "/> notset</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:label">
+            <value>Vitamin C</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:hint">
+            <value><output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:label">
+            <value>Nasal Saline Drops</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/nasal_saline_drops "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:label">
+            <value>Cephalexin</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:hint">
+            <value><output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:label">
+            <value>Zinc Tablets 20Mg</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/zinc_tablets_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Ciprofloxacine Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:label">
+            <value>Metoclopramide Im</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metoclopramide_im "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>Cloxacillin Oral Solution 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:label">
+            <value>Griseofulvine Cream</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/griseofulvine_cream "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:label">
+            <value>Griseofulvin Tablets 125Mg</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:hint">
+            <value><output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:label">
+            <value>Calamine Lotion</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/calamine_lotion "/> notset</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:label">
+            <value>Benzyl Benzoate 25</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzyl_benzoate_25 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:label">
+            <value>Iron And Folic Acid Tablets</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:hint">
+            <value><output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:label">
+            <value>Co Trimoxazole Tablets 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:hint">
+            <value><output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:label">
+            <value>Metronidazole 200Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:label">
+            <value>Combined Anti Flue Medication</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:hint">
+            <value><output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:label">
+            <value>Metamizol 500Mg Ml Injectable</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metamizol_500mg_ml_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:label">
+            <value>Cloxacillin Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:label">
+            <value>Trimetoprim Sulfate 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:hint">
+            <value><output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:label">
+            <value>Furosemide Iv 20Mg</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/furosemide_iv_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:label">
+            <value>Co Mioflex Tablet</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:hint">
+            <value><output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dolex:label">
+            <value>Dolex</value>
+          </text>
+          <text id="/data/Medicine/dolex:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dolex "/> notset</value>
           </text>
           <text id="/data/summary:label">
             <value>Results/Summary page</value>
@@ -38,11 +350,167 @@
           <text id="/data/summary/r_summary:label">
             <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
           </text>
-          <text id="/data/summary/s_test_drug:label">
-            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Metformin 500Mg: **<output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet**</value>
           </text>
-          <text id="/data/summary/s_second_test_drug:label">
-            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          <text id="/data/summary/s_litacid_gel_200ml:label">
+            <value> Litacid Gel 200Ml: **<output value=" /data/Medicine/litacid_gel_200ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Omeprazole Injectable: **<output value=" /data/Medicine/omeprazole_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Omeprazole 20Mg: **<output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Buscopan Injectable: **<output value=" /data/Medicine/buscopan_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoxycillin 500Mg: **<output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Metronidazole 500Mg: **<output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_ringer_lactate_IV_fluid_500ml:label">
+            <value> Ringer Lactate Iv Fluid 500Ml: **<output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> Ors: **<output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazole 500Mg: **<output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_h_pylori_rapid_test:label">
+            <value> H Pylori Rapid Test: **<output value=" /data/Medicine/h_pylori_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Chloroquine 150Mg: **<output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Paracetamol 500Mg: **<output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_malaria_rapid_test:label">
+            <value> Malaria Rapid Test: **<output value=" /data/Medicine/malaria_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifedipine 10Mg: **<output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_hydrochlorotiazide_25mg:label">
+            <value> Hydrochlorotiazide 25Mg: **<output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Enalapril 10Mg: **<output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg_tablets:label">
+            <value> Nifedipine 20Mg Tablets: **<output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_im_8mg:label">
+            <value> Dexamethasone Im 8Mg: **<output value=" /data/Medicine/dexamethasone_im_8mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_tablet_4mg:label">
+            <value> Salbutamol Tablet 4Mg: **<output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_azythromycine_tablets_500mg:label">
+            <value> Azythromycine Tablets 500Mg: **<output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Triple Antibiotic Ointment: **<output value=" /data/Medicine/triple_antibiotic_ointment___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_antiseptic_cleaner:label">
+            <value> Antiseptic Cleaner: **<output value=" /data/Medicine/antiseptic_cleaner___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ketoconazole_cream_2:label">
+            <value> Ketoconazole Cream 2: **<output value=" /data/Medicine/ketoconazole_cream_2___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_500mg_tablets:label">
+            <value> Ciprofloxacine 500Mg Tablets: **<output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_doxycicline_100mg_tablets:label">
+            <value> Doxycicline 100Mg Tablets: **<output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_benzatine_penicillin_2_4_mio_units:label">
+            <value> Benzatine Penicillin 2 4 Mio Units: **<output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_oral_suspension_250mg_5ml:label">
+            <value> Amoxicillin Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_acetaminophen_oral_suspension_120mg_5ml:label">
+            <value> Acetaminophen Oral Suspension 120Mg 5Ml: **<output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_nebules_2_5mg:label">
+            <value> Salbutamol Nebules 2 5Mg: **<output value=" /data/Medicine/salbutamol_nebules_2_5mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_sirup_2mg_5ml:label">
+            <value> Salbutamol Sirup 2Mg 5Ml: **<output value=" /data/Medicine/salbutamol_sirup_2mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ceftriaxole_im_50mg_kg:label">
+            <value> Ceftriaxole Im 50Mg Kg: **<output value=" /data/Medicine/ceftriaxole_im_50mg_kg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ipratropium:label">
+            <value> Ipratropium: **<output value=" /data/Medicine/ipratropium___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_c:label">
+            <value> Vitamin C: **<output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nasal_saline_drops:label">
+            <value> Nasal Saline Drops: **<output value=" /data/Medicine/nasal_saline_drops___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cephalexin:label">
+            <value> Cephalexin: **<output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets_20mg:label">
+            <value> Zinc Tablets 20Mg: **<output value=" /data/Medicine/zinc_tablets_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value> Ciprofloxacine Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_metoclopramide_im:label">
+            <value> Metoclopramide Im: **<output value=" /data/Medicine/metoclopramide_im___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_oral_solution_250mg_5ml:label">
+            <value> Cloxacillin Oral Solution 250Mg 5Ml: **<output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvine_cream:label">
+            <value> Griseofulvine Cream: **<output value=" /data/Medicine/griseofulvine_cream___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tablets_125mg:label">
+            <value> Griseofulvin Tablets 125Mg: **<output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Calamine Lotion: **<output value=" /data/Medicine/calamine_lotion___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzyl Benzoate 25: **<output value=" /data/Medicine/benzyl_benzoate_25___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_iron_and_folic_acid_tablets:label">
+            <value> Iron And Folic Acid Tablets: **<output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_co_trimoxazole_tablets_400_80mg:label">
+            <value> Co Trimoxazole Tablets 400 80Mg: **<output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_200mg:label">
+            <value> Metronidazole 200Mg: **<output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_combined_anti_flue_medication:label">
+            <value> Combined Anti Flue Medication: **<output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_500mg_ml_injectable:label">
+            <value> Metamizol 500Mg Ml Injectable: **<output value=" /data/Medicine/metamizol_500mg_ml_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_tablets_500mg:label">
+            <value> Cloxacillin Tablets 500Mg: **<output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_trimetoprim_sulfate_400_80mg:label">
+            <value> Trimetoprim Sulfate 400 80Mg: **<output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_iv_20mg:label">
+            <value> Furosemide Iv 20Mg: **<output value=" /data/Medicine/furosemide_iv_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_co_mioflex_tablet:label">
+            <value> Co Mioflex Tablet: **<output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dolex:label">
+            <value> Dolex: **<output value=" /data/Medicine/dolex___count "/> notset**</value>
           </text>
         </translation>
         <translation lang="es">
@@ -58,17 +526,329 @@
           <text id="/data/Medicine:label">
             <value>Medicine - Distributable drugs</value>
           </text>
-          <text id="/data/Medicine/test_drug:label">
-            <value>Test Drug</value>
+          <text id="/data/Medicine/metformin_500mg:label">
+            <value>Metformin 500Mg</value>
           </text>
-          <text id="/data/Medicine/test_drug:hint">
-            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          <text id="/data/Medicine/metformin_500mg:hint">
+            <value><output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:label">
-            <value>Second Test Drug</value>
+          <text id="/data/Medicine/litacid_gel_200ml:label">
+            <value>Litacid Gel 200Ml</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:hint">
-            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          <text id="/data/Medicine/litacid_gel_200ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/litacid_gel_200ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:label">
+            <value>Omeprazole Injectable</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/omeprazole_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:label">
+            <value>Omeprazole 20Mg</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:hint">
+            <value><output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/buscopan_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:label">
+            <value>Amoxycillin 500Mg</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:hint">
+            <value><output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:label">
+            <value>Metronidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:label">
+            <value>Ringer Lactate Iv Fluid 500Ml</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ors:label">
+            <value>Ors</value>
+          </text>
+          <text id="/data/Medicine/ors:hint">
+            <value><output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:label">
+            <value>Tinidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:hint">
+            <value><output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:label">
+            <value>H Pylori Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/h_pylori_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:label">
+            <value>Chloroquine 150Mg</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:hint">
+            <value><output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:label">
+            <value>Paracetamol 500Mg</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:hint">
+            <value><output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:label">
+            <value>Malaria Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/malaria_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:label">
+            <value>Nifedipine 10Mg</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:hint">
+            <value><output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:label">
+            <value>Hydrochlorotiazide 25Mg</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:hint">
+            <value><output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:label">
+            <value>Enalapril 10Mg</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:hint">
+            <value><output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:label">
+            <value>Nifedipine 20Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:hint">
+            <value><output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:label">
+            <value>Dexamethasone Im 8Mg</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dexamethasone_im_8mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:label">
+            <value>Salbutamol Tablet 4Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:hint">
+            <value><output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:label">
+            <value>Azythromycine Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:label">
+            <value>Triple Antibiotic Ointment</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/triple_antibiotic_ointment "/> notset</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:label">
+            <value>Antiseptic Cleaner</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/antiseptic_cleaner "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:label">
+            <value>Ketoconazole Cream 2</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ketoconazole_cream_2 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:label">
+            <value>Ciprofloxacine 500Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:hint">
+            <value><output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:label">
+            <value>Doxycicline 100Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:hint">
+            <value><output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:label">
+            <value>Benzatine Penicillin 2 4 Mio Units</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:label">
+            <value>Amoxicillin Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:label">
+            <value>Acetaminophen Oral Suspension 120Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:label">
+            <value>Salbutamol Nebules 2 5Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_nebules_2_5mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:label">
+            <value>Salbutamol Sirup 2Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_sirup_2mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:label">
+            <value>Ceftriaxole Im 50Mg Kg</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ceftriaxole_im_50mg_kg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:label">
+            <value>Ipratropium</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ipratropium "/> notset</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:label">
+            <value>Vitamin C</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:hint">
+            <value><output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:label">
+            <value>Nasal Saline Drops</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/nasal_saline_drops "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:label">
+            <value>Cephalexin</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:hint">
+            <value><output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:label">
+            <value>Zinc Tablets 20Mg</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/zinc_tablets_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Ciprofloxacine Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:label">
+            <value>Metoclopramide Im</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metoclopramide_im "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>Cloxacillin Oral Solution 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:label">
+            <value>Griseofulvine Cream</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/griseofulvine_cream "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:label">
+            <value>Griseofulvin Tablets 125Mg</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:hint">
+            <value><output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:label">
+            <value>Calamine Lotion</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/calamine_lotion "/> notset</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:label">
+            <value>Benzyl Benzoate 25</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzyl_benzoate_25 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:label">
+            <value>Iron And Folic Acid Tablets</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:hint">
+            <value><output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:label">
+            <value>Co Trimoxazole Tablets 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:hint">
+            <value><output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:label">
+            <value>Metronidazole 200Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:label">
+            <value>Combined Anti Flue Medication</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:hint">
+            <value><output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:label">
+            <value>Metamizol 500Mg Ml Injectable</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metamizol_500mg_ml_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:label">
+            <value>Cloxacillin Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:label">
+            <value>Trimetoprim Sulfate 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:hint">
+            <value><output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:label">
+            <value>Furosemide Iv 20Mg</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/furosemide_iv_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:label">
+            <value>Co Mioflex Tablet</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:hint">
+            <value><output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dolex:label">
+            <value>Dolex</value>
+          </text>
+          <text id="/data/Medicine/dolex:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dolex "/> notset</value>
           </text>
           <text id="/data/summary:label">
             <value>Results/Summary page</value>
@@ -79,11 +859,167 @@
           <text id="/data/summary/r_summary:label">
             <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
           </text>
-          <text id="/data/summary/s_test_drug:label">
-            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Metformin 500Mg: **<output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet**</value>
           </text>
-          <text id="/data/summary/s_second_test_drug:label">
-            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          <text id="/data/summary/s_litacid_gel_200ml:label">
+            <value> Litacid Gel 200Ml: **<output value=" /data/Medicine/litacid_gel_200ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Omeprazole Injectable: **<output value=" /data/Medicine/omeprazole_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Omeprazole 20Mg: **<output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Buscopan Injectable: **<output value=" /data/Medicine/buscopan_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoxycillin 500Mg: **<output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Metronidazole 500Mg: **<output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_ringer_lactate_IV_fluid_500ml:label">
+            <value> Ringer Lactate Iv Fluid 500Ml: **<output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> Ors: **<output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazole 500Mg: **<output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_h_pylori_rapid_test:label">
+            <value> H Pylori Rapid Test: **<output value=" /data/Medicine/h_pylori_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Chloroquine 150Mg: **<output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Paracetamol 500Mg: **<output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_malaria_rapid_test:label">
+            <value> Malaria Rapid Test: **<output value=" /data/Medicine/malaria_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifedipine 10Mg: **<output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_hydrochlorotiazide_25mg:label">
+            <value> Hydrochlorotiazide 25Mg: **<output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Enalapril 10Mg: **<output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg_tablets:label">
+            <value> Nifedipine 20Mg Tablets: **<output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_im_8mg:label">
+            <value> Dexamethasone Im 8Mg: **<output value=" /data/Medicine/dexamethasone_im_8mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_tablet_4mg:label">
+            <value> Salbutamol Tablet 4Mg: **<output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_azythromycine_tablets_500mg:label">
+            <value> Azythromycine Tablets 500Mg: **<output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Triple Antibiotic Ointment: **<output value=" /data/Medicine/triple_antibiotic_ointment___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_antiseptic_cleaner:label">
+            <value> Antiseptic Cleaner: **<output value=" /data/Medicine/antiseptic_cleaner___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ketoconazole_cream_2:label">
+            <value> Ketoconazole Cream 2: **<output value=" /data/Medicine/ketoconazole_cream_2___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_500mg_tablets:label">
+            <value> Ciprofloxacine 500Mg Tablets: **<output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_doxycicline_100mg_tablets:label">
+            <value> Doxycicline 100Mg Tablets: **<output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_benzatine_penicillin_2_4_mio_units:label">
+            <value> Benzatine Penicillin 2 4 Mio Units: **<output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_oral_suspension_250mg_5ml:label">
+            <value> Amoxicillin Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_acetaminophen_oral_suspension_120mg_5ml:label">
+            <value> Acetaminophen Oral Suspension 120Mg 5Ml: **<output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_nebules_2_5mg:label">
+            <value> Salbutamol Nebules 2 5Mg: **<output value=" /data/Medicine/salbutamol_nebules_2_5mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_sirup_2mg_5ml:label">
+            <value> Salbutamol Sirup 2Mg 5Ml: **<output value=" /data/Medicine/salbutamol_sirup_2mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ceftriaxole_im_50mg_kg:label">
+            <value> Ceftriaxole Im 50Mg Kg: **<output value=" /data/Medicine/ceftriaxole_im_50mg_kg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ipratropium:label">
+            <value> Ipratropium: **<output value=" /data/Medicine/ipratropium___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_c:label">
+            <value> Vitamin C: **<output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nasal_saline_drops:label">
+            <value> Nasal Saline Drops: **<output value=" /data/Medicine/nasal_saline_drops___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cephalexin:label">
+            <value> Cephalexin: **<output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets_20mg:label">
+            <value> Zinc Tablets 20Mg: **<output value=" /data/Medicine/zinc_tablets_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value> Ciprofloxacine Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_metoclopramide_im:label">
+            <value> Metoclopramide Im: **<output value=" /data/Medicine/metoclopramide_im___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_oral_solution_250mg_5ml:label">
+            <value> Cloxacillin Oral Solution 250Mg 5Ml: **<output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvine_cream:label">
+            <value> Griseofulvine Cream: **<output value=" /data/Medicine/griseofulvine_cream___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tablets_125mg:label">
+            <value> Griseofulvin Tablets 125Mg: **<output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Calamine Lotion: **<output value=" /data/Medicine/calamine_lotion___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzyl Benzoate 25: **<output value=" /data/Medicine/benzyl_benzoate_25___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_iron_and_folic_acid_tablets:label">
+            <value> Iron And Folic Acid Tablets: **<output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_co_trimoxazole_tablets_400_80mg:label">
+            <value> Co Trimoxazole Tablets 400 80Mg: **<output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_200mg:label">
+            <value> Metronidazole 200Mg: **<output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_combined_anti_flue_medication:label">
+            <value> Combined Anti Flue Medication: **<output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_500mg_ml_injectable:label">
+            <value> Metamizol 500Mg Ml Injectable: **<output value=" /data/Medicine/metamizol_500mg_ml_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_tablets_500mg:label">
+            <value> Cloxacillin Tablets 500Mg: **<output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_trimetoprim_sulfate_400_80mg:label">
+            <value> Trimetoprim Sulfate 400 80Mg: **<output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_iv_20mg:label">
+            <value> Furosemide Iv 20Mg: **<output value=" /data/Medicine/furosemide_iv_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_co_mioflex_tablet:label">
+            <value> Co Mioflex Tablet: **<output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dolex:label">
+            <value> Dolex: **<output value=" /data/Medicine/dolex___count "/> notset**</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -99,17 +1035,329 @@
           <text id="/data/Medicine:label">
             <value>Medicine - Distributable drugs</value>
           </text>
-          <text id="/data/Medicine/test_drug:label">
-            <value>Test Drug</value>
+          <text id="/data/Medicine/metformin_500mg:label">
+            <value>Metformin 500Mg</value>
           </text>
-          <text id="/data/Medicine/test_drug:hint">
-            <value> Add the quantity: <output value=" /data/Medicine/test_drug "/> tablet</value>
+          <text id="/data/Medicine/metformin_500mg:hint">
+            <value><output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:label">
-            <value>Second Test Drug</value>
+          <text id="/data/Medicine/litacid_gel_200ml:label">
+            <value>Litacid Gel 200Ml</value>
           </text>
-          <text id="/data/Medicine/second_test_drug:hint">
-            <value><output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill</value>
+          <text id="/data/Medicine/litacid_gel_200ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/litacid_gel_200ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:label">
+            <value>Omeprazole Injectable</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/omeprazole_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:label">
+            <value>Omeprazole 20Mg</value>
+          </text>
+          <text id="/data/Medicine/omeprazole_20mg:hint">
+            <value><output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/Medicine/buscopan_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/buscopan_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:label">
+            <value>Amoxycillin 500Mg</value>
+          </text>
+          <text id="/data/Medicine/amoxycillin_500mg:hint">
+            <value><output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:label">
+            <value>Metronidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_500mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:label">
+            <value>Ringer Lactate Iv Fluid 500Ml</value>
+          </text>
+          <text id="/data/Medicine/ringer_lactate_IV_fluid_500ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ors:label">
+            <value>Ors</value>
+          </text>
+          <text id="/data/Medicine/ors:hint">
+            <value><output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:label">
+            <value>Tinidazole 500Mg</value>
+          </text>
+          <text id="/data/Medicine/tinidazole_500mg:hint">
+            <value><output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:label">
+            <value>H Pylori Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/h_pylori_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/h_pylori_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:label">
+            <value>Chloroquine 150Mg</value>
+          </text>
+          <text id="/data/Medicine/chloroquine_150mg:hint">
+            <value><output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:label">
+            <value>Paracetamol 500Mg</value>
+          </text>
+          <text id="/data/Medicine/paracetamol_500mg:hint">
+            <value><output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:label">
+            <value>Malaria Rapid Test</value>
+          </text>
+          <text id="/data/Medicine/malaria_rapid_test:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/malaria_rapid_test "/> notset</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:label">
+            <value>Nifedipine 10Mg</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_10mg:hint">
+            <value><output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:label">
+            <value>Hydrochlorotiazide 25Mg</value>
+          </text>
+          <text id="/data/Medicine/hydrochlorotiazide_25mg:hint">
+            <value><output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:label">
+            <value>Enalapril 10Mg</value>
+          </text>
+          <text id="/data/Medicine/enalapril_10mg:hint">
+            <value><output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:label">
+            <value>Nifedipine 20Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/nifedipine_20mg_tablets:hint">
+            <value><output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:label">
+            <value>Dexamethasone Im 8Mg</value>
+          </text>
+          <text id="/data/Medicine/dexamethasone_im_8mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dexamethasone_im_8mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:label">
+            <value>Salbutamol Tablet 4Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_tablet_4mg:hint">
+            <value><output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:label">
+            <value>Azythromycine Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/azythromycine_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:label">
+            <value>Triple Antibiotic Ointment</value>
+          </text>
+          <text id="/data/Medicine/triple_antibiotic_ointment:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/triple_antibiotic_ointment "/> notset</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:label">
+            <value>Antiseptic Cleaner</value>
+          </text>
+          <text id="/data/Medicine/antiseptic_cleaner:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/antiseptic_cleaner "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:label">
+            <value>Ketoconazole Cream 2</value>
+          </text>
+          <text id="/data/Medicine/ketoconazole_cream_2:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ketoconazole_cream_2 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:label">
+            <value>Ciprofloxacine 500Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_500mg_tablets:hint">
+            <value><output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:label">
+            <value>Doxycicline 100Mg Tablets</value>
+          </text>
+          <text id="/data/Medicine/doxycicline_100mg_tablets:hint">
+            <value><output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:label">
+            <value>Benzatine Penicillin 2 4 Mio Units</value>
+          </text>
+          <text id="/data/Medicine/benzatine_penicillin_2_4_mio_units:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units "/> notset</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:label">
+            <value>Amoxicillin Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:label">
+            <value>Acetaminophen Oral Suspension 120Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:label">
+            <value>Salbutamol Nebules 2 5Mg</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_nebules_2_5mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_nebules_2_5mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:label">
+            <value>Salbutamol Sirup 2Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/salbutamol_sirup_2mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/salbutamol_sirup_2mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:label">
+            <value>Ceftriaxole Im 50Mg Kg</value>
+          </text>
+          <text id="/data/Medicine/ceftriaxole_im_50mg_kg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ceftriaxole_im_50mg_kg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:label">
+            <value>Ipratropium</value>
+          </text>
+          <text id="/data/Medicine/ipratropium:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ipratropium "/> notset</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:label">
+            <value>Vitamin C</value>
+          </text>
+          <text id="/data/Medicine/vitamin_c:hint">
+            <value><output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:label">
+            <value>Nasal Saline Drops</value>
+          </text>
+          <text id="/data/Medicine/nasal_saline_drops:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/nasal_saline_drops "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:label">
+            <value>Cephalexin</value>
+          </text>
+          <text id="/data/Medicine/cephalexin:hint">
+            <value><output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:label">
+            <value>Zinc Tablets 20Mg</value>
+          </text>
+          <text id="/data/Medicine/zinc_tablets_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/zinc_tablets_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Ciprofloxacine Oral Suspension 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:label">
+            <value>Metoclopramide Im</value>
+          </text>
+          <text id="/data/Medicine/metoclopramide_im:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metoclopramide_im "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>Cloxacillin Oral Solution 250Mg 5Ml</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_oral_solution_250mg_5ml:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:label">
+            <value>Griseofulvine Cream</value>
+          </text>
+          <text id="/data/Medicine/griseofulvine_cream:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/griseofulvine_cream "/> notset</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:label">
+            <value>Griseofulvin Tablets 125Mg</value>
+          </text>
+          <text id="/data/Medicine/griseofulvin_tablets_125mg:hint">
+            <value><output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:label">
+            <value>Calamine Lotion</value>
+          </text>
+          <text id="/data/Medicine/calamine_lotion:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/calamine_lotion "/> notset</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:label">
+            <value>Benzyl Benzoate 25</value>
+          </text>
+          <text id="/data/Medicine/benzyl_benzoate_25:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/benzyl_benzoate_25 "/> notset</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:label">
+            <value>Iron And Folic Acid Tablets</value>
+          </text>
+          <text id="/data/Medicine/iron_and_folic_acid_tablets:hint">
+            <value><output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:label">
+            <value>Co Trimoxazole Tablets 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/co_trimoxazole_tablets_400_80mg:hint">
+            <value><output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:label">
+            <value>Metronidazole 200Mg</value>
+          </text>
+          <text id="/data/Medicine/metronidazole_200mg:hint">
+            <value><output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:label">
+            <value>Combined Anti Flue Medication</value>
+          </text>
+          <text id="/data/Medicine/combined_anti_flue_medication:hint">
+            <value><output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:label">
+            <value>Metamizol 500Mg Ml Injectable</value>
+          </text>
+          <text id="/data/Medicine/metamizol_500mg_ml_injectable:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/metamizol_500mg_ml_injectable "/> notset</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:label">
+            <value>Cloxacillin Tablets 500Mg</value>
+          </text>
+          <text id="/data/Medicine/cloxacillin_tablets_500mg:hint">
+            <value><output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:label">
+            <value>Trimetoprim Sulfate 400 80Mg</value>
+          </text>
+          <text id="/data/Medicine/trimetoprim_sulfate_400_80mg:hint">
+            <value><output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:label">
+            <value>Furosemide Iv 20Mg</value>
+          </text>
+          <text id="/data/Medicine/furosemide_iv_20mg:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/furosemide_iv_20mg "/> notset</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:label">
+            <value>Co Mioflex Tablet</value>
+          </text>
+          <text id="/data/Medicine/co_mioflex_tablet:hint">
+            <value><output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet</value>
+          </text>
+          <text id="/data/Medicine/dolex:label">
+            <value>Dolex</value>
+          </text>
+          <text id="/data/Medicine/dolex:hint">
+            <value> Add the quantity: <output value=" /data/Medicine/dolex "/> notset</value>
           </text>
           <text id="/data/summary:label">
             <value>Results/Summary page</value>
@@ -120,11 +1368,167 @@
           <text id="/data/summary/r_summary:label">
             <value>Stock items you currently have.&lt;i class="fa fa-list-ul"&gt;&lt;/i&gt;</value>
           </text>
-          <text id="/data/summary/s_test_drug:label">
-            <value> Test Drug: **<output value=" /data/Medicine/test_drug___count "/> tablet**</value>
+          <text id="/data/summary/s_metformin_500mg:label">
+            <value> Metformin 500Mg: **<output value=" /data/Medicine/metformin_500mg___set "/> box of <output value=" /data/Medicine/metformin_500mg___unit "/> tablet**</value>
           </text>
-          <text id="/data/summary/s_second_test_drug:label">
-            <value> Second Test Drug: **<output value=" /data/Medicine/second_test_drug___set "/> box of 12 <output value=" /data/Medicine/second_test_drug___unit "/> pill**</value>
+          <text id="/data/summary/s_litacid_gel_200ml:label">
+            <value> Litacid Gel 200Ml: **<output value=" /data/Medicine/litacid_gel_200ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_injectable:label">
+            <value> Omeprazole Injectable: **<output value=" /data/Medicine/omeprazole_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_omeprazole_20mg:label">
+            <value> Omeprazole 20Mg: **<output value=" /data/Medicine/omeprazole_20mg___set "/> box of <output value=" /data/Medicine/omeprazole_20mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_buscopan_injectable:label">
+            <value> Buscopan Injectable: **<output value=" /data/Medicine/buscopan_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxycillin_500mg:label">
+            <value> Amoxycillin 500Mg: **<output value=" /data/Medicine/amoxycillin_500mg___set "/> box of <output value=" /data/Medicine/amoxycillin_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_500mg:label">
+            <value> Metronidazole 500Mg: **<output value=" /data/Medicine/metronidazole_500mg___set "/> box of <output value=" /data/Medicine/metronidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_ringer_lactate_IV_fluid_500ml:label">
+            <value> Ringer Lactate Iv Fluid 500Ml: **<output value=" /data/Medicine/ringer_lactate_IV_fluid_500ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ors:label">
+            <value> Ors: **<output value=" /data/Medicine/ors___set "/> box of <output value=" /data/Medicine/ors___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_tinidazole_500mg:label">
+            <value> Tinidazole 500Mg: **<output value=" /data/Medicine/tinidazole_500mg___set "/> box of <output value=" /data/Medicine/tinidazole_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_h_pylori_rapid_test:label">
+            <value> H Pylori Rapid Test: **<output value=" /data/Medicine/h_pylori_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_chloroquine_150mg:label">
+            <value> Chloroquine 150Mg: **<output value=" /data/Medicine/chloroquine_150mg___set "/> box of <output value=" /data/Medicine/chloroquine_150mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_paracetamol_500mg:label">
+            <value> Paracetamol 500Mg: **<output value=" /data/Medicine/paracetamol_500mg___set "/> box of <output value=" /data/Medicine/paracetamol_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_malaria_rapid_test:label">
+            <value> Malaria Rapid Test: **<output value=" /data/Medicine/malaria_rapid_test___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_10mg:label">
+            <value> Nifedipine 10Mg: **<output value=" /data/Medicine/nifedipine_10mg___set "/> box of <output value=" /data/Medicine/nifedipine_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_hydrochlorotiazide_25mg:label">
+            <value> Hydrochlorotiazide 25Mg: **<output value=" /data/Medicine/hydrochlorotiazide_25mg___set "/> box of <output value=" /data/Medicine/hydrochlorotiazide_25mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_enalapril_10mg:label">
+            <value> Enalapril 10Mg: **<output value=" /data/Medicine/enalapril_10mg___set "/> box of <output value=" /data/Medicine/enalapril_10mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nifedipine_20mg_tablets:label">
+            <value> Nifedipine 20Mg Tablets: **<output value=" /data/Medicine/nifedipine_20mg_tablets___set "/> box of <output value=" /data/Medicine/nifedipine_20mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dexamethasone_im_8mg:label">
+            <value> Dexamethasone Im 8Mg: **<output value=" /data/Medicine/dexamethasone_im_8mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_tablet_4mg:label">
+            <value> Salbutamol Tablet 4Mg: **<output value=" /data/Medicine/salbutamol_tablet_4mg___set "/> box of <output value=" /data/Medicine/salbutamol_tablet_4mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_azythromycine_tablets_500mg:label">
+            <value> Azythromycine Tablets 500Mg: **<output value=" /data/Medicine/azythromycine_tablets_500mg___set "/> box of <output value=" /data/Medicine/azythromycine_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_triple_antibiotic_ointment:label">
+            <value> Triple Antibiotic Ointment: **<output value=" /data/Medicine/triple_antibiotic_ointment___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_antiseptic_cleaner:label">
+            <value> Antiseptic Cleaner: **<output value=" /data/Medicine/antiseptic_cleaner___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ketoconazole_cream_2:label">
+            <value> Ketoconazole Cream 2: **<output value=" /data/Medicine/ketoconazole_cream_2___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_500mg_tablets:label">
+            <value> Ciprofloxacine 500Mg Tablets: **<output value=" /data/Medicine/ciprofloxacine_500mg_tablets___set "/> box of <output value=" /data/Medicine/ciprofloxacine_500mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_doxycicline_100mg_tablets:label">
+            <value> Doxycicline 100Mg Tablets: **<output value=" /data/Medicine/doxycicline_100mg_tablets___set "/> box of <output value=" /data/Medicine/doxycicline_100mg_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_benzatine_penicillin_2_4_mio_units:label">
+            <value> Benzatine Penicillin 2 4 Mio Units: **<output value=" /data/Medicine/benzatine_penicillin_2_4_mio_units___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_amoxicillin_oral_suspension_250mg_5ml:label">
+            <value> Amoxicillin Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_acetaminophen_oral_suspension_120mg_5ml:label">
+            <value> Acetaminophen Oral Suspension 120Mg 5Ml: **<output value=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_nebules_2_5mg:label">
+            <value> Salbutamol Nebules 2 5Mg: **<output value=" /data/Medicine/salbutamol_nebules_2_5mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_salbutamol_sirup_2mg_5ml:label">
+            <value> Salbutamol Sirup 2Mg 5Ml: **<output value=" /data/Medicine/salbutamol_sirup_2mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ceftriaxole_im_50mg_kg:label">
+            <value> Ceftriaxole Im 50Mg Kg: **<output value=" /data/Medicine/ceftriaxole_im_50mg_kg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ipratropium:label">
+            <value> Ipratropium: **<output value=" /data/Medicine/ipratropium___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_vitamin_c:label">
+            <value> Vitamin C: **<output value=" /data/Medicine/vitamin_c___set "/> box of <output value=" /data/Medicine/vitamin_c___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_nasal_saline_drops:label">
+            <value> Nasal Saline Drops: **<output value=" /data/Medicine/nasal_saline_drops___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cephalexin:label">
+            <value> Cephalexin: **<output value=" /data/Medicine/cephalexin___set "/> box of <output value=" /data/Medicine/cephalexin___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_zinc_tablets_20mg:label">
+            <value> Zinc Tablets 20Mg: **<output value=" /data/Medicine/zinc_tablets_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value> Ciprofloxacine Oral Suspension 250Mg 5Ml: **<output value=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_metoclopramide_im:label">
+            <value> Metoclopramide Im: **<output value=" /data/Medicine/metoclopramide_im___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_oral_solution_250mg_5ml:label">
+            <value> Cloxacillin Oral Solution 250Mg 5Ml: **<output value=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvine_cream:label">
+            <value> Griseofulvine Cream: **<output value=" /data/Medicine/griseofulvine_cream___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_griseofulvin_tablets_125mg:label">
+            <value> Griseofulvin Tablets 125Mg: **<output value=" /data/Medicine/griseofulvin_tablets_125mg___set "/> box of <output value=" /data/Medicine/griseofulvin_tablets_125mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_calamine_lotion:label">
+            <value> Calamine Lotion: **<output value=" /data/Medicine/calamine_lotion___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_benzyl_benzoate_25:label">
+            <value> Benzyl Benzoate 25: **<output value=" /data/Medicine/benzyl_benzoate_25___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_iron_and_folic_acid_tablets:label">
+            <value> Iron And Folic Acid Tablets: **<output value=" /data/Medicine/iron_and_folic_acid_tablets___set "/> box of <output value=" /data/Medicine/iron_and_folic_acid_tablets___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_co_trimoxazole_tablets_400_80mg:label">
+            <value> Co Trimoxazole Tablets 400 80Mg: **<output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set "/> box of <output value=" /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metronidazole_200mg:label">
+            <value> Metronidazole 200Mg: **<output value=" /data/Medicine/metronidazole_200mg___set "/> box of <output value=" /data/Medicine/metronidazole_200mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_combined_anti_flue_medication:label">
+            <value> Combined Anti Flue Medication: **<output value=" /data/Medicine/combined_anti_flue_medication___set "/> box of <output value=" /data/Medicine/combined_anti_flue_medication___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_metamizol_500mg_ml_injectable:label">
+            <value> Metamizol 500Mg Ml Injectable: **<output value=" /data/Medicine/metamizol_500mg_ml_injectable___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_cloxacillin_tablets_500mg:label">
+            <value> Cloxacillin Tablets 500Mg: **<output value=" /data/Medicine/cloxacillin_tablets_500mg___set "/> box of <output value=" /data/Medicine/cloxacillin_tablets_500mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_trimetoprim_sulfate_400_80mg:label">
+            <value> Trimetoprim Sulfate 400 80Mg: **<output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___set "/> box of <output value=" /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_furosemide_iv_20mg:label">
+            <value> Furosemide Iv 20Mg: **<output value=" /data/Medicine/furosemide_iv_20mg___count "/> notset**</value>
+          </text>
+          <text id="/data/summary/s_co_mioflex_tablet:label">
+            <value> Co Mioflex Tablet: **<output value=" /data/Medicine/co_mioflex_tablet___set "/> box of <output value=" /data/Medicine/co_mioflex_tablet___unit "/> tablet**</value>
+          </text>
+          <text id="/data/summary/s_dolex:label">
+            <value> Dolex: **<output value=" /data/Medicine/dolex___count "/> notset**</value>
           </text>
         </translation>
       </itext>
@@ -151,23 +1555,281 @@
             </contact>
           </inputs>
           <Medicine>
-            <test_drug>0</test_drug>
-            <test_drug___count/>
-            <second_test_drug___set>0/0</second_test_drug___set>
-            <second_test_drug___unit>0/0</second_test_drug___unit>
-            <second_test_drug>0/0</second_test_drug>
-            <second_test_drug___count/>
+            <metformin_500mg___set>0/0</metformin_500mg___set>
+            <metformin_500mg___unit>0/0</metformin_500mg___unit>
+            <metformin_500mg>0/0</metformin_500mg>
+            <metformin_500mg___count/>
+            <litacid_gel_200ml>0</litacid_gel_200ml>
+            <litacid_gel_200ml___count/>
+            <omeprazole_injectable>0</omeprazole_injectable>
+            <omeprazole_injectable___count/>
+            <omeprazole_20mg___set>0/0</omeprazole_20mg___set>
+            <omeprazole_20mg___unit>0/0</omeprazole_20mg___unit>
+            <omeprazole_20mg>0/0</omeprazole_20mg>
+            <omeprazole_20mg___count/>
+            <buscopan_injectable>0</buscopan_injectable>
+            <buscopan_injectable___count/>
+            <amoxycillin_500mg___set>0/0</amoxycillin_500mg___set>
+            <amoxycillin_500mg___unit>0/0</amoxycillin_500mg___unit>
+            <amoxycillin_500mg>0/0</amoxycillin_500mg>
+            <amoxycillin_500mg___count/>
+            <metronidazole_500mg___set>0/0</metronidazole_500mg___set>
+            <metronidazole_500mg___unit>0/0</metronidazole_500mg___unit>
+            <metronidazole_500mg>0/0</metronidazole_500mg>
+            <metronidazole_500mg___count/>
+            <ringer_lactate_IV_fluid_500ml>0</ringer_lactate_IV_fluid_500ml>
+            <ringer_lactate_IV_fluid_500ml___count/>
+            <ors___set>0/0</ors___set>
+            <ors___unit>0/0</ors___unit>
+            <ors>0/0</ors>
+            <ors___count/>
+            <tinidazole_500mg___set>0/0</tinidazole_500mg___set>
+            <tinidazole_500mg___unit>0/0</tinidazole_500mg___unit>
+            <tinidazole_500mg>0/0</tinidazole_500mg>
+            <tinidazole_500mg___count/>
+            <h_pylori_rapid_test>0</h_pylori_rapid_test>
+            <h_pylori_rapid_test___count/>
+            <chloroquine_150mg___set>0/0</chloroquine_150mg___set>
+            <chloroquine_150mg___unit>0/0</chloroquine_150mg___unit>
+            <chloroquine_150mg>0/0</chloroquine_150mg>
+            <chloroquine_150mg___count/>
+            <paracetamol_500mg___set>0/0</paracetamol_500mg___set>
+            <paracetamol_500mg___unit>0/0</paracetamol_500mg___unit>
+            <paracetamol_500mg>0/0</paracetamol_500mg>
+            <paracetamol_500mg___count/>
+            <malaria_rapid_test>0</malaria_rapid_test>
+            <malaria_rapid_test___count/>
+            <nifedipine_10mg___set>0/0</nifedipine_10mg___set>
+            <nifedipine_10mg___unit>0/0</nifedipine_10mg___unit>
+            <nifedipine_10mg>0/0</nifedipine_10mg>
+            <nifedipine_10mg___count/>
+            <hydrochlorotiazide_25mg___set>0/0</hydrochlorotiazide_25mg___set>
+            <hydrochlorotiazide_25mg___unit>0/0</hydrochlorotiazide_25mg___unit>
+            <hydrochlorotiazide_25mg>0/0</hydrochlorotiazide_25mg>
+            <hydrochlorotiazide_25mg___count/>
+            <enalapril_10mg___set>0/0</enalapril_10mg___set>
+            <enalapril_10mg___unit>0/0</enalapril_10mg___unit>
+            <enalapril_10mg>0/0</enalapril_10mg>
+            <enalapril_10mg___count/>
+            <nifedipine_20mg_tablets___set>0/0</nifedipine_20mg_tablets___set>
+            <nifedipine_20mg_tablets___unit>0/0</nifedipine_20mg_tablets___unit>
+            <nifedipine_20mg_tablets>0/0</nifedipine_20mg_tablets>
+            <nifedipine_20mg_tablets___count/>
+            <dexamethasone_im_8mg>0</dexamethasone_im_8mg>
+            <dexamethasone_im_8mg___count/>
+            <salbutamol_tablet_4mg___set>0/0</salbutamol_tablet_4mg___set>
+            <salbutamol_tablet_4mg___unit>0/0</salbutamol_tablet_4mg___unit>
+            <salbutamol_tablet_4mg>0/0</salbutamol_tablet_4mg>
+            <salbutamol_tablet_4mg___count/>
+            <azythromycine_tablets_500mg___set>0/0</azythromycine_tablets_500mg___set>
+            <azythromycine_tablets_500mg___unit>0/0</azythromycine_tablets_500mg___unit>
+            <azythromycine_tablets_500mg>0/0</azythromycine_tablets_500mg>
+            <azythromycine_tablets_500mg___count/>
+            <triple_antibiotic_ointment>0</triple_antibiotic_ointment>
+            <triple_antibiotic_ointment___count/>
+            <antiseptic_cleaner>0</antiseptic_cleaner>
+            <antiseptic_cleaner___count/>
+            <ketoconazole_cream_2>0</ketoconazole_cream_2>
+            <ketoconazole_cream_2___count/>
+            <ciprofloxacine_500mg_tablets___set>0/0</ciprofloxacine_500mg_tablets___set>
+            <ciprofloxacine_500mg_tablets___unit>0/0</ciprofloxacine_500mg_tablets___unit>
+            <ciprofloxacine_500mg_tablets>0/0</ciprofloxacine_500mg_tablets>
+            <ciprofloxacine_500mg_tablets___count/>
+            <doxycicline_100mg_tablets___set>0/0</doxycicline_100mg_tablets___set>
+            <doxycicline_100mg_tablets___unit>0/0</doxycicline_100mg_tablets___unit>
+            <doxycicline_100mg_tablets>0/0</doxycicline_100mg_tablets>
+            <doxycicline_100mg_tablets___count/>
+            <benzatine_penicillin_2_4_mio_units>0</benzatine_penicillin_2_4_mio_units>
+            <benzatine_penicillin_2_4_mio_units___count/>
+            <amoxicillin_oral_suspension_250mg_5ml>0</amoxicillin_oral_suspension_250mg_5ml>
+            <amoxicillin_oral_suspension_250mg_5ml___count/>
+            <acetaminophen_oral_suspension_120mg_5ml>0</acetaminophen_oral_suspension_120mg_5ml>
+            <acetaminophen_oral_suspension_120mg_5ml___count/>
+            <salbutamol_nebules_2_5mg>0</salbutamol_nebules_2_5mg>
+            <salbutamol_nebules_2_5mg___count/>
+            <salbutamol_sirup_2mg_5ml>0</salbutamol_sirup_2mg_5ml>
+            <salbutamol_sirup_2mg_5ml___count/>
+            <ceftriaxole_im_50mg_kg>0</ceftriaxole_im_50mg_kg>
+            <ceftriaxole_im_50mg_kg___count/>
+            <ipratropium>0</ipratropium>
+            <ipratropium___count/>
+            <vitamin_c___set>0/0</vitamin_c___set>
+            <vitamin_c___unit>0/0</vitamin_c___unit>
+            <vitamin_c>0/0</vitamin_c>
+            <vitamin_c___count/>
+            <nasal_saline_drops>0</nasal_saline_drops>
+            <nasal_saline_drops___count/>
+            <cephalexin___set>0/0</cephalexin___set>
+            <cephalexin___unit>0/0</cephalexin___unit>
+            <cephalexin>0/0</cephalexin>
+            <cephalexin___count/>
+            <zinc_tablets_20mg>0</zinc_tablets_20mg>
+            <zinc_tablets_20mg___count/>
+            <ciprofloxacine_oral_suspension_250mg_5ml>0</ciprofloxacine_oral_suspension_250mg_5ml>
+            <ciprofloxacine_oral_suspension_250mg_5ml___count/>
+            <metoclopramide_im>0</metoclopramide_im>
+            <metoclopramide_im___count/>
+            <cloxacillin_oral_solution_250mg_5ml>0</cloxacillin_oral_solution_250mg_5ml>
+            <cloxacillin_oral_solution_250mg_5ml___count/>
+            <griseofulvine_cream>0</griseofulvine_cream>
+            <griseofulvine_cream___count/>
+            <griseofulvin_tablets_125mg___set>0/0</griseofulvin_tablets_125mg___set>
+            <griseofulvin_tablets_125mg___unit>0/0</griseofulvin_tablets_125mg___unit>
+            <griseofulvin_tablets_125mg>0/0</griseofulvin_tablets_125mg>
+            <griseofulvin_tablets_125mg___count/>
+            <calamine_lotion>0</calamine_lotion>
+            <calamine_lotion___count/>
+            <benzyl_benzoate_25>0</benzyl_benzoate_25>
+            <benzyl_benzoate_25___count/>
+            <iron_and_folic_acid_tablets___set>0/0</iron_and_folic_acid_tablets___set>
+            <iron_and_folic_acid_tablets___unit>0/0</iron_and_folic_acid_tablets___unit>
+            <iron_and_folic_acid_tablets>0/0</iron_and_folic_acid_tablets>
+            <iron_and_folic_acid_tablets___count/>
+            <co_trimoxazole_tablets_400_80mg___set>0/0</co_trimoxazole_tablets_400_80mg___set>
+            <co_trimoxazole_tablets_400_80mg___unit>0/0</co_trimoxazole_tablets_400_80mg___unit>
+            <co_trimoxazole_tablets_400_80mg>0/0</co_trimoxazole_tablets_400_80mg>
+            <co_trimoxazole_tablets_400_80mg___count/>
+            <metronidazole_200mg___set>0/0</metronidazole_200mg___set>
+            <metronidazole_200mg___unit>0/0</metronidazole_200mg___unit>
+            <metronidazole_200mg>0/0</metronidazole_200mg>
+            <metronidazole_200mg___count/>
+            <combined_anti_flue_medication___set>0/0</combined_anti_flue_medication___set>
+            <combined_anti_flue_medication___unit>0/0</combined_anti_flue_medication___unit>
+            <combined_anti_flue_medication>0/0</combined_anti_flue_medication>
+            <combined_anti_flue_medication___count/>
+            <metamizol_500mg_ml_injectable>0</metamizol_500mg_ml_injectable>
+            <metamizol_500mg_ml_injectable___count/>
+            <cloxacillin_tablets_500mg___set>0/0</cloxacillin_tablets_500mg___set>
+            <cloxacillin_tablets_500mg___unit>0/0</cloxacillin_tablets_500mg___unit>
+            <cloxacillin_tablets_500mg>0/0</cloxacillin_tablets_500mg>
+            <cloxacillin_tablets_500mg___count/>
+            <trimetoprim_sulfate_400_80mg___set>0/0</trimetoprim_sulfate_400_80mg___set>
+            <trimetoprim_sulfate_400_80mg___unit>0/0</trimetoprim_sulfate_400_80mg___unit>
+            <trimetoprim_sulfate_400_80mg>0/0</trimetoprim_sulfate_400_80mg>
+            <trimetoprim_sulfate_400_80mg___count/>
+            <furosemide_iv_20mg>0</furosemide_iv_20mg>
+            <furosemide_iv_20mg___count/>
+            <co_mioflex_tablet___set>0/0</co_mioflex_tablet___set>
+            <co_mioflex_tablet___unit>0/0</co_mioflex_tablet___unit>
+            <co_mioflex_tablet>0/0</co_mioflex_tablet>
+            <co_mioflex_tablet___count/>
+            <dolex>0</dolex>
+            <dolex___count/>
           </Medicine>
           <place_id/>
           <summary>
             <s_submit/>
             <r_summary/>
-            <s_test_drug/>
-            <s_second_test_drug/>
+            <s_metformin_500mg/>
+            <s_litacid_gel_200ml/>
+            <s_omeprazole_injectable/>
+            <s_omeprazole_20mg/>
+            <s_buscopan_injectable/>
+            <s_amoxycillin_500mg/>
+            <s_metronidazole_500mg/>
+            <s_ringer_lactate_IV_fluid_500ml/>
+            <s_ors/>
+            <s_tinidazole_500mg/>
+            <s_h_pylori_rapid_test/>
+            <s_chloroquine_150mg/>
+            <s_paracetamol_500mg/>
+            <s_malaria_rapid_test/>
+            <s_nifedipine_10mg/>
+            <s_hydrochlorotiazide_25mg/>
+            <s_enalapril_10mg/>
+            <s_nifedipine_20mg_tablets/>
+            <s_dexamethasone_im_8mg/>
+            <s_salbutamol_tablet_4mg/>
+            <s_azythromycine_tablets_500mg/>
+            <s_triple_antibiotic_ointment/>
+            <s_antiseptic_cleaner/>
+            <s_ketoconazole_cream_2/>
+            <s_ciprofloxacine_500mg_tablets/>
+            <s_doxycicline_100mg_tablets/>
+            <s_benzatine_penicillin_2_4_mio_units/>
+            <s_amoxicillin_oral_suspension_250mg_5ml/>
+            <s_acetaminophen_oral_suspension_120mg_5ml/>
+            <s_salbutamol_nebules_2_5mg/>
+            <s_salbutamol_sirup_2mg_5ml/>
+            <s_ceftriaxole_im_50mg_kg/>
+            <s_ipratropium/>
+            <s_vitamin_c/>
+            <s_nasal_saline_drops/>
+            <s_cephalexin/>
+            <s_zinc_tablets_20mg/>
+            <s_ciprofloxacine_oral_suspension_250mg_5ml/>
+            <s_metoclopramide_im/>
+            <s_cloxacillin_oral_solution_250mg_5ml/>
+            <s_griseofulvine_cream/>
+            <s_griseofulvin_tablets_125mg/>
+            <s_calamine_lotion/>
+            <s_benzyl_benzoate_25/>
+            <s_iron_and_folic_acid_tablets/>
+            <s_co_trimoxazole_tablets_400_80mg/>
+            <s_metronidazole_200mg/>
+            <s_combined_anti_flue_medication/>
+            <s_metamizol_500mg_ml_injectable/>
+            <s_cloxacillin_tablets_500mg/>
+            <s_trimetoprim_sulfate_400_80mg/>
+            <s_furosemide_iv_20mg/>
+            <s_co_mioflex_tablet/>
+            <s_dolex/>
           </summary>
           <out>
-            <test_drug_availables/>
-            <second_test_drug_availables/>
+            <metformin_500mg_availables/>
+            <litacid_gel_200ml_availables/>
+            <omeprazole_injectable_availables/>
+            <omeprazole_20mg_availables/>
+            <buscopan_injectable_availables/>
+            <amoxycillin_500mg_availables/>
+            <metronidazole_500mg_availables/>
+            <ringer_lactate_IV_fluid_500ml_availables/>
+            <ors_availables/>
+            <tinidazole_500mg_availables/>
+            <h_pylori_rapid_test_availables/>
+            <chloroquine_150mg_availables/>
+            <paracetamol_500mg_availables/>
+            <malaria_rapid_test_availables/>
+            <nifedipine_10mg_availables/>
+            <hydrochlorotiazide_25mg_availables/>
+            <enalapril_10mg_availables/>
+            <nifedipine_20mg_tablets_availables/>
+            <dexamethasone_im_8mg_availables/>
+            <salbutamol_tablet_4mg_availables/>
+            <azythromycine_tablets_500mg_availables/>
+            <triple_antibiotic_ointment_availables/>
+            <antiseptic_cleaner_availables/>
+            <ketoconazole_cream_2_availables/>
+            <ciprofloxacine_500mg_tablets_availables/>
+            <doxycicline_100mg_tablets_availables/>
+            <benzatine_penicillin_2_4_mio_units_availables/>
+            <amoxicillin_oral_suspension_250mg_5ml_availables/>
+            <acetaminophen_oral_suspension_120mg_5ml_availables/>
+            <salbutamol_nebules_2_5mg_availables/>
+            <salbutamol_sirup_2mg_5ml_availables/>
+            <ceftriaxole_im_50mg_kg_availables/>
+            <ipratropium_availables/>
+            <vitamin_c_availables/>
+            <nasal_saline_drops_availables/>
+            <cephalexin_availables/>
+            <zinc_tablets_20mg_availables/>
+            <ciprofloxacine_oral_suspension_250mg_5ml_availables/>
+            <metoclopramide_im_availables/>
+            <cloxacillin_oral_solution_250mg_5ml_availables/>
+            <griseofulvine_cream_availables/>
+            <griseofulvin_tablets_125mg_availables/>
+            <calamine_lotion_availables/>
+            <benzyl_benzoate_25_availables/>
+            <iron_and_folic_acid_tablets_availables/>
+            <co_trimoxazole_tablets_400_80mg_availables/>
+            <metronidazole_200mg_availables/>
+            <combined_anti_flue_medication_availables/>
+            <metamizol_500mg_ml_injectable_availables/>
+            <cloxacillin_tablets_500mg_availables/>
+            <trimetoprim_sulfate_400_80mg_availables/>
+            <furosemide_iv_20mg_availables/>
+            <co_mioflex_tablet_availables/>
+            <dolex_availables/>
           </out>
           <needs_signoff/>
           <meta tag="hidden">
@@ -184,19 +1846,277 @@
       <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
       <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
       <bind nodeset="/data/inputs/contact/name" type="string"/>
-      <bind nodeset="/data/Medicine/test_drug" type="int" required="true()"/>
-      <bind nodeset="/data/Medicine/test_drug___count" type="string" calculate=" /data/Medicine/test_drug "/>
-      <bind nodeset="/data/Medicine/second_test_drug___set" type="string" calculate="if(count-selected( /data/Medicine/second_test_drug ) &gt; 0 and count-selected(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/second_test_drug , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/Medicine/second_test_drug___unit" type="string" calculate="if(count-selected( /data/Medicine/second_test_drug ) &gt; 0 and count-selected(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/second_test_drug , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/Medicine/second_test_drug" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of 12 and y pill"/>
-      <bind nodeset="/data/Medicine/second_test_drug___count" type="string" calculate=" /data/Medicine/second_test_drug___set  * 12 +  /data/Medicine/second_test_drug___unit "/>
+      <bind nodeset="/data/Medicine/metformin_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/metformin_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/metformin_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/metformin_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/metformin_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metformin_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/metformin_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/metformin_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/metformin_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/metformin_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metformin_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/metformin_500mg___count" type="string" calculate=" /data/Medicine/metformin_500mg___set  * 10 +  /data/Medicine/metformin_500mg___unit "/>
+      <bind nodeset="/data/Medicine/litacid_gel_200ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/litacid_gel_200ml___count" type="string" calculate=" /data/Medicine/litacid_gel_200ml "/>
+      <bind nodeset="/data/Medicine/omeprazole_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/omeprazole_injectable___count" type="string" calculate=" /data/Medicine/omeprazole_injectable "/>
+      <bind nodeset="/data/Medicine/omeprazole_20mg___set" type="string" calculate="if(count-selected( /data/Medicine/omeprazole_20mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/omeprazole_20mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/omeprazole_20mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/omeprazole_20mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/omeprazole_20mg___unit" type="string" calculate="if(count-selected( /data/Medicine/omeprazole_20mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/omeprazole_20mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/omeprazole_20mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/omeprazole_20mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/omeprazole_20mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/omeprazole_20mg___count" type="string" calculate=" /data/Medicine/omeprazole_20mg___set  * 10 +  /data/Medicine/omeprazole_20mg___unit "/>
+      <bind nodeset="/data/Medicine/buscopan_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/buscopan_injectable___count" type="string" calculate=" /data/Medicine/buscopan_injectable "/>
+      <bind nodeset="/data/Medicine/amoxycillin_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/amoxycillin_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/amoxycillin_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/amoxycillin_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/amoxycillin_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/amoxycillin_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/amoxycillin_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/amoxycillin_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/amoxycillin_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/amoxycillin_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/amoxycillin_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/amoxycillin_500mg___count" type="string" calculate=" /data/Medicine/amoxycillin_500mg___set  * 10 +  /data/Medicine/amoxycillin_500mg___unit "/>
+      <bind nodeset="/data/Medicine/metronidazole_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/metronidazole_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/metronidazole_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/metronidazole_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/metronidazole_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metronidazole_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/metronidazole_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/metronidazole_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/metronidazole_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/metronidazole_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metronidazole_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/metronidazole_500mg___count" type="string" calculate=" /data/Medicine/metronidazole_500mg___set  * 10 +  /data/Medicine/metronidazole_500mg___unit "/>
+      <bind nodeset="/data/Medicine/ringer_lactate_IV_fluid_500ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/ringer_lactate_IV_fluid_500ml___count" type="string" calculate=" /data/Medicine/ringer_lactate_IV_fluid_500ml "/>
+      <bind nodeset="/data/Medicine/ors___set" type="string" calculate="if(count-selected( /data/Medicine/ors ) &gt; 0 and count-selected(substring-before( /data/Medicine/ors , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/ors , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/ors , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/ors___unit" type="string" calculate="if(count-selected( /data/Medicine/ors ) &gt; 0 and count-selected(substring-after( /data/Medicine/ors , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/ors , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/ors , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/ors" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/ors___count" type="string" calculate=" /data/Medicine/ors___set  * 10 +  /data/Medicine/ors___unit "/>
+      <bind nodeset="/data/Medicine/tinidazole_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/tinidazole_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/tinidazole_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/tinidazole_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/tinidazole_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/tinidazole_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/tinidazole_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/tinidazole_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/tinidazole_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/tinidazole_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/tinidazole_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/tinidazole_500mg___count" type="string" calculate=" /data/Medicine/tinidazole_500mg___set  * 10 +  /data/Medicine/tinidazole_500mg___unit "/>
+      <bind nodeset="/data/Medicine/h_pylori_rapid_test" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/h_pylori_rapid_test___count" type="string" calculate=" /data/Medicine/h_pylori_rapid_test "/>
+      <bind nodeset="/data/Medicine/chloroquine_150mg___set" type="string" calculate="if(count-selected( /data/Medicine/chloroquine_150mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/chloroquine_150mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/chloroquine_150mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/chloroquine_150mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/chloroquine_150mg___unit" type="string" calculate="if(count-selected( /data/Medicine/chloroquine_150mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/chloroquine_150mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/chloroquine_150mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/chloroquine_150mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/chloroquine_150mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/chloroquine_150mg___count" type="string" calculate=" /data/Medicine/chloroquine_150mg___set  * 10 +  /data/Medicine/chloroquine_150mg___unit "/>
+      <bind nodeset="/data/Medicine/paracetamol_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/paracetamol_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/paracetamol_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/paracetamol_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/paracetamol_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/paracetamol_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/paracetamol_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/paracetamol_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/paracetamol_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/paracetamol_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/paracetamol_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/paracetamol_500mg___count" type="string" calculate=" /data/Medicine/paracetamol_500mg___set  * 10 +  /data/Medicine/paracetamol_500mg___unit "/>
+      <bind nodeset="/data/Medicine/malaria_rapid_test" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/malaria_rapid_test___count" type="string" calculate=" /data/Medicine/malaria_rapid_test "/>
+      <bind nodeset="/data/Medicine/nifedipine_10mg___set" type="string" calculate="if(count-selected( /data/Medicine/nifedipine_10mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/nifedipine_10mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/nifedipine_10mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/nifedipine_10mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/nifedipine_10mg___unit" type="string" calculate="if(count-selected( /data/Medicine/nifedipine_10mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/nifedipine_10mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/nifedipine_10mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/nifedipine_10mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/nifedipine_10mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/nifedipine_10mg___count" type="string" calculate=" /data/Medicine/nifedipine_10mg___set  * 10 +  /data/Medicine/nifedipine_10mg___unit "/>
+      <bind nodeset="/data/Medicine/hydrochlorotiazide_25mg___set" type="string" calculate="if(count-selected( /data/Medicine/hydrochlorotiazide_25mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/hydrochlorotiazide_25mg___unit" type="string" calculate="if(count-selected( /data/Medicine/hydrochlorotiazide_25mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/hydrochlorotiazide_25mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/hydrochlorotiazide_25mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/hydrochlorotiazide_25mg___count" type="string" calculate=" /data/Medicine/hydrochlorotiazide_25mg___set  * 10 +  /data/Medicine/hydrochlorotiazide_25mg___unit "/>
+      <bind nodeset="/data/Medicine/enalapril_10mg___set" type="string" calculate="if(count-selected( /data/Medicine/enalapril_10mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/enalapril_10mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/enalapril_10mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/enalapril_10mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/enalapril_10mg___unit" type="string" calculate="if(count-selected( /data/Medicine/enalapril_10mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/enalapril_10mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/enalapril_10mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/enalapril_10mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/enalapril_10mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/enalapril_10mg___count" type="string" calculate=" /data/Medicine/enalapril_10mg___set  * 10 +  /data/Medicine/enalapril_10mg___unit "/>
+      <bind nodeset="/data/Medicine/nifedipine_20mg_tablets___set" type="string" calculate="if(count-selected( /data/Medicine/nifedipine_20mg_tablets ) &gt; 0 and count-selected(substring-before( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/nifedipine_20mg_tablets___unit" type="string" calculate="if(count-selected( /data/Medicine/nifedipine_20mg_tablets ) &gt; 0 and count-selected(substring-after( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/nifedipine_20mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/nifedipine_20mg_tablets" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/nifedipine_20mg_tablets___count" type="string" calculate=" /data/Medicine/nifedipine_20mg_tablets___set  * 10 +  /data/Medicine/nifedipine_20mg_tablets___unit "/>
+      <bind nodeset="/data/Medicine/dexamethasone_im_8mg" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/dexamethasone_im_8mg___count" type="string" calculate=" /data/Medicine/dexamethasone_im_8mg "/>
+      <bind nodeset="/data/Medicine/salbutamol_tablet_4mg___set" type="string" calculate="if(count-selected( /data/Medicine/salbutamol_tablet_4mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/salbutamol_tablet_4mg___unit" type="string" calculate="if(count-selected( /data/Medicine/salbutamol_tablet_4mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/salbutamol_tablet_4mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/salbutamol_tablet_4mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/salbutamol_tablet_4mg___count" type="string" calculate=" /data/Medicine/salbutamol_tablet_4mg___set  * 10 +  /data/Medicine/salbutamol_tablet_4mg___unit "/>
+      <bind nodeset="/data/Medicine/azythromycine_tablets_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/azythromycine_tablets_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/azythromycine_tablets_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/azythromycine_tablets_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/azythromycine_tablets_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/azythromycine_tablets_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/azythromycine_tablets_500mg___count" type="string" calculate=" /data/Medicine/azythromycine_tablets_500mg___set  * 10 +  /data/Medicine/azythromycine_tablets_500mg___unit "/>
+      <bind nodeset="/data/Medicine/triple_antibiotic_ointment" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/triple_antibiotic_ointment___count" type="string" calculate=" /data/Medicine/triple_antibiotic_ointment "/>
+      <bind nodeset="/data/Medicine/antiseptic_cleaner" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/antiseptic_cleaner___count" type="string" calculate=" /data/Medicine/antiseptic_cleaner "/>
+      <bind nodeset="/data/Medicine/ketoconazole_cream_2" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/ketoconazole_cream_2___count" type="string" calculate=" /data/Medicine/ketoconazole_cream_2 "/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_500mg_tablets___set" type="string" calculate="if(count-selected( /data/Medicine/ciprofloxacine_500mg_tablets ) &gt; 0 and count-selected(substring-before( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_500mg_tablets___unit" type="string" calculate="if(count-selected( /data/Medicine/ciprofloxacine_500mg_tablets ) &gt; 0 and count-selected(substring-after( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/ciprofloxacine_500mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_500mg_tablets" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_500mg_tablets___count" type="string" calculate=" /data/Medicine/ciprofloxacine_500mg_tablets___set  * 10 +  /data/Medicine/ciprofloxacine_500mg_tablets___unit "/>
+      <bind nodeset="/data/Medicine/doxycicline_100mg_tablets___set" type="string" calculate="if(count-selected( /data/Medicine/doxycicline_100mg_tablets ) &gt; 0 and count-selected(substring-before( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/doxycicline_100mg_tablets___unit" type="string" calculate="if(count-selected( /data/Medicine/doxycicline_100mg_tablets ) &gt; 0 and count-selected(substring-after( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/doxycicline_100mg_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/doxycicline_100mg_tablets" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/doxycicline_100mg_tablets___count" type="string" calculate=" /data/Medicine/doxycicline_100mg_tablets___set  * 10 +  /data/Medicine/doxycicline_100mg_tablets___unit "/>
+      <bind nodeset="/data/Medicine/benzatine_penicillin_2_4_mio_units" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/benzatine_penicillin_2_4_mio_units___count" type="string" calculate=" /data/Medicine/benzatine_penicillin_2_4_mio_units "/>
+      <bind nodeset="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count" type="string" calculate=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml "/>
+      <bind nodeset="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count" type="string" calculate=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml "/>
+      <bind nodeset="/data/Medicine/salbutamol_nebules_2_5mg" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/salbutamol_nebules_2_5mg___count" type="string" calculate=" /data/Medicine/salbutamol_nebules_2_5mg "/>
+      <bind nodeset="/data/Medicine/salbutamol_sirup_2mg_5ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/salbutamol_sirup_2mg_5ml___count" type="string" calculate=" /data/Medicine/salbutamol_sirup_2mg_5ml "/>
+      <bind nodeset="/data/Medicine/ceftriaxole_im_50mg_kg" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/ceftriaxole_im_50mg_kg___count" type="string" calculate=" /data/Medicine/ceftriaxole_im_50mg_kg "/>
+      <bind nodeset="/data/Medicine/ipratropium" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/ipratropium___count" type="string" calculate=" /data/Medicine/ipratropium "/>
+      <bind nodeset="/data/Medicine/vitamin_c___set" type="string" calculate="if(count-selected( /data/Medicine/vitamin_c ) &gt; 0 and count-selected(substring-before( /data/Medicine/vitamin_c , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/vitamin_c , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/vitamin_c , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/vitamin_c___unit" type="string" calculate="if(count-selected( /data/Medicine/vitamin_c ) &gt; 0 and count-selected(substring-after( /data/Medicine/vitamin_c , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/vitamin_c , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/vitamin_c , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/vitamin_c" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/vitamin_c___count" type="string" calculate=" /data/Medicine/vitamin_c___set  * 10 +  /data/Medicine/vitamin_c___unit "/>
+      <bind nodeset="/data/Medicine/nasal_saline_drops" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/nasal_saline_drops___count" type="string" calculate=" /data/Medicine/nasal_saline_drops "/>
+      <bind nodeset="/data/Medicine/cephalexin___set" type="string" calculate="if(count-selected( /data/Medicine/cephalexin ) &gt; 0 and count-selected(substring-before( /data/Medicine/cephalexin , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/cephalexin , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/cephalexin , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/cephalexin___unit" type="string" calculate="if(count-selected( /data/Medicine/cephalexin ) &gt; 0 and count-selected(substring-after( /data/Medicine/cephalexin , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/cephalexin , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/cephalexin , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/cephalexin" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/cephalexin___count" type="string" calculate=" /data/Medicine/cephalexin___set  * 10 +  /data/Medicine/cephalexin___unit "/>
+      <bind nodeset="/data/Medicine/zinc_tablets_20mg" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/zinc_tablets_20mg___count" type="string" calculate=" /data/Medicine/zinc_tablets_20mg "/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count" type="string" calculate=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml "/>
+      <bind nodeset="/data/Medicine/metoclopramide_im" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/metoclopramide_im___count" type="string" calculate=" /data/Medicine/metoclopramide_im "/>
+      <bind nodeset="/data/Medicine/cloxacillin_oral_solution_250mg_5ml" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/cloxacillin_oral_solution_250mg_5ml___count" type="string" calculate=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml "/>
+      <bind nodeset="/data/Medicine/griseofulvine_cream" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/griseofulvine_cream___count" type="string" calculate=" /data/Medicine/griseofulvine_cream "/>
+      <bind nodeset="/data/Medicine/griseofulvin_tablets_125mg___set" type="string" calculate="if(count-selected( /data/Medicine/griseofulvin_tablets_125mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/griseofulvin_tablets_125mg___unit" type="string" calculate="if(count-selected( /data/Medicine/griseofulvin_tablets_125mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/griseofulvin_tablets_125mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/griseofulvin_tablets_125mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/griseofulvin_tablets_125mg___count" type="string" calculate=" /data/Medicine/griseofulvin_tablets_125mg___set  * 10 +  /data/Medicine/griseofulvin_tablets_125mg___unit "/>
+      <bind nodeset="/data/Medicine/calamine_lotion" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/calamine_lotion___count" type="string" calculate=" /data/Medicine/calamine_lotion "/>
+      <bind nodeset="/data/Medicine/benzyl_benzoate_25" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/benzyl_benzoate_25___count" type="string" calculate=" /data/Medicine/benzyl_benzoate_25 "/>
+      <bind nodeset="/data/Medicine/iron_and_folic_acid_tablets___set" type="string" calculate="if(count-selected( /data/Medicine/iron_and_folic_acid_tablets ) &gt; 0 and count-selected(substring-before( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/iron_and_folic_acid_tablets___unit" type="string" calculate="if(count-selected( /data/Medicine/iron_and_folic_acid_tablets ) &gt; 0 and count-selected(substring-after( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/iron_and_folic_acid_tablets , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/iron_and_folic_acid_tablets" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/iron_and_folic_acid_tablets___count" type="string" calculate=" /data/Medicine/iron_and_folic_acid_tablets___set  * 10 +  /data/Medicine/iron_and_folic_acid_tablets___unit "/>
+      <bind nodeset="/data/Medicine/co_trimoxazole_tablets_400_80mg___set" type="string" calculate="if(count-selected( /data/Medicine/co_trimoxazole_tablets_400_80mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/co_trimoxazole_tablets_400_80mg___unit" type="string" calculate="if(count-selected( /data/Medicine/co_trimoxazole_tablets_400_80mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/co_trimoxazole_tablets_400_80mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/co_trimoxazole_tablets_400_80mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/co_trimoxazole_tablets_400_80mg___count" type="string" calculate=" /data/Medicine/co_trimoxazole_tablets_400_80mg___set  * 10 +  /data/Medicine/co_trimoxazole_tablets_400_80mg___unit "/>
+      <bind nodeset="/data/Medicine/metronidazole_200mg___set" type="string" calculate="if(count-selected( /data/Medicine/metronidazole_200mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/metronidazole_200mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/metronidazole_200mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/metronidazole_200mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metronidazole_200mg___unit" type="string" calculate="if(count-selected( /data/Medicine/metronidazole_200mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/metronidazole_200mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/metronidazole_200mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/metronidazole_200mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/metronidazole_200mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/metronidazole_200mg___count" type="string" calculate=" /data/Medicine/metronidazole_200mg___set  * 10 +  /data/Medicine/metronidazole_200mg___unit "/>
+      <bind nodeset="/data/Medicine/combined_anti_flue_medication___set" type="string" calculate="if(count-selected( /data/Medicine/combined_anti_flue_medication ) &gt; 0 and count-selected(substring-before( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/combined_anti_flue_medication___unit" type="string" calculate="if(count-selected( /data/Medicine/combined_anti_flue_medication ) &gt; 0 and count-selected(substring-after( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/combined_anti_flue_medication , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/combined_anti_flue_medication" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/combined_anti_flue_medication___count" type="string" calculate=" /data/Medicine/combined_anti_flue_medication___set  * 10 +  /data/Medicine/combined_anti_flue_medication___unit "/>
+      <bind nodeset="/data/Medicine/metamizol_500mg_ml_injectable" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/metamizol_500mg_ml_injectable___count" type="string" calculate=" /data/Medicine/metamizol_500mg_ml_injectable "/>
+      <bind nodeset="/data/Medicine/cloxacillin_tablets_500mg___set" type="string" calculate="if(count-selected( /data/Medicine/cloxacillin_tablets_500mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/cloxacillin_tablets_500mg___unit" type="string" calculate="if(count-selected( /data/Medicine/cloxacillin_tablets_500mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/cloxacillin_tablets_500mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/cloxacillin_tablets_500mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/cloxacillin_tablets_500mg___count" type="string" calculate=" /data/Medicine/cloxacillin_tablets_500mg___set  * 10 +  /data/Medicine/cloxacillin_tablets_500mg___unit "/>
+      <bind nodeset="/data/Medicine/trimetoprim_sulfate_400_80mg___set" type="string" calculate="if(count-selected( /data/Medicine/trimetoprim_sulfate_400_80mg ) &gt; 0 and count-selected(substring-before( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/trimetoprim_sulfate_400_80mg___unit" type="string" calculate="if(count-selected( /data/Medicine/trimetoprim_sulfate_400_80mg ) &gt; 0 and count-selected(substring-after( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/trimetoprim_sulfate_400_80mg , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/trimetoprim_sulfate_400_80mg" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/trimetoprim_sulfate_400_80mg___count" type="string" calculate=" /data/Medicine/trimetoprim_sulfate_400_80mg___set  * 10 +  /data/Medicine/trimetoprim_sulfate_400_80mg___unit "/>
+      <bind nodeset="/data/Medicine/furosemide_iv_20mg" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/furosemide_iv_20mg___count" type="string" calculate=" /data/Medicine/furosemide_iv_20mg "/>
+      <bind nodeset="/data/Medicine/co_mioflex_tablet___set" type="string" calculate="if(count-selected( /data/Medicine/co_mioflex_tablet ) &gt; 0 and count-selected(substring-before( /data/Medicine/co_mioflex_tablet , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/Medicine/co_mioflex_tablet , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/Medicine/co_mioflex_tablet , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/co_mioflex_tablet___unit" type="string" calculate="if(count-selected( /data/Medicine/co_mioflex_tablet ) &gt; 0 and count-selected(substring-after( /data/Medicine/co_mioflex_tablet , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/Medicine/co_mioflex_tablet , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/Medicine/co_mioflex_tablet , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/Medicine/co_mioflex_tablet" type="string" required="true()" constraint="regex(., '^\d+\/\d+$')" jr:constraintMsg="Should be in the form x/y for x box of and y tablet"/>
+      <bind nodeset="/data/Medicine/co_mioflex_tablet___count" type="string" calculate=" /data/Medicine/co_mioflex_tablet___set  * 10 +  /data/Medicine/co_mioflex_tablet___unit "/>
+      <bind nodeset="/data/Medicine/dolex" type="int" required="true()"/>
+      <bind nodeset="/data/Medicine/dolex___count" type="string" calculate=" /data/Medicine/dolex "/>
       <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/_id"/>
       <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
       <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
-      <bind nodeset="/data/summary/s_test_drug" readonly="true()" type="string" relevant=" /data/Medicine/test_drug___count  &gt; 0"/>
-      <bind nodeset="/data/summary/s_second_test_drug" readonly="true()" type="string" relevant=" /data/Medicine/second_test_drug___count  &gt; 0"/>
-      <bind nodeset="/data/out/test_drug_availables" type="string" calculate=" /data/Medicine/test_drug___count "/>
-      <bind nodeset="/data/out/second_test_drug_availables" type="string" calculate=" /data/Medicine/second_test_drug___count "/>
+      <bind nodeset="/data/summary/s_metformin_500mg" readonly="true()" type="string" relevant=" /data/Medicine/metformin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_litacid_gel_200ml" readonly="true()" type="string" relevant=" /data/Medicine/litacid_gel_200ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_omeprazole_injectable" readonly="true()" type="string" relevant=" /data/Medicine/omeprazole_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_omeprazole_20mg" readonly="true()" type="string" relevant=" /data/Medicine/omeprazole_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_buscopan_injectable" readonly="true()" type="string" relevant=" /data/Medicine/buscopan_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_amoxycillin_500mg" readonly="true()" type="string" relevant=" /data/Medicine/amoxycillin_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metronidazole_500mg" readonly="true()" type="string" relevant=" /data/Medicine/metronidazole_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ringer_lactate_IV_fluid_500ml" readonly="true()" type="string" relevant=" /data/Medicine/ringer_lactate_IV_fluid_500ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ors" readonly="true()" type="string" relevant=" /data/Medicine/ors___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_tinidazole_500mg" readonly="true()" type="string" relevant=" /data/Medicine/tinidazole_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_h_pylori_rapid_test" readonly="true()" type="string" relevant=" /data/Medicine/h_pylori_rapid_test___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_chloroquine_150mg" readonly="true()" type="string" relevant=" /data/Medicine/chloroquine_150mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_paracetamol_500mg" readonly="true()" type="string" relevant=" /data/Medicine/paracetamol_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_malaria_rapid_test" readonly="true()" type="string" relevant=" /data/Medicine/malaria_rapid_test___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_nifedipine_10mg" readonly="true()" type="string" relevant=" /data/Medicine/nifedipine_10mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_hydrochlorotiazide_25mg" readonly="true()" type="string" relevant=" /data/Medicine/hydrochlorotiazide_25mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_enalapril_10mg" readonly="true()" type="string" relevant=" /data/Medicine/enalapril_10mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_nifedipine_20mg_tablets" readonly="true()" type="string" relevant=" /data/Medicine/nifedipine_20mg_tablets___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_dexamethasone_im_8mg" readonly="true()" type="string" relevant=" /data/Medicine/dexamethasone_im_8mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_salbutamol_tablet_4mg" readonly="true()" type="string" relevant=" /data/Medicine/salbutamol_tablet_4mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_azythromycine_tablets_500mg" readonly="true()" type="string" relevant=" /data/Medicine/azythromycine_tablets_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_triple_antibiotic_ointment" readonly="true()" type="string" relevant=" /data/Medicine/triple_antibiotic_ointment___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_antiseptic_cleaner" readonly="true()" type="string" relevant=" /data/Medicine/antiseptic_cleaner___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ketoconazole_cream_2" readonly="true()" type="string" relevant=" /data/Medicine/ketoconazole_cream_2___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ciprofloxacine_500mg_tablets" readonly="true()" type="string" relevant=" /data/Medicine/ciprofloxacine_500mg_tablets___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_doxycicline_100mg_tablets" readonly="true()" type="string" relevant=" /data/Medicine/doxycicline_100mg_tablets___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_benzatine_penicillin_2_4_mio_units" readonly="true()" type="string" relevant=" /data/Medicine/benzatine_penicillin_2_4_mio_units___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_amoxicillin_oral_suspension_250mg_5ml" readonly="true()" type="string" relevant=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_acetaminophen_oral_suspension_120mg_5ml" readonly="true()" type="string" relevant=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_salbutamol_nebules_2_5mg" readonly="true()" type="string" relevant=" /data/Medicine/salbutamol_nebules_2_5mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_salbutamol_sirup_2mg_5ml" readonly="true()" type="string" relevant=" /data/Medicine/salbutamol_sirup_2mg_5ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ceftriaxole_im_50mg_kg" readonly="true()" type="string" relevant=" /data/Medicine/ceftriaxole_im_50mg_kg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ipratropium" readonly="true()" type="string" relevant=" /data/Medicine/ipratropium___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_vitamin_c" readonly="true()" type="string" relevant=" /data/Medicine/vitamin_c___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_nasal_saline_drops" readonly="true()" type="string" relevant=" /data/Medicine/nasal_saline_drops___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cephalexin" readonly="true()" type="string" relevant=" /data/Medicine/cephalexin___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_zinc_tablets_20mg" readonly="true()" type="string" relevant=" /data/Medicine/zinc_tablets_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml" readonly="true()" type="string" relevant=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metoclopramide_im" readonly="true()" type="string" relevant=" /data/Medicine/metoclopramide_im___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cloxacillin_oral_solution_250mg_5ml" readonly="true()" type="string" relevant=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_griseofulvine_cream" readonly="true()" type="string" relevant=" /data/Medicine/griseofulvine_cream___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_griseofulvin_tablets_125mg" readonly="true()" type="string" relevant=" /data/Medicine/griseofulvin_tablets_125mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_calamine_lotion" readonly="true()" type="string" relevant=" /data/Medicine/calamine_lotion___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_benzyl_benzoate_25" readonly="true()" type="string" relevant=" /data/Medicine/benzyl_benzoate_25___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_iron_and_folic_acid_tablets" readonly="true()" type="string" relevant=" /data/Medicine/iron_and_folic_acid_tablets___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_co_trimoxazole_tablets_400_80mg" readonly="true()" type="string" relevant=" /data/Medicine/co_trimoxazole_tablets_400_80mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metronidazole_200mg" readonly="true()" type="string" relevant=" /data/Medicine/metronidazole_200mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_combined_anti_flue_medication" readonly="true()" type="string" relevant=" /data/Medicine/combined_anti_flue_medication___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_metamizol_500mg_ml_injectable" readonly="true()" type="string" relevant=" /data/Medicine/metamizol_500mg_ml_injectable___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_cloxacillin_tablets_500mg" readonly="true()" type="string" relevant=" /data/Medicine/cloxacillin_tablets_500mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_trimetoprim_sulfate_400_80mg" readonly="true()" type="string" relevant=" /data/Medicine/trimetoprim_sulfate_400_80mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_furosemide_iv_20mg" readonly="true()" type="string" relevant=" /data/Medicine/furosemide_iv_20mg___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_co_mioflex_tablet" readonly="true()" type="string" relevant=" /data/Medicine/co_mioflex_tablet___count  &gt; 0"/>
+      <bind nodeset="/data/summary/s_dolex" readonly="true()" type="string" relevant=" /data/Medicine/dolex___count  &gt; 0"/>
+      <bind nodeset="/data/out/metformin_500mg_availables" type="string" calculate=" /data/Medicine/metformin_500mg___count "/>
+      <bind nodeset="/data/out/litacid_gel_200ml_availables" type="string" calculate=" /data/Medicine/litacid_gel_200ml___count "/>
+      <bind nodeset="/data/out/omeprazole_injectable_availables" type="string" calculate=" /data/Medicine/omeprazole_injectable___count "/>
+      <bind nodeset="/data/out/omeprazole_20mg_availables" type="string" calculate=" /data/Medicine/omeprazole_20mg___count "/>
+      <bind nodeset="/data/out/buscopan_injectable_availables" type="string" calculate=" /data/Medicine/buscopan_injectable___count "/>
+      <bind nodeset="/data/out/amoxycillin_500mg_availables" type="string" calculate=" /data/Medicine/amoxycillin_500mg___count "/>
+      <bind nodeset="/data/out/metronidazole_500mg_availables" type="string" calculate=" /data/Medicine/metronidazole_500mg___count "/>
+      <bind nodeset="/data/out/ringer_lactate_IV_fluid_500ml_availables" type="string" calculate=" /data/Medicine/ringer_lactate_IV_fluid_500ml___count "/>
+      <bind nodeset="/data/out/ors_availables" type="string" calculate=" /data/Medicine/ors___count "/>
+      <bind nodeset="/data/out/tinidazole_500mg_availables" type="string" calculate=" /data/Medicine/tinidazole_500mg___count "/>
+      <bind nodeset="/data/out/h_pylori_rapid_test_availables" type="string" calculate=" /data/Medicine/h_pylori_rapid_test___count "/>
+      <bind nodeset="/data/out/chloroquine_150mg_availables" type="string" calculate=" /data/Medicine/chloroquine_150mg___count "/>
+      <bind nodeset="/data/out/paracetamol_500mg_availables" type="string" calculate=" /data/Medicine/paracetamol_500mg___count "/>
+      <bind nodeset="/data/out/malaria_rapid_test_availables" type="string" calculate=" /data/Medicine/malaria_rapid_test___count "/>
+      <bind nodeset="/data/out/nifedipine_10mg_availables" type="string" calculate=" /data/Medicine/nifedipine_10mg___count "/>
+      <bind nodeset="/data/out/hydrochlorotiazide_25mg_availables" type="string" calculate=" /data/Medicine/hydrochlorotiazide_25mg___count "/>
+      <bind nodeset="/data/out/enalapril_10mg_availables" type="string" calculate=" /data/Medicine/enalapril_10mg___count "/>
+      <bind nodeset="/data/out/nifedipine_20mg_tablets_availables" type="string" calculate=" /data/Medicine/nifedipine_20mg_tablets___count "/>
+      <bind nodeset="/data/out/dexamethasone_im_8mg_availables" type="string" calculate=" /data/Medicine/dexamethasone_im_8mg___count "/>
+      <bind nodeset="/data/out/salbutamol_tablet_4mg_availables" type="string" calculate=" /data/Medicine/salbutamol_tablet_4mg___count "/>
+      <bind nodeset="/data/out/azythromycine_tablets_500mg_availables" type="string" calculate=" /data/Medicine/azythromycine_tablets_500mg___count "/>
+      <bind nodeset="/data/out/triple_antibiotic_ointment_availables" type="string" calculate=" /data/Medicine/triple_antibiotic_ointment___count "/>
+      <bind nodeset="/data/out/antiseptic_cleaner_availables" type="string" calculate=" /data/Medicine/antiseptic_cleaner___count "/>
+      <bind nodeset="/data/out/ketoconazole_cream_2_availables" type="string" calculate=" /data/Medicine/ketoconazole_cream_2___count "/>
+      <bind nodeset="/data/out/ciprofloxacine_500mg_tablets_availables" type="string" calculate=" /data/Medicine/ciprofloxacine_500mg_tablets___count "/>
+      <bind nodeset="/data/out/doxycicline_100mg_tablets_availables" type="string" calculate=" /data/Medicine/doxycicline_100mg_tablets___count "/>
+      <bind nodeset="/data/out/benzatine_penicillin_2_4_mio_units_availables" type="string" calculate=" /data/Medicine/benzatine_penicillin_2_4_mio_units___count "/>
+      <bind nodeset="/data/out/amoxicillin_oral_suspension_250mg_5ml_availables" type="string" calculate=" /data/Medicine/amoxicillin_oral_suspension_250mg_5ml___count "/>
+      <bind nodeset="/data/out/acetaminophen_oral_suspension_120mg_5ml_availables" type="string" calculate=" /data/Medicine/acetaminophen_oral_suspension_120mg_5ml___count "/>
+      <bind nodeset="/data/out/salbutamol_nebules_2_5mg_availables" type="string" calculate=" /data/Medicine/salbutamol_nebules_2_5mg___count "/>
+      <bind nodeset="/data/out/salbutamol_sirup_2mg_5ml_availables" type="string" calculate=" /data/Medicine/salbutamol_sirup_2mg_5ml___count "/>
+      <bind nodeset="/data/out/ceftriaxole_im_50mg_kg_availables" type="string" calculate=" /data/Medicine/ceftriaxole_im_50mg_kg___count "/>
+      <bind nodeset="/data/out/ipratropium_availables" type="string" calculate=" /data/Medicine/ipratropium___count "/>
+      <bind nodeset="/data/out/vitamin_c_availables" type="string" calculate=" /data/Medicine/vitamin_c___count "/>
+      <bind nodeset="/data/out/nasal_saline_drops_availables" type="string" calculate=" /data/Medicine/nasal_saline_drops___count "/>
+      <bind nodeset="/data/out/cephalexin_availables" type="string" calculate=" /data/Medicine/cephalexin___count "/>
+      <bind nodeset="/data/out/zinc_tablets_20mg_availables" type="string" calculate=" /data/Medicine/zinc_tablets_20mg___count "/>
+      <bind nodeset="/data/out/ciprofloxacine_oral_suspension_250mg_5ml_availables" type="string" calculate=" /data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml___count "/>
+      <bind nodeset="/data/out/metoclopramide_im_availables" type="string" calculate=" /data/Medicine/metoclopramide_im___count "/>
+      <bind nodeset="/data/out/cloxacillin_oral_solution_250mg_5ml_availables" type="string" calculate=" /data/Medicine/cloxacillin_oral_solution_250mg_5ml___count "/>
+      <bind nodeset="/data/out/griseofulvine_cream_availables" type="string" calculate=" /data/Medicine/griseofulvine_cream___count "/>
+      <bind nodeset="/data/out/griseofulvin_tablets_125mg_availables" type="string" calculate=" /data/Medicine/griseofulvin_tablets_125mg___count "/>
+      <bind nodeset="/data/out/calamine_lotion_availables" type="string" calculate=" /data/Medicine/calamine_lotion___count "/>
+      <bind nodeset="/data/out/benzyl_benzoate_25_availables" type="string" calculate=" /data/Medicine/benzyl_benzoate_25___count "/>
+      <bind nodeset="/data/out/iron_and_folic_acid_tablets_availables" type="string" calculate=" /data/Medicine/iron_and_folic_acid_tablets___count "/>
+      <bind nodeset="/data/out/co_trimoxazole_tablets_400_80mg_availables" type="string" calculate=" /data/Medicine/co_trimoxazole_tablets_400_80mg___count "/>
+      <bind nodeset="/data/out/metronidazole_200mg_availables" type="string" calculate=" /data/Medicine/metronidazole_200mg___count "/>
+      <bind nodeset="/data/out/combined_anti_flue_medication_availables" type="string" calculate=" /data/Medicine/combined_anti_flue_medication___count "/>
+      <bind nodeset="/data/out/metamizol_500mg_ml_injectable_availables" type="string" calculate=" /data/Medicine/metamizol_500mg_ml_injectable___count "/>
+      <bind nodeset="/data/out/cloxacillin_tablets_500mg_availables" type="string" calculate=" /data/Medicine/cloxacillin_tablets_500mg___count "/>
+      <bind nodeset="/data/out/trimetoprim_sulfate_400_80mg_availables" type="string" calculate=" /data/Medicine/trimetoprim_sulfate_400_80mg___count "/>
+      <bind nodeset="/data/out/furosemide_iv_20mg_availables" type="string" calculate=" /data/Medicine/furosemide_iv_20mg___count "/>
+      <bind nodeset="/data/out/co_mioflex_tablet_availables" type="string" calculate=" /data/Medicine/co_mioflex_tablet___count "/>
+      <bind nodeset="/data/out/dolex_availables" type="string" calculate=" /data/Medicine/dolex___count "/>
       <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
@@ -220,13 +2140,221 @@
     </group>
     <group appearance="field-list" ref="/data/Medicine">
       <label ref="jr:itext('/data/Medicine:label')"/>
-      <input ref="/data/Medicine/test_drug">
-        <label ref="jr:itext('/data/Medicine/test_drug:label')"/>
-        <hint ref="jr:itext('/data/Medicine/test_drug:hint')"/>
+      <input ref="/data/Medicine/metformin_500mg">
+        <label ref="jr:itext('/data/Medicine/metformin_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/metformin_500mg:hint')"/>
       </input>
-      <input ref="/data/Medicine/second_test_drug">
-        <label ref="jr:itext('/data/Medicine/second_test_drug:label')"/>
-        <hint ref="jr:itext('/data/Medicine/second_test_drug:hint')"/>
+      <input ref="/data/Medicine/litacid_gel_200ml">
+        <label ref="jr:itext('/data/Medicine/litacid_gel_200ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/litacid_gel_200ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/omeprazole_injectable">
+        <label ref="jr:itext('/data/Medicine/omeprazole_injectable:label')"/>
+        <hint ref="jr:itext('/data/Medicine/omeprazole_injectable:hint')"/>
+      </input>
+      <input ref="/data/Medicine/omeprazole_20mg">
+        <label ref="jr:itext('/data/Medicine/omeprazole_20mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/omeprazole_20mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/buscopan_injectable">
+        <label ref="jr:itext('/data/Medicine/buscopan_injectable:label')"/>
+        <hint ref="jr:itext('/data/Medicine/buscopan_injectable:hint')"/>
+      </input>
+      <input ref="/data/Medicine/amoxycillin_500mg">
+        <label ref="jr:itext('/data/Medicine/amoxycillin_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/amoxycillin_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/metronidazole_500mg">
+        <label ref="jr:itext('/data/Medicine/metronidazole_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/metronidazole_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ringer_lactate_IV_fluid_500ml">
+        <label ref="jr:itext('/data/Medicine/ringer_lactate_IV_fluid_500ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ringer_lactate_IV_fluid_500ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ors">
+        <label ref="jr:itext('/data/Medicine/ors:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ors:hint')"/>
+      </input>
+      <input ref="/data/Medicine/tinidazole_500mg">
+        <label ref="jr:itext('/data/Medicine/tinidazole_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/tinidazole_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/h_pylori_rapid_test">
+        <label ref="jr:itext('/data/Medicine/h_pylori_rapid_test:label')"/>
+        <hint ref="jr:itext('/data/Medicine/h_pylori_rapid_test:hint')"/>
+      </input>
+      <input ref="/data/Medicine/chloroquine_150mg">
+        <label ref="jr:itext('/data/Medicine/chloroquine_150mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/chloroquine_150mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/paracetamol_500mg">
+        <label ref="jr:itext('/data/Medicine/paracetamol_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/paracetamol_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/malaria_rapid_test">
+        <label ref="jr:itext('/data/Medicine/malaria_rapid_test:label')"/>
+        <hint ref="jr:itext('/data/Medicine/malaria_rapid_test:hint')"/>
+      </input>
+      <input ref="/data/Medicine/nifedipine_10mg">
+        <label ref="jr:itext('/data/Medicine/nifedipine_10mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/nifedipine_10mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/hydrochlorotiazide_25mg">
+        <label ref="jr:itext('/data/Medicine/hydrochlorotiazide_25mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/hydrochlorotiazide_25mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/enalapril_10mg">
+        <label ref="jr:itext('/data/Medicine/enalapril_10mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/enalapril_10mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/nifedipine_20mg_tablets">
+        <label ref="jr:itext('/data/Medicine/nifedipine_20mg_tablets:label')"/>
+        <hint ref="jr:itext('/data/Medicine/nifedipine_20mg_tablets:hint')"/>
+      </input>
+      <input ref="/data/Medicine/dexamethasone_im_8mg">
+        <label ref="jr:itext('/data/Medicine/dexamethasone_im_8mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/dexamethasone_im_8mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/salbutamol_tablet_4mg">
+        <label ref="jr:itext('/data/Medicine/salbutamol_tablet_4mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/salbutamol_tablet_4mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/azythromycine_tablets_500mg">
+        <label ref="jr:itext('/data/Medicine/azythromycine_tablets_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/azythromycine_tablets_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/triple_antibiotic_ointment">
+        <label ref="jr:itext('/data/Medicine/triple_antibiotic_ointment:label')"/>
+        <hint ref="jr:itext('/data/Medicine/triple_antibiotic_ointment:hint')"/>
+      </input>
+      <input ref="/data/Medicine/antiseptic_cleaner">
+        <label ref="jr:itext('/data/Medicine/antiseptic_cleaner:label')"/>
+        <hint ref="jr:itext('/data/Medicine/antiseptic_cleaner:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ketoconazole_cream_2">
+        <label ref="jr:itext('/data/Medicine/ketoconazole_cream_2:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ketoconazole_cream_2:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ciprofloxacine_500mg_tablets">
+        <label ref="jr:itext('/data/Medicine/ciprofloxacine_500mg_tablets:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ciprofloxacine_500mg_tablets:hint')"/>
+      </input>
+      <input ref="/data/Medicine/doxycicline_100mg_tablets">
+        <label ref="jr:itext('/data/Medicine/doxycicline_100mg_tablets:label')"/>
+        <hint ref="jr:itext('/data/Medicine/doxycicline_100mg_tablets:hint')"/>
+      </input>
+      <input ref="/data/Medicine/benzatine_penicillin_2_4_mio_units">
+        <label ref="jr:itext('/data/Medicine/benzatine_penicillin_2_4_mio_units:label')"/>
+        <hint ref="jr:itext('/data/Medicine/benzatine_penicillin_2_4_mio_units:hint')"/>
+      </input>
+      <input ref="/data/Medicine/amoxicillin_oral_suspension_250mg_5ml">
+        <label ref="jr:itext('/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/amoxicillin_oral_suspension_250mg_5ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/acetaminophen_oral_suspension_120mg_5ml">
+        <label ref="jr:itext('/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/acetaminophen_oral_suspension_120mg_5ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/salbutamol_nebules_2_5mg">
+        <label ref="jr:itext('/data/Medicine/salbutamol_nebules_2_5mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/salbutamol_nebules_2_5mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/salbutamol_sirup_2mg_5ml">
+        <label ref="jr:itext('/data/Medicine/salbutamol_sirup_2mg_5ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/salbutamol_sirup_2mg_5ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ceftriaxole_im_50mg_kg">
+        <label ref="jr:itext('/data/Medicine/ceftriaxole_im_50mg_kg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ceftriaxole_im_50mg_kg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ipratropium">
+        <label ref="jr:itext('/data/Medicine/ipratropium:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ipratropium:hint')"/>
+      </input>
+      <input ref="/data/Medicine/vitamin_c">
+        <label ref="jr:itext('/data/Medicine/vitamin_c:label')"/>
+        <hint ref="jr:itext('/data/Medicine/vitamin_c:hint')"/>
+      </input>
+      <input ref="/data/Medicine/nasal_saline_drops">
+        <label ref="jr:itext('/data/Medicine/nasal_saline_drops:label')"/>
+        <hint ref="jr:itext('/data/Medicine/nasal_saline_drops:hint')"/>
+      </input>
+      <input ref="/data/Medicine/cephalexin">
+        <label ref="jr:itext('/data/Medicine/cephalexin:label')"/>
+        <hint ref="jr:itext('/data/Medicine/cephalexin:hint')"/>
+      </input>
+      <input ref="/data/Medicine/zinc_tablets_20mg">
+        <label ref="jr:itext('/data/Medicine/zinc_tablets_20mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/zinc_tablets_20mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml">
+        <label ref="jr:itext('/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/ciprofloxacine_oral_suspension_250mg_5ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/metoclopramide_im">
+        <label ref="jr:itext('/data/Medicine/metoclopramide_im:label')"/>
+        <hint ref="jr:itext('/data/Medicine/metoclopramide_im:hint')"/>
+      </input>
+      <input ref="/data/Medicine/cloxacillin_oral_solution_250mg_5ml">
+        <label ref="jr:itext('/data/Medicine/cloxacillin_oral_solution_250mg_5ml:label')"/>
+        <hint ref="jr:itext('/data/Medicine/cloxacillin_oral_solution_250mg_5ml:hint')"/>
+      </input>
+      <input ref="/data/Medicine/griseofulvine_cream">
+        <label ref="jr:itext('/data/Medicine/griseofulvine_cream:label')"/>
+        <hint ref="jr:itext('/data/Medicine/griseofulvine_cream:hint')"/>
+      </input>
+      <input ref="/data/Medicine/griseofulvin_tablets_125mg">
+        <label ref="jr:itext('/data/Medicine/griseofulvin_tablets_125mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/griseofulvin_tablets_125mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/calamine_lotion">
+        <label ref="jr:itext('/data/Medicine/calamine_lotion:label')"/>
+        <hint ref="jr:itext('/data/Medicine/calamine_lotion:hint')"/>
+      </input>
+      <input ref="/data/Medicine/benzyl_benzoate_25">
+        <label ref="jr:itext('/data/Medicine/benzyl_benzoate_25:label')"/>
+        <hint ref="jr:itext('/data/Medicine/benzyl_benzoate_25:hint')"/>
+      </input>
+      <input ref="/data/Medicine/iron_and_folic_acid_tablets">
+        <label ref="jr:itext('/data/Medicine/iron_and_folic_acid_tablets:label')"/>
+        <hint ref="jr:itext('/data/Medicine/iron_and_folic_acid_tablets:hint')"/>
+      </input>
+      <input ref="/data/Medicine/co_trimoxazole_tablets_400_80mg">
+        <label ref="jr:itext('/data/Medicine/co_trimoxazole_tablets_400_80mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/co_trimoxazole_tablets_400_80mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/metronidazole_200mg">
+        <label ref="jr:itext('/data/Medicine/metronidazole_200mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/metronidazole_200mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/combined_anti_flue_medication">
+        <label ref="jr:itext('/data/Medicine/combined_anti_flue_medication:label')"/>
+        <hint ref="jr:itext('/data/Medicine/combined_anti_flue_medication:hint')"/>
+      </input>
+      <input ref="/data/Medicine/metamizol_500mg_ml_injectable">
+        <label ref="jr:itext('/data/Medicine/metamizol_500mg_ml_injectable:label')"/>
+        <hint ref="jr:itext('/data/Medicine/metamizol_500mg_ml_injectable:hint')"/>
+      </input>
+      <input ref="/data/Medicine/cloxacillin_tablets_500mg">
+        <label ref="jr:itext('/data/Medicine/cloxacillin_tablets_500mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/cloxacillin_tablets_500mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/trimetoprim_sulfate_400_80mg">
+        <label ref="jr:itext('/data/Medicine/trimetoprim_sulfate_400_80mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/trimetoprim_sulfate_400_80mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/furosemide_iv_20mg">
+        <label ref="jr:itext('/data/Medicine/furosemide_iv_20mg:label')"/>
+        <hint ref="jr:itext('/data/Medicine/furosemide_iv_20mg:hint')"/>
+      </input>
+      <input ref="/data/Medicine/co_mioflex_tablet">
+        <label ref="jr:itext('/data/Medicine/co_mioflex_tablet:label')"/>
+        <hint ref="jr:itext('/data/Medicine/co_mioflex_tablet:hint')"/>
+      </input>
+      <input ref="/data/Medicine/dolex">
+        <label ref="jr:itext('/data/Medicine/dolex:label')"/>
+        <hint ref="jr:itext('/data/Medicine/dolex:hint')"/>
       </input>
     </group>
     <group appearance="field-list summary" ref="/data/summary">
@@ -237,11 +2365,167 @@
       <input ref="/data/summary/r_summary" appearance="h1 yellow">
         <label ref="jr:itext('/data/summary/r_summary:label')"/>
       </input>
-      <input ref="/data/summary/s_test_drug" appearance="li">
-        <label ref="jr:itext('/data/summary/s_test_drug:label')"/>
+      <input ref="/data/summary/s_metformin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metformin_500mg:label')"/>
       </input>
-      <input ref="/data/summary/s_second_test_drug" appearance="li">
-        <label ref="jr:itext('/data/summary/s_second_test_drug:label')"/>
+      <input ref="/data/summary/s_litacid_gel_200ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_litacid_gel_200ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_omeprazole_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_omeprazole_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_omeprazole_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_omeprazole_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_buscopan_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_buscopan_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_amoxycillin_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_amoxycillin_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_metronidazole_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metronidazole_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_ringer_lactate_IV_fluid_500ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ringer_lactate_IV_fluid_500ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_ors" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ors:label')"/>
+      </input>
+      <input ref="/data/summary/s_tinidazole_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_tinidazole_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_h_pylori_rapid_test" appearance="li">
+        <label ref="jr:itext('/data/summary/s_h_pylori_rapid_test:label')"/>
+      </input>
+      <input ref="/data/summary/s_chloroquine_150mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_chloroquine_150mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_paracetamol_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_paracetamol_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_malaria_rapid_test" appearance="li">
+        <label ref="jr:itext('/data/summary/s_malaria_rapid_test:label')"/>
+      </input>
+      <input ref="/data/summary/s_nifedipine_10mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_nifedipine_10mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_hydrochlorotiazide_25mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_hydrochlorotiazide_25mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_enalapril_10mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_enalapril_10mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_nifedipine_20mg_tablets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_nifedipine_20mg_tablets:label')"/>
+      </input>
+      <input ref="/data/summary/s_dexamethasone_im_8mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_dexamethasone_im_8mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_salbutamol_tablet_4mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_salbutamol_tablet_4mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_azythromycine_tablets_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_azythromycine_tablets_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_triple_antibiotic_ointment" appearance="li">
+        <label ref="jr:itext('/data/summary/s_triple_antibiotic_ointment:label')"/>
+      </input>
+      <input ref="/data/summary/s_antiseptic_cleaner" appearance="li">
+        <label ref="jr:itext('/data/summary/s_antiseptic_cleaner:label')"/>
+      </input>
+      <input ref="/data/summary/s_ketoconazole_cream_2" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ketoconazole_cream_2:label')"/>
+      </input>
+      <input ref="/data/summary/s_ciprofloxacine_500mg_tablets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ciprofloxacine_500mg_tablets:label')"/>
+      </input>
+      <input ref="/data/summary/s_doxycicline_100mg_tablets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_doxycicline_100mg_tablets:label')"/>
+      </input>
+      <input ref="/data/summary/s_benzatine_penicillin_2_4_mio_units" appearance="li">
+        <label ref="jr:itext('/data/summary/s_benzatine_penicillin_2_4_mio_units:label')"/>
+      </input>
+      <input ref="/data/summary/s_amoxicillin_oral_suspension_250mg_5ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_amoxicillin_oral_suspension_250mg_5ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_acetaminophen_oral_suspension_120mg_5ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_acetaminophen_oral_suspension_120mg_5ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_salbutamol_nebules_2_5mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_salbutamol_nebules_2_5mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_salbutamol_sirup_2mg_5ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_salbutamol_sirup_2mg_5ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_ceftriaxole_im_50mg_kg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ceftriaxole_im_50mg_kg:label')"/>
+      </input>
+      <input ref="/data/summary/s_ipratropium" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ipratropium:label')"/>
+      </input>
+      <input ref="/data/summary/s_vitamin_c" appearance="li">
+        <label ref="jr:itext('/data/summary/s_vitamin_c:label')"/>
+      </input>
+      <input ref="/data/summary/s_nasal_saline_drops" appearance="li">
+        <label ref="jr:itext('/data/summary/s_nasal_saline_drops:label')"/>
+      </input>
+      <input ref="/data/summary/s_cephalexin" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cephalexin:label')"/>
+      </input>
+      <input ref="/data/summary/s_zinc_tablets_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_zinc_tablets_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_ciprofloxacine_oral_suspension_250mg_5ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_metoclopramide_im" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metoclopramide_im:label')"/>
+      </input>
+      <input ref="/data/summary/s_cloxacillin_oral_solution_250mg_5ml" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cloxacillin_oral_solution_250mg_5ml:label')"/>
+      </input>
+      <input ref="/data/summary/s_griseofulvine_cream" appearance="li">
+        <label ref="jr:itext('/data/summary/s_griseofulvine_cream:label')"/>
+      </input>
+      <input ref="/data/summary/s_griseofulvin_tablets_125mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_griseofulvin_tablets_125mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_calamine_lotion" appearance="li">
+        <label ref="jr:itext('/data/summary/s_calamine_lotion:label')"/>
+      </input>
+      <input ref="/data/summary/s_benzyl_benzoate_25" appearance="li">
+        <label ref="jr:itext('/data/summary/s_benzyl_benzoate_25:label')"/>
+      </input>
+      <input ref="/data/summary/s_iron_and_folic_acid_tablets" appearance="li">
+        <label ref="jr:itext('/data/summary/s_iron_and_folic_acid_tablets:label')"/>
+      </input>
+      <input ref="/data/summary/s_co_trimoxazole_tablets_400_80mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_co_trimoxazole_tablets_400_80mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_metronidazole_200mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metronidazole_200mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_combined_anti_flue_medication" appearance="li">
+        <label ref="jr:itext('/data/summary/s_combined_anti_flue_medication:label')"/>
+      </input>
+      <input ref="/data/summary/s_metamizol_500mg_ml_injectable" appearance="li">
+        <label ref="jr:itext('/data/summary/s_metamizol_500mg_ml_injectable:label')"/>
+      </input>
+      <input ref="/data/summary/s_cloxacillin_tablets_500mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_cloxacillin_tablets_500mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_trimetoprim_sulfate_400_80mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_trimetoprim_sulfate_400_80mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_furosemide_iv_20mg" appearance="li">
+        <label ref="jr:itext('/data/summary/s_furosemide_iv_20mg:label')"/>
+      </input>
+      <input ref="/data/summary/s_co_mioflex_tablet" appearance="li">
+        <label ref="jr:itext('/data/summary/s_co_mioflex_tablet:label')"/>
+      </input>
+      <input ref="/data/summary/s_dolex" appearance="li">
+        <label ref="jr:itext('/data/summary/s_dolex:label')"/>
       </input>
     </group>
     <group appearance="hidden" ref="/data/out"/>
