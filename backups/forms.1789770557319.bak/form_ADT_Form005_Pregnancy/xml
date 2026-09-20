@@ -1,0 +1,1222 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Pregnancy Form</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Register pregnancy</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Perform followup</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-0">
+            <value>Burning urination</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-1">
+            <value>Vaginal itching</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-2">
+            <value>Vaginal discharge</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-3">
+            <value>Positive white bloodcell strip in urine</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-4">
+            <value>Headache</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-5">
+            <value>Neck stiffness</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-6">
+            <value>Blurred vision</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-7">
+            <value>Epigastric pain</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-8">
+            <value>Pain general</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-9">
+            <value>Edema</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-10">
+            <value>Bleeding</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-11">
+            <value>Contractions</value>
+          </text>
+          <text id="pregnancy_test_result-0">
+            <value>Positive</value>
+          </text>
+          <text id="pregnancy_test_result-1">
+            <value>Negative</value>
+          </text>
+          <text id="pregnancy_test_result-2">
+            <value>Inconclusive</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Gestational Hypertension No Serious</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Gestational Hypertension Serious</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Pre-Eclampsia</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Genitourinary Infections</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Threatened Miscarriage Less 20</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Threatened Miscarriage Greater 20</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Zanmi Lasante health center in Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hopital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Hopital Alma Mater in Gros Morne town</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/form_purpose_group:label">
+            <value>Form purpose</value>
+          </text>
+          <text id="/data/form_purpose_group/optional_note:label">
+            <value>&lt;optional note&gt;</value>
+          </text>
+          <text id="/data/form_purpose_group/form_purpose:label">
+            <value>Select the reason for filling out the pregnancy form.</value>
+          </text>
+          <text id="/data/register_pregnancy_group:label">
+            <value>Register pregnancy</value>
+          </text>
+          <text id="/data/register_pregnancy_group/register_last_menstruation:label">
+            <value>Register last menstruation</value>
+          </text>
+          <text id="/data/register_pregnancy_group/pregnancy_test_result:label">
+            <value>Pregnancy test result</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Perform followup</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:label">
+            <value>When was the woman's last day of their last menstruation? If unsure, leave blank, or guess to their best ability.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:hint">
+            <value>If unsure, input approximate duration in the next question.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_approximation:label">
+            <value>Pregnancy duration approximation:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:label">
+            <value>Systolic blood pressure:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:hint">
+            <value>If greater than 140, remeasure in 15 minutes, and input the lowest value.</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:label">
+            <value>Diastolic blood pressure:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:hint">
+            <value>If greater than 90, remeasure in 15 minutes, and input the lowest value.</value>
+          </text>
+          <text id="/data/perform_followup_group/concerning_pregnancy_symptoms:label">
+            <value>Is the adult experiencing any of the following?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious:label">
+            <value>Gestational Hypertension</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious_action:label">
+            <value>The woman has gestational hypertension with no severe warning signs. Refer to prenatal clinic. \n\nProcedure: \n- If no severe signs: Nifedipine 20 mg daily\n- Refer to regular prenatal clinic but counsel not to wait too long\n- Counseling: reduce salt consumption\n</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_serious:label">
+            <value>Gestational Hypertension</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertesnion_serious_action:label">
+            <value>The woman has gestational hypertension with a severe warning sign. Refer immediately! \n\nProcedure:\n- 20 mg Nifedipine co one given on the spot\n- Refer to hospital\n\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia:label">
+            <value>Pre-Eclampsia</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia_action:label">
+            <value>The woman may have pre-eclampsia. Administer Nifedipine and refer to the hospital immediately. \n\nProcedure:\n- Nifedipine 20mg\n- Immediately refer to hospital\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections:label">
+            <value>Genitourinary Infections</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections_action:label">
+            <value>The woman may have a genitourinary infection. \n\nProcedure:\n- Hygiene counseling\n- Amoxicillin 500 mg, 3 times/day for 7 days\n</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20:label">
+            <value>Threatened Miscarriage</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20_action:label">
+            <value>The woman is threatening miscarriage. Refer to the hospital immediately. \n\nProcedure: \n- Paracetamol 500 mg on the spot and immediate referral</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20:label">
+            <value>Threatened Miscarriage</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20_action:label">
+            <value>The woman is threatening miscarriage. Refer to the hospital immediately. \n\nProcedure: \n- Nifedipine 20mg\n- Paracetamol 500mg\n- Immediate referral \n\n</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>No Results</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Which conditions did you follow up on?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>Which location did you refer the patient?</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:label">
+            <value>How many Nifedipine 20 mg tablets were distributed?</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Enregistrer la grossesse</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Effectuer le suivi</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-0">
+            <value>Brûlures en urinant</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-1">
+            <value>Démangeaisons vaginales</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-2">
+            <value>Pertes vaginales</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-3">
+            <value>Bandelette de globules blancs positive dans l'urine</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-4">
+            <value>Maux de tête</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-5">
+            <value>Raideur de la nuque</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-6">
+            <value>Vision floue</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-7">
+            <value>Douleur épigastrique</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-8">
+            <value>Douleur générale</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-9">
+            <value>Œdème</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-10">
+            <value>Saignement</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-11">
+            <value>Contractions</value>
+          </text>
+          <text id="pregnancy_test_result-0">
+            <value>Positif</value>
+          </text>
+          <text id="pregnancy_test_result-1">
+            <value>Négatif</value>
+          </text>
+          <text id="pregnancy_test_result-2">
+            <value>Non concluant</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Hypertension gestationnelle non grave</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Hypertension gestationnelle grave</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Prééclampsie</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Infections génito-urinaires</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Menace de fausse couche moins de 20</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Menace de fausse couche plus de 20</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hôpital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Hôpital Alma Mater dans la ville de Gros Morne</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/form_purpose_group:label">
+            <value>Objectif du formulaire</value>
+          </text>
+          <text id="/data/form_purpose_group/optional_note:label">
+            <value>&lt;note facultative&gt;</value>
+          </text>
+          <text id="/data/form_purpose_group/form_purpose:label">
+            <value>Sélectionnez la raison pour laquelle vous remplissez le formulaire de grossesse.</value>
+          </text>
+          <text id="/data/register_pregnancy_group:label">
+            <value>Enregistrer la grossesse</value>
+          </text>
+          <text id="/data/register_pregnancy_group/register_last_menstruation:label">
+            <value>Enregistrer la dernière menstruation</value>
+          </text>
+          <text id="/data/register_pregnancy_group/pregnancy_test_result:label">
+            <value>Résultat du test de grossesse</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Effectuer le suivi</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:label">
+            <value>Quel était le dernier jour des dernières menstruations de la femme ? En cas de doute, laissez vide ou devinez au mieux.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:hint">
+            <value>En cas de doute, entrez la durée approximative dans la question suivante.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_approximation:label">
+            <value>Approximation de la durée de la grossesse :</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:label">
+            <value>Pression artérielle systolique :</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:hint">
+            <value>Si supérieure à 140, remesurez dans 15 minutes et entrez la valeur la plus basse.</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:label">
+            <value>Pression artérielle diastolique :</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:hint">
+            <value>Si supérieure à 90, remesurez dans 15 minutes et entrez la valeur la plus basse.</value>
+          </text>
+          <text id="/data/perform_followup_group/concerning_pregnancy_symptoms:label">
+            <value>L'adulte présente-t-il l'un des symptômes suivants ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious:label">
+            <value>Hypertension gestationnelle</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious_action:label">
+            <value>La femme souffre d'hypertension gestationnelle sans signes avant-coureurs graves. Référer à la clinique prénatale. \n\nProcédure : \n- Si aucun signe grave : Nifédipine 20 mg par jour\n- Référer à la clinique prénatale régulière mais conseiller de ne pas attendre trop longtemps\n- Conseil : réduire la consommation de sel\n</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_serious:label">
+            <value>Hypertension gestationnelle</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertesnion_serious_action:label">
+            <value>La femme souffre d'hypertension gestationnelle avec un signe d'avertissement grave. Référer immédiatement ! \n\nProcédure :\n- 20 mg de Nifédipine donnés sur place\n- Référer à l'hôpital\n\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia:label">
+            <value>Prééclampsie</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia_action:label">
+            <value>La femme peut avoir une prééclampsie. Administrer de la Nifédipine et référer à l'hôpital immédiatement. \n\nProcédure :\n- Nifédipine 20mg\n- Référer immédiatement à l'hôpital\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections:label">
+            <value>Infections génito-urinaires</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections_action:label">
+            <value>La femme peut avoir une infection génito-urinaire. \n\nProcédure :\n- Conseils d'hygiène\n- Amoxicilline 500 mg, 3 fois/jour pendant 7 jours\n</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20:label">
+            <value>Menace de fausse couche</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20_action:label">
+            <value>La femme menace de faire une fausse couche. Référer à l'hôpital immédiatement. \n\nProcédure : \n- Paracétamol 500 mg sur place et référence immédiate</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20:label">
+            <value>Menace de fausse couche</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20_action:label">
+            <value>La femme menace de faire une fausse couche. Référer à l'hôpital immédiatement. \n\nProcédure : \n- Nifédipine 20mg\n- Paracétamol 500mg\n- Référence immédiate \n\n</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Aucun résultat</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Quelles conditions avez-vous suivies ?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>À quel endroit avez-vous référé le patient ?</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:label">
+            <value>Combien de comprimés de Nifédipine 20 mg ont été distribués ?</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Anrejistre gwosès</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Fè swivi</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-0">
+            <value>Pipi boule</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-1">
+            <value>Grate nan vajen</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-2">
+            <value>Ekolman nan vajen</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-3">
+            <value>Tès globil blan pozitif nan pipi</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-4">
+            <value>Tèt fè mal</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-5">
+            <value>Kou rèd</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-6">
+            <value>Vizyon twoub</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-7">
+            <value>Doulè nan lestomak</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-8">
+            <value>Doulè jeneral</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-9">
+            <value>Anfle</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-10">
+            <value>Senyen</value>
+          </text>
+          <text id="concerning_pregnancy_symptoms-11">
+            <value>Kontraksyon</value>
+          </text>
+          <text id="pregnancy_test_result-0">
+            <value>Pozitif</value>
+          </text>
+          <text id="pregnancy_test_result-1">
+            <value>Negatif</value>
+          </text>
+          <text id="pregnancy_test_result-2">
+            <value>Pa klè</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Tansyon wo nan gwosès pa grav</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Tansyon wo nan gwosès grav</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Preeklampsi</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Enfeksyon jenitourinè</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Menas foskouch mwens 20</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Menas foskouch plis 20</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Lopital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Lopital Alma Mater nan vil Gros Morne</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/form_purpose_group:label">
+            <value>Objektif fòm nan</value>
+          </text>
+          <text id="/data/form_purpose_group/optional_note:label">
+            <value>&lt;nòt opsyonèl&gt;</value>
+          </text>
+          <text id="/data/form_purpose_group/form_purpose:label">
+            <value>Chwazi rezon pou ranpli fòm gwosès la.</value>
+          </text>
+          <text id="/data/register_pregnancy_group:label">
+            <value>Anrejistre gwosès</value>
+          </text>
+          <text id="/data/register_pregnancy_group/register_last_menstruation:label">
+            <value>Anrejistre dènye règ</value>
+          </text>
+          <text id="/data/register_pregnancy_group/pregnancy_test_result:label">
+            <value>Rezilta tès gwosès</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Fè swivi</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:label">
+            <value>Ki dènye jou dènye règ fanm nan te ye? Si ou pa sèten, kite l vid, oswa devine pi byen ou kapab.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_menstruation:hint">
+            <value>Si ou pa sèten, mete dire apeprè nan pwochen kesyon an.</value>
+          </text>
+          <text id="/data/perform_followup_group/confirm_pregnancy_duration_approximation:label">
+            <value>Apwoksimasyon dire gwosès la:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:label">
+            <value>Tansyon sistolik:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_systolic:hint">
+            <value>Si l pi wo pase 140, repran l nan 15 minit, epi mete valè ki pi ba a.</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:label">
+            <value>Tansyon dyastolik:</value>
+          </text>
+          <text id="/data/perform_followup_group/bp_diastolic:hint">
+            <value>Si l pi wo pase 90, repran l nan 15 minit, epi mete valè ki pi ba a.</value>
+          </text>
+          <text id="/data/perform_followup_group/concerning_pregnancy_symptoms:label">
+            <value>Èske granmoun nan gen youn nan sentòm sa yo?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious:label">
+            <value>Tansyon wo nan gwosès</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_no_serious_action:label">
+            <value>Fanm nan gen tansyon wo nan gwosès san okenn gwo siy avètisman. Voye l nan klinik prenatal. \n\nPwosedi: \n- Si pa gen okenn siy grav: Nifedipine 20 mg chak jou\n- Voye l nan klinik prenatal regilye men konseye l pou l pa tann twò lontan\n- Konsèy: diminye konsomasyon sèl\n</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertension_serious:label">
+            <value>Tansyon wo nan gwosès</value>
+          </text>
+          <text id="/data/results_group/res_gestational_hypertesnion_serious_action:label">
+            <value>Fanm nan gen tansyon wo nan gwosès ak yon gwo siy avètisman. Voye l touswit! \n\nPwosedi:\n- 20 mg Nifedipine bay sou plas\n- Voye l lopital\n\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia:label">
+            <value>Preeklampsi</value>
+          </text>
+          <text id="/data/results_group/res_pre_eclampsia_action:label">
+            <value>Fanm nan ka gen preeklampsi. Bay Nifedipine epi voye l lopital touswit. \n\nPwosedi:\n- Nifedipine 20mg\n- Voye l lopital touswit\n\n\n</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections:label">
+            <value>Enfeksyon jenitourinè</value>
+          </text>
+          <text id="/data/results_group/res_genitourinary_infections_action:label">
+            <value>Fanm nan ka gen yon enfeksyon jenitourinè. \n\nPwosedi:\n- Konsèy sou ijyèn\n- Amoksikilin 500 mg, 3 fwa pa jou pandan 7 jou\n</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20:label">
+            <value>Menas foskouch</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_less20_action:label">
+            <value>Fanm nan gen menas foskouch. Voye l lopital touswit. \n\nPwosedi: \n- Paracetamol 500 mg sou plas epi voye l touswit</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20:label">
+            <value>Menas foskouch</value>
+          </text>
+          <text id="/data/results_group/res_threatened_miscarriage_greater20_action:label">
+            <value>Fanm nan gen menas foskouch. Voye l lopital touswit. \n\nPwosedi: \n- Nifedipine 20mg\n- Paracetamol 500mg\n- Voye l touswit \n\n</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Pa gen rezilta</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Aksyon</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Ki kondisyon ou te swiv?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>Ki kote ou te voye pasyan an?</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/nifedipine_20mg_tablets:label">
+            <value>Konbyen grenn Nifedipine 20 mg yo te bay?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="ADT_Form005_Pregnancy" version="20260918001546" prefix="J1!ADT_Form005_Pregnancy!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <form_purpose_group>
+            <optional_note/>
+            <form_purpose/>
+          </form_purpose_group>
+          <register_pregnancy_group>
+            <register_last_menstruation/>
+            <pregnancy_test_result/>
+          </register_pregnancy_group>
+          <perform_followup_group>
+            <confirm_pregnancy_duration_menstruation/>
+            <confirm_pregnancy_duration_approximation/>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <concerning_pregnancy_symptoms/>
+          </perform_followup_group>
+          <calc_gestational_hypertension_no_serious/>
+          <calc_gestational_hypertension_serious/>
+          <calc_pre_eclampsia/>
+          <calc_genitourinary_infections/>
+          <calc_threatened_miscarriage_less20/>
+          <calc_threatened_miscarriage_greater20/>
+          <results_group>
+            <res_gestational_hypertension_no_serious/>
+            <res_gestational_hypertension_no_serious_action/>
+            <res_gestational_hypertension_serious/>
+            <res_gestational_hypertesnion_serious_action/>
+            <res_pre_eclampsia/>
+            <res_pre_eclampsia_action/>
+            <res_genitourinary_infections/>
+            <res_genitourinary_infections_action/>
+            <res_threatened_miscarriage_less20/>
+            <res_threatened_miscarriage_less20_action/>
+            <res_threatened_miscarriage_greater20/>
+            <res_threatened_miscarriage_greater20_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <actions_confirmation>
+            <followed_up_conditions/>
+            <referal/>
+            <nifedipine_20mg_tablets/>
+          </actions_confirmation>
+          <data>
+            <_form_purpose/>
+            <_register_last_menstruation/>
+            <_pregnancy_test_result/>
+            <_confirm_pregnancy_duration_menstruation/>
+            <_confirm_pregnancy_duration_approximation/>
+            <_bp_systolic/>
+            <_bp_diastolic/>
+            <_concerning_pregnancy_symptoms/>
+            <_result_gestational_hypertension_no_serious/>
+            <_result_gestational_hypertension_serious/>
+            <_result_pre_eclampsia/>
+            <_result_genitourinary_infections/>
+            <_result_threatened_miscarriage_less20/>
+            <_result_threatened_miscarriage_greater20/>
+            <_followed_up_conditions/>
+            <_referal/>
+            <_nifedipine_20mg_tablets/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <nifedipine_20mg_tablets_used_in/>
+              <nifedipine_20mg_tablets___set/>
+              <nifedipine_20mg_tablets___unit/>
+              <nifedipine_20mg_tablets_used_in_ADT_Form005_Pregnancy/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="Form_purpose">
+        <root>
+          <item>
+            <itextId>Form_purpose-0</itextId>
+            <name>register_pregnancy</name>
+          </item>
+          <item>
+            <itextId>Form_purpose-1</itextId>
+            <name>perform_followup</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="concerning_pregnancy_symptoms">
+        <root>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-0</itextId>
+            <name>burning_urination</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-1</itextId>
+            <name>vaginal_itching</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-2</itextId>
+            <name>vaginal_discharge</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-3</itextId>
+            <name>positive_white_bloodcell_strip_in_urine</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-4</itextId>
+            <name>headache</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-5</itextId>
+            <name>neck_stiffness</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-6</itextId>
+            <name>blurred_vision</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-7</itextId>
+            <name>epigastric_pain</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-8</itextId>
+            <name>pain_general</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-9</itextId>
+            <name>edema</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-10</itextId>
+            <name>bleeding</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-11</itextId>
+            <name>contractions</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="pregnancy_test_result">
+        <root>
+          <item>
+            <itextId>pregnancy_test_result-0</itextId>
+            <name>positive</name>
+          </item>
+          <item>
+            <itextId>pregnancy_test_result-1</itextId>
+            <name>negative</name>
+          </item>
+          <item>
+            <itextId>pregnancy_test_result-2</itextId>
+            <name>inconculsive</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="followed_up_conditions">
+        <root>
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>gestational_hypertension_no_serious</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>gestational_hypertension_serious</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>pre_eclampsia</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>genitourinary_infections</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-4</itextId>
+            <name>threatened_miscarriage_less20</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-5</itextId>
+            <name>threatened_miscarriage_greater20</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="referal_locations">
+        <root>
+          <item>
+            <itextId>referal_locations-0</itextId>
+            <name>zl</name>
+          </item>
+          <item>
+            <itextId>referal_locations-1</itextId>
+            <name>hst</name>
+          </item>
+          <item>
+            <itextId>referal_locations-2</itextId>
+            <name>ham</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/form_purpose_group/optional_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/form_purpose_group/form_purpose" type="string" required="true()"/>
+      <bind nodeset="/data/register_pregnancy_group" relevant=" /data/form_purpose_group/form_purpose  = 'register_pregnancy'"/>
+      <bind nodeset="/data/register_pregnancy_group/register_last_menstruation" type="date" required="true()"/>
+      <bind nodeset="/data/register_pregnancy_group/pregnancy_test_result" type="string"/>
+      <bind nodeset="/data/perform_followup_group" relevant=" /data/form_purpose_group/form_purpose  = 'perform_followup'"/>
+      <bind nodeset="/data/perform_followup_group/confirm_pregnancy_duration_menstruation" type="date"/>
+      <bind nodeset="/data/perform_followup_group/confirm_pregnancy_duration_approximation" type="int" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/perform_followup_group/confirm_pregnancy_duration_menstruation )) div 7)"/>
+      <bind nodeset="/data/perform_followup_group/bp_systolic" type="int" required="true()" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/perform_followup_group/bp_diastolic" type="int" required="true()" constraint=". &lt;= 999"/>
+      <bind nodeset="/data/perform_followup_group/concerning_pregnancy_symptoms" type="string"/>
+      <bind nodeset="/data/calc_gestational_hypertension_no_serious" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_approximation  &gt; 20 and  /data/perform_followup_group/bp_systolic  &gt;= 140 and  /data/perform_followup_group/bp_diastolic  &gt;= 90, 'true', 'false')"/>
+      <bind nodeset="/data/calc_gestational_hypertension_serious" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_approximation  &gt; 20 and  /data/perform_followup_group/bp_systolic  &gt;= 140 and  /data/perform_followup_group/bp_diastolic  &gt;= 90 and (selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'headache') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'neck_stiffness') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'blurred_vision') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'epigastric_pain')), 'true', 'false')"/>
+      <bind nodeset="/data/calc_pre_eclampsia" type="string" calculate="if( /data/perform_followup_group/bp_systolic  &gt;= 140 and  /data/perform_followup_group/bp_diastolic  &gt;= 90 and (selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'headache') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'epigastric_pain') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'blurred_vision') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'edema')), 'true', 'false')"/>
+      <bind nodeset="/data/calc_genitourinary_infections" type="string" calculate="if(selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'burning_urination') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'vaginal_itching') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'vaginal_discharge') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'positive_white_bloodcell_strip_in_urine'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_threatened_miscarriage_less20" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_approximation  &lt; 20 and (selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'bleeding') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'pain_general')), 'true', 'false')"/>
+      <bind nodeset="/data/calc_threatened_miscarriage_greater20" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_approximation  &gt; 20 and (selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'bleeding') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'pain_general') or selected( /data/perform_followup_group/concerning_pregnancy_symptoms , 'contractions')), 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_gestational_hypertension_no_serious  = 'true' or  /data/calc_gestational_hypertension_serious  = 'true' or  /data/calc_pre_eclampsia  = 'true' or  /data/calc_genitourinary_infections  = 'true' or  /data/calc_threatened_miscarriage_less20  = 'true' or  /data/calc_threatened_miscarriage_greater20  = 'true'"/>
+      <bind nodeset="/data/results_group/res_gestational_hypertension_no_serious" readonly="true()" type="string" relevant=" /data/calc_gestational_hypertension_no_serious  = 'true' and  /data/calc_gestational_hypertension_serious  != 'true'"/>
+      <bind nodeset="/data/results_group/res_gestational_hypertension_no_serious_action" readonly="true()" type="string" relevant=" /data/calc_gestational_hypertension_no_serious  = 'true' and  /data/calc_gestational_hypertension_serious  != 'true'"/>
+      <bind nodeset="/data/results_group/res_gestational_hypertension_serious" readonly="true()" type="string" relevant=" /data/calc_gestational_hypertension_serious  = 'true'"/>
+      <bind nodeset="/data/results_group/res_gestational_hypertesnion_serious_action" readonly="true()" type="string" relevant=" /data/calc_gestational_hypertension_serious  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pre_eclampsia" readonly="true()" type="string" relevant=" /data/calc_pre_eclampsia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pre_eclampsia_action" readonly="true()" type="string" relevant=" /data/calc_pre_eclampsia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_genitourinary_infections" readonly="true()" type="string" relevant=" /data/calc_genitourinary_infections  = 'true'"/>
+      <bind nodeset="/data/results_group/res_genitourinary_infections_action" readonly="true()" type="string" relevant=" /data/calc_genitourinary_infections  = 'true'"/>
+      <bind nodeset="/data/results_group/res_threatened_miscarriage_less20" readonly="true()" type="string" relevant=" /data/calc_threatened_miscarriage_less20  = 'true'"/>
+      <bind nodeset="/data/results_group/res_threatened_miscarriage_less20_action" readonly="true()" type="string" relevant=" /data/calc_threatened_miscarriage_less20  = 'true'"/>
+      <bind nodeset="/data/results_group/res_threatened_miscarriage_greater20" readonly="true()" type="string" relevant=" /data/calc_threatened_miscarriage_greater20  = 'true'"/>
+      <bind nodeset="/data/results_group/res_threatened_miscarriage_greater20_action" readonly="true()" type="string" relevant=" /data/calc_threatened_miscarriage_greater20  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_gestational_hypertension_no_serious  != 'true' and  /data/calc_gestational_hypertension_serious  != 'true' and  /data/calc_pre_eclampsia  != 'true' and  /data/calc_genitourinary_infections  != 'true' and  /data/calc_threatened_miscarriage_less20  != 'true' and  /data/calc_threatened_miscarriage_greater20  != 'true'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
+      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'gestational_hypertension_no_serious') or selected( /data/actions_confirmation/followed_up_conditions , 'gestational_hypertension_serious') or selected( /data/actions_confirmation/followed_up_conditions , 'pre_eclampsia') or selected( /data/actions_confirmation/followed_up_conditions , 'genitourinary_infections') or selected( /data/actions_confirmation/followed_up_conditions , 'threatened_miscarriage_less20') or selected( /data/actions_confirmation/followed_up_conditions , 'threatened_miscarriage_greater20')"/>
+      <bind nodeset="/data/actions_confirmation/nifedipine_20mg_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'gestational_hypertension_no_serious') or selected( /data/actions_confirmation/followed_up_conditions , 'gestational_hypertension_serious') or selected( /data/actions_confirmation/followed_up_conditions , 'pre_eclampsia') or selected( /data/actions_confirmation/followed_up_conditions , 'threatened_miscarriage_greater20')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/nifedipine_20mg_tablets:jr:constraintMsg')"/>
+      <bind nodeset="/data/data/_form_purpose" type="string" calculate="if( /data/form_purpose_group/form_purpose  != '',  /data/form_purpose_group/form_purpose , 'false')"/>
+      <bind nodeset="/data/data/_register_last_menstruation" type="string" calculate="if( /data/register_pregnancy_group/register_last_menstruation  != '',  /data/register_pregnancy_group/register_last_menstruation , 'false')"/>
+      <bind nodeset="/data/data/_pregnancy_test_result" type="string" calculate="if( /data/register_pregnancy_group/pregnancy_test_result  != '',  /data/register_pregnancy_group/pregnancy_test_result , 'false')"/>
+      <bind nodeset="/data/data/_confirm_pregnancy_duration_menstruation" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_menstruation  != '',  /data/perform_followup_group/confirm_pregnancy_duration_menstruation , 'false')"/>
+      <bind nodeset="/data/data/_confirm_pregnancy_duration_approximation" type="string" calculate="if( /data/perform_followup_group/confirm_pregnancy_duration_approximation  != '',  /data/perform_followup_group/confirm_pregnancy_duration_approximation , -1)"/>
+      <bind nodeset="/data/data/_bp_systolic" type="string" calculate="if( /data/perform_followup_group/bp_systolic  != '',  /data/perform_followup_group/bp_systolic , -1)"/>
+      <bind nodeset="/data/data/_bp_diastolic" type="string" calculate="if( /data/perform_followup_group/bp_diastolic  != '',  /data/perform_followup_group/bp_diastolic , -1)"/>
+      <bind nodeset="/data/data/_concerning_pregnancy_symptoms" type="string" calculate="if( /data/perform_followup_group/concerning_pregnancy_symptoms  != '',  /data/perform_followup_group/concerning_pregnancy_symptoms , 'false')"/>
+      <bind nodeset="/data/data/_result_gestational_hypertension_no_serious" type="string" calculate="if( /data/calc_gestational_hypertension_no_serious ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_gestational_hypertension_serious" type="string" calculate="if( /data/calc_gestational_hypertension_serious ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_pre_eclampsia" type="string" calculate="if( /data/calc_pre_eclampsia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_genitourinary_infections" type="string" calculate="if( /data/calc_genitourinary_infections ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_threatened_miscarriage_less20" type="string" calculate="if( /data/calc_threatened_miscarriage_less20 ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_threatened_miscarriage_greater20" type="string" calculate="if( /data/calc_threatened_miscarriage_greater20 ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
+      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
+      <bind nodeset="/data/data/_nifedipine_20mg_tablets" type="string" calculate="if( /data/actions_confirmation/nifedipine_20mg_tablets  != '',  /data/actions_confirmation/nifedipine_20mg_tablets , -1)"/>
+      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
+      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form005_Pregnancy&quot;"/>
+      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_tablets_used_in" type="string" calculate=" /data/actions_confirmation/nifedipine_20mg_tablets "/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/nifedipine_20mg_tablets_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_tablets_used_in_ADT_Form005_Pregnancy" type="string" calculate=" /data/prescription_summary/fields/nifedipine_20mg_tablets___set  * X +  /data/prescription_summary/fields/nifedipine_20mg_tablets___unit "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/form_purpose_group">
+      <label ref="jr:itext('/data/form_purpose_group:label')"/>
+      <input ref="/data/form_purpose_group/optional_note">
+        <label ref="jr:itext('/data/form_purpose_group/optional_note:label')"/>
+      </input>
+      <select1 ref="/data/form_purpose_group/form_purpose">
+        <label ref="jr:itext('/data/form_purpose_group/form_purpose:label')"/>
+        <itemset nodeset="instance('Form_purpose')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/register_pregnancy_group">
+      <label ref="jr:itext('/data/register_pregnancy_group:label')"/>
+      <input ref="/data/register_pregnancy_group/register_last_menstruation">
+        <label ref="jr:itext('/data/register_pregnancy_group/register_last_menstruation:label')"/>
+      </input>
+      <select1 ref="/data/register_pregnancy_group/pregnancy_test_result">
+        <label ref="jr:itext('/data/register_pregnancy_group/pregnancy_test_result:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/perform_followup_group">
+      <label ref="jr:itext('/data/perform_followup_group:label')"/>
+      <input ref="/data/perform_followup_group/confirm_pregnancy_duration_menstruation">
+        <label ref="jr:itext('/data/perform_followup_group/confirm_pregnancy_duration_menstruation:label')"/>
+        <hint ref="jr:itext('/data/perform_followup_group/confirm_pregnancy_duration_menstruation:hint')"/>
+      </input>
+      <input ref="/data/perform_followup_group/confirm_pregnancy_duration_approximation">
+        <label ref="jr:itext('/data/perform_followup_group/confirm_pregnancy_duration_approximation:label')"/>
+      </input>
+      <input ref="/data/perform_followup_group/bp_systolic">
+        <label ref="jr:itext('/data/perform_followup_group/bp_systolic:label')"/>
+        <hint ref="jr:itext('/data/perform_followup_group/bp_systolic:hint')"/>
+      </input>
+      <input ref="/data/perform_followup_group/bp_diastolic">
+        <label ref="jr:itext('/data/perform_followup_group/bp_diastolic:label')"/>
+        <hint ref="jr:itext('/data/perform_followup_group/bp_diastolic:hint')"/>
+      </input>
+      <select ref="/data/perform_followup_group/concerning_pregnancy_symptoms">
+        <label ref="jr:itext('/data/perform_followup_group/concerning_pregnancy_symptoms:label')"/>
+        <itemset nodeset="instance('concerning_pregnancy_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_gestational_hypertension_no_serious" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_gestational_hypertension_no_serious:label')"/>
+      </input>
+      <input ref="/data/results_group/res_gestational_hypertension_no_serious_action">
+        <label ref="jr:itext('/data/results_group/res_gestational_hypertension_no_serious_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_gestational_hypertension_serious" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_gestational_hypertension_serious:label')"/>
+      </input>
+      <input ref="/data/results_group/res_gestational_hypertesnion_serious_action">
+        <label ref="jr:itext('/data/results_group/res_gestational_hypertesnion_serious_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_pre_eclampsia" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_pre_eclampsia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_pre_eclampsia_action">
+        <label ref="jr:itext('/data/results_group/res_pre_eclampsia_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_genitourinary_infections" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_genitourinary_infections:label')"/>
+      </input>
+      <input ref="/data/results_group/res_genitourinary_infections_action">
+        <label ref="jr:itext('/data/results_group/res_genitourinary_infections_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_threatened_miscarriage_less20" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_threatened_miscarriage_less20:label')"/>
+      </input>
+      <input ref="/data/results_group/res_threatened_miscarriage_less20_action">
+        <label ref="jr:itext('/data/results_group/res_threatened_miscarriage_less20_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_threatened_miscarriage_greater20" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_threatened_miscarriage_greater20:label')"/>
+      </input>
+      <input ref="/data/results_group/res_threatened_miscarriage_greater20_action">
+        <label ref="jr:itext('/data/results_group/res_threatened_miscarriage_greater20_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/actions_confirmation">
+      <label ref="jr:itext('/data/actions_confirmation:label')"/>
+      <select ref="/data/actions_confirmation/followed_up_conditions">
+        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
+        <itemset nodeset="instance('followed_up_conditions')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/actions_confirmation/referal">
+        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
+        <itemset nodeset="instance('referal_locations')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/actions_confirmation/nifedipine_20mg_tablets">
+        <label ref="jr:itext('/data/actions_confirmation/nifedipine_20mg_tablets:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+    <group appearance="field-list summary" ref="/data/prescription_summary">
+      <group ref="/data/prescription_summary/contact"/>
+      <group ref="/data/prescription_summary/fields">
+        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>
