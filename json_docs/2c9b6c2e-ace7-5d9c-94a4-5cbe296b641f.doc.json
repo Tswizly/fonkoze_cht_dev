@@ -29,7 +29,9 @@
         "date_of_birth": "1987-01-01",
         "phone": "+9779841645872",
         "reported_date": 1544031155715,
-        "_id": "00a37402-7bc9-5619-92b0-99ade2056cb2"
+        "role": "nurse",
+        "roles[0]": "nurse",
+        "_id": "12124c66-7f7f-574b-92ca-ccb4bb2d8db9"
       },
       "reported_date": 1544031155715,
       "_id": "93a84a5d-79b1-5dd2-b3da-7bdf2cc37a15"

@@ -1,0 +1,1150 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Digestive Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="diarrhea_color-0">
+            <value>Greenish</value>
+          </text>
+          <text id="diarrhea_color-1">
+            <value>Red</value>
+          </text>
+          <text id="diarrhea_color-2">
+            <value>Blackish</value>
+          </text>
+          <text id="diarrhea_color-3">
+            <value>Yellowish</value>
+          </text>
+          <text id="diarrhea_color-4">
+            <value>Gray or white</value>
+          </text>
+          <text id="physical_demeanor-0">
+            <value>Lethargic or unconscious</value>
+          </text>
+          <text id="physical_demeanor-1">
+            <value>Restless or irritable</value>
+          </text>
+          <text id="physical_demeanor-2">
+            <value>Drinking difficulty</value>
+          </text>
+          <text id="physical_demeanor-3">
+            <value>Drinking eagerly</value>
+          </text>
+          <text id="skin_pinch-0">
+            <value>Very slowly</value>
+          </text>
+          <text id="skin_pinch-1">
+            <value>Slowly</value>
+          </text>
+          <text id="skin_pinch-2">
+            <value>Regular</value>
+          </text>
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Severe Dehydration</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Some Dehydration</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>No Dehydration</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Persistent Diarrhea</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Dysentery</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Gastritis</value>
+          </text>
+          <text id="followed_up_conditions-6">
+            <value>Risk of Cholera</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/digestive_checkup_group:label">
+            <value>Digestive Checkup</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea:label">
+            <value>Does the child have diarrhea?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:jr:constraintMsg">
+            <value>Cannot exceed 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:label">
+            <value>How long has the child had diarrhea (days)?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:jr:constraintMsg">
+            <value>Cannot exceed 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:label">
+            <value>How often does the child pass stool per day?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_color:label">
+            <value>What color is the stool?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_blood:label">
+            <value>Is there blood in the child's stool?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/vomiting_repeatedly:label">
+            <value>Is the child vomiting repeatedly?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/physical_demeanor:label">
+            <value>What is the child's physical demeanor?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/skin_pinch:label">
+            <value>After being pinched, does the skin of the abdomen go back regularly, slowly, or very slowly?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/sunken_eyes:label">
+            <value>Does the child exhibit sunken eyes?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration:label">
+            <value>Severe Dehydration</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration_action:label">
+            <value>Place Levine tube, and use siringe to provide ORS through the tube, Then Refer URGENTLY to hospital with mother giving frequent sips of ORS on the way. Advise the mother to continue breastfeeding.</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration:label">
+            <value>Some Dehydration</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration_action:label">
+            <value>Give ORS, zinc supplements, and food for some dehydration (Plan B - DOSING). If child also has a severe classification: Refer URGENTLY to hospital with mother giving frequent sips of ORS on the way. Advise the mother to continue breastfeeding. Go to hospital in 5 days if not improving.</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration:label">
+            <value>No Dehydration</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration_action:label">
+            <value>Give 4 packets of ORS to go home with as well as zinc supplements, and food to treat diarrhea at home (Plan A - DOSING). Advise mother when to go to hospital immediately.</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea:label">
+            <value>Persistent Diarrhea</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea_action:label">
+            <value>ORS Treat dehydration before referral unless the child has another severe classification (DOSING). Refer to hospital.</value>
+          </text>
+          <text id="/data/results_group/res_dysentery:label">
+            <value>Dysentery</value>
+          </text>
+          <text id="/data/results_group/res_dysentery_action:label">
+            <value>Give trimetoprim sulfate (TMS) for 3 days (200/40 mg per 5 ml – 4 a 5 mg per kg per day in two doses) and metronidazole 250mg/5ml suspension – 20 mg par kg par jour en trois doses). Breastfeeding. Treated water.</value>
+          </text>
+          <text id="/data/results_group/res_gastritis:label">
+            <value>Gastritis</value>
+          </text>
+          <text id="/data/results_group/res_gastritis_action:label">
+            <value>Give ORS. Metoclopramide IM – dosing: 0.1 mg par kg max 0.5 mg. Antacid: Litacid Gel. Counseling on good feeding practices: no spicy food, no salty food, no tomato sauce or mayonaise, regular small meals. Soup, vegetables, soup. Recommendation for hygiene: washing hands, no raw food, washing fruit with soap.</value>
+          </text>
+          <text id="/data/results_group/res_cholera:label">
+            <value>Risk of Cholera</value>
+          </text>
+          <text id="/data/results_group/res_cholera_action:label">
+            <value>IV fluid – Ringer/lactate if severely dehydrated. ORS. Refer to cholera treatment center or hospital.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>No Conditions Met</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Which conditions did you follow up on?</value>
+          </text>
+          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
+            <value>Did you distribute Zinc tablets 20 mg?</value>
+          </text>
+          <text id="/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Did you distribute Ciprofloxacine oral suspension 250mg/5ml?</value>
+          </text>
+          <text id="/data/actions_confirmation/metoclopramide_im:label">
+            <value>Did you distribute Metoclopramide IM?</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="diarrhea_color-0">
+            <value>Verdâtre</value>
+          </text>
+          <text id="diarrhea_color-1">
+            <value>Rouge</value>
+          </text>
+          <text id="diarrhea_color-2">
+            <value>Noirâtre</value>
+          </text>
+          <text id="diarrhea_color-3">
+            <value>Jaunâtre</value>
+          </text>
+          <text id="diarrhea_color-4">
+            <value>Gris ou blanc</value>
+          </text>
+          <text id="physical_demeanor-0">
+            <value>Léthargique ou inconscient</value>
+          </text>
+          <text id="physical_demeanor-1">
+            <value>Agité ou irritable</value>
+          </text>
+          <text id="physical_demeanor-2">
+            <value>Difficulté à boire</value>
+          </text>
+          <text id="physical_demeanor-3">
+            <value>Boit avidement</value>
+          </text>
+          <text id="skin_pinch-0">
+            <value>Très lentement</value>
+          </text>
+          <text id="skin_pinch-1">
+            <value>Lentement</value>
+          </text>
+          <text id="skin_pinch-2">
+            <value>Régulier</value>
+          </text>
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Déshydratation Sévère</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Déshydratation Modérée</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Pas de Déshydratation</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Diarrhée Persistante</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Dysenterie</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Gastrite</value>
+          </text>
+          <text id="followed_up_conditions-6">
+            <value>Risque de Choléra</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/digestive_checkup_group:label">
+            <value>Bilan Digestif</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea:label">
+            <value>L'enfant a-t-il la diarrhée ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:jr:constraintMsg">
+            <value>Ne peut pas dépasser 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:label">
+            <value>Depuis combien de jours l'enfant a-t-il la diarrhée ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:jr:constraintMsg">
+            <value>Ne peut pas dépasser 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:label">
+            <value>À quelle fréquence l'enfant va-t-il à la selle par jour ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_color:label">
+            <value>Quelle est la couleur des selles ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_blood:label">
+            <value>Y a-t-il du sang dans les selles de l'enfant ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/vomiting_repeatedly:label">
+            <value>L'enfant vomit-il à plusieurs reprises ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/physical_demeanor:label">
+            <value>Quel est le comportement physique de l'enfant ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/skin_pinch:label">
+            <value>Après avoir été pincée, la peau de l'abdomen revient-elle normalement, lentement ou très lentement ?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/sunken_eyes:label">
+            <value>L'enfant a-t-il les yeux enfoncés ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration:label">
+            <value>Déshydratation Sévère</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration_action:label">
+            <value>Placer un tube de Levine et utiliser une seringue pour administrer des SRO par le tube. Ensuite, référer D'URGENCE à l'hôpital, la mère donnant de petites gorgées fréquentes de SRO en cours de route. Conseiller à la mère de continuer l'allaitement.</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration:label">
+            <value>Déshydratation Modérée</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration_action:label">
+            <value>Donner des SRO, des suppléments de zinc et de la nourriture pour une déshydratation modérée (Plan B - DOSAGE). Si l'enfant a également une classification sévère : Référer D'URGENCE à l'hôpital, la mère donnant de petites gorgées fréquentes de SRO en cours de route. Conseiller à la mère de continuer l'allaitement. Aller à l'hôpital dans 5 jours s'il n'y a pas d'amélioration.</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration:label">
+            <value>Pas de Déshydratation</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration_action:label">
+            <value>Donner 4 sachets de SRO à emporter à la maison, ainsi que des suppléments de zinc et de la nourriture pour traiter la diarrhée à la maison (Plan A - DOSAGE). Conseiller à la mère sur les cas où elle doit se rendre immédiatement à l'hôpital.</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea:label">
+            <value>Diarrhée Persistante</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea_action:label">
+            <value>Traiter la déshydratation avec des SRO avant la référence, sauf si l'enfant a une autre classification sévère (DOSAGE). Référer à l'hôpital.</value>
+          </text>
+          <text id="/data/results_group/res_dysentery:label">
+            <value>Dysenterie</value>
+          </text>
+          <text id="/data/results_group/res_dysentery_action:label">
+            <value>Donner du sulfaméthoxazole-triméthoprime (TMS) pendant 3 jours (200/40 mg par 5 ml – 4 à 5 mg par kg par jour en deux doses) et une suspension de métronidazole 250 mg/5 ml – 20 mg par kg par jour en trois doses. Allaitement. Eau traitée.</value>
+          </text>
+          <text id="/data/results_group/res_gastritis:label">
+            <value>Gastrite</value>
+          </text>
+          <text id="/data/results_group/res_gastritis_action:label">
+            <value>Donner des SRO. Métoclopramide IM – dosage : 0,1 mg par kg max 0,5 mg. Antiacide : Gel Litacid. Conseils sur les bonnes pratiques alimentaires : pas d'aliments épicés, pas d'aliments salés, pas de sauce tomate ni de mayonnaise, petits repas réguliers. Soupe, légumes. Recommandation pour l'hygiène : lavage des mains, pas d'aliments crus, laver les fruits avec du savon.</value>
+          </text>
+          <text id="/data/results_group/res_cholera:label">
+            <value>Risque de Choléra</value>
+          </text>
+          <text id="/data/results_group/res_cholera_action:label">
+            <value>Liquide IV – Ringer/lactate si déshydratation sévère. SRO. Référer au centre de traitement du choléra ou à l'hôpital.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Aucune Condition Remplie</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Quelles conditions avez-vous suivies ?</value>
+          </text>
+          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
+            <value>Avez-vous distribué des comprimés de zinc 20 mg ?</value>
+          </text>
+          <text id="/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Avez-vous distribué de la Ciprofloxacine suspension orale 250mg/5ml ?</value>
+          </text>
+          <text id="/data/actions_confirmation/metoclopramide_im:label">
+            <value>Avez-vous distribué du Métoclopramide IM ?</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="diarrhea_color-0">
+            <value>Vèt</value>
+          </text>
+          <text id="diarrhea_color-1">
+            <value>Wouj</value>
+          </text>
+          <text id="diarrhea_color-2">
+            <value>Nwa</value>
+          </text>
+          <text id="diarrhea_color-3">
+            <value>Jòn</value>
+          </text>
+          <text id="diarrhea_color-4">
+            <value>Gri oswa blan</value>
+          </text>
+          <text id="physical_demeanor-0">
+            <value>Letaji oswa san konesans</value>
+          </text>
+          <text id="physical_demeanor-1">
+            <value>Ajite oswa chimerik</value>
+          </text>
+          <text id="physical_demeanor-2">
+            <value>Difikilte pou bwè</value>
+          </text>
+          <text id="physical_demeanor-3">
+            <value>Bwè avèk anvi</value>
+          </text>
+          <text id="skin_pinch-0">
+            <value>Trè dousman</value>
+          </text>
+          <text id="skin_pinch-1">
+            <value>Dousman</value>
+          </text>
+          <text id="skin_pinch-2">
+            <value>Nòmal</value>
+          </text>
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Dezidratasyon Grav</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Dezidratasyon Modere</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Pa gen Dezidratasyon</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Dyare Pèsistan</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Disantri</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Gastrit</value>
+          </text>
+          <text id="followed_up_conditions-6">
+            <value>Risk Kolera</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/digestive_checkup_group:label">
+            <value>Tcheke Dijestif</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea:label">
+            <value>Èske timoun nan gen dyare?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:jr:constraintMsg">
+            <value>Pa ka depase 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_duration:label">
+            <value>Depi konbyen jou timoun nan gen dyare?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:jr:constraintMsg">
+            <value>Pa ka depase 99</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_frequency:label">
+            <value>Konbyen fwa timoun nan poupou pa jou?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_color:label">
+            <value>Ki koulè poupou a?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/diarrhea_blood:label">
+            <value>Èske gen san nan poupou timoun nan?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/vomiting_repeatedly:label">
+            <value>Èske timoun nan ap vomi anpil fwa?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/physical_demeanor:label">
+            <value>Ki jan timoun nan ye nan kò li?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/skin_pinch:label">
+            <value>Apre yo fin zongle li, èske po vant la tounen nòmal, dousman, oswa trè dousman?</value>
+          </text>
+          <text id="/data/digestive_checkup_group/sunken_eyes:label">
+            <value>Èske timoun nan gen je fon?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration:label">
+            <value>Dezidratasyon Grav</value>
+          </text>
+          <text id="/data/results_group/res_severe_dehydration_action:label">
+            <value>Mete tib Levine, epi itilize sereng pou bay SRO nan tib la. Apre sa, voye l IJANS nan lopital pandan manman an ap ba li ti gout SRO sou wout la. Konseye manman an pou l kontinye bay tete.</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration:label">
+            <value>Dezidratasyon Modere</value>
+          </text>
+          <text id="/data/results_group/res_some_dehydration_action:label">
+            <value>Bay SRO, sipleman zenk, ak manje pou dezidratasyon modere (Plan B - DOZ). Si timoun nan gen yon klasifikasyon grav tou: Voye l IJANS nan lopital pandan manman an ap ba li ti gout SRO sou wout la. Konseye manman an pou l kontinye bay tete. Ale nan lopital nan 5 jou si li pa amelyore.</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration:label">
+            <value>Pa gen Dezidratasyon</value>
+          </text>
+          <text id="/data/results_group/res_no_dehydration_action:label">
+            <value>Bay 4 sachè SRO pou l pote lakay li, ansanm ak sipleman zenk ak manje pou trete dyare a lakay (Plan A - DOZ). Konseye manman an ki lè pou l ale lopital touswit.</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea:label">
+            <value>Dyare Pèsistan</value>
+          </text>
+          <text id="/data/results_group/res_persistent_diarrhea_action:label">
+            <value>Trete dezidratasyon an ak SRO anvan ou voye l, sof si timoun nan gen yon lòt klasifikasyon grav (DOZ). Voye l nan lopital.</value>
+          </text>
+          <text id="/data/results_group/res_dysentery:label">
+            <value>Disantri</value>
+          </text>
+          <text id="/data/results_group/res_dysentery_action:label">
+            <value>Bay trimetoprim silfat (TMS) pandan 3 jou (200/40 mg pou 5 ml – 4 a 5 mg pa kg pa jou an de fwa) ak metronidazol 250mg/5ml sispansyon – 20 mg pa kg pa jou an twa fwa. Bay tete. Dlo trete.</value>
+          </text>
+          <text id="/data/results_group/res_gastritis:label">
+            <value>Gastrit</value>
+          </text>
+          <text id="/data/results_group/res_gastritis_action:label">
+            <value>Bay SRO. Metoclopramide IM – doz: 0.1 mg pa kg max 0.5 mg. Antiasid: Jèl Litacid. Konsèy sou bon jan manje: pa gen manje pike, pa gen manje sale, pa gen sòs tomat oswa mayonèz, ti repa regilye. Soup, legim. Rekòmandasyon pou ijyèn: lave men, pa gen manje kri, lave fwi ak savon.</value>
+          </text>
+          <text id="/data/results_group/res_cholera:label">
+            <value>Risk Kolera</value>
+          </text>
+          <text id="/data/results_group/res_cholera_action:label">
+            <value>Likid IV – Ringer/lactate si li dezidrate anpil. SRO. Voye l nan sant tretman kolera oswa lopital.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Pa Gen Okenn Kondisyon Ki Ranpli</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Aksyon</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Ki kondisyon ou te swiv?</value>
+          </text>
+          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
+            <value>Èske ou te bay grenn zenk 20 mg?</value>
+          </text>
+          <text id="/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml:label">
+            <value>Èske ou te bay Ciprofloxacine sispansyon oral 250mg/5ml?</value>
+          </text>
+          <text id="/data/actions_confirmation/metoclopramide_im:label">
+            <value>Èske ou te bay Metoclopramide IM?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="CHD_Form001_DigestiveConditions" version="20260918022510" prefix="J1!CHD_Form001_DigestiveConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <digestive_checkup_group>
+            <diarrhea/>
+            <diarrhea_duration/>
+            <diarrhea_frequency/>
+            <diarrhea_color/>
+            <diarrhea_blood/>
+            <vomiting_repeatedly/>
+            <physical_demeanor/>
+            <skin_pinch/>
+            <sunken_eyes/>
+          </digestive_checkup_group>
+          <calc_severe_dehydration_signs/>
+          <calc_severe_dehydration/>
+          <calc_some_dehydration_signs/>
+          <calc_some_dehydration/>
+          <calc_no_dehydration/>
+          <calc_persistent_diarrhea/>
+          <calc_dysentery/>
+          <calc_gastritis/>
+          <calc_cholera/>
+          <results_group>
+            <res_severe_dehydration/>
+            <res_severe_dehydration_action/>
+            <res_some_dehydration/>
+            <res_some_dehydration_action/>
+            <res_no_dehydration/>
+            <res_no_dehydration_action/>
+            <res_persistent_diarrhea/>
+            <res_persistent_diarrhea_action/>
+            <res_dysentery/>
+            <res_dysentery_action/>
+            <res_gastritis/>
+            <res_gastritis_action/>
+            <res_cholera/>
+            <res_cholera_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <actions_confirmation>
+            <followed_up_conditions/>
+            <zinc_tablets_20mg/>
+            <ciprofloxacine_oral_suspension_250mg_5ml/>
+            <metoclopramide_im/>
+          </actions_confirmation>
+          <data>
+            <_diarrhea/>
+            <_diarrhea_duration/>
+            <_diarrhea_frequency/>
+            <_diarrhea_color/>
+            <_diarrhea_blood/>
+            <_vomiting_repeatedly/>
+            <_physical_demeanor/>
+            <_skin_pinch/>
+            <_sunken_eyes/>
+            <_calc_severe_dehydration/>
+            <_calc_some_dehydration/>
+            <_calc_no_dehydration/>
+            <_calc_persistent_diarrhea/>
+            <_calc_dysentery/>
+            <_calc_gastritis/>
+            <_calc_cholera/>
+            <_zinc_tablets_20mg/>
+            <_ciprofloxacine_oral_suspension_250mg_5ml/>
+            <_metoclopramide_im/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <zinc_tablets_20mg_used_in_CHD_Form001_DigestiveConditions/>
+              <ciprofloxacine_oral_suspension_250mg_5ml_used_in_CHD_Form001_DigestiveConditions/>
+              <metoclopramide_im_used_in_CHD_Form001_DigestiveConditions/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="diarrhea_color">
+        <root>
+          <item>
+            <itextId>diarrhea_color-0</itextId>
+            <name>greenish</name>
+          </item>
+          <item>
+            <itextId>diarrhea_color-1</itextId>
+            <name>red</name>
+          </item>
+          <item>
+            <itextId>diarrhea_color-2</itextId>
+            <name>blackish</name>
+          </item>
+          <item>
+            <itextId>diarrhea_color-3</itextId>
+            <name>yellowish</name>
+          </item>
+          <item>
+            <itextId>diarrhea_color-4</itextId>
+            <name>gray_white</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="physical_demeanor">
+        <root>
+          <item>
+            <itextId>physical_demeanor-0</itextId>
+            <name>lethargic_unconscious</name>
+          </item>
+          <item>
+            <itextId>physical_demeanor-1</itextId>
+            <name>restless_irritable</name>
+          </item>
+          <item>
+            <itextId>physical_demeanor-2</itextId>
+            <name>drinking_difficulty</name>
+          </item>
+          <item>
+            <itextId>physical_demeanor-3</itextId>
+            <name>drinking_eagerly</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="skin_pinch">
+        <root>
+          <item>
+            <itextId>skin_pinch-0</itextId>
+            <name>very_slowly</name>
+          </item>
+          <item>
+            <itextId>skin_pinch-1</itextId>
+            <name>slowly</name>
+          </item>
+          <item>
+            <itextId>skin_pinch-2</itextId>
+            <name>regular</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="followed_up_conditions">
+        <root>
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>severe_dehydration</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>some_dehydration</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>no_dehydration</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>persistent_diarrhea</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-4</itextId>
+            <name>dysentery</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-5</itextId>
+            <name>gastritis</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-6</itextId>
+            <name>cholera</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/digestive_checkup_group/diarrhea" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_checkup_group/diarrhea_duration" type="int" required="true()" relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" constraint=". &lt;= 99" jr:constraintMsg="jr:itext('/data/digestive_checkup_group/diarrhea_duration:jr:constraintMsg')"/>
+      <bind nodeset="/data/digestive_checkup_group/diarrhea_frequency" type="int" required="true()" relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'" constraint=". &lt;= 99" jr:constraintMsg="jr:itext('/data/digestive_checkup_group/diarrhea_frequency:jr:constraintMsg')"/>
+      <bind nodeset="/data/digestive_checkup_group/diarrhea_color" type="string" required="true()" relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_checkup_group/diarrhea_blood" type="string" required="true()" relevant=" /data/digestive_checkup_group/diarrhea  = 'yes'"/>
+      <bind nodeset="/data/digestive_checkup_group/vomiting_repeatedly" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_checkup_group/physical_demeanor" type="string"/>
+      <bind nodeset="/data/digestive_checkup_group/skin_pinch" type="string" required="true()"/>
+      <bind nodeset="/data/digestive_checkup_group/sunken_eyes" type="string" required="true()"/>
+      <bind nodeset="/data/calc_severe_dehydration_signs" type="string" calculate="if(selected( /data/digestive_checkup_group/physical_demeanor , 'lethargic_unconscious'), 1, 0) + if( /data/digestive_checkup_group/sunken_eyes  = 'yes', 1, 0) + if(selected( /data/digestive_checkup_group/physical_demeanor , 'drinking_difficulty'), 1, 0) + if( /data/digestive_checkup_group/skin_pinch  = 'very_slowly', 1, 0)"/>
+      <bind nodeset="/data/calc_severe_dehydration" type="string" calculate="if( /data/calc_severe_dehydration_signs  &gt;= 2, 'true', 'false')"/>
+      <bind nodeset="/data/calc_some_dehydration_signs" type="string" calculate="if(selected( /data/digestive_checkup_group/physical_demeanor , 'restless_irritable'), 1, 0) + if( /data/digestive_checkup_group/sunken_eyes  = 'yes', 1, 0) + if(selected( /data/digestive_checkup_group/physical_demeanor , 'drinking_eagerly'), 1, 0) + if( /data/digestive_checkup_group/skin_pinch  = 'slowly', 1, 0)"/>
+      <bind nodeset="/data/calc_some_dehydration" type="string" calculate="if( /data/calc_some_dehydration_signs  &gt;= 2 and  /data/calc_severe_dehydration  != 'true', 'true', 'false')"/>
+      <bind nodeset="/data/calc_no_dehydration" type="string" calculate="if( /data/calc_severe_dehydration  != 'true' and  /data/calc_some_dehydration  != 'true' and  /data/digestive_checkup_group/diarrhea  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_persistent_diarrhea" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_duration  &gt;= 14, 'true', 'false')"/>
+      <bind nodeset="/data/calc_dysentery" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_duration  &gt;= 14 and  /data/digestive_checkup_group/diarrhea_blood  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_gastritis" type="string" calculate="if( /data/digestive_checkup_group/vomiting_repeatedly  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_cholera" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_color  = 'gray_white' and  /data/digestive_checkup_group/diarrhea_frequency  &gt;= 3, 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_severe_dehydration  = 'true' or  /data/calc_some_dehydration  = 'true' or  /data/calc_no_dehydration  = 'true' or  /data/calc_persistent_diarrhea  = 'true' or  /data/calc_dysentery  = 'true' or  /data/calc_gastritis  = 'true' or  /data/calc_cholera  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_dehydration" readonly="true()" type="string" relevant=" /data/calc_severe_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_dehydration_action" readonly="true()" type="string" relevant=" /data/calc_severe_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_some_dehydration" readonly="true()" type="string" relevant=" /data/calc_some_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_some_dehydration_action" readonly="true()" type="string" relevant=" /data/calc_some_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_no_dehydration" readonly="true()" type="string" relevant=" /data/calc_no_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_no_dehydration_action" readonly="true()" type="string" relevant=" /data/calc_no_dehydration  = 'true'"/>
+      <bind nodeset="/data/results_group/res_persistent_diarrhea" readonly="true()" type="string" relevant=" /data/calc_persistent_diarrhea  = 'true'"/>
+      <bind nodeset="/data/results_group/res_persistent_diarrhea_action" readonly="true()" type="string" relevant=" /data/calc_persistent_diarrhea  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dysentery" readonly="true()" type="string" relevant=" /data/calc_dysentery  = 'true'"/>
+      <bind nodeset="/data/results_group/res_dysentery_action" readonly="true()" type="string" relevant=" /data/calc_dysentery  = 'true'"/>
+      <bind nodeset="/data/results_group/res_gastritis" readonly="true()" type="string" relevant=" /data/calc_gastritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_gastritis_action" readonly="true()" type="string" relevant=" /data/calc_gastritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cholera" readonly="true()" type="string" relevant=" /data/calc_cholera  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cholera_action" readonly="true()" type="string" relevant=" /data/calc_cholera  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_severe_dehydration  != 'true' and  /data/calc_some_dehydration  != 'true' and  /data/calc_no_dehydration  != 'true' and  /data/calc_persistent_diarrhea  != 'true' and  /data/calc_dysentery  != 'true' and  /data/calc_gastritis  != 'true' and  /data/calc_cholera  != 'true'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
+      <bind nodeset="/data/actions_confirmation/zinc_tablets_20mg" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'some_dehydration') or selected( /data/actions_confirmation/followed_up_conditions , 'no_dehydration')"/>
+      <bind nodeset="/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'dysentery')"/>
+      <bind nodeset="/data/actions_confirmation/metoclopramide_im" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'gastritis')"/>
+      <bind nodeset="/data/data/_diarrhea" type="string" calculate="if( /data/digestive_checkup_group/diarrhea  != '',  /data/digestive_checkup_group/diarrhea , 'false')"/>
+      <bind nodeset="/data/data/_diarrhea_duration" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_duration  != '',  /data/digestive_checkup_group/diarrhea_duration , -1)"/>
+      <bind nodeset="/data/data/_diarrhea_frequency" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_frequency  != '',  /data/digestive_checkup_group/diarrhea_frequency , -1)"/>
+      <bind nodeset="/data/data/_diarrhea_color" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_color  != '',  /data/digestive_checkup_group/diarrhea_color , 'false')"/>
+      <bind nodeset="/data/data/_diarrhea_blood" type="string" calculate="if( /data/digestive_checkup_group/diarrhea_blood  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_vomiting_repeatedly" type="string" calculate="if( /data/digestive_checkup_group/vomiting_repeatedly  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_physical_demeanor" type="string" calculate="if( /data/digestive_checkup_group/physical_demeanor  != '',  /data/digestive_checkup_group/physical_demeanor , 'false')"/>
+      <bind nodeset="/data/data/_skin_pinch" type="string" calculate="if( /data/digestive_checkup_group/skin_pinch  != '',  /data/digestive_checkup_group/skin_pinch , 'false')"/>
+      <bind nodeset="/data/data/_sunken_eyes" type="string" calculate="if( /data/digestive_checkup_group/sunken_eyes  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_severe_dehydration" type="string" calculate="if( /data/calc_severe_dehydration ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_some_dehydration" type="string" calculate="if( /data/calc_some_dehydration ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_no_dehydration" type="string" calculate="if( /data/calc_no_dehydration ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_persistent_diarrhea" type="string" calculate="if( /data/calc_persistent_diarrhea ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_dysentery" type="string" calculate="if( /data/calc_dysentery ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_gastritis" type="string" calculate="if( /data/calc_gastritis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_calc_cholera" type="string" calculate="if( /data/calc_cholera ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_zinc_tablets_20mg" type="string" calculate="if( /data/actions_confirmation/zinc_tablets_20mg  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_ciprofloxacine_oral_suspension_250mg_5ml" type="string" calculate="if( /data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_metoclopramide_im" type="string" calculate="if( /data/actions_confirmation/metoclopramide_im  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
+      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;CHD_Form001_DigestiveConditions&quot;"/>
+      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/zinc_tablets_20mg_used_in_CHD_Form001_DigestiveConditions" type="string" calculate="if( /data/actions_confirmation/zinc_tablets_20mg  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_oral_suspension_250mg_5ml_used_in_CHD_Form001_DigestiveConditions" type="string" calculate="if( /data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/prescription_summary/fields/metoclopramide_im_used_in_CHD_Form001_DigestiveConditions" type="string" calculate="if( /data/actions_confirmation/metoclopramide_im  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/digestive_checkup_group">
+      <label ref="jr:itext('/data/digestive_checkup_group:label')"/>
+      <select1 ref="/data/digestive_checkup_group/diarrhea">
+        <label ref="jr:itext('/data/digestive_checkup_group/diarrhea:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/digestive_checkup_group/diarrhea_duration">
+        <label ref="jr:itext('/data/digestive_checkup_group/diarrhea_duration:label')"/>
+      </input>
+      <input ref="/data/digestive_checkup_group/diarrhea_frequency">
+        <label ref="jr:itext('/data/digestive_checkup_group/diarrhea_frequency:label')"/>
+      </input>
+      <select1 ref="/data/digestive_checkup_group/diarrhea_color">
+        <label ref="jr:itext('/data/digestive_checkup_group/diarrhea_color:label')"/>
+        <itemset nodeset="instance('diarrhea_color')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_checkup_group/diarrhea_blood">
+        <label ref="jr:itext('/data/digestive_checkup_group/diarrhea_blood:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_checkup_group/vomiting_repeatedly">
+        <label ref="jr:itext('/data/digestive_checkup_group/vomiting_repeatedly:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/data/digestive_checkup_group/physical_demeanor">
+        <label ref="jr:itext('/data/digestive_checkup_group/physical_demeanor:label')"/>
+        <itemset nodeset="instance('physical_demeanor')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/digestive_checkup_group/skin_pinch">
+        <label ref="jr:itext('/data/digestive_checkup_group/skin_pinch:label')"/>
+        <itemset nodeset="instance('skin_pinch')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/digestive_checkup_group/sunken_eyes">
+        <label ref="jr:itext('/data/digestive_checkup_group/sunken_eyes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_severe_dehydration" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_severe_dehydration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_dehydration_action">
+        <label ref="jr:itext('/data/results_group/res_severe_dehydration_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_some_dehydration" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_some_dehydration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_some_dehydration_action">
+        <label ref="jr:itext('/data/results_group/res_some_dehydration_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_no_dehydration" appearance="h1 green">
+        <label ref="jr:itext('/data/results_group/res_no_dehydration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_no_dehydration_action">
+        <label ref="jr:itext('/data/results_group/res_no_dehydration_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_persistent_diarrhea" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_persistent_diarrhea:label')"/>
+      </input>
+      <input ref="/data/results_group/res_persistent_diarrhea_action">
+        <label ref="jr:itext('/data/results_group/res_persistent_diarrhea_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_dysentery" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_dysentery:label')"/>
+      </input>
+      <input ref="/data/results_group/res_dysentery_action">
+        <label ref="jr:itext('/data/results_group/res_dysentery_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_gastritis" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_gastritis:label')"/>
+      </input>
+      <input ref="/data/results_group/res_gastritis_action">
+        <label ref="jr:itext('/data/results_group/res_gastritis_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_cholera" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_cholera:label')"/>
+      </input>
+      <input ref="/data/results_group/res_cholera_action">
+        <label ref="jr:itext('/data/results_group/res_cholera_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/actions_confirmation">
+      <label ref="jr:itext('/data/actions_confirmation:label')"/>
+      <select ref="/data/actions_confirmation/followed_up_conditions">
+        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
+        <itemset nodeset="instance('followed_up_conditions')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/actions_confirmation/zinc_tablets_20mg">
+        <label ref="jr:itext('/data/actions_confirmation/zinc_tablets_20mg:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml">
+        <label ref="jr:itext('/data/actions_confirmation/ciprofloxacine_oral_suspension_250mg_5ml:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/actions_confirmation/metoclopramide_im">
+        <label ref="jr:itext('/data/actions_confirmation/metoclopramide_im:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group ref="/data/data"/>
+    <group appearance="field-list summary" ref="/data/prescription_summary">
+      <group ref="/data/prescription_summary/contact"/>
+      <group ref="/data/prescription_summary/fields">
+        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>

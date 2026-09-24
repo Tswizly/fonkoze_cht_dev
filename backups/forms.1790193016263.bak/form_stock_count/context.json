@@ -1,0 +1,5 @@
+{
+  "person": false,
+  "place": true,
+  "expression": "user && user.roles && ( ((contact.type === 'clinic' || contact.contact_type === 'clinic') && user.roles.includes('chw')) || ((contact.type === 'health_center' || contact.contact_type === 'health_center') && user.roles.includes('chw')))"
+}

@@ -1,0 +1,248 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="GEN.Form001.FormSelect" version="20260907121542" prefix="J1!GEN.Form001.FormSelect!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <select_form>
+            <forms_elderly/>
+            <forms_adults/>
+            <forms_youths/>
+            <forms_children/>
+          </select_form>
+          <route_digestive/>
+          <route_fever/>
+          <route_hypertension/>
+          <route_pregnancy/>
+          <route_respiratory/>
+          <route_skin/>
+          <route_stroke/>
+          <route_uti_std/>
+          <route_wound/>
+          <route_vision/>
+          <route_diabetes/>
+          <route_chronic_pain/>
+          <route_vaccinations/>
+          <summary_group>
+            <note_diabetes/>
+            <note_digestive/>
+            <note_fever/>
+            <note_hypertension/>
+            <note_pregnancy/>
+            <note_respiratory/>
+            <note_skin/>
+            <note_stroke/>
+            <note_uti_std/>
+            <note_wound/>
+            <note_vision/>
+            <note_chronic_pain/>
+            <note_vaccinations/>
+            <note_tasks_will_appear/>
+            <note_no_forms/>
+          </summary_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="forms_adult">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>adt_diabetes</name>
+            <label>Diabetes Screening</label>
+          </item>
+          <item>
+            <name>adt_digestive</name>
+            <label>Digestive Conditions Screening</label>
+          </item>
+          <item>
+            <name>adt_fever</name>
+            <label>Fever and/or Malaria Screening</label>
+          </item>
+          <item>
+            <name>adt_hypertension</name>
+            <label>Hypertension / Cardiovascular Event Screening</label>
+          </item>
+          <item>
+            <name>adt_pregnancy</name>
+            <label>Pregnancy Registration, Follow Up, or Emergency Condition</label>
+          </item>
+          <item>
+            <name>adt_respiratory</name>
+            <label>Respiratory Conditions Screening</label>
+          </item>
+          <item>
+            <name>adt_skin</name>
+            <label>Skin Conditions Screening</label>
+          </item>
+          <item>
+            <name>adt_stroke</name>
+            <label>Stroke Screening</label>
+          </item>
+          <item>
+            <name>adt_vision</name>
+            <label>Vision Screening</label>
+          </item>
+          <item>
+            <name>adt_uti</name>
+            <label>UTI and STD Screening</label>
+          </item>
+          <item>
+            <name>adt_wound</name>
+            <label>Wound Care</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="forms_child">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>chd_digestive</name>
+            <label>Digestive Conditions Screening</label>
+          </item>
+          <item>
+            <name>chd_respiratory</name>
+            <label>Respiratory Conditions Screening</label>
+          </item>
+          <item>
+            <name>chd_skin</name>
+            <label>Skin Conditions Screening</label>
+          </item>
+          <item>
+            <name>chd_wound</name>
+            <label>Wound Care</label>
+          </item>
+          <item>
+            <name>chd_vision</name>
+            <label>Vision Screening</label>
+          </item>
+          <item>
+            <name>chd_vac</name>
+            <label>Vaccination and Deworming</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="forms_youth">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>yaa_digestive</name>
+            <label>Digestive Conditions Screening</label>
+          </item>
+          <item>
+            <name>yaa_respiratory</name>
+            <label>Respiratory Conditions Screening</label>
+          </item>
+          <item>
+            <name>yaa_skin</name>
+            <label>Skin Conditions Screening</label>
+          </item>
+          <item>
+            <name>yaa_vision</name>
+            <label>Vision Screening</label>
+          </item>
+          <item>
+            <name>yaa_uti</name>
+            <label>UTI and STD Screening</label>
+          </item>
+          <item>
+            <name>yaa_wound</name>
+            <label>Wound Care</label>
+          </item>
+        </root>
+      </instance>
+    <instance id="forms_elderly">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <name>eld_chronic_pain</name>
+            <label>Chronic Pain Screening</label>
+          </item>
+          <item>
+            <name>eld_diabetes</name>
+            <label>Diabetes Screening</label>
+          </item>
+          <item>
+            <name>eld_digestive</name>
+            <label>Digestive Conditions Screening</label>
+          </item>
+          <item>
+            <name>eld_fever</name>
+            <label>Fever and/or Malaria Screening</label>
+          </item>
+          <item>
+            <name>eld_hypertension</name>
+            <label>Hypertension / Cardiovascular Event Screening</label>
+          </item>
+          <item>
+            <name>eld_respiratory</name>
+            <label>Respiratory Conditions Screening</label>
+          </item>
+          <item>
+            <name>eld_skin</name>
+            <label>Skin Conditions Screening</label>
+          </item>
+          <item>
+            <name>eld_stroke</name>
+            <label>Stroke Screening</label>
+          </item>
+          <item>
+            <name>eld_vision</name>
+            <label>Vision Screening</label>
+          </item>
+          <item>
+            <name>eld_uti</name>
+            <label>UTI and STD Screening</label>
+          </item>
+          <item>
+            <name>eld_wound</name>
+            <label>Wound Care</label>
+          </item>
+        </root>
+      </instance>
+  </model>
+

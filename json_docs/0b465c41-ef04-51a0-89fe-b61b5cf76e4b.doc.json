@@ -25,7 +25,9 @@
     "date_of_birth": "1986-01-01",
     "phone": "+9779841278828",
     "reported_date": 1544031155715,
-    "_id": "69763819-beff-516a-bf7a-7a178f298fb4"
+    "role": "nurse",
+    "roles[0]": "nurse",
+    "_id": "26393d3a-1cde-539e-94ef-64a06477ac37"
   },
   "reported_date": 1544031155715,
   "_id": "0b465c41-ef04-51a0-89fe-b61b5cf76e4b"
