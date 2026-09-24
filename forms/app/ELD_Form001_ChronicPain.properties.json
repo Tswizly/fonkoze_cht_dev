@@ -2,7 +2,7 @@
   "title": "Chronic Pain",
   "icon": "no_image_selected",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 65"
   }

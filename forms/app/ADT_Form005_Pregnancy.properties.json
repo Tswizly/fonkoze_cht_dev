@@ -2,7 +2,7 @@
   "title": "Pregnancy",
   "icon": "icon-people-pregnant-ltf",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64"
   }

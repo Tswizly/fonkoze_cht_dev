@@ -2,7 +2,7 @@
   "title": "Diabetes Form",
   "icon": "icon-disease-diabetes@2x",
   "context": {
-    "person": true,
+    "person": false,
     "place": false,
     "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64",
     "permission": "can_conduct_assessment_forms"

@@ -82,6 +82,10 @@
     "nurse": {
       "name": "usertype.nurse",
       "offline": true
+    },
+    "che": {
+      "name": "usertype.che",
+      "offline": true
     }
   },
   "permissions": {
@@ -104,7 +108,8 @@
     "can_create_people": [
       "program_officer",
       "nurse_supervisor",
-      "nurse"
+      "nurse",
+      "che"
     ],
     "can_create_places": [
       "program_officer",
