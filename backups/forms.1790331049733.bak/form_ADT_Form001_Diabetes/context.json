@@ -1,6 +1,0 @@
-{
-  "person": false,
-  "place": false,
-  "expression": "ageInYears(contact) >= 18 && ageInYears(contact) <= 64",
-  "permission": "can_conduct_assessment_forms"
-}

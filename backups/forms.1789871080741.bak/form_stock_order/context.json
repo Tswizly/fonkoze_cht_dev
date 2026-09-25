@@ -1,5 +1,0 @@
-{
-  "person": false,
-  "place": true,
-  "expression": "contact && user && ((user.role === 'nurse' && (contact.type === 'clinic' || contact.contact_type === 'clinic')) || (user.role === 'nurse_supervisor' && (contact.type === 'health_center' || contact.contact_type === 'health_center')))"
-}

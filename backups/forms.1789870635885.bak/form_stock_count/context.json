@@ -1,5 +1,0 @@
-{
-  "person": false,
-  "place": true,
-  "expression": "contact && contact.type === 'clinic' && user && user.role === 'nurse'"
-}

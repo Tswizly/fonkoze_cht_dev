@@ -1,5 +1,0 @@
-{
-  "person": false,
-  "place": false,
-  "expression": "user.role === 'nurse_supervisor'"
-}

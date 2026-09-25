@@ -1,5 +1,0 @@
-{
-  "person": false,
-  "place": true,
-  "expression": "contact && (contact.type === 'clinic' || contact.contact_type === 'clinic' || contact.type === 'health_center' || contact.contact_type === 'health_center')"
-}
