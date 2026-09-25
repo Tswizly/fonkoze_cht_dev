@@ -1,0 +1,3 @@
+reference_id:excluded,parent:place WHERE reference_id=COL_VAL,name,sex,date_of_birth,role,phone
+territory_1_supervisor,territory_1,Territory 1 Supervisor,female,1985-01-01,nurse_supervisor,+9779841299392
+territory_2_supervisor,territory_2,Territory 2 Supervisor,female,1986-01-01,nurse_supervisor,+9779841278828

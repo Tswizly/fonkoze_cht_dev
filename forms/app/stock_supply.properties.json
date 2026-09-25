@@ -3,7 +3,7 @@
     "context": {
         "person": false,
         "place": true,
-        "expression": "contact.contact_type === 'clinic' && user.parent.contact_type === 'health_center' && user.role === 'nurse_supervisor'"
+        "expression": "contact && contact.type === 'clinic' && user.parent.contact_type === 'health_center' && user.role === 'nurse_supervisor'"
     },
     "title": [
         {

@@ -1,0 +1,1212 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Skin Conditions</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="skin_symptoms-0">
+            <value>Skin is itchy</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>Skin has blisters, sores, or pustules</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>Skin has red, tender, warm crusts or small lesions</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Itchy circular lesion with a raised edge and fine scaly area in the center with loss of hair .</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Rash and excoriations on turoso</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Rash burrows in web space and wrists</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Rash on body but not face</value>
+          </text>
+          <text id="anemia_symptoms-0">
+            <value>Lethargy</value>
+          </text>
+          <text id="anemia_symptoms-1">
+            <value>Oedema</value>
+          </text>
+          <text id="anemia_symptoms-2">
+            <value>Respiratory distress</value>
+          </text>
+          <text id="anemia_symptoms-3">
+            <value>Pale complexion</value>
+          </text>
+          <text id="anemia_symptoms-4">
+            <value>Sclera / light sclera</value>
+          </text>
+          <text id="muac_result-0">
+            <value>MUAC yellow/red</value>
+          </text>
+          <text id="muac_result-1">
+            <value>MUAC green</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Impetigo or Folliculitis</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Ring Worm (Tinea)</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Scabies</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Moderate or Severe Acute Malnutrition with Anemia</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Severe Anemia</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Moderate Anemia</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Zanmi Lasante health center in Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hopital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Hopital Alma Mater in Gros Morne town</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/skin_checkup_group:label">
+            <value>Skin Checkup</value>
+          </text>
+          <text id="/data/skin_checkup_group/skin_symptoms:label">
+            <value>Skin symptoms to look and ask for.</value>
+          </text>
+          <text id="/data/skin_checkup_group/anemia_symptoms:label">
+            <value>Looks at the color of the conjunctiva and skin, as well as other anemia symptoms.</value>
+          </text>
+          <text id="/data/skin_checkup_group/muac_result:label">
+            <value>Use MAUC band and record result.</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_impetigo:label">
+            <value>Impetigo or Folliculitis</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_action:label">
+            <value>The child may have Impetigo or Folliculitis.\n\nProcedure:\n- Clean sores with antiseptic\n- Drain pus if fluctuant\n- Start cloxacillin sirup (125mg/5ml) if size &gt;4cm or red streaks or tender nodes or multiple abscesses for 5 days (50mg/kg every 6 hours)\n- Refer URGENTLY if child has fever and / or if infection extends to the muscle\n- Apply antibiotic cream – triple antibiotic ointment</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Ring Worm (Tinea)</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>The child may have Ring Worm.\n\nProcedure:\n- If limited to a few patches: Grisefulvine or Ketoconazole cream\n- If extensive give: Ketoconazole 2-12month(6-10kg): 40mg/day 12mo-5yrs: 60 mg/day Or if: Age &gt;2: give griseofulvin, tablets, 125 mg with fatty meal (10mg/kg/day), 2 tablets once a day for 6 weeks\n- If in hair: shave hair, treat as above\n- If infected (red, warm, pus) add cloxacilline</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Scabies</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>The child may have Scabies.\n\nProcedure:\n- Treat itching: Calamine lotion\n- Apply: 25% topical Benzyl Benzoate at night, repeat for 3 days after washing.\n- Council hygiene measures: treat all people in the household who are affected, wash bed linen and clothes with warm water and put in the sun, wash affected persons\n- When infected add cloxaciline</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia:label">
+            <value>Moderate or Severe Acute Malnutrition with Anemia</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia_action:label">
+            <value>The child may have moderate or severe acute malnutrition with anemia.\n\nProcedure:\n- Refer to malnutrition clinic\n- Iron-Folic Acid tablets – 1 per day</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia:label">
+            <value>Severe Anemia</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia_action:label">
+            <value>The child may have severe anemia.\n\nProcedure:\n- Iron folic acid\n- Refer for investigation</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia:label">
+            <value>Moderate Anemia</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia_action:label">
+            <value>The child may have moderate anemia.\n\nProcedure:\n- Iron, folic acid – 1 tablet once a day, give for 14 days\n- Albendazole (400 mg) 12-23 months – ½ co every 6 months 24-59 months – 1 co every 6 months\n- Nutrition counseling: green leaves, fruits, rasped carots and red beet</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Null Results Group</value>
+          </text>
+          <text id="/data/null_results_group/res_null_results:label">
+            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Which conditions did you follow up on?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>Which location did you refer the patient?</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>How many Cloxacillin oral solution 250mg/5ml were distributed?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:label">
+            <value>How many Griseofulvine cream were distributed?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:label">
+            <value>How many Griseofulvin tablets 125 mg were distributed?</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:label">
+            <value>How many Calamine lotion were distributed?</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:label">
+            <value>How many Benzyl benzoate 25% were distributed?</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:jr:constraintMsg">
+            <value>Cannot be less than 0 or greater than 999</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:label">
+            <value>How many Iron and folic acid tablets were distributed?</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="skin_symptoms-0">
+            <value>La peau démange</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>La peau présente des cloques, des plaies ou des pustules</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>La peau présente des croûtes rouges, tendres et chaudes ou de petites lésions</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Lésion circulaire prurigineuse avec un bord surélevé et une fine zone squameuse au centre avec perte de cheveux.</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Éruption cutanée et excoriations sur le torse</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Sillons d'éruption cutanée dans les espaces interdigitaux et les poignets</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Éruption cutanée sur le corps mais pas sur le visage</value>
+          </text>
+          <text id="anemia_symptoms-0">
+            <value>Léthargie</value>
+          </text>
+          <text id="anemia_symptoms-1">
+            <value>Œdème</value>
+          </text>
+          <text id="anemia_symptoms-2">
+            <value>Détresse respiratoire</value>
+          </text>
+          <text id="anemia_symptoms-3">
+            <value>Teint pâle</value>
+          </text>
+          <text id="anemia_symptoms-4">
+            <value>Sclérotique / sclérotique claire</value>
+          </text>
+          <text id="muac_result-0">
+            <value>PB jaune/rouge</value>
+          </text>
+          <text id="muac_result-1">
+            <value>PB vert</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Impétigo ou Folliculite</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Teigne (Tinea)</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Gale</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Malnutrition aiguë modérée ou sévère avec anémie</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Anémie sévère</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Anémie modérée</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hôpital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Hôpital Alma Mater dans la ville de Gros Morne</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/skin_checkup_group:label">
+            <value>Bilan cutané</value>
+          </text>
+          <text id="/data/skin_checkup_group/skin_symptoms:label">
+            <value>Symptômes cutanés à rechercher et à demander.</value>
+          </text>
+          <text id="/data/skin_checkup_group/anemia_symptoms:label">
+            <value>Observe la couleur de la conjonctive et de la peau, ainsi que d'autres symptômes d'anémie.</value>
+          </text>
+          <text id="/data/skin_checkup_group/muac_result:label">
+            <value>Utilisez la bande MUAC et enregistrez le résultat.</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_impetigo:label">
+            <value>Impétigo ou Folliculite</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_action:label">
+            <value>L'enfant peut avoir un impétigo ou une folliculite.\n\nProcédure :\n- Nettoyer les plaies avec un antiseptique\n- Drainer le pus si fluctuant\n- Commencer le sirop de cloxacilline (125mg/5ml) si taille &gt;4cm ou stries rouges ou ganglions sensibles ou abcès multiples pendant 5 jours (50mg/kg toutes les 6 heures)\n- Référer D'URGENCE si l'enfant a de la fièvre et/ou si l'infection s'étend au muscle\n- Appliquer une crème antibiotique – pommade triple antibiotique</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Teigne (Tinea)</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>L'enfant peut avoir la teigne.\n\nProcédure :\n- Si limité à quelques plaques : Crème à la griséofulvine ou au kétoconazole\n- Si étendu, donner : Kétoconazole 2-12mois(6-10kg) : 40mg/jour 12mois-5ans : 60 mg/jour Ou si : Âge &gt;2 : donner griséofulvine, comprimés, 125 mg avec un repas gras (10mg/kg/jour), 2 comprimés une fois par jour pendant 6 semaines\n- Si dans les cheveux : raser les cheveux, traiter comme ci-dessus\n- Si infecté (rouge, chaud, pus) ajouter de la cloxacilline</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Gale</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>L'enfant peut avoir la gale.\n\nProcédure :\n- Traiter les démangeaisons : Lotion à la calamine\n- Appliquer : Benzoate de benzyle topique à 25 % le soir, répéter pendant 3 jours après le lavage.\n- Conseiller des mesures d'hygiène : traiter toutes les personnes touchées dans le ménage, laver les draps et les vêtements à l'eau chaude et les mettre au soleil, laver les personnes touchées\n- En cas d'infection, ajouter de la cloxacilline</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia:label">
+            <value>Malnutrition aiguë modérée ou sévère avec anémie</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia_action:label">
+            <value>L'enfant peut souffrir de malnutrition aiguë modérée ou sévère avec anémie.\n\nProcédure :\n- Référer à la clinique de malnutrition\n- Comprimés de fer et d'acide folique – 1 par jour</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia:label">
+            <value>Anémie sévère</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia_action:label">
+            <value>L'enfant peut souffrir d'anémie sévère.\n\nProcédure :\n- Fer et acide folique\n- Référer pour investigation</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia:label">
+            <value>Anémie modérée</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia_action:label">
+            <value>L'enfant peut souffrir d'anémie modérée.\n\nProcédure :\n- Fer, acide folique – 1 comprimé une fois par jour, donner pendant 14 jours\n- Albendazole (400 mg) 12-23 mois – ½ co tous les 6 mois 24-59 mois – 1 co tous les 6 mois\n- Conseils nutritionnels : feuilles vertes, fruits, carottes râpées et betterave rouge</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Groupe de résultats nuls</value>
+          </text>
+          <text id="/data/null_results_group/res_null_results:label">
+            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Quelles conditions avez-vous suivies ?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>À quel endroit avez-vous référé le patient ?</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>Combien de solution orale de cloxacilline 250mg/5ml ont été distribués ?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:label">
+            <value>Combien de crème à la griséofulvine ont été distribués ?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:label">
+            <value>Combien de comprimés de griséofulvine 125 mg ont été distribués ?</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:label">
+            <value>Combien de lotion à la calamine ont été distribués ?</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:label">
+            <value>Combien de benzoate de benzyle 25% ont été distribués ?</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:label">
+            <value>Combien de comprimés de fer et d'acide folique ont été distribués ?</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="skin_symptoms-0">
+            <value>Po a grate</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>Po a gen ti anpoul, maleng, oswa bouton</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>Po a gen kwout wouj, sansib, cho oswa ti blesi</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Blesi won ki grate ak yon kwen ki leve ak yon ti zòn ki gen kal nan mitan ak pèt cheve.</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Gratèl ak reyur sou kò a</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Gratèl fouye nan espas ant dwèt yo ak ponyèt yo</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Gratèl sou kò a men pa nan figi a</value>
+          </text>
+          <text id="anemia_symptoms-0">
+            <value>Letaji</value>
+          </text>
+          <text id="anemia_symptoms-1">
+            <value>Èdèm</value>
+          </text>
+          <text id="anemia_symptoms-2">
+            <value>Difikilte pou respire</value>
+          </text>
+          <text id="anemia_symptoms-3">
+            <value>Po pal</value>
+          </text>
+          <text id="anemia_symptoms-4">
+            <value>Blan je a / blan je a klè</value>
+          </text>
+          <text id="muac_result-0">
+            <value>MUAC jòn/wouj</value>
+          </text>
+          <text id="muac_result-1">
+            <value>MUAC vèt</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Enpetigo oswa Folikulit</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Pèy (Tinea)</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Gal</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Malnitrisyon egi modere oswa grav ak anemi</value>
+          </text>
+          <text id="followed_up_conditions-4">
+            <value>Anemi grav</value>
+          </text>
+          <text id="followed_up_conditions-5">
+            <value>Anemi modere</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Lopital Sainte Thérèse</value>
+          </text>
+          <text id="referal_locations-2">
+            <value>Lopital Alma Mater nan vil Gros Morne</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/skin_checkup_group:label">
+            <value>Tcheke Po</value>
+          </text>
+          <text id="/data/skin_checkup_group/skin_symptoms:label">
+            <value>Sentòm po pou chèche ak mande.</value>
+          </text>
+          <text id="/data/skin_checkup_group/anemia_symptoms:label">
+            <value>Gade koulè konjonktiv ak po, ak lòt sentòm anemi.</value>
+          </text>
+          <text id="/data/skin_checkup_group/muac_result:label">
+            <value>Sèvi ak bann MUAC epi anrejistre rezilta a.</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/results_group/res_impetigo:label">
+            <value>Enpetigo oswa Folikulit</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_action:label">
+            <value>Timoun nan ka gen Enpetigo oswa Folikulit.\n\nPwosedi:\n- Netwaye blesi ak antiseptik\n- Drene pi si li fluktue\n- Kòmanse siwo cloxacillin (125mg/5ml) si gwosè &gt;4cm oswa mak wouj oswa glann sansib oswa plizyè absè pandan 5 jou (50mg/kg chak 6 èdtan)\n- Voye l nan sant sante IJANS si timoun nan gen lafyèv epi/oswa si enfeksyon an gaye nan misk la\n- Aplike krèm antibyotik - odè trip antibyotik</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Pèy (Tinea)</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>Timoun nan ka gen Pèy.\n\nPwosedi:\n- Si limite a kèk plak: Krèm griseofulvin oswa ketoconazole\n- Si li gaye, bay: Ketoconazole 2-12mwa(6-10kg): 40mg/jou 12mwa-5an: 60 mg/jou Oswa si: Laj &gt;2: bay griseofulvin, grenn, 125 mg ak yon repa gra (10mg/kg/jou), 2 grenn yon fwa pa jou pandan 6 semèn\n- Si nan cheve: raze cheve, trete jan pi wo a\n- Si enfekte (wouj, cho, pi) ajoute cloxacillin</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Gal</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>Timoun nan ka gen Gal.\n\nPwosedi:\n- Trete gratèl: Losyon calamine\n- Aplike: Benzoate de benzyle 25% nan aswè, repete pandan 3 jou apre yo fin lave.\n- Konseye mezi ijyèn: trete tout moun nan kay la ki afekte, lave dra ak rad ak dlo cho epi mete yo nan solèy, lave moun ki afekte yo\n- Lè enfekte ajoute cloxacillin</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia:label">
+            <value>Malnitrisyon egi modere oswa grav ak anemi</value>
+          </text>
+          <text id="/data/results_group/res_severe_malnutrition_anemia_action:label">
+            <value>Timoun nan ka gen malnitrisyon egi modere oswa grav ak anemi.\n\nPwosedi:\n- Voye l nan klinik malnitrisyon\n- Grenn fè ak asid folik – 1 pa jou</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia:label">
+            <value>Anemi grav</value>
+          </text>
+          <text id="/data/results_group/res_severe_anemia_action:label">
+            <value>Timoun nan ka gen anemi grav.\n\nPwosedi:\n- Fè ak asid folik\n- Voye l pou envestigasyon</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia:label">
+            <value>Anemi modere</value>
+          </text>
+          <text id="/data/results_group/res_moderate_anemia_action:label">
+            <value>Timoun nan ka gen anemi modere.\n\nPwosedi:\n- Fè, asid folik – 1 grenn yon fwa pa jou, bay pandan 14 jou\n- Albendazole (400 mg) 12-23 mwa – ½ co chak 6 mwa 24-59 mwa – 1 co chak 6 mwa\n- Konsèy nitrisyon: fèy vèt, fwi, kawòt rache ak bètrav wouj</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Gwoup rezilta nil</value>
+          </text>
+          <text id="/data/null_results_group/res_null_results:label">
+            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Aksyon</value>
+          </text>
+          <text id="/data/actions_confirmation/followed_up_conditions:label">
+            <value>Ki kondisyon ou te swiv?</value>
+          </text>
+          <text id="/data/actions_confirmation/referal:label">
+            <value>Ki kote ou te voye pasyan an?</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:label">
+            <value>Konbyen solisyon oral cloxacillin 250mg/5ml yo te bay?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvine_cream:label">
+            <value>Konbyen krèm griseofulvin yo te bay?</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/griseofulvin_tablets_125mg:label">
+            <value>Konbyen grenn griseofulvin 125 mg yo te bay?</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/calamine_lotion:label">
+            <value>Konbyen losyon calamine yo te bay?</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/benzyl_benzoate_25:label">
+            <value>Konbyen benzoate de benzyle 25% yo te bay?</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:jr:constraintMsg">
+            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
+          </text>
+          <text id="/data/actions_confirmation/iron_and_folic_acid_tablets:label">
+            <value>Konbyen grenn fè ak asid folik yo te bay?</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="CHD_Form003_SkinConditions" version="20260925024254" prefix="J1!CHD_Form003_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_checkup_group>
+            <skin_symptoms/>
+            <anemia_symptoms/>
+            <muac_result/>
+          </skin_checkup_group>
+          <calc_impetigo/>
+          <calc_ring_worm/>
+          <calc_scabies/>
+          <calc_severe_malnutrition_anemia/>
+          <calc_severe_anemia/>
+          <calc_moderate_anemia/>
+          <results_group>
+            <res_impetigo/>
+            <res_impetigo_action/>
+            <res_ring_worm/>
+            <res_ring_worm_action/>
+            <res_scabies/>
+            <res_scabies_action/>
+            <res_severe_malnutrition_anemia/>
+            <res_severe_malnutrition_anemia_action/>
+            <res_severe_anemia/>
+            <res_severe_anemia_action/>
+            <res_moderate_anemia/>
+            <res_moderate_anemia_action/>
+          </results_group>
+          <null_results_group>
+            <res_null_results/>
+          </null_results_group>
+          <actions_confirmation>
+            <followed_up_conditions/>
+            <referal/>
+            <cloxacillin_oral_solution_250mg_5ml/>
+            <griseofulvine_cream/>
+            <griseofulvin_tablets_125mg/>
+            <calamine_lotion/>
+            <benzyl_benzoate_25/>
+            <iron_and_folic_acid_tablets/>
+          </actions_confirmation>
+          <data>
+            <_skin_symptoms/>
+            <_anemia_symptoms/>
+            <_muac_result/>
+            <_result_impetigo/>
+            <_result_ring_worm/>
+            <_result_scabies/>
+            <_result_severe_malnutrition_anemia/>
+            <_result_severe_anemia/>
+            <_result_moderate_anemia/>
+            <_followed_up_conditions/>
+            <_referal/>
+            <_cloxacillin_oral_solution_250mg_5ml/>
+            <_griseofulvine_cream/>
+            <_griseofulvin_tablets_125mg/>
+            <_calamine_lotion/>
+            <_benzyl_benzoate_25/>
+            <_iron_and_folic_acid_tablets/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <cloxacillin_oral_solution_250mg_5ml_used_in_CHD_Form003_SkinConditions/>
+              <griseofulvine_cream_used_in_CHD_Form003_SkinConditions/>
+              <griseofulvin_tablets_125mg_used_in/>
+              <griseofulvin_tablets_125mg___set/>
+              <griseofulvin_tablets_125mg___unit/>
+              <griseofulvin_tablets_125mg_used_in_CHD_Form003_SkinConditions/>
+              <calamine_lotion_used_in_CHD_Form003_SkinConditions/>
+              <benzyl_benzoate_25_used_in_CHD_Form003_SkinConditions/>
+              <iron_and_folic_acid_tablets_used_in/>
+              <iron_and_folic_acid_tablets___set/>
+              <iron_and_folic_acid_tablets___unit/>
+              <iron_and_folic_acid_tablets_used_in_CHD_Form003_SkinConditions/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="skin_symptoms">
+        <root>
+          <item>
+            <itextId>skin_symptoms-0</itextId>
+            <name>itching</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-1</itextId>
+            <name>blisters_sores_pustules</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-2</itextId>
+            <name>crusts_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-3</itextId>
+            <name>itchy_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-4</itextId>
+            <name>rash</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-5</itextId>
+            <name>web_space_wrists</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-6</itextId>
+            <name>face_spared</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="anemia_symptoms">
+        <root>
+          <item>
+            <itextId>anemia_symptoms-0</itextId>
+            <name>lethargy</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-1</itextId>
+            <name>oedema</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-2</itextId>
+            <name>respiratory_distress</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-3</itextId>
+            <name>pale_complexion</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-4</itextId>
+            <name>sclera_abnormal</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="muac_result">
+        <root>
+          <item>
+            <itextId>muac_result-0</itextId>
+            <name>muac_yellow_red</name>
+          </item>
+          <item>
+            <itextId>muac_result-1</itextId>
+            <name>muac_green</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="followed_up_conditions">
+        <root>
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>impetigo</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>ring_worm</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>scabies</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>severe_malnutrition_anemia</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-4</itextId>
+            <name>severe_anemia</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-5</itextId>
+            <name>moderate_anemia</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="referal_locations">
+        <root>
+          <item>
+            <itextId>referal_locations-0</itextId>
+            <name>zl</name>
+          </item>
+          <item>
+            <itextId>referal_locations-1</itextId>
+            <name>hst</name>
+          </item>
+          <item>
+            <itextId>referal_locations-2</itextId>
+            <name>ham</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/skin_checkup_group/skin_symptoms" type="string"/>
+      <bind nodeset="/data/skin_checkup_group/anemia_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/skin_checkup_group/muac_result" type="string" required="true()"/>
+      <bind nodeset="/data/calc_impetigo" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'crusts_lesions') or selected( /data/skin_checkup_group/skin_symptoms , 'blisters_sores_pustules'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_ring_worm" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'itchy_lesions'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_scabies" type="string" calculate="if(selected( /data/skin_checkup_group/skin_symptoms , 'rash') and selected( /data/skin_checkup_group/skin_symptoms , 'web_space_wrists') and selected( /data/skin_checkup_group/skin_symptoms , 'face_spared'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_severe_malnutrition_anemia" type="string" calculate="if(selected( /data/skin_checkup_group/anemia_symptoms , 'lethargy') or selected( /data/skin_checkup_group/anemia_symptoms , 'oedema') or selected( /data/skin_checkup_group/anemia_symptoms , 'respiratory_distress') or selected( /data/skin_checkup_group/muac_result , 'muac_yellow_red'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_severe_anemia" type="string" calculate="if((selected( /data/skin_checkup_group/anemia_symptoms , 'lethargy') or selected( /data/skin_checkup_group/anemia_symptoms , 'oedema') or selected( /data/skin_checkup_group/anemia_symptoms , 'respiratory_distress')) and selected( /data/skin_checkup_group/muac_result , 'muac_green'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_moderate_anemia" type="string" calculate="if(selected( /data/skin_checkup_group/anemia_symptoms , 'pale_complexion') or selected( /data/skin_checkup_group/anemia_symptoms , 'sclera_abnormal'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_impetigo  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true' or  /data/calc_severe_malnutrition_anemia  = 'true' or  /data/calc_severe_anemia  = 'true' or  /data/calc_moderate_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo" readonly="true()" type="string" relevant=" /data/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo_action" readonly="true()" type="string" relevant=" /data/calc_impetigo  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm_action" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies_action" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_malnutrition_anemia" readonly="true()" type="string" relevant=" /data/calc_severe_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_malnutrition_anemia_action" readonly="true()" type="string" relevant=" /data/calc_severe_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_anemia" readonly="true()" type="string" relevant=" /data/calc_severe_anemia  = 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_anemia_action" readonly="true()" type="string" relevant=" /data/calc_severe_anemia  = 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_moderate_anemia" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/results_group/res_moderate_anemia_action" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_impetigo  != 'true' and  /data/calc_ring_worm  != 'true' and  /data/calc_scabies  != 'true' and  /data/calc_severe_malnutrition_anemia  != 'true' and  /data/calc_severe_anemia  != 'true' and  /data/calc_moderate_anemia  != 'true'"/>
+      <bind nodeset="/data/null_results_group/res_null_results" readonly="true()" type="string"/>
+      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
+      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'impetigo') or selected( /data/actions_confirmation/followed_up_conditions , 'severe_malnutrition_anemia') or selected( /data/actions_confirmation/followed_up_conditions , 'severe_anemia')"/>
+      <bind nodeset="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'impetigo')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:jr:constraintMsg')"/>
+      <bind nodeset="/data/actions_confirmation/griseofulvine_cream" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'ring_worm')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/griseofulvine_cream:jr:constraintMsg')"/>
+      <bind nodeset="/data/actions_confirmation/griseofulvin_tablets_125mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'ring_worm')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/griseofulvin_tablets_125mg:jr:constraintMsg')"/>
+      <bind nodeset="/data/actions_confirmation/calamine_lotion" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'scabies')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/calamine_lotion:jr:constraintMsg')"/>
+      <bind nodeset="/data/actions_confirmation/benzyl_benzoate_25" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'scabies')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/benzyl_benzoate_25:jr:constraintMsg')"/>
+      <bind nodeset="/data/actions_confirmation/iron_and_folic_acid_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'severe_malnutrition_anemia') or selected( /data/actions_confirmation/followed_up_conditions , 'severe_anemia') or selected( /data/actions_confirmation/followed_up_conditions , 'moderate_anemia')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/iron_and_folic_acid_tablets:jr:constraintMsg')"/>
+      <bind nodeset="/data/data/_skin_symptoms" type="string" calculate="if( /data/skin_checkup_group/skin_symptoms  != '',  /data/skin_checkup_group/skin_symptoms , 'false')"/>
+      <bind nodeset="/data/data/_anemia_symptoms" type="string" calculate="if( /data/skin_checkup_group/anemia_symptoms  != '',  /data/skin_checkup_group/anemia_symptoms , 'false')"/>
+      <bind nodeset="/data/data/_muac_result" type="string" calculate="if( /data/skin_checkup_group/muac_result  != '',  /data/skin_checkup_group/muac_result , 'false')"/>
+      <bind nodeset="/data/data/_result_impetigo" type="string" calculate="if( /data/calc_impetigo ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_ring_worm" type="string" calculate="if( /data/calc_ring_worm ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_scabies" type="string" calculate="if( /data/calc_scabies ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_severe_malnutrition_anemia" type="string" calculate="if( /data/calc_severe_malnutrition_anemia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_severe_anemia" type="string" calculate="if( /data/calc_severe_anemia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_moderate_anemia" type="string" calculate="if( /data/calc_moderate_anemia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
+      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
+      <bind nodeset="/data/data/_cloxacillin_oral_solution_250mg_5ml" type="string" calculate="if( /data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml  != '',  /data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml , -1)"/>
+      <bind nodeset="/data/data/_griseofulvine_cream" type="string" calculate="if( /data/actions_confirmation/griseofulvine_cream  != '',  /data/actions_confirmation/griseofulvine_cream , -1)"/>
+      <bind nodeset="/data/data/_griseofulvin_tablets_125mg" type="string" calculate="if( /data/actions_confirmation/griseofulvin_tablets_125mg  != '',  /data/actions_confirmation/griseofulvin_tablets_125mg , -1)"/>
+      <bind nodeset="/data/data/_calamine_lotion" type="string" calculate="if( /data/actions_confirmation/calamine_lotion  != '',  /data/actions_confirmation/calamine_lotion , -1)"/>
+      <bind nodeset="/data/data/_benzyl_benzoate_25" type="string" calculate="if( /data/actions_confirmation/benzyl_benzoate_25  != '',  /data/actions_confirmation/benzyl_benzoate_25 , -1)"/>
+      <bind nodeset="/data/data/_iron_and_folic_acid_tablets" type="string" calculate="if( /data/actions_confirmation/iron_and_folic_acid_tablets  != '',  /data/actions_confirmation/iron_and_folic_acid_tablets , -1)"/>
+      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
+      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;CHD_Form003_SkinConditions&quot;"/>
+      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/cloxacillin_oral_solution_250mg_5ml_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml "/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvine_cream_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/actions_confirmation/griseofulvine_cream "/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in" type="string" calculate=" /data/actions_confirmation/griseofulvin_tablets_125mg "/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_tablets_125mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_tablets_125mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_tablets_125mg_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/prescription_summary/fields/griseofulvin_tablets_125mg___set  * X +  /data/prescription_summary/fields/griseofulvin_tablets_125mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/calamine_lotion_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/actions_confirmation/calamine_lotion "/>
+      <bind nodeset="/data/prescription_summary/fields/benzyl_benzoate_25_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/actions_confirmation/benzyl_benzoate_25 "/>
+      <bind nodeset="/data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in" type="string" calculate=" /data/actions_confirmation/iron_and_folic_acid_tablets "/>
+      <bind nodeset="/data/prescription_summary/fields/iron_and_folic_acid_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/iron_and_folic_acid_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/iron_and_folic_acid_tablets_used_in_CHD_Form003_SkinConditions" type="string" calculate=" /data/prescription_summary/fields/iron_and_folic_acid_tablets___set  * X +  /data/prescription_summary/fields/iron_and_folic_acid_tablets___unit "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/skin_checkup_group">
+      <label ref="jr:itext('/data/skin_checkup_group:label')"/>
+      <select ref="/data/skin_checkup_group/skin_symptoms">
+        <label ref="jr:itext('/data/skin_checkup_group/skin_symptoms:label')"/>
+        <itemset nodeset="instance('skin_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/skin_checkup_group/anemia_symptoms">
+        <label ref="jr:itext('/data/skin_checkup_group/anemia_symptoms:label')"/>
+        <itemset nodeset="instance('anemia_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/skin_checkup_group/muac_result">
+        <label ref="jr:itext('/data/skin_checkup_group/muac_result:label')"/>
+        <itemset nodeset="instance('muac_result')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_impetigo" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_impetigo:label')"/>
+      </input>
+      <input ref="/data/results_group/res_impetigo_action">
+        <label ref="jr:itext('/data/results_group/res_impetigo_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_ring_worm" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_ring_worm:label')"/>
+      </input>
+      <input ref="/data/results_group/res_ring_worm_action">
+        <label ref="jr:itext('/data/results_group/res_ring_worm_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_scabies" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_scabies:label')"/>
+      </input>
+      <input ref="/data/results_group/res_scabies_action">
+        <label ref="jr:itext('/data/results_group/res_scabies_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_malnutrition_anemia" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_severe_malnutrition_anemia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_malnutrition_anemia_action">
+        <label ref="jr:itext('/data/results_group/res_severe_malnutrition_anemia_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_anemia" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_severe_anemia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_anemia_action">
+        <label ref="jr:itext('/data/results_group/res_severe_anemia_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_moderate_anemia" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_moderate_anemia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_moderate_anemia_action">
+        <label ref="jr:itext('/data/results_group/res_moderate_anemia_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/res_null_results">
+        <label ref="jr:itext('/data/null_results_group/res_null_results:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/actions_confirmation">
+      <label ref="jr:itext('/data/actions_confirmation:label')"/>
+      <select ref="/data/actions_confirmation/followed_up_conditions">
+        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
+        <itemset nodeset="instance('followed_up_conditions')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/actions_confirmation/referal">
+        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
+        <itemset nodeset="instance('referal_locations')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml">
+        <label ref="jr:itext('/data/actions_confirmation/cloxacillin_oral_solution_250mg_5ml:label')"/>
+      </input>
+      <input ref="/data/actions_confirmation/griseofulvine_cream">
+        <label ref="jr:itext('/data/actions_confirmation/griseofulvine_cream:label')"/>
+      </input>
+      <input ref="/data/actions_confirmation/griseofulvin_tablets_125mg">
+        <label ref="jr:itext('/data/actions_confirmation/griseofulvin_tablets_125mg:label')"/>
+      </input>
+      <input ref="/data/actions_confirmation/calamine_lotion">
+        <label ref="jr:itext('/data/actions_confirmation/calamine_lotion:label')"/>
+      </input>
+      <input ref="/data/actions_confirmation/benzyl_benzoate_25">
+        <label ref="jr:itext('/data/actions_confirmation/benzyl_benzoate_25:label')"/>
+      </input>
+      <input ref="/data/actions_confirmation/iron_and_folic_acid_tablets">
+        <label ref="jr:itext('/data/actions_confirmation/iron_and_folic_acid_tablets:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+    <group appearance="field-list summary" ref="/data/prescription_summary">
+      <group ref="/data/prescription_summary/contact"/>
+      <group ref="/data/prescription_summary/fields">
+        <input ref="/data/prescription_summary/fields/Medicine_out"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>

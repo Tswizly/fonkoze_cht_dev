@@ -3,8 +3,8 @@
     "context": {
         "person": false,
         "place": true,
-        "expression": ""
-    },
+        "expression": "(user && user.role === 'nurse' && contact && contact.type === 'clinic') || (user && user.role === 'nurse_supervisor' && contact && contact.type === 'health_center')"
+    },  
     "title": [
         {
             "locale": "en",

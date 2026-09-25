@@ -15,6 +15,7 @@ const fields = [
   { appliesToType: 'person', label: 'contact.sex', value: 'contact.sex.' + thisContact.sex, translate: true, width: 4 },
   { appliesToType: 'person', label: 'person.field.phone', value: thisContact.phone, width: 4 },
   { appliesToType: 'person', label: 'contact.parent', value: thisLineage, filter: 'lineage' },
+  { appliesToType: 'person', label: 'contact.role', value: thisContact.role, width: 4 }
   ];
 
   const cards = [

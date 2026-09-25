@@ -1,2 +1,8 @@
 username,password,roles,phone,contact:person WHERE reference_id=COL_VAL,place:_id OF place WHERE reference_id=COL_VAL
-nurse,Secret_password_1,nurse,+9779841608188,person_4,area_1
+t1z1nurse,Secret_password_1,nurse,+9779841608188,t1_nurse_zone_1_nurse,t1_nurse_1_zone
+t1z2nurse,Secret_password_1,nurse,+9779841608188,t1_nurse_zone_2_nurse,t1_nurse_2_zone
+t2z1nurse,Secret_password_1,nurse,+9779841608188,t2_nurse_zone_1_nurse,t2_nurse_1_zone
+t2z2nurse,Secret_password_1,nurse,+9779841608188,t2_nurse_zone_2_nurse,t2_nurse_2_zone
+t1supervisor,Secret_password_1,nurse_supervisor,+9779841608188,territory_1_supervisor,territory_1
+t2supervisor,Secret_password_1,nurse_supervisor,+9779841608188,territory_2_supervisor,territory_2
+program_officer,Secret_password_1,program_officer,+9779841608188,program_officer,test_country_region

@@ -1,0 +1,15 @@
+{
+  "type": "person",
+  "parent": {
+    "type": "district_hospital",
+    "is_name_generated": "false",
+    "name": "Test Country Region",
+    "_id": "4ed3e63d-da30-5162-9b13-0bd8e448e8af"
+  },
+  "name": "Country Region Program Officer",
+  "sex": "female",
+  "date_of_birth": "1984-01-01",
+  "roles": "program_officer",
+  "phone": "+9779841128674",
+  "_id": "8a37a4d1-3d8e-54a7-bb09-1b04a2838bee"
+}

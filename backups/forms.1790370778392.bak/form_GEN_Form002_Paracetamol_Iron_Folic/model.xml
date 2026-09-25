@@ -1,0 +1,139 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="GEN_Form002_Paracetamol_Iron_Folic" version="20260925025406" prefix="J1!GEN_Form002_Paracetamol_Iron_Folic!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <medicine_select>
+            <distribution_check/>
+            <which_to_distribute/>
+          </medicine_select>
+          <null_distribution>
+            <null_header_note/>
+            <null_header_explaination/>
+          </null_distribution>
+          <distribution_group>
+            <distribution_summary/>
+            <distribution_instruction_paracetamol/>
+            <distribution_instruction_iron_folic_acid/>
+            <distribution_confirmation/>
+          </distribution_group>
+          <data>
+            <_paracetamol_distributed/>
+            <_iron_and_folic_acid_distributed/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <paracetamol_500mg_used_in/>
+              <paracetamol_500mg___set/>
+              <paracetamol_500mg___unit/>
+              <paracetamol_500mg_used_in_GEN_Form002_Paracetamol_Iron_Folic/>
+              <iron_and_folic_acid_tablets_used_in/>
+              <iron_and_folic_acid_tablets___set/>
+              <iron_and_folic_acid_tablets___unit/>
+              <iron_and_folic_acid_tablets_used_in_GEN_Form002_Paracetamol_Iron_Folic/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="prev_drugs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>prev_drugs-0</itextId>
+            <name>prev_iron_and_folic_acid</name>
+          </item>
+          <item>
+            <itextId>prev_drugs-1</itextId>
+            <name>pre_paracetamol</name>
+          </item>
+          <item>
+            <itextId>prev_drugs-2</itextId>
+            <name>neither</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="drugs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>drugs-0</itextId>
+            <name>iron_and_folic_acid</name>
+          </item>
+          <item>
+            <itextId>drugs-1</itextId>
+            <name>paracetamol</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="confirmation">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>confirmation-0</itextId>
+            <name>confirmation</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

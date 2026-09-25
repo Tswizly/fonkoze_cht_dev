@@ -1,0 +1,8 @@
+"username","password","roles","contact","phone","place","fullname","email"
+"t1z1nurse","Secret_password_1","nurse","5b41f46b-9eab-5fc8-bcce-e572c0c2b2c7","+9779841608188","5146a832-aa70-5bdf-8129-620635e2b8bc",,
+"t1z2nurse","Secret_password_1","nurse","140f99bf-ad8d-545c-85f4-72c1233446da","+9779841608188","728cfd81-4d43-5f31-8092-045ca0b77556",,
+"t2z1nurse","Secret_password_1","nurse","f4e58e0e-dc44-5392-aaf2-28d2134374e5","+9779841608188","ae38afb4-efd2-5779-bf3a-6bec5440e961",,
+"t2z2nurse","Secret_password_1","nurse","949d9017-64fa-5221-98a7-890099465e32","+9779841608188","1e929eb6-4176-5205-b9e7-e303e8b0b139",,
+"t1supervisor","Secret_password_1","nurse_supervisor","220ec70e-8d56-55f8-97f5-e98be1865795","+9779841608188","34908e1e-cd03-506d-bfa0-9ff120396cef",,
+"t2supervisor","Secret_password_1","nurse_supervisor","9babdeaa-4bef-5d2b-9a96-d81ab05a8390","+9779841608188","7eb4dd0a-3067-52f5-94ef-3753b6f97eb6",,
+"program_officer","Secret_password_1","program_officer","8a37a4d1-3d8e-54a7-bb09-1b04a2838bee","+9779841608188","4ed3e63d-da30-5162-9b13-0bd8e448e8af",,

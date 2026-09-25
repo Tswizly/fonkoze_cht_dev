@@ -1,0 +1,2 @@
+reference_id:excluded,parent:place WHERE reference_id=COL_VAL,name,sex,date_of_birth,role,phone
+program_officer,test_country_region,Country Region Program Officer,female,1984-01-01,program_officer,+9779841128674

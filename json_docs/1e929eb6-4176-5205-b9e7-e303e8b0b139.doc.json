@@ -1,0 +1,44 @@
+{
+  "type": "clinic",
+  "parent": {
+    "type": "health_center",
+    "parent": {
+      "type": "district_hospital",
+      "is_name_generated": "false",
+      "name": "Test Country Region",
+      "contact": {
+        "type": "person",
+        "name": "Country Region Program Officer",
+        "sex": "female",
+        "date_of_birth": "1984-01-01",
+        "roles": "program_officer",
+        "phone": "+9779841128674",
+        "_id": "8a37a4d1-3d8e-54a7-bb09-1b04a2838bee"
+      },
+      "_id": "4ed3e63d-da30-5162-9b13-0bd8e448e8af"
+    },
+    "is_name_generated": "false",
+    "name": "Supervisor 2 Territory",
+    "contact": {
+      "type": "person",
+      "name": "Territory 2 Supervisor",
+      "sex": "female",
+      "date_of_birth": "1986-01-01",
+      "roles": "nurse_supervisor",
+      "phone": "+9779841278828",
+      "_id": "9babdeaa-4bef-5d2b-9a96-d81ab05a8390"
+    },
+    "_id": "7eb4dd0a-3067-52f5-94ef-3753b6f97eb6"
+  },
+  "is_name_generated": "false",
+  "name": "Territory 1's Nurse 2 Zone",
+  "contact": {
+    "type": "person",
+    "name": "Territory 2 Zone 2 Nurse",
+    "sex": "female",
+    "roles": "nurse",
+    "date_of_birth": "1960-01-01",
+    "_id": "949d9017-64fa-5221-98a7-890099465e32"
+  },
+  "_id": "1e929eb6-4176-5205-b9e7-e303e8b0b139"
+}
