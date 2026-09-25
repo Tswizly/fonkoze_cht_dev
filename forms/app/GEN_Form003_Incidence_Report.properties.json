@@ -1,0 +1,8 @@
+{
+  "title": "Incidence Report",
+  "icon": "no_image_selected",
+  "context": {
+    "person": false,
+    "place": true
+  }
+}

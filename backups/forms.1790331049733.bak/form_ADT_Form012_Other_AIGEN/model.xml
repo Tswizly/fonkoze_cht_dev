@@ -1,0 +1,235 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form012_Other_AIGEN" version="20260924205300" prefix="J1!ADT_Form012_Other_AIGEN!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth/>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <other_assessment_group>
+            <primary_complaint/>
+            <general_symptoms/>
+            <symptom_duration_days>Cannot exceed 999 days</symptom_duration_days>
+            <severity_level/>
+            <body_system/>
+            <temperature/>
+            <bp_systolic>. &lt;= 300</bp_systolic>
+            <bp_diastolic>. &lt;= 200</bp_diastolic>
+            <heart_rate>. &lt;= 250</heart_rate>
+            <oxygen_saturation>. &lt;= 100</oxygen_saturation>
+            <detailed_notes/>
+            <referral_action/>
+          </other_assessment_group>
+          <calc_urgent_referral/>
+          <calc_standard_care/>
+          <results_group>
+            <res_urgent_warning/>
+            <res_urgent_action/>
+            <res_standard_care/>
+            <res_standard_action/>
+          </results_group>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="severity_level">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>severity_level-0</itextId>
+            <name>mild</name>
+          </item>
+          <item>
+            <itextId>severity_level-1</itextId>
+            <name>moderate</name>
+          </item>
+          <item>
+            <itextId>severity_level-2</itextId>
+            <name>severe</name>
+          </item>
+          <item>
+            <itextId>severity_level-3</itextId>
+            <name>critical</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="general_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>general_symptoms-0</itextId>
+            <name>pain_discomfort</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-1</itextId>
+            <name>fever_chills</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-2</itextId>
+            <name>fatigue_weakness</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-3</itextId>
+            <name>dizziness_fainting</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-4</itextId>
+            <name>breathing_issue</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-5</itextId>
+            <name>digestive_issue</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-6</itextId>
+            <name>skin_issue</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-7</itextId>
+            <name>neurological_issue</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-8</itextId>
+            <name>urinary_issue</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-9</itextId>
+            <name>weight_appetite_change</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-10</itextId>
+            <name>mood_mental_change</name>
+          </item>
+          <item>
+            <itextId>general_symptoms-11</itextId>
+            <name>other_unlisted</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="body_system">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>body_system-0</itextId>
+            <name>general_systemic</name>
+          </item>
+          <item>
+            <itextId>body_system-1</itextId>
+            <name>cardiovascular</name>
+          </item>
+          <item>
+            <itextId>body_system-2</itextId>
+            <name>respiratory</name>
+          </item>
+          <item>
+            <itextId>body_system-3</itextId>
+            <name>gastrointestinal</name>
+          </item>
+          <item>
+            <itextId>body_system-4</itextId>
+            <name>neurological</name>
+          </item>
+          <item>
+            <itextId>body_system-5</itextId>
+            <name>musculoskeletal</name>
+          </item>
+          <item>
+            <itextId>body_system-6</itextId>
+            <name>dermatological</name>
+          </item>
+          <item>
+            <itextId>body_system-7</itextId>
+            <name>genitourinary</name>
+          </item>
+          <item>
+            <itextId>body_system-8</itextId>
+            <name>endocrine</name>
+          </item>
+          <item>
+            <itextId>body_system-9</itextId>
+            <name>psychiatric</name>
+          </item>
+          <item>
+            <itextId>body_system-10</itextId>
+            <name>unknown_other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="referral_action">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>referral_action-0</itextId>
+            <name>home_care</name>
+          </item>
+          <item>
+            <itextId>referral_action-1</itextId>
+            <name>followup_clinic</name>
+          </item>
+          <item>
+            <itextId>referral_action-2</itextId>
+            <name>urgent_clinic</name>
+          </item>
+          <item>
+            <itextId>referral_action-3</itextId>
+            <name>emergency_hospital</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

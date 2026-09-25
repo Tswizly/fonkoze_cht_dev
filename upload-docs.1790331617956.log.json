@@ -1,0 +1,30 @@
+{
+  "ok": [
+    "18bb5ac5-0f12-56eb-b0a7-8969e033172a",
+    "1e7403de-418f-5d40-a4db-e1de81b7fccb",
+    "3a4a243a-7a75-5947-8e02-0e0f07658310",
+    "7b7faa40-0e3d-5721-b139-b973748d4088"
+  ],
+  "failed": {
+    "05d90b3e-d573-50c0-bdcd-d6e43e368db4": "conflict: Document update conflict.",
+    "0b465c41-ef04-51a0-89fe-b61b5cf76e4b": "conflict: Document update conflict.",
+    "2112ab72-448a-50bb-a15d-0b19d2927ab7": "conflict: Document update conflict.",
+    "255954f2-bb9a-5579-b716-f0fb3e5bdd17": "conflict: Document update conflict.",
+    "2d21a291-d41c-5289-a735-94a04af127b2": "conflict: Document update conflict.",
+    "3a9cecea-8414-5768-9846-474d21b51e91": "conflict: Document update conflict.",
+    "56295d33-ed60-5c75-bcd0-dd5edbffafc4": "conflict: Document update conflict.",
+    "63db505f-e025-5c8a-a4b7-e4f154cb73ce": "conflict: Document update conflict.",
+    "8935e9d8-0b2a-5eb0-ae54-ad1377a60097": "conflict: Document update conflict.",
+    "93a84a5d-79b1-5dd2-b3da-7bdf2cc37a15": "conflict: Document update conflict.",
+    "a721b86a-aa1a-515a-86b9-76f5cc1a2b42": "conflict: Document update conflict.",
+    "a9c24d8e-0e70-5269-b9f5-c0b53a05239b": "conflict: Document update conflict.",
+    "adbc8793-3c87-5a2d-8e20-55fbe1f05f9e": "conflict: Document update conflict.",
+    "be31f93f-47e6-5be2-9bd4-3d333581b265": "conflict: Document update conflict.",
+    "c3fcce07-f9eb-5520-8500-8eb4e4d69455": "conflict: Document update conflict.",
+    "c93a2fd2-a3e6-51a6-8ec1-16182dafa1df": "conflict: Document update conflict.",
+    "dd346f2f-6a07-51d5-941e-e6c40ecd6d60": "conflict: Document update conflict.",
+    "ddab46ce-4255-5dbf-9829-6c5019eba746": "conflict: Document update conflict.",
+    "e4199a2b-7ae2-5e90-a2a3-fb99c4f2d706": "conflict: Document update conflict.",
+    "e8fc7466-76cf-5547-81a1-8a3a94c3554c": "conflict: Document update conflict."
+  }
+}

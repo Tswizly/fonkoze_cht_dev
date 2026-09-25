@@ -10,8 +10,9 @@
       "sex": "male",
       "date_of_birth": "1984-01-01",
       "phone": "+9779841128674",
+      "roles": "program_officer",
       "reported_date": 1544031155715,
-      "_id": "306a3d95-8e4a-517f-8ae4-c3b391c4d7cb"
+      "_id": "18bb5ac5-0f12-56eb-b0a7-8969e033172a"
     },
     "reported_date": 1544031155715,
     "_id": "2112ab72-448a-50bb-a15d-0b19d2927ab7"
@@ -24,10 +25,9 @@
     "sex": "female",
     "date_of_birth": "1987-01-01",
     "phone": "+9779841645872",
+    "roles": "nurse_supervisor",
     "reported_date": 1544031155715,
-    "role": "nurse",
-    "roles[0]": "nurse",
-    "_id": "12124c66-7f7f-574b-92ca-ccb4bb2d8db9"
+    "_id": "3a4a243a-7a75-5947-8e02-0e0f07658310"
   },
   "reported_date": 1544031155715,
   "_id": "93a84a5d-79b1-5dd2-b3da-7bdf2cc37a15"

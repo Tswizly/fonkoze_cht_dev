@@ -109,6 +109,20 @@
     ],
     "defaultLanguage": "en",
     "forms": {
+        "GEN_Form002_Paracetamol_Iron_Folic": {
+            "items": {
+                "iron_and_folic_acid_tablets": {
+                    "deduction_type": "formula",
+                    "formular": "${_iron_and_folic_acid_distributed}"
+                },
+                "paracetamol_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${_paracetamol_distributed}"
+                }
+            },
+            "name": "GEN_Form002_Paracetamol_Iron_Folic",
+            "reportedDate": "now()"
+        },
         "ADT_Form001_Diabetes": {
             "items": {
                 "metformin_500mg": {

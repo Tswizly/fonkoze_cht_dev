@@ -3,7 +3,7 @@
     "context": {
         "person": false,
         "place": true,
-        "expression": ""
+        "expression": "user && user.roles && ( ((contact.type === 'clinic' || contact.contact_type === 'clinic') && user.roles.includes('nurse')) )"
     },
     "title": [
         {

@@ -11,7 +11,7 @@ module.exports = [
     title: 'Digestive Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_digestive === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },
@@ -23,7 +23,7 @@ module.exports = [
     title: 'Digestive Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_digestive === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -35,7 +35,7 @@ module.exports = [
     title: 'Digestive Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_digestive === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -47,7 +47,7 @@ module.exports = [
     title: 'Digestive Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_digestive === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -63,7 +63,7 @@ module.exports = [
     title: 'Fever Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_fever === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -75,7 +75,7 @@ module.exports = [
     title: 'Fever Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_fever === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -91,7 +91,7 @@ module.exports = [
     title: 'Hypertension Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_hypertension === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -103,7 +103,7 @@ module.exports = [
     title: 'Hypertension Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_hypertension === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -119,7 +119,7 @@ module.exports = [
     title: 'Pregnancy Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_pregnancy === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -135,7 +135,7 @@ module.exports = [
     title: 'Respiratory Infections Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_respiratory === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },
@@ -147,7 +147,7 @@ module.exports = [
     title: 'Respiratory Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_respiratory === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -159,7 +159,7 @@ module.exports = [
     title: 'Respiratory Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_respiratory === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -171,7 +171,7 @@ module.exports = [
     title: 'Respiratory Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_respiratory === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -187,7 +187,7 @@ module.exports = [
     title: 'Skin Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_skin === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },
@@ -199,7 +199,7 @@ module.exports = [
     title: 'Skin Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_skin === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -211,7 +211,7 @@ module.exports = [
     title: 'Skin Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_skin === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -223,7 +223,7 @@ module.exports = [
     title: 'Skin Conditions Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_skin === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -239,7 +239,7 @@ module.exports = [
     title: 'Stroke Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_stroke === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -251,7 +251,7 @@ module.exports = [
     title: 'Stroke Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_stroke === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -267,7 +267,7 @@ module.exports = [
     title: 'UTI and STD Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_uti_std === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -279,7 +279,7 @@ module.exports = [
     title: 'UTI and STD Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_uti_std === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -291,7 +291,7 @@ module.exports = [
     title: 'UTI and STD Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_uti_std === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -307,7 +307,7 @@ module.exports = [
     title: 'Wounds Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_wound === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },
@@ -319,7 +319,7 @@ module.exports = [
     title: 'Wounds Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_wound === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -331,7 +331,7 @@ module.exports = [
     title: 'Wounds Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_wound === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -343,7 +343,7 @@ module.exports = [
     title: 'Wounds Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_wound === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -359,7 +359,7 @@ module.exports = [
     title: 'Vision Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_vision === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },
@@ -371,7 +371,7 @@ module.exports = [
     title: 'Vision Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_vision === 'true' && r.fields.patient_age_in_years >= 6 && r.fields.patient_age_in_years <= 17;
     },
@@ -383,7 +383,7 @@ module.exports = [
     title: 'Vision Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_vision === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -395,7 +395,7 @@ module.exports = [
     title: 'Vision Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_vision === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -411,7 +411,7 @@ module.exports = [
     title: 'Diabetes Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_diabetes === 'true' && r.fields.patient_age_in_years >= 18 && r.fields.patient_age_in_years <= 64;
     },
@@ -423,7 +423,7 @@ module.exports = [
     title: 'Diabetes Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_diabetes === 'true' && r.fields.patient_age_in_years > 64;
     },
@@ -438,7 +438,7 @@ module.exports = [
     title: 'Vaccinations and Dewormer Follow-up Assessment',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage','GEN_Form001_FormSelect'],
+    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
       return !c.contact.muted && r.fields.route_vaccinations === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
     },

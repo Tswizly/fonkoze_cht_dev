@@ -2,7 +2,7 @@
   "title": "Form Select",
   "icon": "no_image_selected",
   "context": {
-    "person": false,
+    "person": true,
     "place": false
   }
 }
