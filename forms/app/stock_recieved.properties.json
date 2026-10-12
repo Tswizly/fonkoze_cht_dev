@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "user.parent.contact_type === 'clinic'"
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Received"
+        },
+        {
+            "locale": "es",
+            "content": "Stok Resevwa"
+        },
+        {
+            "locale": "fr",
+            "content": "Stock Reçu"
+        }
+    ]
+}

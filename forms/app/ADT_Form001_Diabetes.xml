@@ -516,7 +516,7 @@
             <value>Pasyan an gen dyabèt ak iperglisemi ekstrèm.</value>
           </text>
           <text id="/data/results_group/res_hyperglycemia_severe_declaration_diabetic:label">
-            <value>Pasyan an gen yon ipèglisemi ekstrèm.</value>
+            <value>Pasyan an gen ipèglisemi ekstrèm.</value>
           </text>
           <text id="/data/results_group/res_hyperglycemia_severe_protocol:label">
             <value>Pwotokòl:
@@ -541,7 +541,7 @@
             <value>Pa ka pi gwo pase 9</value>
           </text>
           <text id="/data/actions_confirmation/strips_used:label">
-            <value>Konbyen bann glikoz nan san ou te itilize?</value>
+            <value>Konbyen bann mezi glikoz nan san ou te itilize?</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -621,7 +621,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form001_Diabetes" version="20261011180547" prefix="J1!ADT_Form001_Diabetes!" delimiter="#">
+        <data id="ADT_Form001_Diabetes" version="20261012105310" prefix="J1!ADT_Form001_Diabetes!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -845,7 +845,7 @@
       <bind nodeset="/data/calc_hyperglycemia_mild" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt;= 120 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 200, 'true', 'false')"/>
       <bind nodeset="/data/calc_hyperglycemia_moderate" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 200 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 400, 'true', 'false')"/>
       <bind nodeset="/data/calc_hyperglycemia_severe" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 400, 'true', 'false')"/>
-      <bind nodeset="/data/fasting_glucose" type="string" calculate="if({$time_of_last_meal} = 'yes', 'false', 'true')"/>
+      <bind nodeset="/data/fasting_glucose" type="string" calculate="if( /data/diabetes_checkup_group/time_of_last_meal  = 'yes', 'false', 'true')"/>
       <bind nodeset="/data/diabetes_checkup_group/has_diabetes_warning" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_diabetes  = 'true'"/>
       <bind nodeset="/data/diabetes_checkup_group/diabetes_symptoms" type="string" relevant=" /data/inputs/contact/chronic_diabetes  != 'true'"/>
       <bind nodeset="/data/diabetes_checkup_group/hereditary_diabetes" type="string" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0"/>

@@ -807,7 +807,7 @@
             <value>Anrejistre rezilta tès rapid H. Pylori a.</value>
           </text>
           <text id="/data/results_group/res_gastritis_not_serious_second_declaration:label">
-            <value>Soumèt fòm lan epi konplete tchèkòp la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+            <value>Soumèt fòm lan epi konplete egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_risk_of_cholera:label">
             <value>Risk Kolera</value>
@@ -864,7 +864,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form002_DigestiveConditions" version="20261011182257" prefix="J1!ADT_Form002_DigestiveConditions!" delimiter="#">
+        <data id="ADT_Form002_DigestiveConditions" version="20261012105309" prefix="J1!ADT_Form002_DigestiveConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>

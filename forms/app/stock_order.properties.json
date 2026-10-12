@@ -1,0 +1,22 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": true,
+        "expression": ""
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Order"
+        },
+        {
+            "locale": "es",
+            "content": "Kòmand Stok"
+        },
+        {
+            "locale": "fr",
+            "content": "Commande de stock"
+        }
+    ]
+}

@@ -18,23 +18,23 @@
             "type": "action",
             "title": {
                 "en": "Stock Count",
-                "es": "Stocko Counto",
-                "fr": "Stock Count"
+                "fr": "Comptage des stocks",
+                "es": "Konte Stok"
             }
         },
         "stock_supply": {
             "form_name": "stock_supply",
             "title": {
                 "en": "Stock Supply",
-                "es": "Stock Supply",
-                "fr": "Stock Supply"
+                "fr": "Approvisionnement des stocks",
+                "es": "Pwovizyon Stok"
             },
             "confirm_supply": {
                 "form_name": "stock_recieved",
                 "title": {
-                    "en": "Stock Recieved",
-                    "es": "Stock Recieved",
-                    "fr": "Stock Recieved"
+                    "en": "Stock Received",
+                    "fr": "Stock Re\u00e7u",
+                    "es": "Stok Resevwa"
                 },
                 "active": true
             },
@@ -42,8 +42,8 @@
                 "form_name": "stock_discrepancy_resolution",
                 "title": {
                     "en": "Stock Discrepancy Resolution",
-                    "es": "Stock Discrepancy Resolution",
-                    "fr": "Stock Discrepancy Resolution"
+                    "fr": "R\u00e9solution des \u00e9carts de stock",
+                    "es": "Rezolisyon Diferans Stok"
                 }
             }
         },
@@ -52,23 +52,23 @@
             "formular": "item_danger_qty",
             "title": {
                 "en": "Stock Out",
-                "es": "Stock Out",
-                "fr": "Stock Out"
+                "fr": "Rupture de stock",
+                "es": "Stok Fini"
             }
         },
         "stock_return": {
             "form_name": "stock_return",
             "title": {
                 "en": "Stock Return",
-                "es": "Stock Return",
-                "fr": "Stock Return"
+                "fr": "Retour de stock",
+                "es": "Retounen Stok"
             },
             "confirmation": {
                 "form_name": "stock_returned",
                 "title": {
                     "en": "Stock Returned",
-                    "es": "Stock Returned",
-                    "fr": "Stock Returned"
+                    "fr": "Stock Retourn\u00e9",
+                    "es": "Stok Retounen"
                 }
             }
         },
@@ -77,15 +77,15 @@
             "form_name": "stock_order",
             "title": {
                 "en": "Stock Order",
-                "es": "Stock Order",
-                "fr": "Stock Order"
+                "fr": "Commande de stock",
+                "es": "K\u00f2mand Stok"
             },
             "stock_supply": {
                 "form_name": "stock_order_supply",
                 "title": {
                     "en": "Stock Order Supply",
-                    "es": "Stock Order Supply",
-                    "fr": "Stock Order Supply"
+                    "fr": "Approvisionnement de commande de stock",
+                    "es": "Pwovizyon K\u00f2mand Stok"
                 }
             }
         }
@@ -109,25 +109,15 @@
     ],
     "defaultLanguage": "en",
     "forms": {
-        "GEN_Form002_Paracetamol_Iron_Folic": {
-            "items": {
-                "iron_and_folic_acid_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${_iron_and_folic_acid_distributed}"
-                },
-                "paracetamol_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${_paracetamol_distributed}"
-                }
-            },
-            "name": "GEN_Form002_Paracetamol_Iron_Folic",
-            "reportedDate": "now()"
-        },
         "ADT_Form001_Diabetes": {
             "items": {
-                "metformin_500mg": {
+                "lancets": {
                     "deduction_type": "formula",
-                    "formular": "${metformin_500mg_used_in_ADT_Form001_Diabetes}"
+                    "formular": "${lancets_used_in_ADT_Form001_Diabetes}"
+                },
+                "strips": {
+                    "deduction_type": "formula",
+                    "formular": "${strips_used_in_ADT_Form001_Diabetes}"
                 }
             },
             "name": "ADT_Form001_Diabetes",
@@ -135,42 +125,6 @@
         },
         "ADT_Form002_DigestiveConditions": {
             "items": {
-                "litacid_gel_200ml": {
-                    "deduction_type": "formula",
-                    "formular": "${litacid_gel_200ml_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "omeprazole_injectable": {
-                    "deduction_type": "formula",
-                    "formular": "${omeprazole_injectable_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "omeprazole_20mg": {
-                    "deduction_type": "formula",
-                    "formular": "${omeprazole_20mg_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "buscopan_injectable": {
-                    "deduction_type": "formula",
-                    "formular": "${buscopan_injectable_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "amoxycillin_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${amoxycillin_500mg_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "metronidazole_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${metronidazole_500mg_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "ringer_lactate_IV_fluid_500ml": {
-                    "deduction_type": "formula",
-                    "formular": "${ringer_lactate_IV_fluid_500ml_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "ors": {
-                    "deduction_type": "formula",
-                    "formular": "${ors_used_in_ADT_Form002_DigestiveConditions}"
-                },
-                "tinidazole_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${tinidazole_500mg_used_in_ADT_Form002_DigestiveConditions}"
-                },
                 "h_pylori_rapid_test": {
                     "deduction_type": "formula",
                     "formular": "${h_pylori_rapid_test_used_in_ADT_Form002_DigestiveConditions}"
@@ -181,14 +135,6 @@
         },
         "ADT_Form003_Fever": {
             "items": {
-                "chloroquine_150mg": {
-                    "deduction_type": "formula",
-                    "formular": "${chloroquine_150mg_used_in_ADT_Form003_Fever}"
-                },
-                "paracetamol_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${paracetamol_500mg_used_in_ADT_Form003_Fever}"
-                },
                 "malaria_rapid_test": {
                     "deduction_type": "formula",
                     "formular": "${malaria_rapid_test_used_in_ADT_Form003_Fever}"
@@ -197,1409 +143,153 @@
             "name": "ADT_Form003_Fever",
             "reportedDate": "now()"
         },
-        "ADT_Form004_Hypertension": {
-            "items": {
-                "nifedipine_10mg": {
-                    "deduction_type": "formula",
-                    "formular": "${nifedipine_10mg_used_in_ADT_Form004_Hypertension}"
-                },
-                "hydrochlorotiazide_25mg": {
-                    "deduction_type": "formula",
-                    "formular": "${hydrochlorotiazide_25mg_used_in_ADT_Form004_Hypertension}"
-                },
-                "enalapril_10mg": {
-                    "deduction_type": "formula",
-                    "formular": "${enalapril_10mg_used_in_ADT_Form004_Hypertension}"
-                }
-            },
-            "name": "ADT_Form004_Hypertension",
-            "reportedDate": "now()"
-        },
         "ADT_Form005_Pregnancy": {
             "items": {
-                "nifedipine_20mg_tablets": {
+                "pregnancy_test": {
                     "deduction_type": "formula",
-                    "formular": "${nifedipine_20mg_tablets_used_in_ADT_Form005_Pregnancy}"
+                    "formular": "${pregnancy_test_used_in_ADT_Form005_Pregnancy}"
                 }
             },
             "name": "ADT_Form005_Pregnancy",
             "reportedDate": "now()"
         },
-        "ADT_Form006_RespiratoryConditions": {
+        "ADT_Form014_Summary": {
             "items": {
-                "dexamethasone_im_8mg": {
+                "litacid_gel": {
                     "deduction_type": "formula",
-                    "formular": "${dexamethasone_im_8mg_used_in_ADT_Form006_RespiratoryConditions}"
-                },
-                "salbutamol_tablet_4mg": {
-                    "deduction_type": "formula",
-                    "formular": "${salbutamol_tablet_4mg_used_in_ADT_Form006_RespiratoryConditions}"
-                },
-                "azythromycine_tablets_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${azythromycine_tablets_500mg_used_in_ADT_Form006_RespiratoryConditions}"
-                }
-            },
-            "name": "ADT_Form006_RespiratoryConditions",
-            "reportedDate": "now()"
-        },
-        "ADT_Form007_SkinConditions": {
-            "items": {
-                "triple_antibiotic_ointment": {
-                    "deduction_type": "formula",
-                    "formular": "${triple_antibiotic_ointment_used_in_ADT_Form007_SkinConditions}"
-                },
-                "antiseptic_cleaner": {
-                    "deduction_type": "formula",
-                    "formular": "${antiseptic_cleaner_used_in_ADT_Form007_SkinConditions}"
-                },
-                "ketoconazole_cream_2": {
-                    "deduction_type": "formula",
-                    "formular": "${ketoconazole_cream_2_used_in_ADT_Form007_SkinConditions}"
-                }
-            },
-            "name": "ADT_Form007_SkinConditions",
-            "reportedDate": "now()"
-        },
-        "ADT_Form009_UTIandSTD": {
-            "items": {
-                "ciprofloxacine_500mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${ciprofloxacine_500mg_tablets_used_in_ADT_Form009_UTIandSTD}"
-                },
-                "doxycicline_100mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${doxycicline_100mg_tablets_used_in_ADT_Form009_UTIandSTD}"
-                },
-                "benzatine_penicillin_2_4_mio_units": {
-                    "deduction_type": "formula",
-                    "formular": "${benzatine_penicillin_2_4_mio_units_used_in_ADT_Form009_UTIandSTD}"
-                }
-            },
-            "name": "ADT_Form009_UTIandSTD",
-            "reportedDate": "now()"
-        },
-        "CHD_Form001_DigestiveConditions": {
-            "items": {
-                "zinc_tablets_20mg": {
-                    "deduction_type": "formula",
-                    "formular": "${zinc_tablets_20mg_used_in_CHD_Form001_DigestiveConditions}"
-                },
-                "ciprofloxacine_oral_suspension_250mg_5ml": {
-                    "deduction_type": "formula",
-                    "formular": "${ciprofloxacine_oral_suspension_250mg_5ml_used_in_CHD_Form001_DigestiveConditions}"
-                },
-                "metoclopramide_im": {
-                    "deduction_type": "formula",
-                    "formular": "${metoclopramide_im_used_in_CHD_Form001_DigestiveConditions}"
-                }
-            },
-            "name": "CHD_Form001_DigestiveConditions",
-            "reportedDate": "now()"
-        },
-        "CHD_Form002_RespiratoryInfections": {
-            "items": {
-                "amoxicillin_oral_suspension_250mg_5ml": {
-                    "deduction_type": "formula",
-                    "formular": "${amoxicillin_oral_suspension_250mg_5ml_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "acetaminophen_oral_suspension_120mg_5ml": {
-                    "deduction_type": "formula",
-                    "formular": "${acetaminophen_oral_suspension_120mg_5ml_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "salbutamol_nebules_2_5mg": {
-                    "deduction_type": "formula",
-                    "formular": "${salbutamol_nebules_2_5mg_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "salbutamol_sirup_2mg_5ml": {
-                    "deduction_type": "formula",
-                    "formular": "${salbutamol_sirup_2mg_5ml_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "ceftriaxole_im_50mg_kg": {
-                    "deduction_type": "formula",
-                    "formular": "${ceftriaxole_im_50mg_kg_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "ipratropium": {
-                    "deduction_type": "formula",
-                    "formular": "${ipratropium_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "vitamin_c": {
-                    "deduction_type": "formula",
-                    "formular": "${vitamin_c_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "nasal_saline_drops": {
-                    "deduction_type": "formula",
-                    "formular": "${nasal_saline_drops_used_in_CHD_Form002_RespiratoryInfections}"
-                },
-                "cephalexin": {
-                    "deduction_type": "formula",
-                    "formular": "${cephalexin_used_in_CHD_Form002_RespiratoryInfections}"
-                }
-            },
-            "name": "CHD_Form002_RespiratoryInfections",
-            "reportedDate": "now()"
-        },
-        "CHD_Form003_SkinConditions": {
-            "items": {
-                "cloxacillin_oral_solution_250mg_5ml": {
-                    "deduction_type": "formula",
-                    "formular": "${cloxacillin_oral_solution_250mg_5ml_used_in_CHD_Form003_SkinConditions}"
-                },
-                "griseofulvine_cream": {
-                    "deduction_type": "formula",
-                    "formular": "${griseofulvine_cream_used_in_CHD_Form003_SkinConditions}"
-                },
-                "griseofulvin_tablets_125mg": {
-                    "deduction_type": "formula",
-                    "formular": "${griseofulvin_tablets_125mg_used_in_CHD_Form003_SkinConditions}"
-                },
-                "calamine_lotion": {
-                    "deduction_type": "formula",
-                    "formular": "${calamine_lotion_used_in_CHD_Form003_SkinConditions}"
-                },
-                "benzyl_benzoate_25": {
-                    "deduction_type": "formula",
-                    "formular": "${benzyl_benzoate_25_used_in_CHD_Form003_SkinConditions}"
-                },
-                "iron_and_folic_acid_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${iron_and_folic_acid_tablets_used_in_CHD_Form003_SkinConditions}"
-                }
-            },
-            "name": "CHD_Form003_SkinConditions",
-            "reportedDate": "now()"
-        },
-        "ELD_Form001_ChronicPain": {
-            "items": {
-                "co_mioflex_tablet": {
-                    "deduction_type": "formula",
-                    "formular": "${co_mioflex_tablet_used_in_ELD_Form001_ChronicPain}"
-                },
-                "dolex": {
-                    "deduction_type": "formula",
-                    "formular": "${dolex_used_in_ELD_Form001_ChronicPain}"
-                }
-            },
-            "name": "ELD_Form001_ChronicPain",
-            "reportedDate": "now()"
-        },
-        "ELD_Form002_Diabetes": {
-            "items": {
-                "metformin_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${metformin_500mg_used_in_ELD_Form002_Diabetes}"
-                }
-            },
-            "name": "ELD_Form002_Diabetes",
-            "reportedDate": "now()"
-        },
-        "ELD_Form003_DigestiveConditions": {
-            "items": {
-                "litacid_gel_200ml": {
-                    "deduction_type": "formula",
-                    "formular": "${litacid_gel_200ml_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${litacid_gel_used_in_ADT_Form014_Summary}"
                 },
                 "omeprazole_injectable": {
                     "deduction_type": "formula",
-                    "formular": "${omeprazole_injectable_used_in_ELD_Form003_DigestiveConditions}"
-                },
-                "omeprazole_20mg": {
-                    "deduction_type": "formula",
-                    "formular": "${omeprazole_20mg_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${omeprazole_injectable_used_in_ADT_Form014_Summary}"
                 },
                 "buscopan_injectable": {
                     "deduction_type": "formula",
-                    "formular": "${buscopan_injectable_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${buscopan_injectable_used_in_ADT_Form014_Summary}"
                 },
-                "amoxycillin_500mg": {
+                "benzathine_penicillin_injectable": {
                     "deduction_type": "formula",
-                    "formular": "${amoxycillin_500mg_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${benzathine_penicillin_injectable_used_in_ADT_Form014_Summary}"
                 },
-                "metronidazole_500mg": {
+                "dexamethasone_injectable": {
                     "deduction_type": "formula",
-                    "formular": "${metronidazole_500mg_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${dexamethasone_injectable_used_in_ADT_Form014_Summary}"
                 },
-                "ringer_lactate_IV_fluid_500ml": {
+                "triple_antibiotic_ointment": {
                     "deduction_type": "formula",
-                    "formular": "${ringer_lactate_IV_fluid_500ml_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${triple_antibiotic_ointment_used_in_ADT_Form014_Summary}"
                 },
-                "ors": {
+                "benzyl_benzoate_25": {
                     "deduction_type": "formula",
-                    "formular": "${ors_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${benzyl_benzoate_25_used_in_ADT_Form014_Summary}"
                 },
-                "tinidazole_500mg": {
+                "calamine_lotion": {
                     "deduction_type": "formula",
-                    "formular": "${tinidazole_500mg_used_in_ELD_Form003_DigestiveConditions}"
+                    "formular": "${calamine_lotion_used_in_ADT_Form014_Summary}"
                 },
-                "h_pylori_rapid_test": {
+                "antifungal_cream": {
                     "deduction_type": "formula",
-                    "formular": "${h_pylori_rapid_test_used_in_ELD_Form003_DigestiveConditions}"
-                }
-            },
-            "name": "ELD_Form003_DigestiveConditions",
-            "reportedDate": "now()"
-        },
-        "ELD_Form004_Fever": {
-            "items": {
-                "chloroquine_150mg": {
+                    "formular": "${antifungal_cream_used_in_ADT_Form014_Summary}"
+                },
+                "nifedipine_20mg": {
                     "deduction_type": "formula",
-                    "formular": "${chloroquine_150mg_used_in_ELD_Form004_Fever}"
+                    "formular": "${nifedipine_20mg_used_in_ADT_Form014_Summary}"
                 },
                 "paracetamol_500mg": {
                     "deduction_type": "formula",
-                    "formular": "${paracetamol_500mg_used_in_ELD_Form004_Fever}"
-                },
-                "malaria_rapid_test": {
-                    "deduction_type": "formula",
-                    "formular": "${malaria_rapid_test_used_in_ELD_Form004_Fever}"
-                }
-            },
-            "name": "ELD_Form004_Fever",
-            "reportedDate": "now()"
-        },
-        "ELD_Form005_Hypertension": {
-            "items": {
-                "nifedipine_10mg": {
-                    "deduction_type": "formula",
-                    "formular": "${nifedipine_10mg_used_in_ELD_Form005_Hypertension}"
-                },
-                "hydrochlorotiazide_25mg": {
-                    "deduction_type": "formula",
-                    "formular": "${hydrochlorotiazide_25mg_used_in_ELD_Form005_Hypertension}"
-                },
-                "enalapril_10mg": {
-                    "deduction_type": "formula",
-                    "formular": "${enalapril_10mg_used_in_ELD_Form005_Hypertension}"
-                }
-            },
-            "name": "ELD_Form005_Hypertension",
-            "reportedDate": "now()"
-        },
-        "ELD_Form006_RespiratoryConditions": {
-            "items": {
-                "dexamethasone_im_8mg": {
-                    "deduction_type": "formula",
-                    "formular": "${dexamethasone_im_8mg_used_in_ELD_Form006_RespiratoryConditions}"
-                },
-                "salbutamol_tablet_4mg": {
-                    "deduction_type": "formula",
-                    "formular": "${salbutamol_tablet_4mg_used_in_ELD_Form006_RespiratoryConditions}"
-                },
-                "azythromycine_tablets_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${azythromycine_tablets_500mg_used_in_ELD_Form006_RespiratoryConditions}"
-                }
-            },
-            "name": "ELD_Form006_RespiratoryConditions",
-            "reportedDate": "now()"
-        },
-        "ELD_Form007_SkinConditions": {
-            "items": {
-                "triple_antibiotic_ointment": {
-                    "deduction_type": "formula",
-                    "formular": "${triple_antibiotic_ointment_used_in_ELD_Form007_SkinConditions}"
-                },
-                "antiseptic_cleaner": {
-                    "deduction_type": "formula",
-                    "formular": "${antiseptic_cleaner_used_in_ELD_Form007_SkinConditions}"
-                },
-                "ketoconazole_cream_2": {
-                    "deduction_type": "formula",
-                    "formular": "${ketoconazole_cream_2_used_in_ELD_Form007_SkinConditions}"
-                }
-            },
-            "name": "ELD_Form007_SkinConditions",
-            "reportedDate": "now()"
-        },
-        "ELD_Form009_UTIandSTD": {
-            "items": {
-                "ciprofloxacine_500mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${ciprofloxacine_500mg_tablets_used_in_ELD_Form009_UTIandSTD}"
-                },
-                "doxycicline_100mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${doxycicline_100mg_tablets_used_in_ELD_Form009_UTIandSTD}"
-                },
-                "benzatine_penicillin_2_4_mio_units": {
-                    "deduction_type": "formula",
-                    "formular": "${benzatine_penicillin_2_4_mio_units_used_in_ELD_Form009_UTIandSTD}"
-                }
-            },
-            "name": "ELD_Form009_UTIandSTD",
-            "reportedDate": "now()"
-        },
-        "YAA_Form001_DigestiveConditions": {
-            "items": {
-                "litacid_gel_200ml": {
-                    "deduction_type": "formula",
-                    "formular": "${litacid_gel_200ml_used_in_YAA_Form001_DigestiveConditions}"
-                },
-                "ors": {
-                    "deduction_type": "formula",
-                    "formular": "${ors_used_in_YAA_Form001_DigestiveConditions}"
-                },
-                "zinc_tablets_20mg": {
-                    "deduction_type": "formula",
-                    "formular": "${zinc_tablets_20mg_used_in_YAA_Form001_DigestiveConditions}"
-                },
-                "co_trimoxazole_tablets_400_80mg": {
-                    "deduction_type": "formula",
-                    "formular": "${co_trimoxazole_tablets_400_80mg_used_in_YAA_Form001_DigestiveConditions}"
-                },
-                "metronidazole_200mg": {
-                    "deduction_type": "formula",
-                    "formular": "${metronidazole_200mg_used_in_YAA_Form001_DigestiveConditions}"
-                }
-            },
-            "name": "YAA_Form001_DigestiveConditions",
-            "reportedDate": "now()"
-        },
-        "YAA_Form002_RespiratoryConditions": {
-            "items": {
-                "combined_anti_flue_medication": {
-                    "deduction_type": "formula",
-                    "formular": "${combined_anti_flue_medication_used_in_YAA_Form002_RespiratoryConditions}"
+                    "formular": "${paracetamol_500mg_used_in_ADT_Form014_Summary}"
                 },
                 "amoxycillin_500mg": {
                     "deduction_type": "formula",
-                    "formular": "${amoxycillin_500mg_used_in_YAA_Form002_RespiratoryConditions}"
+                    "formular": "${amoxycillin_500mg_used_in_ADT_Form014_Summary}"
                 },
-                "metamizol_500mg_ml_injectable": {
+                "nifedipine_10mg": {
                     "deduction_type": "formula",
-                    "formular": "${metamizol_500mg_ml_injectable_used_in_YAA_Form002_RespiratoryConditions}"
+                    "formular": "${nifedipine_10mg_used_in_ADT_Form014_Summary}"
                 },
-                "acetaminophen_oral_suspension_120mg_5ml": {
+                "hctz_25mg": {
                     "deduction_type": "formula",
-                    "formular": "${acetaminophen_oral_suspension_120mg_5ml_used_in_YAA_Form002_RespiratoryConditions}"
+                    "formular": "${hctz_25mg_used_in_ADT_Form014_Summary}"
+                },
+                "enalapril_10mg": {
+                    "deduction_type": "formula",
+                    "formular": "${enalapril_10mg_used_in_ADT_Form014_Summary}"
+                },
+                "metformin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${metformin_500mg_used_in_ADT_Form014_Summary}"
+                },
+                "omeprazole_20mg": {
+                    "deduction_type": "formula",
+                    "formular": "${omeprazole_20mg_used_in_ADT_Form014_Summary}"
+                },
+                "metronidazole_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${metronidazole_500mg_used_in_ADT_Form014_Summary}"
+                },
+                "tinidazole_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${tinidazole_500mg_used_in_ADT_Form014_Summary}"
+                },
+                "ors": {
+                    "deduction_type": "formula",
+                    "formular": "${ors_used_in_ADT_Form014_Summary}"
+                },
+                "salbutamol_4mg": {
+                    "deduction_type": "formula",
+                    "formular": "${salbutamol_4mg_used_in_ADT_Form014_Summary}"
+                },
+                "chloroquine_150mg": {
+                    "deduction_type": "formula",
+                    "formular": "${chloroquine_150mg_used_in_ADT_Form014_Summary}"
+                },
+                "ciprofloxacin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${ciprofloxacin_500mg_used_in_ADT_Form014_Summary}"
+                },
+                "doxycycline_100mg": {
+                    "deduction_type": "formula",
+                    "formular": "${doxycycline_100mg_used_in_ADT_Form014_Summary}"
+                },
+                "cloxacillin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${cloxacillin_500mg_used_in_ADT_Form014_Summary}"
+                },
+                "griseofulvin_125mg": {
+                    "deduction_type": "formula",
+                    "formular": "${griseofulvin_125mg_used_in_ADT_Form014_Summary}"
+                },
+                "iron_folic_acid": {
+                    "deduction_type": "formula",
+                    "formular": "${iron_folic_acid_used_in_ADT_Form014_Summary}"
                 }
             },
-            "name": "YAA_Form002_RespiratoryConditions",
-            "reportedDate": "now()"
-        },
-        "YAA_Form003_SkinConditions": {
-            "items": {
-                "cloxacillin_tablets_500mg": {
-                    "deduction_type": "formula",
-                    "formular": "${cloxacillin_tablets_500mg_used_in_YAA_Form003_SkinConditions}"
-                }
-            },
-            "name": "YAA_Form003_SkinConditions",
-            "reportedDate": "now()"
-        },
-        "YAA_Form004_UTIandSTD": {
-            "items": {
-                "trimetoprim_sulfate_400_80mg": {
-                    "deduction_type": "formula",
-                    "formular": "${trimetoprim_sulfate_400_80mg_used_in_YAA_Form004_UTIandSTD}"
-                },
-                "furosemide_iv_20mg": {
-                    "deduction_type": "formula",
-                    "formular": "${furosemide_iv_20mg_used_in_YAA_Form004_UTIandSTD}"
-                },
-                "benzatine_penicillin_2_4_mio_units": {
-                    "deduction_type": "formula",
-                    "formular": "${benzatine_penicillin_2_4_mio_units_used_in_YAA_Form004_UTIandSTD}"
-                },
-                "ciprofloxacine_500mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${ciprofloxacine_500mg_tablets_used_in_YAA_Form004_UTIandSTD}"
-                },
-                "doxycicline_100mg_tablets": {
-                    "deduction_type": "formula",
-                    "formular": "${doxycicline_100mg_tablets_used_in_YAA_Form004_UTIandSTD}"
-                }
-            },
-            "name": "YAA_Form004_UTIandSTD",
+            "name": "ADT_Form014_Summary",
             "reportedDate": "now()"
         }
     },
     "items": {
-        "metformin_500mg": {
-            "name": "metformin_500mg",
+        "hctz_25mg": {
+            "name": "hctz_25mg",
             "label": {
-                "en": "Metformin 500Mg",
-                "es": "Metformin 500Mg",
-                "fr": "Metformin 500Mg"
+                "en": "HCTZ 25mg",
+                "fr": "HCTZ 25mg",
+                "es": "HCTZ 25mg"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
                 },
-                "count": 10
+                "count": 1
             },
             "unit": {
                 "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "litacid_gel_200ml": {
-            "name": "litacid_gel_200ml",
-            "label": {
-                "en": "Litacid Gel 200Ml",
-                "es": "Litacid Gel 200Ml",
-                "fr": "Litacid Gel 200Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "omeprazole_injectable": {
-            "name": "omeprazole_injectable",
-            "label": {
-                "en": "Omeprazole Injectable",
-                "es": "Omeprazole Injectable",
-                "fr": "Omeprazole Injectable"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "omeprazole_20mg": {
-            "name": "omeprazole_20mg",
-            "label": {
-                "en": "Omeprazole 20Mg",
-                "es": "Omeprazole 20Mg",
-                "fr": "Omeprazole 20Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "buscopan_injectable": {
-            "name": "buscopan_injectable",
-            "label": {
-                "en": "Buscopan Injectable",
-                "es": "Buscopan Injectable",
-                "fr": "Buscopan Injectable"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "amoxycillin_500mg": {
-            "name": "amoxycillin_500mg",
-            "label": {
-                "en": "Amoxycillin 500Mg",
-                "es": "Amoxycillin 500Mg",
-                "fr": "Amoxycillin 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metronidazole_500mg": {
-            "name": "metronidazole_500mg",
-            "label": {
-                "en": "Metronidazole 500Mg",
-                "es": "Metronidazole 500Mg",
-                "fr": "Metronidazole 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ringer_lactate_IV_fluid_500ml": {
-            "name": "ringer_lactate_IV_fluid_500ml",
-            "label": {
-                "en": "Ringer Lactate Iv Fluid 500Ml",
-                "es": "Ringer Lactate Iv Fluid 500Ml",
-                "fr": "Ringer Lactate Iv Fluid 500Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ors": {
-            "name": "ors",
-            "label": {
-                "en": "Ors",
-                "es": "Ors",
-                "fr": "Ors"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "tinidazole_500mg": {
-            "name": "tinidazole_500mg",
-            "label": {
-                "en": "Tinidazole 500Mg",
-                "es": "Tinidazole 500Mg",
-                "fr": "Tinidazole 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "h_pylori_rapid_test": {
-            "name": "h_pylori_rapid_test",
-            "label": {
-                "en": "H Pylori Rapid Test",
-                "es": "H Pylori Rapid Test",
-                "fr": "H Pylori Rapid Test"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "chloroquine_150mg": {
-            "name": "chloroquine_150mg",
-            "label": {
-                "en": "Chloroquine 150Mg",
-                "es": "Chloroquine 150Mg",
-                "fr": "Chloroquine 150Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "paracetamol_500mg": {
-            "name": "paracetamol_500mg",
-            "label": {
-                "en": "Paracetamol 500Mg",
-                "es": "Paracetamol 500Mg",
-                "fr": "Paracetamol 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "malaria_rapid_test": {
-            "name": "malaria_rapid_test",
-            "label": {
-                "en": "Malaria Rapid Test",
-                "es": "Malaria Rapid Test",
-                "fr": "Malaria Rapid Test"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "nifedipine_10mg": {
-            "name": "nifedipine_10mg",
-            "label": {
-                "en": "Nifedipine 10Mg",
-                "es": "Nifedipine 10Mg",
-                "fr": "Nifedipine 10Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "hydrochlorotiazide_25mg": {
-            "name": "hydrochlorotiazide_25mg",
-            "label": {
-                "en": "Hydrochlorotiazide 25Mg",
-                "es": "Hydrochlorotiazide 25Mg",
-                "fr": "Hydrochlorotiazide 25Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "enalapril_10mg": {
-            "name": "enalapril_10mg",
-            "label": {
-                "en": "Enalapril 10Mg",
-                "es": "Enalapril 10Mg",
-                "fr": "Enalapril 10Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "nifedipine_20mg_tablets": {
-            "name": "nifedipine_20mg_tablets",
-            "label": {
-                "en": "Nifedipine 20Mg Tablets",
-                "es": "Nifedipine 20Mg Tablets",
-                "fr": "Nifedipine 20Mg Tablets"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "dexamethasone_im_8mg": {
-            "name": "dexamethasone_im_8mg",
-            "label": {
-                "en": "Dexamethasone Im 8Mg",
-                "es": "Dexamethasone Im 8Mg",
-                "fr": "Dexamethasone Im 8Mg"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "salbutamol_tablet_4mg": {
-            "name": "salbutamol_tablet_4mg",
-            "label": {
-                "en": "Salbutamol Tablet 4Mg",
-                "es": "Salbutamol Tablet 4Mg",
-                "fr": "Salbutamol Tablet 4Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "azythromycine_tablets_500mg": {
-            "name": "azythromycine_tablets_500mg",
-            "label": {
-                "en": "Azythromycine Tablets 500Mg",
-                "es": "Azythromycine Tablets 500Mg",
-                "fr": "Azythromycine Tablets 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "triple_antibiotic_ointment": {
-            "name": "triple_antibiotic_ointment",
-            "label": {
-                "en": "Triple Antibiotic Ointment",
-                "es": "Triple Antibiotic Ointment",
-                "fr": "Triple Antibiotic Ointment"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "antiseptic_cleaner": {
-            "name": "antiseptic_cleaner",
-            "label": {
-                "en": "Antiseptic Cleaner",
-                "es": "Antiseptic Cleaner",
-                "fr": "Antiseptic Cleaner"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ketoconazole_cream_2": {
-            "name": "ketoconazole_cream_2",
-            "label": {
-                "en": "Ketoconazole Cream 2",
-                "es": "Ketoconazole Cream 2",
-                "fr": "Ketoconazole Cream 2"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ciprofloxacine_500mg_tablets": {
-            "name": "ciprofloxacine_500mg_tablets",
-            "label": {
-                "en": "Ciprofloxacine 500Mg Tablets",
-                "es": "Ciprofloxacine 500Mg Tablets",
-                "fr": "Ciprofloxacine 500Mg Tablets"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "doxycicline_100mg_tablets": {
-            "name": "doxycicline_100mg_tablets",
-            "label": {
-                "en": "Doxycicline 100Mg Tablets",
-                "es": "Doxycicline 100Mg Tablets",
-                "fr": "Doxycicline 100Mg Tablets"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "benzatine_penicillin_2_4_mio_units": {
-            "name": "benzatine_penicillin_2_4_mio_units",
-            "label": {
-                "en": "Benzatine Penicillin 2 4 Mio Units",
-                "es": "Benzatine Penicillin 2 4 Mio Units",
-                "fr": "Benzatine Penicillin 2 4 Mio Units"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "amoxicillin_oral_suspension_250mg_5ml": {
-            "name": "amoxicillin_oral_suspension_250mg_5ml",
-            "label": {
-                "en": "Amoxicillin Oral Suspension 250Mg 5Ml",
-                "es": "Amoxicillin Oral Suspension 250Mg 5Ml",
-                "fr": "Amoxicillin Oral Suspension 250Mg 5Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "acetaminophen_oral_suspension_120mg_5ml": {
-            "name": "acetaminophen_oral_suspension_120mg_5ml",
-            "label": {
-                "en": "Acetaminophen Oral Suspension 120Mg 5Ml",
-                "es": "Acetaminophen Oral Suspension 120Mg 5Ml",
-                "fr": "Acetaminophen Oral Suspension 120Mg 5Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "salbutamol_nebules_2_5mg": {
-            "name": "salbutamol_nebules_2_5mg",
-            "label": {
-                "en": "Salbutamol Nebules 2 5Mg",
-                "es": "Salbutamol Nebules 2 5Mg",
-                "fr": "Salbutamol Nebules 2 5Mg"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "salbutamol_sirup_2mg_5ml": {
-            "name": "salbutamol_sirup_2mg_5ml",
-            "label": {
-                "en": "Salbutamol Sirup 2Mg 5Ml",
-                "es": "Salbutamol Sirup 2Mg 5Ml",
-                "fr": "Salbutamol Sirup 2Mg 5Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ceftriaxole_im_50mg_kg": {
-            "name": "ceftriaxole_im_50mg_kg",
-            "label": {
-                "en": "Ceftriaxole Im 50Mg Kg",
-                "es": "Ceftriaxole Im 50Mg Kg",
-                "fr": "Ceftriaxole Im 50Mg Kg"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ipratropium": {
-            "name": "ipratropium",
-            "label": {
-                "en": "Ipratropium",
-                "es": "Ipratropium",
-                "fr": "Ipratropium"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "vitamin_c": {
-            "name": "vitamin_c",
-            "label": {
-                "en": "Vitamin C",
-                "es": "Vitamin C",
-                "fr": "Vitamin C"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "nasal_saline_drops": {
-            "name": "nasal_saline_drops",
-            "label": {
-                "en": "Nasal Saline Drops",
-                "es": "Nasal Saline Drops",
-                "fr": "Nasal Saline Drops"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "cephalexin": {
-            "name": "cephalexin",
-            "label": {
-                "en": "Cephalexin",
-                "es": "Cephalexin",
-                "fr": "Cephalexin"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "zinc_tablets_20mg": {
-            "name": "zinc_tablets_20mg",
-            "label": {
-                "en": "Zinc Tablets 20Mg",
-                "es": "Zinc Tablets 20Mg",
-                "fr": "Zinc Tablets 20Mg"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ciprofloxacine_oral_suspension_250mg_5ml": {
-            "name": "ciprofloxacine_oral_suspension_250mg_5ml",
-            "label": {
-                "en": "Ciprofloxacine Oral Suspension 250Mg 5Ml",
-                "es": "Ciprofloxacine Oral Suspension 250Mg 5Ml",
-                "fr": "Ciprofloxacine Oral Suspension 250Mg 5Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metoclopramide_im": {
-            "name": "metoclopramide_im",
-            "label": {
-                "en": "Metoclopramide Im",
-                "es": "Metoclopramide Im",
-                "fr": "Metoclopramide Im"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "cloxacillin_oral_solution_250mg_5ml": {
-            "name": "cloxacillin_oral_solution_250mg_5ml",
-            "label": {
-                "en": "Cloxacillin Oral Solution 250Mg 5Ml",
-                "es": "Cloxacillin Oral Solution 250Mg 5Ml",
-                "fr": "Cloxacillin Oral Solution 250Mg 5Ml"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "griseofulvine_cream": {
-            "name": "griseofulvine_cream",
-            "label": {
-                "en": "Griseofulvine Cream",
-                "es": "Griseofulvine Cream",
-                "fr": "Griseofulvine Cream"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "griseofulvin_tablets_125mg": {
-            "name": "griseofulvin_tablets_125mg",
-            "label": {
-                "en": "Griseofulvin Tablets 125Mg",
-                "es": "Griseofulvin Tablets 125Mg",
-                "fr": "Griseofulvin Tablets 125Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1611,15 +301,835 @@
             "name": "calamine_lotion",
             "label": {
                 "en": "Calamine Lotion",
-                "es": "Calamine Lotion",
-                "fr": "Calamine Lotion"
+                "fr": "Lotion \u00e0 la calamine",
+                "es": "Losyon Kalamin"
             },
-            "isInSet": false,
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
             "unit": {
                 "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "tinidazole_500mg": {
+            "name": "tinidazole_500mg",
+            "label": {
+                "en": "Tinidazole 500mg",
+                "fr": "Tinidazole 500mg",
+                "es": "Tinidazol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "omeprazole_20mg": {
+            "name": "omeprazole_20mg",
+            "label": {
+                "en": "Omeprazole 20mg",
+                "fr": "Om\u00e9prazole 20mg",
+                "es": "Omeprazol 20mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "nifedipine_20mg": {
+            "name": "nifedipine_20mg",
+            "label": {
+                "en": "Nifedipine 20mg",
+                "fr": "Nif\u00e9dipine 20mg",
+                "es": "Nifedipin 20mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "griseofulvin_125mg": {
+            "name": "griseofulvin_125mg",
+            "label": {
+                "en": "Griseofulvin 125mg",
+                "fr": "Gris\u00e9ofulvine 125mg",
+                "es": "Grizeyofulvin 125mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "lancets": {
+            "name": "lancets",
+            "label": {
+                "en": "Lancets",
+                "fr": "Lancettes",
+                "es": "Lans\u00e8t"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "malaria_rapid_test": {
+            "name": "malaria_rapid_test",
+            "label": {
+                "en": "Malaria Rapid Test",
+                "fr": "Test Rapide Paludisme",
+                "es": "T\u00e8s Rapid Malarya"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "metronidazole_500mg": {
+            "name": "metronidazole_500mg",
+            "label": {
+                "en": "Metronidazole 500mg",
+                "fr": "M\u00e9tronidazole 500mg",
+                "es": "Metronidazol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "doxycycline_100mg": {
+            "name": "doxycycline_100mg",
+            "label": {
+                "en": "Doxycycline 100mg",
+                "fr": "Doxycycline 100mg",
+                "es": "Doksiklin 100mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "metformin_500mg": {
+            "name": "metformin_500mg",
+            "label": {
+                "en": "Metformin 500mg",
+                "fr": "Metformine 500mg",
+                "es": "M\u00e8tformin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "strips": {
+            "name": "strips",
+            "label": {
+                "en": "Strips",
+                "fr": "Bandelettes",
+                "es": "Bann (T\u00e8s Sik)"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "dexamethasone_injectable": {
+            "name": "dexamethasone_injectable",
+            "label": {
+                "en": "Dexamethasone Injectable",
+                "fr": "Dexam\u00e9thasone Injectable",
+                "es": "Deksametazon Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "ors": {
+            "name": "ors",
+            "label": {
+                "en": "ORS",
+                "fr": "SRO",
+                "es": "Sew\u00f2m Oral"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "triple_antibiotic_ointment": {
+            "name": "triple_antibiotic_ointment",
+            "label": {
+                "en": "Triple Antibiotic Ointment",
+                "fr": "Pommade Triple Antibiotique",
+                "es": "Pomad Trip Antibyotik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "h_pylori_rapid_test": {
+            "name": "h_pylori_rapid_test",
+            "label": {
+                "en": "H. Pylori Rapid Test",
+                "fr": "Test Rapide H. Pylori",
+                "es": "T\u00e8s Rapid H. Pylori"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "nifedipine_10mg": {
+            "name": "nifedipine_10mg",
+            "label": {
+                "en": "Nifedipine 10mg",
+                "fr": "Nif\u00e9dipine 10mg",
+                "es": "Nifedipin 10mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "salbutamol_4mg": {
+            "name": "salbutamol_4mg",
+            "label": {
+                "en": "Salbutamol 4mg",
+                "fr": "Salbutamol 4mg",
+                "es": "Salbitamol 4mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "litacid_gel": {
+            "name": "litacid_gel",
+            "label": {
+                "en": "Litacid Gel",
+                "fr": "Gel Litacid",
+                "es": "J\u00e8l Litacid"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "omeprazole_injectable": {
+            "name": "omeprazole_injectable",
+            "label": {
+                "en": "Omeprazole Injectable",
+                "fr": "Om\u00e9prazole Injectable",
+                "es": "Omeprazol Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "antifungal_cream": {
+            "name": "antifungal_cream",
+            "label": {
+                "en": "Antifungal Cream",
+                "fr": "Cr\u00e8me Antifongique",
+                "es": "Kr\u00e8m Antifonjik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "chloroquine_150mg": {
+            "name": "chloroquine_150mg",
+            "label": {
+                "en": "Chloroquine 150mg",
+                "fr": "Chloroquine 150mg",
+                "es": "Klokwokin 150mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "ciprofloxacin_500mg": {
+            "name": "ciprofloxacin_500mg",
+            "label": {
+                "en": "Ciprofloxacin 500mg",
+                "fr": "Ciprofloxacine 500mg",
+                "es": "Siprofloksasin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "benzathine_penicillin_injectable": {
+            "name": "benzathine_penicillin_injectable",
+            "label": {
+                "en": "Benzathine Penicillin Injectable",
+                "fr": "P\u00e9nicilline Benzathine Injectable",
+                "es": "Penisilin Benzatin Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "iron_folic_acid": {
+            "name": "iron_folic_acid",
+            "label": {
+                "en": "Iron and Folic Acid",
+                "fr": "Fer et Acide Folique",
+                "es": "F\u00e8 ak Asid Folik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "buscopan_injectable": {
+            "name": "buscopan_injectable",
+            "label": {
+                "en": "Buscopan Injectable",
+                "fr": "Buscopan Injectable",
+                "es": "Biskopan Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "pregnancy_test": {
+            "name": "pregnancy_test",
+            "label": {
+                "en": "Pregnancy Test",
+                "fr": "Test de Grossesse",
+                "es": "T\u00e8s Gwos\u00e8s"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "paracetamol_500mg": {
+            "name": "paracetamol_500mg",
+            "label": {
+                "en": "Paracetamol 500mg",
+                "fr": "Parac\u00e9tamol 500mg",
+                "es": "Parasetamol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "cloxacillin_500mg": {
+            "name": "cloxacillin_500mg",
+            "label": {
+                "en": "Cloxacillin 500mg",
+                "fr": "Cloxacilline 500mg",
+                "es": "Kloksasilin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "amoxycillin_500mg": {
+            "name": "amoxycillin_500mg",
+            "label": {
+                "en": "Amoxicillin 500mg",
+                "fr": "Amoxicilline 500mg",
+                "es": "Amoksisilin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "enalapril_10mg": {
+            "name": "enalapril_10mg",
+            "label": {
+                "en": "Enalapril 10mg",
+                "fr": "\u00c9nalapril 10mg",
+                "es": "Enalapril 10mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1630,272 +1140,24 @@
         "benzyl_benzoate_25": {
             "name": "benzyl_benzoate_25",
             "label": {
-                "en": "Benzyl Benzoate 25",
-                "es": "Benzyl Benzoate 25",
-                "fr": "Benzyl Benzoate 25"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "iron_and_folic_acid_tablets": {
-            "name": "iron_and_folic_acid_tablets",
-            "label": {
-                "en": "Iron And Folic Acid Tablets",
-                "es": "Iron And Folic Acid Tablets",
-                "fr": "Iron And Folic Acid Tablets"
+                "en": "Benzyl Benzoate 25%",
+                "fr": "Benzoate de Benzyle 25%",
+                "es": "Benzoat Benzil 25%"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
+                    "fr": "Bo\u00eete de ",
+                    "es": "Bwat "
                 },
-                "count": 10
+                "count": 1
             },
             "unit": {
                 "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "co_trimoxazole_tablets_400_80mg": {
-            "name": "co_trimoxazole_tablets_400_80mg",
-            "label": {
-                "en": "Co Trimoxazole Tablets 400 80Mg",
-                "es": "Co Trimoxazole Tablets 400 80Mg",
-                "fr": "Co Trimoxazole Tablets 400 80Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metronidazole_200mg": {
-            "name": "metronidazole_200mg",
-            "label": {
-                "en": "Metronidazole 200Mg",
-                "es": "Metronidazole 200Mg",
-                "fr": "Metronidazole 200Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "combined_anti_flue_medication": {
-            "name": "combined_anti_flue_medication",
-            "label": {
-                "en": "Combined Anti Flue Medication",
-                "es": "Combined Anti Flue Medication",
-                "fr": "Combined Anti Flue Medication"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metamizol_500mg_ml_injectable": {
-            "name": "metamizol_500mg_ml_injectable",
-            "label": {
-                "en": "Metamizol 500Mg Ml Injectable",
-                "es": "Metamizol 500Mg Ml Injectable",
-                "fr": "Metamizol 500Mg Ml Injectable"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "cloxacillin_tablets_500mg": {
-            "name": "cloxacillin_tablets_500mg",
-            "label": {
-                "en": "Cloxacillin Tablets 500Mg",
-                "es": "Cloxacillin Tablets 500Mg",
-                "fr": "Cloxacillin Tablets 500Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "trimetoprim_sulfate_400_80mg": {
-            "name": "trimetoprim_sulfate_400_80mg",
-            "label": {
-                "en": "Trimetoprim Sulfate 400 80Mg",
-                "es": "Trimetoprim Sulfate 400 80Mg",
-                "fr": "Trimetoprim Sulfate 400 80Mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "furosemide_iv_20mg": {
-            "name": "furosemide_iv_20mg",
-            "label": {
-                "en": "Furosemide Iv 20Mg",
-                "es": "Furosemide Iv 20Mg",
-                "fr": "Furosemide Iv 20Mg"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "co_mioflex_tablet": {
-            "name": "co_mioflex_tablet",
-            "label": {
-                "en": "Co Mioflex Tablet",
-                "es": "Co Mioflex Tablet",
-                "fr": "Co Mioflex Tablet"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "es": "Box of ",
-                    "fr": "Box of "
-                },
-                "count": 10
-            },
-            "unit": {
-                "label": {
-                    "en": "Tablet",
-                    "es": "Tablet",
-                    "fr": "Tablet"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "dolex": {
-            "name": "dolex",
-            "label": {
-                "en": "Dolex",
-                "es": "Dolex",
-                "fr": "Dolex"
-            },
-            "isInSet": false,
-            "unit": {
-                "label": {
-                    "en": "NotSet",
-                    "es": "NotSet",
-                    "fr": "NotSet"
+                    "en": "Unit",
+                    "fr": "Unit\u00e9",
+                    "es": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1909,16 +1171,16 @@
             "name": "Medicine",
             "label": {
                 "en": "Medicine",
-                "es": "Medicine",
-                "fr": "Medicine"
+                "fr": "M\u00e9dicament",
+                "es": "Medikaman"
             },
             "description": {
-                "en": "Distributable drugs ",
-                "es": "Distributable drugs ",
-                "fr": "Distributable drugs "
+                "en": "Distributable drugs",
+                "fr": "M\u00e9dicaments distribuables",
+                "es": "Medikaman pou distribye"
             }
         }
     },
     "version": "1.2.2",
-    "last_update_date": "2026-09-17T21:06:21.866Z"
+    "last_update_date": "2026-10-12T00:00:00.000Z"
 }

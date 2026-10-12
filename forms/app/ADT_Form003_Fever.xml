@@ -227,7 +227,7 @@
             <value>Test Rapide</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test:label">
-            <value>Pouvez-vous faire passer un test rapide au patient ?</value>
+            <value>Êtes-vous en mesure de faire passer un test rapide au patient ?</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test_result:label">
             <value>Effectuez le test rapide. Quel est le résultat du test rapide ?</value>
@@ -399,7 +399,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form003_Fever" version="20261011163337" prefix="J1!ADT_Form003_Fever!" delimiter="#">
+        <data id="ADT_Form003_Fever" version="20261012105309" prefix="J1!ADT_Form003_Fever!" delimiter="#">
           <inputs>
             <meta>
               <location>

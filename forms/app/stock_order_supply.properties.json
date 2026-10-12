@@ -1,0 +1,21 @@
+{
+    "icon": "icon-healthcare-medicine",
+    "context": {
+        "person": false,
+        "place": false
+    },
+    "title": [
+        {
+            "locale": "en",
+            "content": "Stock Order Supply"
+        },
+        {
+            "locale": "es",
+            "content": "Pwovizyon Kòmand Stok"
+        },
+        {
+            "locale": "fr",
+            "content": "Approvisionnement de commande de stock"
+        }
+    ]
+}

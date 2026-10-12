@@ -5031,7 +5031,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form014_Summary" version="20261011195626" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+        <data id="ADT_Form014_Summary" version="20261012105658" prefix="J1!ADT_Form014_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -5830,8 +5830,8 @@ OSWA
       <bind nodeset="/data/summary_header/res_appendicitis_protocol" readonly="true()" type="string" relevant=" /data/_result_appendicitis_cholecystitis  = 'true'"/>
       <bind nodeset="/data/summary_header/res_malaria_pos" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  = 'true'"/>
       <bind nodeset="/data/summary_header/res_malaria_pos_protocol" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  = 'true'"/>
-      <bind nodeset="/data/summary_header/res_malaria_neg" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  != 'true'"/>
-      <bind nodeset="/data/summary_header/res_malaria_neg_protocol" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  != 'true'"/>
+      <bind nodeset="/data/summary_header/res_malaria_neg" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  != 'true' and  /data/_malaria_rapid_test_result  = 'negative'"/>
+      <bind nodeset="/data/summary_header/res_malaria_neg_protocol" readonly="true()" type="string" relevant=" /data/_result_risk_malaria  != 'true' and  /data/_malaria_rapid_test_result  = 'negative'"/>
       <bind nodeset="/data/summary_header/res_htn_urgency" readonly="true()" type="string" relevant=" /data/_result_hypertensive_urgency  = 'true'"/>
       <bind nodeset="/data/summary_header/res_htn_urgency_protocol" readonly="true()" type="string" relevant=" /data/_result_hypertensive_urgency  = 'true'"/>
       <bind nodeset="/data/summary_header/res_htn_g1" readonly="true()" type="string" relevant=" /data/_result_hypertension_grade_1  = 'true'"/>
