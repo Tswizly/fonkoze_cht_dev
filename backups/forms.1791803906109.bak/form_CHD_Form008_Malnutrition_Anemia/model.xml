@@ -1,0 +1,122 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="CHD_Form008_Malnutrition_Anemia" version="20261011185447" prefix="J1!CHD_Form008_Malnutrition_Anemia!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <malnutrition_anemia_checkup_group>
+            <anemia_symptoms/>
+            <muac_result/>
+          </malnutrition_anemia_checkup_group>
+          <calc_severe_malnutrition_anemia/>
+          <calc_severe_anemia/>
+          <calc_moderate_anemia/>
+          <results_group>
+            <res_severe_malnutrition_anemia/>
+            <res_severe_malnutrition_anemia_action/>
+            <res_severe_anemia/>
+            <res_severe_anemia_action/>
+            <res_moderate_anemia/>
+            <res_moderate_anemia_action/>
+          </results_group>
+          <null_results_group>
+            <res_null_results/>
+          </null_results_group>
+          <data>
+            <_anemia_symptoms/>
+            <_muac_result/>
+            <_result_severe_malnutrition_anemia/>
+            <_result_severe_anemia/>
+            <_result_moderate_anemia/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="anemia_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>anemia_symptoms-0</itextId>
+            <name>lethargy</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-1</itextId>
+            <name>oedema</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-2</itextId>
+            <name>respiratory_distress</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-3</itextId>
+            <name>pale_complexion</name>
+          </item>
+          <item>
+            <itextId>anemia_symptoms-4</itextId>
+            <name>sclera_abnormal</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="muac_result">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>muac_result-0</itextId>
+            <name>muac_yellow_red</name>
+          </item>
+          <item>
+            <itextId>muac_result-1</itextId>
+            <name>muac_green</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

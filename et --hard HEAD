@@ -1,0 +1,131 @@
+[33mcommit 321d655de9a054f9e1b62886e80b821909ddb449[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msummary-form-approach[m[33m, [m[1;31morigin/summary-form-approach[m[33m)[m
+Author: tom <ayoung487@gmail.com>
+Date:   Mon Oct 12 00:00:31 2026 -1000
+
+    first working condition cards for assessment history and existing conditions. Entirely unsuccessful in what they show, but they do show up!
+
+[33mcommit 888711ca1737f215b256e4677d46afae4a2e6616[m
+Author: tom <ayoung487@gmail.com>
+Date:   Sun Oct 11 17:01:31 2026 -1000
+
+    first instance of summary form loading. data not injected
+
+[33mcommit fb48c5c3c35b50e4f23e2b0ba27b632c1b7884d2[m
+Author: tom <ayoung487@gmail.com>
+Date:   Sun Oct 11 16:33:34 2026 -1000
+
+    summary form task logic works in its most simple form, does not inject data. Form fails to load
+
+[33mcommit 3009458cd3e3f4102313440fae3f4dd9a3892d2d[m
+Author: tom <ayoung487@gmail.com>
+Date:   Sun Oct 11 16:20:33 2026 -1000
+
+    uploaded files preparing to test task logic for adult summary form
+
+[33mcommit 226b156a17a29ee71aa739eeaa2fe551fcced6c2[m[33m ([m[1;32madd-stock-monitoring[m[33m)[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 25 14:05:12 2026 -1000
+
+    Added CHE to test if CHE are form blocked - need change permissions
+
+[33mcommit 8b72abbe9ee4598e27abd8f3dda3672648688300[m[33m ([m[1;31morigin/add-stock-monitoring[m[33m)[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 25 11:23:13 2026 -1000
+
+    fixed adding contacts via csv using db online and change to role not roles. Not correctly routes for stock management forms.
+
+[33mcommit 0e6ad6f754903c68415a579f9035e62c233624c3[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 25 01:28:41 2026 -1000
+
+    undid stock count limitations so it can be shown
+
+[33mcommit ffc17fe3da3a5e06ba183ccb06f4c95b1c8e4d9a[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 25 01:27:07 2026 -1000
+
+    Cleaned up data to push to web server for Carine
+
+[33mcommit db8ddf86d899745a79dbc44190bfb7da4a6d15cf[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 25 00:26:47 2026 -1000
+
+    forms update and revsions based on Fonkoze input. Changed triage, pregnancy, added incident report, added paracetamol and folic acid form. Tasks not updated or in place.
+
+[33mcommit 6939f3ce282029a92ed1db49a25b2fd55cc5fb9f[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 23 22:02:32 2026 -1000
+
+    added che to settings and converted to form-select task style form seclection
+
+[33mcommit 2c86a8da50a63697110e79eca43e288bfc2a401c[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 23 21:49:59 2026 -1000
+
+    fixed collect forms. Identified stock mangement error as pulling user from app where app users have no roles, started adding che role
+
+[33mcommit f30bc45245080cc66b21ac43f34c523c8da24990[m
+Author: tom <ayoung487@gmail.com>
+Date:   Sat Sep 19 17:31:15 2026 -1000
+
+    Fixed GEN forms to enable tasks to work. Issue was name (. not _)
+
+[33mcommit 74db6f5a2c8a8f7fc4a3fa11f8344d649ecb372f[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 18 02:34:05 2026 -1000
+
+    change pass
+
+[33mcommit 25a4d09049478ef501562ba147a6f7f1a8cd6ba2[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 18 02:06:26 2026 -1000
+
+    Minor change to stock count form allows for it to show up, not entirely fixed
+
+[33mcommit d900c42cd119be7cdaad79a0bc480798180c30f8[m
+Author: tom <ayoung487@gmail.com>
+Date:   Fri Sep 18 01:30:21 2026 -1000
+
+    Successful upload of stock management with new medicines added for all forms. AI assisted, be skeptical. Forms still not showing (expression errors)
+
+[33mcommit f97460dfc4795c3981f697de4ddaef104f53f62e[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 9 12:21:11 2026 -1000
+
+    First iteration stock contact summary works, form subtraction works for respiratory. Forms not visibile due to properties expression field, unsure why
+
+[33mcommit 2e04af33af5bcfe9fd9d1dd46f2498523ceb0b80[m
+Author: tom <ayoung487@gmail.com>
+Date:   Tue Sep 8 20:32:56 2026 -1000
+
+    First successful stock implementation, fixed parsing error caused by _, forms nonfunctional, stock addition not working
+
+[33mcommit 5d0ecba3709e9d5ee30deb11da75df41c428148e[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: tom <ayoung487@gmail.com>
+Date:   Tue Sep 8 10:52:44 2026 -1000
+
+    form updates and test form selector form
+
+[33mcommit 1e35d7d98f6479634bf213e9a8ed2edd83546a3e[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 2 22:38:34 2026 -1000
+
+    added .eslintrc
+
+[33mcommit d0a1da5e943fec9de5f13ab40f7c489715cbc9ee[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 2 19:26:43 2026 -1000
+
+    removed upload-docs files
+
+[33mcommit da447b06318e1ebf8fddf60d2dd5dbb7d43376b7[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 2 19:20:55 2026 -1000
+
+    Second commit updated to remove docs and create fonkoze profiles
+
+[33mcommit 2083f080ac97ff9311be8671b56277eebbd41ec6[m
+Author: tom <ayoung487@gmail.com>
+Date:   Wed Sep 2 19:11:31 2026 -1000
+
+    Initial commit

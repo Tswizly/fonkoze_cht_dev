@@ -41,6 +41,9 @@
           <text id="general_symptoms_child-4">
             <value>Blurry vision, loss of sight, or eye pain</value>
           </text>
+          <text id="general_symptoms_child-5">
+            <value>Malnutrition, anemia, weight loss, or pale skin</value>
+          </text>
           <text id="general_symptoms_youth-0">
             <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
           </text>
@@ -58,6 +61,9 @@
           </text>
           <text id="general_symptoms_youth-5">
             <value>Cuts, scrapes, burns, or unhealed injuries</value>
+          </text>
+          <text id="general_symptoms_youth-6">
+            <value>Malnutrition, anemia, weight loss, or pale skin</value>
           </text>
           <text id="referral_facility-0">
             <value>Zanmi Lasante health center in Cerca La Source</value>
@@ -295,6 +301,9 @@
           <text id="general_symptoms_child-4">
             <value>Vision floue, perte de la vue ou douleur oculaire</value>
           </text>
+          <text id="general_symptoms_child-5">
+            <value>Malnutrition, anémie, perte de poids ou pâleur</value>
+          </text>
           <text id="general_symptoms_youth-0">
             <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
           </text>
@@ -312,6 +321,9 @@
           </text>
           <text id="general_symptoms_youth-5">
             <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
+          </text>
+          <text id="general_symptoms_youth-6">
+            <value>Malnutrition, anémie, perte de poids ou pâleur</value>
           </text>
           <text id="referral_facility-0">
             <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
@@ -549,6 +561,9 @@
           <text id="general_symptoms_child-4">
             <value>Vizyon twoub, pèdi zye/vizyon, oswa doulè nan je</value>
           </text>
+          <text id="general_symptoms_child-5">
+            <value>Malnitrisyon, anemi, pèdi pwa oswa po pal</value>
+          </text>
           <text id="general_symptoms_youth-0">
             <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
           </text>
@@ -566,6 +581,9 @@
           </text>
           <text id="general_symptoms_youth-5">
             <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
+          </text>
+          <text id="general_symptoms_youth-6">
+            <value>Malnitrisyon, anemi, pèdi pwa oswa po pal</value>
           </text>
           <text id="referral_facility-0">
             <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
@@ -768,7 +786,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form002_Child_Triage" version="20261011180720" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+        <data id="TRI_Form002_Child_Triage" version="20261012102831" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -946,6 +964,10 @@
             <itextId>general_symptoms_child-4</itextId>
             <name>chd_vision</name>
           </item>
+          <item>
+            <itextId>general_symptoms_child-5</itextId>
+            <name>chd_malnutrition_anemia</name>
+          </item>
         </root>
       </instance>
       <instance id="general_symptoms_youth">
@@ -973,6 +995,10 @@
           <item>
             <itextId>general_symptoms_youth-5</itextId>
             <name>yaa_wound</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-6</itextId>
+            <name>yaa_malnutrition_anemia</name>
           </item>
         </root>
       </instance>
@@ -1059,7 +1085,7 @@
       <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="'false'"/>
       <bind nodeset="/data/route_vaccinations" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'no' or  /data/child_assessment/received_albendazole  = 'no' or  /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
-      <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5, 'true', 'false')"/>
+      <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5 or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_malnutrition_anemia') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_malnutrition_anemia'), 'true', 'false')"/>
       <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>

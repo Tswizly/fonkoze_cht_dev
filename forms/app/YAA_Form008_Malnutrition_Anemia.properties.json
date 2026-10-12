@@ -1,0 +1,9 @@
+{
+  "title": "Malnutrition and Anemia",
+  "icon": "no_image_selected",
+  "context": {
+    "person": false,
+    "place": false,
+    "expression": "ageInYears(contact) >= 6 && ageInYears(contact) <= 17"
+  }
+}

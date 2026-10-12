@@ -1,9 +1,0 @@
-{
-  "title": "Vaccines and Dewormer",
-  "icon": "no_image_selected",
-  "context": {
-    "person": false,
-    "place": false,
-    "expression": "ageInYears(contact) >= 0 && ageInYears(contact) <= 5"
-  }
-}

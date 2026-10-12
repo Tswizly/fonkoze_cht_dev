@@ -1,9 +1,0 @@
-{
-  "title": "Stroke",
-  "icon": "no_image_selected",
-  "context": {
-    "person": false,
-    "place": false,
-    "expression": "ageInYears(contact) >= 65"
-  }
-}

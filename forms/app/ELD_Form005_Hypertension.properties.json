@@ -1,9 +1,0 @@
-{
-  "title": "Hypertension",
-  "icon": "icon-disease-cardiovascular@2x",
-  "context": {
-    "person": false,
-    "place": false,
-    "expression": "ageInYears(contact) >= 65"
-  }
-}

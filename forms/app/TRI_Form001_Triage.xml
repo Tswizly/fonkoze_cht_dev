@@ -62,18 +62,6 @@
           <text id="general_symptoms_child-0">
             <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
           </text>
-          <text id="general_symptoms_child-1">
-            <value>Cough, wheezing, or difficulty breathing</value>
-          </text>
-          <text id="general_symptoms_child-2">
-            <value>Skin rash, bumps, itching, sores, or discoloration</value>
-          </text>
-          <text id="general_symptoms_child-3">
-            <value>Cuts, scrapes, burns, or unhealed injuries</value>
-          </text>
-          <text id="general_symptoms_child-4">
-            <value>Blurry vision, loss of sight, or eye pain</value>
-          </text>
           <text id="general_symptoms_youth-0">
             <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
           </text>
@@ -351,18 +339,6 @@
           </text>
           <text id="general_symptoms_child-0">
             <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
-          </text>
-          <text id="general_symptoms_child-1">
-            <value>Toux, respiration sifflante ou difficulté à respirer</value>
-          </text>
-          <text id="general_symptoms_child-2">
-            <value>Éruption cutanée, bosses, démangeaisons, plaies ou décoloration</value>
-          </text>
-          <text id="general_symptoms_child-3">
-            <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
-          </text>
-          <text id="general_symptoms_child-4">
-            <value>Vision floue, perte de la vue ou douleur oculaire</value>
           </text>
           <text id="general_symptoms_youth-0">
             <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
@@ -642,18 +618,6 @@
           <text id="general_symptoms_child-0">
             <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
           </text>
-          <text id="general_symptoms_child-1">
-            <value>Tous, souf kout oswa difikilte pou respire</value>
-          </text>
-          <text id="general_symptoms_child-2">
-            <value>Bouton sou po, gratèl, blesi oswa chanjman nan koulè po a</value>
-          </text>
-          <text id="general_symptoms_child-3">
-            <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
-          </text>
-          <text id="general_symptoms_child-4">
-            <value>Vizyon twoub, pèdi zye/vizyon, oswa doulè nan je</value>
-          </text>
           <text id="general_symptoms_youth-0">
             <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
           </text>
@@ -876,7 +840,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form001_Triage" version="20261011180718" prefix="J1!TRI_Form001_Triage!" delimiter="#">
+        <data id="TRI_Form001_Triage" version="20261012102213" prefix="J1!TRI_Form001_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -1076,22 +1040,6 @@
             <itextId>general_symptoms_child-0</itextId>
             <name>chd_digestive</name>
           </item>
-          <item>
-            <itextId>general_symptoms_child-1</itextId>
-            <name>chd_respiratory</name>
-          </item>
-          <item>
-            <itextId>general_symptoms_child-2</itextId>
-            <name>chd_skin</name>
-          </item>
-          <item>
-            <itextId>general_symptoms_child-3</itextId>
-            <name>chd_wound</name>
-          </item>
-          <item>
-            <itextId>general_symptoms_child-4</itextId>
-            <name>chd_vision</name>
-          </item>
         </root>
       </instance>
       <instance id="general_symptoms_youth">
@@ -1223,7 +1171,7 @@
       <bind nodeset="/data/emergency_triage_group/has_emergency_symptoms" type="string" required="true()"/>
       <bind nodeset="/data/emergency_triage_group/emergency_symptoms" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/emergency_action" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/emergency_triage_summary/iv_line_use" type="string" required="true()"/>
+      <bind nodeset="/data/emergency_triage_summary/iv_line_use" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/referal_summary" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/referal_summary/referal_location" type="string" required="true()"/>
       <bind nodeset="/data/referal_summary/referal_other" type="string" required="true()" relevant=" /data/referal_summary/referal_location  = 'other'"/>

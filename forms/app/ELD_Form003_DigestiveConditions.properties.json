@@ -1,9 +1,0 @@
-{
-  "title": "Digestive Conditions",
-  "icon": "icon-condition-diarrhea@2x",
-  "context": {
-    "person": false,
-    "place": false,
-    "expression": "ageInYears(contact) >= 65"
-  }
-}
