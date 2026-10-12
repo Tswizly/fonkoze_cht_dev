@@ -36,7 +36,7 @@ module.exports = [
   // ROUTE SUMMARY FORM 
   // ----------------------------------------------------
   {
-    name: 'triage_final_summary_simple',
+    name: 'triage_final_summary_adult',
     title: 'Health Checkup Final Summary',
     icon: 'icon-healthcare',
     appliesTo: 'reports',
@@ -49,20 +49,16 @@ module.exports = [
       }
 
       // 2. ENCOUNTER WINDOW BOUNDARY CHECK:
-      // Find the next triage/form-select report created AFTER this report `r` (if any).
+      // Verify that this report `r` is the most recent triage/form-select submission.
       const subsequentTriageReports = (c.reports || []).filter(report =>
         TRIAGE_FORM_NAMES.includes(report.form) &&
         report.reported_date > r.reported_date &&
         report._id !== r._id
       );
 
-      // If a newer triage report exists, this old triage task is superseded and should NOT trigger.
       if (subsequentTriageReports.length > 0) {
         return false;
       }
-
-      // Date threshold for the current encounter window
-      const nextTriageDate = null; // Since `r` is the latest triage report, there is no upper bound yet.
 
       // 3. Skip if summary form was already submitted for this current triage encounter
       const summaryAlreadySubmitted = (c.reports || []).some(report =>
@@ -89,7 +85,7 @@ module.exports = [
 
       // 5. Verify that EVERY required route has a corresponding form completed WITHIN this encounter window
       const allTasksCompleted = requiredFormGroups.every(formNames =>
-        isFormSubmittedInEncounter(c, r, nextTriageDate, formNames)
+        isFormSubmittedInEncounter(c, r, null, formNames)
       );
 
       return allTasksCompleted;
@@ -97,7 +93,105 @@ module.exports = [
 
     actions: [
       {
-        form: 'ADT_Form014_Summary'
+        form: 'ADT_Form014_Summary',
+        modifyContent: function(content, c, r) {
+          // Filter reports submitted during the current triage encounter
+          const encounterReports = (c.reports || []).filter(report =>
+            report.reported_date >= r.reported_date
+          );
+
+          // Helper function to search across encounter forms for clinical calculation fields
+          function getFieldValue(fieldName, defaultValue = 'false') {
+            for (const report of encounterReports) {
+              if (!report.fields) continue;
+
+              const cleanName = fieldName.startsWith('_') ? fieldName.substring(1) : fieldName;
+              const prefixedName = fieldName.startsWith('_') ? fieldName : '_' + fieldName;
+
+              // Search in report.fields
+              if (report.fields[fieldName] !== undefined && report.fields[fieldName] !== '') {
+                return report.fields[fieldName];
+              }
+              if (report.fields[cleanName] !== undefined && report.fields[cleanName] !== '') {
+                return report.fields[cleanName];
+              }
+              if (report.fields[prefixedName] !== undefined && report.fields[prefixedName] !== '') {
+                return report.fields[prefixedName];
+              }
+
+              // Search in nested report.fields.data
+              if (report.fields.data) {
+                if (report.fields.data[fieldName] !== undefined && report.fields.data[fieldName] !== '') {
+                  return report.fields.data[fieldName];
+                }
+                if (report.fields.data[cleanName] !== undefined && report.fields.data[cleanName] !== '') {
+                  return report.fields.data[cleanName];
+                }
+                if (report.fields.data[prefixedName] !== undefined && report.fields.data[prefixedName] !== '') {
+                  return report.fields.data[prefixedName];
+                }
+              }
+            }
+            return defaultValue;
+          }
+
+          // --- 1. Diabetes Results ---
+          content._result_hyperglycemia_mild = getFieldValue('_result_hyperglycemia_mild');
+          content._result_hyperglycemia_moderate = getFieldValue('_result_hyperglycemia_moderate');
+          content._result_hyperglycemia_severe = getFieldValue('_result_hyperglycemia_severe');
+          content._metformin_dosage = getFieldValue('_metformin_dosage', '');
+
+          // --- 2. Digestive / Gastritis Results ---
+          content._result_gastritis_serious = getFieldValue('_result_gastritis_serious');
+          content._result_gastritis_not_serious = getFieldValue('_result_gastritis_not_serious');
+          content._h_pylori_rapid_test_result = getFieldValue('_h_pylori_rapid_test_result', '');
+          content._result_risk_of_cholera = getFieldValue('_result_risk_of_cholera');
+          content._result_acute_diarrhea = getFieldValue('_result_acute_diarrhea');
+          content._result_amoeba_giardia = getFieldValue('_result_amoeba_giardia');
+          content._result_appendicitis_cholecystitis = getFieldValue('_result_appendicitis_cholecystitis');
+
+          // --- 3. Fever & Malaria Results ---
+          content._result_risk_malaria = getFieldValue('_result_risk_malaria');
+          content._malaria_rapid_test_result = getFieldValue('_malaria_rapid_test_result', '');
+
+          // --- 4. Hypertension Results ---
+          content._result_hypertensive_urgency = getFieldValue('_result_hypertensive_urgency');
+          content._result_hypertension_grade_1 = getFieldValue('_result_hypertension_grade_1');
+          content._result_hypertension_grade_2 = getFieldValue('_result_hypertension_grade_2');
+          content._result_hypertension_grade_3 = getFieldValue('_result_hypertension_grade_3');
+
+          // --- 5. Pregnancy & Gestational Conditions ---
+          content._result_gestational_hypertension_no_serious = getFieldValue('_result_gestational_hypertension_no_serious');
+          content._result_gestational_hypertension_serious = getFieldValue('_result_gestational_hypertension_serious');
+          content._result_pre_eclampsia = getFieldValue('_result_pre_eclampsia');
+          content._result_genitourinary_infections = getFieldValue('_result_genitourinary_infections');
+          content._result_threatened_miscarriage_less20 = getFieldValue('_result_threatened_miscarriage_less20');
+          content._result_threatened_miscarriage_greater20 = getFieldValue('_result_threatened_miscarriage_greater20');
+
+          // --- 6. Respiratory, TB, Asthma, Pneumonia & Flu ---
+          content._result_tuberculosis = getFieldValue('_result_tuberculosis');
+          content._result_asthma = getFieldValue('_result_asthma');
+          content._result_pneumonia = getFieldValue('_result_pneumonia');
+          content._result_flu_like_syndrome = getFieldValue('_result_flu_like_syndrome');
+
+          // --- 7. Skin Conditions ---
+          content._result_impetigo_folliculitis = getFieldValue('_result_impetigo_folliculitis');
+          content._result_ring_worm = getFieldValue('_result_ring_worm');
+          content._result_scabies = getFieldValue('_result_scabies');
+
+          // --- 8. Stroke & TIA ---
+          content._result_transient_ischemic_attack = getFieldValue('_result_transient_ischemic_attack');
+          content._result_stroke = getFieldValue('_result_stroke');
+          content._result_old_stroke = getFieldValue('_result_old_stroke');
+
+          // --- 9. UTI & STDs ---
+          content._result_uti = getFieldValue('_result_uti');
+          content._result_std_discharge = getFieldValue('_result_std_discharge');
+          content._result_std_ulcer = getFieldValue('_result_std_ulcer');
+
+          // --- 10. Anemia ---
+          content._result_moderate_anemia = getFieldValue('_result_moderate_anemia');
+        }
       }
     ],
 
