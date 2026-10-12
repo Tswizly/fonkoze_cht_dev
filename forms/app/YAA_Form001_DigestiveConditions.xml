@@ -135,76 +135,25 @@
             <value>Gastritis</value>
           </text>
           <text id="/data/results_group/res_gastritis_action:label">
-            <value>The youth has gastritis.
-
-Procedure:
-- Oral rehydration (ORS test) and then send home with 2 packets of ORS and Litacid gel
-- Advise hospital visit for investigation if repeated occurence</value>
+            <value>The youth has gastritis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_dehydration:label">
             <value>Dehydration</value>
           </text>
           <text id="/data/results_group/res_dehydration_action:label">
-            <value>The youth has dehydration.
-
-Procedure:
-- ORS – explain how to prepare and send home with 2 paquets
-- Continue feeding, particularly soup, juice, thee
-- Zinc supplementation
-- Warn mother to go to hospital if youth cannot drink or altered consciousness, or blood in stool or high fever</value>
+            <value>The youth is dehydrated. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_dysentery:label">
             <value>Bacterial or parasitic dysenteria</value>
           </text>
           <text id="/data/results_group/res_dysentery_action:label">
-            <value>The youth has dysentery.
-
-Procedure:
-- Trimetoprim tablets – 400/80 mg – 7 days
-- And Metronidazole tablets – 200mg – 7 days
-- Counselling on drinking treated water. Continue feeding as much as child will eat but no spicy or too salty food</value>
+            <value>The youth has dysentery. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Results</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:label">
-            <value>How many ORS were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:label">
-            <value>How many Litacid gel were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
-            <value>How many Zinc tablets 20 mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:label">
-            <value>How many Co-trimoxazole tablets 400/80 mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:label">
-            <value>How many Metronidazole tablets 200mg were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -305,31 +254,31 @@ Procedure:
             <value>Évaluation digestive</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea:label">
-            <value>Le jeune a-t-il la diarrhée ?</value>
+            <value>Les jeunes ont-ils la diarrhée ?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_duration:label">
-            <value>Depuis combien de temps le jeune a-t-il la diarrhée ?</value>
+            <value>Depuis combien de temps le jeune souffre-t-il de diarrhée ?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_frequency:label">
-            <value>À quelle fréquence le jeune va-t-il à la selle par jour ?</value>
+            <value>Combien de fois par jour le jeune va-t-il à la selle ?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_color:label">
-            <value>Quelle est la couleur des selles ?</value>
+            <value>De quelle couleur est le tabouret ?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_blood:label">
-            <value>Y a-t-il du sang dans les selles du jeune ?</value>
+            <value>Y a-t-il du sang dans les selles du jeune homme ?</value>
           </text>
           <text id="/data/digestive_assessment_group/vomiting_repeatedly:label">
-            <value>Le jeune vomit-il de façon répétée ?</value>
+            <value>Le jeune vomit-il à répétition ?</value>
           </text>
           <text id="/data/digestive_assessment_group/physical_demeanor:label">
-            <value>Quel est le comportement physique du jeune ?</value>
+            <value>Quel est l'aspect physique du jeune homme ?</value>
           </text>
           <text id="/data/digestive_assessment_group/skin_pinch:label">
-            <value>Après avoir été pincée, la peau de l'abdomen revient-elle normalement, lentement ou très lentement ?</value>
+            <value>Après avoir été pincée, la peau de l'abdomen reprend-elle sa forme normalement, lentement ou très lentement ?</value>
           </text>
           <text id="/data/digestive_assessment_group/sunken_eyes:label">
-            <value>Le jeune a-t-il les yeux enfoncés ?</value>
+            <value>Le jeune homme a-t-il les yeux cernés ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
@@ -338,76 +287,25 @@ Procedure:
             <value>Gastrite</value>
           </text>
           <text id="/data/results_group/res_gastritis_action:label">
-            <value>Le jeune a une gastrite.
-
-Procédure :
-- Réhydratation orale (test SRO) puis renvoi à la maison avec 2 sachets de SRO et du gel Litacid
-- Conseiller une visite à l'hôpital pour investigation en cas de récidive</value>
+            <value>Le jeune homme souffre de gastrite. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_dehydration:label">
             <value>Déshydratation</value>
           </text>
           <text id="/data/results_group/res_dehydration_action:label">
-            <value>Le jeune est déshydraté.
-
-Procédure :
-- SRO – expliquer comment préparer et renvoyer à la maison avec 2 paquets
-- Continuer à nourrir, en particulier de la soupe, du jus, du thé
-- Supplémentation en zinc
-- Avertir la mère d'aller à l'hôpital si le jeune ne peut pas boire ou s'il y a une altération de la conscience, du sang dans les selles ou une forte fièvre</value>
+            <value>Le jeune est déshydraté. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_dysentery:label">
-            <value>Dysenterie bactérienne ou parasitaire</value>
+            <value>Dysentérite bactérienne ou parasitaire</value>
           </text>
           <text id="/data/results_group/res_dysentery_action:label">
-            <value>Le jeune a la dysenterie.
-
-Procédure :
-- Comprimés de triméthoprime – 400/80 mg – 7 jours
-- Et comprimés de métronidazole – 200 mg – 7 jours
-- Conseils sur la consommation d'eau traitée. Continuer à nourrir autant que l'enfant veut manger, mais pas d'aliments épicés ou trop salés</value>
+            <value>Le jeune homme souffre de dysenterie. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:label">
-            <value>Combien de SRO ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:label">
-            <value>Combien de gel Litacid ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
-            <value>Combien de comprimés de Zinc 20 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:label">
-            <value>Combien de comprimés de Co-trimoxazole 400/80 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:label">
-            <value>Combien de comprimés de Métronidazole 200mg ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -511,111 +409,60 @@ Procédure :
             <value>Èske jèn nan gen dyare?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_duration:label">
-            <value>Depi konbyen tan jèn nan gen dyare?</value>
+            <value>Depi konbyen tan jèn gason an gen dyare?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_frequency:label">
-            <value>Konbyen fwa jèn nan ap poupou pa jou?</value>
+            <value>Konbyen fwa jèn nan kaka pa jou?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_color:label">
             <value>Ki koulè poupou a?</value>
           </text>
           <text id="/data/digestive_assessment_group/diarrhea_blood:label">
-            <value>Èske gen san nan poupou jèn nan?</value>
+            <value>Èske gen san nan poupou jèn gason an?</value>
           </text>
           <text id="/data/digestive_assessment_group/vomiting_repeatedly:label">
-            <value>Èske jèn nan ap vomi san rete?</value>
+            <value>Èske jèn nan ap vomi plizyè fwa?</value>
           </text>
           <text id="/data/digestive_assessment_group/physical_demeanor:label">
-            <value>Ki jan jèn nan konpòte l fizikman?</value>
+            <value>Ki jan jèn gason an ye nan konpòtman fizik li?</value>
           </text>
           <text id="/data/digestive_assessment_group/skin_pinch:label">
-            <value>Apre ou fin pense l, èske po vant lan tounen nòmal, dousman, oswa trè dousman?</value>
+            <value>Apre yo fin pense w, èske po nan vant lan remonte regilyèman, dousman, oswa trè dousman?</value>
           </text>
           <text id="/data/digestive_assessment_group/sunken_eyes:label">
-            <value>Èske jèn nan gen je antre?</value>
+            <value>Èske jèn gason an gen je l' twou nan fon?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_gastritis:label">
             <value>Gastrit</value>
           </text>
           <text id="/data/results_group/res_gastritis_action:label">
-            <value>Jèn nan gen gastrit.
-
-Pwosedi:
-- Reyidratasyon nan bouch (tès SRO) epi voye l lakay ak 2 sache SRO ak jèl Litacid
-- Konseye l ale lopital pou envestigasyon si sa rive ankò</value>
+            <value>Jèn nan gen gastrit. Soumèt fòm lan epi ranpli egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_dehydration:label">
             <value>Dezidratasyon</value>
           </text>
           <text id="/data/results_group/res_dehydration_action:label">
-            <value>Jèn nan dezidrate.
-
-Pwosedi:
-- SRO – eksplike kijan pou prepare l epi voye l lakay ak 2 pake
-- Kontinye ba l manje, sitou soup, ji, te
-- Sipleman zenk
-- Avèti manman an pou l ale lopital si jèn nan pa ka bwè oswa li pèdi konesans, gen san nan poupou oswa gwo lafyèv</value>
+            <value>Jèn nan dezidrate. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_dysentery:label">
             <value>Disantri bakteri oswa parazit</value>
           </text>
           <text id="/data/results_group/res_dysentery_action:label">
-            <value>Jèn nan gen disantri.
-
-Pwosedi:
-- Grenn trimetoprim – 400/80 mg – 7 jou
-- Ak grenn metronidazol – 200 mg – 7 jou
-- Konsèy sou bwè dlo trete. Kontinye ba l manje otan timoun nan vle manje, men pa ba l manje ki gen anpil epis oswa ki twò sale</value>
+            <value>Jèn nan gen disantri. Soumèt fòm lan epi ranpli egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ors:label">
-            <value>Konbyen SRO yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/litacid_gel:label">
-            <value>Konbyen jèl Litacid yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/zinc_tablets_20mg:label">
-            <value>Konbyen grenn Zenk 20 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:label">
-            <value>Konbyen grenn Co-trimoxazole 400/80 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metronidazole_200mg:label">
-            <value>Konbyen grenn Metronidazol 200mg yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="YAA_Form001_DigestiveConditions" version="20260925024337" prefix="J1!YAA_Form001_DigestiveConditions!" delimiter="#">
+        <data id="YAA_Form001_DigestiveConditions" version="20261011180702" prefix="J1!YAA_Form001_DigestiveConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -689,14 +536,6 @@ Pwosedi:
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <ors/>
-            <litacid_gel/>
-            <zinc_tablets_20mg/>
-            <co_trimoxazole_tablets_400_80mg/>
-            <metronidazole_200mg/>
-          </actions_confirmation>
           <data>
             <_diarrhea/>
             <_diarrhea_duration/>
@@ -707,48 +546,10 @@ Pwosedi:
             <_physical_demeanor/>
             <_skin_pinch/>
             <_sunken_eyes/>
-            <_calc_gastritis/>
-            <_calc_dehydration/>
-            <_calc_dysentery/>
-            <_ors/>
-            <_litacid_gel/>
-            <_zinc_tablets_20mg/>
-            <_co_trimoxazole_tablets_400_80mg/>
-            <_metronidazole_200mg/>
+            <_result_gastritis/>
+            <_result_dehydration/>
+            <_result_dysentery/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <litacid_gel_200ml_used_in_YAA_Form001_DigestiveConditions/>
-              <ors_used_in/>
-              <ors___set/>
-              <ors___unit/>
-              <ors_used_in_YAA_Form001_DigestiveConditions/>
-              <zinc_tablets_20mg_used_in/>
-              <zinc_tablets_20mg___set/>
-              <zinc_tablets_20mg___unit/>
-              <zinc_tablets_20mg_used_in_YAA_Form001_DigestiveConditions/>
-              <co_trimoxazole_tablets_400_80mg_used_in/>
-              <co_trimoxazole_tablets_400_80mg___set/>
-              <co_trimoxazole_tablets_400_80mg___unit/>
-              <co_trimoxazole_tablets_400_80mg_used_in_YAA_Form001_DigestiveConditions/>
-              <metronidazole_200mg_used_in/>
-              <metronidazole_200mg___set/>
-              <metronidazole_200mg___unit/>
-              <metronidazole_200mg_used_in_YAA_Form001_DigestiveConditions/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -892,12 +693,6 @@ Pwosedi:
       <bind nodeset="/data/results_group/res_dysentery_action" readonly="true()" type="string" relevant=" /data/calc_dysentery  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_gastritis  = 'false' and  /data/calc_dehydration  = 'false' and  /data/calc_dysentery  = 'false'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/ors" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'gastritis') or selected( /data/actions_confirmation/followed_up_conditions , 'dehydration')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ors:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/litacid_gel" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'gastritis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/litacid_gel:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/zinc_tablets_20mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'dehydration')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/zinc_tablets_20mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'dysentery')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/metronidazole_200mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'dysentery')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/metronidazole_200mg:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_diarrhea" type="string" calculate="if( /data/digestive_assessment_group/diarrhea  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_diarrhea_duration" type="string" calculate="if( /data/digestive_assessment_group/diarrhea_duration  != '',  /data/digestive_assessment_group/diarrhea_duration , -1)"/>
       <bind nodeset="/data/data/_diarrhea_frequency" type="string" calculate="if( /data/digestive_assessment_group/diarrhea_frequency  != '',  /data/digestive_assessment_group/diarrhea_frequency , -1)"/>
@@ -907,41 +702,9 @@ Pwosedi:
       <bind nodeset="/data/data/_physical_demeanor" type="string" calculate="if( /data/digestive_assessment_group/physical_demeanor  != '',  /data/digestive_assessment_group/physical_demeanor , 'false')"/>
       <bind nodeset="/data/data/_skin_pinch" type="string" calculate="if( /data/digestive_assessment_group/skin_pinch  != '',  /data/digestive_assessment_group/skin_pinch , 'false')"/>
       <bind nodeset="/data/data/_sunken_eyes" type="string" calculate="if( /data/digestive_assessment_group/sunken_eyes  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/data/_calc_gastritis" type="string" calculate="if( /data/calc_gastritis ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_calc_dehydration" type="string" calculate="if( /data/calc_dehydration ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_calc_dysentery" type="string" calculate="if( /data/calc_dysentery ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_ors" type="string" calculate="if( /data/actions_confirmation/ors  != '',  /data/actions_confirmation/ors , -1)"/>
-      <bind nodeset="/data/data/_litacid_gel" type="string" calculate="if( /data/actions_confirmation/litacid_gel  != '',  /data/actions_confirmation/litacid_gel , -1)"/>
-      <bind nodeset="/data/data/_zinc_tablets_20mg" type="string" calculate="if( /data/actions_confirmation/zinc_tablets_20mg  != '',  /data/actions_confirmation/zinc_tablets_20mg , -1)"/>
-      <bind nodeset="/data/data/_co_trimoxazole_tablets_400_80mg" type="string" calculate="if( /data/actions_confirmation/co_trimoxazole_tablets_400_80mg  != '',  /data/actions_confirmation/co_trimoxazole_tablets_400_80mg , -1)"/>
-      <bind nodeset="/data/data/_metronidazole_200mg" type="string" calculate="if( /data/actions_confirmation/metronidazole_200mg  != '',  /data/actions_confirmation/metronidazole_200mg , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;YAA_Form001_DigestiveConditions&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/litacid_gel_200ml_used_in_YAA_Form001_DigestiveConditions" type="string" calculate=" /data/actions_confirmation/litacid_gel "/>
-      <bind nodeset="/data/prescription_summary/fields/ors_used_in" type="string" calculate=" /data/actions_confirmation/ors "/>
-      <bind nodeset="/data/prescription_summary/fields/ors___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ors___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ors_used_in_YAA_Form001_DigestiveConditions" type="string" calculate=" /data/prescription_summary/fields/ors___set  * X +  /data/prescription_summary/fields/ors___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/zinc_tablets_20mg_used_in" type="string" calculate=" /data/actions_confirmation/zinc_tablets_20mg "/>
-      <bind nodeset="/data/prescription_summary/fields/zinc_tablets_20mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/zinc_tablets_20mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/zinc_tablets_20mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/zinc_tablets_20mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/zinc_tablets_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/zinc_tablets_20mg_used_in_YAA_Form001_DigestiveConditions" type="string" calculate=" /data/prescription_summary/fields/zinc_tablets_20mg___set  * X +  /data/prescription_summary/fields/zinc_tablets_20mg___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in" type="string" calculate=" /data/actions_confirmation/co_trimoxazole_tablets_400_80mg "/>
-      <bind nodeset="/data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg_used_in_YAA_Form001_DigestiveConditions" type="string" calculate=" /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg___set  * X +  /data/prescription_summary/fields/co_trimoxazole_tablets_400_80mg___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_200mg_used_in" type="string" calculate=" /data/actions_confirmation/metronidazole_200mg "/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_200mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_200mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_200mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_200mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metronidazole_200mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_200mg_used_in_YAA_Form001_DigestiveConditions" type="string" calculate=" /data/prescription_summary/fields/metronidazole_200mg___set  * X +  /data/prescription_summary/fields/metronidazole_200mg___unit "/>
+      <bind nodeset="/data/data/_result_gastritis" type="string" calculate="if( /data/calc_gastritis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_dehydration" type="string" calculate="if( /data/calc_dehydration ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_dysentery" type="string" calculate="if( /data/calc_dysentery ='true', 'true', 'false')"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1050,37 +813,6 @@ Pwosedi:
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <input ref="/data/actions_confirmation/ors">
-        <label ref="jr:itext('/data/actions_confirmation/ors:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/litacid_gel">
-        <label ref="jr:itext('/data/actions_confirmation/litacid_gel:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/zinc_tablets_20mg">
-        <label ref="jr:itext('/data/actions_confirmation/zinc_tablets_20mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/co_trimoxazole_tablets_400_80mg">
-        <label ref="jr:itext('/data/actions_confirmation/co_trimoxazole_tablets_400_80mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/metronidazole_200mg">
-        <label ref="jr:itext('/data/actions_confirmation/metronidazole_200mg:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

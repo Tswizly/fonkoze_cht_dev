@@ -15,12 +15,9 @@
             <value>The child is unable to drink or breastfeed</value>
           </text>
           <text id="respiratory_danger_signs-1">
-            <value>The child vomits everything</value>
-          </text>
-          <text id="respiratory_danger_signs-2">
             <value>The child has had convulsions or is actively convulsing now</value>
           </text>
-          <text id="respiratory_danger_signs-3">
+          <text id="respiratory_danger_signs-2">
             <value>The child is lethargic or unconscious</value>
           </text>
           <text id="cough_danger_signs-0">
@@ -37,27 +34,6 @@
           </text>
           <text id="cough_danger_signs-4">
             <value>Fast breathing</value>
-          </text>
-          <text id="followed_up_conditions-0">
-            <value>Severe Pneumonia</value>
-          </text>
-          <text id="followed_up_conditions-1">
-            <value>Pneumonia</value>
-          </text>
-          <text id="followed_up_conditions-2">
-            <value>Tonsillitis</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Cough or Cold</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Zanmi Lasante health center in Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Hopital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Hopital Alma Mater in Gros Morne town</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
@@ -155,6 +131,12 @@
           <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
             <value>Look, listen and feel for chest indrawing, stridor, wheezing, and nasal flaring. Child must be calm.</value>
           </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>The child exhibits wheezing with fast breathing or chest indrawing. Administer nebulizer treatment with 2.5 mg Salbutamol in saline solution for 15 minutes. Reassess breathing rate and chest indrawing after nebulization.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Do you have the equipment and medication to administer nebulizer treatment?</value>
+          </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
             <value>After nebulising, does the child still exhibit fast breathing?</value>
           </text>
@@ -183,97 +165,43 @@
             <value>Results</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia:label">
-            <value>SEVERE PNEUMONIA or VERY SEVERE DISEASE</value>
+            <value>Severe Pneumonia or Very Severe Disease</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia_action:label">
-            <value>Give first dose of an appropriate antibiotic. Acetaminophen. Refer URGENTLY to the hospital. Strict referral: warn parent that if they don't go they'll lose the child</value>
+            <value>The child may have severe pnemonia or another severe disease. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
-            <value>PNEUMONIA</value>
+            <value>Pneumonia</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>Give oral Amoxicillin oral suspension for 5 days. If wheezing: Nebulization. Advise mother to go to hospital if fever doesn't go down.</value>
+            <value>The child may have Pneumonia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold:label">
-            <value>COUGH OR COLD</value>
+            <value>Cough or Cold</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold_action:label">
-            <value>If wheezing: nebulizer. Prescribe a syringe and saline solution to clear out nose.</value>
+            <value>The child may have a cough or cold. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>TONSILLITIS</value>
+            <value>Tonsilitis</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>Acetaminophen sirup. Give oral Amoxicillin oral suspension for 5 days. Nurse will call in 7 days to find out how child is doing.</value>
+            <value>The child has Tonsilitis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Flu-Like Syndrome</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>The child may have Flu-Like Syndrome. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Results</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Which location did you refer the patient?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:label">
-            <value>How many Amoxicillin oral suspension 250mg/5ml were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>How many Acetaminophen oral suspension 120mg/5ml were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:label">
-            <value>How many Salbutamol nebules 2.5 mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:label">
-            <value>How many Salbutamol sirup 2mg/5ml were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:label">
-            <value>How many Ceftriaxole IM 50mg/kg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:label">
-            <value>How many Ipratropium were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:label">
-            <value>How many Vitamin C were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:label">
-            <value>How many Nasal saline drops were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:label">
-            <value>How many Cephalexin were distributed?</value>
+          <text id="/data/nebulizer_administered:label">
+            <value>-</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -287,12 +215,9 @@
             <value>L'enfant est incapable de boire ou de téter</value>
           </text>
           <text id="respiratory_danger_signs-1">
-            <value>L'enfant vomit tout</value>
-          </text>
-          <text id="respiratory_danger_signs-2">
             <value>L'enfant a eu des convulsions ou convulse actuellement</value>
           </text>
-          <text id="respiratory_danger_signs-3">
+          <text id="respiratory_danger_signs-2">
             <value>L'enfant est léthargique ou inconscient</value>
           </text>
           <text id="cough_danger_signs-0">
@@ -309,27 +234,6 @@
           </text>
           <text id="cough_danger_signs-4">
             <value>Respiration rapide</value>
-          </text>
-          <text id="followed_up_conditions-0">
-            <value>Pneumonie sévère</value>
-          </text>
-          <text id="followed_up_conditions-1">
-            <value>Pneumonie</value>
-          </text>
-          <text id="followed_up_conditions-2">
-            <value>Amygdalite</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Toux ou rhume</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Hôpital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Hôpital Alma Mater dans la ville de Gros Morne</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
@@ -374,7 +278,7 @@
             <value>Téléphone de l'infirmière</value>
           </text>
           <text id="/data/respiratory_checkup_group:label">
-            <value>Bilan Respiratoire</value>
+            <value>Examen respiratoire</value>
           </text>
           <text id="/data/respiratory_checkup_group/respiratory_danger_signs:label">
             <value>L'enfant présente-t-il l'un des signes de danger suivants ?</value>
@@ -395,7 +299,7 @@
             <value>Depuis combien de temps l'enfant a-t-il de la fièvre ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/extended_fever_duration:label">
-            <value>Si l'enfant a eu de la fièvre pendant plus de 7 jours, la fièvre a-t-elle été présente tous les jours ?</value>
+            <value>Si l'enfant a eu de la fièvre pendant plus de 7 jours, la fièvre était-elle présente tous les jours ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/child_coughing:label">
             <value>L'enfant tousse-t-il ou a-t-il des difficultés à respirer ?</value>
@@ -404,7 +308,7 @@
             <value>Ne peut pas dépasser 99 jours</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_duration:label">
-            <value>Depuis combien de jours l'enfant tousse-t-il ?</value>
+            <value>Depuis combien de temps l'enfant tousse-t-il, en jours ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg">
             <value>Ne peut pas dépasser 999</value>
@@ -422,19 +326,25 @@
             <value>À l'aide de l'oxymètre de pouls, déterminez la saturation en oxygène de l'enfant.</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_danger_signs:label">
-            <value>Lequel des signes de danger de toux suivants l'enfant présente-t-il, le cas échéant ?</value>
+            <value>Parmi les signes de toux suivants, lesquels l'enfant présente-t-il, le cas échéant ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
             <value>Regardez, écoutez et sentez le tirage thoracique, le stridor, la respiration sifflante et le battement des ailes du nez. L'enfant doit être calme.</value>
           </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>L'enfant présente une respiration sifflante avec une respiration rapide ou un tirage thoracique. Administrer un traitement par nébulisation avec 2,5 mg de salbutamol dans une solution saline pendant 15 minutes. Réévaluer la fréquence respiratoire et le tirage après nébulisation.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Avez-vous l'équipement et les médicaments nécessaires (nébuliseur et salbutamol) pour administrer la nébulisation ?</value>
+          </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
-            <value>Après la nébulisation, l'enfant a-t-il toujours une respiration rapide ?</value>
+            <value>Après la nébulisation, l'enfant présente-t-il toujours une respiration rapide ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_breathing:hint">
             <value>Si l'enfant a une respiration sifflante avec une respiration rapide ou un tirage thoracique, l'infirmière fera une nébulisation puis refera le compte des respirations et cherchera un tirage thoracique, puis classera.</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label">
-            <value>Après la nébulisation, l'enfant présente-t-il toujours un tirage thoracique ?</value>
+            <value>Après la nébulisation, l'enfant présente-t-il toujours un tirage intercostal ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint">
             <value>Si l'enfant a une respiration sifflante avec une respiration rapide ou un tirage thoracique, l'infirmière fera une nébulisation puis refera le compte des respirations et cherchera un tirage thoracique, puis classera.</value>
@@ -443,109 +353,55 @@
             <value>L'enfant a-t-il le nez qui coule ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/poor_appetite:label">
-            <value>L'enfant a-t-il un manque d'appétit ?</value>
+            <value>L'enfant a-t-il peu d'appétit ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/sore_throat:label">
             <value>L'enfant a-t-il mal à la gorge ?</value>
           </text>
           <text id="/data/respiratory_checkup_group/throat_appearance:label">
-            <value>La gorge semble-t-elle rouge, enflée ou couverte de pus lors de l'inspection ?</value>
+            <value>La gorge paraît-elle rouge, enflée ou recouverte de pus à l'examen ?</value>
+          </text>
+          <text id="/data/nebulizer_administered:label">
+            <value>Le traitement par nébulisation a-t-il été administré à l'enfant ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia:label">
-            <value>PNEUMONIE SÉVÈRE ou MALADIE TRÈS SÉVÈRE</value>
+            <value>Pneumonie grave ou maladie très grave</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia_action:label">
-            <value>Donnez la première dose d'un antibiotique approprié. Acétaminophène. Référer D'URGENCE à l'hôpital. Référence stricte : avertissez le parent que s'ils n'y vont pas, ils perdront l'enfant</value>
+            <value>L'enfant peut souffrir d'une pneumonie sévère ou d'une autre maladie grave. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
-            <value>PNEUMONIE</value>
+            <value>Pneumonie</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>Donnez une suspension orale d'Amoxicilline pendant 5 jours. En cas de respiration sifflante : Nébulisation. Conseillez à la mère d'aller à l'hôpital si la fièvre ne baisse pas.</value>
+            <value>L'enfant pourrait avoir une pneumonie. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold:label">
-            <value>TOUX OU RHUME</value>
+            <value>Toux ou rhume</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold_action:label">
-            <value>En cas de respiration sifflante : nébuliseur. Prescrire une seringue et une solution saline pour dégager le nez.</value>
+            <value>L'enfant peut avoir une toux ou un rhume. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>AMYGDALITE</value>
+            <value>Amygdalite</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>Sirop d'acétaminophène. Donnez une suspension orale d'Amoxicilline pendant 5 jours. L'infirmière appellera dans 7 jours pour savoir comment va l'enfant.</value>
+            <value>L'enfant souffre d'une angine. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Syndrome grippal</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>L'enfant présente peut-être un syndrome grippal. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>À quel endroit avez-vous référé le patient ?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:label">
-            <value>Combien de Amoxicillin oral suspension 250mg/5ml ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>Combien de Acetaminophen oral suspension 120mg/5ml ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:label">
-            <value>Combien de Salbutamol nebules 2.5 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:label">
-            <value>Combien de Salbutamol sirup 2mg/5ml ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:label">
-            <value>Combien de Ceftriaxole IM 50mg/kg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:label">
-            <value>Combien de Ipratropium ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:label">
-            <value>Combien de Vitamin C ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:label">
-            <value>Combien de Nasal saline drops ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:label">
-            <value>Combien de Cephalexin ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -601,6 +457,9 @@
           <text id="/data/patient_age_in_weeks:label">
             <value>-</value>
           </text>
+          <text id="/data/calc_fast_breathing:label">
+            <value>-</value>
+          </text>
         </translation>
         <translation lang="cr">
           <text id="yes_no-0">
@@ -613,12 +472,9 @@
             <value>Timoun nan pa kapab bwè oswa tete</value>
           </text>
           <text id="respiratory_danger_signs-1">
-            <value>Timoun nan vomi tout bagay</value>
-          </text>
-          <text id="respiratory_danger_signs-2">
             <value>Timoun nan te fè kriz oswa li ap fè kriz kounye a</value>
           </text>
-          <text id="respiratory_danger_signs-3">
+          <text id="respiratory_danger_signs-2">
             <value>Timoun nan fèb anpil oswa li endispoze</value>
           </text>
           <text id="cough_danger_signs-0">
@@ -635,27 +491,6 @@
           </text>
           <text id="cough_danger_signs-4">
             <value>Respire vit</value>
-          </text>
-          <text id="followed_up_conditions-0">
-            <value>Nemoni grav</value>
-          </text>
-          <text id="followed_up_conditions-1">
-            <value>Nemoni</value>
-          </text>
-          <text id="followed_up_conditions-2">
-            <value>Amigdalit</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Tous oswa rim</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Lopital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Lopital Alma Mater nan vil Gros Morne</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Sous</value>
@@ -703,7 +538,7 @@
             <value>Tcheke Respiratwa</value>
           </text>
           <text id="/data/respiratory_checkup_group/respiratory_danger_signs:label">
-            <value>Èske timoun nan gen nenpòt nan siy danje sa yo?</value>
+            <value>Èske timoun nan montre nenpòt nan siy danje sa yo?</value>
           </text>
           <text id="/data/respiratory_checkup_group/fever_presence:label">
             <value>Èske timoun nan gen lafyèv?</value>
@@ -721,7 +556,7 @@
             <value>Depi konbyen tan timoun nan gen lafyèv?</value>
           </text>
           <text id="/data/respiratory_checkup_group/extended_fever_duration:label">
-            <value>Si timoun nan te gen lafyèv plis pase 7 jou, èske lafyèv la te la chak jou?</value>
+            <value>Si timoun nan gen lafyèv pou plis pase 7 jou, èske lafyèv la te prezan chak jou?</value>
           </text>
           <text id="/data/respiratory_checkup_group/child_coughing:label">
             <value>Èske timoun nan ap touse oswa li gen difikilte pou l respire?</value>
@@ -730,13 +565,13 @@
             <value>Pa ka depase 99 jou</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_duration:label">
-            <value>Depi konbyen jou timoun nan ap touse?</value>
+            <value>Konbyen tan timoun nan genyen depi l ap touse, an jou?</value>
           </text>
           <text id="/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg">
             <value>Pa ka depase 999</value>
           </text>
           <text id="/data/respiratory_checkup_group/breathing_rate:label">
-            <value>Konte konbyen fwa li respire nan yon minit. Ou ka itilize yon oksimèt.</value>
+            <value>Konte kantite respirasyon pandan yon minit. Ou ka itilize yon oksimèt batman kè.</value>
           </text>
           <text id="/data/respiratory_checkup_group/breathing_rate:hint">
             <value>Timoun nan dwe kalm.</value>
@@ -745,13 +580,19 @@
             <value>Pa ka depase 100</value>
           </text>
           <text id="/data/respiratory_checkup_group/oxygen_saturation:label">
-            <value>Sèvi ak oksimèt la pou wè kantite oksijèn timoun nan genyen.</value>
+            <value>Sèvi ak oksimèt batman kè a, detèmine saturasyon oksijèn timoun nan.</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_danger_signs:label">
-            <value>Kilès nan siy danje tous sa yo timoun nan genyen, si l genyen?</value>
+            <value>Kilès nan siy danje tous sa yo timoun nan montre, si genyen?</value>
           </text>
           <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
             <value>Gade, koute epi santi pwatrin k ap rale antre, stridò, souf k ap sifle, ak twou nen k ap bat. Timoun nan dwe kalm.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>Timoun nan gen souf anlè ak respirasyon rapid oswa pwatrin k ap rale antre. Administre tretman nebulizè avèk 2.5 mg Salbutamol nan solisyon salin pandan 15 minit. Rekonte respirasyon epi gade si pwatrin nan toujou ap rale apre nebulizasyon an.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Èske ou gen ekipman ak medikaman ki nesesè yo (nebulizè ak Salbutamol) pou fè nebulizasyon an?</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
             <value>Apre nebulizasyon an, èske timoun nan toujou ap respire vit?</value>
@@ -760,7 +601,7 @@
             <value>Si timoun nan ap soufle ak respirasyon vit oswa pwatrin k ap rale antre, enfimyè a ap fè nebulizasyon epi li pral rekòmanse konte respirasyon an epi chèche pwatrin k ap rale antre, epi klase l.</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label">
-            <value>Apre nebulizasyon an, èske timoun nan toujou gen pwatrin k ap rale antre?</value>
+            <value>Apre nebulizasyon an, èske timoun nan toujou gen yon tiraj anndan pwatrin li?</value>
           </text>
           <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint">
             <value>Si timoun nan ap soufle ak respirasyon vit oswa pwatrin k ap rale antre, enfimyè a ap fè nebulizasyon epi li pral rekòmanse konte respirasyon an epi chèche pwatrin k ap rale antre, epi klase l.</value>
@@ -769,109 +610,55 @@
             <value>Èske timoun nan gen nen k ap koule?</value>
           </text>
           <text id="/data/respiratory_checkup_group/poor_appetite:label">
-            <value>Èske timoun nan manke apeti?</value>
+            <value>Èske timoun nan pa gen anpil apeti?</value>
           </text>
           <text id="/data/respiratory_checkup_group/sore_throat:label">
-            <value>Èske timoun nan gen gòj fè mal?</value>
+            <value>Èske timoun nan gen malgòj?</value>
           </text>
           <text id="/data/respiratory_checkup_group/throat_appearance:label">
-            <value>Èske gòj la parèt wouj, anfle, oswa gen pi ladan l lè w gade l?</value>
+            <value>Èske gòj la parèt wouj, anfle, oswa kouvri ak pi lè ou enspekte li?</value>
+          </text>
+          <text id="/data/nebulizer_administered:label">
+            <value>Èske tretman nebulizè a te administre bay timoun nan?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia:label">
-            <value>NEMONI GRAV oswa MALADI TRÈ GRAV</value>
+            <value>Nemoni grav oswa maladi ki trè grav</value>
           </text>
           <text id="/data/results_group/res_severe_pneumonia_action:label">
-            <value>Bay premye dòz antibyotik ki apwopriye a. Asetaminofèn. Voye l LOPITAL IJANS. Referans strik: avèti paran an si yo pa ale y ap pèdi timoun nan</value>
+            <value>Timoun nan ka gen yon nemoni grav oswa yon lòt maladi grav. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
-            <value>NEMONI</value>
+            <value>Nemoni</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>Bay Amoksikilin siwo pandan 5 jou. Si l ap soufle: Nebulizasyon. Konseye manman an ale lopital si lafyèv la pa desann.</value>
+            <value>Timoun nan ka gen nemoni. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold:label">
-            <value>TOUS OSWA RIM</value>
+            <value>Tous oswa grip</value>
           </text>
           <text id="/data/results_group/res_cough_or_cold_action:label">
-            <value>Si l ap soufle: nebulizè. Preskri yon sereng ak dlo sèl pou netwaye nen an.</value>
+            <value>Timoun nan ka gen yon tous oswa yon grip. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>AMIGDALIT</value>
+            <value>Tonsilit</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>Siwo asetaminofèn. Bay Amoksikilin siwo pandan 5 jou. Enfimyè a ap rele nan 7 jou pou konnen kijan timoun nan ye.</value>
+            <value>Timoun nan gen amigdalit. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Sendwòm grip la</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>Timoun nan ka gen Sendwòm Grip la. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Ki kote ou te voye pasyan an?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:label">
-            <value>Konbyen Amoxicillin oral suspension 250mg/5ml yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>Konbyen Acetaminophen oral suspension 120mg/5ml yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_nebules_2_5mg:label">
-            <value>Konbyen Salbutamol nebules 2.5 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_sirup_2mg_5ml:label">
-            <value>Konbyen Salbutamol sirup 2mg/5ml yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ceftriaxole_im_50mg_kg:label">
-            <value>Konbyen Ceftriaxole IM 50mg/kg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ipratropium:label">
-            <value>Konbyen Ipratropium yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/vitamin_c:label">
-            <value>Konbyen Vitamin C yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/nasal_saline_drops:label">
-            <value>Konbyen Nasal saline drops yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/cephalexin:label">
-            <value>Konbyen Cephalexin yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -927,10 +714,13 @@
           <text id="/data/patient_age_in_weeks:label">
             <value>-</value>
           </text>
+          <text id="/data/calc_fast_breathing:label">
+            <value>-</value>
+          </text>
         </translation>
       </itext>
       <instance>
-        <data id="CHD_Form002_RespiratoryInfections" version="20260925024251" prefix="J1!CHD_Form002_RespiratoryInfections!" delimiter="#">
+        <data id="CHD_Form002_RespiratoryInfections" version="20261011180619" prefix="J1!CHD_Form002_RespiratoryInfections!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -979,6 +769,7 @@
           <patient_age_in_months/>
           <patient_age_in_days/>
           <patient_age_in_weeks/>
+          <calc_fast_breathing/>
           <respiratory_checkup_group>
             <respiratory_danger_signs/>
             <fever_presence/>
@@ -990,6 +781,8 @@
             <breathing_rate/>
             <oxygen_saturation/>
             <cough_danger_signs/>
+            <nebulizer_instructions_note/>
+            <has_nebulizer_equipment/>
             <after_nebulising_breathing/>
             <after_nebulising_chest_indrawing/>
             <runny_nose/>
@@ -997,10 +790,12 @@
             <sore_throat/>
             <throat_appearance/>
           </respiratory_checkup_group>
+          <nebulizer_administered/>
           <calc_severe_pneumonia/>
           <calc_pneumonia/>
           <calc_tonsillitis/>
           <calc_cough_or_cold/>
+          <calc_flu_like_syndrome/>
           <results_group>
             <res_severe_pneumonia/>
             <res_severe_pneumonia_action/>
@@ -1010,23 +805,12 @@
             <res_cough_or_cold_action/>
             <res_tonsillitis/>
             <res_tonsillitis_action/>
+            <res_flu_like_syndrome/>
+            <res_flu_like_syndrome_action/>
           </results_group>
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <referal/>
-            <amoxicillin_oral_suspension_250mg_5ml/>
-            <acetaminophen_oral_suspension_120mg_5ml/>
-            <salbutamol_nebules_2_5mg/>
-            <salbutamol_sirup_2mg_5ml/>
-            <ceftriaxole_im_50mg_kg/>
-            <ipratropium/>
-            <vitamin_c/>
-            <nasal_saline_drops/>
-            <cephalexin/>
-          </actions_confirmation>
           <data>
             <_respiratory_danger_signs/>
             <_fever_presence/>
@@ -1039,6 +823,7 @@
             <_oxygen_saturation/>
             <_cough_danger_signs/>
             <_after_nebulising_breathing/>
+            <_nebulizer_used/>
             <_after_nebulising_chest_indrawing/>
             <_runny_nose/>
             <_poor_appetite/>
@@ -1048,49 +833,9 @@
             <_result_pneumonia/>
             <_result_tonsillitis/>
             <_result_cough_or_cold/>
-            <_followed_up_conditions/>
-            <_referal/>
-            <_amoxicillin_oral_suspension_250mg_5ml/>
-            <_acetaminophen_oral_suspension_120mg_5ml/>
-            <_salbutamol_nebules_2_5mg/>
-            <_salbutamol_sirup_2mg_5ml/>
-            <_ceftriaxole_im_50mg_kg/>
-            <_ipratropium/>
-            <_vitamin_c/>
-            <_nasal_saline_drops/>
-            <_cephalexin/>
+            <_result_flu_like_syndrome/>
+            <_fast_breathing/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <amoxicillin_oral_suspension_250mg_5ml_used_in_CHD_Form002_RespiratoryInfections/>
-              <acetaminophen_oral_suspension_120mg_5ml_used_in_CHD_Form002_RespiratoryInfections/>
-              <salbutamol_nebules_2_5mg_used_in_CHD_Form002_RespiratoryInfections/>
-              <salbutamol_sirup_2mg_5ml_used_in_CHD_Form002_RespiratoryInfections/>
-              <ceftriaxole_im_50mg_kg_used_in_CHD_Form002_RespiratoryInfections/>
-              <ipratropium_used_in_CHD_Form002_RespiratoryInfections/>
-              <vitamin_c_used_in/>
-              <vitamin_c___set/>
-              <vitamin_c___unit/>
-              <vitamin_c_used_in_CHD_Form002_RespiratoryInfections/>
-              <nasal_saline_drops_used_in_CHD_Form002_RespiratoryInfections/>
-              <cephalexin_used_in/>
-              <cephalexin___set/>
-              <cephalexin___unit/>
-              <cephalexin_used_in_CHD_Form002_RespiratoryInfections/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -1118,14 +863,10 @@
           </item>
           <item>
             <itextId>respiratory_danger_signs-1</itextId>
-            <name>vomiting</name>
-          </item>
-          <item>
-            <itextId>respiratory_danger_signs-2</itextId>
             <name>convulsions</name>
           </item>
           <item>
-            <itextId>respiratory_danger_signs-3</itextId>
+            <itextId>respiratory_danger_signs-2</itextId>
             <name>lethargy_unconscious</name>
           </item>
         </root>
@@ -1151,42 +892,6 @@
           <item>
             <itextId>cough_danger_signs-4</itextId>
             <name>fast_breathing</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="followed_up_conditions">
-        <root>
-          <item>
-            <itextId>followed_up_conditions-0</itextId>
-            <name>severe_pneumonia</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-1</itextId>
-            <name>pneumonia</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-2</itextId>
-            <name>tonsillitis</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-3</itextId>
-            <name>cough_or_cold</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="referal_locations">
-        <root>
-          <item>
-            <itextId>referal_locations-0</itextId>
-            <name>zl</name>
-          </item>
-          <item>
-            <itextId>referal_locations-1</itextId>
-            <name>hst</name>
-          </item>
-          <item>
-            <itextId>referal_locations-2</itextId>
-            <name>ham</name>
           </item>
         </root>
       </instance>
@@ -1217,6 +922,7 @@
       <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/calc_fast_breathing" type="string" calculate="if(( /data/patient_age_in_months  &lt; 12 and  /data/respiratory_checkup_group/breathing_rate  &gt;= 50) or ( /data/patient_age_in_months  &gt;= 12 and  /data/respiratory_checkup_group/breathing_rate  &gt;= 40), 'true', 'false')"/>
       <bind nodeset="/data/respiratory_checkup_group/respiratory_danger_signs" type="string"/>
       <bind nodeset="/data/respiratory_checkup_group/fever_presence" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/child_temperature" type="decimal" relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes'" constraint=". &gt;= 90 and . &lt;= 110" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/child_temperature:jr:constraintMsg')"/>
@@ -1227,17 +933,21 @@
       <bind nodeset="/data/respiratory_checkup_group/breathing_rate" type="int" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" constraint=". &lt;= 999" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg')"/>
       <bind nodeset="/data/respiratory_checkup_group/oxygen_saturation" type="decimal" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" constraint=". &lt;= 100" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/oxygen_saturation:jr:constraintMsg')"/>
       <bind nodeset="/data/respiratory_checkup_group/cough_danger_signs" type="string" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'"/>
-      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_breathing" type="string" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')"/>
-      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_chest_indrawing" type="string" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')"/>
+      <bind nodeset="/data/respiratory_checkup_group/nebulizer_instructions_note" readonly="true()" type="string" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing'))"/>
+      <bind nodeset="/data/respiratory_checkup_group/has_nebulizer_equipment" type="string" required="true()" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing'))"/>
+      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_breathing" type="string" required="true()" relevant=" /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes'"/>
+      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_chest_indrawing" type="string" required="true()" relevant=" /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes'"/>
       <bind nodeset="/data/respiratory_checkup_group/runny_nose" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/poor_appetite" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/sore_throat" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/throat_appearance" type="string" required="true()"/>
+      <bind nodeset="/data/nebulizer_administered" type="string" calculate="if( /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes' and  /data/respiratory_checkup_group/after_nebulising_breathing  != '' and  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  != '', 'true', false')"/>
       <bind nodeset="/data/calc_severe_pneumonia" type="string" calculate="if(count-selected( /data/respiratory_checkup_group/respiratory_danger_signs ) &gt; 0 or selected( /data/respiratory_checkup_group/cough_danger_signs , 'stridor') or  /data/respiratory_checkup_group/oxygen_saturation  &lt; 90, 'true', 'false')"/>
-      <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and (selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing') or selected( /data/respiratory_checkup_group/cough_danger_signs , 'fast_breathing') or selected( /data/respiratory_checkup_group/cough_danger_signs , 'nasal_flaring')), 'true', 'false')"/>
+      <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and (selected( /data/respiratory_checkup_group/cough_danger_signs , 'nasal_flaring') or (selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/respiratory_checkup_group/after_nebulising_breathing  = 'yes' or  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  = 'yes')) or (not(selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')) and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing')))), 'true', 'false')"/>
       <bind nodeset="/data/calc_tonsillitis" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/sore_throat  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes' and  /data/respiratory_checkup_group/throat_appearance  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/calc_cough_or_cold" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')"/>
-      <bind nodeset="/data/results_group" relevant=" /data/calc_severe_pneumonia  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_tonsillitis  = 'true' or  /data/calc_cough_or_cold  = 'true'"/>
+      <bind nodeset="/data/calc_cough_or_cold" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_flu_like_syndrome  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_flu_like_syndrome" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/runny_nose  = 'yes' and  /data/respiratory_checkup_group/child_coughing  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_severe_pneumonia  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_tonsillitis  = 'true' or  /data/calc_cough_or_cold  = 'true' or  /data/calc_flu_like_syndrome  = 'true'"/>
       <bind nodeset="/data/results_group/res_severe_pneumonia" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_severe_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
@@ -1246,19 +956,10 @@
       <bind nodeset="/data/results_group/res_cough_or_cold_action" readonly="true()" type="string" relevant=" /data/calc_cough_or_cold  = 'true'"/>
       <bind nodeset="/data/results_group/res_tonsillitis" readonly="true()" type="string" relevant=" /data/calc_tonsillitis  = 'true'"/>
       <bind nodeset="/data/results_group/res_tonsillitis_action" readonly="true()" type="string" relevant=" /data/calc_tonsillitis  = 'true'"/>
-      <bind nodeset="/data/null_results_group" relevant=" /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_cough_or_cold  != 'true'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome_action" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_cough_or_cold  != 'true' and  /data/calc_flu_like_syndrome  != 'true'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'severe_pneumonia')"/>
-      <bind nodeset="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia') or selected( /data/actions_confirmation/followed_up_conditions , 'tonsillitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'severe_pneumonia') or selected( /data/actions_confirmation/followed_up_conditions , 'tonsillitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/salbutamol_nebules_2_5mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia') or selected( /data/actions_confirmation/followed_up_conditions , 'cough_or_cold')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/salbutamol_nebules_2_5mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/salbutamol_sirup_2mg_5ml" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia') or selected( /data/actions_confirmation/followed_up_conditions , 'cough_or_cold')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/salbutamol_sirup_2mg_5ml:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/ceftriaxole_im_50mg_kg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'severe_pneumonia')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ceftriaxole_im_50mg_kg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/ipratropium" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia') or selected( /data/actions_confirmation/followed_up_conditions , 'cough_or_cold')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ipratropium:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/vitamin_c" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'cough_or_cold')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/vitamin_c:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/nasal_saline_drops" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'cough_or_cold')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/nasal_saline_drops:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/cephalexin" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'tonsillitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/cephalexin:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_respiratory_danger_signs" type="string" calculate="if( /data/respiratory_checkup_group/respiratory_danger_signs  != '',  /data/respiratory_checkup_group/respiratory_danger_signs , 'false')"/>
       <bind nodeset="/data/data/_fever_presence" type="string" calculate="if( /data/respiratory_checkup_group/fever_presence  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_child_temperature" type="string" calculate="if( /data/respiratory_checkup_group/child_temperature  != '',  /data/respiratory_checkup_group/child_temperature , -1)"/>
@@ -1270,6 +971,7 @@
       <bind nodeset="/data/data/_oxygen_saturation" type="string" calculate="if( /data/respiratory_checkup_group/oxygen_saturation  != '',  /data/respiratory_checkup_group/oxygen_saturation , -1)"/>
       <bind nodeset="/data/data/_cough_danger_signs" type="string" calculate="if( /data/respiratory_checkup_group/cough_danger_signs  != '',  /data/respiratory_checkup_group/cough_danger_signs , 'false')"/>
       <bind nodeset="/data/data/_after_nebulising_breathing" type="string" calculate="if( /data/respiratory_checkup_group/after_nebulising_breathing  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_nebulizer_used" type="string" calculate="if( /data/nebulizer_administered  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/data/_after_nebulising_chest_indrawing" type="string" calculate="if( /data/respiratory_checkup_group/after_nebulising_chest_indrawing  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_runny_nose" type="string" calculate="if( /data/respiratory_checkup_group/runny_nose  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_poor_appetite" type="string" calculate="if( /data/respiratory_checkup_group/poor_appetite  = 'yes', 'true', 'false')"/>
@@ -1279,42 +981,8 @@
       <bind nodeset="/data/data/_result_pneumonia" type="string" calculate="if( /data/calc_pneumonia ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_tonsillitis" type="string" calculate="if( /data/calc_tonsillitis ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_cough_or_cold" type="string" calculate="if( /data/calc_cough_or_cold ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
-      <bind nodeset="/data/data/_amoxicillin_oral_suspension_250mg_5ml" type="string" calculate="if( /data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml  != '',  /data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml , -1)"/>
-      <bind nodeset="/data/data/_acetaminophen_oral_suspension_120mg_5ml" type="string" calculate="if( /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml  != '',  /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml , -1)"/>
-      <bind nodeset="/data/data/_salbutamol_nebules_2_5mg" type="string" calculate="if( /data/actions_confirmation/salbutamol_nebules_2_5mg  != '',  /data/actions_confirmation/salbutamol_nebules_2_5mg , -1)"/>
-      <bind nodeset="/data/data/_salbutamol_sirup_2mg_5ml" type="string" calculate="if( /data/actions_confirmation/salbutamol_sirup_2mg_5ml  != '',  /data/actions_confirmation/salbutamol_sirup_2mg_5ml , -1)"/>
-      <bind nodeset="/data/data/_ceftriaxole_im_50mg_kg" type="string" calculate="if( /data/actions_confirmation/ceftriaxole_im_50mg_kg  != '',  /data/actions_confirmation/ceftriaxole_im_50mg_kg , -1)"/>
-      <bind nodeset="/data/data/_ipratropium" type="string" calculate="if( /data/actions_confirmation/ipratropium  != '',  /data/actions_confirmation/ipratropium , -1)"/>
-      <bind nodeset="/data/data/_vitamin_c" type="string" calculate="if( /data/actions_confirmation/vitamin_c  != '',  /data/actions_confirmation/vitamin_c , -1)"/>
-      <bind nodeset="/data/data/_nasal_saline_drops" type="string" calculate="if( /data/actions_confirmation/nasal_saline_drops  != '',  /data/actions_confirmation/nasal_saline_drops , -1)"/>
-      <bind nodeset="/data/data/_cephalexin" type="string" calculate="if( /data/actions_confirmation/cephalexin  != '',  /data/actions_confirmation/cephalexin , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;CHD_Form002_RespiratoryInfections&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/amoxicillin_oral_suspension_250mg_5ml_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml "/>
-      <bind nodeset="/data/prescription_summary/fields/acetaminophen_oral_suspension_120mg_5ml_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml "/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_nebules_2_5mg_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/salbutamol_nebules_2_5mg "/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_sirup_2mg_5ml_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/salbutamol_sirup_2mg_5ml "/>
-      <bind nodeset="/data/prescription_summary/fields/ceftriaxole_im_50mg_kg_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/ceftriaxole_im_50mg_kg "/>
-      <bind nodeset="/data/prescription_summary/fields/ipratropium_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/ipratropium "/>
-      <bind nodeset="/data/prescription_summary/fields/vitamin_c_used_in" type="string" calculate=" /data/actions_confirmation/vitamin_c "/>
-      <bind nodeset="/data/prescription_summary/fields/vitamin_c___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/vitamin_c_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/vitamin_c___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/vitamin_c_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/vitamin_c_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/vitamin_c_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/prescription_summary/fields/vitamin_c___set  * 1 +  /data/prescription_summary/fields/vitamin_c___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/nasal_saline_drops_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/actions_confirmation/nasal_saline_drops "/>
-      <bind nodeset="/data/prescription_summary/fields/cephalexin_used_in" type="string" calculate=" /data/actions_confirmation/cephalexin "/>
-      <bind nodeset="/data/prescription_summary/fields/cephalexin___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cephalexin_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/cephalexin___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cephalexin_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/cephalexin_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/cephalexin_used_in_CHD_Form002_RespiratoryInfections" type="string" calculate=" /data/prescription_summary/fields/cephalexin___set  * 1 +  /data/prescription_summary/fields/cephalexin___unit "/>
+      <bind nodeset="/data/data/_result_flu_like_syndrome" type="string" calculate="if( /data/calc_flu_like_syndrome ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_fast_breathing" type="string" calculate="if( /data/calc_fast_breathing  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1392,6 +1060,16 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
+      <input ref="/data/respiratory_checkup_group/nebulizer_instructions_note">
+        <label ref="jr:itext('/data/respiratory_checkup_group/nebulizer_instructions_note:label')"/>
+      </input>
+      <select1 ref="/data/respiratory_checkup_group/has_nebulizer_equipment">
+        <label ref="jr:itext('/data/respiratory_checkup_group/has_nebulizer_equipment:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
       <select1 ref="/data/respiratory_checkup_group/after_nebulising_breathing">
         <label ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_breathing:label')"/>
         <hint ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_breathing:hint')"/>
@@ -1463,6 +1141,12 @@
       <input ref="/data/results_group/res_tonsillitis_action">
         <label ref="jr:itext('/data/results_group/res_tonsillitis_action:label')"/>
       </input>
+      <input ref="/data/results_group/res_flu_like_syndrome" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome:label')"/>
+      </input>
+      <input ref="/data/results_group/res_flu_like_syndrome_action">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome_action:label')"/>
+      </input>
     </group>
     <group appearance="field-list summary" ref="/data/null_results_group">
       <label ref="jr:itext('/data/null_results_group:label')"/>
@@ -1470,56 +1154,6 @@
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select1 ref="/data/actions_confirmation/referal">
-        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml">
-        <label ref="jr:itext('/data/actions_confirmation/amoxicillin_oral_suspension_250mg_5ml:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml">
-        <label ref="jr:itext('/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/salbutamol_nebules_2_5mg">
-        <label ref="jr:itext('/data/actions_confirmation/salbutamol_nebules_2_5mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/salbutamol_sirup_2mg_5ml">
-        <label ref="jr:itext('/data/actions_confirmation/salbutamol_sirup_2mg_5ml:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/ceftriaxole_im_50mg_kg">
-        <label ref="jr:itext('/data/actions_confirmation/ceftriaxole_im_50mg_kg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/ipratropium">
-        <label ref="jr:itext('/data/actions_confirmation/ipratropium:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/vitamin_c">
-        <label ref="jr:itext('/data/actions_confirmation/vitamin_c:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/nasal_saline_drops">
-        <label ref="jr:itext('/data/actions_confirmation/nasal_saline_drops:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/cephalexin">
-        <label ref="jr:itext('/data/actions_confirmation/cephalexin:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

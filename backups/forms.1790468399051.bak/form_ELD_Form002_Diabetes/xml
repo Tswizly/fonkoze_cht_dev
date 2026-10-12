@@ -1,0 +1,1014 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Diabetes</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="diabetes_symptoms-0">
+            <value>Appears tired or lethargic</value>
+          </text>
+          <text id="diabetes_symptoms-1">
+            <value>Experienced weight loss</value>
+          </text>
+          <text id="diabetes_symptoms-2">
+            <value>Frequent urination</value>
+          </text>
+          <text id="diabetes_symptoms-3">
+            <value>Wants to eat a lot</value>
+          </text>
+          <text id="diabetes_symptoms-4">
+            <value>Drinks a lot</value>
+          </text>
+          <text id="diabetes_symptoms-5">
+            <value>Excessive sweating / night sweats</value>
+          </text>
+          <text id="diabetes_symptoms-6">
+            <value>The patient does not exhibit symptoms but I would still like to measure their blood glucose</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Zanmi Lasante health center in Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hopital Sainte Thérèse</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/diabetes_checkup_group:label">
+            <value>Diabetes Checkup</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/diabetes_symptoms:label">
+            <value>Is the patient experiencing any of the following symptoms?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/hereditary_diabetes:label">
+            <value>Do any of the patient's relatives have diabetes?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/time_of_last_meal:label">
+            <value>Has the patient had food or drink (other than water) in the last 14 hours?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:jr:constraintMsg">
+            <value>Cannot be greater than 999</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:label">
+            <value>Blood glucose value measured by diabetes finger prick test (mg/dL):</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild:label">
+            <value>Hyperglycemia</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_declaration:label">
+            <value>The patient is hyperglycemic.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_protocol:label">
+            <value>Protocol: 
+Counseling
+- Explain that the blood sugar is higher than normal but is not dangerously high. 
+- If measurement was after a meal, request to come back to following kwen Sante Pam without having eaten for a repeat test to confirm diabetes or not</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_counseling:label">
+            <value>Advise the patient to:
+- Eat regular meals and avoid skipping meals. 
+- Reduce foods and drinks with added sugar, including soft drinks, sweetened juices, candies, cakes, and pastries. 
+- Limit large portions of rice, bread, pasta, and other refined starches. 
+- Choose whole grains, beans, vegetables, and fresh fruit. 
+- Include lean protein (beans, fish, eggs, poultry) with meals. 
+- Avoid excessive fried and fatty foods</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate:label">
+            <value>Diabetes - Hyperglycemia</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_declaration:label">
+            <value>The patient has diabetes.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_protocol:label">
+            <value>Protocol:
+- Metformin, newly diagnosed type 2 diabetes, 500 mg with breakfast during one week 
+- If well tolerated, 500 mg twice daily with meals and then back for blood glucose test,
+- If glycaemic control remains inadequate after 1–2 weeks, 
+increase by 500 mg per week
+Increase by 500 mg/day each week as tolerated</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_maintenance:label">
+            <value>Maintenance
+1,000 mg twice daily 
+(maximum 2 g/day)</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_counseling:label">
+            <value>Advise the patient to:
+- Eat regular meals and avoid skipping meals. 
+- Reduce foods and drinks with added sugar, including soft drinks, sweetened juices, candies, cakes, and pastries. 
+- Limit large portions of rice, bread, pasta, and other refined starches. 
+- Choose whole grains, beans, vegetables, and fresh fruit. 
+- Include lean protein (beans, fish, eggs, poultry) with meals. 
+- Avoid excessive fried and fatty foods</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe:label">
+            <value>Diabetes - Hyperglycemia</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_declaration:label">
+            <value>The patient has diabetes and extreme hyperglycemia.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_protocol:label">
+            <value>Protocol:
+ Refer to the appropriate institution</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Null Results Group</value>
+          </text>
+          <text id="/data/null_results_group/null_results_group_note:label">
+            <value>The patient does not require follow up actions. Submit the form.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/referal_locaiton_confirmation:label">
+            <value>Which location did you refer the patient?</value>
+          </text>
+          <text id="/data/actions_confirmation/metformin_units_distributed:label">
+            <value>How many metformin were distributed?</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="diabetes_symptoms-0">
+            <value>Semble fatigué ou léthargique</value>
+          </text>
+          <text id="diabetes_symptoms-1">
+            <value>A subi une perte de poids</value>
+          </text>
+          <text id="diabetes_symptoms-2">
+            <value>Mictions fréquentes</value>
+          </text>
+          <text id="diabetes_symptoms-3">
+            <value>Veut beaucoup manger</value>
+          </text>
+          <text id="diabetes_symptoms-4">
+            <value>Boit beaucoup</value>
+          </text>
+          <text id="diabetes_symptoms-5">
+            <value>Transpiration excessive / sueurs nocturnes</value>
+          </text>
+          <text id="diabetes_symptoms-6">
+            <value>Le patient ne présente aucun symptôme, mais je souhaiterais tout de même mesurer sa glycémie</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Hôpital Sainte Thérèse</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/diabetes_checkup_group:label">
+            <value>Bilan diabète</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/diabetes_symptoms:label">
+            <value>Le patient présente-t-il l'un des symptômes suivants ?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/hereditary_diabetes:label">
+            <value>L'un des proches du patient est-il atteint de diabète ?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/time_of_last_meal:label">
+            <value>Le patient a-t-il mangé ou bu (autre que de l'eau) au cours des 14 dernières heures ?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 999</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:label">
+            <value>Valeur de la glycémie mesurée par test de piqûre au doigt (mg/dL) :</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild:label">
+            <value>Hyperglycémie</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_declaration:label">
+            <value>Le patient est hyperglycémique.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_protocol:label">
+            <value>Protocole : 
+Conseils
+- Expliquer que la glycémie est plus élevée que la normale mais n'est pas dangereusement élevée. 
+- Si la mesure a été effectuée après un repas, demander de revenir au prochain kwen Sante Pam à jeun pour un nouveau test afin de confirmer ou non le diabète</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_counseling:label">
+            <value>Conseiller au patient de :
+- Manger à des heures régulières et éviter de sauter des repas. 
+- Réduire les aliments et les boissons contenant des sucres ajoutés, notamment les boissons gazeuses, les jus sucrés, les bonbons, les gâteaux et les pâtisseries. 
+- Limiter les grandes portions de riz, de pain, de pâtes et d'autres féculents raffinés. 
+- Choisir des céréales complètes, des haricots, des légumes et des fruits frais. 
+- Inclure des protéines maigres (haricots, poisson, œufs, volaille) aux repas. 
+- Éviter l'excès d'aliments frits et gras</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate:label">
+            <value>Diabète - Hyperglycémie</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_declaration:label">
+            <value>Le patient est diabétique.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_protocol:label">
+            <value>Protocole :
+- Metformine, diabète de type 2 nouvellement diagnostiqué, 500 mg au petit-déjeuner pendant une semaine 
+- Si bien toléré, 500 mg deux fois par jour aux repas, puis retour pour un test de glycémie,
+- Si le contrôle glycémique reste inadéquat après 1 à 2 semaines, 
+augmenter de 500 mg par semaine
+Augmenter de 500 mg/jour chaque semaine selon la tolérance</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_maintenance:label">
+            <value>Entretien
+1 000 mg deux fois par jour 
+(maximum 2 g/jour)</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_counseling:label">
+            <value>Conseiller au patient de :
+- Manger à des heures régulières et éviter de sauter des repas. 
+- Réduire les aliments et les boissons contenant des sucres ajoutés, notamment les boissons gazeuses, les jus sucrés, les bonbons, les gâteaux et les pâtisseries. 
+- Limiter les grandes portions de riz, de pain, de pâtes et d'autres féculents raffinés. 
+- Choisir des céréales complètes, des haricots, des légumes et des fruits frais. 
+- Inclure des protéines maigres (haricots, poisson, œufs, volaille) aux repas. 
+- Éviter l'excès d'aliments frits et gras</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe:label">
+            <value>Diabète - Hyperglycémie</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_declaration:label">
+            <value>Le patient est diabétique et présente une hyperglycémie extrême.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_protocol:label">
+            <value>Protocole :
+ Référer à l'institution appropriée</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Groupe de résultats nuls</value>
+          </text>
+          <text id="/data/null_results_group/null_results_group_note:label">
+            <value>Le patient ne nécessite pas de suivi. Soumettez le formulaire.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Actions</value>
+          </text>
+          <text id="/data/actions_confirmation/referal_locaiton_confirmation:label">
+            <value>À quel endroit avez-vous référé le patient ?</value>
+          </text>
+          <text id="/data/actions_confirmation/metformin_units_distributed:label">
+            <value>Combien de metformine ont été distribuées ?</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_random_glucose_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_fasting_glucose_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_hereditary_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_mild:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_moderate:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_severe:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_tiredness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_weight_loss:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_urination:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_eating:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_drinking:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_excessive_sweating:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_metformin_units_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referal_location:label">
+            <value>-</value>
+          </text>
+          <text id="/data/prescription_summary/fields/Medicine_out:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="diabetes_symptoms-0">
+            <value>Sanble fatige oswa fèb</value>
+          </text>
+          <text id="diabetes_symptoms-1">
+            <value>Pèdi pwa</value>
+          </text>
+          <text id="diabetes_symptoms-2">
+            <value>Pise souvan</value>
+          </text>
+          <text id="diabetes_symptoms-3">
+            <value>Vle manje anpil</value>
+          </text>
+          <text id="diabetes_symptoms-4">
+            <value>Bwè anpil</value>
+          </text>
+          <text id="diabetes_symptoms-5">
+            <value>Swe anpil / swe lannwit</value>
+          </text>
+          <text id="diabetes_symptoms-6">
+            <value>Pasyan an pa prezante okenn sentòm, men mwen ta renmen mezire nivo sik nan san li kanmenm</value>
+          </text>
+          <text id="referal_locations-0">
+            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
+          </text>
+          <text id="referal_locations-1">
+            <value>Lopital Sainte Thérèse</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/diabetes_checkup_group:label">
+            <value>Tcheke dyabèt</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/diabetes_symptoms:label">
+            <value>Èske pasyan an gen youn nan sentòm sa yo?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/hereditary_diabetes:label">
+            <value>Èske gen moun nan fanmi pasyan an ki gen dyabèt?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/time_of_last_meal:label">
+            <value>Èske pasyan an manje oswa bwè (lòt pase dlo) nan 14 dènye èdtan yo?</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 999</value>
+          </text>
+          <text id="/data/diabetes_checkup_group/blood_glucose:label">
+            <value>Valè glikoz nan san mezire pa tès pike dwèt dyabèt (mg/dL):</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild:label">
+            <value>Iperglisemi</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_declaration:label">
+            <value>Pasyan an gen iperglisemi.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_protocol:label">
+            <value>Pwotokòl: 
+Konsèy
+- Esplike ke sik nan san an pi wo pase nòmal men li pa twò wo. 
+- Si yo te mezire apre yon repa, mande pou l tounen nan pwochen kwen Sante Pam san l pa manje pou yon lòt tès pou konfime si l gen dyabèt oswa non</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_mild_counseling:label">
+            <value>Konseye pasyan an pou l:
+- Manje regilyèman epi evite sote repa. 
+- Diminye manje ak bwason ki gen sik ladan yo, tankou bwason gaz, ji dous, sirèt, gato, ak patisri. 
+- Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon. 
+- Chwazi grenn antye, pwa, legim, ak fwi fre. 
+- Mete pwoteyin (pwa, pwason, ze, poul) nan repa yo. 
+- Evite twòp manje fri ak gra</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate:label">
+            <value>Dyabèt - Iperglisemi</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_declaration:label">
+            <value>Pasyan an gen dyabèt.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_protocol:label">
+            <value>Pwotokòl:
+- Metformin, dyabèt tip 2 ki fèk dyagnostike, 500 mg ak manje maten pandan yon semèn 
+- Si l tolere l byen, 500 mg de fwa pa jou ak manje epi tounen pou tès glikoz nan san,
+- Si kontwòl glisemi an rete pa bon apre 1–2 semèn, 
+ogmante 500 mg chak semèn
+Ogmante 500 mg/jou chak semèn jan l ka tolere l</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_maintenance:label">
+            <value>Antretyen
+1,000 mg de fwa pa jou 
+(maksimòm 2 g/jou)</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_moderate_counseling:label">
+            <value>Konseye pasyan an pou l:
+- Manje regilyèman epi evite sote repa. 
+- Diminye manje ak bwason ki gen sik ladan yo, tankou bwason gaz, ji dous, sirèt, gato, ak patisri. 
+- Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon. 
+- Chwazi grenn antye, pwa, legim, ak fwi fre. 
+- Mete pwoteyin (pwa, pwason, ze, poul) nan repa yo. 
+- Evite twòp manje fri ak gra</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe:label">
+            <value>Dyabèt - Iperglisemi</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_declaration:label">
+            <value>Pasyan an gen dyabèt ak iperglisemi ekstrèm.</value>
+          </text>
+          <text id="/data/results_group/res_hyperglycemia_severe_protocol:label">
+            <value>Pwotokòl:
+ Voye l nan enstitisyon ki apwopriye a</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Gwoup Rezilta Nil</value>
+          </text>
+          <text id="/data/null_results_group/null_results_group_note:label">
+            <value>Pasyan an pa bezwen okenn swivi. Soumèt fòm lan.</value>
+          </text>
+          <text id="/data/actions_confirmation:label">
+            <value>Aksyon</value>
+          </text>
+          <text id="/data/actions_confirmation/referal_locaiton_confirmation:label">
+            <value>Ki kote ou te voye pasyan an?</value>
+          </text>
+          <text id="/data/actions_confirmation/metformin_units_distributed:label">
+            <value>Konbyen metformin yo te bay?</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_random_glucose_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_fasting_glucose_level:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_hereditary_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_mild:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_moderate:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_result_hyperglycemia_severe:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_tiredness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_weight_loss:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_urination:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_eating:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_frequent_drinking:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_excessive_sweating:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_metformin_units_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/data/_referal_location:label">
+            <value>-</value>
+          </text>
+          <text id="/data/prescription_summary/fields/Medicine_out:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="ELD_Form002_Diabetes" version="20260925024304" prefix="J1!ELD_Form002_Diabetes!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <calc_hyperglycemia_mild/>
+          <calc_hyperglycemia_moderate/>
+          <calc_hyperglycemia_severe/>
+          <fasting_glucose/>
+          <diabetes_checkup_group>
+            <diabetes_symptoms/>
+            <hereditary_diabetes/>
+            <time_of_last_meal/>
+            <blood_glucose/>
+          </diabetes_checkup_group>
+          <results_group>
+            <res_hyperglycemia_mild/>
+            <res_hyperglycemia_mild_declaration/>
+            <res_hyperglycemia_mild_protocol/>
+            <res_hyperglycemia_mild_counseling/>
+            <res_hyperglycemia_moderate/>
+            <res_hyperglycemia_moderate_declaration/>
+            <res_hyperglycemia_moderate_protocol/>
+            <res_hyperglycemia_moderate_maintenance/>
+            <res_hyperglycemia_moderate_counseling/>
+            <res_hyperglycemia_severe/>
+            <res_hyperglycemia_severe_declaration/>
+            <res_hyperglycemia_severe_protocol/>
+          </results_group>
+          <null_results_group>
+            <null_results_group_note/>
+          </null_results_group>
+          <actions_confirmation>
+            <referal_locaiton_confirmation/>
+            <metformin_units_distributed/>
+          </actions_confirmation>
+          <data>
+            <_random_glucose_level/>
+            <_fasting_glucose_level/>
+            <_hereditary_diabetes/>
+            <_result_hyperglycemia_mild/>
+            <_result_hyperglycemia_moderate/>
+            <_result_hyperglycemia_severe/>
+            <_tiredness/>
+            <_weight_loss/>
+            <_frequent_urination/>
+            <_frequent_eating/>
+            <_frequent_drinking/>
+            <_excessive_sweating/>
+            <_metformin_units_distributed/>
+            <_referal_location/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <metformin_500mg_used_in/>
+              <metformin_500mg___set/>
+              <metformin_500mg___unit/>
+              <metformin_500mg_used_in_ELD_Form002_Diabetes/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="diabetes_symptoms">
+        <root>
+          <item>
+            <itextId>diabetes_symptoms-0</itextId>
+            <name>tiredness</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-1</itextId>
+            <name>weight_loss</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-2</itextId>
+            <name>frequent_urination</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-3</itextId>
+            <name>frequent_eating</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-4</itextId>
+            <name>frequent_drinking</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-5</itextId>
+            <name>excessive_sweating</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-6</itextId>
+            <name>bypass</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="referal_locations">
+        <root>
+          <item>
+            <itextId>referal_locations-0</itextId>
+            <name>zl</name>
+          </item>
+          <item>
+            <itextId>referal_locations-1</itextId>
+            <name>hst</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/calc_hyperglycemia_mild" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt;= 120 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 200, 'true', 'false')"/>
+      <bind nodeset="/data/calc_hyperglycemia_moderate" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 200 and  /data/diabetes_checkup_group/blood_glucose  &lt;= 400, 'true', 'false')"/>
+      <bind nodeset="/data/calc_hyperglycemia_severe" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  &gt; 400, 'true', 'false')"/>
+      <bind nodeset="/data/fasting_glucose" type="string" calculate="if($time_of_last_meal} = 'yes', 'false', 'true')"/>
+      <bind nodeset="/data/diabetes_checkup_group/diabetes_symptoms" type="string"/>
+      <bind nodeset="/data/diabetes_checkup_group/hereditary_diabetes" type="string" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0"/>
+      <bind nodeset="/data/diabetes_checkup_group/time_of_last_meal" type="string" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0"/>
+      <bind nodeset="/data/diabetes_checkup_group/blood_glucose" type="int" required="true()" relevant="count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) &gt; 0" constraint=". &lt;= 999" jr:constraintMsg="jr:itext('/data/diabetes_checkup_group/blood_glucose:jr:constraintMsg')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_hyperglycemia_mild ='true' or  /data/calc_hyperglycemia_moderate ='true' or  /data/calc_hyperglycemia_severe ='true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild_declaration" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild_protocol" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_mild_counseling" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_mild  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate_declaration" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate_protocol" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate_maintenance" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_moderate_counseling" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_moderate  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_severe" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_severe_declaration" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/results_group/res_hyperglycemia_severe_protocol" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_hyperglycemia_mild ='false' and  /data/calc_hyperglycemia_moderate ='false' and  /data/calc_hyperglycemia_severe ='false'"/>
+      <bind nodeset="/data/null_results_group/null_results_group_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/actions_confirmation/referal_locaiton_confirmation" type="string" required="true()" relevant=" /data/calc_hyperglycemia_severe  = 'true'"/>
+      <bind nodeset="/data/actions_confirmation/metformin_units_distributed" type="int" required="true()" relevant=" /data/calc_hyperglycemia_moderate  = 'true'" constraint=". &gt;= 0 and . &lt;= 999"/>
+      <bind nodeset="/data/data/_random_glucose_level" type="string" calculate="if( /data/fasting_glucose  = 'false',  /data/diabetes_checkup_group/blood_glucose , -1)"/>
+      <bind nodeset="/data/data/_fasting_glucose_level" type="string" calculate="if( /data/fasting_glucose  = 'true',  /data/diabetes_checkup_group/blood_glucose , -1)"/>
+      <bind nodeset="/data/data/_hereditary_diabetes" type="string" calculate="if( /data/diabetes_checkup_group/hereditary_diabetes  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_hyperglycemia_mild" type="string" calculate="if( /data/calc_hyperglycemia_mild ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_hyperglycemia_moderate" type="string" calculate="if( /data/calc_hyperglycemia_moderate ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_hyperglycemia_severe" type="string" calculate="if( /data/calc_hyperglycemia_severe ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_tiredness" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'tiredness'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_weight_loss" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'weight_loss'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_frequent_urination" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_urination'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_frequent_eating" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_eating'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_frequent_drinking" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_drinking'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_excessive_sweating" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'excessive_sweating'), 'true', 'false')"/>
+      <bind nodeset="/data/data/_metformin_units_distributed" type="string" calculate="if( /data/actions_confirmation/metformin_units_distributed  != '',  /data/actions_confirmation/metformin_units_distributed , -1)"/>
+      <bind nodeset="/data/data/_referal_location" type="string" calculate="if( /data/actions_confirmation/referal_locaiton_confirmation  != '',  /data/actions_confirmation/referal_locaiton_confirmation , 'false')"/>
+      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
+      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ELD_Form002_Diabetes&quot;"/>
+      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in" type="string" calculate=" /data/actions_confirmation/metformin_units_distributed "/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in_ELD_Form002_Diabetes" type="string" calculate=" /data/prescription_summary/fields/metformin_500mg___set  * 8 +  /data/prescription_summary/fields/metformin_500mg___unit "/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/diabetes_checkup_group">
+      <label ref="jr:itext('/data/diabetes_checkup_group:label')"/>
+      <select ref="/data/diabetes_checkup_group/diabetes_symptoms">
+        <label ref="jr:itext('/data/diabetes_checkup_group/diabetes_symptoms:label')"/>
+        <itemset nodeset="instance('diabetes_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/diabetes_checkup_group/hereditary_diabetes">
+        <label ref="jr:itext('/data/diabetes_checkup_group/hereditary_diabetes:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/diabetes_checkup_group/time_of_last_meal">
+        <label ref="jr:itext('/data/diabetes_checkup_group/time_of_last_meal:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/diabetes_checkup_group/blood_glucose">
+        <label ref="jr:itext('/data/diabetes_checkup_group/blood_glucose:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_hyperglycemia_mild" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_mild:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_mild_declaration">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_mild_declaration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_mild_protocol">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_mild_protocol:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_mild_counseling">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_mild_counseling:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_moderate:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate_declaration">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_moderate_declaration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate_protocol">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_moderate_protocol:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate_maintenance">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_moderate_maintenance:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_moderate_counseling">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_moderate_counseling:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_severe" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_severe:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_severe_declaration">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_severe_declaration:label')"/>
+      </input>
+      <input ref="/data/results_group/res_hyperglycemia_severe_protocol">
+        <label ref="jr:itext('/data/results_group/res_hyperglycemia_severe_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_group_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_group_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/actions_confirmation">
+      <label ref="jr:itext('/data/actions_confirmation:label')"/>
+      <select1 ref="/data/actions_confirmation/referal_locaiton_confirmation">
+        <label ref="jr:itext('/data/actions_confirmation/referal_locaiton_confirmation:label')"/>
+        <itemset nodeset="instance('referal_locations')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/actions_confirmation/metformin_units_distributed">
+        <label ref="jr:itext('/data/actions_confirmation/metformin_units_distributed:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+    <group appearance="field-list summary" ref="/data/prescription_summary">
+      <group ref="/data/prescription_summary/contact"/>
+      <group ref="/data/prescription_summary/fields">
+        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>

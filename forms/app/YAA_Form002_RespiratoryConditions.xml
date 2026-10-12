@@ -20,27 +20,6 @@
           <text id="cough_danger_signs-2">
             <value>Wheezing</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>Flu Like Syndrome</value>
-          </text>
-          <text id="followed_up_conditions-1">
-            <value>Pneumonia (Severe)</value>
-          </text>
-          <text id="followed_up_conditions-2">
-            <value>Pneumonia</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Tonsillitis</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Zanmi Lasante health center in Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Hopital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Hopital Alma Mater in Gros Morne town</value>
-          </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
           </text>
@@ -92,9 +71,6 @@
           <text id="/data/respiratory_assessment/patient_temperature:label">
             <value>Patient temperature</value>
           </text>
-          <text id="/data/respiratory_assessment/patient_temperature:hint">
-            <value>Fahrenheit (will build for C soon)</value>
-          </text>
           <text id="/data/respiratory_assessment/fever_duration:label">
             <value>Fever duration (days)</value>
           </text>
@@ -132,83 +108,34 @@
             <value>Results</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome:label">
-            <value>FLU LIKE SYNDROME</value>
+            <value>Flu-like Syndrome</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome_action:label">
-            <value>The youth has flu like syndrome.
-
-Procedure:
-- Combined anti flue medication ½ to 1 co three times per day.
-- Amoxicillin if green nasal discharge – 500 mg tablets two (under 10) to three times per day</value>
+            <value>The youth has flu like syndrome. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink:label">
-            <value>PNEUMONIA (Severe)</value>
+            <value>Severe Pneumonia</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink_action:label">
-            <value>The youth has severe pneumonia.
-
-Procedure:
-- Antipyretic injectable
-- Metamizol 500 mg/mL injectable solution, one injection IntraMuscular</value>
+            <value>The youth has severe pneumonia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow:label">
-            <value>PNEUMONIA</value>
+            <value>Pneumonia</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow_action:label">
-            <value>The youth has pneumonia.
-
-Procedure:
-- Amoxycilline tablets 500 mg 3 times per day for 7 days
-- Acetaminophen</value>
+            <value>The youth has pneumonia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>TONSILLITIS</value>
+            <value>Tonsillitis</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>The youth has tonsillitis.
-
-Procedure:
-- Acetaminophen
-- Amoxicillin 500 mg 3 times per day for 5 days</value>
+            <value>The youth has tonsillitis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Null Results</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Which location did you refer the patient?</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:label">
-            <value>How many Combined anti flue medication were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:label">
-            <value>Did you distribute Metamizol 500mg/mL injectable?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:label">
-            <value>How many Amoxycillin 500mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>How many Acetaminophen oral suspension 120mg/5ml were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -227,108 +154,77 @@ Procedure:
           <text id="cough_danger_signs-2">
             <value>Respiration sifflante</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>Syndrome Grippal</value>
+          <text id="/data/respiratory_assessment/fever_presence:label">
+            <value>Le jeune homme a-t-il de la fièvre ?</value>
           </text>
-          <text id="followed_up_conditions-1">
-            <value>Pneumonie (Sévère)</value>
+          <text id="/data/respiratory_assessment/patient_temperature:label">
+            <value>température du patient</value>
           </text>
-          <text id="followed_up_conditions-2">
-            <value>Pneumonie</value>
+          <text id="/data/respiratory_assessment/fever_duration:label">
+            <value>Durée de la fièvre (jours)</value>
           </text>
-          <text id="followed_up_conditions-3">
-            <value>Amygdalite</value>
+          <text id="/data/respiratory_assessment/extended_fever_duration:label">
+            <value>La fièvre a-t-elle été présente tous les jours ?</value>
           </text>
-          <text id="referal_locations-0">
-            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
+          <text id="/data/respiratory_assessment/oxygen_saturation:label">
+            <value>saturation en oxygène</value>
           </text>
-          <text id="referal_locations-1">
-            <value>Hôpital Sainte Thérèse</value>
+          <text id="/data/respiratory_assessment/breathing_rate:label">
+            <value>Fréquence respiratoire</value>
           </text>
-          <text id="referal_locations-2">
-            <value>Hôpital Alma Mater dans la ville de Gros Morne</value>
+          <text id="/data/respiratory_assessment/cough_presence:label">
+            <value>Le jeune tousse-t-il ou a-t-il des difficultés à respirer ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/cough_duration:label">
+            <value>Depuis combien de temps le jeune tousse-t-il, en jours ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/cough_danger_signs:label">
+            <value>Parmi les signes de toux dangereux suivants, lesquels le jeune présente-t-il, le cas échéant ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/runny_nose:label">
+            <value>Le jeune homme a-t-il le nez qui coule ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/poor_appetite:label">
+            <value>Les jeunes ont-ils peu d'appétit ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/sore_throat:label">
+            <value>Le jeune a-t-il mal à la gorge ?</value>
+          </text>
+          <text id="/data/respiratory_assessment/throat_appearance:label">
+            <value>La gorge est-elle rouge, gonflée et recouverte de pus ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome:label">
-            <value>SYNDROME PSEUDO-GRIPPAL</value>
+            <value>Syndrome grippal</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome_action:label">
-            <value>Le jeune a un syndrome pseudo-grippal.
-
-Procédure :
-- Combined anti flue medication ½ à 1 co trois fois par jour.
-- Amoxicilline en cas d'écoulement nasal vert – comprimés de 500 mg deux (moins de 10 ans) à trois fois par jour.</value>
+            <value>Le jeune présente des symptômes grippaux. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures de traitement et de consultation.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink:label">
-            <value>PNEUMONIE (Sévère)</value>
+            <value>Pneumonie grave</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink_action:label">
-            <value>Le jeune a une pneumonie sévère.
-
-Procédure :
-- Antipyrétique injectable
-- Solution injectable de Métamizol 500 mg/mL, une injection intramusculaire</value>
+            <value>Le jeune souffre d'une pneumonie grave. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow:label">
-            <value>PNEUMONIE</value>
+            <value>Pneumonie</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow_action:label">
-            <value>Le jeune a une pneumonie.
-
-Procédure :
-- Comprimés d'Amoxicilline 500 mg 3 fois par jour pendant 7 jours
-- Acétaminophène</value>
+            <value>Le jeune souffre d'une pneumonie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>AMYGDALITE</value>
+            <value>Amygdalite</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>Le jeune a une amygdalite.
-
-Procédure :
-- Acétaminophène
-- Amoxicilline 500 mg 3 fois par jour pendant 5 jours</value>
+            <value>Le jeune souffre d'une angine. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats Nuls</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>À quel endroit avez-vous référé le patient ?</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:label">
-            <value>Combien de Combined anti flue medication ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:label">
-            <value>Avez-vous distribué Metamizol 500mg/mL injectable ?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:label">
-            <value>Combien d'Amoxicilline 500mg ont été distribuées ?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>Combien d'Acetaminophen oral suspension 120mg/5ml ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -427,48 +323,6 @@ Procédure :
             <value>-</value>
           </text>
           <text id="/data/respiratory_assessment:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/fever_presence:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/patient_temperature:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/patient_temperature:hint">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/fever_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/extended_fever_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/oxygen_saturation:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/breathing_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_presence:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_danger_signs:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/runny_nose:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/poor_appetite:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/sore_throat:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/throat_appearance:label">
             <value>-</value>
           </text>
         </translation>
@@ -488,108 +342,77 @@ Procédure :
           <text id="cough_danger_signs-2">
             <value>Respirasyon k ap sifle</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>Sendwòm Grip</value>
+          <text id="/data/respiratory_assessment/fever_presence:label">
+            <value>Èske jèn gason an gen lafyèv?</value>
           </text>
-          <text id="followed_up_conditions-1">
-            <value>Nemoni (Grav)</value>
+          <text id="/data/respiratory_assessment/patient_temperature:label">
+            <value>Tanperati pasyan an</value>
           </text>
-          <text id="followed_up_conditions-2">
-            <value>Nemoni</value>
+          <text id="/data/respiratory_assessment/fever_duration:label">
+            <value>Dire lafyèv la (jou)</value>
           </text>
-          <text id="followed_up_conditions-3">
-            <value>Tonsilit</value>
+          <text id="/data/respiratory_assessment/extended_fever_duration:label">
+            <value>Èske lafyèv la te prezan chak jou?</value>
           </text>
-          <text id="referal_locations-0">
-            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
+          <text id="/data/respiratory_assessment/oxygen_saturation:label">
+            <value>Saturasyon oksijèn</value>
           </text>
-          <text id="referal_locations-1">
-            <value>Lopital Sainte Thérèse</value>
+          <text id="/data/respiratory_assessment/breathing_rate:label">
+            <value>Ritm respirasyon</value>
           </text>
-          <text id="referal_locations-2">
-            <value>Lopital Alma Mater nan vil Gros Morne</value>
+          <text id="/data/respiratory_assessment/cough_presence:label">
+            <value>Èske jèn nan ap touse oswa li gen difikilte pou l respire?</value>
+          </text>
+          <text id="/data/respiratory_assessment/cough_duration:label">
+            <value>Konbyen tan jèn gason an genyen depi l ap touse, an jou?</value>
+          </text>
+          <text id="/data/respiratory_assessment/cough_danger_signs:label">
+            <value>Kilès nan siy danje tous sa yo jèn nan montre, si genyen?</value>
+          </text>
+          <text id="/data/respiratory_assessment/runny_nose:label">
+            <value>Èske jèn gason an gen nen k ap koule?</value>
+          </text>
+          <text id="/data/respiratory_assessment/poor_appetite:label">
+            <value>Èske jèn nan pa gen anpil apeti?</value>
+          </text>
+          <text id="/data/respiratory_assessment/sore_throat:label">
+            <value>Èske jèn gason an gen malgòj?</value>
+          </text>
+          <text id="/data/respiratory_assessment/throat_appearance:label">
+            <value>Èske gòj la parèt wouj, anfle, oswa kouvri ak pi?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome:label">
-            <value>SENDWÒM GRIP</value>
+            <value>Sendwòm grip la</value>
           </text>
           <text id="/data/results_group/res_flu_like_syndrome_action:label">
-            <value>Jèn nan gen yon sendwòm grip.
-
-Pwotokòl:
-- Combined anti flue medication ½ a 1 co twa fwa pa jou.
-- Amoksikilin si gen ekoulman nan nen vèt – grenn 500 mg de (mwens pase 10 zan) a twa fwa pa jou.</value>
+            <value>Jèn nan gen sendwòm grip la. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink:label">
-            <value>PNEMONI (Grav)</value>
+            <value>Nemoni grav</value>
           </text>
           <text id="/data/results_group/res_pneumonia_pink_action:label">
-            <value>Jèn nan gen pnemoni grav.
-
-Pwotokòl:
-- Piki kont lafyèv
-- Solisyon piki Metamizol 500 mg/mL, yon piki nan misk</value>
+            <value>Jèn nan gen yon nemoni grav. Soumèt fòm lan epi ranpli egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow:label">
-            <value>PNEMONI</value>
+            <value>Nemoni</value>
           </text>
           <text id="/data/results_group/res_pneumonia_yellow_action:label">
-            <value>Jèn nan gen pnemoni.
-
-Pwotokòl:
-- Grenn Amoksikilin 500 mg 3 fwa pa jou pandan 7 jou
-- Asetaminofèn</value>
+            <value>Jèn nan gen nemoni. Soumèt fòm lan epi konplete egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_tonsillitis:label">
-            <value>AMIGDALIT</value>
+            <value>Amigdalit</value>
           </text>
           <text id="/data/results_group/res_tonsillitis_action:label">
-            <value>Jèn nan gen amigdalit.
-
-Pwotokòl:
-- Asetaminofèn
-- Amoksikilin 500 mg 3 fwa pa jou pandan 5 jou</value>
+            <value>Jèn nan gen amigdalit. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta Nil</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Ki kote ou te voye pasyan an?</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/combined_anti_flue_medication:label">
-            <value>Konbyen Combined anti flue medication yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/metamizol_500mg_ml_injectable:label">
-            <value>Èske ou te bay Metamizol 500mg/mL injectable?</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/amoxycillin_500mg:label">
-            <value>Konbyen Amoksikilin 500mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label">
-            <value>Konbyen Acetaminophen oral suspension 120mg/5ml yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -690,52 +513,10 @@ Pwotokòl:
           <text id="/data/respiratory_assessment:label">
             <value>-</value>
           </text>
-          <text id="/data/respiratory_assessment/fever_presence:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/patient_temperature:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/patient_temperature:hint">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/fever_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/extended_fever_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/oxygen_saturation:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/breathing_rate:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_presence:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_duration:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/cough_danger_signs:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/runny_nose:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/poor_appetite:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/sore_throat:label">
-            <value>-</value>
-          </text>
-          <text id="/data/respiratory_assessment/throat_appearance:label">
-            <value>-</value>
-          </text>
         </translation>
       </itext>
       <instance>
-        <data id="YAA_Form002_RespiratoryConditions" version="20260925024337" prefix="J1!YAA_Form002_RespiratoryConditions!" delimiter="#">
+        <data id="YAA_Form002_RespiratoryConditions" version="20261011180704" prefix="J1!YAA_Form002_RespiratoryConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -816,14 +597,6 @@ Pwotokòl:
           <null_results_group>
             <res_null/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <referal/>
-            <combined_anti_flue_medication/>
-            <metamizol_500mg_ml_injectable/>
-            <amoxycillin_500mg/>
-            <acetaminophen_oral_suspension_120mg_5ml/>
-          </actions_confirmation>
           <data>
             <_fever_presence/>
             <_patient_temperature/>
@@ -842,39 +615,7 @@ Pwotokòl:
             <_result_pneumonia_pink/>
             <_result_pneumonia_yellow/>
             <_result_tonsillitis/>
-            <_followed_up_conditions/>
-            <_referal/>
-            <_metamizol_500mg_ml_injectable/>
-            <_combined_anti_flue_medication/>
-            <_amoxycillin_500mg/>
-            <_acetaminophen_oral_suspension_120mg_5ml/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <combined_anti_flue_medication_used_in/>
-              <combined_anti_flue_medication___set/>
-              <combined_anti_flue_medication___unit/>
-              <combined_anti_flue_medication_used_in_YAA_Form002_RespiratoryConditions/>
-              <amoxycillin_500mg_used_in/>
-              <amoxycillin_500mg___set/>
-              <amoxycillin_500mg___unit/>
-              <amoxycillin_500mg_used_in_YAA_Form002_RespiratoryConditions/>
-              <metamizol_500mg_ml_injectable_used_in_YAA_Form002_RespiratoryConditions/>
-              <acetaminophen_oral_suspension_120mg_5ml_used_in_YAA_Form002_RespiratoryConditions/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -907,42 +648,6 @@ Pwotokòl:
           <item>
             <itextId>cough_danger_signs-2</itextId>
             <name>wheezing</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="followed_up_conditions">
-        <root>
-          <item>
-            <itextId>followed_up_conditions-0</itextId>
-            <name>flu_like_syndrome</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-1</itextId>
-            <name>pneumonia_pink</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-2</itextId>
-            <name>pneumonia_yellow</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-3</itextId>
-            <name>tonsillitis</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="referal_locations">
-        <root>
-          <item>
-            <itextId>referal_locations-0</itextId>
-            <name>zl</name>
-          </item>
-          <item>
-            <itextId>referal_locations-1</itextId>
-            <name>hst</name>
-          </item>
-          <item>
-            <itextId>referal_locations-2</itextId>
-            <name>ham</name>
           </item>
         </root>
       </instance>
@@ -1001,12 +706,6 @@ Pwotokòl:
       <bind nodeset="/data/results_group/res_tonsillitis_action" readonly="true()" type="string" relevant=" /data/calc_tonsillitis  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_flu_like_syndrome  != 'true' and  /data/calc_pneumonia_pink  != 'true' and  /data/calc_pneumonia_yellow  != 'true' and  /data/calc_tonsillitis  != 'true'"/>
       <bind nodeset="/data/null_results_group/res_null" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia_pink')"/>
-      <bind nodeset="/data/actions_confirmation/combined_anti_flue_medication" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'flu_like_syndrome')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/combined_anti_flue_medication:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/metamizol_500mg_ml_injectable" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia_pink')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/metamizol_500mg_ml_injectable:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/amoxycillin_500mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'flu_like_syndrome') or selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia_yellow') or selected( /data/actions_confirmation/followed_up_conditions , 'tonsillitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/amoxycillin_500mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia_yellow') or selected( /data/actions_confirmation/followed_up_conditions , 'tonsillitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_fever_presence" type="string" calculate="if( /data/respiratory_assessment/fever_presence  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_patient_temperature" type="string" calculate="if( /data/respiratory_assessment/patient_temperature  != '',  /data/respiratory_assessment/patient_temperature , -1)"/>
       <bind nodeset="/data/data/_fever_duration" type="string" calculate="if( /data/respiratory_assessment/fever_duration  != '',  /data/respiratory_assessment/fever_duration , -1)"/>
@@ -1024,32 +723,6 @@ Pwotokòl:
       <bind nodeset="/data/data/_result_pneumonia_pink" type="string" calculate="if( /data/calc_pneumonia_pink ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_pneumonia_yellow" type="string" calculate="if( /data/calc_pneumonia_yellow ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_tonsillitis" type="string" calculate="if( /data/calc_tonsillitis ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
-      <bind nodeset="/data/data/_metamizol_500mg_ml_injectable" type="string" calculate="if( /data/actions_confirmation/metamizol_500mg_ml_injectable  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/data/_combined_anti_flue_medication" type="string" calculate="if( /data/actions_confirmation/combined_anti_flue_medication  != '',  /data/actions_confirmation/combined_anti_flue_medication , -1)"/>
-      <bind nodeset="/data/data/_amoxycillin_500mg" type="string" calculate="if( /data/actions_confirmation/amoxycillin_500mg  != '',  /data/actions_confirmation/amoxycillin_500mg , -1)"/>
-      <bind nodeset="/data/data/_acetaminophen_oral_suspension_120mg_5ml" type="string" calculate="if( /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml  != '',  /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;YAA_Form002_RespiratoryConditions&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/combined_anti_flue_medication_used_in" type="string" calculate=" /data/actions_confirmation/combined_anti_flue_medication "/>
-      <bind nodeset="/data/prescription_summary/fields/combined_anti_flue_medication___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/combined_anti_flue_medication_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/combined_anti_flue_medication___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/combined_anti_flue_medication_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/combined_anti_flue_medication_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/combined_anti_flue_medication_used_in_YAA_Form002_RespiratoryConditions" type="string" calculate=" /data/prescription_summary/fields/combined_anti_flue_medication___set  * 10 +  /data/prescription_summary/fields/combined_anti_flue_medication___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in" type="string" calculate=" /data/actions_confirmation/amoxycillin_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_YAA_Form002_RespiratoryConditions" type="string" calculate=" /data/prescription_summary/fields/amoxycillin_500mg___set  * 10 +  /data/prescription_summary/fields/amoxycillin_500mg___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/metamizol_500mg_ml_injectable_used_in_YAA_Form002_RespiratoryConditions" type="string" calculate="if( /data/actions_confirmation/metamizol_500mg_ml_injectable  = 'yes', 1, 0)"/>
-      <bind nodeset="/data/prescription_summary/fields/acetaminophen_oral_suspension_120mg_5ml_used_in_YAA_Form002_RespiratoryConditions" type="string" calculate=" /data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1084,7 +757,6 @@ Pwotokòl:
       </select1>
       <input ref="/data/respiratory_assessment/patient_temperature">
         <label ref="jr:itext('/data/respiratory_assessment/patient_temperature:label')"/>
-        <hint ref="jr:itext('/data/respiratory_assessment/patient_temperature:hint')"/>
       </input>
       <input ref="/data/respiratory_assessment/fever_duration">
         <label ref="jr:itext('/data/respiratory_assessment/fever_duration:label')"/>
@@ -1181,45 +853,6 @@ Pwotokòl:
         <label ref="jr:itext('/data/null_results_group/res_null:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select1 ref="/data/actions_confirmation/referal">
-        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/combined_anti_flue_medication">
-        <label ref="jr:itext('/data/actions_confirmation/combined_anti_flue_medication:label')"/>
-      </input>
-      <select1 ref="/data/actions_confirmation/metamizol_500mg_ml_injectable">
-        <label ref="jr:itext('/data/actions_confirmation/metamizol_500mg_ml_injectable:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/amoxycillin_500mg">
-        <label ref="jr:itext('/data/actions_confirmation/amoxycillin_500mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml">
-        <label ref="jr:itext('/data/actions_confirmation/acetaminophen_oral_suspension_120mg_5ml:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

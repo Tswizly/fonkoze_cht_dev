@@ -126,49 +126,25 @@
             <value>Urinary Tract Infection</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>The patient may have a urinary tract infection.\n\nProcedure:\n- Hydration – drink lots of fluids and treated water\n- Antibiotics (Ciprofloxacin 500 mg three times a day for 7 days\n- Counseling on hygiene Clean water to wash, drink a lot of water, loose underwear to wash regularly\n- Take the full treatment even when you are feeling better\n- If no improvement after 2 days, go to the health center</value>
+            <value>The patient may have a urinary tract infection. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_std_discharge:label">
             <value>Risk of STD (Discharge)</value>
           </text>
           <text id="/data/results_group/res_std_discharge_action:label">
-            <value>The patient has a risk of STD - Syndromic treatment (discharge).\n\nProcedure:\n- Ciprofloxacine 500 mg, two times per day for 3 days\nAnd\n- Doxycicline 100mg, twice a day for 14 days\n- Treat all partners\n- Counsel on condom use</value>
+            <value>The patient has a risk of STD. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_std_ulcer:label">
             <value>Risk of STD (Ulcer)</value>
           </text>
           <text id="/data/results_group/res_std_ulcer_action:label">
-            <value>The patient has a risk of STD - Syndromic treatment (Ulcer) / Risk of Syphilis.\n\nProcedure:\n- Benzatine penicillin 2.4 Mio Units intramuscular injection (slowly!!) – single dose\n- Treat all partners\n- Make sure to provide counselling on condom use</value>
+            <value>The patient has a risk of Ulcer Risk of Syphilis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Null Results</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>How many Ciprofloxacine 500 mg tablets were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>How many Doxycicline 100mg tablets were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>How many Benzatine penicillin 2.4 Mio Units were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -263,7 +239,7 @@
             <value>Le patient présente-t-il l'un des symptômes suivants ?</value>
           </text>
           <text id="/data/female_uti_std_group/pain_during_sex_f:label">
-            <value>Le patient ressent-il des douleurs pendant les rapports sexuels ?</value>
+            <value>La patiente ressent-elle des douleurs pendant les rapports sexuels ?</value>
           </text>
           <text id="/data/female_uti_std_group/ulcer_presence_f:label">
             <value>Y a-t-il un ulcère dans la région génitale ?</value>
@@ -278,13 +254,13 @@
             <value>Le patient présente-t-il l'un des symptômes suivants ?</value>
           </text>
           <text id="/data/male_uti_std_group/pain_during_sex_m:label">
-            <value>Le patient ressent-il des douleurs pendant les rapports sexuels ?</value>
+            <value>La patiente ressent-elle des douleurs pendant les rapports sexuels ?</value>
           </text>
           <text id="/data/male_uti_std_group/ulcer_presence_m:label">
             <value>Y a-t-il un ulcère dans la région génitale ?</value>
           </text>
           <text id="/data/male_uti_std_group/urethral_discharge_m:label">
-            <value>L'homme a-t-il un écoulement urétral ?</value>
+            <value>L'homme présente-t-il un écoulement urétral ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
@@ -293,49 +269,25 @@
             <value>Infection des voies urinaires</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>Le patient peut avoir une infection des voies urinaires.\n\nProcédure :\n- Hydratation – boire beaucoup de liquides et d'eau traitée\n- Antibiotiques (Ciprofloxacine 500 mg trois fois par jour pendant 7 jours)\n- Conseils sur l'hygiène Eau propre pour se laver, boire beaucoup d'eau, sous-vêtements amples à laver régulièrement\n- Suivre le traitement complet même si vous vous sentez mieux\n- Si aucune amélioration après 2 jours, allez au centre de santé</value>
+            <value>Le patient pourrait souffrir d'une infection urinaire. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_std_discharge:label">
             <value>Risque de MST (Écoulement)</value>
           </text>
           <text id="/data/results_group/res_std_discharge_action:label">
-            <value>Le patient présente un risque de MST - Traitement syndromique (écoulement).\n\nProcédure :\n- Ciprofloxacine 500 mg, deux fois par jour pendant 3 jours\nEt\n- Doxycycline 100 mg, deux fois par jour pendant 14 jours\n- Traiter tous les partenaires\n- Conseiller sur l'utilisation du préservatif</value>
+            <value>Le patient présente un risque d'IST. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_std_ulcer:label">
             <value>Risque de MST (Ulcère)</value>
           </text>
           <text id="/data/results_group/res_std_ulcer_action:label">
-            <value>Le patient présente un risque de MST - Traitement syndromique (Ulcère) / Risque de Syphilis.\n\nProcédure :\n- Pénicilline benzathine 2,4 millions d'unités en injection intramusculaire (lentement !!) – dose unique\n- Traiter tous les partenaires\n- Assurez-vous de fournir des conseils sur l'utilisation du préservatif</value>
+            <value>Le patient présente un risque d'ulcère et de syphilis. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats nuls</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>Combien de comprimés de Ciprofloxacine 500 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>Combien de comprimés de Doxycycline 100 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>Combien de Pénicilline benzathine 2,4 millions d'unités ont été distribuées ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -427,31 +379,31 @@
             <value>Enfeksyon nan pipi ak MST pou fanm</value>
           </text>
           <text id="/data/female_uti_std_group/urination_qualifiers_f:label">
-            <value>Èske pasyan an gen nenpòt nan sentòm sa yo?</value>
+            <value>Èske pasyan an prezante nenpòt nan bagay sa yo?</value>
           </text>
           <text id="/data/female_uti_std_group/pain_during_sex_f:label">
-            <value>Èske pasyan an santi doulè lè l ap fè bagay?</value>
+            <value>Èske pasyan an santi doulè pandan l ap fè sèks?</value>
           </text>
           <text id="/data/female_uti_std_group/ulcer_presence_f:label">
-            <value>Èske gen yon ilsè nan zòn jenital la?</value>
+            <value>Èske gen yon ilsè nan rejyon jenital la?</value>
           </text>
           <text id="/data/female_uti_std_group/discharge_qualifiers_f:label">
-            <value>Èske fanm nan gen nenpòt nan sentòm sa yo?</value>
+            <value>Èske fanm nan prezante nenpòt nan bagay sa yo?</value>
           </text>
           <text id="/data/male_uti_std_group:label">
             <value>Enfeksyon nan pipi ak MST pou gason</value>
           </text>
           <text id="/data/male_uti_std_group/urination_qualifiers_m:label">
-            <value>Èske pasyan an gen nenpòt nan sentòm sa yo?</value>
+            <value>Èske pasyan an prezante nenpòt nan bagay sa yo?</value>
           </text>
           <text id="/data/male_uti_std_group/pain_during_sex_m:label">
-            <value>Èske pasyan an santi doulè lè l ap fè bagay?</value>
+            <value>Èske pasyan an santi doulè pandan l ap fè sèks?</value>
           </text>
           <text id="/data/male_uti_std_group/ulcer_presence_m:label">
-            <value>Èske gen yon ilsè nan zòn jenital la?</value>
+            <value>Èske gen yon ilsè nan rejyon jenital la?</value>
           </text>
           <text id="/data/male_uti_std_group/urethral_discharge_m:label">
-            <value>Èske gason an gen ekoulman nan pijon l?</value>
+            <value>Èske gason an ap fè eksperyans ekoulman uretral?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Rezilta</value>
@@ -460,54 +412,30 @@
             <value>Enfeksyon nan pipi</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>Pasyan an ka gen yon enfeksyon nan pipi.\n\nPwosedi:\n- Idratsyon – bwè anpil likid ak dlo trete\n- Antibyotik (Siprofloksasin 500 mg twa fwa pa jou pandan 7 jou)\n- Konsèy sou ijyèn Dlo pwòp pou lave, bwè anpil dlo, kalson ki pa sere pou lave regilyèman\n- Pran tout tretman an menm lè ou santi ou pi byen\n- Si pa gen amelyorasyon apre 2 jou, ale nan sant sante</value>
+            <value>Pasyan an ka gen yon enfeksyon nan aparèy urinè. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/results_group/res_std_discharge:label">
             <value>Risk MST (Ekoulman)</value>
           </text>
           <text id="/data/results_group/res_std_discharge_action:label">
-            <value>Pasyan an gen risk MST - Tretman sendwomik (ekoulman).\n\nPwosedi:\n- Siprofloksasin 500 mg, de fwa pa jou pandan 3 jou\nEpi\n- Doksikiklin 100 mg, de fwa pa jou pandan 14 jou\n- Trete tout patnè yo\n- Bay konsèy sou itilizasyon kapòt</value>
+            <value>Pasyan an gen yon risk pou l pran yon MST. Soumèt fòm lan epi konplete egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_std_ulcer:label">
             <value>Risk MST (Ilsè)</value>
           </text>
           <text id="/data/results_group/res_std_ulcer_action:label">
-            <value>Pasyan an gen risk MST - Tretman sendwomik (Ilsè) / Risk Sifilis.\n\nPwosedi:\n- Penisilin benzatin 2.4 Milyon Inite piki nan misk (dousman!!) – yon sèl dòz\n- Trete tout patnè yo\n- Asire w ou bay konsèy sou itilizasyon kapòt</value>
+            <value>Pasyan an gen yon risk pou li gen ilsè oswa sifilis. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta nil</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>Konbyen grenn Siprofloksasin 500 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>Konbyen grenn Doksikilin 100 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>Konbyen Penisilin benzatin 2.4 Milyon Inite yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form009_UTIandSTD" version="20260925024237" prefix="J1!ADT_Form009_UTIandSTD!" delimiter="#">
+        <data id="ADT_Form009_UTIandSTD" version="20261011180603" prefix="J1!ADT_Form009_UTIandSTD!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -582,46 +510,11 @@
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <ciprofloxacine_500mg_tablets/>
-            <doxycicline_100mg_tablets/>
-            <benzatine_penicillin_2_4_mio_units/>
-          </actions_confirmation>
           <data>
             <_result_uti/>
             <_result_std_discharge/>
             <_result_std_ulcer/>
-            <_followed_up_conditions/>
-            <_ciprofloxacine_500mg_tablets/>
-            <_doxycicline_100mg_tablets/>
-            <_benzatine_penicillin_2_4_mio_units/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <ciprofloxacine_500mg_tablets_used_in/>
-              <ciprofloxacine_500mg_tablets___set/>
-              <ciprofloxacine_500mg_tablets___unit/>
-              <ciprofloxacine_500mg_tablets_used_in_ADT_Form009_UTIandSTD/>
-              <doxycicline_100mg_tablets_used_in/>
-              <doxycicline_100mg_tablets___set/>
-              <doxycicline_100mg_tablets___unit/>
-              <doxycicline_100mg_tablets_used_in_ADT_Form009_UTIandSTD/>
-              <benzatine_penicillin_2_4_mio_units_used_in_ADT_Form009_UTIandSTD/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -750,36 +643,9 @@
       <bind nodeset="/data/results_group/res_std_ulcer_action" readonly="true()" type="string" relevant=" /data/calc_std_ulcer  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_uti  != 'true' and  /data/calc_std_discharge  != 'true' and  /data/calc_std_ulcer  != 'true'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/ciprofloxacine_500mg_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'uti') or selected( /data/actions_confirmation/followed_up_conditions , 'std_discharge')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/doxycicline_100mg_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'std_discharge')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'std_ulcer')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_result_uti" type="string" calculate="if( /data/calc_uti ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_std_discharge" type="string" calculate="if( /data/calc_std_discharge ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_std_ulcer" type="string" calculate="if( /data/calc_std_ulcer ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_ciprofloxacine_500mg_tablets" type="string" calculate="if( /data/actions_confirmation/ciprofloxacine_500mg_tablets  != '',  /data/actions_confirmation/ciprofloxacine_500mg_tablets , -1)"/>
-      <bind nodeset="/data/data/_doxycicline_100mg_tablets" type="string" calculate="if( /data/actions_confirmation/doxycicline_100mg_tablets  != '',  /data/actions_confirmation/doxycicline_100mg_tablets , -1)"/>
-      <bind nodeset="/data/data/_benzatine_penicillin_2_4_mio_units" type="string" calculate="if( /data/actions_confirmation/benzatine_penicillin_2_4_mio_units  != '',  /data/actions_confirmation/benzatine_penicillin_2_4_mio_units , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form009_UTIandSTD&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in" type="string" calculate=" /data/actions_confirmation/ciprofloxacine_500mg_tablets "/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in_ADT_Form009_UTIandSTD" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacine_500mg_tablets___set  * X +  /data/prescription_summary/fields/ciprofloxacine_500mg_tablets___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets_used_in" type="string" calculate=" /data/actions_confirmation/doxycicline_100mg_tablets "/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets_used_in_ADT_Form009_UTIandSTD" type="string" calculate=" /data/prescription_summary/fields/doxycicline_100mg_tablets___set  * X +  /data/prescription_summary/fields/doxycicline_100mg_tablets___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/benzatine_penicillin_2_4_mio_units_used_in_ADT_Form009_UTIandSTD" type="string" calculate=" /data/actions_confirmation/benzatine_penicillin_2_4_mio_units "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -892,31 +758,6 @@
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <input ref="/data/actions_confirmation/ciprofloxacine_500mg_tablets">
-        <label ref="jr:itext('/data/actions_confirmation/ciprofloxacine_500mg_tablets:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/doxycicline_100mg_tablets">
-        <label ref="jr:itext('/data/actions_confirmation/doxycicline_100mg_tablets:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units">
-        <label ref="jr:itext('/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

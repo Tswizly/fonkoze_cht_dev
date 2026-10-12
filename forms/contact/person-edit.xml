@@ -53,6 +53,21 @@
           <text id="place_type-2">
             <value>Nurse Zone</value>
           </text>
+          <text id="chronic_conditions-0">
+            <value>Hypertension</value>
+          </text>
+          <text id="chronic_conditions-1">
+            <value>Diabetes</value>
+          </text>
+          <text id="chronic_conditions-2">
+            <value>Previous Stroke</value>
+          </text>
+          <text id="chronic_conditions-3">
+            <value>Asthma</value>
+          </text>
+          <text id="chronic_conditions-4">
+            <value>None of the above</value>
+          </text>
           <text id="/data/inputs/user/contact_id:label">
             <value>Contact ID of the logged in user</value>
           </text>
@@ -61,6 +76,12 @@
           </text>
           <text id="/data/inputs/user/name:label">
             <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/task_update_chronic_conditions:label">
+            <value>Update Chronic Conditions</value>
+          </text>
+          <text id="/data/task_update_chronic_conditions/chronic_conditions_task:label">
+            <value>**Select which chronic condition to add to the patient profile**</value>
           </text>
           <text id="/data/init/person_parent:label">
             <value>Current Place</value>
@@ -136,6 +157,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <text id="/data/person/role_other:label">
             <value>Specify other</value>
           </text>
+          <text id="/data/person/chronic_conditions:label">
+            <value>**Select all that the person has previously been diagnosed with**</value>
+          </text>
           <text id="/data/person/external_id:label">
             <value>External ID</value>
           </text>
@@ -198,6 +222,21 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <text id="place_type-2">
             <value>Zone infirmière</value>
           </text>
+          <text id="chronic_conditions-0">
+            <value>Hypertension</value>
+          </text>
+          <text id="chronic_conditions-1">
+            <value>Diabète</value>
+          </text>
+          <text id="chronic_conditions-2">
+            <value>AVC antérieur</value>
+          </text>
+          <text id="chronic_conditions-3">
+            <value>Asthme</value>
+          </text>
+          <text id="chronic_conditions-4">
+            <value>Aucune des réponses ci-dessus</value>
+          </text>
           <text id="/data/inputs/user/contact_id:label">
             <value>Identifiant de l'utilisateur</value>
           </text>
@@ -206,6 +245,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           </text>
           <text id="/data/inputs/user/name:label">
             <value>Nom</value>
+          </text>
+          <text id="/data/task_update_chronic_conditions/chronic_conditions_task:label">
+            <value>**Sélectionnez la maladie chronique à ajouter au profil du patient**</value>
           </text>
           <text id="/data/init/person_parent:label">
             <value>Place actuelle</value>
@@ -282,13 +324,31 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <text id="/data/person/role_other:label">
             <value>Autre rôle</value>
           </text>
+          <text id="/data/person/chronic_conditions:label">
+            <value>**Sélectionnez tous les diagnostics antérieurs de la personne.**</value>
+          </text>
           <text id="/data/person/external_id:label">
             <value>Identifiant externe</value>
           </text>
           <text id="/data/person/notes:label">
             <value>Notes</value>
           </text>
+          <text id="/data/task_update_chronic_conditions:label">
+            <value>-</value>
+          </text>
           <text id="/data/person/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_stroke:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_asthma:label">
             <value>-</value>
           </text>
         </translation>
@@ -341,6 +401,21 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <text id="place_type-2">
             <value>Zòn enfimyè</value>
           </text>
+          <text id="chronic_conditions-0">
+            <value>Ipètansyon</value>
+          </text>
+          <text id="chronic_conditions-1">
+            <value>Dyabèt</value>
+          </text>
+          <text id="chronic_conditions-2">
+            <value>Konjesyon serebral anvan an</value>
+          </text>
+          <text id="chronic_conditions-3">
+            <value>Asm</value>
+          </text>
+          <text id="chronic_conditions-4">
+            <value>Okenn nan sa ki anwo yo</value>
+          </text>
           <text id="/data/inputs/user/contact_id:label">
             <value>Idantifyan itilizatè a</value>
           </text>
@@ -349,6 +424,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           </text>
           <text id="/data/inputs/user/name:label">
             <value>Non itilizatè a</value>
+          </text>
+          <text id="/data/task_update_chronic_conditions/chronic_conditions_task:label">
+            <value>**Chwazi ki maladi kwonik pou ajoute nan pwofil pasyan an**</value>
           </text>
           <text id="/data/init/person_parent:label">
             <value>Kote aktyèl</value>
@@ -425,19 +503,37 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <text id="/data/person/role_other:label">
             <value>Presize lòt</value>
           </text>
+          <text id="/data/person/chronic_conditions:label">
+            <value>**Chwazi tout sa moun nan te deja dyagnostike avèk yo**</value>
+          </text>
           <text id="/data/person/external_id:label">
             <value>Idantifyan ekstèn</value>
           </text>
           <text id="/data/person/notes:label">
             <value>Nòt</value>
           </text>
+          <text id="/data/task_update_chronic_conditions:label">
+            <value>-</value>
+          </text>
           <text id="/data/person/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_stroke:label">
+            <value>-</value>
+          </text>
+          <text id="/data/chronic_asthma:label">
             <value>-</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="contact:person:edit" version="2026-09-24_00-40" prefix="J1!contact:person:edit!" delimiter="#">
+        <data id="contact:person:edit" version="2026-10-11_18-16" prefix="J1!contact:person:edit!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -478,6 +574,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
             <sex/>
             <role/>
             <role_other/>
+            <chronic_conditions/>
             <external_id/>
             <notes/>
             <meta tag="hidden">
@@ -489,6 +586,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
               <last_edited_by_place_uuid/>
             </meta>
           </person>
+          <from_task>
+            <data_from_task/>
+          </from_task>
+          <task_update_chronic_conditions>
+            <chronic_conditions_task/>
+          </task_update_chronic_conditions>
           <init>
             <person_name/>
             <person_place_name/>
@@ -502,6 +605,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
             <id_health_center/>
             <id_clinic/>
           </init>
+          <chronic_hypertension/>
+          <chronic_diabetes/>
+          <chronic_stroke/>
+          <chronic_asthma/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -595,11 +702,39 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           </item>
         </root>
       </instance>
+      <instance id="chronic_conditions">
+        <root>
+          <item>
+            <itextId>chronic_conditions-0</itextId>
+            <name>hypertension</name>
+          </item>
+          <item>
+            <itextId>chronic_conditions-1</itextId>
+            <name>diabetes</name>
+          </item>
+          <item>
+            <itextId>chronic_conditions-2</itextId>
+            <name>previous_stroke</name>
+          </item>
+          <item>
+            <itextId>chronic_conditions-3</itextId>
+            <name>asthma</name>
+          </item>
+          <item>
+            <itextId>chronic_conditions-4</itextId>
+            <name>none</name>
+          </item>
+        </root>
+      </instance>
       <bind nodeset="/data/inputs" relevant="false()"/>
       <bind nodeset="/data/inputs/user/contact_id" type="string"/>
       <bind nodeset="/data/inputs/user/facility_id" type="string"/>
       <bind nodeset="/data/inputs/user/name" type="string"/>
       <bind nodeset="/data/inputs/user/roles" type="string"/>
+      <bind nodeset="/data/from_task/data_from_task" type="string"/>
+      <bind nodeset="/data/task_update_chronic_conditions" relevant=" /data/from_task/data_from_task  = 'true'"/>
+      <bind nodeset="/data/task_update_chronic_conditions/chronic_conditions_task" type="string" required="true()"/>
+      <bind nodeset="/data/init" relevant=" /data/from_task/data_from_task  != 'true'"/>
       <bind nodeset="/data/init/person_name" type="string" calculate="../../person/name"/>
       <bind nodeset="/data/init/person_place_name" type="string" calculate="../name"/>
       <bind nodeset="/data/init/person_parent" type="string" readonly="true()" calculate=" /data/person/parent "/>
@@ -611,6 +746,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
       <bind nodeset="/data/init/id_district_hospital" type="string" required="true()" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'district_hospital')"/>
       <bind nodeset="/data/init/id_health_center" type="string" required="true()" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'health_center')"/>
       <bind nodeset="/data/init/id_clinic" type="string" required="true()" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'clinic')"/>
+      <bind nodeset="/data/person" relevant=" /data/from_task/data_from_task  != 'true'"/>
       <bind nodeset="/data/person/parent" type="string" calculate="coalesce(coalesce(coalesce( /data/init/id_district_hospital ,  /data/init/id_health_center ),  /data/init/id_clinic ), /data/person/parent )"/>
       <bind nodeset="/data/person/_id" type="string" readonly="true()"/>
       <bind nodeset="/data/person/type" type="string" readonly="true()"/>
@@ -632,6 +768,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
       <bind nodeset="/data/person/sex" type="string"/>
       <bind nodeset="/data/person/role" type="string" constraint="if(selected( /data/inputs/user/roles , 'che'), . = 'patient' or . = 'other', if(selected( /data/inputs/user/roles , 'nurse'), . = 'che' or . = 'patient' or . = 'other', if(selected( /data/inputs/user/roles , 'nurse_supervisor'), . = 'nurse' or . = 'che' or . = 'patient' or . = 'other', true())))"/>
       <bind nodeset="/data/person/role_other" type="string" required="true()" relevant="selected(  /data/person/role ,'other')"/>
+      <bind nodeset="/data/person/chronic_conditions" type="string" required="true()"/>
       <bind nodeset="/data/person/external_id" type="string"/>
       <bind nodeset="/data/person/notes" type="string"/>
       <bind nodeset="/data/person/meta/created_by" type="string" readonly="true()"/>
@@ -640,6 +777,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
       <bind nodeset="/data/person/meta/last_edited_by" type="string" calculate="../../../inputs/user/name"/>
       <bind nodeset="/data/person/meta/last_edited_by_person_uuid" type="string" calculate="../../../inputs/user/contact_id"/>
       <bind nodeset="/data/person/meta/last_edited_by_place_uuid" type="string" calculate="../../../inputs/user/facility_id"/>
+      <bind nodeset="/data/chronic_hypertension" type="string" calculate="selected( /data/person/chronic_conditions , 'hypertension') or selected( /data/task_update_chronic_conditions/chronic_conditions_task , 'hypertension')"/>
+      <bind nodeset="/data/chronic_diabetes" type="string" calculate="selected( /data/person/chronic_conditions , 'diabetes') or selected( /data/task_update_chronic_conditions/chronic_conditions_task , 'diabetes')"/>
+      <bind nodeset="/data/chronic_stroke" type="string" calculate="selected( /data/person/chronic_conditions , 'previous_stroke') or selected( /data/task_update_chronic_conditions/chronic_conditions_task , 'previous_stroke')"/>
+      <bind nodeset="/data/chronic_asthma" type="string" calculate="selected( /data/person/chronic_conditions , 'asthma') or selected( /data/task_update_chronic_conditions/chronic_conditions_task , 'asthma')"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -656,6 +797,17 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
           <label ref="jr:itext('/data/inputs/user/name:label')"/>
         </input>
       </group>
+    </group>
+    <group ref="/data/from_task"/>
+    <group appearance="field-list" ref="/data/task_update_chronic_conditions">
+      <label ref="jr:itext('/data/task_update_chronic_conditions:label')"/>
+      <select ref="/data/task_update_chronic_conditions/chronic_conditions_task">
+        <label ref="jr:itext('/data/task_update_chronic_conditions/chronic_conditions_task:label')"/>
+        <itemset nodeset="instance('chronic_conditions')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
     </group>
     <group appearance="field-list" ref="/data/init">
       <input ref="/data/init/person_parent" appearance="select-contact hidden">
@@ -746,6 +898,13 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value>
       <input ref="/data/person/role_other">
         <label ref="jr:itext('/data/person/role_other:label')"/>
       </input>
+      <select ref="/data/person/chronic_conditions">
+        <label ref="jr:itext('/data/person/chronic_conditions:label')"/>
+        <itemset nodeset="instance('chronic_conditions')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
       <input ref="/data/person/external_id">
         <label ref="jr:itext('/data/person/external_id:label')"/>
       </input>

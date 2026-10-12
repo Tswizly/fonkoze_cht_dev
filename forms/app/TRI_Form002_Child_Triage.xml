@@ -161,8 +161,14 @@
           <text id="/data/vitals_general_group/bp_systolic:label">
             <value>Systolic blood pressure</value>
           </text>
+          <text id="/data/vitals_general_group/bp_systolic:hint">
+            <value>Only necessary if there are signs of a renal condition such as bloating and stopped urinating</value>
+          </text>
           <text id="/data/vitals_general_group/bp_diastolic:label">
             <value>Diastolic blood pressure</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:hint">
+            <value>Only necessary if there are signs of a renal condition such as bloating and stopped urinating</value>
           </text>
           <text id="/data/vitals_general_group/temperature:label">
             <value>Temperature</value>
@@ -242,17 +248,14 @@
           <text id="/data/next_steps_group/note_vaccinations:label">
             <value>- Vaccination and Deworming</value>
           </text>
+          <text id="/data/next_steps_group/note_malnutrition_anemia:label">
+            <value>- Malnutrition and Anemia Form</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
             <value>You will recieve tasks to complete the forms above. Submit the triage form.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>No additional forms are required based on the current assessment.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Will you be sending the patient home with additional paracetamol or iron and folic acid?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>NO LABEL</value>
+            <value>No additional forms are required based on the current assessment. To see manually select forms, begin a "Form Select" form.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -412,8 +415,14 @@
           <text id="/data/vitals_general_group/bp_systolic:label">
             <value>Pression artérielle systolique</value>
           </text>
+          <text id="/data/vitals_general_group/bp_systolic:hint">
+            <value>Uniquement nécessaire en cas de signes d'affection rénale tels que ballonnements et arrêt de la miction.</value>
+          </text>
           <text id="/data/vitals_general_group/bp_diastolic:label">
             <value>Pression artérielle diastolique</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:hint">
+            <value>Uniquement nécessaire en cas de signes d'affection rénale tels que ballonnements et arrêt de la miction.</value>
           </text>
           <text id="/data/vitals_general_group/temperature:label">
             <value>Température</value>
@@ -493,17 +502,14 @@
           <text id="/data/next_steps_group/note_vaccinations:label">
             <value>- Vaccination et déparasitage</value>
           </text>
+          <text id="/data/next_steps_group/note_malnutrition_anemia:label">
+            <value>- Formulaire Malnutrition et anémie</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
             <value>Vous recevrez des tâches pour remplir les formulaires ci-dessus. Soumettez le formulaire de triage.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Aucun formulaire supplémentaire n'est requis sur la base de l'évaluation actuelle.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Allez-vous prescrire au patient du paracétamol supplémentaire, du fer et de l'acide folique ?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>-</value>
+            <value>Aucun formulaire supplémentaire n'est requis suite à l'évaluation actuelle. Pour afficher les formulaires à sélectionner manuellement, veuillez ouvrir un formulaire de « Sélection de formulaire ».</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -663,8 +669,14 @@
           <text id="/data/vitals_general_group/bp_systolic:label">
             <value>Tansyon sistolik</value>
           </text>
+          <text id="/data/vitals_general_group/bp_systolic:hint">
+            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
+          </text>
           <text id="/data/vitals_general_group/bp_diastolic:label">
             <value>Tansyon dyastolik</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:hint">
+            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
           </text>
           <text id="/data/vitals_general_group/temperature:label">
             <value>Tanperati</value>
@@ -744,22 +756,19 @@
           <text id="/data/next_steps_group/note_vaccinations:label">
             <value>- Vaksinasyon ak Degouman</value>
           </text>
+          <text id="/data/next_steps_group/note_malnutrition_anemia:label">
+            <value>- Fòmilè Malnitrisyon ak Anemi</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
             <value>W ap resevwa tach pou konplete fòmilè ki anwo yo. Soumèt fòmilè triyaj la.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Pa gen lòt fòmilè anplis ki nesesè dapre evalyasyon sa a.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Èske w ap voye pasyan an lakay li avèk plis parasetamol oubyen fè ak asid folik?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>-</value>
+            <value>Pa gen okenn lòt fòm ki nesesè dapre evalyasyon aktyèl la. Pou wè fòm yo chwazi manyèlman, kòmanse yon fòm "Seleksyon Fòm".</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form002_Child_Triage" version="20260925024331" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+        <data id="TRI_Form002_Child_Triage" version="20261011180720" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -854,6 +863,7 @@
           <route_vision/>
           <route_diabetes/>
           <route_vaccinations/>
+          <route_malnutrition_anemia/>
           <next_steps_group>
             <note_diabetes/>
             <note_digestive/>
@@ -867,11 +877,10 @@
             <note_wound/>
             <note_vision/>
             <note_vaccinations/>
+            <note_malnutrition_anemia/>
             <note_tasks_will_appear/>
             <note_no_forms/>
-            <distribute_paracetamol_or_iron_folic_acid/>
           </next_steps_group>
-          <route_paracetamol_or_iron_folic_acid/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -1021,11 +1030,10 @@
       <bind nodeset="/data/emergency_triage_summary/treatment_bloated_extremities" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
       <bind nodeset="/data/emergency_triage_summary/referral_facility" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/referral_facility_other" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes' and  /data/emergency_triage_summary/referral_facility  = 'other'"/>
-      <bind nodeset="/data/vitals_general_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/vitals_general_group/weight" type="int" required="true()"/>
       <bind nodeset="/data/vitals_general_group/height" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
+      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
       <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
       <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required="true()"/>
       <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required="true()"/>
@@ -1051,6 +1059,7 @@
       <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="'false'"/>
       <bind nodeset="/data/route_vaccinations" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'no' or  /data/child_assessment/received_albendazole  = 'no' or  /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5, 'true', 'false')"/>
       <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
@@ -1064,10 +1073,9 @@
       <bind nodeset="/data/next_steps_group/note_wound" readonly="true()" type="string" relevant=" /data/route_wound  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_vision" readonly="true()" type="string" relevant=" /data/route_vision  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_vaccinations" readonly="true()" type="string" relevant=" /data/route_vaccinations  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_vaccinations  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false'"/>
-      <bind nodeset="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false'"/>
-      <bind nodeset="/data/route_paracetamol_or_iron_folic_acid" type="string" calculate="if( /data/next_steps_group/distribute_paracetamol_or_iron_folic_acid  = 'yes' , 'true', 'false')"/>
+      <bind nodeset="/data/next_steps_group/note_malnutrition_anemia" readonly="true()" type="string" relevant=" /data/route_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_vaccinations  = 'true' or  /data/route_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false' and  /data/route_malnutrition_anemia  = 'false'"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1152,9 +1160,11 @@
       </input>
       <input ref="/data/vitals_general_group/bp_systolic">
         <label ref="jr:itext('/data/vitals_general_group/bp_systolic:label')"/>
+        <hint ref="jr:itext('/data/vitals_general_group/bp_systolic:hint')"/>
       </input>
       <input ref="/data/vitals_general_group/bp_diastolic">
         <label ref="jr:itext('/data/vitals_general_group/bp_diastolic:label')"/>
+        <hint ref="jr:itext('/data/vitals_general_group/bp_diastolic:hint')"/>
       </input>
       <input ref="/data/vitals_general_group/temperature">
         <label ref="jr:itext('/data/vitals_general_group/temperature:label')"/>
@@ -1262,19 +1272,15 @@
       <input ref="/data/next_steps_group/note_vaccinations">
         <label ref="jr:itext('/data/next_steps_group/note_vaccinations:label')"/>
       </input>
+      <input ref="/data/next_steps_group/note_malnutrition_anemia">
+        <label ref="jr:itext('/data/next_steps_group/note_malnutrition_anemia:label')"/>
+      </input>
       <input ref="/data/next_steps_group/note_tasks_will_appear">
         <label ref="jr:itext('/data/next_steps_group/note_tasks_will_appear:label')"/>
       </input>
       <input ref="/data/next_steps_group/note_no_forms">
         <label ref="jr:itext('/data/next_steps_group/note_no_forms:label')"/>
       </input>
-      <select1 ref="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid">
-        <label ref="jr:itext('/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
     </group>
   </h:body>
 </h:html>

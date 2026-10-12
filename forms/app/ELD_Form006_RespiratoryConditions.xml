@@ -114,42 +114,25 @@
             <value>Tuberculosis</value>
           </text>
           <text id="/data/results_group/res_tuberculosis_action:label">
-            <value>The patient may have Tuberculosis.
-
-Procedure:
-- Refer for diagnosis and treatment
-- Really motivate for referal (free treatment!)</value>
+            <value>The patient may have Tuberculosis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_asthma:label">
             <value>Asthma</value>
           </text>
           <text id="/data/results_group/res_asthma_action:label">
-            <value>The patient may have Asthma.
-
-Procedure:
-- Nebulizer for immediate treatment
-- Dexamethasone IM 8 mg
-- Send home with: Salbutamol tablet 4mg – 2 times day during one week
-- If condition does not improve after two days, go to the hospital</value>
+            <value>The patient may have Asthma. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
             <value>Pneumonia</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>The patient may have Pneumonia.
-
-Procedure:
-- Azythromycine tablets 500 mg – 1 co per day for 5 days
-- Go to the hospital if no improvement after two days</value>
+            <value>The patient may have Pneumonia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk:label">
             <value>Risk of cardiac decompensation</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk_action:label">
-            <value>The patient is at risk of cardiac decompensation.
-
-Procedure:
-- Refer</value>
+            <value>The patient is at risk of cardiac decompensation. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation:label">
             <value>Decompensation cardiaque</value>
@@ -160,38 +143,17 @@ Procedure:
 Procedure:
 - Refer to hospital</value>
           </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Flu-Like Syndrome</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>The patient has flu-like syndrome. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
           <text id="/data/null_results_group:label">
             <value>No Conditions Met</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Which location did you refer the patient?</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:label">
-            <value>How many Dexamethasone IM 8 mg were used?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:label">
-            <value>How many Salbutamol tablet 4mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:label">
-            <value>How many Azythromycine tablets 500mg were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -304,84 +266,47 @@ Procedure:
             <value>Tuberculose</value>
           </text>
           <text id="/data/results_group/res_tuberculosis_action:label">
-            <value>Le patient peut avoir la Tuberculose.
-
-Procédure :
-- Référer pour diagnostic et traitement
-- Vraiment motiver pour la référence (traitement gratuit !)</value>
+            <value>Le patient pourrait être atteint de tuberculose. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_asthma:label">
             <value>Asthme</value>
           </text>
           <text id="/data/results_group/res_asthma_action:label">
-            <value>Le patient peut avoir de l'Asthme.
-
-Procédure :
-- Nébuliseur pour traitement immédiat
-- Dexaméthasone IM 8 mg
-- Renvoyer à la maison avec : Salbutamol comprimé 4mg – 2 fois par jour pendant une semaine
-- Si l'état ne s'améliore pas après deux jours, aller à l'hôpital</value>
+            <value>Le patient pourrait souffrir d'asthme. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
             <value>Pneumonie</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>Le patient peut avoir une Pneumonie.
-
-Procédure :
-- Comprimés d'Azythromycine 500 mg – 1 co par jour pendant 5 jours
-- Aller à l'hôpital si pas d'amélioration après deux jours</value>
+            <value>Le patient pourrait souffrir de pneumonie. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk:label">
             <value>Risque de décompensation cardiaque</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk_action:label">
-            <value>Le patient est à risque de décompensation cardiaque.
-
-Procédure :
-- Référer</value>
+            <value>Le patient présente un risque de décompensation cardiaque. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation:label">
             <value>Décompensation cardiaque</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_action:label">
-            <value>Le patient peut avoir une décompensation cardiaque.
+            <value>Le patient présente peut-être une décompensation cardiaque.
 
 Procédure :
-- Référer à l'hôpital</value>
+
+- Transfert à l'hôpital</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Syndrome grippal</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>Le patient présente un syndrome grippal. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Aucune condition remplie</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>À quel endroit avez-vous référé le patient ?</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:label">
-            <value>Combien de Dexaméthasone IM 8 mg ont été utilisés ?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:label">
-            <value>Combien de comprimés de Salbutamol 4mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:label">
-            <value>Combien de comprimés d'Azythromycine 500mg ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -488,48 +413,31 @@ Procédure :
             <value>Depi konbyen semèn sentòm yo la?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_tuberculosis:label">
             <value>Tibèkiloz</value>
           </text>
           <text id="/data/results_group/res_tuberculosis_action:label">
-            <value>Pasyan an ka gen Tibèkiloz.
-
-Pwotokòl:
-- Voye l pou dyagnostik ak tretman
-- Ankouraje l anpil pou l ale (tretman an gratis!)</value>
+            <value>Pasyan an ka gen tibèkiloz. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_asthma:label">
-            <value>Opresyon</value>
+            <value>Asm</value>
           </text>
           <text id="/data/results_group/res_asthma_action:label">
-            <value>Pasyan an ka gen Opresyon.
-
-Pwotokòl:
-- Nebilizè pou tretman imedya
-- Dexamethasone IM 8 mg
-- Voye l lakay ak: Grenn Salbutamol 4mg – 2 fwa pa jou pandan yon semèn
-- Si l pa vin pi byen apre de jou, ale lopital</value>
+            <value>Pasyan an ka gen Asm. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_pneumonia:label">
             <value>Nemoni</value>
           </text>
           <text id="/data/results_group/res_pneumonia_action:label">
-            <value>Pasyan an ka gen Nemoni.
-
-Pwotokòl:
-- Grenn Azythromycine 500 mg – 1 grenn pa jou pandan 5 jou
-- Ale lopital si l pa vin pi byen apre de jou</value>
+            <value>Pasyan an ka gen nemoni. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk:label">
-            <value>Risk pou dekonpansasyon kadyak</value>
+            <value>Risk dekonpansasyon kadyak</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation_risk_action:label">
-            <value>Pasyan an gen risk pou dekonpansasyon kadyak.
-
-Pwotokòl:
-- Voye l nan sant sante</value>
+            <value>Pasyan an gen risk pou li gen dekonpansasyon kadyak. Soumèt fòm lan epi ranpli egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_cardiac_decompensation:label">
             <value>Dekonpansasyon kadyak</value>
@@ -537,46 +445,25 @@ Pwotokòl:
           <text id="/data/results_group/res_cardiac_decompensation_action:label">
             <value>Pasyan an ka gen dekonpansasyon kadyak.
 
-Pwotokòl:
-- Voye l lopital</value>
+Pwosedi:
+- Voye l nan lopital la</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Sendwòm gripal</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>Pasyan an gen yon sendwòm gripal. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Pa Gen Kondisyon Ki Ranpli</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Ki kote ou te voye pasyan an?</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dexamethasone_im_8mg:label">
-            <value>Konbyen Dexamethasone IM 8 mg yo te itilize?</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/salbutamol_tablet_4mg:label">
-            <value>Konbyen grenn Salbutamol 4mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/azythromycine_tablets_500mg:label">
-            <value>Konbyen grenn Azythromycine 500mg yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="ELD_Form006_RespiratoryConditions" version="20260925024308" prefix="J1!ELD_Form006_RespiratoryConditions!" delimiter="#">
+        <data id="ELD_Form006_RespiratoryConditions" version="20261011185638" prefix="J1!ELD_Form006_RespiratoryConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -602,6 +489,7 @@ Pwotokòl:
               <patient_id/>
               <date_of_birth>0</date_of_birth>
               <sex/>
+              <chronic_asthma/>
               <parent>
                 <_id/>
                 <parent>
@@ -651,6 +539,7 @@ Pwotokòl:
           <calc_pneumonia/>
           <calc_cardiac_decompensation_risk/>
           <calc_cardiac_decompensation/>
+          <calc_flu_like_syndrome/>
           <results_group>
             <res_tuberculosis/>
             <res_tuberculosis_action/>
@@ -662,17 +551,12 @@ Pwotokòl:
             <res_cardiac_decompensation_risk_action/>
             <res_cardiac_decompensation/>
             <res_cardiac_decompensation_action/>
+            <res_flu_like_syndrome/>
+            <res_flu_like_syndrome_action/>
           </results_group>
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <referal/>
-            <dexamethasone_im_8mg/>
-            <salbutamol_tablet_4mg/>
-            <azythromycine_tablets_500mg/>
-          </actions_confirmation>
           <data>
             <_elderly_coughing/>
             <_cough_duration/>
@@ -698,37 +582,8 @@ Pwotokòl:
             <_result_pneumonia/>
             <_result_cardiac_decompensation_risk/>
             <_result_cardiac_decompensation/>
-            <_followed_up_conditions/>
-            <_referal/>
-            <_dexamethasone_im_8mg/>
-            <_salbutamol_tablet_4mg/>
-            <_azythromycine_tablets_500mg/>
+            <_result_flu_like_syndrome/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <dexamethasone_im_8mg_used_in_ELD_Form006_RespiratoryConditions/>
-              <salbutamol_tablet_4mg_used_in/>
-              <salbutamol_tablet_4mg___set/>
-              <salbutamol_tablet_4mg___unit/>
-              <salbutamol_tablet_4mg_used_in_ELD_Form006_RespiratoryConditions/>
-              <azythromycine_tablets_500mg_used_in/>
-              <azythromycine_tablets_500mg___set/>
-              <azythromycine_tablets_500mg___unit/>
-              <azythromycine_tablets_500mg_used_in_ELD_Form006_RespiratoryConditions/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -812,6 +667,7 @@ Pwotokòl:
       <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
       <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_asthma" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
@@ -851,24 +707,22 @@ Pwotokòl:
       <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/respiratory_conditions_group/temperature  &gt; 38 and  /data/respiratory_conditions_group/fever_duration  &gt; 7 and  /data/respiratory_conditions_group/elderly_coughing  = 'yes' and  /data/respiratory_conditions_group/respiratory_distress  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/calc_cardiac_decompensation_risk" type="string" calculate="if( /data/respiratory_conditions_group/jugular_venous_distention  = 'yes' or  /data/respiratory_conditions_group/oedema_feet_ankles  = 'yes' or  /data/respiratory_conditions_group/respiratory_distress_after_exercise  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/calc_cardiac_decompensation" type="string" calculate="if( /data/respiratory_conditions_group/tiredness  = 'yes' and  /data/respiratory_conditions_group/symptoms_duration_weeks  &gt;= 2, 'true', 'false')"/>
-      <bind nodeset="/data/results_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_cardiac_decompensation_risk  = 'true' or  /data/calc_cardiac_decompensation  = 'true'"/>
+      <bind nodeset="/data/calc_flu_like_syndrome" type="string" calculate="if( /data/calc_tuberculosis  = 'false' and  /data/respiratory_conditions_group/wheezing  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_cardiac_decompensation_risk  = 'true' or  /data/calc_cardiac_decompensation  = 'true' or  /data/calc_flu_like_syndrome  = 'true'"/>
       <bind nodeset="/data/results_group/res_tuberculosis" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
       <bind nodeset="/data/results_group/res_tuberculosis_action" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
-      <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
-      <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true' and  /data/inputs/contact/chronic_asthma  != 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true' and  /data/inputs/contact/chronic_asthma  != 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_cardiac_decompensation_risk" readonly="true()" type="string" relevant=" /data/calc_cardiac_decompensation_risk  = 'true'"/>
       <bind nodeset="/data/results_group/res_cardiac_decompensation_risk_action" readonly="true()" type="string" relevant=" /data/calc_cardiac_decompensation_risk  = 'true'"/>
       <bind nodeset="/data/results_group/res_cardiac_decompensation" readonly="true()" type="string" relevant=" /data/calc_cardiac_decompensation  = 'true'"/>
       <bind nodeset="/data/results_group/res_cardiac_decompensation_action" readonly="true()" type="string" relevant=" /data/calc_cardiac_decompensation  = 'true'"/>
-      <bind nodeset="/data/null_results_group" relevant=" /data/calc_tuberculosis  = 'false' and  /data/calc_asthma  = 'false' and  /data/calc_pneumonia  = 'false' and  /data/calc_cardiac_decompensation_risk  = 'false' and  /data/calc_cardiac_decompensation  = 'false'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome_action" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_tuberculosis  = 'false' and  /data/calc_asthma  = 'false' and  /data/calc_pneumonia  = 'false' and  /data/calc_cardiac_decompensation_risk  = 'false' and  /data/calc_cardiac_decompensation  = 'false' and  /data/calc_flu_like_syndrome  = 'false'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'tuberculosis') or selected( /data/actions_confirmation/followed_up_conditions , 'cardiac_decompensation_risk') or selected( /data/actions_confirmation/followed_up_conditions , 'cardiac_decompensation')"/>
-      <bind nodeset="/data/actions_confirmation/dexamethasone_im_8mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'asthma')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/dexamethasone_im_8mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/salbutamol_tablet_4mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'asthma')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/salbutamol_tablet_4mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/azythromycine_tablets_500mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'pneumonia')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/azythromycine_tablets_500mg:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_elderly_coughing" type="string" calculate="if( /data/respiratory_conditions_group/elderly_coughing  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_cough_duration" type="string" calculate="if( /data/respiratory_conditions_group/cough_duration  != '',  /data/respiratory_conditions_group/cough_duration , -1)"/>
       <bind nodeset="/data/data/_qualify_cough" type="string" calculate="if( /data/respiratory_conditions_group/qualify_cough  != '',  /data/respiratory_conditions_group/qualify_cough , 'false')"/>
@@ -893,30 +747,7 @@ Pwotokòl:
       <bind nodeset="/data/data/_result_pneumonia" type="string" calculate="if( /data/calc_pneumonia ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_cardiac_decompensation_risk" type="string" calculate="if( /data/calc_cardiac_decompensation_risk ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_cardiac_decompensation" type="string" calculate="if( /data/calc_cardiac_decompensation ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
-      <bind nodeset="/data/data/_dexamethasone_im_8mg" type="string" calculate="if( /data/actions_confirmation/dexamethasone_im_8mg  != '',  /data/actions_confirmation/dexamethasone_im_8mg , -1)"/>
-      <bind nodeset="/data/data/_salbutamol_tablet_4mg" type="string" calculate="if( /data/actions_confirmation/salbutamol_tablet_4mg  != '',  /data/actions_confirmation/salbutamol_tablet_4mg , -1)"/>
-      <bind nodeset="/data/data/_azythromycine_tablets_500mg" type="string" calculate="if( /data/actions_confirmation/azythromycine_tablets_500mg  != '',  /data/actions_confirmation/azythromycine_tablets_500mg , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ELD_Form006_RespiratoryConditions&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/dexamethasone_im_8mg_used_in_ELD_Form006_RespiratoryConditions" type="string" calculate=" /data/actions_confirmation/dexamethasone_im_8mg "/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_tablet_4mg_used_in" type="string" calculate=" /data/actions_confirmation/salbutamol_tablet_4mg "/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_tablet_4mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_tablet_4mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/salbutamol_tablet_4mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_tablet_4mg_used_in_ELD_Form006_RespiratoryConditions" type="string" calculate=" /data/prescription_summary/fields/salbutamol_tablet_4mg___set  * X +  /data/prescription_summary/fields/salbutamol_tablet_4mg___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/azythromycine_tablets_500mg_used_in" type="string" calculate=" /data/actions_confirmation/azythromycine_tablets_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/azythromycine_tablets_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/azythromycine_tablets_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/azythromycine_tablets_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/azythromycine_tablets_500mg_used_in_ELD_Form006_RespiratoryConditions" type="string" calculate=" /data/prescription_summary/fields/azythromycine_tablets_500mg___set  * X +  /data/prescription_summary/fields/azythromycine_tablets_500mg___unit "/>
+      <bind nodeset="/data/data/_result_flu_like_syndrome" type="string" calculate="if( /data/calc_flu_like_syndrome ='true', 'true', 'false')"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1094,6 +925,12 @@ Pwotokòl:
       <input ref="/data/results_group/res_cardiac_decompensation_action">
         <label ref="jr:itext('/data/results_group/res_cardiac_decompensation_action:label')"/>
       </input>
+      <input ref="/data/results_group/res_flu_like_syndrome" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome:label')"/>
+      </input>
+      <input ref="/data/results_group/res_flu_like_syndrome_action">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome_action:label')"/>
+      </input>
     </group>
     <group ref="/data/null_results_group">
       <label ref="jr:itext('/data/null_results_group:label')"/>
@@ -1101,38 +938,6 @@ Pwotokòl:
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select1 ref="/data/actions_confirmation/referal">
-        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/dexamethasone_im_8mg">
-        <label ref="jr:itext('/data/actions_confirmation/dexamethasone_im_8mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/salbutamol_tablet_4mg">
-        <label ref="jr:itext('/data/actions_confirmation/salbutamol_tablet_4mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/azythromycine_tablets_500mg">
-        <label ref="jr:itext('/data/actions_confirmation/azythromycine_tablets_500mg:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

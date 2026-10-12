@@ -77,6 +77,12 @@
           <text id="/data/inputs/contact/sex:label">
             <value>Sex</value>
           </text>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>Chronic Stroke</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>Chronic Hypertension</value>
+          </text>
           <text id="/data/inputs/contact/parent/_id:label">
             <value>Parent ID</value>
           </text>
@@ -88,6 +94,12 @@
           </text>
           <text id="/data/stroke_assessment_group:label">
             <value>Stroke Assessment</value>
+          </text>
+          <text id="/data/stroke_assessment_group/stroke_warning:label">
+            <value><output value=" /data/patient_name "/> has had a previous stroke.</value>
+          </text>
+          <text id="/data/stroke_assessment_group/hypertensive_warning:label">
+            <value><output value=" /data/patient_name "/> is hypertensive.</value>
           </text>
           <text id="/data/stroke_assessment_group/stroke_danger_signs:label">
             <value>List of stroke danger signs</value>
@@ -103,21 +115,6 @@
           </text>
           <text id="/data/stroke_assessment_group/seen_clinician_previously:label">
             <value>Has the patient gone to doctor or the clinic to seek treatment for this before?</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_first:label">
-            <value>Measured systolic BP</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_first:label">
-            <value>Measured diastolic BP</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_remeasure:label">
-            <value>Does BP need to be remeasured</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_remeasure:label">
-            <value>Measured systolic BP for second measurement</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_remeasure:label">
-            <value>Measured diastolic BP for second measurement</value>
           </text>
           <text id="/data/results_group:label">
             <value>Results</value>
@@ -137,40 +134,19 @@ Protocol:
             <value>Stroke</value>
           </text>
           <text id="/data/results_group/res_stroke_action:label">
-            <value>The patient has had a stroke.
-
-Protocol:
-- Control BP
-- Treat hypertension
-- Refer</value>
+            <value>The patient has had a stroke. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_old_stroke:label">
             <value>Old Stroke</value>
           </text>
           <text id="/data/results_group/res_old_stroke_action:label">
-            <value>The patient has had a stroke at some point.
-
-Protocol:
-- Counseling on mobilization and need for exercise (produce small leaflets with basic exercices)
-- Treat hypertension to prevent new strokes</value>
+            <value>The patient has had a stroke at some point. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Null Results</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Which location did you refer the patient?</value>
-          </text>
-          <text id="/data/actions_confirmation/counseling_provided:label">
-            <value>Did you provide counseling on mobilization and exercise?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -258,11 +234,17 @@ Protocol:
           <text id="/data/stroke_assessment_group:label">
             <value>Évaluation de l'AVC</value>
           </text>
+          <text id="/data/stroke_assessment_group/stroke_warning:label">
+            <value> Le patient <output value=" /data/patient_name "/> a déjà subi un AVC.</value>
+          </text>
+          <text id="/data/stroke_assessment_group/hypertensive_warning:label">
+            <value><output value=" /data/patient_name "/> est hypertendu.</value>
+          </text>
           <text id="/data/stroke_assessment_group/stroke_danger_signs:label">
-            <value>Liste des signes de danger d'AVC</value>
+            <value>Liste des signes de danger d'un AVC</value>
           </text>
           <text id="/data/stroke_assessment_group/symptom_duration:label">
-            <value>Depuis combien de jours ces symptômes sont-ils présents ?</value>
+            <value>Depuis combien de temps ces symptômes se manifestent-ils, en jours ?</value>
           </text>
           <text id="/data/stroke_assessment_group/hypertensive:label">
             <value>Le patient est-il hypertendu ?</value>
@@ -271,22 +253,7 @@ Protocol:
             <value>Le patient prend-il des médicaments contre l'hypertension ?</value>
           </text>
           <text id="/data/stroke_assessment_group/seen_clinician_previously:label">
-            <value>Le patient a-t-il déjà consulté un médecin ou une clinique pour se faire soigner pour cela ?</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_first:label">
-            <value>TA systolique mesurée</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_first:label">
-            <value>TA diastolique mesurée</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_remeasure:label">
-            <value>La tension artérielle doit-elle être remesurée</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_remeasure:label">
-            <value>TA systolique mesurée pour la deuxième mesure</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_remeasure:label">
-            <value>TA diastolique mesurée pour la deuxième mesure</value>
+            <value>Le patient a-t-il déjà consulté un médecin ou une clinique pour se faire soigner pour ce problème ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
@@ -295,37 +262,39 @@ Protocol:
             <value>Accident ischémique transitoire</value>
           </text>
           <text id="/data/results_group/res_transient_ischemic_attack_action:label">
-            <value>Le patient a peut-être eu un accident ischémique transitoire.\n\nProtocole :\n- Contrôler la TA\n- Traiter l'hypertension\n- Référer</value>
+            <value>Le patient a peut-être présenté un accident ischémique transitoire.
+
+Protocole :
+
+- Contrôler la tension artérielle
+
+- Traiter l'hypertension
+
+- Orienter vers un spécialiste</value>
           </text>
           <text id="/data/results_group/res_stroke:label">
             <value>AVC</value>
           </text>
           <text id="/data/results_group/res_stroke_action:label">
-            <value>Le patient a eu un AVC.\n\nProtocole :\n- Contrôler la TA\n- Traiter l'hypertension\n- Référer</value>
+            <value>Le patient a subi un AVC. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_old_stroke:label">
             <value>Ancien AVC</value>
           </text>
           <text id="/data/results_group/res_old_stroke_action:label">
-            <value>Le patient a eu un AVC à un moment donné.\n\nProtocole :\n- Conseils sur la mobilisation et le besoin d'exercice (produire de petits dépliants avec des exercices de base)\n- Traiter l'hypertension pour prévenir de nouveaux AVC</value>
+            <value>Le patient a déjà subi un AVC. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats nuls</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>-</value>
           </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>À quel endroit avez-vous référé le patient ?</value>
-          </text>
-          <text id="/data/actions_confirmation/counseling_provided:label">
-            <value>Avez-vous fourni des conseils sur la mobilisation et l'exercice ?</value>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>-</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -413,35 +382,26 @@ Protocol:
           <text id="/data/stroke_assessment_group:label">
             <value>Evalyasyon konjesyon serebral</value>
           </text>
+          <text id="/data/stroke_assessment_group/stroke_warning:label">
+            <value><output value=" /data/patient_name "/> te deja fè yon konjesyon serebral (AVC).</value>
+          </text>
+          <text id="/data/stroke_assessment_group/hypertensive_warning:label">
+            <value><output value=" /data/patient_name "/> gen tansyon wo.</value>
+          </text>
           <text id="/data/stroke_assessment_group/stroke_danger_signs:label">
             <value>Lis siy danje konjesyon serebral</value>
           </text>
           <text id="/data/stroke_assessment_group/symptom_duration:label">
-            <value>Depi konbyen jou sentòm sa yo la?</value>
+            <value>Depi konbyen tan sentòm sa yo ap pase, an jou?</value>
           </text>
           <text id="/data/stroke_assessment_group/hypertensive:label">
             <value>Èske pasyan an gen tansyon wo?</value>
           </text>
           <text id="/data/stroke_assessment_group/hypertension_treatment:label">
-            <value>Èske pasyan an pran medikaman pou tansyon wo?</value>
+            <value>Èske pasyan an ap pran medikaman pou tansyon wo?</value>
           </text>
           <text id="/data/stroke_assessment_group/seen_clinician_previously:label">
-            <value>Èske pasyan an te janm al wè doktè oswa nan klinik pou trete sa anvan?</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_first:label">
-            <value>Tansyon sistolik yo mezire</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_first:label">
-            <value>Tansyon dyastolik yo mezire</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_remeasure:label">
-            <value>Èske yo bezwen remezire tansyon an</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_systolic_remeasure:label">
-            <value>Tansyon sistolik yo mezire pou dezyèm fwa</value>
-          </text>
-          <text id="/data/stroke_assessment_group/bp_diastolic_remeasure:label">
-            <value>Tansyon dyastolik yo mezire pou dezyèm fwa</value>
+            <value>Èske pasyan an te deja al kay doktè oubyen nan klinik pou chèche tretman pou sa?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Rezilta</value>
@@ -450,42 +410,41 @@ Protocol:
             <value>Aksidan iskemi tranzitwa</value>
           </text>
           <text id="/data/results_group/res_transient_ischemic_attack_action:label">
-            <value>Pasyan an ka fè yon aksidan iskemi tranzitwa.\n\nPwotokòl:\n- Kontwole tansyon\n- Trete tansyon wo\n- Voye l nan sant sante</value>
+            <value>Pasyan an te ka fè yon atak ischemik pasajè.
+
+Pwotokòl:
+- Kontwole tansyon
+- Trete tansyon wo
+- Refere</value>
           </text>
           <text id="/data/results_group/res_stroke:label">
             <value>Konjesyon serebral</value>
           </text>
           <text id="/data/results_group/res_stroke_action:label">
-            <value>Pasyan an fè yon konjesyon serebral.\n\nPwotokòl:\n- Kontwole tansyon\n- Trete tansyon wo\n- Voye l nan sant sante</value>
+            <value>Pasyan an te fè yon konjesyon serebral. Soumèt fòm lan epi konplete egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_old_stroke:label">
             <value>Ansyen konjesyon serebral</value>
           </text>
           <text id="/data/results_group/res_old_stroke_action:label">
-            <value>Pasyan an te fè yon konjesyon serebral nan yon moman.\n\nPwotokòl:\n- Konsèy sou mobilizasyon ak bezwen fè egzèsis (fè ti feyè ak egzèsis debaz)\n- Trete tansyon wo pou anpeche nouvo konjesyon serebral</value>
+            <value>Pasyan an te fè yon konjesyon serebral nan yon moman. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta nil</value>
           </text>
           <text id="/data/null_results_group/res_null:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>-</value>
           </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Ki kote ou te voye pasyan an?</value>
-          </text>
-          <text id="/data/actions_confirmation/counseling_provided:label">
-            <value>Èske ou te bay konsèy sou mobilizasyon ak egzèsis?</value>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>-</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form008_Stroke" version="20260925024236" prefix="J1!ADT_Form008_Stroke!" delimiter="#">
+        <data id="ADT_Form008_Stroke" version="20261011182504" prefix="J1!ADT_Form008_Stroke!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -511,6 +470,8 @@ Protocol:
               <patient_id/>
               <date_of_birth>0</date_of_birth>
               <sex/>
+              <chronic_stroke/>
+              <chronic_hypertension/>
               <parent>
                 <_id/>
                 <parent>
@@ -532,19 +493,16 @@ Protocol:
           <patient_date_of_birth/>
           <patient_age_in_years/>
           <patient_age_in_months/>
-          <patient_age_in_days/>
+          <patient_age_in_days>per</patient_age_in_days>
           <patient_age_in_weeks/>
           <stroke_assessment_group>
+            <stroke_warning/>
+            <hypertensive_warning/>
             <stroke_danger_signs/>
             <symptom_duration/>
             <hypertensive/>
             <hypertension_treatment/>
             <seen_clinician_previously/>
-            <bp_systolic_first/>
-            <bp_diastolic_first/>
-            <bp_remeasure/>
-            <bp_systolic_remeasure/>
-            <bp_diastolic_remeasure/>
           </stroke_assessment_group>
           <calc_transient_ischemic_attack/>
           <calc_stroke/>
@@ -560,45 +518,16 @@ Protocol:
           <null_results_group>
             <res_null/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <referal/>
-            <counseling_provided/>
-          </actions_confirmation>
           <data>
             <_stroke_danger_signs/>
             <_symptom_duration/>
             <_hypertensive/>
             <_hypertension_treatment/>
             <_seen_clinician_previously/>
-            <_bp_systolic_first/>
-            <_bp_diastolic_first/>
-            <_bp_remeasure/>
-            <_bp_systolic_remeasure/>
-            <_bp_diastolic_remeasure/>
             <_result_transient_ischemic_attack/>
             <_result_stroke/>
             <_result_old_stroke/>
-            <_followed_up_conditions/>
-            <_referal/>
-            <_counseling_provided/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -686,6 +615,8 @@ Protocol:
       <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
       <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_stroke" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_hypertension" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
       <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
@@ -701,16 +632,13 @@ Protocol:
       <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/stroke_assessment_group/stroke_warning" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_stroke  = 'true'"/>
+      <bind nodeset="/data/stroke_assessment_group/hypertensive_warning" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_hypertension  = 'true'"/>
       <bind nodeset="/data/stroke_assessment_group/stroke_danger_signs" type="string"/>
       <bind nodeset="/data/stroke_assessment_group/symptom_duration" type="int" required="true()" relevant="count-selected( /data/stroke_assessment_group/stroke_danger_signs ) &gt; 0" constraint=". &lt;= 999"/>
       <bind nodeset="/data/stroke_assessment_group/hypertensive" type="string" required="true()"/>
       <bind nodeset="/data/stroke_assessment_group/hypertension_treatment" type="string" required="true()"/>
       <bind nodeset="/data/stroke_assessment_group/seen_clinician_previously" type="string" required="true()"/>
-      <bind nodeset="/data/stroke_assessment_group/bp_systolic_first" type="int" required="true()" constraint=". &lt;= 999"/>
-      <bind nodeset="/data/stroke_assessment_group/bp_diastolic_first" type="int" required="true()" constraint=". &lt;= 999"/>
-      <bind nodeset="/data/stroke_assessment_group/bp_remeasure" type="string"/>
-      <bind nodeset="/data/stroke_assessment_group/bp_systolic_remeasure" type="int" relevant=" /data/stroke_assessment_group/bp_remeasure  = 'yes'" constraint=". &lt;= 999"/>
-      <bind nodeset="/data/stroke_assessment_group/bp_diastolic_remeasure" type="int" relevant=" /data/stroke_assessment_group/bp_remeasure  = 'yes'" constraint=". &lt;= 999"/>
       <bind nodeset="/data/calc_transient_ischemic_attack" type="string" calculate="if( /data/stroke_assessment_group/symptom_duration  &lt;= 1 and count-selected( /data/stroke_assessment_group/stroke_danger_signs ) &gt; 0, 'true', 'false')"/>
       <bind nodeset="/data/calc_stroke" type="string" calculate="if( /data/stroke_assessment_group/symptom_duration  &gt; 1 and  /data/stroke_assessment_group/symptom_duration  &lt;= 7 and count-selected( /data/stroke_assessment_group/stroke_danger_signs ) &gt; 0, 'true', 'false')"/>
       <bind nodeset="/data/calc_old_stroke" type="string" calculate="if( /data/stroke_assessment_group/symptom_duration  &gt; 7 and count-selected( /data/stroke_assessment_group/stroke_danger_signs ) &gt; 0, 'true', 'false')"/>
@@ -723,35 +651,14 @@ Protocol:
       <bind nodeset="/data/results_group/res_old_stroke_action" readonly="true()" type="string" relevant=" /data/calc_old_stroke  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_transient_ischemic_attack  = 'false' and  /data/calc_stroke  = 'false' and  /data/calc_old_stroke  = 'false'"/>
       <bind nodeset="/data/null_results_group/res_null" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'transient_ischemic_attack') or selected( /data/actions_confirmation/followed_up_conditions , 'stroke')"/>
-      <bind nodeset="/data/actions_confirmation/counseling_provided" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'old_stroke')"/>
       <bind nodeset="/data/data/_stroke_danger_signs" type="string" calculate="if( /data/stroke_assessment_group/stroke_danger_signs  != '',  /data/stroke_assessment_group/stroke_danger_signs , 'false')"/>
       <bind nodeset="/data/data/_symptom_duration" type="string" calculate="if( /data/stroke_assessment_group/symptom_duration  != '',  /data/stroke_assessment_group/symptom_duration , -1)"/>
       <bind nodeset="/data/data/_hypertensive" type="string" calculate="if( /data/stroke_assessment_group/hypertensive  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_hypertension_treatment" type="string" calculate="if( /data/stroke_assessment_group/hypertension_treatment  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/data/_seen_clinician_previously" type="string" calculate="if( /data/stroke_assessment_group/seen_clinician_previously  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/data/_bp_systolic_first" type="string" calculate="if( /data/stroke_assessment_group/bp_systolic_first  != '',  /data/stroke_assessment_group/bp_systolic_first , -1)"/>
-      <bind nodeset="/data/data/_bp_diastolic_first" type="string" calculate="if( /data/stroke_assessment_group/bp_diastolic_first  != '',  /data/stroke_assessment_group/bp_diastolic_first , -1)"/>
-      <bind nodeset="/data/data/_bp_remeasure" type="string" calculate="if( /data/stroke_assessment_group/bp_remeasure  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/data/_bp_systolic_remeasure" type="string" calculate="if( /data/stroke_assessment_group/bp_systolic_remeasure  != '',  /data/stroke_assessment_group/bp_systolic_remeasure , -1)"/>
-      <bind nodeset="/data/data/_bp_diastolic_remeasure" type="string" calculate="if( /data/stroke_assessment_group/bp_diastolic_remeasure  != '',  /data/stroke_assessment_group/bp_diastolic_remeasure , -1)"/>
       <bind nodeset="/data/data/_result_transient_ischemic_attack" type="string" calculate="if( /data/calc_transient_ischemic_attack ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_stroke" type="string" calculate="if( /data/calc_stroke ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_old_stroke" type="string" calculate="if( /data/calc_old_stroke ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
-      <bind nodeset="/data/data/_counseling_provided" type="string" calculate="if( /data/actions_confirmation/counseling_provided  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form008_Stroke&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -775,8 +682,14 @@ Protocol:
         </group>
       </group>
     </group>
-    <group appearance="field-list" ref="/data/stroke_assessment_group">
+    <group appearance="field-list summary" ref="/data/stroke_assessment_group">
       <label ref="jr:itext('/data/stroke_assessment_group:label')"/>
+      <input ref="/data/stroke_assessment_group/stroke_warning" appearance="h1 yellow">
+        <label ref="jr:itext('/data/stroke_assessment_group/stroke_warning:label')"/>
+      </input>
+      <input ref="/data/stroke_assessment_group/hypertensive_warning" appearance="h1 yellow">
+        <label ref="jr:itext('/data/stroke_assessment_group/hypertensive_warning:label')"/>
+      </input>
       <select ref="/data/stroke_assessment_group/stroke_danger_signs">
         <label ref="jr:itext('/data/stroke_assessment_group/stroke_danger_signs:label')"/>
         <itemset nodeset="instance('stroke_danger_signs')/root/item">
@@ -808,25 +721,6 @@ Protocol:
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <input ref="/data/stroke_assessment_group/bp_systolic_first">
-        <label ref="jr:itext('/data/stroke_assessment_group/bp_systolic_first:label')"/>
-      </input>
-      <input ref="/data/stroke_assessment_group/bp_diastolic_first">
-        <label ref="jr:itext('/data/stroke_assessment_group/bp_diastolic_first:label')"/>
-      </input>
-      <select1 ref="/data/stroke_assessment_group/bp_remeasure">
-        <label ref="jr:itext('/data/stroke_assessment_group/bp_remeasure:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/stroke_assessment_group/bp_systolic_remeasure">
-        <label ref="jr:itext('/data/stroke_assessment_group/bp_systolic_remeasure:label')"/>
-      </input>
-      <input ref="/data/stroke_assessment_group/bp_diastolic_remeasure">
-        <label ref="jr:itext('/data/stroke_assessment_group/bp_diastolic_remeasure:label')"/>
-      </input>
     </group>
     <group appearance="field-list summary" ref="/data/results_group">
       <label ref="jr:itext('/data/results_group:label')"/>
@@ -855,36 +749,6 @@ Protocol:
         <label ref="jr:itext('/data/null_results_group/res_null:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select1 ref="/data/actions_confirmation/referal">
-        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <select1 ref="/data/actions_confirmation/counseling_provided">
-        <label ref="jr:itext('/data/actions_confirmation/counseling_provided:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

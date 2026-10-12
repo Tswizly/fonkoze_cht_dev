@@ -1,12 +1,12 @@
 {
   "resources": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "EQC4BToDgM5pY6Een5SgUQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "JFRpXKFR1JssftCkOOeMHQ=="
   },
   "privacy-policies": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "/twR+Q8i4pmWKN/3fUP6tQ=="
   },
   "form:contact:clinic:create": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "Ig1gMsmW7jHhhjRsm67K5g=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "PfPKqyXjB1cHkm8aRi65Sw=="
   },
   "form:contact:clinic:edit": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "rI7q/sy3YCLUlBSeJYf6/w=="
@@ -18,16 +18,16 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "d/QYY7KR4VNuiN5RS+jK5A=="
   },
   "form:contact:health_center:create": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "LIOrAjBhOt/9FqaphBPDTw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "d9aYw42mzI6dAt8lr4dXqw=="
   },
   "form:contact:health_center:edit": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "TSMhLoObllFRnb1spiMHow=="
   },
   "form:contact:person:create": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "otB03Y2xwuAzfarPG4W+Vg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "tVb4z79C5wbPNDsQ/6QHgg=="
   },
   "form:contact:person:edit": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "01wG1npoZLugA7RV8EgFdQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "9wivSBw7rKcco/wg3rjCvg=="
   },
   "form:ChildTriageForm": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "GRKHGjYDAIU47szg6bBn8Q=="
@@ -171,109 +171,109 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "g460cdmwFJguz8YtgoN9yw=="
   },
   "form:ADT_Form001_Diabetes": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "by4R2G8/ADVwVnhLWjoyfw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "JiD6Z1KutmrJX0mELvvq6A=="
   },
   "form:ADT_Form002_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "mRyvVB44VL4BVCH+naEfcQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "MXNGMM3cquF1Pef5oUOBPg=="
   },
   "form:ADT_Form003_Fever": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "jssAXwlC9nFJLFFdjhhCuA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "N2EYjrUzCy0m2F7COhUohA=="
   },
   "form:ADT_Form004_Hypertension": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "quDgCXGyyZdFj4/KMIw1Pg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "JweMmTE1QjM3x4l6eiSc3w=="
   },
   "form:ADT_Form005_Pregnancy": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "RBh8UYdsSBTx1xoM1+65bw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "fBN7kzS2eV9MsXU4EHMsoA=="
   },
   "form:ADT_Form006_RespiratoryConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "hcXl6Q0Rgu/Mz3ehAby0aA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "gSTkpCi6Etgyo7cYvciBCw=="
   },
   "form:ADT_Form007_SkinConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "sPMwk7JEzfcgAnpioTCOGg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "aeKbZHepOPcJjQcDdWeovw=="
   },
   "form:ADT_Form008_Stroke": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "EgILWwOtl8nG0uNFC2FK8Q=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "KRd3en9jQSRbfpc8cPPrgQ=="
   },
   "form:ADT_Form009_UTIandSTD": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "VQyx2lTiHUfa7dJ0L4u6UA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "pkbQma3yGo8nmNS//WEMqA=="
   },
   "form:ADT_Form010_Vision": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "TInbmrcEhLTkQ6cwdDzkKQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "uQooIfbbGbpVfEKtlHg86Q=="
   },
   "form:ADT_Form011_Wounds": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "j1uSmAkDcyH7odE7ii2orQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "mxiDX4HGqKauTNchk1ckkA=="
   },
   "form:CHD_Form001_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "4mPs5+uElrtVNao776GstQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "cX+caCtlqYKlmJaF5UXI3A=="
   },
   "form:CHD_Form002_RespiratoryInfections": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "vU8OOIXbjFTJKUpqApk8Vg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "js/fGXLtuBlhaW4sUmhrCA=="
   },
   "form:CHD_Form003_SkinConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "6kP7nDlu3J6BTHUPFLdxgw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "wEvvthWy3Cbigbr68ZymNQ=="
   },
   "form:CHD_Form004_Vision": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "noPE2GBjjxVuoK/HRcSthg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "A+L4GDFE/sOo0a5G6Job3A=="
   },
   "form:CHD_Form005_Wounds": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "azKFMZ+pVoZnmWQ/Pc9Ukg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Yq698jz5uQ3RuvFXymeGWQ=="
   },
   "form:CHD_Form006_Vaccines_and_Dewormer": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "ZRBAFSZLqfjo7WPfAcX1Sw=="
   },
   "form:ELD_Form001_ChronicPain": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "9k+ZnZHDjR7LRLybe4nV4A=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "Jevj2A2MQrP5hGcBwxmGjA=="
   },
   "form:ELD_Form002_Diabetes": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "0mxVg1fnC6oFfXnfvACIfw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "GzF19a2h9WrLJYYXEY+XIQ=="
   },
   "form:ELD_Form003_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "sthsyMtz+/PocKQ24fShsw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "OMQFwUEwYYerHhnUA+fzyA=="
   },
   "form:ELD_Form004_Fever": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "15AcZSMELFmtWZa9sXPz+A=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "2VIAMLIZZwcda3UWg5D7KA=="
   },
   "form:ELD_Form005_Hypertension": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "UgI/vgc0Hr2QH5yiM9Hrlg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "d9qqr5Agsj/8fCn/lfd1tg=="
   },
   "form:ELD_Form006_RespiratoryConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "MOJgcUogKOLEyaKeD74vSw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "TDtAsBFdpOpWjh8x3vG5Og=="
   },
   "form:ELD_Form007_SkinConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "jtTobQEUvuUaEb8RFlMg6w=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "yYgtJ6M0m5i44/56gJRufA=="
   },
   "form:ELD_Form008_Stroke": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "2SES/MSGOAksmyq87mPxQA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "VQc1WhkpTN3BrJuybnfUfA=="
   },
   "form:ELD_Form009_UTIandSTD": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "0ttI1wc5h6Khaoh9YEROMw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "BUMqJeJQDoxaeqmMydY56w=="
   },
   "form:ELD_Form010_Vision": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "M0Yd4tz54bbcnKXyHUWkUw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "gEDrGNcT+ZFAy7dPKIS8MA=="
   },
   "form:ELD_Form011_Wounds": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "YcI4jjRR0OCvQIJMsJJqjw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "HMj6hnIE9SFEscN87KlHOQ=="
   },
   "form:TRI_Form001_Triage": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "JmyMFyXeuJ72HuGjPW80aQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "qgzbx0frsB2hQESyD7bFIg=="
   },
   "form:YAA_Form001_DigestiveConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "BxEITIuBsvZuiokNnJgzFg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "yYmoWrlLsrrMxULExmIHnA=="
   },
   "form:YAA_Form002_RespiratoryConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "E+tM4+KKNus52Saaz6P9YQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "aOvyIRkXoyQjpkeaMK0Pyw=="
   },
   "form:YAA_Form003_SkinConditions": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "DyShaHAc9NfkIFj24qCzPw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "aYmGgSdnyJBNK04C4pXWLA=="
   },
   "form:YAA_Form004_UTIandSTD": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "cBclz0BF0eRnUT8C+IW3LQ=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "ZT6XT3rHEi+tWfD3oqcXUw=="
   },
   "form:YAA_Form005_Vision": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "JpFKk2BZ60LMwKX3GhT8Bw=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "lBsMJrQ8Ktb2EQS197FvTQ=="
   },
   "form:YAA_Form006_Wounds": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "ddIy2uoqylO9CfhCPxKwag=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "BdxkS+VP7BSP7n3dTcgrHA=="
   },
   "form:GEN.Form001.FormSelect": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "fi0mi3QzDxp44EpYtgeqBg=="
@@ -333,7 +333,7 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "PI33HuX0Z8iFrplqBLwnkA=="
   },
   "form:GEN_Form001_FormSelect": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "OVW0WYMmssGucXMYSO+I6A=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "BVD2tgAK2eQfhr904jqrnw=="
   },
   "form:ADT_Form012_Other_AIGEN": {
     "172-29-227-179.local-ip.medicmobile.org/medic": "1MEBCv9kY1TCoF6ocfzrmw=="
@@ -342,9 +342,21 @@
     "172-29-227-179.local-ip.medicmobile.org/medic": "FSjRffyo7md/PzT07b7IqQ=="
   },
   "form:GEN_Form003_Incidence_Report": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "oHjkW2XlHuG/B2F9IFJ2zA=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "SEt7x6DkSnWDv0nVxONiRw=="
   },
   "form:TRI_Form002_Child_Triage": {
-    "172-29-227-179.local-ip.medicmobile.org/medic": "dwDlOqZ10wVBZx5yyVSufg=="
+    "172-29-227-179.local-ip.medicmobile.org/medic": "dq10RUQiNV1pPRQ8zDu/4Q=="
+  },
+  "form:ADT_Form013_Anemia": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "rNFqmSF7LWvQSmKCFrVznA=="
+  },
+  "form:ADT_Form014_Summary": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "xHX++fQ3j1qAjwDhrPsRHw=="
+  },
+  "form:CHD_Form008_Malnutrition_Anemia": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "RMtjBImMVyFZo3aOWOf3Kw=="
+  },
+  "form:YAA_Form008_Malnutrition_Anemia": {
+    "172-29-227-179.local-ip.medicmobile.org/medic": "A8bLsJy/Cc0x6aJC4+au+w=="
   }
 }

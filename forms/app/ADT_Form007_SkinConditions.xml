@@ -92,18 +92,6 @@
           <text id="/data/skin_conditions_group/skin_symptoms:label">
             <value>Is the patient experiencing any of the following symptoms?</value>
           </text>
-          <text id="/data/skin_conditions_group/skin_appearance:label">
-            <value>Does the skin appear pale or light?</value>
-          </text>
-          <text id="/data/skin_conditions_group/skin_appearance:hint">
-            <value>Nurse to look at color of skin and sclera (eye, nail)</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:label">
-            <value>Des the sclera appear abnormal, or tinted a strange color?</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:hint">
-            <value>Nurse to look at color of skin and sclera (eye, nail)</value>
-          </text>
           <text id="/data/results_group:label">
             <value>Results</value>
           </text>
@@ -111,84 +99,25 @@
             <value>Impetigo or Folliculitis</value>
           </text>
           <text id="/data/results_group/res_impetigo_folliculitis_action:label">
-            <value>The patient may have impmetigo or folliculutis.
-
-Procedure:
-- Clean sores with antiseptic
-- Drain pus if fluctuant
-- Start cloxacillin tablets if &gt;4cm or red streaks or tender nodes or multiple abscesses for 5 days
-&lt;TODO: INSERT DOSEAGE CHART&gt;
-- Apply antibiotic cream – triple antibiotic ointment</value>
+            <value>The patient may have impmetigo or folliculutis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_ring_worm:label">
             <value>Ring Worm</value>
           </text>
           <text id="/data/results_group/res_ring_worm_action:label">
-            <value>The patient may have ring worm.
-
-Procedure:
-If limited to a few patches:
-- Grisefulvine or Ketoconazole cream 
-
-If extensive:
-- give griseofulvin, tablets, 125 mg with fatty meal (10mg/kg/day), 2 tablets once a day for 6 weeks
-- If in hair: shave hair, treat as above
-- If infected (red, warm, pus) add cloxacilline</value>
+            <value>The patient may have ring worm. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_scabies:label">
             <value>Scabies</value>
           </text>
           <text id="/data/results_group/res_scabies_action:label">
-            <value>The patient may have scabies.
-
-Procedure: 
-Treat itching: 
-- Calamine lotion
-Apply:
-- 25% topical Benzyl Benzoate at night, repeat for 3 days after washing.
-- Council hygiene measures: treat all people in the household who are affected, wash bed linen and clothes with warm water and put in the sun, wash affected persons
-- When infected add cloxaciline</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia:label">
-            <value>Moderate Anemia</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia_action:label">
-            <value>The patient may have moderate anemia.
-
-Procedure: 
-- Iron, folic acid – 1 tablet once a day, give for 14 days
-- Albendazole (400 mg) 1 tablet
-- Nutrition counseling: green leaves (panzou, lyann panye, moringa, boujon pwa, boujon manyok), fruits, rasped carots and red beet</value>
+            <value>The patient may have scabies. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>No Action Required</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:label">
-            <value>How many Triple antibiotic ointment were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:label">
-            <value>How many Antiseptic Cleaner were used?</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:label">
-            <value>How many Ketoconazole cream 2% were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -264,103 +193,32 @@ Procedure:
           <text id="/data/skin_conditions_group/skin_symptoms:label">
             <value>Le patient présente-t-il l'un des symptômes suivants ?</value>
           </text>
-          <text id="/data/skin_conditions_group/skin_appearance:label">
-            <value>La peau semble-t-elle pâle ou claire ?</value>
-          </text>
-          <text id="/data/skin_conditions_group/skin_appearance:hint">
-            <value>L'infirmière doit observer la couleur de la peau et de la sclérotique (œil, ongle)</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:label">
-            <value>La sclérotique semble-t-elle anormale ou d'une couleur étrange ?</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:hint">
-            <value>L'infirmière doit observer la couleur de la peau et de la sclérotique (œil, ongle)</value>
-          </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
           </text>
           <text id="/data/results_group/res_impetigo_folliculitis:label">
-            <value>Impétigo ou Folliculite</value>
+            <value>Impétigo ou folliculite</value>
           </text>
           <text id="/data/results_group/res_impetigo_folliculitis_action:label">
-            <value>Le patient peut avoir un impétigo ou une folliculite.
-
-Procédure :
-- Nettoyer les plaies avec un antiseptique
-- Drainer le pus si fluctuant
-- Commencer les comprimés de cloxacilline si &gt;4cm ou stries rouges ou ganglions sensibles ou abcès multiples pendant 5 jours
-&lt;TODO: INSERT DOSEAGE CHART&gt;
-- Appliquer une crème antibiotique – pommade triple antibiotique</value>
+            <value>Le patient peut présenter un impétigo ou une folliculite. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des prescriptions et des consultations.</value>
           </text>
           <text id="/data/results_group/res_ring_worm:label">
             <value>Teigne</value>
           </text>
           <text id="/data/results_group/res_ring_worm_action:label">
-            <value>Le patient peut avoir la teigne.
-
-Procédure :
-Si limité à quelques plaques :
-- Crème à la griséofulvine ou au kétoconazole 
-
-Si étendu :
-- donner de la griséofulvine, comprimés, 125 mg avec un repas gras (10mg/kg/jour), 2 comprimés une fois par jour pendant 6 semaines
-- Si dans les cheveux : raser les cheveux, traiter comme ci-dessus
-- Si infecté (rouge, chaud, pus) ajouter de la cloxacilline</value>
+            <value>Le patient pourrait être atteint de teigne. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_scabies:label">
             <value>Gale</value>
           </text>
           <text id="/data/results_group/res_scabies_action:label">
-            <value>Le patient peut avoir la gale.
-
-Procédure : 
-Traiter les démangeaisons : 
-- Lotion à la calamine
-Appliquer :
-- Benzoate de benzyle topique à 25% la nuit, répéter pendant 3 jours après le lavage.
-- Conseiller des mesures d'hygiène : traiter toutes les personnes touchées dans le ménage, laver les draps et les vêtements à l'eau chaude et les mettre au soleil, laver les personnes touchées
-- En cas d'infection, ajouter de la cloxacilline</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia:label">
-            <value>Anémie modérée</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia_action:label">
-            <value>Le patient peut avoir une anémie modérée.
-
-Procédure : 
-- Fer, acide folique – 1 comprimé une fois par jour, donner pendant 14 jours
-- Albendazole (400 mg) 1 comprimé
-- Conseils nutritionnels : feuilles vertes (panzou, lyann panye, moringa, boujon pwa, boujon manyok), fruits, carottes râpées et betterave rouge</value>
+            <value>Le patient pourrait être atteint de gale. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Aucune action requise</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:label">
-            <value>Combien de Triple antibiotic ointment ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:label">
-            <value>Combien de Antiseptic Cleaner ont été utilisés ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:label">
-            <value>Combien de Ketoconazole cream 2% ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -503,105 +361,34 @@ Procédure :
             <value>Kondisyon po</value>
           </text>
           <text id="/data/skin_conditions_group/skin_symptoms:label">
-            <value>Èske pasyan an gen youn nan sentòm sa yo?</value>
-          </text>
-          <text id="/data/skin_conditions_group/skin_appearance:label">
-            <value>Èske po a sanble pal oswa klè?</value>
-          </text>
-          <text id="/data/skin_conditions_group/skin_appearance:hint">
-            <value>Enfimyè a dwe gade koulè po a ak blan je a (je, zong)</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:label">
-            <value>Èske blan je a sanble pa nòmal oswa gen yon lòt koulè?</value>
-          </text>
-          <text id="/data/skin_conditions_group/sclera_appearance:hint">
-            <value>Enfimyè a dwe gade koulè po a ak blan je a (je, zong)</value>
+            <value>Èske pasyan an ap fè eksperyans nenpòt nan sentòm sa yo?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_impetigo_folliculitis:label">
             <value>Enpetigo oswa Folikulit</value>
           </text>
           <text id="/data/results_group/res_impetigo_folliculitis_action:label">
-            <value>Pasyan an ka gen enpetigo oswa folikulit.
-
-Pwosedi:
-- Netwaye blesi yo ak antiseptik
-- Retire pi a si li mou
-- Kòmanse grenn cloxacillin si &gt;4cm oswa gen tras wouj oswa glann ki fè mal oswa plizyè absè pandan 5 jou
-&lt;TODO: INSERT DOSEAGE CHART&gt;
-- Mete krèm antibyotik – triple antibyotik</value>
+            <value>Pasyan an ka gen enmpetigo oubyen folikulitis. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_ring_worm:label">
-            <value>Tèy</value>
+            <value>Vè bag</value>
           </text>
           <text id="/data/results_group/res_ring_worm_action:label">
-            <value>Pasyan an ka gen tèy.
-
-Pwosedi:
-Si li sou kèk ti zòn sèlman:
-- Krèm griseofulvin oswa ketoconazole 
-
-Si li gaye anpil:
-- bay grenn griseofulvin, 125 mg ak yon repa ki gen grès (10mg/kg/jou), 2 grenn yon fwa pa jou pandan 6 semèn
-- Si li nan cheve: raze cheve a, trete jan yo di pi wo a
-- Si li enfekte (wouj, cho, gen pi) mete cloxacillin</value>
+            <value>Pasyan an ka gen vè anèl. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_scabies:label">
-            <value>Gal</value>
+            <value>Gale</value>
           </text>
           <text id="/data/results_group/res_scabies_action:label">
-            <value>Pasyan an ka gen gal.
-
-Pwosedi: 
-Trete grate a: 
-- Losyon calamine
-Mete:
-- Benzyl Benzoate 25% nan aswè, fè l ankò pandan 3 jou apre w fin benyen.
-- Bay konsèy sou ijyèn: trete tout moun nan kay la ki genyen l, lave dra ak rad ak dlo cho epi mete yo nan solèy, benyen moun ki genyen l yo
-- Lè li enfekte mete cloxacillin</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia:label">
-            <value>Anemi modere</value>
-          </text>
-          <text id="/data/results_group/res_moderate_anemia_action:label">
-            <value>Pasyan an ka gen anemi modere.
-
-Pwosedi: 
-- Fè, asid folik – 1 grenn yon fwa pa jou, bay pandan 14 jou
-- Albendazole (400 mg) 1 grenn
-- Konsèy sou nitrisyon: fèy vèt (panzou, lyann panye, moringa, boujon pwa, boujon manyok), fwi, kawòt rache ak bètrav wouj</value>
+            <value>Pasyan an ka gen gal. Soumèt fòm lan epi konplete egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Pa gen aksyon ki nesesè</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/triple_antibiotic_ointment:label">
-            <value>Konbyen Triple antibiotic ointment yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/antiseptic_cleaner:label">
-            <value>Konbyen Antiseptic Cleaner yo te itilize?</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ketoconazole_cream_2:label">
-            <value>Konbyen Ketoconazole cream 2% yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -675,7 +462,7 @@ Pwosedi:
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form007_SkinConditions" version="20260925024234" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
+        <data id="ADT_Form007_SkinConditions" version="20261011182407" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -726,13 +513,10 @@ Pwosedi:
           <patient_age_in_weeks/>
           <skin_conditions_group>
             <skin_symptoms/>
-            <skin_appearance/>
-            <sclera_appearance/>
           </skin_conditions_group>
           <calc_impetigo_folliculitis/>
           <calc_ring_worm/>
           <calc_scabies/>
-          <calc_moderate_anemia/>
           <results_group>
             <res_impetigo_folliculitis/>
             <res_impetigo_folliculitis_action/>
@@ -740,50 +524,16 @@ Pwosedi:
             <res_ring_worm_action/>
             <res_scabies/>
             <res_scabies_action/>
-            <res_moderate_anemia/>
-            <res_moderate_anemia_action/>
           </results_group>
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <triple_antibiotic_ointment/>
-            <antiseptic_cleaner/>
-            <ketoconazole_cream_2/>
-          </actions_confirmation>
           <data>
             <_skin_symptoms/>
-            <_skin_appearance/>
-            <_sclera_appearance/>
             <_result_impetigo_folliculitis/>
             <_result_ring_worm/>
             <_result_scabies/>
-            <_result_moderate_anemia/>
-            <_followed_up_conditions/>
-            <_triple_antibiotic_ointment/>
-            <_antiseptic_cleaner/>
-            <_ketoconazole_cream_2/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <triple_antibiotic_ointment_used_in_ADT_Form007_SkinConditions/>
-              <antiseptic_cleaner_used_in_ADT_Form007_SkinConditions/>
-              <ketoconazole_cream_2_used_in_ADT_Form007_SkinConditions/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -883,51 +633,22 @@ Pwosedi:
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
       <bind nodeset="/data/skin_conditions_group/skin_symptoms" type="string" required="true()"/>
-      <bind nodeset="/data/skin_conditions_group/skin_appearance" type="string" required="true()"/>
-      <bind nodeset="/data/skin_conditions_group/sclera_appearance" type="string" required="true()"/>
       <bind nodeset="/data/calc_impetigo_folliculitis" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'crusts_or_lesions') or selected( /data/skin_conditions_group/skin_symptoms , 'blisters_sores_pustules'), 'true', 'false')"/>
       <bind nodeset="/data/calc_ring_worm" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'itching') or selected( /data/skin_conditions_group/skin_symptoms , 'itchy_lesions'), 'true', 'false')"/>
       <bind nodeset="/data/calc_scabies" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'rash') or selected( /data/skin_conditions_group/skin_symptoms , 'web_space_and_wrists') or selected( /data/skin_conditions_group/skin_symptoms , 'face_spared'), 'true', 'false')"/>
-      <bind nodeset="/data/calc_moderate_anemia" type="string" calculate="if( /data/skin_conditions_group/skin_appearance  = 'yes' or  /data/skin_conditions_group/sclera_appearance  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/results_group" relevant=" /data/calc_impetigo_folliculitis  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true' or  /data/calc_moderate_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_impetigo_folliculitis  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true'"/>
       <bind nodeset="/data/results_group/res_impetigo_folliculitis" readonly="true()" type="string" relevant=" /data/calc_impetigo_folliculitis  = 'true'"/>
       <bind nodeset="/data/results_group/res_impetigo_folliculitis_action" readonly="true()" type="string" relevant=" /data/calc_impetigo_folliculitis  = 'true'"/>
       <bind nodeset="/data/results_group/res_ring_worm" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
       <bind nodeset="/data/results_group/res_ring_worm_action" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
       <bind nodeset="/data/results_group/res_scabies" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
       <bind nodeset="/data/results_group/res_scabies_action" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
-      <bind nodeset="/data/results_group/res_moderate_anemia" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true'"/>
-      <bind nodeset="/data/results_group/res_moderate_anemia_action" readonly="true()" type="string" relevant=" /data/calc_moderate_anemia  = 'true'"/>
-      <bind nodeset="/data/null_results_group" relevant=" /data/calc_impetigo_folliculitis  = 'false' and  /data/calc_ring_worm  = 'false' and  /data/calc_scabies  = 'false' and  /data/calc_moderate_anemia  = 'false'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_impetigo_folliculitis  = 'false' and  /data/calc_ring_worm  = 'false' and  /data/calc_scabies  = 'false'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/triple_antibiotic_ointment" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'impetigo_folliculitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/triple_antibiotic_ointment:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/antiseptic_cleaner" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'impetigo_folliculitis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/antiseptic_cleaner:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/ketoconazole_cream_2" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'ring_worm')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ketoconazole_cream_2:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_skin_symptoms" type="string" calculate="if( /data/skin_conditions_group/skin_symptoms  != '',  /data/skin_conditions_group/skin_symptoms , 'false')"/>
-      <bind nodeset="/data/data/_skin_appearance" type="string" calculate="if( /data/skin_conditions_group/skin_appearance  != '',  /data/skin_conditions_group/skin_appearance , 'false')"/>
-      <bind nodeset="/data/data/_sclera_appearance" type="string" calculate="if( /data/skin_conditions_group/sclera_appearance  != '',  /data/skin_conditions_group/sclera_appearance , 'false')"/>
       <bind nodeset="/data/data/_result_impetigo_folliculitis" type="string" calculate="if( /data/calc_impetigo_folliculitis ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_ring_worm" type="string" calculate="if( /data/calc_ring_worm ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_scabies" type="string" calculate="if( /data/calc_scabies ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_result_moderate_anemia" type="string" calculate="if( /data/calc_moderate_anemia ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_triple_antibiotic_ointment" type="string" calculate="if( /data/actions_confirmation/triple_antibiotic_ointment  != '',  /data/actions_confirmation/triple_antibiotic_ointment , -1)"/>
-      <bind nodeset="/data/data/_antiseptic_cleaner" type="string" calculate="if( /data/actions_confirmation/antiseptic_cleaner  != '',  /data/actions_confirmation/antiseptic_cleaner , -1)"/>
-      <bind nodeset="/data/data/_ketoconazole_cream_2" type="string" calculate="if( /data/actions_confirmation/ketoconazole_cream_2  != '',  /data/actions_confirmation/ketoconazole_cream_2 , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form007_SkinConditions&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/triple_antibiotic_ointment_used_in_ADT_Form007_SkinConditions" type="string" calculate=" /data/actions_confirmation/triple_antibiotic_ointment "/>
-      <bind nodeset="/data/prescription_summary/fields/antiseptic_cleaner_used_in_ADT_Form007_SkinConditions" type="string" calculate=" /data/actions_confirmation/antiseptic_cleaner "/>
-      <bind nodeset="/data/prescription_summary/fields/ketoconazole_cream_2_used_in_ADT_Form007_SkinConditions" type="string" calculate=" /data/actions_confirmation/ketoconazole_cream_2 "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -960,22 +681,6 @@ Pwosedi:
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <select1 ref="/data/skin_conditions_group/skin_appearance">
-        <label ref="jr:itext('/data/skin_conditions_group/skin_appearance:label')"/>
-        <hint ref="jr:itext('/data/skin_conditions_group/skin_appearance:hint')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <select1 ref="/data/skin_conditions_group/sclera_appearance">
-        <label ref="jr:itext('/data/skin_conditions_group/sclera_appearance:label')"/>
-        <hint ref="jr:itext('/data/skin_conditions_group/sclera_appearance:hint')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
     </group>
     <group appearance="field-list summary" ref="/data/results_group">
       <label ref="jr:itext('/data/results_group:label')"/>
@@ -997,12 +702,6 @@ Pwosedi:
       <input ref="/data/results_group/res_scabies_action">
         <label ref="jr:itext('/data/results_group/res_scabies_action:label')"/>
       </input>
-      <input ref="/data/results_group/res_moderate_anemia" appearance="h1 yellow">
-        <label ref="jr:itext('/data/results_group/res_moderate_anemia:label')"/>
-      </input>
-      <input ref="/data/results_group/res_moderate_anemia_action">
-        <label ref="jr:itext('/data/results_group/res_moderate_anemia_action:label')"/>
-      </input>
     </group>
     <group appearance="field-list summary" ref="/data/null_results_group">
       <label ref="jr:itext('/data/null_results_group:label')"/>
@@ -1010,31 +709,6 @@ Pwosedi:
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <input ref="/data/actions_confirmation/triple_antibiotic_ointment">
-        <label ref="jr:itext('/data/actions_confirmation/triple_antibiotic_ointment:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/antiseptic_cleaner">
-        <label ref="jr:itext('/data/actions_confirmation/antiseptic_cleaner:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/ketoconazole_cream_2">
-        <label ref="jr:itext('/data/actions_confirmation/ketoconazole_cream_2:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

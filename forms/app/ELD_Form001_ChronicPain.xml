@@ -81,38 +81,13 @@
             <value>Arthroses / Arthritis</value>
           </text>
           <text id="/data/results_group/res_arthroses_arthritis_action:label">
-            <value>The patient may have Arthroses / Arthritis.
-
-Procedure:
-- If joint isn't hot to the touch, massage with Dolex or local remedy
-- Co mioflex, one tablet every 8 hours after meals.
-- Counseling: continue regular daily activities as much as possible. Avoid prolonged bedrest or sitting
-- Gentle exercise helps reduce pain and stiffness.
-- Don't carry heavy loads</value>
+            <value>The patient may have Arthroses / Arthritis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Null Results</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/follow_up_arthroses_arthritis:label">
-            <value>Did you follow up on Arthroses / Arthritis?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:label">
-            <value>How many Co mioflex tablet were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:label">
-            <value>How many Dolex were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -192,38 +167,13 @@ Procedure:
             <value>Arthrose / Arthrite</value>
           </text>
           <text id="/data/results_group/res_arthroses_arthritis_action:label">
-            <value>Le patient peut avoir de l'Arthrose / Arthrite.
-
-Procédure :
-- Si l'articulation n'est pas chaude au toucher, massez avec du Dolex ou un remède local
-- Co mioflex, un comprimé toutes les 8 heures après les repas.
-- Conseils : continuez les activités quotidiennes régulières autant que possible. Évitez le repos au lit ou la position assise prolongée
-- Des exercices doux aident à réduire la douleur et la raideur.
-- Ne portez pas de charges lourdes</value>
+            <value>Le patient peut souffrir d'arthrose/d'arthrite. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats Nuls</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/follow_up_arthroses_arthritis:label">
-            <value>Avez-vous suivi l'Arthrose / Arthrite ?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:label">
-            <value>Combien de Co mioflex tablet ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:label">
-            <value>Combien de Dolex ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -300,46 +250,21 @@ Procédure :
             <value>Rezilta</value>
           </text>
           <text id="/data/results_group/res_arthroses_arthritis:label">
-            <value>Atroz / Atrit</value>
+            <value>Atrit / Artroz</value>
           </text>
           <text id="/data/results_group/res_arthroses_arthritis_action:label">
-            <value>Pasyan an ka gen Atroz / Atrit.
-
-Pwosedi:
-- Si jwenti a pa cho lè ou manyen li, mase li ak Dolex oswa yon remèd lokal
-- Co mioflex, yon grenn chak 8 èdtan apre manje.
-- Konsèy: kontinye aktivite chak jou otank posib. Evite rete nan kabann oswa chita pou twò lontan
-- Fè egzèsis dou ede diminye doulè ak rèd.
-- Pa pote chay lou</value>
+            <value>Pasyan an ka gen artroz/atrit. Soumèt fòm lan epi ranpli egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta Nil</value>
           </text>
           <text id="/data/null_results_group/null_results_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/follow_up_arthroses_arthritis:label">
-            <value>Èske ou te swiv Atroz / Atrit?</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/co_mioflex_tablet:label">
-            <value>Konbyen Co mioflex tablet yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/dolex:label">
-            <value>Konbyen Dolex yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="ELD_Form001_ChronicPain" version="20260925024303" prefix="J1!ELD_Form001_ChronicPain!" delimiter="#">
+        <data id="ELD_Form001_ChronicPain" version="20261011180639" prefix="J1!ELD_Form001_ChronicPain!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -399,39 +324,10 @@ Pwosedi:
           <null_results_group>
             <null_results_note/>
           </null_results_group>
-          <actions_confirmation>
-            <follow_up_arthroses_arthritis/>
-            <co_mioflex_tablet/>
-            <dolex/>
-          </actions_confirmation>
           <data>
             <_chronic_pain_symptoms/>
             <_result_arthroses_arthritis/>
-            <_follow_up_arthroses_arthritis/>
-            <_co_mioflex_tablet/>
-            <_dolex/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <co_mioflex_tablet_used_in/>
-              <co_mioflex_tablet___set/>
-              <co_mioflex_tablet___unit/>
-              <co_mioflex_tablet_used_in_ELD_Form001_ChronicPain/>
-              <dolex_used_in_ELD_Form001_ChronicPain/>
-            </fields>
-          </prescription_summary>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -509,29 +405,8 @@ Pwosedi:
       <bind nodeset="/data/results_group/res_arthroses_arthritis_action" readonly="true()" type="string" relevant=" /data/calc_arthroses_arthritis  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_arthroses_arthritis  = 'false'"/>
       <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/follow_up_arthroses_arthritis" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/co_mioflex_tablet" type="int" required="true()" relevant=" /data/actions_confirmation/follow_up_arthroses_arthritis  = 'yes'" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/co_mioflex_tablet:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/dolex" type="int" required="true()" relevant=" /data/actions_confirmation/follow_up_arthroses_arthritis  = 'yes'" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/dolex:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_chronic_pain_symptoms" type="string" calculate="if( /data/chronic_pain_group/chronic_pain_symptoms  != '',  /data/chronic_pain_group/chronic_pain_symptoms , 'false')"/>
       <bind nodeset="/data/data/_result_arthroses_arthritis" type="string" calculate="if( /data/calc_arthroses_arthritis ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_follow_up_arthroses_arthritis" type="string" calculate="if( /data/actions_confirmation/follow_up_arthroses_arthritis  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/data/_co_mioflex_tablet" type="string" calculate="if( /data/actions_confirmation/co_mioflex_tablet  != '',  /data/actions_confirmation/co_mioflex_tablet , -1)"/>
-      <bind nodeset="/data/data/_dolex" type="string" calculate="if( /data/actions_confirmation/dolex  != '',  /data/actions_confirmation/dolex , -1)"/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ELD_Form001_ChronicPain&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/co_mioflex_tablet_used_in" type="string" calculate=" /data/actions_confirmation/co_mioflex_tablet "/>
-      <bind nodeset="/data/prescription_summary/fields/co_mioflex_tablet___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/co_mioflex_tablet_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/co_mioflex_tablet___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/co_mioflex_tablet_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/co_mioflex_tablet_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/co_mioflex_tablet_used_in_ELD_Form001_ChronicPain" type="string" calculate=" /data/prescription_summary/fields/co_mioflex_tablet___set  * X +  /data/prescription_summary/fields/co_mioflex_tablet___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/dolex_used_in_ELD_Form001_ChronicPain" type="string" calculate=" /data/actions_confirmation/dolex "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -580,28 +455,6 @@ Pwosedi:
         <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select1 ref="/data/actions_confirmation/follow_up_arthroses_arthritis">
-        <label ref="jr:itext('/data/actions_confirmation/follow_up_arthroses_arthritis:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/co_mioflex_tablet">
-        <label ref="jr:itext('/data/actions_confirmation/co_mioflex_tablet:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/dolex">
-        <label ref="jr:itext('/data/actions_confirmation/dolex:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>

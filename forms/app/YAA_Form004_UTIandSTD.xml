@@ -47,26 +47,14 @@
           <text id="uti_std_symptoms-9">
             <value>High blood pressure</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>UTI</value>
+          <text id="urine_strip_yes_no-0">
+            <value>Yes</value>
           </text>
-          <text id="followed_up_conditions-1">
-            <value>Glomerulonephritis</value>
+          <text id="urine_strip_yes_no-1">
+            <value>No</value>
           </text>
-          <text id="followed_up_conditions-2">
-            <value>Syphilis</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Other STD</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Zanmi Lasante health center in Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Hopital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Hopital Alma Mater in Gros Morne town</value>
+          <text id="urine_strip_yes_no-2">
+            <value>Did not use urine strip</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
@@ -132,89 +120,31 @@
             <value>UTI</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>The youth has a Urinary Tract Infection.
-
-Procedure:
-- Trimetoprim sulfate tablets 400/80mg
-- Counselling: encourage to drink a lot of treated water</value>
+            <value>The youth has a Urinary Tract Infection. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis:label">
             <value>Risk of glomerulonephritis</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis_action:label">
-            <value>The youth is at risk of glomerulonephritis.
-
-Procedure:
-- Furosemide IV one dose 20 mg IM
-- Refer immediately</value>
+            <value>The youth is at risk of glomerulonephritis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_syphilis:label">
             <value>Risk of Syphilis</value>
           </text>
           <text id="/data/results_group/res_syphilis_action:label">
-            <value>The youth is at risk of Syphilis.
-
-Procedure:
-- Benzatine penicillin 2.4 Mio Units intramuscular injection (slowly!!) – single dose
-- Treat all partners
-- Counsel on condom use</value>
+            <value>The youth is at risk of Syphilis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/results_group/res_other_std:label">
             <value>Risk of other STD</value>
           </text>
           <text id="/data/results_group/res_other_std_action:label">
-            <value>The youth is at risk of other STD.
-
-Procedure:
-- Ciprofloxacine 500 mg, two times per day for 3 days
-- And Doxycicline 100mg, twice a day for 14 days
-- Treat all partners
-- Make sure to provide counselling on condom use</value>
+            <value>The youth is at risk of other STD. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Null results</value>
           </text>
           <text id="/data/null_results_group/null_res_note:label">
-            <value>No conditions were met and the patient does not require additional treatment, submit the form.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Which conditions did you follow up on?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Which location did you refer the patient?</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:label">
-            <value>How many Trimetoprim sulfate 400/80mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:label">
-            <value>How many Furosemide IV 20 mg were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>How many Benzatine penicillin 2.4 Mio Units were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>How many Ciprofloxacine 500 mg tablets were distributed?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Cannot be less than 0 or greater than 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>How many Doxycicline 100mg tablets were distributed?</value>
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -260,26 +190,14 @@ Procedure:
           <text id="uti_std_symptoms-9">
             <value>Hypertension artérielle</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>Infection urinaire</value>
+          <text id="urine_strip_yes_no-0">
+            <value>Oui</value>
           </text>
-          <text id="followed_up_conditions-1">
-            <value>Glomérulonéphrite</value>
+          <text id="urine_strip_yes_no-1">
+            <value>Non</value>
           </text>
-          <text id="followed_up_conditions-2">
-            <value>Syphilis</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Autre MST</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Hôpital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Hôpital Alma Mater dans la ville de Gros Morne</value>
+          <text id="urine_strip_yes_no-2">
+            <value>Je n'ai pas utilisé de bandelette urinaire.</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
@@ -324,16 +242,16 @@ Procedure:
             <value>Téléphone de l'infirmière</value>
           </text>
           <text id="/data/perform_followup_group:label">
-            <value>Effectuer le suivi</value>
+            <value>Effectuer un suivi</value>
           </text>
           <text id="/data/perform_followup_group/uti_std_symptoms:label">
-            <value>Le jeune présente-t-il l'un des symptômes d'infection urinaire ou de MST suivants ?</value>
+            <value>Le jeune présente-t-il l'un des symptômes suivants d'infection urinaire ou d'IST ?</value>
           </text>
           <text id="/data/perform_followup_group/temperature:label">
-            <value>Quelle est la température du jeune ?</value>
+            <value>Quelle est la température des jeunes ?</value>
           </text>
           <text id="/data/perform_followup_group/urinary_strip_feasibility:label">
-            <value>Une bandelette urinaire peut-elle être utilisée ?</value>
+            <value>Peut-on réaliser un test urinaire ?</value>
           </text>
           <text id="/data/perform_followup_group/urinary_strip_result:label">
             <value>La bandelette urinaire contient-elle des globules blancs ?</value>
@@ -342,92 +260,34 @@ Procedure:
             <value>Résultats</value>
           </text>
           <text id="/data/results_group/res_uti:label">
-            <value>Infection urinaire</value>
+            <value>infection urinaire</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>Le jeune a une infection urinaire.
-
-Procédure :
-- Comprimés de sulfate de triméthoprime 400/80 mg
-- Conseil : encourager à boire beaucoup d'eau traitée</value>
+            <value>Le jeune souffre d'une infection urinaire. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis:label">
             <value>Risque de glomérulonéphrite</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis_action:label">
-            <value>Le jeune présente un risque de glomérulonéphrite.
-
-Procédure :
-- Furosémide IV une dose 20 mg IM
-- Référer immédiatement</value>
+            <value>Ce jeune présente un risque de glomérulonéphrite. Veuillez remplir le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_syphilis:label">
             <value>Risque de syphilis</value>
           </text>
           <text id="/data/results_group/res_syphilis_action:label">
-            <value>Le jeune présente un risque de syphilis.
-
-Procédure :
-- Pénicilline benzathine 2,4 millions d'unités en injection intramusculaire (lentement !!) – dose unique
-- Traiter tous les partenaires
-- Conseiller sur l'utilisation du préservatif</value>
+            <value>Ce jeune est exposé au risque de syphilis. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
           </text>
           <text id="/data/results_group/res_other_std:label">
-            <value>Risque d'autre MST</value>
+            <value>Risque d'autres IST</value>
           </text>
           <text id="/data/results_group/res_other_std_action:label">
-            <value>Le jeune présente un risque d'autre MST.
-
-Procédure :
-- Ciprofloxacine 500 mg, deux fois par jour pendant 3 jours
-- Et Doxycycline 100 mg, deux fois par jour pendant 14 jours
-- Traiter tous les partenaires
-- Assurez-vous de fournir des conseils sur l'utilisation du préservatif</value>
+            <value>Ce jeune est exposé à d'autres IST. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures de traitement et de consultation.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Résultats nuls</value>
           </text>
           <text id="/data/null_results_group/null_res_note:label">
-            <value>Aucune condition n'a été remplie et le patient ne nécessite pas de traitement supplémentaire, soumettez le formulaire.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Quelles conditions avez-vous suivies ?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>À quel endroit avez-vous référé le patient ?</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:label">
-            <value>Combien de Trimetoprim sulfate 400/80mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:label">
-            <value>Combien de Furosemide IV 20 mg ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>Combien de Benzatine penicillin 2.4 Mio Units ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>Combien de Ciprofloxacine 500 mg tablets ont été distribués ?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Ne peut pas être inférieur à 0 ou supérieur à 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>Combien de Doxycicline 100mg tablets ont été distribués ?</value>
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -473,26 +333,14 @@ Procédure :
           <text id="uti_std_symptoms-9">
             <value>Tansyon wo</value>
           </text>
-          <text id="followed_up_conditions-0">
-            <value>Enfeksyon nan pipi</value>
+          <text id="urine_strip_yes_no-0">
+            <value>Wi</value>
           </text>
-          <text id="followed_up_conditions-1">
-            <value>Glomerulonefrit</value>
+          <text id="urine_strip_yes_no-1">
+            <value>Non</value>
           </text>
-          <text id="followed_up_conditions-2">
-            <value>Sifilis</value>
-          </text>
-          <text id="followed_up_conditions-3">
-            <value>Lòt MST</value>
-          </text>
-          <text id="referal_locations-0">
-            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
-          </text>
-          <text id="referal_locations-1">
-            <value>Lopital Sainte Thérèse</value>
-          </text>
-          <text id="referal_locations-2">
-            <value>Lopital Alma Mater nan vil Gros Morne</value>
+          <text id="urine_strip_yes_no-2">
+            <value>Pa sèvi ak bann pipi</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Sous</value>
@@ -540,112 +388,54 @@ Procédure :
             <value>Fè swivi</value>
           </text>
           <text id="/data/perform_followup_group/uti_std_symptoms:label">
-            <value>Èske jèn nan gen youn nan sentòm enfeksyon nan pipi oswa MST sa yo?</value>
+            <value>Èske jèn nan prezante nenpòt nan sentòm enfeksyon urin oswa maladi transmisib sa yo?</value>
           </text>
           <text id="/data/perform_followup_group/temperature:label">
-            <value>Ki tanperati jèn nan?</value>
+            <value>Ki tanperati jèn gason an?</value>
           </text>
           <text id="/data/perform_followup_group/urinary_strip_feasibility:label">
-            <value>Èske yo ka sèvi ak yon ti bann pou pipi?</value>
+            <value>Èske mwen ka fè yon tès urinè ak yon bann tès pipi?</value>
           </text>
           <text id="/data/perform_followup_group/urinary_strip_result:label">
-            <value>Èske ti bann pipi a gen globil blan ladan l?</value>
+            <value>Èske bann pipi a gen globil blan ladan l?</value>
           </text>
           <text id="/data/results_group:label">
-            <value>Rezilta</value>
+            <value>Rezilta yo</value>
           </text>
           <text id="/data/results_group/res_uti:label">
-            <value>Enfeksyon nan pipi</value>
+            <value>ITU</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>Jèn nan gen yon enfeksyon nan pipi.
-
-Pwosedi:
-- Grenn silfat trimetoprim 400/80mg
-- Konsèy: ankouraje l bwè anpil dlo trete</value>
+            <value>Jèn nan gen yon enfeksyon urinè. Soumèt fòm lan epi ranpli egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis:label">
-            <value>Risk glomerulonefrit</value>
+            <value>Risk pou glomerulonefrit</value>
           </text>
           <text id="/data/results_group/res_glomerulonephritis_action:label">
-            <value>Jèn nan gen risk glomerulonefrit.
-
-Pwosedi:
-- Furosemid nan venn yon sèl dòz 20 mg IM
-- Voye l nan sant sante touswit</value>
+            <value>Jèn nan gen risk pou l gen glomerulonefrit. Soumèt fòm lan epi ranpli egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_syphilis:label">
-            <value>Risk sifilis</value>
+            <value>Risk pou sifilis</value>
           </text>
           <text id="/data/results_group/res_syphilis_action:label">
-            <value>Jèn nan gen risk sifilis.
-
-Pwosedi:
-- Pénicilline benzatin 2.4 milyon inite piki nan misk (dousman!!) – yon sèl dòz
-- Trete tout patnè yo
-- Bay konsèy sou itilizasyon kapòt</value>
+            <value>Jèn nan an danje pou l pran sifilis. Soumèt fòm lan epi ranpli egzamen medikal la, apre sa kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_other_std:label">
-            <value>Risk lòt MST</value>
+            <value>Risk pou lòt MST</value>
           </text>
           <text id="/data/results_group/res_other_std_action:label">
-            <value>Jèn nan gen risk lòt MST.
-
-Pwosedi:
-- Siprofloksasin 500 mg, de fwa pa jou pandan 3 jou
-- Ak Doksiklin 100mg, de fwa pa jou pandan 14 jou
-- Trete tout patnè yo
-- Asire w ou bay konsèy sou itilizasyon kapòt</value>
+            <value>Jèn nan gen risk pou l pran lòt MST. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta nil</value>
           </text>
           <text id="/data/null_results_group/null_res_note:label">
-            <value>Pa gen okenn kondisyon ki te ranpli epi pasyan an pa bezwen lòt tretman, soumèt fòm nan.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/followed_up_conditions:label">
-            <value>Ki kondisyon ou te swiv?</value>
-          </text>
-          <text id="/data/actions_confirmation/referal:label">
-            <value>Ki kote ou te voye pasyan an?</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/trimetoprim_sulfate_400_80mg:label">
-            <value>Konbyen Trimetoprim sulfate 400/80mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/furosemide_iv_20mg:label">
-            <value>Konbyen Furosemide IV 20 mg yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label">
-            <value>Konbyen Benzatine penicillin 2.4 Mio Units yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/ciprofloxacine_500mg_tablets:label">
-            <value>Konbyen Ciprofloxacine 500 mg tablets yo te bay?</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg">
-            <value>Pa ka mwens pase 0 oswa pi gwo pase 999</value>
-          </text>
-          <text id="/data/actions_confirmation/doxycicline_100mg_tablets:label">
-            <value>Konbyen Doxycicline 100mg tablets yo te bay?</value>
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="YAA_Form004_UTIandSTD" version="20260925024340" prefix="J1!YAA_Form004_UTIandSTD!" delimiter="#">
+        <data id="YAA_Form004_UTIandSTD" version="20261011180707" prefix="J1!YAA_Form004_UTIandSTD!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -717,15 +507,6 @@ Pwosedi:
           <null_results_group>
             <null_res_note/>
           </null_results_group>
-          <actions_confirmation>
-            <followed_up_conditions/>
-            <referal/>
-            <trimetoprim_sulfate_400_80mg/>
-            <furosemide_iv_20mg/>
-            <benzatine_penicillin_2_4_mio_units/>
-            <ciprofloxacine_500mg_tablets/>
-            <doxycicline_100mg_tablets/>
-          </actions_confirmation>
           <data>
             <_uti_std_symptoms/>
             <_temperature/>
@@ -735,13 +516,7 @@ Pwosedi:
             <_result_glomerulonephritis/>
             <_result_syphilis/>
             <_result_other_std/>
-            <_followed_up_conditions/>
-            <_referal/>
-            <_trimetoprim_sulfate_400_80mg/>
-            <_furosemide_iv_20mg/>
-            <_benzatine_penicillin_2_4_mio_units/>
-            <_ciprofloxacine_500mg_tablets/>
-            <_doxycicline_100mg_tablets/>
+            <_urine_strip_used/>
           </data>
           <clinic_id/>
           <prescription_summary db-doc="TRUE">
@@ -757,20 +532,7 @@ Pwosedi:
             </contact>
             <fields>
               <Medicine_out/>
-              <trimetoprim_sulfate_400_80mg_used_in/>
-              <trimetoprim_sulfate_400_80mg___set/>
-              <trimetoprim_sulfate_400_80mg___unit/>
-              <trimetoprim_sulfate_400_80mg_used_in_YAA_Form004_UTIandSTD/>
-              <furosemide_iv_20mg_used_in_YAA_Form004_UTIandSTD/>
-              <benzatine_penicillin_2_4_mio_units_used_in_YAA_Form004_UTIandSTD/>
-              <ciprofloxacine_500mg_tablets_used_in/>
-              <ciprofloxacine_500mg_tablets___set/>
-              <ciprofloxacine_500mg_tablets___unit/>
-              <ciprofloxacine_500mg_tablets_used_in_YAA_Form004_UTIandSTD/>
-              <doxycicline_100mg_tablets_used_in/>
-              <doxycicline_100mg_tablets___set/>
-              <doxycicline_100mg_tablets___unit/>
-              <doxycicline_100mg_tablets_used_in_YAA_Form004_UTIandSTD/>
+              <urine_strips_used_in_YAA_Form004_UTIandSTD/>
             </fields>
           </prescription_summary>
           <meta tag="hidden">
@@ -848,39 +610,19 @@ Pwosedi:
           </item>
         </root>
       </instance>
-      <instance id="followed_up_conditions">
+      <instance id="urine_strip_yes_no">
         <root>
           <item>
-            <itextId>followed_up_conditions-0</itextId>
-            <name>uti</name>
+            <itextId>urine_strip_yes_no-0</itextId>
+            <name>yes</name>
           </item>
           <item>
-            <itextId>followed_up_conditions-1</itextId>
-            <name>glomerulonephritis</name>
+            <itextId>urine_strip_yes_no-1</itextId>
+            <name>no</name>
           </item>
           <item>
-            <itextId>followed_up_conditions-2</itextId>
-            <name>syphilis</name>
-          </item>
-          <item>
-            <itextId>followed_up_conditions-3</itextId>
-            <name>other_std</name>
-          </item>
-        </root>
-      </instance>
-      <instance id="referal_locations">
-        <root>
-          <item>
-            <itextId>referal_locations-0</itextId>
-            <name>zl</name>
-          </item>
-          <item>
-            <itextId>referal_locations-1</itextId>
-            <name>hst</name>
-          </item>
-          <item>
-            <itextId>referal_locations-2</itextId>
-            <name>ham</name>
+            <itextId>urine_strip_yes_no-2</itextId>
+            <name>did_not_run</name>
           </item>
         </root>
       </instance>
@@ -930,13 +672,6 @@ Pwosedi:
       <bind nodeset="/data/results_group/res_other_std_action" readonly="true()" type="string" relevant=" /data/calc_other_std  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_uti  != 'true' and  /data/calc_glomerulonephritis  != 'true' and  /data/calc_syphilis  != 'true' and  /data/calc_other_std  != 'true'"/>
       <bind nodeset="/data/null_results_group/null_res_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation/followed_up_conditions" type="string" required="true()"/>
-      <bind nodeset="/data/actions_confirmation/referal" type="string" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'glomerulonephritis')"/>
-      <bind nodeset="/data/actions_confirmation/trimetoprim_sulfate_400_80mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'uti')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/trimetoprim_sulfate_400_80mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/furosemide_iv_20mg" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'glomerulonephritis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/furosemide_iv_20mg:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'syphilis')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/ciprofloxacine_500mg_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'other_std')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/ciprofloxacine_500mg_tablets:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/doxycicline_100mg_tablets" type="int" required="true()" relevant="selected( /data/actions_confirmation/followed_up_conditions , 'other_std')" constraint=". &gt;= 0 and . &lt;= 999" jr:constraintMsg="jr:itext('/data/actions_confirmation/doxycicline_100mg_tablets:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_uti_std_symptoms" type="string" calculate="if( /data/perform_followup_group/uti_std_symptoms  != '',  /data/perform_followup_group/uti_std_symptoms , 'false')"/>
       <bind nodeset="/data/data/_temperature" type="string" calculate="if( /data/perform_followup_group/temperature  != '',  /data/perform_followup_group/temperature , -1)"/>
       <bind nodeset="/data/data/_urinary_strip_feasibility" type="string" calculate="if( /data/perform_followup_group/urinary_strip_feasibility  != '',  /data/perform_followup_group/urinary_strip_feasibility , 'false')"/>
@@ -945,13 +680,7 @@ Pwosedi:
       <bind nodeset="/data/data/_result_glomerulonephritis" type="string" calculate="if( /data/calc_glomerulonephritis ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_syphilis" type="string" calculate="if( /data/calc_syphilis ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_other_std" type="string" calculate="if( /data/calc_other_std ='true', 'true', 'false')"/>
-      <bind nodeset="/data/data/_followed_up_conditions" type="string" calculate="if( /data/actions_confirmation/followed_up_conditions  != '',  /data/actions_confirmation/followed_up_conditions , 'false')"/>
-      <bind nodeset="/data/data/_referal" type="string" calculate="if( /data/actions_confirmation/referal  != '',  /data/actions_confirmation/referal , 'false')"/>
-      <bind nodeset="/data/data/_trimetoprim_sulfate_400_80mg" type="string" calculate="if( /data/actions_confirmation/trimetoprim_sulfate_400_80mg  != '',  /data/actions_confirmation/trimetoprim_sulfate_400_80mg , -1)"/>
-      <bind nodeset="/data/data/_furosemide_iv_20mg" type="string" calculate="if( /data/actions_confirmation/furosemide_iv_20mg  != '',  /data/actions_confirmation/furosemide_iv_20mg , -1)"/>
-      <bind nodeset="/data/data/_benzatine_penicillin_2_4_mio_units" type="string" calculate="if( /data/actions_confirmation/benzatine_penicillin_2_4_mio_units  != '',  /data/actions_confirmation/benzatine_penicillin_2_4_mio_units , -1)"/>
-      <bind nodeset="/data/data/_ciprofloxacine_500mg_tablets" type="string" calculate="if( /data/actions_confirmation/ciprofloxacine_500mg_tablets  != '',  /data/actions_confirmation/ciprofloxacine_500mg_tablets , -1)"/>
-      <bind nodeset="/data/data/_doxycicline_100mg_tablets" type="string" calculate="if( /data/actions_confirmation/doxycicline_100mg_tablets  != '',  /data/actions_confirmation/doxycicline_100mg_tablets , -1)"/>
+      <bind nodeset="/data/data/_urine_strip_used" type="string" calculate="if( /data/perform_followup_group/urinary_strip_result  = 'yes' or  /data/perform_followup_group/urinary_strip_result  = 'no', 'true', 'false')"/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
       <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
@@ -962,20 +691,7 @@ Pwosedi:
       <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
       <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
       <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in" type="string" calculate=" /data/actions_confirmation/trimetoprim_sulfate_400_80mg "/>
-      <bind nodeset="/data/prescription_summary/fields/trimetoprim_sulfate_400_80mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/trimetoprim_sulfate_400_80mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/trimetoprim_sulfate_400_80mg_used_in_YAA_Form004_UTIandSTD" type="string" calculate=" /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg___set  * X +  /data/prescription_summary/fields/trimetoprim_sulfate_400_80mg___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/furosemide_iv_20mg_used_in_YAA_Form004_UTIandSTD" type="string" calculate=" /data/actions_confirmation/furosemide_iv_20mg "/>
-      <bind nodeset="/data/prescription_summary/fields/benzatine_penicillin_2_4_mio_units_used_in_YAA_Form004_UTIandSTD" type="string" calculate=" /data/actions_confirmation/benzatine_penicillin_2_4_mio_units "/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in" type="string" calculate=" /data/actions_confirmation/ciprofloxacine_500mg_tablets "/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacine_500mg_tablets_used_in_YAA_Form004_UTIandSTD" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacine_500mg_tablets___set  * X +  /data/prescription_summary/fields/ciprofloxacine_500mg_tablets___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets_used_in" type="string" calculate=" /data/actions_confirmation/doxycicline_100mg_tablets "/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/doxycicline_100mg_tablets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycicline_100mg_tablets_used_in_YAA_Form004_UTIandSTD" type="string" calculate=" /data/prescription_summary/fields/doxycicline_100mg_tablets___set  * X +  /data/prescription_summary/fields/doxycicline_100mg_tablets___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/urine_strips_used_in_YAA_Form004_UTIandSTD" type="string" calculate="if( /data/data/_urine_strip_used  = 'true', 1, 0)"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1020,7 +736,7 @@ Pwosedi:
       </select1>
       <select1 ref="/data/perform_followup_group/urinary_strip_result">
         <label ref="jr:itext('/data/perform_followup_group/urinary_strip_result:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
+        <itemset nodeset="instance('urine_strip_yes_no')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
@@ -1057,38 +773,6 @@ Pwosedi:
       <label ref="jr:itext('/data/null_results_group:label')"/>
       <input ref="/data/null_results_group/null_res_note" appearance="h1 green">
         <label ref="jr:itext('/data/null_results_group/null_res_note:label')"/>
-      </input>
-    </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <select ref="/data/actions_confirmation/followed_up_conditions">
-        <label ref="jr:itext('/data/actions_confirmation/followed_up_conditions:label')"/>
-        <itemset nodeset="instance('followed_up_conditions')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select1 ref="/data/actions_confirmation/referal">
-        <label ref="jr:itext('/data/actions_confirmation/referal:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/actions_confirmation/trimetoprim_sulfate_400_80mg">
-        <label ref="jr:itext('/data/actions_confirmation/trimetoprim_sulfate_400_80mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/furosemide_iv_20mg">
-        <label ref="jr:itext('/data/actions_confirmation/furosemide_iv_20mg:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/benzatine_penicillin_2_4_mio_units">
-        <label ref="jr:itext('/data/actions_confirmation/benzatine_penicillin_2_4_mio_units:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/ciprofloxacine_500mg_tablets">
-        <label ref="jr:itext('/data/actions_confirmation/ciprofloxacine_500mg_tablets:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/doxycicline_100mg_tablets">
-        <label ref="jr:itext('/data/actions_confirmation/doxycicline_100mg_tablets:label')"/>
       </input>
     </group>
     <group ref="/data/data"/>

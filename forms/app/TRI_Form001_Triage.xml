@@ -56,6 +56,9 @@
           <text id="general_symptoms_adult-10">
             <value>Cuts, scrapes, burns, or unhealed injuries</value>
           </text>
+          <text id="general_symptoms_adult-11">
+            <value>Pale, light sclera, tiredness, shortness of breath, cold hands and feet</value>
+          </text>
           <text id="general_symptoms_child-0">
             <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
           </text>
@@ -89,6 +92,9 @@
           <text id="general_symptoms_youth-5">
             <value>Cuts, scrapes, burns, or unhealed injuries</value>
           </text>
+          <text id="general_symptoms_youth-6">
+            <value>Pale, light sclera, tiredness, shortness of breath, cold hands and feet</value>
+          </text>
           <text id="general_symptoms_elderly-0">
             <value>Joint pain, swollen joints, morning stiffness</value>
           </text>
@@ -121,6 +127,9 @@
           </text>
           <text id="general_symptoms_elderly-10">
             <value>Cuts, scrapes, burns, or unhealed injuries</value>
+          </text>
+          <text id="general_symptoms_elderly-11">
+            <value>Pale, light sclera, tiredness, shortness of breath, cold hands and feet</value>
           </text>
           <text id="referal_locations-0">
             <value>Zanmi Lasante health center in Cerca La Source</value>
@@ -231,16 +240,19 @@
             <value>Is the patient pregnant?</value>
           </text>
           <text id="/data/vitals_general_group/general_symptoms_elderly:label">
-            <value>What symptoms is the patient experiencing?</value>
+            <value>What symptoms are the patient experiencing?</value>
           </text>
           <text id="/data/vitals_general_group/general_symptoms_adults:label">
-            <value>What symptoms is the patient experiencing?</value>
+            <value>What symptoms are the patient experiencing?</value>
           </text>
           <text id="/data/vitals_general_group/general_symptoms_youths:label">
-            <value>What symptoms is the patient experiencing?</value>
+            <value>What symptoms are the patient experiencing?</value>
           </text>
           <text id="/data/next_steps_group:label">
             <value>Based on the Triage, the patient will have to do the following forms:</value>
+          </text>
+          <text id="/data/next_steps_group/note_anemia:label">
+            <value>- Anemia Form</value>
           </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Diabetes Form</value>
@@ -279,13 +291,7 @@
             <value>You will recieve tasks to complete the forms above. Submit the triage form.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>No additional forms are required based on the current assessment.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Will you be sending the patient home with additional paracetamol or iron and folic acid?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>NO LABEL</value>
+            <value>No additional forms are required based on the current assessment. To see manually select forms, begin a "Form Select" form.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -340,6 +346,9 @@
           <text id="general_symptoms_adult-10">
             <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
           </text>
+          <text id="general_symptoms_adult-11">
+            <value>Pâleur, sclère claire, fatigue, essoufflement, mains et pieds froids</value>
+          </text>
           <text id="general_symptoms_child-0">
             <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
           </text>
@@ -373,6 +382,9 @@
           <text id="general_symptoms_youth-5">
             <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
           </text>
+          <text id="general_symptoms_youth-6">
+            <value>Pâleur, sclère claire, fatigue, essoufflement, mains et pieds froids</value>
+          </text>
           <text id="general_symptoms_elderly-0">
             <value>Douleurs articulaires, articulations enflées, raideur matinale</value>
           </text>
@@ -405,6 +417,9 @@
           </text>
           <text id="general_symptoms_elderly-10">
             <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
+          </text>
+          <text id="general_symptoms_elderly-11">
+            <value>Pâleur, sclère claire, fatigue, essoufflement, mains et pieds froids</value>
           </text>
           <text id="referal_locations-0">
             <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
@@ -526,6 +541,9 @@
           <text id="/data/next_steps_group:label">
             <value>D'après le triage, le patient devra remplir les formulaires suivants :</value>
           </text>
+          <text id="/data/next_steps_group/note_anemia:label">
+            <value>- Formulaire Anémie</value>
+          </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Formulaire Diabète</value>
           </text>
@@ -563,13 +581,7 @@
             <value>Vous recevrez des tâches pour remplir les formulaires ci-dessus. Soumettez le formulaire de triage.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Aucun formulaire supplémentaire n'est requis sur la base de l'évaluation actuelle.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Allez-vous prescrire au patient du paracétamol supplémentaire, du fer et de l'acide folique ?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>-</value>
+            <value>Aucun formulaire supplémentaire n'est requis suite à l'évaluation actuelle. Pour afficher les formulaires à sélectionner manuellement, veuillez ouvrir un formulaire de « Sélection de formulaire ».</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -624,6 +636,9 @@
           <text id="general_symptoms_adult-10">
             <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
           </text>
+          <text id="general_symptoms_adult-11">
+            <value>Po pal, je pal, fatig, souf kout, men ak pye frèt</value>
+          </text>
           <text id="general_symptoms_child-0">
             <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
           </text>
@@ -657,6 +672,9 @@
           <text id="general_symptoms_youth-5">
             <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
           </text>
+          <text id="general_symptoms_youth-6">
+            <value>Po pal, je pal, fatig, souf kout, men ak pye frèt</value>
+          </text>
           <text id="general_symptoms_elderly-0">
             <value>Doulè nan jwenti, jwenti anfle, rèd nan maten</value>
           </text>
@@ -689,6 +707,9 @@
           </text>
           <text id="general_symptoms_elderly-10">
             <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
+          </text>
+          <text id="general_symptoms_elderly-11">
+            <value>Po pal, je pal, fatig, souf kout, men ak pye frèt</value>
           </text>
           <text id="referal_locations-0">
             <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
@@ -810,6 +831,9 @@
           <text id="/data/next_steps_group:label">
             <value>Dapre Triyaj la, pasyan an ap gen pou ranpli fòmilè sa yo :</value>
           </text>
+          <text id="/data/next_steps_group/note_anemia:label">
+            <value>- Fòmilè Anemi</value>
+          </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Fòmilè Dyabèt</value>
           </text>
@@ -847,18 +871,12 @@
             <value>W ap resevwa tach pou konplete fòmilè ki anwo yo. Soumèt fòmilè triyaj la.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Pa gen lòt fòmilè anplis ki nesesè dapre evalyasyon sa a.</value>
-          </text>
-          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
-            <value>Èske w ap voye pasyan an lakay li avèk plis parasetamol oubyen fè ak asid folik?</value>
-          </text>
-          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
-            <value>-</value>
+            <value>Pa gen okenn lòt fòm ki nesesè dapre evalyasyon aktyèl la. Pou wè fòm yo chwazi manyèlman, kòmanse yon fòm "Seleksyon Fòm".</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form001_Triage" version="20260925025834" prefix="J1!TRI_Form001_Triage!" delimiter="#">
+        <data id="TRI_Form001_Triage" version="20261011180718" prefix="J1!TRI_Form001_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -943,8 +961,10 @@
           <route_wound/>
           <route_vision/>
           <route_diabetes/>
+          <route_anemia/>
           <iv_line_used/>
           <next_steps_group>
+            <note_anemia/>
             <note_diabetes/>
             <note_digestive/>
             <note_fever/>
@@ -958,9 +978,7 @@
             <note_vision/>
             <note_tasks_will_appear/>
             <note_no_forms/>
-            <distribute_paracetamol_or_iron_folic_acid/>
           </next_steps_group>
-          <route_paracetamol_or_iron_folic_acid/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -1046,6 +1064,10 @@
             <itextId>general_symptoms_adult-10</itextId>
             <name>adt_wound</name>
           </item>
+          <item>
+            <itextId>general_symptoms_adult-11</itextId>
+            <name>adt_anemia</name>
+          </item>
         </root>
       </instance>
       <instance id="general_symptoms_child">
@@ -1098,6 +1120,10 @@
             <itextId>general_symptoms_youth-5</itextId>
             <name>yaa_wound</name>
           </item>
+          <item>
+            <itextId>general_symptoms_youth-6</itextId>
+            <name>yaa_anemia</name>
+          </item>
         </root>
       </instance>
       <instance id="general_symptoms_elderly">
@@ -1145,6 +1171,10 @@
           <item>
             <itextId>general_symptoms_elderly-10</itextId>
             <name>eld_wound</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_elderly-11</itextId>
+            <name>eld_anemia</name>
           </item>
         </root>
       </instance>
@@ -1197,7 +1227,6 @@
       <bind nodeset="/data/referal_summary" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/referal_summary/referal_location" type="string" required="true()"/>
       <bind nodeset="/data/referal_summary/referal_other" type="string" required="true()" relevant=" /data/referal_summary/referal_location  = 'other'"/>
-      <bind nodeset="/data/vitals_general_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()"/>
       <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()"/>
       <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
@@ -1221,8 +1250,10 @@
       <bind nodeset="/data/route_wound" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_wound') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_wound') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_wound'), 'true', 'false')"/>
       <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_vision') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_vision') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_diabetes') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_diabetes'), 'true', 'false')"/>
+      <bind nodeset="/data/route_anemia" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_anemia') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_anemia') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_anemia'), 'true', 'false')"/>
       <bind nodeset="/data/iv_line_used" type="string" calculate="if( /data/emergency_triage_summary/iv_line_use  = 'yes', 1, 0)"/>
       <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/next_steps_group/note_anemia" readonly="true()" type="string" relevant=" /data/route_anemia  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_fever" readonly="true()" type="string" relevant=" /data/route_fever  = 'true'"/>
@@ -1234,10 +1265,8 @@
       <bind nodeset="/data/next_steps_group/note_uti_std" readonly="true()" type="string" relevant=" /data/route_uti_std  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_wound" readonly="true()" type="string" relevant=" /data/route_wound  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_vision" readonly="true()" type="string" relevant=" /data/route_vision  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false'"/>
-      <bind nodeset="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false'"/>
-      <bind nodeset="/data/route_paracetamol_or_iron_folic_acid" type="string" calculate="if( /data/next_steps_group/distribute_paracetamol_or_iron_folic_acid  = 'yes' , 'true', 'false')"/>
+      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_anemia  = 'true' or  /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_anemia  = 'false' and  /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false'"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1361,6 +1390,9 @@
     </group>
     <group appearance="field-list" ref="/data/next_steps_group">
       <label ref="jr:itext('/data/next_steps_group:label')"/>
+      <input ref="/data/next_steps_group/note_anemia">
+        <label ref="jr:itext('/data/next_steps_group/note_anemia:label')"/>
+      </input>
       <input ref="/data/next_steps_group/note_diabetes">
         <label ref="jr:itext('/data/next_steps_group/note_diabetes:label')"/>
       </input>
@@ -1400,13 +1432,6 @@
       <input ref="/data/next_steps_group/note_no_forms">
         <label ref="jr:itext('/data/next_steps_group/note_no_forms:label')"/>
       </input>
-      <select1 ref="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid">
-        <label ref="jr:itext('/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
     </group>
   </h:body>
 </h:html>

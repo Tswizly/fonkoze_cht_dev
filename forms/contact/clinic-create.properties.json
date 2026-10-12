@@ -1,0 +1,9 @@
+{
+  "context": {
+    "expression": "user.role === 'nurse_supervisor'",
+    "permission": "can_create_places"
+  },
+  "duplicate_check": {
+    "expression": "current.name === existing.name"
+  }
+}
