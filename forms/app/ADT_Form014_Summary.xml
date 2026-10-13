@@ -1452,60 +1452,6 @@ OR
           <text id="/data/referrals/referral_location_other:label">
             <value>If other, which location?</value>
           </text>
-          <text id="/data/nifedipine_20mg___multiplier:label">
-            <value>Nifedipine 20mg Multiplier</value>
-          </text>
-          <text id="/data/paracetamol_500mg___multiplier:label">
-            <value>Paracetamol 500mg Multiplier</value>
-          </text>
-          <text id="/data/amoxycillin_500mg___multiplier:label">
-            <value>Amoxycillin 500mg Multiplier</value>
-          </text>
-          <text id="/data/nifedipine_10mg___multiplier:label">
-            <value>Nifedipine 10mg Multiplier</value>
-          </text>
-          <text id="/data/hctz_25mg___multiplier:label">
-            <value>HCTZ 25mg Multiplier</value>
-          </text>
-          <text id="/data/enalapril_10mg___multiplier:label">
-            <value>Enalapril 10mg Multiplier</value>
-          </text>
-          <text id="/data/metformin_500mg___multiplier:label">
-            <value>Metformin 500mg Multiplier</value>
-          </text>
-          <text id="/data/omeprazole_20mg___multiplier:label">
-            <value>Omeprazole 20mg Multiplier</value>
-          </text>
-          <text id="/data/metronidazole_500mg___multiplier:label">
-            <value>Metronidazole 500mg Multiplier</value>
-          </text>
-          <text id="/data/tinidazole_500mg___multiplier:label">
-            <value>Tinidazole 500mg Multiplier</value>
-          </text>
-          <text id="/data/ors___multiplier:label">
-            <value>ORS Multiplier</value>
-          </text>
-          <text id="/data/salbutamol_4mg___multiplier:label">
-            <value>Salbutamol 4mg Multiplier</value>
-          </text>
-          <text id="/data/chloroquine_150mg___multiplier:label">
-            <value>Chloroquine 150mg Multiplier</value>
-          </text>
-          <text id="/data/ciprofloxacin_500mg___multiplier:label">
-            <value>Ciprofloxacin 500mg Multiplier</value>
-          </text>
-          <text id="/data/doxycycline_100mg___multiplier:label">
-            <value>Doxycycline 100mg Multiplier</value>
-          </text>
-          <text id="/data/cloxacillin_500mg___multiplier:label">
-            <value>Cloxacillin 500mg Multiplier</value>
-          </text>
-          <text id="/data/griseofulvin_125mg___multiplier:label">
-            <value>Griseofulvin 125mg Multiplier</value>
-          </text>
-          <text id="/data/iron_folic_acid___multiplier:label">
-            <value>Iron Folic Acid Multiplier</value>
-          </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:jr:constraintMsg">
             <value>-</value>
           </text>
@@ -3281,60 +3227,6 @@ OU
           <text id="/data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed:label">
             <value>-</value>
           </text>
-          <text id="/data/nifedipine_20mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/paracetamol_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/amoxycillin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/nifedipine_10mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/hctz_25mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/enalapril_10mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/metformin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/omeprazole_20mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/metronidazole_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/tinidazole_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/ors___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/salbutamol_4mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/chloroquine_150mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/ciprofloxacin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/doxycycline_100mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/cloxacillin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/griseofulvin_125mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/iron_folic_acid___multiplier:label">
-            <value>-</value>
-          </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:jr:constraintMsg">
             <value>-</value>
           </text>
@@ -4974,64 +4866,10 @@ OSWA
           <text id="/data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed:label">
             <value>-</value>
           </text>
-          <text id="/data/nifedipine_20mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/paracetamol_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/amoxycillin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/nifedipine_10mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/hctz_25mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/enalapril_10mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/metformin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/omeprazole_20mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/metronidazole_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/tinidazole_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/ors___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/salbutamol_4mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/chloroquine_150mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/ciprofloxacin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/doxycycline_100mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/cloxacillin_500mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/griseofulvin_125mg___multiplier:label">
-            <value>-</value>
-          </text>
-          <text id="/data/iron_folic_acid___multiplier:label">
-            <value>-</value>
-          </text>
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form014_Summary" version="20261012105658" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+        <data id="ADT_Form014_Summary" version="20261013003602" prefix="J1!ADT_Form014_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -5569,24 +5407,6 @@ OSWA
           <total_antifungal_cream/>
           <total_griseofulvin_125mg/>
           <clinic_id/>
-          <nifedipine_20mg___multiplier>1</nifedipine_20mg___multiplier>
-          <paracetamol_500mg___multiplier>1</paracetamol_500mg___multiplier>
-          <amoxycillin_500mg___multiplier>1</amoxycillin_500mg___multiplier>
-          <nifedipine_10mg___multiplier>1</nifedipine_10mg___multiplier>
-          <hctz_25mg___multiplier>1</hctz_25mg___multiplier>
-          <enalapril_10mg___multiplier>1</enalapril_10mg___multiplier>
-          <metformin_500mg___multiplier>1</metformin_500mg___multiplier>
-          <omeprazole_20mg___multiplier>1</omeprazole_20mg___multiplier>
-          <metronidazole_500mg___multiplier>1</metronidazole_500mg___multiplier>
-          <tinidazole_500mg___multiplier>1</tinidazole_500mg___multiplier>
-          <ors___multiplier>1</ors___multiplier>
-          <salbutamol_4mg___multiplier>1</salbutamol_4mg___multiplier>
-          <chloroquine_150mg___multiplier>1</chloroquine_150mg___multiplier>
-          <ciprofloxacin_500mg___multiplier>1</ciprofloxacin_500mg___multiplier>
-          <doxycycline_100mg___multiplier>1</doxycycline_100mg___multiplier>
-          <cloxacillin_500mg___multiplier>1</cloxacillin_500mg___multiplier>
-          <griseofulvin_125mg___multiplier>1</griseofulvin_125mg___multiplier>
-          <iron_folic_acid___multiplier>1</iron_folic_acid___multiplier>
           <prescription_summary db-doc="TRUE">
             <stock_monitoring_reported_date/>
             <place_id/>
@@ -6219,28 +6039,10 @@ OSWA
       <bind nodeset="/data/total_antifungal_cream" type="string" calculate=" /data/grp_ringworm/_data_antifungal_cream_distributed "/>
       <bind nodeset="/data/total_griseofulvin_125mg" type="string" calculate=" /data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm "/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/nifedipine_20mg___multiplier" type="string"/>
-      <bind nodeset="/data/paracetamol_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/amoxycillin_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/nifedipine_10mg___multiplier" type="string"/>
-      <bind nodeset="/data/hctz_25mg___multiplier" type="string"/>
-      <bind nodeset="/data/enalapril_10mg___multiplier" type="string"/>
-      <bind nodeset="/data/metformin_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/omeprazole_20mg___multiplier" type="string"/>
-      <bind nodeset="/data/metronidazole_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/tinidazole_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/ors___multiplier" type="string"/>
-      <bind nodeset="/data/salbutamol_4mg___multiplier" type="string"/>
-      <bind nodeset="/data/chloroquine_150mg___multiplier" type="string"/>
-      <bind nodeset="/data/ciprofloxacin_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/doxycycline_100mg___multiplier" type="string"/>
-      <bind nodeset="/data/cloxacillin_500mg___multiplier" type="string"/>
-      <bind nodeset="/data/griseofulvin_125mg___multiplier" type="string"/>
-      <bind nodeset="/data/iron_folic_acid___multiplier" type="string"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
       <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
       <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="&quot;ADT_Form014_Summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
       <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form014_Summary&quot;"/>
       <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
       <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
@@ -6258,75 +6060,75 @@ OSWA
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in" type="string" calculate=" /data/total_nifedipine_20mg "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_20mg___set  *  /data/nifedipine_20mg___multiplier  +  /data/prescription_summary/fields/nifedipine_20mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_20mg___set  * X +  /data/prescription_summary/fields/nifedipine_20mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in" type="string" calculate=" /data/total_paracetamol_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/paracetamol_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/paracetamol_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/paracetamol_500mg___set  *  /data/paracetamol_500mg___multiplier  +  /data/prescription_summary/fields/paracetamol_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/paracetamol_500mg___set  * X +  /data/prescription_summary/fields/paracetamol_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in" type="string" calculate=" /data/total_amoxycillin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/amoxycillin_500mg___set  *  /data/amoxycillin_500mg___multiplier  +  /data/prescription_summary/fields/amoxycillin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/amoxycillin_500mg___set  * X +  /data/prescription_summary/fields/amoxycillin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in" type="string" calculate=" /data/total_nifedipine_10mg "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_10mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_10mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_10mg___set  *  /data/nifedipine_10mg___multiplier  +  /data/prescription_summary/fields/nifedipine_10mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_10mg___set  * X +  /data/prescription_summary/fields/nifedipine_10mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in" type="string" calculate=" /data/total_hctz_25mg "/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/hctz_25mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/hctz_25mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/hctz_25mg___set  *  /data/hctz_25mg___multiplier  +  /data/prescription_summary/fields/hctz_25mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/hctz_25mg___set  * X +  /data/prescription_summary/fields/hctz_25mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in" type="string" calculate=" /data/total_enalapril_10mg "/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/enalapril_10mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/enalapril_10mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/enalapril_10mg___set  *  /data/enalapril_10mg___multiplier  +  /data/prescription_summary/fields/enalapril_10mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/enalapril_10mg___set  * X +  /data/prescription_summary/fields/enalapril_10mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in" type="string" calculate=" /data/total_metformin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metformin_500mg___set  *  /data/metformin_500mg___multiplier  +  /data/prescription_summary/fields/metformin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metformin_500mg___set  * X +  /data/prescription_summary/fields/metformin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in" type="string" calculate=" /data/total_omeprazole_20mg "/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/omeprazole_20mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/omeprazole_20mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/omeprazole_20mg___set  *  /data/omeprazole_20mg___multiplier  +  /data/prescription_summary/fields/omeprazole_20mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/omeprazole_20mg___set  * X +  /data/prescription_summary/fields/omeprazole_20mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in" type="string" calculate=" /data/total_metronidazole_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metronidazole_500mg___set  *  /data/metronidazole_500mg___multiplier  +  /data/prescription_summary/fields/metronidazole_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metronidazole_500mg___set  * X +  /data/prescription_summary/fields/metronidazole_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in" type="string" calculate=" /data/total_tinidazole_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/tinidazole_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/tinidazole_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/tinidazole_500mg___set  *  /data/tinidazole_500mg___multiplier  +  /data/prescription_summary/fields/tinidazole_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/tinidazole_500mg___set  * X +  /data/prescription_summary/fields/tinidazole_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/ors_used_in" type="string" calculate=" /data/total_ors "/>
       <bind nodeset="/data/prescription_summary/fields/ors___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/ors___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ors_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ors___set  *  /data/ors___multiplier  +  /data/prescription_summary/fields/ors___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/ors_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ors___set  * X +  /data/prescription_summary/fields/ors___unit "/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in" type="string" calculate=" /data/total_salbutamol_4mg "/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_4mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_4mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/salbutamol_4mg___set  *  /data/salbutamol_4mg___multiplier  +  /data/prescription_summary/fields/salbutamol_4mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/salbutamol_4mg___set  * X +  /data/prescription_summary/fields/salbutamol_4mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in" type="string" calculate=" /data/total_chloroquine_150mg "/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/chloroquine_150mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/chloroquine_150mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/chloroquine_150mg___set  *  /data/chloroquine_150mg___multiplier  +  /data/prescription_summary/fields/chloroquine_150mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/chloroquine_150mg___set  * X +  /data/prescription_summary/fields/chloroquine_150mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in" type="string" calculate=" /data/total_ciprofloxacin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacin_500mg___set  *  /data/ciprofloxacin_500mg___multiplier  +  /data/prescription_summary/fields/ciprofloxacin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacin_500mg___set  * X +  /data/prescription_summary/fields/ciprofloxacin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in" type="string" calculate=" /data/total_doxycycline_100mg "/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycycline_100mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycycline_100mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/doxycycline_100mg___set  *  /data/doxycycline_100mg___multiplier  +  /data/prescription_summary/fields/doxycycline_100mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/doxycycline_100mg___set  * X +  /data/prescription_summary/fields/doxycycline_100mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in" type="string" calculate=" /data/total_cloxacillin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cloxacillin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cloxacillin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/cloxacillin_500mg___set  *  /data/cloxacillin_500mg___multiplier  +  /data/prescription_summary/fields/cloxacillin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/cloxacillin_500mg___set  * X +  /data/prescription_summary/fields/cloxacillin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in" type="string" calculate=" /data/total_griseofulvin_125mg "/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_125mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_125mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/griseofulvin_125mg___set  *  /data/griseofulvin_125mg___multiplier  +  /data/prescription_summary/fields/griseofulvin_125mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/griseofulvin_125mg___set  * X +  /data/prescription_summary/fields/griseofulvin_125mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in" type="string" calculate=" /data/total_iron_folic_acid "/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_folic_acid_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_folic_acid_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/iron_folic_acid___set  *  /data/iron_folic_acid___multiplier  +  /data/prescription_summary/fields/iron_folic_acid___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/iron_folic_acid___set  * X +  /data/prescription_summary/fields/iron_folic_acid___unit "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

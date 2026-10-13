@@ -3,6 +3,7 @@
   "icon": "no_image_selected",
   "context": {
     "person": true,
-    "place": false
+    "place": false,
+    "permission": "can_conduct_assessment_forms"
   }
 }
