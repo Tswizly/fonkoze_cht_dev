@@ -133,7 +133,6 @@ const getReportConditions = (report) => {
   return conditions;
 };
 
-// Helper function to extract and format drugs from the 'total_*' fields
 // Helper function to extract and format drugs recursively from the fields
 const getDrugsDistributed = (fields) => {
   const drugs = {};
@@ -145,9 +144,7 @@ const getDrugsDistributed = (fields) => {
       } else {
         if (key.includes('total_') || key.includes('_distributed')) {
           const val = Number(obj[key]); 
-          // !isNaN filters out the broken "NaN" fields in the root totals
           if (!isNaN(val) && val > 0) {
-            // Strip out logic flags and prefixes to format the drug name
             let drugName = key
               .replace(/_?total_?/g, '')
               .replace(/_?data_?/g, '')
@@ -161,10 +158,7 @@ const getDrugsDistributed = (fields) => {
               .replace(/_/g, ' ')
               .trim();
               
-            // Capitalize the first letter of each word
             drugName = drugName.replace(/\b\w/g, char => char.toUpperCase());
-            
-            // Aggregate in case the same drug was prescribed in different subgroups
             drugs[drugName] = (drugs[drugName] || 0) + val;
           }
         }
@@ -180,8 +174,17 @@ const getDrugsDistributed = (fields) => {
 
 // --- Assessment History Card ---
 
+// UPDATED: Added target form IDs for Elderly, Youth, and Children
+const targetForms = [
+  'ADT_Form014_Summary', 
+  'ELD_Form012_Summary', 
+  'YAA_Form009_Summary', 
+  'CHD_Form009_Summary', 
+  'assessment'
+];
+
 const assessmentHistoryFields = allReports
-  .filter(report => report.form === 'ADT_Form014_Summary' || report.form === 'assessment') // Adjust form IDs as needed
+  .filter(report => targetForms.includes(report.form))
   .sort((a, b) => b.reported_date - a.reported_date) // Newest first
   .map(report => {
     const dateStr = new Date(report.reported_date).toLocaleDateString();
@@ -215,6 +218,8 @@ const assessmentHistoryCard = {
 const activeConditions = [];
 const chronicSet = new Set();
 
+// Current Conditions card will automatically include the new forms 
+// because allReports is processed as a whole and we rely on getReportConditions.
 allReports.forEach(report => {
   const conditions = getReportConditions(report);
   const medDuration = getMedicationDuration(report);

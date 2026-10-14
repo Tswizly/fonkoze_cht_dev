@@ -10,14 +10,52 @@ const ADULT_ROUTE_FORM_MAPPING = {
   route_respiratory: ['ADT_Form006_RespiratoryConditions'],
   route_skin: ['ADT_Form007_SkinConditions'],
   route_stroke: ['ADT_Form008_Stroke'],
-  route_uti_std: ['ADT_Form009_UTlandSTD'], // Note: You have a typo in your original file ('UTlandSTD' instead of 'UTIandSTD'). Make sure this matches your actual form name.
+  route_uti_std: ['ADT_Form009_UTIandSTD'], 
   route_wound: ['ADT_Form011_Wounds'],
   route_vision: ['ADT_Form010_Vision'],
   route_diabetes: ['ADT_Form001_Diabetes'],
-  route_anemia: ['ADT_Form013_Anemia'] // <-- ADD THIS LINE
+  route_anemia: ['ADT_Form013_Anemia']
 };
 
-const TRIAGE_FORM_NAMES = ['TRI_Form001_Triage', 'GEN_Form001_FormSelect'];
+// Mapping of route flags in triage forms to Elderly follow-up form names
+const ELDERLY_ROUTE_FORM_MAPPING = {
+  route_digestive: ['ADT_Form002_DigestiveConditions'],
+  route_fever: ['ADT_Form003_Fever'],
+  route_hypertension: ['ADT_Form004_Hypertension'],
+  route_respiratory: ['ELD_Form006_RespiratoryConditions'], // Overridden
+  route_skin: ['ADT_Form007_SkinConditions'],
+  route_stroke: ['ADT_Form008_Stroke'],
+  route_uti_std: ['ELD_Form009_UTIandSTD'], // Overridden
+  route_wound: ['ADT_Form011_Wounds'],
+  route_vision: ['ADT_Form010_Vision'],
+  route_diabetes: ['ADT_Form001_Diabetes'],
+  route_anemia: ['ADT_Form013_Anemia'],
+  route_chronic_pain: ['ELD_Form001_ChronicPain'] // Elderly specific
+};
+
+// Mapping of route flags in triage forms to Child follow-up form names
+const CHILDREN_ROUTE_FORM_MAPPING = {
+  route_anemia_malnutrition: ['CHD_Form008_Malnutrition_Anemia'],
+  route_digestive: ['CHD_Form001_DigestiveConditions'],
+  route_respiratory: ['CHD_Form002_RespiratoryInfections'],
+  route_skin: ['CHD_Form003_SkinConditions'],
+  route_wound: ['CHD_Form005_Wounds'],
+  route_vision: ['CHD_Form004_Vision'],
+  route_vaccinations: ['CHD_Form006_Vaccines_and_Dewormer']
+};
+
+// Mapping of route flags in triage forms to Youth/Adolescent follow-up form names
+const YOUTH_ROUTE_FORM_MAPPING = {
+  route_anemia: ['YAA_Form008_Malnutrition_Anemia'],
+  route_digestive: ['YAA_Form001_DigestiveConditions'],
+  route_respiratory: ['YAA_Form002_RespiratoryConditions'],
+  route_skin: ['YAA_Form003_SkinConditions'],
+  route_uti_std: ['YAA_Form004_UTIandSTD'],
+  route_wound: ['YAA_Form006_Wounds'],
+  route_vision: ['YAA_Form005_Vision']
+};
+
+const TRIAGE_FORM_NAMES = ['TRI_Form001_Triage', 'GEN_Form001_FormSelect', 'TRI_Form002_Child_Triage'];
 
 /**
  * Checks if a specific form was submitted during this specific triage encounter window.
@@ -31,10 +69,167 @@ function isFormSubmittedInEncounter(contact, triageReport, nextTriageReportDate,
   });
 }
 
+// Helper to check encounter limits
+function isLatestTriageEncounter(c, r) {
+  const subsequentTriageReports = (c.reports || []).filter(report =>
+    TRIAGE_FORM_NAMES.includes(report.form) &&
+    report.reported_date > r.reported_date &&
+    report._id !== r._id
+  );
+  return subsequentTriageReports.length === 0;
+}
+
+// Helper function to search across encounter forms for clinical calculation fields
+function getEncounterFieldValue(encounterReports, fieldName, defaultValue = 'false') {
+  for (const report of encounterReports) {
+    if (!report.fields) continue;
+
+    const cleanName = fieldName.startsWith('_') ? fieldName.substring(1) : fieldName;
+    const prefixedName = fieldName.startsWith('_') ? fieldName : '_' + fieldName;
+
+    if (report.fields[fieldName] !== undefined && report.fields[fieldName] !== '') return report.fields[fieldName];
+    if (report.fields[cleanName] !== undefined && report.fields[cleanName] !== '') return report.fields[cleanName];
+    if (report.fields[prefixedName] !== undefined && report.fields[prefixedName] !== '') return report.fields[prefixedName];
+
+    if (report.fields.data) {
+      if (report.fields.data[fieldName] !== undefined && report.fields.data[fieldName] !== '') return report.fields.data[fieldName];
+      if (report.fields.data[cleanName] !== undefined && report.fields.data[cleanName] !== '') return report.fields.data[cleanName];
+      if (report.fields.data[prefixedName] !== undefined && report.fields.data[prefixedName] !== '') return report.fields.data[prefixedName];
+    }
+  }
+  return defaultValue;
+}
+
 module.exports = [
   ...getStockMonitoringTasks(configs),
+  
   // ----------------------------------------------------
-  // ROUTE SUMMARY FORM 
+  // ROUTE SUMMARY FORM - CHILDREN (0-5)
+  // ----------------------------------------------------
+  {
+    name: 'triage_final_summary_children',
+    title: 'Child Health Checkup Final Summary',
+    icon: 'icon-healthcare',
+    appliesTo: 'reports',
+    appliesToType: TRIAGE_FORM_NAMES,
+
+    appliesIf: function(c, r) {
+      if (c.contact && c.contact.muted) return false;
+      if (!r.fields || r.fields.patient_age_in_years > 5) return false;
+      if (!isLatestTriageEncounter(c, r)) return false;
+
+      const summaryAlreadySubmitted = (c.reports || []).some(report =>
+        report.reported_date >= r.reported_date && report.form === 'CHD_Form009_Summary'
+      );
+      if (summaryAlreadySubmitted) return false;
+
+      const requiredFormGroups = [];
+      Object.keys(CHILDREN_ROUTE_FORM_MAPPING).forEach(routeKey => {
+        if (r.fields && r.fields[routeKey] === 'true') {
+          requiredFormGroups.push(CHILDREN_ROUTE_FORM_MAPPING[routeKey]);
+        }
+      });
+
+      if (requiredFormGroups.length === 0) return true;
+
+      return requiredFormGroups.every(formNames =>
+        isFormSubmittedInEncounter(c, r, null, formNames)
+      );
+    },
+
+    actions: [
+      {
+        form: 'CHD_Form009_Summary',
+        modifyContent: function(content, c, r) {
+          const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+          
+          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
+          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
+          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
+          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
+          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
+          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
+          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
+          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
+          content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
+          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+          content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
+          content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
+          content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
+        }
+      }
+    ],
+
+    events: [{ start: 0, days: 0, end: 30 }]
+  },
+
+  // ----------------------------------------------------
+  // ROUTE SUMMARY FORM - YOUTH/ADOLESCENT (6-17)
+  // ----------------------------------------------------
+  {
+    name: 'triage_final_summary_youth',
+    title: 'Youth Health Checkup Final Summary',
+    icon: 'icon-healthcare',
+    appliesTo: 'reports',
+    appliesToType: TRIAGE_FORM_NAMES,
+
+    appliesIf: function(c, r) {
+      if (c.contact && c.contact.muted) return false;
+      if (!r.fields || r.fields.patient_age_in_years < 6 || r.fields.patient_age_in_years > 17) return false;
+      if (!isLatestTriageEncounter(c, r)) return false;
+
+      const summaryAlreadySubmitted = (c.reports || []).some(report =>
+        report.reported_date >= r.reported_date && report.form === 'YAA_Form009_Summary'
+      );
+      if (summaryAlreadySubmitted) return false;
+
+      const requiredFormGroups = [];
+      Object.keys(YOUTH_ROUTE_FORM_MAPPING).forEach(routeKey => {
+        if (r.fields && r.fields[routeKey] === 'true') {
+          requiredFormGroups.push(YOUTH_ROUTE_FORM_MAPPING[routeKey]);
+        }
+      });
+
+      if (requiredFormGroups.length === 0) return true;
+
+      return requiredFormGroups.every(formNames =>
+        isFormSubmittedInEncounter(c, r, null, formNames)
+      );
+    },
+
+    actions: [
+      {
+        form: 'YAA_Form009_Summary',
+        modifyContent: function(content, c, r) {
+          const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+          
+          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
+          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
+          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
+          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
+          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
+          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
+          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
+          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
+          content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
+          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+          content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
+          content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
+          content._result_uti = getEncounterFieldValue(encounterReports, '_result_uti');
+          content._result_std_discharge = getEncounterFieldValue(encounterReports, '_result_std_discharge');
+          content._result_std_ulcer = getEncounterFieldValue(encounterReports, '_result_std_ulcer');
+          content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
+        }
+      }
+    ],
+
+    events: [{ start: 0, days: 0, end: 30 }]
+  },
+
+  // ----------------------------------------------------
+  // ROUTE SUMMARY FORM - ADULT (18-64)
   // ----------------------------------------------------
   {
     name: 'triage_final_summary_adult',
@@ -44,34 +239,15 @@ module.exports = [
     appliesToType: TRIAGE_FORM_NAMES,
 
     appliesIf: function(c, r) {
-      // 1. Skip if contact is muted
-      if (c.contact && c.contact.muted) {
-        return false;
-      }
+      if (c.contact && c.contact.muted) return false;
+      if (!r.fields || r.fields.patient_age_in_years < 18 || r.fields.patient_age_in_years > 64) return false;
+      if (!isLatestTriageEncounter(c, r)) return false;
 
-      // 2. ENCOUNTER WINDOW BOUNDARY CHECK:
-      // Verify that this report `r` is the most recent triage/form-select submission.
-      const subsequentTriageReports = (c.reports || []).filter(report =>
-        TRIAGE_FORM_NAMES.includes(report.form) &&
-        report.reported_date > r.reported_date &&
-        report._id !== r._id
-      );
-
-      if (subsequentTriageReports.length > 0) {
-        return false;
-      }
-
-      // 3. Skip if summary form was already submitted for this current triage encounter
       const summaryAlreadySubmitted = (c.reports || []).some(report =>
-        report.reported_date >= r.reported_date &&
-        report.form === 'ADT_Form014_Summary'
+        report.reported_date >= r.reported_date && report.form === 'ADT_Form014_Summary'
       );
+      if (summaryAlreadySubmitted) return false;
 
-      if (summaryAlreadySubmitted) {
-        return false;
-      }
-
-      // 4. Determine required adult forms based on route_* flags set to 'true' in `r`
       const requiredFormGroups = [];
       Object.keys(ADULT_ROUTE_FORM_MAPPING).forEach(routeKey => {
         if (r.fields && r.fields[routeKey] === 'true') {
@@ -79,127 +255,153 @@ module.exports = [
         }
       });
 
-      // If no follow-up forms were required by this triage, show the summary task immediately
-      if (requiredFormGroups.length === 0) {
-        return true;
-      }
+      if (requiredFormGroups.length === 0) return true;
 
-      // 5. Verify that EVERY required route has a corresponding form completed WITHIN this encounter window
-      const allTasksCompleted = requiredFormGroups.every(formNames =>
+      return requiredFormGroups.every(formNames =>
         isFormSubmittedInEncounter(c, r, null, formNames)
       );
-
-      return allTasksCompleted;
     },
 
     actions: [
       {
         form: 'ADT_Form014_Summary',
         modifyContent: function(content, c, r) {
-          // Filter reports submitted during the current triage encounter
-          const encounterReports = (c.reports || []).filter(report =>
-            report.reported_date >= r.reported_date
-          );
+          const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+          
+          content._result_hyperglycemia_mild = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_mild');
+          content._result_hyperglycemia_moderate = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_moderate');
+          content._result_hyperglycemia_severe = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_severe');
+          content._metformin_dosage = getEncounterFieldValue(encounterReports, '_metformin_dosage', '');
+          
+          content._result_gastritis_serious = getEncounterFieldValue(encounterReports, '_result_gastritis_serious');
+          content._result_gastritis_not_serious = getEncounterFieldValue(encounterReports, '_result_gastritis_not_serious');
+          content._h_pylori_rapid_test_result = getEncounterFieldValue(encounterReports, '_h_pylori_rapid_test_result', '');
+          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
+          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
+          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
+          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
 
-          // Helper function to search across encounter forms for clinical calculation fields
-          function getFieldValue(fieldName, defaultValue = 'false') {
-            for (const report of encounterReports) {
-              if (!report.fields) continue;
+          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
+          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
 
-              const cleanName = fieldName.startsWith('_') ? fieldName.substring(1) : fieldName;
-              const prefixedName = fieldName.startsWith('_') ? fieldName : '_' + fieldName;
+          content._result_hypertensive_urgency = getEncounterFieldValue(encounterReports, '_result_hypertensive_urgency');
+          content._result_hypertension_grade_1 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_1');
+          content._result_hypertension_grade_2 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_2');
+          content._result_hypertension_grade_3 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_3');
 
-              // Search in report.fields
-              if (report.fields[fieldName] !== undefined && report.fields[fieldName] !== '') {
-                return report.fields[fieldName];
-              }
-              if (report.fields[cleanName] !== undefined && report.fields[cleanName] !== '') {
-                return report.fields[cleanName];
-              }
-              if (report.fields[prefixedName] !== undefined && report.fields[prefixedName] !== '') {
-                return report.fields[prefixedName];
-              }
+          content._result_gestational_hypertension_no_serious = getEncounterFieldValue(encounterReports, '_result_gestational_hypertension_no_serious');
+          content._result_gestational_hypertension_serious = getEncounterFieldValue(encounterReports, '_result_gestational_hypertension_serious');
+          content._result_pre_eclampsia = getEncounterFieldValue(encounterReports, '_result_pre_eclampsia');
+          content._result_genitourinary_infections = getEncounterFieldValue(encounterReports, '_result_genitourinary_infections');
+          content._result_threatened_miscarriage_less20 = getEncounterFieldValue(encounterReports, '_result_threatened_miscarriage_less20');
+          content._result_threatened_miscarriage_greater20 = getEncounterFieldValue(encounterReports, '_result_threatened_miscarriage_greater20');
 
-              // Search in nested report.fields.data
-              if (report.fields.data) {
-                if (report.fields.data[fieldName] !== undefined && report.fields.data[fieldName] !== '') {
-                  return report.fields.data[fieldName];
-                }
-                if (report.fields.data[cleanName] !== undefined && report.fields.data[cleanName] !== '') {
-                  return report.fields.data[cleanName];
-                }
-                if (report.fields.data[prefixedName] !== undefined && report.fields.data[prefixedName] !== '') {
-                  return report.fields.data[prefixedName];
-                }
-              }
-            }
-            return defaultValue;
-          }
+          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
+          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
+          content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
 
-          // --- 1. Diabetes Results ---
-          content._result_hyperglycemia_mild = getFieldValue('_result_hyperglycemia_mild');
-          content._result_hyperglycemia_moderate = getFieldValue('_result_hyperglycemia_moderate');
-          content._result_hyperglycemia_severe = getFieldValue('_result_hyperglycemia_severe');
-          content._metformin_dosage = getFieldValue('_metformin_dosage', '');
+          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+          content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
+          content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
 
-          // --- 2. Digestive / Gastritis Results ---
-          content._result_gastritis_serious = getFieldValue('_result_gastritis_serious');
-          content._result_gastritis_not_serious = getFieldValue('_result_gastritis_not_serious');
-          content._h_pylori_rapid_test_result = getFieldValue('_h_pylori_rapid_test_result', '');
-          content._result_risk_of_cholera = getFieldValue('_result_risk_of_cholera');
-          content._result_acute_diarrhea = getFieldValue('_result_acute_diarrhea');
-          content._result_amoeba_giardia = getFieldValue('_result_amoeba_giardia');
-          content._result_appendicitis_cholecystitis = getFieldValue('_result_appendicitis_cholecystitis');
+          content._result_transient_ischemic_attack = getEncounterFieldValue(encounterReports, '_result_transient_ischemic_attack');
+          content._result_stroke = getEncounterFieldValue(encounterReports, '_result_stroke');
+          content._result_old_stroke = getEncounterFieldValue(encounterReports, '_result_old_stroke');
 
-          // --- 3. Fever & Malaria Results ---
-          content._result_risk_malaria = getFieldValue('_result_risk_malaria');
-          content._malaria_rapid_test_result = getFieldValue('_malaria_rapid_test_result', '');
+          content._result_uti = getEncounterFieldValue(encounterReports, '_result_uti');
+          content._result_std_discharge = getEncounterFieldValue(encounterReports, '_result_std_discharge');
+          content._result_std_ulcer = getEncounterFieldValue(encounterReports, '_result_std_ulcer');
 
-          // --- 4. Hypertension Results ---
-          content._result_hypertensive_urgency = getFieldValue('_result_hypertensive_urgency');
-          content._result_hypertension_grade_1 = getFieldValue('_result_hypertension_grade_1');
-          content._result_hypertension_grade_2 = getFieldValue('_result_hypertension_grade_2');
-          content._result_hypertension_grade_3 = getFieldValue('_result_hypertension_grade_3');
-
-          // --- 5. Pregnancy & Gestational Conditions ---
-          content._result_gestational_hypertension_no_serious = getFieldValue('_result_gestational_hypertension_no_serious');
-          content._result_gestational_hypertension_serious = getFieldValue('_result_gestational_hypertension_serious');
-          content._result_pre_eclampsia = getFieldValue('_result_pre_eclampsia');
-          content._result_genitourinary_infections = getFieldValue('_result_genitourinary_infections');
-          content._result_threatened_miscarriage_less20 = getFieldValue('_result_threatened_miscarriage_less20');
-          content._result_threatened_miscarriage_greater20 = getFieldValue('_result_threatened_miscarriage_greater20');
-
-          // --- 6. Respiratory, TB, Asthma, Pneumonia & Flu ---
-          content._result_tuberculosis = getFieldValue('_result_tuberculosis');
-          content._result_asthma = getFieldValue('_result_asthma');
-          content._result_pneumonia = getFieldValue('_result_pneumonia');
-          content._result_flu_like_syndrome = getFieldValue('_result_flu_like_syndrome');
-
-          // --- 7. Skin Conditions ---
-          content._result_impetigo_folliculitis = getFieldValue('_result_impetigo_folliculitis');
-          content._result_ring_worm = getFieldValue('_result_ring_worm');
-          content._result_scabies = getFieldValue('_result_scabies');
-
-          // --- 8. Stroke & TIA ---
-          content._result_transient_ischemic_attack = getFieldValue('_result_transient_ischemic_attack');
-          content._result_stroke = getFieldValue('_result_stroke');
-          content._result_old_stroke = getFieldValue('_result_old_stroke');
-
-          // --- 9. UTI & STDs ---
-          content._result_uti = getFieldValue('_result_uti');
-          content._result_std_discharge = getFieldValue('_result_std_discharge');
-          content._result_std_ulcer = getFieldValue('_result_std_ulcer');
-
-          // --- 10. Anemia ---
-          content._result_moderate_anemia = getFieldValue('_result_moderate_anemia');
+          content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
         }
       }
     ],
 
-    events: [
-      { start: 0, days: 0, end: 30 }
-    ]
+    events: [{ start: 0, days: 0, end: 30 }]
   },
+
+  // ----------------------------------------------------
+  // ROUTE SUMMARY FORM - ELDERLY (> 64)
+  // ----------------------------------------------------
+  {
+    name: 'triage_final_summary_elderly',
+    title: 'Elderly Health Checkup Final Summary',
+    icon: 'icon-healthcare',
+    appliesTo: 'reports',
+    appliesToType: TRIAGE_FORM_NAMES,
+
+    appliesIf: function(c, r) {
+      if (c.contact && c.contact.muted) return false;
+      if (!r.fields || r.fields.patient_age_in_years <= 64) return false;
+      if (!isLatestTriageEncounter(c, r)) return false;
+
+      const summaryAlreadySubmitted = (c.reports || []).some(report =>
+        report.reported_date >= r.reported_date && report.form === 'ELD_Form012_Summary'
+      );
+      if (summaryAlreadySubmitted) return false;
+
+      const requiredFormGroups = [];
+      Object.keys(ELDERLY_ROUTE_FORM_MAPPING).forEach(routeKey => {
+        if (r.fields && r.fields[routeKey] === 'true') {
+          requiredFormGroups.push(ELDERLY_ROUTE_FORM_MAPPING[routeKey]);
+        }
+      });
+
+      if (requiredFormGroups.length === 0) return true;
+
+      return requiredFormGroups.every(formNames =>
+        isFormSubmittedInEncounter(c, r, null, formNames)
+      );
+    },
+
+    actions: [
+      {
+        form: 'ELD_Form012_Summary',
+        modifyContent: function(content, c, r) {
+          const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+          
+          content._result_hyperglycemia_mild = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_mild');
+          content._result_hyperglycemia_moderate = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_moderate');
+          content._result_hyperglycemia_severe = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_severe');
+          content._metformin_dosage = getEncounterFieldValue(encounterReports, '_metformin_dosage', '');
+          content._result_gastritis_serious = getEncounterFieldValue(encounterReports, '_result_gastritis_serious');
+          content._result_gastritis_not_serious = getEncounterFieldValue(encounterReports, '_result_gastritis_not_serious');
+          content._h_pylori_rapid_test_result = getEncounterFieldValue(encounterReports, '_h_pylori_rapid_test_result', '');
+          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
+          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
+          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
+          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
+          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
+          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
+          content._result_hypertensive_urgency = getEncounterFieldValue(encounterReports, '_result_hypertensive_urgency');
+          content._result_hypertension_grade_1 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_1');
+          content._result_hypertension_grade_2 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_2');
+          content._result_hypertension_grade_3 = getEncounterFieldValue(encounterReports, '_result_hypertension_grade_3');
+          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+          content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
+          content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
+          content._result_transient_ischemic_attack = getEncounterFieldValue(encounterReports, '_result_transient_ischemic_attack');
+          content._result_stroke = getEncounterFieldValue(encounterReports, '_result_stroke');
+          content._result_old_stroke = getEncounterFieldValue(encounterReports, '_result_old_stroke');
+          content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
+
+          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
+          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
+          content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
+          content._result_uti = getEncounterFieldValue(encounterReports, '_result_uti');
+          content._result_std_discharge = getEncounterFieldValue(encounterReports, '_result_std_discharge');
+          content._result_std_ulcer = getEncounterFieldValue(encounterReports, '_result_std_ulcer');
+          content._result_chronic_pain = getEncounterFieldValue(encounterReports, '_result_chronic_pain');
+          content._result_referral_needed = getEncounterFieldValue(encounterReports, '_result_referral_needed');
+        }
+      }
+    ],
+
+    events: [{ start: 0, days: 0, end: 30 }]
+  },
+
   // ----------------------------------------------------
   // ANEMIA & MALNUTRITION
   // ----------------------------------------------------
