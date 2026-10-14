@@ -192,229 +192,229 @@
             <value> Adult Health Checkup Summary for <output value=" /data/patient_name "/></value>
           </text>
           <text id="/data/summary_header/summary_instructions:label">
-            <value>Clinical Findings &amp; Recommended Care Protocols</value>
+            <value>Clinical Findings &amp; Recommended Actions</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Mild Hyperglycemia</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild_protocol:label">
-            <value>Protocol: Dietary counseling, increase hydration, physical activity, repeat blood glucose test in 2-4 weeks.</value>
+            <value>You will provide counseling and lifestyle advice.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod:label">
             <value>Diabetes - Hyperglycemia</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod_protocol:label">
-            <value>Protocol: Diabetes management counseling, medication as prescribed, blood sugar log, regular follow-up.</value>
+            <value>You will provide counseling, administer medication, and schedule follow-up.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev:label">
             <value>Diabetes - Severe Hyperglycemia</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev_protocol:label">
-            <value>Protocol: Urgent hospital referral immediately. Maintain hydration.</value>
+            <value>You will maintain hydration and refer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious:label">
             <value>Gastritis / Ulcer (Severe)</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious_protocol:label">
-            <value>Protocol: Submit checkup, proceed with anti-ulcer medication as directed, urgent medical transfer if bleeding.</value>
+            <value>You will administer medication and refer urgently if complications arise.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious:label">
             <value>Gastritis / Ulcer</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious_protocol:label">
-            <value>Protocol: Dietary counseling (avoid spicy/acidic foods), antacid treatment, administer H. pylori rapid test if available.</value>
+            <value>You will provide counseling, test if available, and administer medication.</value>
           </text>
           <text id="/data/summary_header/res_cholera:label">
             <value>Risk of Cholera</value>
           </text>
           <text id="/data/summary_header/res_cholera_protocol:label">
-            <value>Protocol: Administer ORS immediately, zinc supplement, emergency referral to cholera treatment center.</value>
+            <value>You will administer on-site rehydration and refer immediately to a cholera center.</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea:label">
             <value>Acute Diarrhea</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea_protocol:label">
-            <value>Protocol: ORS solution, Zinc tablets for 10-14 days, hydration and sanitation counseling.</value>
+            <value>You will provide on-site treatment, counseling, and home oral rehydration.</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia:label">
             <value>Possible Amoeba or Giardia Infection</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia_protocol:label">
-            <value>Protocol: Metronidazole treatment as prescribed, safe drinking water &amp; handwashing counseling.</value>
+            <value>You will administer antiparasitic medication and provide hygiene counseling.</value>
           </text>
           <text id="/data/summary_header/res_appendicitis:label">
             <value>Risk of Appendicitis / Cholecystitis</value>
           </text>
           <text id="/data/summary_header/res_appendicitis_protocol:label">
-            <value>Protocol: URGENT hospital referral immediately. NPO (nothing by mouth).</value>
+            <value>You will keep patient NPO and refer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos:label">
             <value>Malaria Positive</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos_protocol:label">
-            <value>Protocol: Administer ACT (Coartem) full course, Paracetamol for fever, counselor on bed net usage.</value>
+            <value>You will administer antimalarial treatment and provide counseling.</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg:label">
             <value>Malaria Negative</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg_protocol:label">
-            <value>Protocol: Symptomatic fever care with Paracetamol, investigate other causes of fever.</value>
+            <value>You will treat symptoms and investigate other causes of fever.</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency:label">
             <value>Hypertensive Urgency</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency_protocol:label">
-            <value>Protocol: Administer Nifedipine 10mg Rapid Release sublingually. Immediate hospital referral.</value>
+            <value>You will give emergency medication and refer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_htn_g1:label">
             <value>Hypertension Grade 1</value>
           </text>
           <text id="/data/summary_header/res_htn_g1_protocol:label">
-            <value>Protocol: Low-salt dietary counseling, lifestyle modification, follow-up BP check in 2 weeks.</value>
+            <value>You will provide lifestyle counseling and schedule a follow-up check.</value>
           </text>
           <text id="/data/summary_header/res_htn_g2:label">
             <value>Hypertension Grade 2</value>
           </text>
           <text id="/data/summary_header/res_htn_g2_protocol:label">
-            <value>Protocol: Antihypertensive therapy initiation/adjustment, weekly BP monitoring, sodium reduction counseling.</value>
+            <value>You will initiate or adjust medication, provide counseling, and monitor blood pressure.</value>
           </text>
           <text id="/data/summary_header/res_htn_g3:label">
             <value>Hypertension Grade 3</value>
           </text>
           <text id="/data/summary_header/res_htn_g3_protocol:label">
-            <value>Protocol: Immediate specialist referral. Rest quietly while awaiting transport.</value>
+            <value>You will have patient rest and refer immediately to a specialist or hospital.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild:label">
             <value>Gestational Hypertension (Mild)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild_protocol:label">
-            <value>Protocol: Close prenatal monitoring, bed rest, weekly BP checkup.</value>
+            <value>You will recommend bed rest and establish close prenatal monitoring.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev:label">
             <value>Gestational Hypertension (Severe)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev_protocol:label">
-            <value>Protocol: Nifedipine 20mg immediately. Immediate hospital transfer.</value>
+            <value>You will give emergency medication and transfer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp:label">
             <value>Pre-Eclampsia</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp_protocol:label">
-            <value>Protocol: Nifedipine 20mg on the spot. Emergency hospital transfer.</value>
+            <value>You will give emergency medication and transfer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_preg_uti:label">
             <value>Genitourinary Infection in Pregnancy</value>
           </text>
           <text id="/data/summary_header/res_preg_uti_protocol:label">
-            <value>Protocol: Amoxicillin 500mg 3 times/day for 7 days. Hygiene counseling and fluid intake.</value>
+            <value>You will prescribe antibiotics and provide hygiene and hydration counseling.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20:label">
             <value>Threatened Miscarriage (&lt;20 wks)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20_protocol:label">
-            <value>Protocol: Paracetamol 500mg immediately. Immediate hospital referral.</value>
+            <value>You will give initial medication and refer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20:label">
             <value>Threatened Miscarriage (&gt;20 wks)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20_protocol:label">
-            <value>Protocol: Nifedipine 20mg + Paracetamol 500mg. Immediate hospital referral.</value>
+            <value>You will give emergency medication and refer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_tb:label">
             <value>Risk of Tuberculosis</value>
           </text>
           <text id="/data/summary_header/res_tb_protocol:label">
-            <value>Protocol: Referral for sputum testing / GeneXpert. Infection control &amp; mask wearing counseling.</value>
+            <value>You will provide infection counseling and refer for diagnostic testing.</value>
           </text>
           <text id="/data/summary_header/res_asthma:label">
             <value>Asthma</value>
           </text>
           <text id="/data/summary_header/res_asthma_protocol:label">
-            <value>Protocol: Salbutamol inhaler as needed, trigger avoidance counseling, follow-up evaluation.</value>
+            <value>You will administer an inhaler as needed and provide counseling.</value>
           </text>
           <text id="/data/summary_header/res_pneumonia:label">
             <value>Risk of Pneumonia</value>
           </text>
           <text id="/data/summary_header/res_pneumonia_protocol:label">
-            <value>Protocol: Amoxicillin antibiotic course, fever management with Paracetamol, red flag referral signs.</value>
+            <value>You will prescribe antibiotics, manage fever, and monitor warning signs.</value>
           </text>
           <text id="/data/summary_header/res_flu:label">
             <value>Flu-Like Syndrome</value>
           </text>
           <text id="/data/summary_header/res_flu_protocol:label">
-            <value>Protocol: Supportive treatment (hydration, rest), Paracetamol for fever/body aches.</value>
+            <value>You will provide supportive care, rest and hydration advice, and symptom relief.</value>
           </text>
           <text id="/data/summary_header/res_impetigo:label">
             <value>Impetigo or Folliculitis</value>
           </text>
           <text id="/data/summary_header/res_impetigo_protocol:label">
-            <value>Protocol: Antiseptic skin wash, topical antibiotic cream or oral antibiotics if extensive.</value>
+            <value>You will provide antiseptic skin care and antibiotic treatment.</value>
           </text>
           <text id="/data/summary_header/res_ringworm:label">
             <value>Ringworm (Tinea)</value>
           </text>
           <text id="/data/summary_header/res_ringworm_protocol:label">
-            <value>Protocol: Topical antifungal cream (Clotrimazole) twice daily for 2-4 weeks. Keep area dry.</value>
+            <value>You will provide topical antifungal treatment and hygiene counseling.</value>
           </text>
           <text id="/data/summary_header/res_scabies:label">
             <value>Scabies</value>
           </text>
           <text id="/data/summary_header/res_scabies_protocol:label">
-            <value>Protocol: Permethrin cream application (overnight), treat all household contacts, wash clothes in hot water.</value>
+            <value>You will provide antiparasitic treatment and household contact counseling.</value>
           </text>
           <text id="/data/summary_header/res_tia:label">
             <value>Transient Ischemic Attack (TIA)</value>
           </text>
           <text id="/data/summary_header/res_tia_protocol:label">
-            <value>Protocol: BP control, hypertension treatment, urgent referral to hospital specialist.</value>
+            <value>You will control blood pressure and refer urgently to a specialist.</value>
           </text>
           <text id="/data/summary_header/res_stroke_active:label">
             <value>Active Stroke</value>
           </text>
           <text id="/data/summary_header/res_stroke_active_protocol:label">
-            <value>Protocol: Emergency hospital transfer. Airway and vital signs support during transport.</value>
+            <value>You will support vital signs and transfer immediately to the hospital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
             <value>Old / Prior Stroke</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
-            <value>Protocol: Secondary prevention counseling, blood pressure control, physiotherapy referral.</value>
+            <value>You will provide prevention counseling, manage blood pressure, and refer for rehab.</value>
           </text>
           <text id="/data/summary_header/res_uti:label">
             <value>Urinary Tract Infection</value>
           </text>
           <text id="/data/summary_header/res_uti_protocol:label">
-            <value>Protocol: Antibiotic treatment (Ciprofloxacin/Amoxicillin), hydration counseling (drink plenty of water).</value>
+            <value>You will prescribe antibiotics and provide hydration counseling.</value>
           </text>
           <text id="/data/summary_header/res_std_disc:label">
             <value>Risk of STD (Discharge)</value>
           </text>
           <text id="/data/summary_header/res_std_disc_protocol:label">
-            <value>Protocol: Syndromic treatment for gonorrhea/chlamydia, condom distribution, partner notification and treatment.</value>
+            <value>You will provide syndromic treatment, prevention counseling, and partner management.</value>
           </text>
           <text id="/data/summary_header/res_std_ulc:label">
             <value>Risk of STD (Ulcer / Syphilis)</value>
           </text>
           <text id="/data/summary_header/res_std_ulc_protocol:label">
-            <value>Protocol: Benzathine Penicillin injection or Doxycycline, safe sex counseling, partner referral.</value>
+            <value>You will administer targeted treatment, safe sex counseling, and partner referral.</value>
           </text>
           <text id="/data/summary_header/res_anemia:label">
             <value>Moderate Anemia</value>
           </text>
           <text id="/data/summary_header/res_anemia_protocol:label">
-            <value>Protocol: Iron and Folic Acid supplementation, dietary counseling on iron-rich foods, follow-up in 30 days.</value>
+            <value>You will prescribe nutritional supplements and provide dietary counseling.</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref:label">
             <value>Urgent / Emergency Referral Required</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref_protocol:label">
-            <value>Protocol: Immediate emergency transfer to hospital/health center. Monitor vital signs continuously.</value>
+            <value>You will monitor vital signs and initiate immediate emergency referral.</value>
           </text>
           <text id="/data/summary_header/res_no_condition:label">
             <value>No Specific Medical Action Required</value>
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
-            <value>Protocol: Patient checkup complete. No condition criteria met. Provide general health &amp; preventive wellness counseling.</value>
+            <value>You may provide routine health and preventive wellness counseling.</value>
           </text>
           <text id="/data/grp_pre_eclampsia:label">
             <value>Pre-Eclampsia</value>
@@ -1299,8 +1299,11 @@ Protocol:
             <value>Counseling: 
 - (TODO counseling not provided in care protocols - added as place holder for nurse feedback)</value>
           </text>
-          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg_yesno:label">
             <value>Will you distribute 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+            <value>Did you distribute 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_impetigo/confirm_triple_antibiotic_ointment:label">
             <value>Did you apply Triple Antibiotic Ointment?</value>
@@ -1337,8 +1340,11 @@ Protocol:
           <text id="/data/grp_scabies/confirm_calamine_lotion:label">
             <value>Did you apply Calamine Lotion?</value>
           </text>
-          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno:label">
             <value>Will you distribute 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+            <value>Did you distribute 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:label">
             <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
@@ -1369,11 +1375,17 @@ Protocol:
           <text id="/data/grp_ringworm/confirm_antifungal_cream:label">
             <value>Did you distribute 1 bottle Ketoconazole Antifungal Cream?</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno:label">
             <value>Will you distribute 84 Griseofulvin 125mg tablets?</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+            <value>Did you distribute 84 Griseofulvin 125mg tablets?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno:label">
             <value>Will you distribute 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+            <value>Did you distribute 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:label">
             <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
@@ -1494,229 +1506,229 @@ OR
             <value> Résumé du bilan de santé pour adultes de <output value=" /data/patient_name "/></value>
           </text>
           <text id="/data/summary_header/summary_instructions:label">
-            <value>Résultats cliniques et protocoles de soins recommandés</value>
+            <value>Résultats cliniques et actions recommandées</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Hyperglycémie légère</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild_protocol:label">
-            <value>Protocole : Conseils diététiques, augmentation de l'hydratation, activité physique, nouveau test de glycémie dans 2 à 4 semaines.</value>
+            <value>Vous fournirez des conseils nutritionnels et d'hygiène de vie.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod:label">
             <value>Diabète - Hyperglycémie</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod_protocol:label">
-            <value>Protocole : Conseils en matière de gestion du diabète, médicaments prescrits, carnet de glycémie, suivi régulier.</value>
+            <value>Vous fournirez des conseils, administrerez le traitement et programmerez un suivi.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev:label">
             <value>Diabète - Hyperglycémie sévère</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev_protocol:label">
-            <value>Protocole : Transfert urgent à l'hôpital. Maintenir une bonne hydratation.</value>
+            <value>Vous maintiendrez l'hydratation et référerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious:label">
             <value>Gastrite / Ulcère (Sévère)</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious_protocol:label">
-            <value>Protocole : Soumettre le bilan de santé, poursuivre le traitement anti-ulcéreux selon les directives, transfert médical urgent en cas de saignement.</value>
+            <value>Vous administrerez les médicaments et référerez d'urgence en cas de complications.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious:label">
             <value>Gastrite / Ulcère</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious_protocol:label">
-            <value>Protocole : Conseils diététiques (éviter les aliments épicés/acides), traitement antiacide, administration d'un test rapide de dépistage d'H. pylori si disponible.</value>
+            <value>Vous fournirez des conseils, ferez un test si disponible et administrerez un traitement.</value>
           </text>
           <text id="/data/summary_header/res_cholera:label">
             <value>Risque de choléra</value>
           </text>
           <text id="/data/summary_header/res_cholera_protocol:label">
-            <value>Protocole : Administrer immédiatement une solution de réhydratation orale, un supplément de zinc, et orienter d'urgence vers un centre de traitement du choléra.</value>
+            <value>Vous administrerez une réhydratation sur place et référerez immédiatement à un centre de traitement du choléra.</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea:label">
             <value>Diarrhée aiguë</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea_protocol:label">
-            <value>Protocole : solution de réhydratation orale, comprimés de zinc pendant 10 à 14 jours, conseils en matière d'hydratation et d'hygiène.</value>
+            <value>Vous fournirez un traitement sur place, des conseils et une réhydratation orale.</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia:label">
             <value>Infection possible à amibes ou à Giardia</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia_protocol:label">
-            <value>Protocole : Traitement au métronidazole selon la prescription, accès à l'eau potable et conseils sur le lavage des mains.</value>
+            <value>Vous administrerez un traitement antiparasitaire et fournirez des conseils d'hygiène.</value>
           </text>
           <text id="/data/summary_header/res_appendicitis:label">
             <value>Risque d'appendicite/cholécystite</value>
           </text>
           <text id="/data/summary_header/res_appendicitis_protocol:label">
-            <value>Protocole : Transfert urgent à l'hôpital. À jeun.</value>
+            <value>Vous garderez le patient à jeun et le référerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos:label">
             <value>Paludisme positif</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos_protocol:label">
-            <value>Protocole : Administrer le traitement complet d'ACT (Coartem), du paracétamol en cas de fièvre, conseiller sur l'utilisation des moustiquaires imprégnées.</value>
+            <value>Vous administrerez un traitement antipaludique et fournirez des conseils.</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg:label">
             <value>Test négatif au paludisme</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg_protocol:label">
-            <value>Protocole : Traitement symptomatique de la fièvre avec du paracétamol, rechercher d'autres causes de fièvre.</value>
+            <value>Vous traiterez les symptômes et rechercherez d'autres causes de fièvre.</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency:label">
             <value>Urgence hypertensive</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency_protocol:label">
-            <value>Protocole : Administrer 10 mg de nifédipine à libération rapide par voie sublinguale. Consultation hospitalière immédiate.</value>
+            <value>Vous administrerez un médicament d'urgence et référerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_htn_g1:label">
             <value>Hypertension de grade 1</value>
           </text>
           <text id="/data/summary_header/res_htn_g1_protocol:label">
-            <value>Protocole : Conseils diététiques à faible teneur en sel, modification du mode de vie, contrôle de la tension artérielle dans 2 semaines.</value>
+            <value>Vous fournirez des conseils d'hygiène de vie et programmerez un contrôle de suivi.</value>
           </text>
           <text id="/data/summary_header/res_htn_g2:label">
             <value>Hypertension de grade 2</value>
           </text>
           <text id="/data/summary_header/res_htn_g2_protocol:label">
-            <value>Protocole : Initiation/ajustement du traitement antihypertenseur, surveillance hebdomadaire de la PA, conseils sur la réduction du sodium.</value>
+            <value>Vous adapterez le traitement médicamenteux, fournirez des conseils et surveillerez la tension.</value>
           </text>
           <text id="/data/summary_header/res_htn_g3:label">
             <value>Hypertension de grade 3</value>
           </text>
           <text id="/data/summary_header/res_htn_g3_protocol:label">
-            <value>Protocole : Consultation immédiate auprès d'un spécialiste. Reposez-vous tranquillement en attendant le transport.</value>
+            <value>Vous ferez reposer le patient et le référerez immédiatement à un spécialiste ou à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild:label">
             <value>Hypertension gestationnelle (légère)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild_protocol:label">
-            <value>Protocole : Surveillance prénatale étroite, repos au lit, contrôle hebdomadaire de la tension artérielle.</value>
+            <value>Vous recommanderez le repos au lit et instaurerez une surveillance prénatale étroite.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev:label">
             <value>Hypertension gestationnelle (sévère)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev_protocol:label">
-            <value>Protocole : Nifédipine 20 mg immédiatement. Transfert hospitalier immédiat.</value>
+            <value>Vous administrerez un médicament d'urgence et transférerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp:label">
             <value>Pré-éclampsie</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp_protocol:label">
-            <value>Protocole : Nifédipine 20 mg sur place. Transfert d'urgence à l'hôpital.</value>
+            <value>Vous administrerez un médicament d'urgence et transférerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_preg_uti:label">
             <value>Infection génito-urinaire pendant la grossesse</value>
           </text>
           <text id="/data/summary_header/res_preg_uti_protocol:label">
-            <value>Protocole : Amoxicilline 500 mg 3 fois/jour pendant 7 jours. Conseils d'hygiène et d'hydratation.</value>
+            <value>Vous prescrirez des antibiotiques et donnerez des conseils d'hygiène et d'hydratation.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20:label">
             <value>Menace de fausse couche (&lt;20 semaines)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20_protocol:label">
-            <value>Protocole : Paracétamol 500 mg immédiatement. Orientation hospitalière immédiate.</value>
+            <value>Vous administrerez un traitement initial et référerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20:label">
             <value>Menace de fausse couche (&gt;20 semaines)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20_protocol:label">
-            <value>Protocole : Nifédipine 20 mg + Paracétamol 500 mg. Orientation immédiate vers un hôpital.</value>
+            <value>Vous administrerez des médicaments d'urgence et référerez immédiatement à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_tb:label">
             <value>Risque de tuberculose</value>
           </text>
           <text id="/data/summary_header/res_tb_protocol:label">
-            <value>Protocole : Orientation vers un test d'expectoration / GeneXpert. Conseils sur la prévention des infections et le port du masque.</value>
+            <value>Vous fournirez des conseils de prévention et référerez pour des examens diagnostiques.</value>
           </text>
           <text id="/data/summary_header/res_asthma:label">
             <value>Asthme</value>
           </text>
           <text id="/data/summary_header/res_asthma_protocol:label">
-            <value>Protocole : Inhalateur de salbutamol au besoin, conseils sur l'évitement des facteurs déclenchants, évaluation de suivi.</value>
+            <value>Vous administrerez un inhalateur au besoin et fournirez des conseils.</value>
           </text>
           <text id="/data/summary_header/res_pneumonia:label">
             <value>Risque de pneumonie</value>
           </text>
           <text id="/data/summary_header/res_pneumonia_protocol:label">
-            <value>Protocole : Traitement antibiotique par amoxicilline, gestion de la fièvre avec du paracétamol, signes d'alerte nécessitant une orientation vers un spécialiste.</value>
+            <value>Vous prescrirez des antibiotiques, traiterez la fièvre et surveillerez les signes d'alerte.</value>
           </text>
           <text id="/data/summary_header/res_flu:label">
             <value>Syndrome grippal</value>
           </text>
           <text id="/data/summary_header/res_flu_protocol:label">
-            <value>Protocole : Traitement de soutien (hydratation, repos), paracétamol en cas de fièvre/douleurs corporelles.</value>
+            <value>Vous fournirez des soins de soutien, des conseils de repos et de soulagement des symptômes.</value>
           </text>
           <text id="/data/summary_header/res_impetigo:label">
             <value>Impétigo ou folliculite</value>
           </text>
           <text id="/data/summary_header/res_impetigo_protocol:label">
-            <value>Protocole : Nettoyage antiseptique de la peau, crème antibiotique topique ou antibiotiques oraux en cas d'infection étendue.</value>
+            <value>Vous réaliserez des soins antiseptiques et administrerez un traitement antibiotique.</value>
           </text>
           <text id="/data/summary_header/res_ringworm:label">
             <value>Teigne (Tinea)</value>
           </text>
           <text id="/data/summary_header/res_ringworm_protocol:label">
-            <value>Protocole : Crème antifongique topique (clotrimazole) deux fois par jour pendant 2 à 4 semaines. Garder la zone sèche.</value>
+            <value>Vous prescrirez un traitement antifongique topique et des conseils d'hygiène.</value>
           </text>
           <text id="/data/summary_header/res_scabies:label">
             <value>Gale</value>
           </text>
           <text id="/data/summary_header/res_scabies_protocol:label">
-            <value>Protocole : Application de crème à la perméthrine (pendant la nuit), traiter tous les contacts familiaux, laver les vêtements à l'eau chaude.</value>
+            <value>Vous fournirez un traitement antiparasitaire et des conseils pour l'entourage.</value>
           </text>
           <text id="/data/summary_header/res_tia:label">
             <value>Accident ischémique transitoire (AIT)</value>
           </text>
           <text id="/data/summary_header/res_tia_protocol:label">
-            <value>Protocole : Contrôle de la PA, traitement de l'hypertension, orientation urgente vers un spécialiste hospitalier.</value>
+            <value>Vous contrôlerez la tension artérielle et référerez d'urgence à un spécialiste.</value>
           </text>
           <text id="/data/summary_header/res_stroke_active:label">
             <value>AVC actif</value>
           </text>
           <text id="/data/summary_header/res_stroke_active_protocol:label">
-            <value>Protocole : Transfert d'urgence à l'hôpital. Assistance respiratoire et maintien des signes vitaux pendant le transport.</value>
+            <value>Vous maintiendrez les fonctions vitales et transférerez d'urgence à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
-            <value>AVC ancien / antérieur</value>
+            <value>Ancien AVC / AVC antérieur</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
-            <value>Protocole : Conseils en prévention secondaire, contrôle de la pression artérielle, orientation vers la physiothérapie.</value>
+            <value>Vous donnerez des conseils de prévention, contrôlerez la tension et référerez en réadaptation.</value>
           </text>
           <text id="/data/summary_header/res_uti:label">
             <value>Infection des voies urinaires</value>
           </text>
           <text id="/data/summary_header/res_uti_protocol:label">
-            <value>Protocole : Traitement antibiotique (ciprofloxacine/amoxicilline), conseils d'hydratation (boire beaucoup d'eau).</value>
+            <value>Vous prescrirez des antibiotiques et donnerez des conseils d'hydratation.</value>
           </text>
           <text id="/data/summary_header/res_std_disc:label">
             <value>Risque d'IST (sortie)</value>
           </text>
           <text id="/data/summary_header/res_std_disc_protocol:label">
-            <value>Protocole : Traitement syndromique de la gonorrhée/chlamydiose, distribution de préservatifs, notification et traitement des partenaires.</value>
+            <value>Vous fournirez un traitement syndromique, des conseils préventifs et la prise en charge du partenaire.</value>
           </text>
           <text id="/data/summary_header/res_std_ulc:label">
             <value>Risque de MST (ulcère / syphilis)</value>
           </text>
           <text id="/data/summary_header/res_std_ulc_protocol:label">
-            <value>Protocole : Injection de pénicilline benzathine ou de doxycycline, conseils en matière de sexualité sans risque, orientation vers un partenaire.</value>
+            <value>Vous administrerez un traitement ciblé, des conseils préventifs et référerez le partenaire.</value>
           </text>
           <text id="/data/summary_header/res_anemia:label">
             <value>Anémie modérée</value>
           </text>
           <text id="/data/summary_header/res_anemia_protocol:label">
-            <value>Protocole : Supplémentation en fer et en acide folique, conseils diététiques sur les aliments riches en fer, suivi dans 30 jours.</value>
+            <value>Vous prescrirez une supplémentation nutritionnelle et donnerez des conseils alimentaires.</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref:label">
             <value>Orientation urgente/en urgence requise</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref_protocol:label">
-            <value>Protocole : Transfert d'urgence immédiat vers un hôpital ou un centre de santé. Surveillance continue des signes vitaux.</value>
+            <value>Vous surveillerez les signes vitaux et déclencherez un transfert d'urgence immédiat.</value>
           </text>
           <text id="/data/summary_header/res_no_condition:label">
             <value>Aucune mesure médicale spécifique requise</value>
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
-            <value>Protocole : Examen du patient terminé. Aucun critère de pathologie rempli. Conseils généraux en matière de santé et de prévention.</value>
+            <value>Vous fournirez des conseils de santé générale et de prévention.</value>
           </text>
           <text id="/data/grp_pre_eclampsia:label">
             <value>Pré-éclampsie</value>
@@ -1737,7 +1749,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_pre_eclampsia/confirm_nifedipine_20mg_pre_eclampsia:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_pre_eclampsia/_data_nifedipine_20mg_pre_eclampsia_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1772,7 +1784,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_gt20/confirm_nifedipine_20mg_gt20:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_gt20/_data_nifedipine_20mg_gt20_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1844,7 +1856,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_gestational_htn_sev/confirm_nifedipine_20mg_gest_sev:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_gestational_htn_sev/gest_htn_sev_med_not_confirmed_reason:label">
             <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
@@ -2157,7 +2169,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Distribuer 60 comprimés de metformine 500 mg à prendre deux fois par jour, au moment des repas.</value>
           </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_protocol3:label">
-            <value> Le patient prend actuellement <output value=" /data/_metformin_dosage "/>. Si le contrôle glycémique est insuffisant, il est conseillé d'augmenter la posologie de 500 mg/jour, selon la tolérance. Souhaitez-vous augmenter sa posologie ?</value>
+            <value> Le patient prend actuellement <output value=" /data/_metformin_dosage "/>. Si le contrôle glycémique est insuffisant, il est conseillé d'augmenter la posologie de 500 mg/jour en fonction de la tolérance. Souhaitez-vous augmenter sa posologie ?</value>
           </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_protocol3_1:label">
             <value>Protocole :
@@ -2417,9 +2429,9 @@ Protocole :
           <text id="/data/grp_amoeba_giardia/amoeba_protocol:label">
             <value>Protocole :
 
-- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à prendre à raison de 4 comprimés une fois par jour pendant 3 jours.
+- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à raison de 4 comprimés une fois par jour pendant 3 jours.
 
-- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à prendre 3 fois par jour pendant 5 jours.</value>
+- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à raison de 3 comprimés trois fois par jour pendant 5 jours.</value>
           </text>
           <text id="/data/grp_amoeba_giardia/amoeba_counseling:label">
             <value>Accompagnement psychologique :
@@ -2799,8 +2811,11 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
 
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
-          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg_yesno:label">
             <value>Allez-vous distribuer 40 comprimés de Cloxacilline 500 mg ?</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+            <value>Avez-vous distribué 40 comprimés de Cloxacilline 500 mg ?</value>
           </text>
           <text id="/data/grp_impetigo/_data_cloxacillin_500mg_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2854,8 +2869,11 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
           <text id="/data/grp_scabies/_data_calamine_lotion_distributed:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno:label">
             <value>Allez-vous distribuer 40 comprimés de Cloxacilline 500 mg ?</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+            <value>Avez-vous distribué 40 comprimés de Cloxacilline 500 mg ?</value>
           </text>
           <text id="/data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2897,14 +2915,20 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
           <text id="/data/grp_ringworm/_data_antifungal_cream_distributed:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno:label">
             <value>Allez-vous distribuer 84 comprimés de griséofulvine 125 mg ?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+            <value>Avez-vous distribué 84 comprimés de griséofulvine 125 mg ?</value>
           </text>
           <text id="/data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno:label">
             <value>Allez-vous distribuer 40 comprimés de Cloxacilline 500 mg ?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+            <value>Avez-vous distribué 40 comprimés de Cloxacilline 500 mg ?</value>
           </text>
           <text id="/data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm:label">
             <value>SANS ÉTIQUETTE</value>
@@ -3269,229 +3293,229 @@ OU
             <value> Rezime Tcheke Sante pou Adilt pou <output value=" /data/patient_name "/></value>
           </text>
           <text id="/data/summary_header/summary_instructions:label">
-            <value>Rezilta Klinik ak Pwotokòl Swen Rekòmande</value>
+            <value>Rezilta Klinik ak Aksyon Rekòmande</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Ipèglisemi lejè</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild_protocol:label">
-            <value>Pwotokòl: Konsèy dyetetik, ogmante idratasyon, aktivite fizik, repete tès glikoz nan san nan 2-4 semèn.</value>
+            <value>W ap bay konsèy sou rejim alimantè ak fòm vi.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod:label">
             <value>Dyabèt - Ipèglisemi</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mod_protocol:label">
-            <value>Pwotokòl: Konsèy pou jesyon dyabèt, medikaman jan yo preskri, jounal sik nan san, swivi regilye.</value>
+            <value>W ap bay konsèy, bay medikaman, epi planifye yon swivi.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev:label">
             <value>Dyabèt - Ipèglisemi grav</value>
           </text>
           <text id="/data/summary_header/res_diabetes_sev_protocol:label">
-            <value>Pwotokòl: Referans lopital ijan imedyatman. Kenbe idratasyon.</value>
+            <value>W ap kenbe idratasyon epi refere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious:label">
             <value>Gastrit / Ilsè (Grav)</value>
           </text>
           <text id="/data/summary_header/res_gastritis_serious_protocol:label">
-            <value>Pwotokòl: Soumèt yon tchèkòp, kontinye ak medikaman kont ilsè jan yo di a, transfè medikal ijan si gen senyen.</value>
+            <value>W ap bay medikaman epi refere an ijans si gen konplikasyon.</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious:label">
             <value>Gastrit / Ilsè</value>
           </text>
           <text id="/data/summary_header/res_gastritis_not_serious_protocol:label">
-            <value>Pwotokòl: Konsèy dyetetik (evite manje pike/asid), tretman antiasid, fè yon tès rapid H. pylori si disponib.</value>
+            <value>W ap bay konsèy, fè tès si l disponib, epi bay medikaman.</value>
           </text>
           <text id="/data/summary_header/res_cholera:label">
             <value>Risk pou pran kolera</value>
           </text>
           <text id="/data/summary_header/res_cholera_protocol:label">
-            <value>Pwotokòl: Administre ORS imedyatman, sipleman zenk, refere pasyan an nan yon sant tretman kolera an ijans.</value>
+            <value>W ap bay re-idratasyon sou plas epi refere imedyatman nan yon sant kolera.</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea:label">
             <value>Dyare egi</value>
           </text>
           <text id="/data/summary_header/res_acute_diarrhea_protocol:label">
-            <value>Pwotokòl: Solisyon ORS, grenn zenk pandan 10-14 jou, konsèy sou idratasyon ak sanitasyon.</value>
+            <value>W ap bay tretman sou plas, konsèy, ak re-idratasyon nan bouch.</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia:label">
             <value>Enfeksyon posib ak Ameba oswa Giardia</value>
           </text>
           <text id="/data/summary_header/res_amoeba_giardia_protocol:label">
-            <value>Pwotokòl: Tretman ak metronidazòl jan yo preskri l la, dlo potab pou bwè ak konsèy sou lave men.</value>
+            <value>W ap bay medikaman antiparazitè epi bay konsèy sou ijyèn.</value>
           </text>
           <text id="/data/summary_header/res_appendicitis:label">
             <value>Risk pou Apendisit / Kolesistit</value>
           </text>
           <text id="/data/summary_header/res_appendicitis_protocol:label">
-            <value>Pwotokòl: Referans lopital IJANS imedyatman. NPO (pa gen anyen nan bouch).</value>
+            <value>W ap kenbe pasyan an ajeun epi refere l imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos:label">
             <value>Malarya pozitif</value>
           </text>
           <text id="/data/summary_header/res_malaria_pos_protocol:label">
-            <value>Pwotokòl: Administre ACT (Coartem) konplè, Parasetamol pou lafyèv, bay konseye sou itilizasyon moustikè.</value>
+            <value>W ap bay tretman kont malarya epi bay konsèy.</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg:label">
             <value>Malarya Negatif</value>
           </text>
           <text id="/data/summary_header/res_malaria_neg_protocol:label">
-            <value>Pwotokòl: Swen lafyèv sentòmatik ak Parasetamol, mennen ankèt sou lòt kòz lafyèv.</value>
+            <value>W ap trete sentòm yo epi chèche lòt kòz lafyèv la.</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency:label">
             <value>Ijans Ipertansif</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency_protocol:label">
-            <value>Pwotokòl: Administre Nifedipine 10mg Rapid Release sou lang lan. Referans lopital imedyat.</value>
+            <value>W ap bay medikaman ijans epi refere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_htn_g1:label">
             <value>Tansyon wo nivo 1</value>
           </text>
           <text id="/data/summary_header/res_htn_g1_protocol:label">
-            <value>Pwotokòl: Konsèy sou rejim alimantè ki ba nan sèl, modifikasyon nan fòm lavi, swivi pou tcheke tansyon nan 2 semèn.</value>
+            <value>W ap bay konsèy sou fòm vi epi planifye yon tchèkòp swivi.</value>
           </text>
           <text id="/data/summary_header/res_htn_g2:label">
             <value>Tansyon wo nivo 2</value>
           </text>
           <text id="/data/summary_header/res_htn_g2_protocol:label">
-            <value>Pwotokòl: Kòmansman/ajisteman terapi antiipètansif, siveyans tansyon chak semèn, konsèy pou rediksyon sodyòm.</value>
+            <value>W ap kòmanse oswa ajiste medikaman, bay konsèy, epi kontwole tansyon an.</value>
           </text>
           <text id="/data/summary_header/res_htn_g3:label">
             <value>Tansyon wo nivo 3</value>
           </text>
           <text id="/data/summary_header/res_htn_g3_protocol:label">
-            <value>Pwotokòl: Referans imedya pou yon espesyalis. Rete trankil pandan w ap tann transpò a.</value>
+            <value>W ap fè pasyan an poze epi refere l imedyatman bay yon espesyalis oswa lopital.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild:label">
             <value>Tansyon wo jestasyonèl (lejè)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_mild_protocol:label">
-            <value>Pwotokòl: siveyans prenatal atantif, repo nan kabann, tchèkòp tansyon chak semèn.</value>
+            <value>W ap rekòmande repo nan kabann epi fè siveyans prenatal regilye.</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev:label">
             <value>Tansyon wo jestasyonèl (grav)</value>
           </text>
           <text id="/data/summary_header/res_preg_htn_sev_protocol:label">
-            <value>Pwotokòl: Nifedipine 20mg imedyatman. Transfè lopital imedyatman.</value>
+            <value>W ap bay medikaman ijans epi transfere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp:label">
             <value>Pre-eklanpsi</value>
           </text>
           <text id="/data/summary_header/res_pre_eclamp_protocol:label">
-            <value>Pwotokòl: Nifedipine 20mg sou plas. Transfè lopital ijans.</value>
+            <value>W ap bay medikaman ijans epi transfere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_preg_uti:label">
             <value>Enfeksyon jenitourinè pandan gwosès</value>
           </text>
           <text id="/data/summary_header/res_preg_uti_protocol:label">
-            <value>Pwotokòl: Amoksisilin 500mg 3 fwa/jou pandan 7 jou. Konsèy sou ijyèn ak konsomasyon likid.</value>
+            <value>W ap bay antibyotik epi bay konsèy sou ijyèn ak bwè dlo.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20:label">
             <value>Menas pou fè foskouch (&lt;20 semèn)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_less20_protocol:label">
-            <value>Pwotokòl: Parasetamol 500mg imedyatman. Referans lopital imedyat.</value>
+            <value>W ap bay premye medikaman epi refere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20:label">
             <value>Menas pou fè foskouch (plis pase 20 semèn)</value>
           </text>
           <text id="/data/summary_header/res_miscarriage_great20_protocol:label">
-            <value>Pwotokòl: Nifedipin 20mg + Parasetamol 500mg. Referans lopital imedyat.</value>
+            <value>W ap bay medikaman ijans epi refere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_tb:label">
             <value>Risk pou tibèkiloz</value>
           </text>
           <text id="/data/summary_header/res_tb_protocol:label">
-            <value>Pwotokòl: Referans pou tès krache / GeneXpert. Kontwòl enfeksyon ak konsèy pou mete mask.</value>
+            <value>W ap bay konsèy pou evite enfeksyon epi refere pou fè tès depistaj.</value>
           </text>
           <text id="/data/summary_header/res_asthma:label">
             <value>Asm</value>
           </text>
           <text id="/data/summary_header/res_asthma_protocol:label">
-            <value>Pwotokòl: Inalatè Salbutamol jan sa nesesè, konsèy pou evite deklanche efè segondè yo, evalyasyon swivi.</value>
+            <value>W ap bay yon inalatè jan sa nesesè epi bay konsèy.</value>
           </text>
           <text id="/data/summary_header/res_pneumonia:label">
             <value>Risk pou nemoni</value>
           </text>
           <text id="/data/summary_header/res_pneumonia_protocol:label">
-            <value>Pwotokòl: Kou antibyotik Amoksisilin, jesyon lafyèv ak Parasetamol, referans a siy drapo wouj.</value>
+            <value>W ap bay antibyotik, jere lafyèv, epi siveye siy danje.</value>
           </text>
           <text id="/data/summary_header/res_flu:label">
             <value>Sendwòm grip la</value>
           </text>
           <text id="/data/summary_header/res_flu_protocol:label">
-            <value>Pwotokòl: Tretman sipòtif (idratasyon, repo), Parasetamol pou lafyèv/doulè nan kò.</value>
+            <value>W ap bay swen sipò, konsèy sou repo ak idratasyon, ak soulajman sentòm.</value>
           </text>
           <text id="/data/summary_header/res_impetigo:label">
             <value>Enpetigo oswa Folikulit</value>
           </text>
           <text id="/data/summary_header/res_impetigo_protocol:label">
-            <value>Pwotokòl: Lave po ak antiseptik, krèm antibyotik topikal oswa antibyotik oral si li anpil.</value>
+            <value>W ap bay swen po ak antiseptik epi bay tretman antibyotik.</value>
           </text>
           <text id="/data/summary_header/res_ringworm:label">
             <value>Vè angren (Tinea)</value>
           </text>
           <text id="/data/summary_header/res_ringworm_protocol:label">
-            <value>Pwotokòl: Krèm antifonjik lokal (Clotrimazole) de fwa pa jou pandan 2-4 semèn. Kenbe zòn nan sèk.</value>
+            <value>W ap bay krèm antifonjik epi bay konsèy sou ijyèn.</value>
           </text>
           <text id="/data/summary_header/res_scabies:label">
             <value>Gale</value>
           </text>
           <text id="/data/summary_header/res_scabies_protocol:label">
-            <value>Pwotokòl: Aplike krèm permetrin (pandan tout lannwit lan), trete tout kontak nan kay la, lave rad yo nan dlo cho.</value>
+            <value>W ap bay tretman antiparazitè ak konsèy pou tout moun nan kay la.</value>
           </text>
           <text id="/data/summary_header/res_tia:label">
             <value>Atak Ischemik Tanporè (TIA)</value>
           </text>
           <text id="/data/summary_header/res_tia_protocol:label">
-            <value>Pwotokòl: Kontwòl tansyon, tretman tansyon wo, referans ijan bay yon espesyalis lopital.</value>
+            <value>W ap kontwole tansyon epi refere an ijans bay yon espesyalis.</value>
           </text>
           <text id="/data/summary_header/res_stroke_active:label">
             <value>Konjesyon Serebral Aktif</value>
           </text>
           <text id="/data/summary_header/res_stroke_active_protocol:label">
-            <value>Pwotokòl: Transfè lopital an ijans. Sipò pou respiratwa ak siy vital pandan transpò a.</value>
+            <value>W ap soutni siy vital yo epi transfere imedyatman nan lopital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
             <value>Ansyen / Anvan Aksidan Serebrovaskilè</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
-            <value>Pwotokòl: Konsèy pou prevansyon segondè, kontwòl tansyon, referans pou fizyoterapi.</value>
+            <value>W ap bay konsèy prevansyon, kontwole tansyon, epi refere pou reyabilitasyon.</value>
           </text>
           <text id="/data/summary_header/res_uti:label">
             <value>Enfeksyon nan aparèy urinè</value>
           </text>
           <text id="/data/summary_header/res_uti_protocol:label">
-            <value>Pwotokòl: Tretman antibyotik (Ciprofloxacin/Amoxicillin), konsèy idratasyon (bwè anpil dlo).</value>
+            <value>W ap bay antibyotik epi bay konsèy pou bwè dlo.</value>
           </text>
           <text id="/data/summary_header/res_std_disc:label">
             <value>Risk pou MST (Egzeyat)</value>
           </text>
           <text id="/data/summary_header/res_std_disc_protocol:label">
-            <value>Pwotokòl: Tretman sendwòmik pou gonore/klamidya, distribisyon kapòt, notifikasyon patnè ak tretman.</value>
+            <value>W ap bay tretman sendwòmik, konsèy prevansyon, ak swen pou patnè a.</value>
           </text>
           <text id="/data/summary_header/res_std_ulc:label">
             <value>Risk pou trape MST (Ilsè / Sifilis)</value>
           </text>
           <text id="/data/summary_header/res_std_ulc_protocol:label">
-            <value>Pwotokòl: Enjeksyon Benzathine Penisilin oubyen Doxycycline, konsèy pou sèks san danje, referans pou patnè.</value>
+            <value>W ap bay tretman vize, konsèy sou sèks san danje, epi refere patnè a.</value>
           </text>
           <text id="/data/summary_header/res_anemia:label">
             <value>Anemi modere</value>
           </text>
           <text id="/data/summary_header/res_anemia_protocol:label">
-            <value>Pwotokòl: Sipleman fè ak asid folik, konsèy dyetetik sou manje ki rich an fè, swivi nan 30 jou.</value>
+            <value>W ap bay sipleman nitrisyonèl epi bay konsèy sou bon manje.</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref:label">
             <value>Referans Ijan/Ijans Obligatwa</value>
           </text>
           <text id="/data/summary_header/res_urgent_ref_protocol:label">
-            <value>Pwotokòl: Transfè ijans imedyat nan lopital/sant sante. Kontwole siy vital yo kontinyèlman.</value>
+            <value>W ap kontwole siy vital yo epi fè yon referans ijans imedyat.</value>
           </text>
           <text id="/data/summary_header/res_no_condition:label">
             <value>Pa gen okenn aksyon medikal espesifik ki nesesè</value>
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
-            <value>Pwotokòl: Tcheke pasyan an fini. Pa gen okenn kritè kondisyon ki satisfè. Bay konsèy sou sante jeneral ak byennèt prevantif.</value>
+            <value>W ap bay konsèy sou bon sante ak prevansyon woutin.</value>
           </text>
           <text id="/data/grp_pre_eclampsia:label">
             <value>Pre-eklanpsi</value>
@@ -3925,7 +3949,7 @@ Pwotokòl:
 - Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon rafine
 - Chwazi grenn antye, pwa, legim, ak fwi fre
 - Mete pwoteyin mèg (pwa, pwason, ze, bèt volay) nan repa yo
-- Evite twòp manje fri ak gra
+- Evite manje ki fri ak gra twòp
 - Konseye pasyan an pou l retounen pou yon tès glikoz nan san nan 1-2 semèn. Enfòme pasyan an pou l pa manje anvan l vini.</value>
           </text>
           <text id="/data/grp_diabetes_mod/confirm_metformin_500mg:label">
@@ -3959,7 +3983,7 @@ Pwotokòl:
 - Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon rafine
 - Chwazi grenn antye, pwa, legim, ak fwi fre
 - Mete pwoteyin mèg (pwa, pwason, ze, bèt volay) nan repa yo
-- Evite twòp manje fri ak gra
+- Evite manje ki fri ak gra twòp
 - Konseye pasyan an pou l retounen pou yon tès glikoz nan san nan 1-2 semèn. Enfòme pasyan an pou l pa manje anvan l vini.</value>
           </text>
           <text id="/data/grp_diabetes_mild/diabetes_mild_notes:label">
@@ -4051,10 +4075,10 @@ Pwotokòl:
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_protocol_positive_pylori:label">
             <value>Pwotokòl:
-- Distribye 28 Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
-- Distribye 20cc Litacid jèl pou pran 30 minit apre repa yo.
-- Distribye 42 Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
-- Distribye 42 Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
+- Distribye 28 grenn Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
+- Distribye 20cc jèl Litacid pou pran 30 minit apre repa yo.
+- Distribye 42 grenn Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
+- Distribye 42 grenn Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_counseling_hpylori_negative:label">
             <value>Konsèy:
@@ -4451,8 +4475,11 @@ Pwotokòl:
             <value>Konsèy:
 - (Konsèy TODO pa bay nan pwotokòl swen yo - ajoute kòm espas vid pou fidbak enfimyè yo)</value>
           </text>
-          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg_yesno:label">
             <value>Èske w ap distribye 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_500mg:label">
+            <value>Èske ou te distribye 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_impetigo/_data_cloxacillin_500mg_distributed:label">
             <value>PA GEN_ETIKÈT</value>
@@ -4501,8 +4528,11 @@ Pwotokòl:
           <text id="/data/grp_scabies/_data_calamine_lotion_distributed:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno:label">
             <value>Èske w ap distribye 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label">
+            <value>Èske ou te distribye 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies:label">
             <value>PA GEN_ETIKÈT</value>
@@ -4525,7 +4555,7 @@ Pwotokòl:
           <text id="/data/grp_ringworm/ringworm_protocol:label">
             <value>Pwotokòl:
 - Distribye 1 boutèy krèm Ketoconazole
-- Si li anvayi tout moun, bay 84 grenn griseofulvin 125mg pou pran ak yon repa ki gen anpil grès, 2 grenn yon fwa pa jou chak jou pandan 6 semèn
+- Si li anvayi anpil, bay 84 grenn griseofulvin 125mg pou pran ak yon repa ki gen anpil grès, 2 grenn yon fwa pa jou chak jou pandan 6 semèn
 - Si li nan cheve, raze cheve a
 - Si li sanble enfekte (wouj, cho, pi) distribye 40 grenn Cloxacillin 500mg pou pran 2 grenn fwa pa jou chak 6 èdtan pandan 5 jou</value>
           </text>
@@ -4539,14 +4569,20 @@ Pwotokòl:
           <text id="/data/grp_ringworm/_data_antifungal_cream_distributed:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno:label">
             <value>Èske w ap distribye 84 grenn Griseofulvin 125mg?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label">
+            <value>Èske ou te distribye 84 grenn Griseofulvin 125mg?</value>
           </text>
           <text id="/data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno:label">
             <value>Èske w ap distribye 40 Cloxacillin 500mg?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label">
+            <value>Èske ou te distribye 40 Cloxacillin 500mg?</value>
           </text>
           <text id="/data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm:label">
             <value>PA GEN_ETIKÈT</value>
@@ -4869,7 +4905,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form014_Summary" version="20261013003602" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+        <data id="ADT_Form014_Summary" version="20261014002809" prefix="J1!ADT_Form014_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -5323,6 +5359,7 @@ OSWA
             <impetigo_notification/>
             <impetigo_protocol/>
             <impetigo_counseling/>
+            <confirm_cloxacillin_500mg_yesno/>
             <confirm_cloxacillin_500mg/>
             <_data_cloxacillin_500mg_distributed/>
             <confirm_triple_antibiotic_ointment/>
@@ -5338,6 +5375,7 @@ OSWA
             <_data_benzyl_benzoate_distributed/>
             <confirm_calamine_lotion/>
             <_data_calamine_lotion_distributed/>
+            <confirm_cloxaciline_500mg_scabies_yesno/>
             <confirm_cloxaciline_500mg_scabies/>
             <_data_cloxacilline_500mg_distributed_scabies/>
             <scabies_med_not_confirmed_reason/>
@@ -5349,8 +5387,10 @@ OSWA
             <ringworm_counseling/>
             <confirm_antifungal_cream/>
             <_data_antifungal_cream_distributed/>
+            <confirm_griseofulvin_125mg_ringworm_yesno/>
             <confirm_griseofulvin_125mg_ringworm/>
             <_data_griseofulvin_125mg_distributed_ringworm/>
+            <confirm_cloxaciline_500mg_ringworm_yesno/>
             <confirm_cloxaciline_500mg_ringworm/>
             <_data_cloxacilline_500mg_distributed_ringworm/>
             <ringworm_med_not_confirmed_reason/>
@@ -5961,11 +6001,12 @@ OSWA
       <bind nodeset="/data/grp_impetigo/impetigo_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_impetigo/impetigo_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_impetigo/impetigo_counseling" readonly="true()" type="string"/>
-      <bind nodeset="/data/grp_impetigo/confirm_cloxacillin_500mg" type="string"/>
-      <bind nodeset="/data/grp_impetigo/_data_cloxacillin_500mg_distributed" type="string" calculate="if(selected( /data/grp_impetigo/confirm_cloxacillin_500mg , 'yes'), 40, 0)"/>
+      <bind nodeset="/data/grp_impetigo/confirm_cloxacillin_500mg_yesno" type="string"/>
+      <bind nodeset="/data/grp_impetigo/confirm_cloxacillin_500mg" type="string" relevant=" /data/grp_impetigo/confirm_cloxacillin_500mg_yesno  = 'yes'"/>
+      <bind nodeset="/data/grp_impetigo/_data_cloxacillin_500mg_distributed" type="string" calculate="if(selected( /data/grp_impetigo/confirm_cloxacillin_500mg , 'confirmation'), 40, 0)"/>
       <bind nodeset="/data/grp_impetigo/confirm_triple_antibiotic_ointment" type="string"/>
       <bind nodeset="/data/grp_impetigo/_data_triple_antibiotic_distributed" type="string" calculate="if(selected( /data/grp_impetigo/confirm_triple_antibiotic_ointment , 'confirmation'), 1, 0)"/>
-      <bind nodeset="/data/grp_impetigo/impetigo_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_impetigo/confirm_cloxacillin_500mg , 'confirmation')) or not(selected( /data/grp_impetigo/confirm_triple_antibiotic_ointment , 'confirmation'))"/>
+      <bind nodeset="/data/grp_impetigo/impetigo_med_not_confirmed_reason" type="string" required="true()" relevant="( /data/grp_impetigo/confirm_cloxacillin_500mg_yesno  = 'yes' and not(selected( /data/grp_impetigo/confirm_cloxacillin_500mg , 'confirmation'))) or not(selected( /data/grp_impetigo/confirm_triple_antibiotic_ointment , 'confirmation'))"/>
       <bind nodeset="/data/grp_impetigo/impetigo_notes" type="string"/>
       <bind nodeset="/data/grp_scabies" relevant=" /data/_result_scabies  = 'true'"/>
       <bind nodeset="/data/grp_scabies/scabies_notification" readonly="true()" type="string"/>
@@ -5975,9 +6016,10 @@ OSWA
       <bind nodeset="/data/grp_scabies/_data_benzyl_benzoate_distributed" type="string" calculate="if(selected( /data/grp_scabies/confirm_benzyl_benzoate_25 , 'confirmation'), 1, 0)"/>
       <bind nodeset="/data/grp_scabies/confirm_calamine_lotion" type="string"/>
       <bind nodeset="/data/grp_scabies/_data_calamine_lotion_distributed" type="string" calculate="if(selected( /data/grp_scabies/confirm_calamine_lotion , 'confirmation'), 1, 0)"/>
-      <bind nodeset="/data/grp_scabies/confirm_cloxaciline_500mg_scabies" type="string" required="true()"/>
-      <bind nodeset="/data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies" type="string" calculate="if(selected( /data/grp_scabies/confirm_cloxaciline_500mg_scabies , 'yes'), 40, 0)"/>
-      <bind nodeset="/data/grp_scabies/scabies_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_scabies/confirm_benzyl_benzoate_25 , 'confirmation')) or not(selected( /data/grp_scabies/confirm_calamine_lotion , 'confirmation'))"/>
+      <bind nodeset="/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno" type="string" required="true()"/>
+      <bind nodeset="/data/grp_scabies/confirm_cloxaciline_500mg_scabies" type="string" relevant=" /data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno  = 'yes'"/>
+      <bind nodeset="/data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies" type="string" calculate="if(selected( /data/grp_scabies/confirm_cloxaciline_500mg_scabies , 'confirmation'), 40, 0)"/>
+      <bind nodeset="/data/grp_scabies/scabies_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_scabies/confirm_benzyl_benzoate_25 , 'confirmation')) or not(selected( /data/grp_scabies/confirm_calamine_lotion , 'confirmation')) or ( /data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno  = 'yes' and not(selected( /data/grp_scabies/confirm_cloxaciline_500mg_scabies , 'confirmation')))"/>
       <bind nodeset="/data/grp_scabies/scabies_notes" type="string"/>
       <bind nodeset="/data/grp_ringworm" relevant=" /data/_result_ring_worm  = 'true'"/>
       <bind nodeset="/data/grp_ringworm/ringworm_notification" readonly="true()" type="string"/>
@@ -5985,11 +6027,13 @@ OSWA
       <bind nodeset="/data/grp_ringworm/ringworm_counseling" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_ringworm/confirm_antifungal_cream" type="string"/>
       <bind nodeset="/data/grp_ringworm/_data_antifungal_cream_distributed" type="string" calculate="if(selected( /data/grp_ringworm/confirm_antifungal_cream , 'confirmation'), 1, 0)"/>
-      <bind nodeset="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm" type="string" required="true()"/>
-      <bind nodeset="/data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm" type="string" calculate="if(selected( /data/grp_ringworm/confirm_griseofulvin_125mg_ringworm , 'yes'), 84, 0)"/>
-      <bind nodeset="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm" type="string" required="true()"/>
-      <bind nodeset="/data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm" type="string" calculate="if(selected( /data/grp_ringworm/confirm_cloxaciline_500mg_ringworm , 'yes'), 40, 0)"/>
-      <bind nodeset="/data/grp_ringworm/ringworm_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_ringworm/confirm_antifungal_cream , 'confirmation'))"/>
+      <bind nodeset="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno" type="string" required="true()"/>
+      <bind nodeset="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm" type="string" relevant=" /data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno  = 'yes'"/>
+      <bind nodeset="/data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm" type="string" calculate="if(selected( /data/grp_ringworm/confirm_griseofulvin_125mg_ringworm , 'confirmation'), 84, 0)"/>
+      <bind nodeset="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno" type="string" required="true()"/>
+      <bind nodeset="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm" type="string" relevant=" /data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno  = 'yes'"/>
+      <bind nodeset="/data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm" type="string" calculate="if(selected( /data/grp_ringworm/confirm_cloxaciline_500mg_ringworm , 'confirmation'), 40, 0)"/>
+      <bind nodeset="/data/grp_ringworm/ringworm_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_ringworm/confirm_antifungal_cream , 'confirmation')) or ( /data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno  = 'yes' and not(selected( /data/grp_ringworm/confirm_griseofulvin_125mg_ringworm , 'confirmation'))) or ( /data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno  = 'yes' and not(selected( /data/grp_ringworm/confirm_cloxaciline_500mg_ringworm , 'confirmation')))"/>
       <bind nodeset="/data/grp_ringworm/ringworm_notes" type="string"/>
       <bind nodeset="/data/grp_moderate_anemia" relevant=" /data/_result_moderate_anemia  = 'true'"/>
       <bind nodeset="/data/grp_moderate_anemia/anemia_notification" readonly="true()" type="string"/>
@@ -7218,13 +7262,20 @@ OSWA
       <input ref="/data/grp_impetigo/impetigo_counseling">
         <label ref="jr:itext('/data/grp_impetigo/impetigo_counseling:label')"/>
       </input>
-      <select1 ref="/data/grp_impetigo/confirm_cloxacillin_500mg">
-        <label ref="jr:itext('/data/grp_impetigo/confirm_cloxacillin_500mg:label')"/>
+      <select1 ref="/data/grp_impetigo/confirm_cloxacillin_500mg_yesno">
+        <label ref="jr:itext('/data/grp_impetigo/confirm_cloxacillin_500mg_yesno:label')"/>
         <itemset nodeset="instance('yes_no')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
+      <select ref="/data/grp_impetigo/confirm_cloxacillin_500mg">
+        <label ref="jr:itext('/data/grp_impetigo/confirm_cloxacillin_500mg:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
       <select ref="/data/grp_impetigo/confirm_triple_antibiotic_ointment">
         <label ref="jr:itext('/data/grp_impetigo/confirm_triple_antibiotic_ointment:label')"/>
         <itemset nodeset="instance('drug_confirmation')/root/item">
@@ -7265,13 +7316,20 @@ OSWA
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <select1 ref="/data/grp_scabies/confirm_cloxaciline_500mg_scabies">
-        <label ref="jr:itext('/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label')"/>
+      <select1 ref="/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno">
+        <label ref="jr:itext('/data/grp_scabies/confirm_cloxaciline_500mg_scabies_yesno:label')"/>
         <itemset nodeset="instance('yes_no')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
+      <select ref="/data/grp_scabies/confirm_cloxaciline_500mg_scabies">
+        <label ref="jr:itext('/data/grp_scabies/confirm_cloxaciline_500mg_scabies:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
       <input ref="/data/grp_scabies/scabies_med_not_confirmed_reason">
         <label ref="jr:itext('/data/grp_scabies/scabies_med_not_confirmed_reason:label')"/>
         <hint ref="jr:itext('/data/grp_scabies/scabies_med_not_confirmed_reason:hint')"/>
@@ -7298,20 +7356,34 @@ OSWA
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <select1 ref="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm">
+      <select1 ref="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno">
+        <label ref="jr:itext('/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm_yesno:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm">
         <label ref="jr:itext('/data/grp_ringworm/confirm_griseofulvin_125mg_ringworm:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno">
+        <label ref="jr:itext('/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm_yesno:label')"/>
         <itemset nodeset="instance('yes_no')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <select1 ref="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm">
+      <select ref="/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm">
         <label ref="jr:itext('/data/grp_ringworm/confirm_cloxaciline_500mg_ringworm:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
+        <itemset nodeset="instance('drug_confirmation')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
-      </select1>
+      </select>
       <input ref="/data/grp_ringworm/ringworm_med_not_confirmed_reason">
         <label ref="jr:itext('/data/grp_ringworm/ringworm_med_not_confirmed_reason:label')"/>
         <hint ref="jr:itext('/data/grp_ringworm/ringworm_med_not_confirmed_reason:hint')"/>

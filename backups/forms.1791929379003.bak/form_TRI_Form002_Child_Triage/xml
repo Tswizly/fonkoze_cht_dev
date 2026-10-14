@@ -1,0 +1,1280 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Triage</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="emergency_symptoms-0">
+            <value>Severe dehydration</value>
+          </text>
+          <text id="emergency_symptoms-1">
+            <value>Respiratory distress</value>
+          </text>
+          <text id="emergency_symptoms-2">
+            <value>Altered consciousness, convulsions, child is whimpering</value>
+          </text>
+          <text id="emergency_symptoms-3">
+            <value>Complicated acute malnutrition</value>
+          </text>
+          <text id="emergency_symptoms-4">
+            <value>Bloated child, inflamed lower limbs, elevated blood pressure, has not been urinating for over 48 hours</value>
+          </text>
+          <text id="general_symptoms_child-0">
+            <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
+          </text>
+          <text id="general_symptoms_child-1">
+            <value>Cough, wheezing, or difficulty breathing</value>
+          </text>
+          <text id="general_symptoms_child-2">
+            <value>Skin rash, bumps, itching, sores, or discoloration</value>
+          </text>
+          <text id="general_symptoms_child-3">
+            <value>Cuts, scrapes, burns, or unhealed injuries</value>
+          </text>
+          <text id="general_symptoms_child-4">
+            <value>Blurry vision, loss of sight, or eye pain</value>
+          </text>
+          <text id="general_symptoms_youth-0">
+            <value>Diarrhea, vomiting, nausea, or abdominal pain</value>
+          </text>
+          <text id="general_symptoms_youth-1">
+            <value>Cough, wheezing, or difficulty breathing</value>
+          </text>
+          <text id="general_symptoms_youth-2">
+            <value>Skin rash, bumps, itching, sores, or discoloration</value>
+          </text>
+          <text id="general_symptoms_youth-3">
+            <value>Blurry vision, loss of sight, or eye pain</value>
+          </text>
+          <text id="general_symptoms_youth-4">
+            <value>Painful urination, unusual discharge, or genital ulcers</value>
+          </text>
+          <text id="general_symptoms_youth-5">
+            <value>Cuts, scrapes, burns, or unhealed injuries</value>
+          </text>
+          <text id="referral_facility-0">
+            <value>Zanmi Lasante health center in Cerca La Source</value>
+          </text>
+          <text id="referral_facility-1">
+            <value>Hopital Sainte Thérèse</value>
+          </text>
+          <text id="referral_facility-2">
+            <value>Other</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/emergency_triage_group:label">
+            <value>Emergency Triage</value>
+          </text>
+          <text id="/data/emergency_triage_group/has_emergency_symptoms:label">
+            <value>Are any emergency symptoms present?</value>
+          </text>
+          <text id="/data/emergency_triage_group/emergency_symptoms:label">
+            <value>Which emergency symptoms are present?</value>
+          </text>
+          <text id="/data/emergency_triage_summary:label">
+            <value>Emergency Triage Summary</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_header:label">
+            <value>Emergency! Refer the patient immediately.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_subheader:label">
+            <value>Proceed with the following:</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_severe_dehydration:label">
+            <value>- Severe Dehydration: Place Levine tube, provide ORS via tube, advise mother to give frequent sips of ORS and continue breastfeeding during transfer.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_respiratory_distress:label">
+            <value>- Respiratory Distress: Give first dose of amoxicillin oral suspension, administer oxygen if available, keep airway clear and position child comfortably.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_altered_consciousness:label">
+            <value>- Altered Consciousness / Convulsions / Whimpering: Manage airway, position on side (recovery position), give diazepam if actively convulsing, treat to prevent hypoglycemia, and keep warm.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_acute_malnutrition:label">
+            <value>- Complicated Acute Malnutrition: Keep child warm to prevent hypothermia, give oral glucose/sugar water to prevent low blood sugar, do not force-feed.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
+            <value>- Bloated Child / Inflamed Lower Limbs / Anuria: Position upright, monitor vitals closely, avoid fluid overload, and prepare for immediate specialized renal/pediatric transfer.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility:label">
+            <value>Where is the patient referred?</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility_other:label">
+            <value>Please specify referral facility:</value>
+          </text>
+          <text id="/data/vitals_general_group:label">
+            <value>Vitals and General Assessment</value>
+          </text>
+          <text id="/data/vitals_general_group/weight:label">
+            <value>Patient weight (kg)</value>
+          </text>
+          <text id="/data/vitals_general_group/height:label">
+            <value>Patient height (cm)</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_systolic:label">
+            <value>Systolic blood pressure</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:label">
+            <value>Diastolic blood pressure</value>
+          </text>
+          <text id="/data/vitals_general_group/temperature:label">
+            <value>Temperature</value>
+          </text>
+          <text id="/data/vitals_general_group/pulse_ox:label">
+            <value>Oxygen saturation (SpO2)</value>
+          </text>
+          <text id="/data/vitals_general_group/respiratory_rate:label">
+            <value>Respiratory rate</value>
+          </text>
+          <text id="/data/vitals_general_group/heart_rate:label">
+            <value>Heart rate</value>
+          </text>
+          <text id="/data/vitals_general_group/pregnancy_status:label">
+            <value>Is the patient pregnant?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_youths:label">
+            <value>What symptoms is the patient experiencing?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_children:label">
+            <value>What symptoms is the patient experiencing?</value>
+          </text>
+          <text id="/data/child_assessment:label">
+            <value>Child Assessment</value>
+          </text>
+          <text id="/data/child_assessment/vaccination_card:label">
+            <value>Does the child have a vaccination card?</value>
+          </text>
+          <text id="/data/child_assessment/vaccinated_expected:label">
+            <value>Is the child vaccinated as expected?</value>
+          </text>
+          <text id="/data/child_assessment/refer_vaccination:label">
+            <value>Refer the child to a vaccination post.</value>
+          </text>
+          <text id="/data/child_assessment/received_albendazole:label">
+            <value>Has the child received Albendazole (deworming)?</value>
+          </text>
+          <text id="/data/child_assessment/received_vitamin_a:label">
+            <value>Has the child received Vitamin A?</value>
+          </text>
+          <text id="/data/next_steps_group:label">
+            <value>Based on the Triage, the patient will have to do the following forms:</value>
+          </text>
+          <text id="/data/next_steps_group/note_diabetes:label">
+            <value>- Diabetes Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_digestive:label">
+            <value>- Digestive Conditions Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_fever:label">
+            <value>- Fever and Malaria Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_hypertension:label">
+            <value>- Hypertension Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_pregnancy:label">
+            <value>- Pregnancy Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_respiratory:label">
+            <value>- Respiratory Conditions Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_skin:label">
+            <value>- Skin Conditions Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_stroke:label">
+            <value>- Stroke Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_uti_std:label">
+            <value>- UTI and STD Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_wound:label">
+            <value>- Wound Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_vision:label">
+            <value>- Vision Form</value>
+          </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Vaccination and Deworming</value>
+          </text>
+          <text id="/data/next_steps_group/note_tasks_will_appear:label">
+            <value>You will recieve tasks to complete the forms above. Submit the triage form.</value>
+          </text>
+          <text id="/data/next_steps_group/note_no_forms:label">
+            <value>No additional forms are required based on the current assessment.</value>
+          </text>
+          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
+            <value>Will you be sending the patient home with additional paracetamol or iron and folic acid?</value>
+          </text>
+          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
+            <value>NO LABEL</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="emergency_symptoms-0">
+            <value>Déshydratation sévère</value>
+          </text>
+          <text id="emergency_symptoms-1">
+            <value>Détresse respiratoire</value>
+          </text>
+          <text id="emergency_symptoms-2">
+            <value>Altération de la conscience, convulsions, l'enfant gémit</value>
+          </text>
+          <text id="emergency_symptoms-3">
+            <value>Malnutrition aiguë compliquée</value>
+          </text>
+          <text id="emergency_symptoms-4">
+            <value>Enfant ballonné, membres inférieurs enflammés, hypertension artérielle, n'a pas uriné depuis plus de 48 heures</value>
+          </text>
+          <text id="general_symptoms_child-0">
+            <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
+          </text>
+          <text id="general_symptoms_child-1">
+            <value>Toux, respiration sifflante ou difficulté à respirer</value>
+          </text>
+          <text id="general_symptoms_child-2">
+            <value>Éruption cutanée, bosses, démangeaisons, plaies ou décoloration</value>
+          </text>
+          <text id="general_symptoms_child-3">
+            <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
+          </text>
+          <text id="general_symptoms_child-4">
+            <value>Vision floue, perte de la vue ou douleur oculaire</value>
+          </text>
+          <text id="general_symptoms_youth-0">
+            <value>Diarrhée, vomissements, nausées ou douleurs abdominales</value>
+          </text>
+          <text id="general_symptoms_youth-1">
+            <value>Toux, respiration sifflante ou difficulté à respirer</value>
+          </text>
+          <text id="general_symptoms_youth-2">
+            <value>Éruption cutanée, bosses, démangeaisons, plaies ou décoloration</value>
+          </text>
+          <text id="general_symptoms_youth-3">
+            <value>Vision floue, perte de la vue ou douleur oculaire</value>
+          </text>
+          <text id="general_symptoms_youth-4">
+            <value>Miction douloureuse, écoulement inhabituel ou ulcères génitaux</value>
+          </text>
+          <text id="general_symptoms_youth-5">
+            <value>Coupures, éraflures, brûlures ou blessures non cicatrisées</value>
+          </text>
+          <text id="referral_facility-0">
+            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
+          </text>
+          <text id="referral_facility-1">
+            <value>Hôpital Sainte Thérèse</value>
+          </text>
+          <text id="referral_facility-2">
+            <value>Autre</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom abrégé</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmier(ère)</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmier(ère)</value>
+          </text>
+          <text id="/data/emergency_triage_group:label">
+            <value>Triage d'urgence</value>
+          </text>
+          <text id="/data/emergency_triage_group/has_emergency_symptoms:label">
+            <value>Y a-t-il des symptômes d'urgence présents ?</value>
+          </text>
+          <text id="/data/emergency_triage_group/emergency_symptoms:label">
+            <value>Quels symptômes d'urgence sont présents ?</value>
+          </text>
+          <text id="/data/emergency_triage_summary:label">
+            <value>Résumé du triage d'urgence</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_header:label">
+            <value>Urgence ! Référer le patient immédiatement.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_subheader:label">
+            <value>Procédez comme suit :</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_severe_dehydration:label">
+            <value>- Déshydratation sévère : Poser une sonde de Levine, administrer du SRO par la sonde, conseiller à la mère de donner de fréquentes gorgées de SRO et de poursuivre l'allaitement pendant le transfert.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_respiratory_distress:label">
+            <value>- Détresse respiratoire : Administrer la première dose de suspension orale d'amoxicilline, administrer de l'oxygène si disponible, dégager les voies respiratoires et installer confortablement l'enfant.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_altered_consciousness:label">
+            <value>- Altération de la conscience / Convulsions / Gémissements : Protéger les voies aériennes, placer en position latérale de sécurité, administrer du diazépam si convulsion active, traiter pour prévenir l'hypoglycémie et garder au chaud.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_acute_malnutrition:label">
+            <value>- Malnutrition aiguë compliquée : Garder l'enfant au chaud pour éviter l'hypothermie, donner du glucose oral/de l'eau sucrée pour prévenir l'hypoglycémie, ne pas forcer l'alimentation.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
+            <value>- Enfant ballonné / Membres inférieurs enflammés / Anurie : Installer en position semi-assise, surveiller étroitement les signes vitaux, éviter la surcharge liquidienne et préparer le transfert rénal/pédiatrique immédiat.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility:label">
+            <value>Où le patient est-il référé ?</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility_other:label">
+            <value>Veuillez préciser l'établissement de référence :</value>
+          </text>
+          <text id="/data/vitals_general_group:label">
+            <value>Signes vitaux et évaluation générale</value>
+          </text>
+          <text id="/data/vitals_general_group/weight:label">
+            <value>Poids du patient (kg)</value>
+          </text>
+          <text id="/data/vitals_general_group/height:label">
+            <value>Taille du patient (cm)</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_systolic:label">
+            <value>Pression artérielle systolique</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:label">
+            <value>Pression artérielle diastolique</value>
+          </text>
+          <text id="/data/vitals_general_group/temperature:label">
+            <value>Température</value>
+          </text>
+          <text id="/data/vitals_general_group/pulse_ox:label">
+            <value>Saturation en oxygène (SpO2)</value>
+          </text>
+          <text id="/data/vitals_general_group/respiratory_rate:label">
+            <value>Fréquence respiratoire</value>
+          </text>
+          <text id="/data/vitals_general_group/heart_rate:label">
+            <value>Fréquence cardiaque</value>
+          </text>
+          <text id="/data/vitals_general_group/pregnancy_status:label">
+            <value>La patiente est-elle enceinte ?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_youths:label">
+            <value>Quels symptômes le patient présente-t-il ?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_children:label">
+            <value>Quels symptômes le patient présente-t-il ?</value>
+          </text>
+          <text id="/data/child_assessment:label">
+            <value>Évaluation de l'enfant</value>
+          </text>
+          <text id="/data/child_assessment/vaccination_card:label">
+            <value>L'enfant a-t-il un carnet de vaccination ?</value>
+          </text>
+          <text id="/data/child_assessment/vaccinated_expected:label">
+            <value>L'enfant est-il vacciné comme prévu ?</value>
+          </text>
+          <text id="/data/child_assessment/refer_vaccination:label">
+            <value>Référer l'enfant à un poste de vaccination.</value>
+          </text>
+          <text id="/data/child_assessment/received_albendazole:label">
+            <value>L'enfant a-t-il reçu de l'Albendazole (déparasitage) ?</value>
+          </text>
+          <text id="/data/child_assessment/received_vitamin_a:label">
+            <value>L'enfant a-t-il reçu de la vitamine A ?</value>
+          </text>
+          <text id="/data/next_steps_group:label">
+            <value>D'après le triage, le patient devra remplir les formulaires suivants :</value>
+          </text>
+          <text id="/data/next_steps_group/note_diabetes:label">
+            <value>- Formulaire Diabète</value>
+          </text>
+          <text id="/data/next_steps_group/note_digestive:label">
+            <value>- Formulaire Affections digestives</value>
+          </text>
+          <text id="/data/next_steps_group/note_fever:label">
+            <value>- Formulaire Fièvre et paludisme</value>
+          </text>
+          <text id="/data/next_steps_group/note_hypertension:label">
+            <value>- Formulaire Hypertension</value>
+          </text>
+          <text id="/data/next_steps_group/note_pregnancy:label">
+            <value>- Formulaire Grossesse</value>
+          </text>
+          <text id="/data/next_steps_group/note_respiratory:label">
+            <value>- Formulaire Affections respiratoires</value>
+          </text>
+          <text id="/data/next_steps_group/note_skin:label">
+            <value>- Formulaire Affections cutanées</value>
+          </text>
+          <text id="/data/next_steps_group/note_stroke:label">
+            <value>- Formulaire AVC</value>
+          </text>
+          <text id="/data/next_steps_group/note_uti_std:label">
+            <value>- Formulaire IST et infections urinaires</value>
+          </text>
+          <text id="/data/next_steps_group/note_wound:label">
+            <value>- Formulaire Plaies et blessures</value>
+          </text>
+          <text id="/data/next_steps_group/note_vision:label">
+            <value>- Formulaire Vision</value>
+          </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Vaccination et déparasitage</value>
+          </text>
+          <text id="/data/next_steps_group/note_tasks_will_appear:label">
+            <value>Vous recevrez des tâches pour remplir les formulaires ci-dessus. Soumettez le formulaire de triage.</value>
+          </text>
+          <text id="/data/next_steps_group/note_no_forms:label">
+            <value>Aucun formulaire supplémentaire n'est requis sur la base de l'évaluation actuelle.</value>
+          </text>
+          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
+            <value>Allez-vous prescrire au patient du paracétamol supplémentaire, du fer et de l'acide folique ?</value>
+          </text>
+          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="emergency_symptoms-0">
+            <value>Dezidratasyon grav</value>
+          </text>
+          <text id="emergency_symptoms-1">
+            <value>Difikilte pou respire grav (detrès respiratwa)</value>
+          </text>
+          <text id="emergency_symptoms-2">
+            <value>Chanjman nan eta konsyans, kriz kourbasyon, timoun k ap plenn</value>
+          </text>
+          <text id="emergency_symptoms-3">
+            <value>Malnitrisyon egi konplike</value>
+          </text>
+          <text id="emergency_symptoms-4">
+            <value>Timoun anfle/balonnen, manm anba anfle, tansyon wo, pa fè pipi depi plis pase 48 èdtan</value>
+          </text>
+          <text id="general_symptoms_child-0">
+            <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
+          </text>
+          <text id="general_symptoms_child-1">
+            <value>Tous, souf kout oswa difikilte pou respire</value>
+          </text>
+          <text id="general_symptoms_child-2">
+            <value>Bouton sou po, gratèl, blesi oswa chanjman nan koulè po a</value>
+          </text>
+          <text id="general_symptoms_child-3">
+            <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
+          </text>
+          <text id="general_symptoms_child-4">
+            <value>Vizyon twoub, pèdi zye/vizyon, oswa doulè nan je</value>
+          </text>
+          <text id="general_symptoms_youth-0">
+            <value>Dyare, vomisman, kè plen, oswa doulè nan vant</value>
+          </text>
+          <text id="general_symptoms_youth-1">
+            <value>Tous, souf kout oswa difikilte pou respire</value>
+          </text>
+          <text id="general_symptoms_youth-2">
+            <value>Bouton sou po, gratèl, blesi oswa chanjman nan koulè po a</value>
+          </text>
+          <text id="general_symptoms_youth-3">
+            <value>Vizyon twoub, pèdi zye/vizyon, oswa doulè nan je</value>
+          </text>
+          <text id="general_symptoms_youth-4">
+            <value>Doulè lè w ap pipi, ekoulman ki pa nòmal, oswa maleng nan pati prive</value>
+          </text>
+          <text id="general_symptoms_youth-5">
+            <value>Koupi, grafouyen, boule, oswa blesi ki pa geri</value>
+          </text>
+          <text id="referral_facility-0">
+            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
+          </text>
+          <text id="referral_facility-1">
+            <value>Lopital Sainte Thérèse</value>
+          </text>
+          <text id="referral_facility-2">
+            <value>Lòt</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non / Non kout</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè/enfimye a</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nimewo telefòn enfimyè/enfimye a</value>
+          </text>
+          <text id="/data/emergency_triage_group:label">
+            <value>Triyaj Dijans</value>
+          </text>
+          <text id="/data/emergency_triage_group/has_emergency_symptoms:label">
+            <value>Èske gen nenpòt sentòm ijans ki prezan ?</value>
+          </text>
+          <text id="/data/emergency_triage_group/emergency_symptoms:label">
+            <value>Ki sentòm ijans ki prezan ?</value>
+          </text>
+          <text id="/data/emergency_triage_summary:label">
+            <value>Rezime Triyaj Dijans</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_header:label">
+            <value>Ijans ! Refere pasyan an imedyatman.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/emergency_subheader:label">
+            <value>Kontinye ak sa ki annapre yo:</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_severe_dehydration:label">
+            <value>- Dezidratasyon grav : Mete yon tib Levin, bay SRO nan tib la, konseye manman an pou l bay ti gout SRO souvan epi kontinye bay tete pandan transfè a.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_respiratory_distress:label">
+            <value>- Difikilte pou respire grav : Bay premye dòz amoksilin siwo, bay oksijèn si genyen, libere pasaj lè a epi enstale timoun nan alèz.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_altered_consciousness:label">
+            <value>- Chanjman nan konsyans / Kriz kourbasyon / K ap plenn : Pwoteje pasaj lè a, mete sou kote (pozisyon sekirite), bay dyazepam si l ap fè kriz kounye a, anpeche sik nan san desann epi kenbe cho.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_acute_malnutrition:label">
+            <value>- Malnitrisyon egi konplike : Kenbe timoun nan cho pou evite ipotèmi, bay sewòm oral ak dlo sikre pou anpeche ipoglisemi, pa fòse l manje.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
+            <value>- Timoun anfle / Manm anba anfle / Pa pipi : Enstale timoun nan chita/apiye, swiv tout siy vital yo, evite ba li twòp likid, epi pare transfè imedyat nan lopital.</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility:label">
+            <value>Ki kote yo refere pasyan an ?</value>
+          </text>
+          <text id="/data/emergency_triage_summary/referral_facility_other:label">
+            <value>Tanpri presize etablisman referans lan :</value>
+          </text>
+          <text id="/data/vitals_general_group:label">
+            <value>Siy Vital ak Evalyasyon Jeneral</value>
+          </text>
+          <text id="/data/vitals_general_group/weight:label">
+            <value>Pwa pasyan an (kg)</value>
+          </text>
+          <text id="/data/vitals_general_group/height:label">
+            <value>Wotè pasyan an (cm)</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_systolic:label">
+            <value>Tansyon sistolik</value>
+          </text>
+          <text id="/data/vitals_general_group/bp_diastolic:label">
+            <value>Tansyon dyastolik</value>
+          </text>
+          <text id="/data/vitals_general_group/temperature:label">
+            <value>Tanperati</value>
+          </text>
+          <text id="/data/vitals_general_group/pulse_ox:label">
+            <value>Sitiyasyon oksijèn (SpO2)</value>
+          </text>
+          <text id="/data/vitals_general_group/respiratory_rate:label">
+            <value>Frekans respiratwa</value>
+          </text>
+          <text id="/data/vitals_general_group/heart_rate:label">
+            <value>Frekans kadyak / Batman kè</value>
+          </text>
+          <text id="/data/vitals_general_group/pregnancy_status:label">
+            <value>Èske pasyan an ansent ?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_youths:label">
+            <value>Ki sentòm pasyan an genyen ?</value>
+          </text>
+          <text id="/data/vitals_general_group/general_symptoms_children:label">
+            <value>Ki sentòm pasyan an genyen ?</value>
+          </text>
+          <text id="/data/child_assessment:label">
+            <value>Evalyasyon Timoun</value>
+          </text>
+          <text id="/data/child_assessment/vaccination_card:label">
+            <value>Èske timoun nan gen yon kat vaksen ?</value>
+          </text>
+          <text id="/data/child_assessment/vaccinated_expected:label">
+            <value>Èske timoun nan pran tout vaksen li dwe pran yo ?</value>
+          </text>
+          <text id="/data/child_assessment/refer_vaccination:label">
+            <value>Refere timoun nan nan yon pòs vaksinasyon.</value>
+          </text>
+          <text id="/data/child_assessment/received_albendazole:label">
+            <value>Èske timoun nan te resevwa Albendazòl (degouman) ?</value>
+          </text>
+          <text id="/data/child_assessment/received_vitamin_a:label">
+            <value>Èske timoun nan te resevwa Vitamin A ?</value>
+          </text>
+          <text id="/data/next_steps_group:label">
+            <value>Dapre Triyaj la, pasyan an ap gen pou ranpli fòmilè sa yo :</value>
+          </text>
+          <text id="/data/next_steps_group/note_diabetes:label">
+            <value>- Fòmilè Dyabèt</value>
+          </text>
+          <text id="/data/next_steps_group/note_digestive:label">
+            <value>- Fòmilè Pwoblèm Dijestif</value>
+          </text>
+          <text id="/data/next_steps_group/note_fever:label">
+            <value>- Fòmilè Lafyèv ak Malarya</value>
+          </text>
+          <text id="/data/next_steps_group/note_hypertension:label">
+            <value>- Fòmilè Tansyon Wo</value>
+          </text>
+          <text id="/data/next_steps_group/note_pregnancy:label">
+            <value>- Fòmilè Gwosès</value>
+          </text>
+          <text id="/data/next_steps_group/note_respiratory:label">
+            <value>- Fòmilè Pwoblèm Respiratwa</value>
+          </text>
+          <text id="/data/next_steps_group/note_skin:label">
+            <value>- Fòmilè Pwoblèm Po</value>
+          </text>
+          <text id="/data/next_steps_group/note_stroke:label">
+            <value>- Fòmilè Kriz Apopleksi (AVC)</value>
+          </text>
+          <text id="/data/next_steps_group/note_uti_std:label">
+            <value>- Fòmilè Enfeksyon nan Pipi ak Maladi Transmèt Seksyèlman (IST)</value>
+          </text>
+          <text id="/data/next_steps_group/note_wound:label">
+            <value>- Fòmilè Blesi ak Maleng</value>
+          </text>
+          <text id="/data/next_steps_group/note_vision:label">
+            <value>- Fòmilè Pwoblèm Je / Vizyon</value>
+          </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Vaksinasyon ak Degouman</value>
+          </text>
+          <text id="/data/next_steps_group/note_tasks_will_appear:label">
+            <value>W ap resevwa tach pou konplete fòmilè ki anwo yo. Soumèt fòmilè triyaj la.</value>
+          </text>
+          <text id="/data/next_steps_group/note_no_forms:label">
+            <value>Pa gen lòt fòmilè anplis ki nesesè dapre evalyasyon sa a.</value>
+          </text>
+          <text id="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label">
+            <value>Èske w ap voye pasyan an lakay li avèk plis parasetamol oubyen fè ak asid folik?</value>
+          </text>
+          <text id="/data/route_paracetamol_or_iron_folic_acid:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="TRI_Form002_Child_Triage" version="20260925024331" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <emergency_triage_group>
+            <has_emergency_symptoms/>
+            <emergency_symptoms/>
+          </emergency_triage_group>
+          <emergency_triage_summary>
+            <emergency_header/>
+            <emergency_subheader/>
+            <treatment_severe_dehydration/>
+            <treatment_respiratory_distress/>
+            <treatment_altered_consciousness/>
+            <treatment_acute_malnutrition/>
+            <treatment_bloated_extremities/>
+            <referral_facility/>
+            <referral_facility_other/>
+          </emergency_triage_summary>
+          <vitals_general_group>
+            <weight/>
+            <height/>
+            <bp_systolic/>
+            <bp_diastolic/>
+            <temperature/>
+            <pulse_ox/>
+            <respiratory_rate/>
+            <heart_rate/>
+            <pregnancy_status/>
+            <general_symptoms_youths/>
+            <general_symptoms_children/>
+          </vitals_general_group>
+          <child_assessment>
+            <vaccination_card/>
+            <vaccinated_expected/>
+            <refer_vaccination/>
+            <received_albendazole/>
+            <received_vitamin_a/>
+          </child_assessment>
+          <route_digestive/>
+          <route_fever/>
+          <route_hypertension/>
+          <route_pregnancy/>
+          <route_respiratory/>
+          <route_skin/>
+          <route_stroke/>
+          <route_uti_std/>
+          <route_wound/>
+          <route_vision/>
+          <route_diabetes/>
+          <route_vaccinations/>
+          <next_steps_group>
+            <note_diabetes/>
+            <note_digestive/>
+            <note_fever/>
+            <note_hypertension/>
+            <note_pregnancy/>
+            <note_respiratory/>
+            <note_skin/>
+            <note_stroke/>
+            <note_uti_std/>
+            <note_wound/>
+            <note_vision/>
+            <note_vaccinations/>
+            <note_tasks_will_appear/>
+            <note_no_forms/>
+            <distribute_paracetamol_or_iron_folic_acid/>
+          </next_steps_group>
+          <route_paracetamol_or_iron_folic_acid/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="emergency_symptoms">
+        <root>
+          <item>
+            <itextId>emergency_symptoms-0</itextId>
+            <name>severe_dehydration</name>
+          </item>
+          <item>
+            <itextId>emergency_symptoms-1</itextId>
+            <name>respiratory_distress</name>
+          </item>
+          <item>
+            <itextId>emergency_symptoms-2</itextId>
+            <name>altered_consciousness_convulsions</name>
+          </item>
+          <item>
+            <itextId>emergency_symptoms-3</itextId>
+            <name>complicated_acute_malnutrition</name>
+          </item>
+          <item>
+            <itextId>emergency_symptoms-4</itextId>
+            <name>bloated_inflamed_extremities_anuria</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="general_symptoms_child">
+        <root>
+          <item>
+            <itextId>general_symptoms_child-0</itextId>
+            <name>chd_digestive</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_child-1</itextId>
+            <name>chd_respiratory</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_child-2</itextId>
+            <name>chd_skin</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_child-3</itextId>
+            <name>chd_wound</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_child-4</itextId>
+            <name>chd_vision</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="general_symptoms_youth">
+        <root>
+          <item>
+            <itextId>general_symptoms_youth-0</itextId>
+            <name>yaa_digestive</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-1</itextId>
+            <name>yaa_respiratory</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-2</itextId>
+            <name>yaa_skin</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-3</itextId>
+            <name>yaa_vision</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-4</itextId>
+            <name>yaa_uti</name>
+          </item>
+          <item>
+            <itextId>general_symptoms_youth-5</itextId>
+            <name>yaa_wound</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="referral_facility">
+        <root>
+          <item>
+            <itextId>referral_facility-0</itextId>
+            <name>zl</name>
+          </item>
+          <item>
+            <itextId>referral_facility-1</itextId>
+            <name>hst</name>
+          </item>
+          <item>
+            <itextId>referral_facility-2</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/emergency_triage_group/has_emergency_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/emergency_triage_group/emergency_symptoms" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/emergency_header" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/emergency_subheader" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/treatment_severe_dehydration" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'severe_dehydration')"/>
+      <bind nodeset="/data/emergency_triage_summary/treatment_respiratory_distress" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'respiratory_distress')"/>
+      <bind nodeset="/data/emergency_triage_summary/treatment_altered_consciousness" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'altered_consciousness_convulsions')"/>
+      <bind nodeset="/data/emergency_triage_summary/treatment_acute_malnutrition" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'complicated_acute_malnutrition')"/>
+      <bind nodeset="/data/emergency_triage_summary/treatment_bloated_extremities" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
+      <bind nodeset="/data/emergency_triage_summary/referral_facility" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/referral_facility_other" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes' and  /data/emergency_triage_summary/referral_facility  = 'other'"/>
+      <bind nodeset="/data/vitals_general_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/vitals_general_group/weight" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/height" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required="true()"/>
+      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required="true()" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_children" type="string" relevant=" /data/patient_age_in_years  &lt; 6"/>
+      <bind nodeset="/data/child_assessment" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no' and  /data/patient_age_in_years  &lt; 5"/>
+      <bind nodeset="/data/child_assessment/vaccination_card" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/vaccinated_expected" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/refer_vaccination" readonly="true()" type="string" relevant=" /data/child_assessment/vaccinated_expected  = 'no'"/>
+      <bind nodeset="/data/child_assessment/received_albendazole" type="string" required="true()"/>
+      <bind nodeset="/data/child_assessment/received_vitamin_a" type="string" required="true()"/>
+      <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_digestive') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_digestive'), 'true', 'false')"/>
+      <bind nodeset="/data/route_fever" type="string" calculate="if( /data/vitals_general_group/temperature  &gt; 38, 'true', 'false')"/>
+      <bind nodeset="/data/route_hypertension" type="string" calculate="if( /data/vitals_general_group/bp_systolic  &gt;= 140 or  /data/vitals_general_group/bp_diastolic  &gt;= 90, 'true', 'false')"/>
+      <bind nodeset="/data/route_pregnancy" type="string" calculate="if( /data/vitals_general_group/pregnancy_status  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/route_respiratory" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_respiratory') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_respiratory') or  /data/vitals_general_group/respiratory_rate  &gt; 20 or  /data/vitals_general_group/pulse_ox  &lt; 95, 'true', 'false')"/>
+      <bind nodeset="/data/route_skin" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_skin') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_skin'), 'true', 'false')"/>
+      <bind nodeset="/data/route_stroke" type="string" calculate="'false'"/>
+      <bind nodeset="/data/route_uti_std" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_uti'), 'true', 'false')"/>
+      <bind nodeset="/data/route_wound" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_wound') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_wound'), 'true', 'false')"/>
+      <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision'), 'true', 'false')"/>
+      <bind nodeset="/data/route_diabetes" type="string" calculate="'false'"/>
+      <bind nodeset="/data/route_vaccinations" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'no' or  /data/child_assessment/received_albendazole  = 'no' or  /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_fever" readonly="true()" type="string" relevant=" /data/route_fever  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_hypertension" readonly="true()" type="string" relevant=" /data/route_hypertension  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_pregnancy" readonly="true()" type="string" relevant=" /data/route_pregnancy  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_respiratory" readonly="true()" type="string" relevant=" /data/route_respiratory  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_skin" readonly="true()" type="string" relevant=" /data/route_skin  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_stroke" readonly="true()" type="string" relevant=" /data/route_stroke  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_uti_std" readonly="true()" type="string" relevant=" /data/route_uti_std  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_wound" readonly="true()" type="string" relevant=" /data/route_wound  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_vision" readonly="true()" type="string" relevant=" /data/route_vision  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_vaccinations" readonly="true()" type="string" relevant=" /data/route_vaccinations  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_vaccinations  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false'"/>
+      <bind nodeset="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false'"/>
+      <bind nodeset="/data/route_paracetamol_or_iron_folic_acid" type="string" calculate="if( /data/next_steps_group/distribute_paracetamol_or_iron_folic_acid  = 'yes' , 'true', 'false')"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/emergency_triage_group">
+      <label ref="jr:itext('/data/emergency_triage_group:label')"/>
+      <select1 ref="/data/emergency_triage_group/has_emergency_symptoms">
+        <label ref="jr:itext('/data/emergency_triage_group/has_emergency_symptoms:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/data/emergency_triage_group/emergency_symptoms">
+        <label ref="jr:itext('/data/emergency_triage_group/emergency_symptoms:label')"/>
+        <itemset nodeset="instance('emergency_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/emergency_triage_summary">
+      <label ref="jr:itext('/data/emergency_triage_summary:label')"/>
+      <input ref="/data/emergency_triage_summary/emergency_header">
+        <label ref="jr:itext('/data/emergency_triage_summary/emergency_header:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/emergency_subheader">
+        <label ref="jr:itext('/data/emergency_triage_summary/emergency_subheader:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/treatment_severe_dehydration">
+        <label ref="jr:itext('/data/emergency_triage_summary/treatment_severe_dehydration:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/treatment_respiratory_distress">
+        <label ref="jr:itext('/data/emergency_triage_summary/treatment_respiratory_distress:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/treatment_altered_consciousness">
+        <label ref="jr:itext('/data/emergency_triage_summary/treatment_altered_consciousness:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/treatment_acute_malnutrition">
+        <label ref="jr:itext('/data/emergency_triage_summary/treatment_acute_malnutrition:label')"/>
+      </input>
+      <input ref="/data/emergency_triage_summary/treatment_bloated_extremities">
+        <label ref="jr:itext('/data/emergency_triage_summary/treatment_bloated_extremities:label')"/>
+      </input>
+      <select1 ref="/data/emergency_triage_summary/referral_facility">
+        <label ref="jr:itext('/data/emergency_triage_summary/referral_facility:label')"/>
+        <itemset nodeset="instance('referral_facility')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/emergency_triage_summary/referral_facility_other">
+        <label ref="jr:itext('/data/emergency_triage_summary/referral_facility_other:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/vitals_general_group">
+      <label ref="jr:itext('/data/vitals_general_group:label')"/>
+      <input ref="/data/vitals_general_group/weight">
+        <label ref="jr:itext('/data/vitals_general_group/weight:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/height">
+        <label ref="jr:itext('/data/vitals_general_group/height:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/bp_systolic">
+        <label ref="jr:itext('/data/vitals_general_group/bp_systolic:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/bp_diastolic">
+        <label ref="jr:itext('/data/vitals_general_group/bp_diastolic:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/temperature">
+        <label ref="jr:itext('/data/vitals_general_group/temperature:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/pulse_ox">
+        <label ref="jr:itext('/data/vitals_general_group/pulse_ox:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/respiratory_rate">
+        <label ref="jr:itext('/data/vitals_general_group/respiratory_rate:label')"/>
+      </input>
+      <input ref="/data/vitals_general_group/heart_rate">
+        <label ref="jr:itext('/data/vitals_general_group/heart_rate:label')"/>
+      </input>
+      <select1 ref="/data/vitals_general_group/pregnancy_status">
+        <label ref="jr:itext('/data/vitals_general_group/pregnancy_status:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select ref="/data/vitals_general_group/general_symptoms_youths">
+        <label ref="jr:itext('/data/vitals_general_group/general_symptoms_youths:label')"/>
+        <itemset nodeset="instance('general_symptoms_youth')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/vitals_general_group/general_symptoms_children">
+        <label ref="jr:itext('/data/vitals_general_group/general_symptoms_children:label')"/>
+        <itemset nodeset="instance('general_symptoms_child')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/data/child_assessment">
+      <label ref="jr:itext('/data/child_assessment:label')"/>
+      <select1 ref="/data/child_assessment/vaccination_card">
+        <label ref="jr:itext('/data/child_assessment/vaccination_card:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/child_assessment/vaccinated_expected">
+        <label ref="jr:itext('/data/child_assessment/vaccinated_expected:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/child_assessment/refer_vaccination">
+        <label ref="jr:itext('/data/child_assessment/refer_vaccination:label')"/>
+      </input>
+      <select1 ref="/data/child_assessment/received_albendazole">
+        <label ref="jr:itext('/data/child_assessment/received_albendazole:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/child_assessment/received_vitamin_a">
+        <label ref="jr:itext('/data/child_assessment/received_vitamin_a:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/data/next_steps_group">
+      <label ref="jr:itext('/data/next_steps_group:label')"/>
+      <input ref="/data/next_steps_group/note_diabetes">
+        <label ref="jr:itext('/data/next_steps_group/note_diabetes:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_digestive">
+        <label ref="jr:itext('/data/next_steps_group/note_digestive:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_fever">
+        <label ref="jr:itext('/data/next_steps_group/note_fever:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_hypertension">
+        <label ref="jr:itext('/data/next_steps_group/note_hypertension:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_pregnancy">
+        <label ref="jr:itext('/data/next_steps_group/note_pregnancy:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_respiratory">
+        <label ref="jr:itext('/data/next_steps_group/note_respiratory:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_skin">
+        <label ref="jr:itext('/data/next_steps_group/note_skin:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_stroke">
+        <label ref="jr:itext('/data/next_steps_group/note_stroke:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_uti_std">
+        <label ref="jr:itext('/data/next_steps_group/note_uti_std:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_wound">
+        <label ref="jr:itext('/data/next_steps_group/note_wound:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_vision">
+        <label ref="jr:itext('/data/next_steps_group/note_vision:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_vaccinations">
+        <label ref="jr:itext('/data/next_steps_group/note_vaccinations:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_tasks_will_appear">
+        <label ref="jr:itext('/data/next_steps_group/note_tasks_will_appear:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_no_forms">
+        <label ref="jr:itext('/data/next_steps_group/note_no_forms:label')"/>
+      </input>
+      <select1 ref="/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid">
+        <label ref="jr:itext('/data/next_steps_group/distribute_paracetamol_or_iron_folic_acid:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

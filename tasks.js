@@ -10,10 +10,11 @@ const ADULT_ROUTE_FORM_MAPPING = {
   route_respiratory: ['ADT_Form006_RespiratoryConditions'],
   route_skin: ['ADT_Form007_SkinConditions'],
   route_stroke: ['ADT_Form008_Stroke'],
-  route_uti_std: ['ADT_Form009_UTlandSTD'],
+  route_uti_std: ['ADT_Form009_UTlandSTD'], // Note: You have a typo in your original file ('UTlandSTD' instead of 'UTIandSTD'). Make sure this matches your actual form name.
   route_wound: ['ADT_Form011_Wounds'],
   route_vision: ['ADT_Form010_Vision'],
-  route_diabetes: ['ADT_Form001_Diabetes']
+  route_diabetes: ['ADT_Form001_Diabetes'],
+  route_anemia: ['ADT_Form013_Anemia'] // <-- ADD THIS LINE
 };
 
 const TRIAGE_FORM_NAMES = ['TRI_Form001_Triage', 'GEN_Form001_FormSelect'];

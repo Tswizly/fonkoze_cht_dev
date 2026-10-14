@@ -1,0 +1,1159 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Child Respiratory Infections</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="respiratory_danger_signs-0">
+            <value>The child is unable to drink or breastfeed</value>
+          </text>
+          <text id="respiratory_danger_signs-1">
+            <value>The child has had convulsions or is actively convulsing now</value>
+          </text>
+          <text id="respiratory_danger_signs-2">
+            <value>The child is lethargic or unconscious</value>
+          </text>
+          <text id="cough_danger_signs-0">
+            <value>Chest indrawing</value>
+          </text>
+          <text id="cough_danger_signs-1">
+            <value>Stridor</value>
+          </text>
+          <text id="cough_danger_signs-2">
+            <value>Wheezing</value>
+          </text>
+          <text id="cough_danger_signs-3">
+            <value>Nasal flaring</value>
+          </text>
+          <text id="cough_danger_signs-4">
+            <value>Fast breathing</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/respiratory_checkup_group:label">
+            <value>Respiratory Checkup</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/respiratory_danger_signs:label">
+            <value>Does the child exhibit any of the following danger signs?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_presence:label">
+            <value>Does the child have a fever?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:jr:constraintMsg">
+            <value>Cannot be below 90, cannot exceed 110</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:label">
+            <value>The temperature of the child.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:jr:constraintMsg">
+            <value>Cannot exceed 99 days</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:label">
+            <value>How long has the child had a fever?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/extended_fever_duration:label">
+            <value>If the child has had a fever longer than 7 days, has the fever been present every day?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_coughing:label">
+            <value>Is the child coughing or having difficulty breathing?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:jr:constraintMsg">
+            <value>Cannot exceed 99 days</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:label">
+            <value>How long as the child been coughing, in days?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg">
+            <value>Cannot exceed 999</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:label">
+            <value>Count the number of breaths for one minute. Pulse oximeter may be used.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:hint">
+            <value>Child must be calm.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:jr:constraintMsg">
+            <value>Cannot exceed 100</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:label">
+            <value>Using the pulse oximeter, determin the child's oxygen saturation.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:label">
+            <value>Which of the following coughing danger signs does the child exhibit, if any?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
+            <value>Look, listen and feel for chest indrawing, stridor, wheezing, and nasal flaring. Child must be calm.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>The child exhibits wheezing with fast breathing or chest indrawing. Administer nebulizer treatment with 2.5 mg Salbutamol in saline solution for 15 minutes. Reassess breathing rate and chest indrawing after nebulization.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Do you have the equipment and medication to administer nebulizer treatment?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
+            <value>After nebulising, does the child still exhibit fast breathing?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:hint">
+            <value>If child is wheezing with fast breathing or chest indrawing, nurse will nebulizer then reperform breath count and look for chest indrawing, then classify.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label">
+            <value>After nebulising, does the child still exhibit chest indrawing?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint">
+            <value>If child is wheezing with fast breathing or chest indrawing, nurse will nebulizer then reperform breath count and look for chest indrawing, then classify.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/runny_nose:label">
+            <value>Does the child have a runny nose?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/poor_appetite:label">
+            <value>Does the child have a poor appetite?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/sore_throat:label">
+            <value>Does the child have a sore throat?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/throat_appearance:label">
+            <value>Does the throat appear red, swollen, or covered in pus upon inspection?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia:label">
+            <value>Severe Pneumonia or Very Severe Disease</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia_action:label">
+            <value>The child may have severe pnemonia or another severe disease. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia:label">
+            <value>Pneumonia</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia_action:label">
+            <value>The child may have Pneumonia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold:label">
+            <value>Cough or Cold</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold_action:label">
+            <value>The child may have a cough or cold. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis:label">
+            <value>Tonsilitis</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis_action:label">
+            <value>The child has Tonsilitis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Flu-Like Syndrome</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>The child may have Flu-Like Syndrome. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/nebulizer_administered:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="respiratory_danger_signs-0">
+            <value>L'enfant est incapable de boire ou de téter</value>
+          </text>
+          <text id="respiratory_danger_signs-1">
+            <value>L'enfant a eu des convulsions ou convulse actuellement</value>
+          </text>
+          <text id="respiratory_danger_signs-2">
+            <value>L'enfant est léthargique ou inconscient</value>
+          </text>
+          <text id="cough_danger_signs-0">
+            <value>Tirage thoracique</value>
+          </text>
+          <text id="cough_danger_signs-1">
+            <value>Stridor</value>
+          </text>
+          <text id="cough_danger_signs-2">
+            <value>Respiration sifflante</value>
+          </text>
+          <text id="cough_danger_signs-3">
+            <value>Battement des ailes du nez</value>
+          </text>
+          <text id="cough_danger_signs-4">
+            <value>Respiration rapide</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/respiratory_checkup_group:label">
+            <value>Examen respiratoire</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/respiratory_danger_signs:label">
+            <value>L'enfant présente-t-il l'un des signes de danger suivants ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_presence:label">
+            <value>L'enfant a-t-il de la fièvre ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:jr:constraintMsg">
+            <value>Ne peut pas être inférieur à 90, ne peut pas dépasser 110</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:label">
+            <value>La température de l'enfant.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:jr:constraintMsg">
+            <value>Ne peut pas dépasser 99 jours</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:label">
+            <value>Depuis combien de temps l'enfant a-t-il de la fièvre ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/extended_fever_duration:label">
+            <value>Si l'enfant a eu de la fièvre pendant plus de 7 jours, la fièvre était-elle présente tous les jours ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_coughing:label">
+            <value>L'enfant tousse-t-il ou a-t-il des difficultés à respirer ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:jr:constraintMsg">
+            <value>Ne peut pas dépasser 99 jours</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:label">
+            <value>Depuis combien de temps l'enfant tousse-t-il, en jours ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg">
+            <value>Ne peut pas dépasser 999</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:label">
+            <value>Comptez le nombre de respirations pendant une minute. Un oxymètre de pouls peut être utilisé.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:hint">
+            <value>L'enfant doit être calme.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:jr:constraintMsg">
+            <value>Ne peut pas dépasser 100</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:label">
+            <value>À l'aide de l'oxymètre de pouls, déterminez la saturation en oxygène de l'enfant.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:label">
+            <value>Parmi les signes de toux suivants, lesquels l'enfant présente-t-il, le cas échéant ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
+            <value>Regardez, écoutez et sentez le tirage thoracique, le stridor, la respiration sifflante et le battement des ailes du nez. L'enfant doit être calme.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>L'enfant présente une respiration sifflante avec une respiration rapide ou un tirage thoracique. Administrer un traitement par nébulisation avec 2,5 mg de salbutamol dans une solution saline pendant 15 minutes. Réévaluer la fréquence respiratoire et le tirage après nébulisation.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Avez-vous l'équipement et les médicaments nécessaires (nébuliseur et salbutamol) pour administrer la nébulisation ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
+            <value>Après la nébulisation, l'enfant présente-t-il toujours une respiration rapide ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:hint">
+            <value>Si l'enfant a une respiration sifflante avec une respiration rapide ou un tirage thoracique, l'infirmière fera une nébulisation puis refera le compte des respirations et cherchera un tirage thoracique, puis classera.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label">
+            <value>Après la nébulisation, l'enfant présente-t-il toujours un tirage intercostal ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint">
+            <value>Si l'enfant a une respiration sifflante avec une respiration rapide ou un tirage thoracique, l'infirmière fera une nébulisation puis refera le compte des respirations et cherchera un tirage thoracique, puis classera.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/runny_nose:label">
+            <value>L'enfant a-t-il le nez qui coule ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/poor_appetite:label">
+            <value>L'enfant a-t-il peu d'appétit ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/sore_throat:label">
+            <value>L'enfant a-t-il mal à la gorge ?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/throat_appearance:label">
+            <value>La gorge paraît-elle rouge, enflée ou recouverte de pus à l'examen ?</value>
+          </text>
+          <text id="/data/nebulizer_administered:label">
+            <value>Le traitement par nébulisation a-t-il été administré à l'enfant ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia:label">
+            <value>Pneumonie grave ou maladie très grave</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia_action:label">
+            <value>L'enfant peut souffrir d'une pneumonie sévère ou d'une autre maladie grave. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia:label">
+            <value>Pneumonie</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia_action:label">
+            <value>L'enfant pourrait avoir une pneumonie. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold:label">
+            <value>Toux ou rhume</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold_action:label">
+            <value>L'enfant peut avoir une toux ou un rhume. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis:label">
+            <value>Amygdalite</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis_action:label">
+            <value>L'enfant souffre d'une angine. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Syndrome grippal</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>L'enfant présente peut-être un syndrome grippal. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/calc_fast_breathing:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="respiratory_danger_signs-0">
+            <value>Timoun nan pa kapab bwè oswa tete</value>
+          </text>
+          <text id="respiratory_danger_signs-1">
+            <value>Timoun nan te fè kriz oswa li ap fè kriz kounye a</value>
+          </text>
+          <text id="respiratory_danger_signs-2">
+            <value>Timoun nan fèb anpil oswa li endispoze</value>
+          </text>
+          <text id="cough_danger_signs-0">
+            <value>Pwatrin rale anndan</value>
+          </text>
+          <text id="cough_danger_signs-1">
+            <value>Stridor</value>
+          </text>
+          <text id="cough_danger_signs-2">
+            <value>Souf anlè</value>
+          </text>
+          <text id="cough_danger_signs-3">
+            <value>Twou nen k ap bat</value>
+          </text>
+          <text id="cough_danger_signs-4">
+            <value>Respire vit</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/respiratory_checkup_group:label">
+            <value>Tcheke Respiratwa</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/respiratory_danger_signs:label">
+            <value>Èske timoun nan montre nenpòt nan siy danje sa yo?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_presence:label">
+            <value>Èske timoun nan gen lafyèv?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:jr:constraintMsg">
+            <value>Pa ka mwens pase 90, pa ka depase 110</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_temperature:label">
+            <value>Tanperati timoun nan.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:jr:constraintMsg">
+            <value>Pa ka depase 99 jou</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/fever_duration:label">
+            <value>Depi konbyen tan timoun nan gen lafyèv?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/extended_fever_duration:label">
+            <value>Si timoun nan gen lafyèv pou plis pase 7 jou, èske lafyèv la te prezan chak jou?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/child_coughing:label">
+            <value>Èske timoun nan ap touse oswa li gen difikilte pou l respire?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:jr:constraintMsg">
+            <value>Pa ka depase 99 jou</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_duration:label">
+            <value>Konbyen tan timoun nan genyen depi l ap touse, an jou?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg">
+            <value>Pa ka depase 999</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:label">
+            <value>Konte kantite respirasyon pandan yon minit. Ou ka itilize yon oksimèt batman kè.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/breathing_rate:hint">
+            <value>Timoun nan dwe kalm.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:jr:constraintMsg">
+            <value>Pa ka depase 100</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/oxygen_saturation:label">
+            <value>Sèvi ak oksimèt batman kè a, detèmine saturasyon oksijèn timoun nan.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:label">
+            <value>Kilès nan siy danje tous sa yo timoun nan montre, si genyen?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/cough_danger_signs:hint">
+            <value>Gade, koute epi santi pwatrin k ap rale antre, stridò, souf k ap sifle, ak twou nen k ap bat. Timoun nan dwe kalm.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/nebulizer_instructions_note:label">
+            <value>Timoun nan gen souf anlè ak respirasyon rapid oswa pwatrin k ap rale antre. Administre tretman nebulizè avèk 2.5 mg Salbutamol nan solisyon salin pandan 15 minit. Rekonte respirasyon epi gade si pwatrin nan toujou ap rale apre nebulizasyon an.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/has_nebulizer_equipment:label">
+            <value>Èske ou gen ekipman ak medikaman ki nesesè yo (nebulizè ak Salbutamol) pou fè nebulizasyon an?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:label">
+            <value>Apre nebulizasyon an, èske timoun nan toujou ap respire vit?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_breathing:hint">
+            <value>Si timoun nan ap soufle ak respirasyon vit oswa pwatrin k ap rale antre, enfimyè a ap fè nebulizasyon epi li pral rekòmanse konte respirasyon an epi chèche pwatrin k ap rale antre, epi klase l.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label">
+            <value>Apre nebulizasyon an, èske timoun nan toujou gen yon tiraj anndan pwatrin li?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint">
+            <value>Si timoun nan ap soufle ak respirasyon vit oswa pwatrin k ap rale antre, enfimyè a ap fè nebulizasyon epi li pral rekòmanse konte respirasyon an epi chèche pwatrin k ap rale antre, epi klase l.</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/runny_nose:label">
+            <value>Èske timoun nan gen nen k ap koule?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/poor_appetite:label">
+            <value>Èske timoun nan pa gen anpil apeti?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/sore_throat:label">
+            <value>Èske timoun nan gen malgòj?</value>
+          </text>
+          <text id="/data/respiratory_checkup_group/throat_appearance:label">
+            <value>Èske gòj la parèt wouj, anfle, oswa kouvri ak pi lè ou enspekte li?</value>
+          </text>
+          <text id="/data/nebulizer_administered:label">
+            <value>Èske tretman nebulizè a te administre bay timoun nan?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta yo</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia:label">
+            <value>Nemoni grav oswa maladi ki trè grav</value>
+          </text>
+          <text id="/data/results_group/res_severe_pneumonia_action:label">
+            <value>Timoun nan ka gen yon nemoni grav oswa yon lòt maladi grav. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia:label">
+            <value>Nemoni</value>
+          </text>
+          <text id="/data/results_group/res_pneumonia_action:label">
+            <value>Timoun nan ka gen nemoni. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold:label">
+            <value>Tous oswa grip</value>
+          </text>
+          <text id="/data/results_group/res_cough_or_cold_action:label">
+            <value>Timoun nan ka gen yon tous oswa yon grip. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis:label">
+            <value>Tonsilit</value>
+          </text>
+          <text id="/data/results_group/res_tonsillitis_action:label">
+            <value>Timoun nan gen amigdalit. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome:label">
+            <value>Sendwòm grip la</value>
+          </text>
+          <text id="/data/results_group/res_flu_like_syndrome_action:label">
+            <value>Timoun nan ka gen Sendwòm Grip la. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/calc_fast_breathing:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="CHD_Form002_RespiratoryInfections" version="20261011180619" prefix="J1!CHD_Form002_RespiratoryInfections!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <calc_fast_breathing/>
+          <respiratory_checkup_group>
+            <respiratory_danger_signs/>
+            <fever_presence/>
+            <child_temperature/>
+            <fever_duration/>
+            <extended_fever_duration/>
+            <child_coughing/>
+            <cough_duration/>
+            <breathing_rate/>
+            <oxygen_saturation/>
+            <cough_danger_signs/>
+            <nebulizer_instructions_note/>
+            <has_nebulizer_equipment/>
+            <after_nebulising_breathing/>
+            <after_nebulising_chest_indrawing/>
+            <runny_nose/>
+            <poor_appetite/>
+            <sore_throat/>
+            <throat_appearance/>
+          </respiratory_checkup_group>
+          <nebulizer_administered/>
+          <calc_severe_pneumonia/>
+          <calc_pneumonia/>
+          <calc_tonsillitis/>
+          <calc_cough_or_cold/>
+          <calc_flu_like_syndrome/>
+          <results_group>
+            <res_severe_pneumonia/>
+            <res_severe_pneumonia_action/>
+            <res_pneumonia/>
+            <res_pneumonia_action/>
+            <res_cough_or_cold/>
+            <res_cough_or_cold_action/>
+            <res_tonsillitis/>
+            <res_tonsillitis_action/>
+            <res_flu_like_syndrome/>
+            <res_flu_like_syndrome_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <data>
+            <_respiratory_danger_signs/>
+            <_fever_presence/>
+            <_child_temperature/>
+            <_fever_duration/>
+            <_extended_fever_duration/>
+            <_child_coughing/>
+            <_cough_duration/>
+            <_breathing_rate/>
+            <_oxygen_saturation/>
+            <_cough_danger_signs/>
+            <_after_nebulising_breathing/>
+            <_nebulizer_used/>
+            <_after_nebulising_chest_indrawing/>
+            <_runny_nose/>
+            <_poor_appetite/>
+            <_sore_throat/>
+            <_throat_appearance/>
+            <_result_severe_pneumonia/>
+            <_result_pneumonia/>
+            <_result_tonsillitis/>
+            <_result_cough_or_cold/>
+            <_result_flu_like_syndrome/>
+            <_fast_breathing/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="respiratory_danger_signs">
+        <root>
+          <item>
+            <itextId>respiratory_danger_signs-0</itextId>
+            <name>feeding_difficulty</name>
+          </item>
+          <item>
+            <itextId>respiratory_danger_signs-1</itextId>
+            <name>convulsions</name>
+          </item>
+          <item>
+            <itextId>respiratory_danger_signs-2</itextId>
+            <name>lethargy_unconscious</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="cough_danger_signs">
+        <root>
+          <item>
+            <itextId>cough_danger_signs-0</itextId>
+            <name>chest_indrawing</name>
+          </item>
+          <item>
+            <itextId>cough_danger_signs-1</itextId>
+            <name>stridor</name>
+          </item>
+          <item>
+            <itextId>cough_danger_signs-2</itextId>
+            <name>wheezing</name>
+          </item>
+          <item>
+            <itextId>cough_danger_signs-3</itextId>
+            <name>nasal_flaring</name>
+          </item>
+          <item>
+            <itextId>cough_danger_signs-4</itextId>
+            <name>fast_breathing</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/calc_fast_breathing" type="string" calculate="if(( /data/patient_age_in_months  &lt; 12 and  /data/respiratory_checkup_group/breathing_rate  &gt;= 50) or ( /data/patient_age_in_months  &gt;= 12 and  /data/respiratory_checkup_group/breathing_rate  &gt;= 40), 'true', 'false')"/>
+      <bind nodeset="/data/respiratory_checkup_group/respiratory_danger_signs" type="string"/>
+      <bind nodeset="/data/respiratory_checkup_group/fever_presence" type="string" required="true()"/>
+      <bind nodeset="/data/respiratory_checkup_group/child_temperature" type="decimal" relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes'" constraint=". &gt;= 90 and . &lt;= 110" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/child_temperature:jr:constraintMsg')"/>
+      <bind nodeset="/data/respiratory_checkup_group/fever_duration" type="int" relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes'" constraint=". &lt;= 99" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/fever_duration:jr:constraintMsg')"/>
+      <bind nodeset="/data/respiratory_checkup_group/extended_fever_duration" type="string" relevant=" /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/fever_duration  &gt;= 7"/>
+      <bind nodeset="/data/respiratory_checkup_group/child_coughing" type="string" required="true()"/>
+      <bind nodeset="/data/respiratory_checkup_group/cough_duration" type="int" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" constraint=". &lt;= 99" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/cough_duration:jr:constraintMsg')"/>
+      <bind nodeset="/data/respiratory_checkup_group/breathing_rate" type="int" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" constraint=". &lt;= 999" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/breathing_rate:jr:constraintMsg')"/>
+      <bind nodeset="/data/respiratory_checkup_group/oxygen_saturation" type="decimal" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'" constraint=". &lt;= 100" jr:constraintMsg="jr:itext('/data/respiratory_checkup_group/oxygen_saturation:jr:constraintMsg')"/>
+      <bind nodeset="/data/respiratory_checkup_group/cough_danger_signs" type="string" relevant=" /data/respiratory_checkup_group/child_coughing  = 'yes'"/>
+      <bind nodeset="/data/respiratory_checkup_group/nebulizer_instructions_note" readonly="true()" type="string" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing'))"/>
+      <bind nodeset="/data/respiratory_checkup_group/has_nebulizer_equipment" type="string" required="true()" relevant="selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing'))"/>
+      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_breathing" type="string" required="true()" relevant=" /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes'"/>
+      <bind nodeset="/data/respiratory_checkup_group/after_nebulising_chest_indrawing" type="string" required="true()" relevant=" /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes'"/>
+      <bind nodeset="/data/respiratory_checkup_group/runny_nose" type="string" required="true()"/>
+      <bind nodeset="/data/respiratory_checkup_group/poor_appetite" type="string" required="true()"/>
+      <bind nodeset="/data/respiratory_checkup_group/sore_throat" type="string" required="true()"/>
+      <bind nodeset="/data/respiratory_checkup_group/throat_appearance" type="string" required="true()"/>
+      <bind nodeset="/data/nebulizer_administered" type="string" calculate="if( /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes' and  /data/respiratory_checkup_group/after_nebulising_breathing  != '' and  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  != '', 'true', false')"/>
+      <bind nodeset="/data/calc_severe_pneumonia" type="string" calculate="if(count-selected( /data/respiratory_checkup_group/respiratory_danger_signs ) &gt; 0 or selected( /data/respiratory_checkup_group/cough_danger_signs , 'stridor') or  /data/respiratory_checkup_group/oxygen_saturation  &lt; 90, 'true', 'false')"/>
+      <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and (selected( /data/respiratory_checkup_group/cough_danger_signs , 'nasal_flaring') or (selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/respiratory_checkup_group/after_nebulising_breathing  = 'yes' or  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  = 'yes')) or (not(selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')) and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing')))), 'true', 'false')"/>
+      <bind nodeset="/data/calc_tonsillitis" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/sore_throat  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes' and  /data/respiratory_checkup_group/throat_appearance  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_cough_or_cold" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_flu_like_syndrome  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_flu_like_syndrome" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/runny_nose  = 'yes' and  /data/respiratory_checkup_group/child_coughing  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_severe_pneumonia  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_tonsillitis  = 'true' or  /data/calc_cough_or_cold  = 'true' or  /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_pneumonia" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_severe_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cough_or_cold" readonly="true()" type="string" relevant=" /data/calc_cough_or_cold  = 'true'"/>
+      <bind nodeset="/data/results_group/res_cough_or_cold_action" readonly="true()" type="string" relevant=" /data/calc_cough_or_cold  = 'true'"/>
+      <bind nodeset="/data/results_group/res_tonsillitis" readonly="true()" type="string" relevant=" /data/calc_tonsillitis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_tonsillitis_action" readonly="true()" type="string" relevant=" /data/calc_tonsillitis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/results_group/res_flu_like_syndrome_action" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_cough_or_cold  != 'true' and  /data/calc_flu_like_syndrome  != 'true'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/_respiratory_danger_signs" type="string" calculate="if( /data/respiratory_checkup_group/respiratory_danger_signs  != '',  /data/respiratory_checkup_group/respiratory_danger_signs , 'false')"/>
+      <bind nodeset="/data/data/_fever_presence" type="string" calculate="if( /data/respiratory_checkup_group/fever_presence  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_child_temperature" type="string" calculate="if( /data/respiratory_checkup_group/child_temperature  != '',  /data/respiratory_checkup_group/child_temperature , -1)"/>
+      <bind nodeset="/data/data/_fever_duration" type="string" calculate="if( /data/respiratory_checkup_group/fever_duration  != '',  /data/respiratory_checkup_group/fever_duration , -1)"/>
+      <bind nodeset="/data/data/_extended_fever_duration" type="string" calculate="if( /data/respiratory_checkup_group/extended_fever_duration  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_child_coughing" type="string" calculate="if( /data/respiratory_checkup_group/child_coughing  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_cough_duration" type="string" calculate="if( /data/respiratory_checkup_group/cough_duration  != '',  /data/respiratory_checkup_group/cough_duration , -1)"/>
+      <bind nodeset="/data/data/_breathing_rate" type="string" calculate="if( /data/respiratory_checkup_group/breathing_rate  != '',  /data/respiratory_checkup_group/breathing_rate , -1)"/>
+      <bind nodeset="/data/data/_oxygen_saturation" type="string" calculate="if( /data/respiratory_checkup_group/oxygen_saturation  != '',  /data/respiratory_checkup_group/oxygen_saturation , -1)"/>
+      <bind nodeset="/data/data/_cough_danger_signs" type="string" calculate="if( /data/respiratory_checkup_group/cough_danger_signs  != '',  /data/respiratory_checkup_group/cough_danger_signs , 'false')"/>
+      <bind nodeset="/data/data/_after_nebulising_breathing" type="string" calculate="if( /data/respiratory_checkup_group/after_nebulising_breathing  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_nebulizer_used" type="string" calculate="if( /data/nebulizer_administered  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_after_nebulising_chest_indrawing" type="string" calculate="if( /data/respiratory_checkup_group/after_nebulising_chest_indrawing  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_runny_nose" type="string" calculate="if( /data/respiratory_checkup_group/runny_nose  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_poor_appetite" type="string" calculate="if( /data/respiratory_checkup_group/poor_appetite  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_sore_throat" type="string" calculate="if( /data/respiratory_checkup_group/sore_throat  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_throat_appearance" type="string" calculate="if( /data/respiratory_checkup_group/throat_appearance  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_severe_pneumonia" type="string" calculate="if( /data/calc_severe_pneumonia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_pneumonia" type="string" calculate="if( /data/calc_pneumonia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_tonsillitis" type="string" calculate="if( /data/calc_tonsillitis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_cough_or_cold" type="string" calculate="if( /data/calc_cough_or_cold ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_flu_like_syndrome" type="string" calculate="if( /data/calc_flu_like_syndrome ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_fast_breathing" type="string" calculate="if( /data/calc_fast_breathing  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/respiratory_checkup_group">
+      <label ref="jr:itext('/data/respiratory_checkup_group:label')"/>
+      <select ref="/data/respiratory_checkup_group/respiratory_danger_signs">
+        <label ref="jr:itext('/data/respiratory_checkup_group/respiratory_danger_signs:label')"/>
+        <itemset nodeset="instance('respiratory_danger_signs')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select1 ref="/data/respiratory_checkup_group/fever_presence">
+        <label ref="jr:itext('/data/respiratory_checkup_group/fever_presence:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/respiratory_checkup_group/child_temperature">
+        <label ref="jr:itext('/data/respiratory_checkup_group/child_temperature:label')"/>
+      </input>
+      <input ref="/data/respiratory_checkup_group/fever_duration">
+        <label ref="jr:itext('/data/respiratory_checkup_group/fever_duration:label')"/>
+      </input>
+      <select1 ref="/data/respiratory_checkup_group/extended_fever_duration">
+        <label ref="jr:itext('/data/respiratory_checkup_group/extended_fever_duration:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/child_coughing">
+        <label ref="jr:itext('/data/respiratory_checkup_group/child_coughing:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/respiratory_checkup_group/cough_duration">
+        <label ref="jr:itext('/data/respiratory_checkup_group/cough_duration:label')"/>
+      </input>
+      <input ref="/data/respiratory_checkup_group/breathing_rate">
+        <label ref="jr:itext('/data/respiratory_checkup_group/breathing_rate:label')"/>
+        <hint ref="jr:itext('/data/respiratory_checkup_group/breathing_rate:hint')"/>
+      </input>
+      <input ref="/data/respiratory_checkup_group/oxygen_saturation">
+        <label ref="jr:itext('/data/respiratory_checkup_group/oxygen_saturation:label')"/>
+      </input>
+      <select ref="/data/respiratory_checkup_group/cough_danger_signs">
+        <label ref="jr:itext('/data/respiratory_checkup_group/cough_danger_signs:label')"/>
+        <hint ref="jr:itext('/data/respiratory_checkup_group/cough_danger_signs:hint')"/>
+        <itemset nodeset="instance('cough_danger_signs')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/respiratory_checkup_group/nebulizer_instructions_note">
+        <label ref="jr:itext('/data/respiratory_checkup_group/nebulizer_instructions_note:label')"/>
+      </input>
+      <select1 ref="/data/respiratory_checkup_group/has_nebulizer_equipment">
+        <label ref="jr:itext('/data/respiratory_checkup_group/has_nebulizer_equipment:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/after_nebulising_breathing">
+        <label ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_breathing:label')"/>
+        <hint ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_breathing:hint')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/after_nebulising_chest_indrawing">
+        <label ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_chest_indrawing:label')"/>
+        <hint ref="jr:itext('/data/respiratory_checkup_group/after_nebulising_chest_indrawing:hint')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/runny_nose">
+        <label ref="jr:itext('/data/respiratory_checkup_group/runny_nose:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/poor_appetite">
+        <label ref="jr:itext('/data/respiratory_checkup_group/poor_appetite:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/sore_throat">
+        <label ref="jr:itext('/data/respiratory_checkup_group/sore_throat:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/respiratory_checkup_group/throat_appearance">
+        <label ref="jr:itext('/data/respiratory_checkup_group/throat_appearance:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_severe_pneumonia" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_severe_pneumonia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_severe_pneumonia_action">
+        <label ref="jr:itext('/data/results_group/res_severe_pneumonia_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_pneumonia" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_pneumonia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_pneumonia_action">
+        <label ref="jr:itext('/data/results_group/res_pneumonia_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_cough_or_cold" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_cough_or_cold:label')"/>
+      </input>
+      <input ref="/data/results_group/res_cough_or_cold_action">
+        <label ref="jr:itext('/data/results_group/res_cough_or_cold_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_tonsillitis" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_tonsillitis:label')"/>
+      </input>
+      <input ref="/data/results_group/res_tonsillitis_action">
+        <label ref="jr:itext('/data/results_group/res_tonsillitis_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_flu_like_syndrome" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome:label')"/>
+      </input>
+      <input ref="/data/results_group/res_flu_like_syndrome_action">
+        <label ref="jr:itext('/data/results_group/res_flu_like_syndrome_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+  </h:body>
+</h:html>

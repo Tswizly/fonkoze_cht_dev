@@ -1,0 +1,141 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ELD_Form001_ChronicPain" version="20260925024303" prefix="J1!ELD_Form001_ChronicPain!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <chronic_pain_group>
+            <chronic_pain_symptoms/>
+          </chronic_pain_group>
+          <calc_arthroses_arthritis/>
+          <results_group>
+            <res_arthroses_arthritis/>
+            <res_arthroses_arthritis_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <actions_confirmation>
+            <follow_up_arthroses_arthritis/>
+            <co_mioflex_tablet/>
+            <dolex/>
+          </actions_confirmation>
+          <data>
+            <_chronic_pain_symptoms/>
+            <_result_arthroses_arthritis/>
+            <_follow_up_arthroses_arthritis/>
+            <_co_mioflex_tablet/>
+            <_dolex/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <co_mioflex_tablet_used_in/>
+              <co_mioflex_tablet___set/>
+              <co_mioflex_tablet___unit/>
+              <co_mioflex_tablet_used_in_ELD_Form001_ChronicPain/>
+              <dolex_used_in_ELD_Form001_ChronicPain/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="chronic_pain_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>chronic_pain_symptoms-0</itextId>
+            <name>joint_pain</name>
+          </item>
+          <item>
+            <itextId>chronic_pain_symptoms-1</itextId>
+            <name>swollen_joints</name>
+          </item>
+          <item>
+            <itextId>chronic_pain_symptoms-2</itextId>
+            <name>morning_stiffness</name>
+          </item>
+          <item>
+            <itextId>chronic_pain_symptoms-3</itextId>
+            <name>worsened_by_use</name>
+          </item>
+          <item>
+            <itextId>chronic_pain_symptoms-4</itextId>
+            <name>chronic_or_recurring_pain</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+
