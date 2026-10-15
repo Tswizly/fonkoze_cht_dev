@@ -1,0 +1,714 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Skin Form</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="skin_symptoms-0">
+            <value>Skin is itchy</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>Skin has blisters, sores, or pustules</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>Skin has red, tender, warm crusts or small lesions</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Itchy circular lesion with a raised edge and fine scaly area in the center with loss of hair .</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Rash and excoriations on turoso</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Rash burrows in web space and wrists</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Rash on body but not face</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Impetigo or Folliculitis</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Ring Worm</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Scabies</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Moderate Anemia</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Skin conditions</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_symptoms:label">
+            <value>Is the patient experiencing any of the following symptoms?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis:label">
+            <value>Impetigo or Folliculitis</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis_action:label">
+            <value>The patient may have impmetigo or folliculutis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Ring Worm</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>The patient may have ring worm. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Scabies</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>The patient may have scabies. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>No Action Required</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="skin_symptoms-0">
+            <value>La peau démange</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>La peau a des cloques, des plaies ou des pustules</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>La peau a des croûtes rouges, tendres et chaudes ou de petites lésions</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Lésion circulaire qui démange avec un bord d'attaque surélevé et une fine zone squameuse au centre avec perte de cheveux.</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Éruption cutanée et excoriations sur le torse</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Sillons d'éruption cutanée dans les espaces interdigitaux et les poignets</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Éruption cutanée sur le corps mais pas sur le visage</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Impétigo ou Folliculite</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Teigne</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Gale</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Anémie Modérée</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Conditions cutanées</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_symptoms:label">
+            <value>Le patient présente-t-il l'un des symptômes suivants ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis:label">
+            <value>Impétigo ou folliculite</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis_action:label">
+            <value>Le patient peut présenter un impétigo ou une folliculite. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des prescriptions et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Teigne</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>Le patient pourrait être atteint de teigne. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Gale</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>Le patient pourrait être atteint de gale. Veuillez soumettre le formulaire et compléter l'examen, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Aucune action requise</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="skin_symptoms-0">
+            <value>Po a grate</value>
+          </text>
+          <text id="skin_symptoms-1">
+            <value>Po a gen ti anpoul, blese, oswa bouton</value>
+          </text>
+          <text id="skin_symptoms-2">
+            <value>Po a gen kwout wouj, ki fè mal, ki cho oswa ti blese</value>
+          </text>
+          <text id="skin_symptoms-3">
+            <value>Blese won ki grate ak yon kwen ki pi wo epi yon ti zòn ki gen kal nan mitan an ak pèt cheve.</value>
+          </text>
+          <text id="skin_symptoms-4">
+            <value>Gratèl ak blese sou kò a</value>
+          </text>
+          <text id="skin_symptoms-5">
+            <value>Gratèl nan mitan dwèt yo ak ponyèt yo</value>
+          </text>
+          <text id="skin_symptoms-6">
+            <value>Gratèl sou kò a men pa nan figi a</value>
+          </text>
+          <text id="followed_up_conditions-0">
+            <value>Enpetigo oswa Folikulit</value>
+          </text>
+          <text id="followed_up_conditions-1">
+            <value>Pye Poudre</value>
+          </text>
+          <text id="followed_up_conditions-2">
+            <value>Gal</value>
+          </text>
+          <text id="followed_up_conditions-3">
+            <value>Anemi Modere</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Kondisyon po</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_symptoms:label">
+            <value>Èske pasyan an ap fè eksperyans nenpòt nan sentòm sa yo?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta yo</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis:label">
+            <value>Enpetigo oswa Folikulit</value>
+          </text>
+          <text id="/data/results_group/res_impetigo_folliculitis_action:label">
+            <value>Pasyan an ka gen enmpetigo oubyen folikulitis. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm:label">
+            <value>Vè bag</value>
+          </text>
+          <text id="/data/results_group/res_ring_worm_action:label">
+            <value>Pasyan an ka gen vè anèl. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_scabies:label">
+            <value>Gale</value>
+          </text>
+          <text id="/data/results_group/res_scabies_action:label">
+            <value>Pasyan an ka gen gal. Soumèt fòm lan epi konplete egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Pa gen aksyon ki nesesè</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="ADT_Form007_SkinConditions" version="20261011182407" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_conditions_group>
+            <skin_symptoms/>
+          </skin_conditions_group>
+          <calc_impetigo_folliculitis/>
+          <calc_ring_worm/>
+          <calc_scabies/>
+          <results_group>
+            <res_impetigo_folliculitis/>
+            <res_impetigo_folliculitis_action/>
+            <res_ring_worm/>
+            <res_ring_worm_action/>
+            <res_scabies/>
+            <res_scabies_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <data>
+            <_skin_symptoms/>
+            <_result_impetigo_folliculitis/>
+            <_result_ring_worm/>
+            <_result_scabies/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="skin_symptoms">
+        <root>
+          <item>
+            <itextId>skin_symptoms-0</itextId>
+            <name>itching</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-1</itextId>
+            <name>blisters_sores_pustules</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-2</itextId>
+            <name>crusts_or_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-3</itextId>
+            <name>itchy_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-4</itextId>
+            <name>rash</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-5</itextId>
+            <name>web_space_and_wrists</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-6</itextId>
+            <name>face_spared</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="followed_up_conditions">
+        <root>
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>impetigo_folliculitis</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>ring_worm</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>scabies</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>moderate_anemia</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/skin_conditions_group/skin_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/calc_impetigo_folliculitis" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'crusts_or_lesions') or selected( /data/skin_conditions_group/skin_symptoms , 'blisters_sores_pustules'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_ring_worm" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'itching') or selected( /data/skin_conditions_group/skin_symptoms , 'itchy_lesions'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_scabies" type="string" calculate="if(selected( /data/skin_conditions_group/skin_symptoms , 'rash') or selected( /data/skin_conditions_group/skin_symptoms , 'web_space_and_wrists') or selected( /data/skin_conditions_group/skin_symptoms , 'face_spared'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_impetigo_folliculitis  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo_folliculitis" readonly="true()" type="string" relevant=" /data/calc_impetigo_folliculitis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_impetigo_folliculitis_action" readonly="true()" type="string" relevant=" /data/calc_impetigo_folliculitis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_ring_worm_action" readonly="true()" type="string" relevant=" /data/calc_ring_worm  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/results_group/res_scabies_action" readonly="true()" type="string" relevant=" /data/calc_scabies  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_impetigo_folliculitis  = 'false' and  /data/calc_ring_worm  = 'false' and  /data/calc_scabies  = 'false'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/_skin_symptoms" type="string" calculate="if( /data/skin_conditions_group/skin_symptoms  != '',  /data/skin_conditions_group/skin_symptoms , 'false')"/>
+      <bind nodeset="/data/data/_result_impetigo_folliculitis" type="string" calculate="if( /data/calc_impetigo_folliculitis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_ring_worm" type="string" calculate="if( /data/calc_ring_worm ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_scabies" type="string" calculate="if( /data/calc_scabies ='true', 'true', 'false')"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/skin_conditions_group">
+      <label ref="jr:itext('/data/skin_conditions_group:label')"/>
+      <select ref="/data/skin_conditions_group/skin_symptoms">
+        <label ref="jr:itext('/data/skin_conditions_group/skin_symptoms:label')"/>
+        <itemset nodeset="instance('skin_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_impetigo_folliculitis" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_impetigo_folliculitis:label')"/>
+      </input>
+      <input ref="/data/results_group/res_impetigo_folliculitis_action">
+        <label ref="jr:itext('/data/results_group/res_impetigo_folliculitis_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_ring_worm" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_ring_worm:label')"/>
+      </input>
+      <input ref="/data/results_group/res_ring_worm_action">
+        <label ref="jr:itext('/data/results_group/res_ring_worm_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_scabies" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_scabies:label')"/>
+      </input>
+      <input ref="/data/results_group/res_scabies_action">
+        <label ref="jr:itext('/data/results_group/res_scabies_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+  </h:body>
+</h:html>

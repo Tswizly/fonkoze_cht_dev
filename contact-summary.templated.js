@@ -33,28 +33,58 @@ const getReportConditions = (report) => {
   // ==============================
   // CHRONIC CONDITIONS
   // ==============================
-  if (isPositive(fields.diabetes) || 
-      isPositive(fields._result_hyperglycemia_mild) || 
-      isPositive(fields._result_hyperglycemia_moderate) || 
-      isPositive(fields._result_hyperglycemia_severe)) {
+  if (isPositive(fields.diabetes)) {
     conditions.push({ name: 'Diabetes', type: 'chronic' });
   }
-  if (isPositive(fields.stroke) || 
-      isPositive(fields._result_stroke) || 
-      isPositive(fields._result_old_stroke) || 
-      isPositive(fields._result_transient_ischemic_attack)) {
-    conditions.push({ name: 'Stroke / TIA', type: 'chronic' });
+  
+  // Hyperglycemia Separated
+  if (isPositive(fields._result_hyperglycemia_mild)) {
+    conditions.push({ name: 'Hyperglycemia (Mild)', type: 'chronic' });
   }
-  if (isPositive(fields.hypertension) || 
-      isPositive(fields._result_hypertensive_urgency) || 
-      isPositive(fields._result_hypertension_grade_1) || 
-      isPositive(fields._result_hypertension_grade_2) || 
-      isPositive(fields._result_hypertension_grade_3) ||
-      isPositive(fields._result_gestational_hypertension_no_serious) ||
-      isPositive(fields._result_gestational_hypertension_serious) ||
-      isPositive(fields._result_pre_eclampsia)) {
+  if (isPositive(fields._result_hyperglycemia_moderate)) {
+    conditions.push({ name: 'Hyperglycemia (Moderate)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_hyperglycemia_severe)) {
+    conditions.push({ name: 'Hyperglycemia (Severe)', type: 'chronic' });
+  }
+
+  // Stroke Separated
+  if (isPositive(fields.stroke) || isPositive(fields._result_stroke)) {
+    conditions.push({ name: 'Stroke', type: 'chronic' });
+  }
+  if (isPositive(fields._result_old_stroke)) {
+    conditions.push({ name: 'Old Stroke', type: 'chronic' });
+  }
+  if (isPositive(fields._result_transient_ischemic_attack)) {
+    conditions.push({ name: 'Transient Ischemic Attack (TIA)', type: 'chronic' });
+  }
+
+  // Hypertension Separated
+  if (isPositive(fields.hypertension)) {
     conditions.push({ name: 'Hypertension', type: 'chronic' });
   }
+  if (isPositive(fields._result_hypertension_grade_1)) {
+    conditions.push({ name: 'Hypertension (Grade 1)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_hypertension_grade_2)) {
+    conditions.push({ name: 'Hypertension (Grade 2)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_hypertension_grade_3)) {
+    conditions.push({ name: 'Hypertension (Grade 3)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_hypertensive_urgency)) {
+    conditions.push({ name: 'Hypertensive Urgency', type: 'chronic' });
+  }
+  if (isPositive(fields._result_gestational_hypertension_no_serious)) {
+    conditions.push({ name: 'Gestational Hypertension (Not Serious)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_gestational_hypertension_serious)) {
+    conditions.push({ name: 'Gestational Hypertension (Serious)', type: 'chronic' });
+  }
+  if (isPositive(fields._result_pre_eclampsia)) {
+    conditions.push({ name: 'Pre-eclampsia', type: 'chronic' });
+  }
+
   if (isPositive(fields.asthma) || isPositive(fields._result_asthma)) {
     conditions.push({ name: 'Asthma', type: 'chronic' });
   }
@@ -65,56 +95,123 @@ const getReportConditions = (report) => {
   // ==============================
   // TEMPORARY CONDITIONS
   // ==============================
+  
   // Respiratory & Fever
-  if (isPositive(fields.flu) || isPositive(fields._result_flu_like_syndrome)) {
+  if (isPositive(fields.flu)) {
+    conditions.push({ name: 'Flu', type: 'temporary' });
+  }
+  if (isPositive(fields._result_flu_like_syndrome)) {
     conditions.push({ name: 'Flu-like Syndrome', type: 'temporary' });
   }
+  
+  // Pneumonia Separated
   if (isPositive(fields._result_pneumonia)) {
     conditions.push({ name: 'Pneumonia', type: 'temporary' });
+  }
+  if (isPositive(fields._result_severe_pneumonia)) {
+    conditions.push({ name: 'Severe Pneumonia', type: 'temporary' });
+  }
+  if (isPositive(fields._result_pneumonia_pink)) {
+    conditions.push({ name: 'Pneumonia (Pink)', type: 'temporary' });
+  }
+  if (isPositive(fields._result_pneumonia_yellow)) {
+    conditions.push({ name: 'Pneumonia (Yellow)', type: 'temporary' });
+  }
+
+  if (isPositive(fields._result_tonsillitis)) {
+    conditions.push({ name: 'Tonsillitis', type: 'temporary' });
+  }
+  if (isPositive(fields._result_cough_or_cold)) {
+    conditions.push({ name: 'Cough or Cold', type: 'temporary' });
   }
   if (isPositive(fields._result_risk_malaria)) {
     conditions.push({ name: 'Risk of Malaria', type: 'temporary' });
   }
 
   // Skin
-  if (isPositive(fields.skin_condition) || 
-      isPositive(fields.impetigo) || 
-      isPositive(fields._result_impetigo_folliculitis) ||
-      isPositive(fields.scabies) || 
-      isPositive(fields._result_scabies) ||
-      isPositive(fields.ringworm) || 
-      isPositive(fields._result_ring_worm)) {
+  if (isPositive(fields.skin_condition)) {
     conditions.push({ name: 'Skin Condition', type: 'temporary' });
   }
+  if (isPositive(fields.impetigo) || isPositive(fields._result_impetigo) || isPositive(fields._result_impetigo_folliculitis)) {
+    conditions.push({ name: 'Impetigo', type: 'temporary' });
+  }
+  if (isPositive(fields.scabies) || isPositive(fields._result_scabies)) {
+    conditions.push({ name: 'Scabies', type: 'temporary' });
+  }
+  if (isPositive(fields.ringworm) || isPositive(fields._result_ring_worm)) {
+    conditions.push({ name: 'Ringworm', type: 'temporary' });
+  }
 
-  // Nutrition / Blood
+  // Nutrition / Blood (Anemia Separated)
+  if (isPositive(fields._result_anemia)) {
+    conditions.push({ name: 'Anemia', type: 'temporary' });
+  }
   if (isPositive(fields._result_moderate_anemia)) {
     conditions.push({ name: 'Moderate Anemia', type: 'temporary' });
+  }
+  if (isPositive(fields._result_severe_anemia)) {
+    conditions.push({ name: 'Severe Anemia', type: 'temporary' });
+  }
+  if (isPositive(fields._result_severe_malnutrition_anemia)) {
+    conditions.push({ name: 'Severe Malnutrition with Anemia', type: 'temporary' });
   }
 
   // Digestive / Abdominal
   if (isPositive(fields._result_appendicitis_cholecystitis)) {
     conditions.push({ name: 'Appendicitis / Cholecystitis', type: 'temporary' });
   }
-  if (isPositive(fields._result_gastritis_serious) || isPositive(fields._result_gastritis_not_serious)) {
+  
+  // Gastritis Separated
+  if (isPositive(fields._result_gastritis)) {
     conditions.push({ name: 'Gastritis', type: 'temporary' });
   }
+  if (isPositive(fields._result_gastritis_not_serious)) {
+    conditions.push({ name: 'Gastritis (Not Serious)', type: 'temporary' });
+  }
+  if (isPositive(fields._result_gastritis_serious)) {
+    conditions.push({ name: 'Gastritis (Serious)', type: 'temporary' });
+  }
+
   if (isPositive(fields._result_acute_diarrhea)) {
     conditions.push({ name: 'Acute Diarrhea', type: 'temporary' });
   }
-  if (isPositive(fields._result_risk_of_cholera)) {
-    conditions.push({ name: 'Risk of Cholera', type: 'temporary' });
+  if (isPositive(fields._result_persistent_diarrhea)) {
+    conditions.push({ name: 'Persistent Diarrhea', type: 'temporary' });
+  }
+  if (isPositive(fields._result_dysentery)) {
+    conditions.push({ name: 'Dysentery', type: 'temporary' });
+  }
+  if (isPositive(fields._result_severe_dehydration) || isPositive(fields._result_some_dehydration) || isPositive(fields._result_dehydration)) {
+    conditions.push({ name: 'Dehydration', type: 'temporary' });
+  }
+  if (isPositive(fields._result_risk_of_cholera) || isPositive(fields._result_cholera)) {
+    conditions.push({ name: 'Cholera', type: 'temporary' });
   }
   if (isPositive(fields._result_amoeba_giardia)) {
     conditions.push({ name: 'Amoeba / Giardia', type: 'temporary' });
   }
 
   // Genitourinary & STD
-  if (isPositive(fields._result_genitourinary_infections) || isPositive(fields._result_uti)) {
-    conditions.push({ name: 'Genitourinary Infection / UTI', type: 'temporary' });
+  if (isPositive(fields._result_genitourinary_infections)) {
+    conditions.push({ name: 'Genitourinary Infection', type: 'temporary' });
   }
-  if (isPositive(fields._result_std_discharge) || isPositive(fields._result_std_ulcer)) {
-    conditions.push({ name: 'STD', type: 'temporary' });
+  if (isPositive(fields._result_uti)) {
+    conditions.push({ name: 'UTI', type: 'temporary' });
+  }
+  if (isPositive(fields._result_glomerulonephritis)) {
+    conditions.push({ name: 'Glomerulonephritis', type: 'temporary' });
+  }
+  if (isPositive(fields._result_std_discharge)) {
+    conditions.push({ name: 'STD Discharge', type: 'temporary' });
+  }
+  if (isPositive(fields._result_std_ulcer)) {
+    conditions.push({ name: 'STD Ulcer', type: 'temporary' });
+  }
+  if (isPositive(fields._result_syphilis)) {
+    conditions.push({ name: 'Syphilis', type: 'temporary' });
+  }
+  if (isPositive(fields._result_other_std)) {
+    conditions.push({ name: 'Other STD', type: 'temporary' });
   }
 
   // Pregnancy Complications
@@ -132,7 +229,6 @@ const getReportConditions = (report) => {
 
   return conditions;
 };
-
 // Helper function to extract and format drugs recursively from the fields
 const getDrugsDistributed = (fields) => {
   const drugs = {};

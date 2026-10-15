@@ -164,6 +164,9 @@
           <text id="/data/_received_albendazole_vit_a:label">
             <value>Passed from task</value>
           </text>
+          <text id="/data/qty_vitamin_a:jr:constraintMsg">
+            <value>,</value>
+          </text>
           <text id="/data/summary_header:label">
             <value>Child Patient Summary</value>
           </text>
@@ -311,6 +314,18 @@
 - Offer frequent sips of clean fluid or breastmilk if the child can swallow
 - Do not delay transfer</value>
           </text>
+          <text id="/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu:label">
+            <value> Did you distribute <output value=" /data/qty_amoxicillin_suspension "/> ml Amoxicillin suspension?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu:label">
+            <value> Did you distribute <output value=" /data/qty_paracetamol_syrup "/> ml Paracetamol syrup?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_severe_pneumonia/sev_pneu_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -334,6 +349,18 @@
 - Continue breastfeeding and provide abundant fluids (soup, juice, clean water)
 - Explain how to measure and administer suspension with a syringe or spoon; nurse follow-up call in 7 days</value>
           </text>
+          <text id="/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu:label">
+            <value> Did you distribute <output value=" /data/qty_amoxicillin_suspension "/> ml Amoxicillin suspension?</value>
+          </text>
+          <text id="/data/grp_pneumonia/confirm_salbutamol_syrup_pneu:label">
+            <value> Did you distribute <output value=" /data/qty_salbutamol_syrup "/> ml Salbutamol syrup?</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_pneumonia/pneu_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -353,6 +380,15 @@
             <value>Counseling:
 - Keep the child warm, comfortable, and well-hydrated
 - Watch for danger signs: fast breathing, chest indrawing, or inability to drink</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold:label">
+            <value> Did you distribute <output value=" /data/qty_paracetamol_syrup "/> ml Paracetamol syrup?</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_cough_or_cold/cough_cold_notes:label">
             <value>Clinical notes:</value>
@@ -374,6 +410,18 @@
 - Complete the full 5-day antibiotic course even if fever resolves within 2 days
 - Nurse follow-up call in 7 days</value>
           </text>
+          <text id="/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis:label">
+            <value> Did you distribute <output value=" /data/qty_amoxicillin_suspension "/> ml Amoxicillin suspension?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis:label">
+            <value> Did you distribute <output value=" /data/qty_paracetamol_syrup "/> ml Paracetamol syrup?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_tonsillitis/tonsillitis_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -394,6 +442,15 @@
 - Rest and continuous hydration with clean water, breastmilk, and fruit juice
 - Return to clinic if fever persists beyond 3 days or if respiratory distress appears</value>
           </text>
+          <text id="/data/grp_flu_like/confirm_paracetamol_syrup_flu_like:label">
+            <value> Did you distribute <output value=" /data/qty_paracetamol_syrup "/> ml Paracetamol syrup?</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_flu_like/flu_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -413,6 +470,15 @@
             <value>Counseling:
 - Keep the infant warm and continue small, frequent sips of ORS during transit
 - Immediate emergency care is essential to prevent hypovolemic shock</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/confirm_ors_sev_dehyd:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_severe_dehydration/sev_dehyd_notes:label">
             <value>Clinical notes:</value>
@@ -437,6 +503,18 @@
 - Offer ORS after each loose stool
 - Return immediately if child develops high fever, repeated vomiting, or blood in stool</value>
           </text>
+          <text id="/data/grp_some_dehydration/confirm_ors_some_dehyd:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd:label">
+            <value>Did you distribute 10 Zinc 20mg tablets?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_some_dehydration/some_dehyd_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -458,6 +536,18 @@
 - Maintain strict hand washing with soap before preparing food and after defecation
 - Seek care if diarrhea lasts &gt;5 days or danger signs appear</value>
           </text>
+          <text id="/data/grp_no_dehydration/confirm_ors_no_dehyd:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd:label">
+            <value>Did you distribute 10 Zinc 20mg tablets?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_no_dehydration/no_dehyd_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -476,6 +566,15 @@
             <value>Counseling:
 - Continue feeding small, frequent, easily digestible meals and ORS
 - Emphasize the importance of formal hospital evaluation to determine underlying cause</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_persistent_diarrhea/pers_diarrhea_notes:label">
             <value>Clinical notes:</value>
@@ -499,6 +598,18 @@
 - Finish the entire 3 days of ciprofloxacin even if blood clears from stool
 - Go to hospital immediately if child is not improving within 48 hours or fever spikes</value>
           </text>
+          <text id="/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery:label">
+            <value> Did you distribute <output value=" /data/qty_ciprofloxacin_suspension "/> ml Ciprofloxacin suspension?</value>
+          </text>
+          <text id="/data/grp_dysentery/confirm_ors_dysentery:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_dysentery/dysentery_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -518,6 +629,18 @@
 - Feeding practices: no spicy, acidic, or fried food; no tomato sauce; provide small bland meals
 - Hand washing with soap before feeding; wash all fruit thoroughly</value>
           </text>
+          <text id="/data/grp_gastritis/confirm_litacid_gel_gastritis:label">
+            <value>Did you distribute 1 bottle Litacid Gel?</value>
+          </text>
+          <text id="/data/grp_gastritis/confirm_ors_gastritis:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_gastritis/gastritis_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -536,6 +659,15 @@
             <value>Counseling:
 - Infection control: treat all household drinking water with Aquatabs or boil; disinfect waste with chlorine
 - All family contacts should practice rigorous hand hygiene</value>
+          </text>
+          <text id="/data/grp_cholera/confirm_ors_cholera:label">
+            <value>Did you distribute ORS packets?</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_cholera/cholera_notes:label">
             <value>Clinical notes:</value>
@@ -559,6 +691,18 @@
 - Keep fingernails trimmed and clean; do not scratch or pick at crusts
 - Wash child's clothes and washcloths separately with soap and warm water</value>
           </text>
+          <text id="/data/grp_impetigo/confirm_triple_antibiotic_impetigo:label">
+            <value>Did you apply/distribute Triple Antibiotic Ointment?</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo:label">
+            <value> Did you distribute <output value=" /data/qty_cloxacillin_suspension "/> ml Cloxacillin suspension?</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
           <text id="/data/grp_impetigo/impetigo_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -578,6 +722,18 @@
 - Keep the affected area clean and dry
 - Do not share hats, combs, headwraps, or pillows
 - Administer griseofulvin with food containing milk or oil to improve absorption</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_antifungal_cream_ringworm:label">
+            <value>Did you distribute 1 tube Ketoconazole cream?</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm:label">
+            <value>Did you distribute 84 Griseofulvin 125mg tablets?</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_ringworm/ringworm_notes:label">
             <value>Clinical notes:</value>
@@ -599,6 +755,18 @@
             <value>Counseling:
 - Treat ALL household members simultaneously even if they do not yet itch
 - Wash all bedding, clothing, and towels in warm water and place in direct hot sunlight</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_calamine_lotion_scabies:label">
+            <value>Did you distribute 1 bottle Calamine lotion?</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_benzyl_benzoate_scabies:label">
+            <value>Did you distribute 1 bottle Benzyl Benzoate 25% lotion?</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Clinical notes:</value>
@@ -623,67 +791,22 @@
 - Nutrition counseling: encourage dark green leaves (moringa, panzou, lyann panye, boujon manyok, boujon pwa), fruits, grated carrots, and beets
 - Encourage routine deworming and Vitamin A every 6 months for all children &gt;6 months</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
-            <value>Clinical notes:</value>
-          </text>
-          <text id="/data/grp_pediatric_medication:label">
-            <value>Pediatric Prescriptions &amp; Drug Distribution</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_amoxicillin_suspension:label">
-            <value> Did you distribute <output value=" /data/qty_amoxicillin_suspension "/> ml Amoxicillin suspension?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_paracetamol_syrup:label">
-            <value> Did you distribute <output value=" /data/qty_paracetamol_syrup "/> ml Paracetamol syrup?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_salbutamol_syrup:label">
-            <value> Did you distribute <output value=" /data/qty_salbutamol_syrup "/> ml Salbutamol syrup?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ors:label">
-            <value>Did you distribute ORS packets?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_zinc_tablets:label">
-            <value>Did you distribute 10 Zinc 20mg tablets?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension:label">
-            <value> Did you distribute <output value=" /data/qty_ciprofloxacin_suspension "/> ml Ciprofloxacin suspension?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_litacid_gel:label">
-            <value>Did you distribute 1 bottle Litacid Gel?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_cloxacillin_suspension:label">
-            <value> Did you distribute <output value=" /data/qty_cloxacillin_suspension "/> ml Cloxacillin suspension?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_triple_antibiotic:label">
-            <value>Did you apply/distribute Triple Antibiotic Ointment?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_antifungal_cream:label">
-            <value>Did you distribute 1 tube Ketoconazole cream?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_griseofulvin_tabs:label">
-            <value>Did you distribute 84 Griseofulvin 125mg tablets?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_calamine_lotion:label">
-            <value>Did you distribute 1 bottle Calamine lotion?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_benzyl_benzoate:label">
-            <value>Did you distribute 1 bottle Benzyl Benzoate 25% lotion?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_iron_folic_acid:label">
+          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Did you distribute 14 Iron + Folic Acid tablets?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_albendazole_dewormer:label">
+          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Did you distribute Albendazole 400mg dewormer?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_vitamin_a:label">
+          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Did you administer Vitamin A capsule?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:label">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
             <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:hint">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
             <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_notes:label">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
             <value>Clinical notes:</value>
           </text>
           <text id="/data/referrals:label">
@@ -868,6 +991,24 @@
 - Donner de petites gorgées de liquide ou allaiter si possible
 - Ne pas retarder le transfert</value>
           </text>
+          <text id="/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu:label">
+            <value> Avez-vous distribué <output value=" /data/qty_amoxicillin_suspension "/> ml d'amoxicilline suspension ?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/_data_amoxicillin_suspension_sev_pneu_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu:label">
+            <value> Avez-vous administré/distribué <output value=" /data/qty_paracetamol_syrup "/> ml de paracétamol sirop ?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/_data_paracetamol_syrup_sev_pneu_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_severe_pneumonia/sev_pneu_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -891,6 +1032,24 @@
 - Poursuivre l'allaitement et donner beaucoup de liquides
 - Suivi infirmier prévu dans 7 jours</value>
           </text>
+          <text id="/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu:label">
+            <value> Avez-vous distribué <output value=" /data/qty_amoxicillin_suspension "/> ml d'amoxicilline suspension ?</value>
+          </text>
+          <text id="/data/grp_pneumonia/_data_amoxicillin_suspension_pneu_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_pneumonia/confirm_salbutamol_syrup_pneu:label">
+            <value> Avez-vous distribué <output value=" /data/qty_salbutamol_syrup "/> ml de sirop de salbutamol ?</value>
+          </text>
+          <text id="/data/grp_pneumonia/_data_salbutamol_syrup_pneu_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_pneumonia/pneu_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -910,6 +1069,18 @@
             <value>Conseils :
 - Garder l'enfant au chaud et bien hydraté
 - Surveiller les signes de danger : respiration rapide, tirage ou refus de boire</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold:label">
+            <value> Avez-vous administré/distribué <output value=" /data/qty_paracetamol_syrup "/> ml de paracétamol sirop ?</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/_data_paracetamol_syrup_cough_cold_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_cough_or_cold/cough_cold_notes:label">
             <value>Notes cliniques :</value>
@@ -931,6 +1102,24 @@
 - Terminer tout le traitement antibiotique de 5 jours
 - Suivi infirmier dans 7 jours</value>
           </text>
+          <text id="/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis:label">
+            <value> Avez-vous distribué <output value=" /data/qty_amoxicillin_suspension "/> ml d'amoxicilline suspension ?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/_data_amoxicillin_suspension_tonsillitis_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis:label">
+            <value> Avez-vous administré/distribué <output value=" /data/qty_paracetamol_syrup "/> ml de paracétamol sirop ?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/_data_paracetamol_syrup_tonsillitis_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_tonsillitis/tonsillitis_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -951,6 +1140,18 @@
 - Repos et hydratation continue
 - Revenir au centre de santé si la fièvre dure plus de 3 jours ou en cas de détresse respiratoire</value>
           </text>
+          <text id="/data/grp_flu_like/confirm_paracetamol_syrup_flu_like:label">
+            <value> Avez-vous administré/distribué <output value=" /data/qty_paracetamol_syrup "/> ml de paracétamol sirop ?</value>
+          </text>
+          <text id="/data/grp_flu_like/_data_paracetamol_syrup_flu_like_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_flu_like/flu_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -970,6 +1171,18 @@
             <value>Conseils :
 - Garder l'enfant au chaud et donner des gorgées de SRO sans interruption
 - Prise en charge médicale d'urgence indispensable</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/confirm_ors_sev_dehyd:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/_data_ors_sev_dehyd_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_severe_dehydration/sev_dehyd_notes:label">
             <value>Notes cliniques :</value>
@@ -992,6 +1205,24 @@
 - Donner des SRO après chaque selle liquide
 - Revenir immédiatement si fièvre, vomissements répétés ou sang dans les selles</value>
           </text>
+          <text id="/data/grp_some_dehydration/confirm_ors_some_dehyd:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/_data_ors_some_dehyd_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd:label">
+            <value>Avez-vous distribué 10 comprimés de zinc 20 mg ?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/_data_zinc_tablets_some_dehyd_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_some_dehydration/some_dehyd_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -1013,6 +1244,24 @@
 - Lavage des mains au savon avant les repas et après la selle
 - Consulter si la diarrhée persiste plus de 5 jours</value>
           </text>
+          <text id="/data/grp_no_dehydration/confirm_ors_no_dehyd:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/_data_ors_no_dehyd_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd:label">
+            <value>Avez-vous distribué 10 comprimés de zinc 20 mg ?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/_data_zinc_tablets_no_dehyd_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_no_dehydration/no_dehyd_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -1031,6 +1280,18 @@
             <value>Conseils :
 - Poursuivre des repas fréquents et digestes avec des SRO
 - Souligner la nécessité d'une évaluation hospitalière approfondie</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/_data_ors_pers_diarrhea_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_persistent_diarrhea/pers_diarrhea_notes:label">
             <value>Notes cliniques :</value>
@@ -1051,6 +1312,24 @@
 - Finir les 3 jours de traitement même si le sang disparaît
 - Aller à l'hôpital si aucune amélioration après 48 heures</value>
           </text>
+          <text id="/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery:label">
+            <value> Avez-vous distribué <output value=" /data/qty_ciprofloxacin_suspension "/> ml de ciprofloxacine suspension ?</value>
+          </text>
+          <text id="/data/grp_dysentery/_data_ciprofloxacin_suspension_dysentery_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_dysentery/confirm_ors_dysentery:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_dysentery/_data_ors_dysentery_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_dysentery/dysentery_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -1070,6 +1349,24 @@
 - Alimentation : éviter épices, fritures, sauces tomate ; repas légers et fréquents
 - Lavage des mains au savon et lavage soigné des fruits</value>
           </text>
+          <text id="/data/grp_gastritis/confirm_litacid_gel_gastritis:label">
+            <value>Avez-vous distribué 1 flacon de gel Litacid ?</value>
+          </text>
+          <text id="/data/grp_gastritis/_data_litacid_gel_gastritis_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_gastritis/confirm_ors_gastritis:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_gastritis/_data_ors_gastritis_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_gastritis/gastritis_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -1088,6 +1385,18 @@
             <value>Conseils :
 - Traiter l'eau potable du foyer avec Aquatabs ou faire bouillir ; désinfecter au chlore
 - Hygiène stricte des mains pour toute la famille</value>
+          </text>
+          <text id="/data/grp_cholera/confirm_ors_cholera:label">
+            <value>Avez-vous distribué des sachets de SRO ?</value>
+          </text>
+          <text id="/data/grp_cholera/_data_ors_cholera_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_cholera/cholera_notes:label">
             <value>Notes cliniques :</value>
@@ -1109,6 +1418,24 @@
 - Couper les ongles courts et propres ; ne pas gratter les croûtes
 - Laver les vêtements et serviettes séparément au savon</value>
           </text>
+          <text id="/data/grp_impetigo/confirm_triple_antibiotic_impetigo:label">
+            <value>Avez-vous appliqué la pommade triple antibiotique ?</value>
+          </text>
+          <text id="/data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo:label">
+            <value> Avez-vous distribué <output value=" /data/qty_cloxacillin_suspension "/> ml de cloxacilline solution ?</value>
+          </text>
+          <text id="/data/grp_impetigo/_data_cloxacillin_suspension_impetigo_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
           <text id="/data/grp_impetigo/impetigo_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -1127,6 +1454,24 @@
             <value>Conseils :
 - Garder la zone propre et sèche ; ne pas partager chapeaux, peignes ou draps
 - Prendre la griséofulvine avec un repas gras ou du lait</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_antifungal_cream_ringworm:label">
+            <value>Avez-vous distribué 1 tube de crème au kétoconazole ?</value>
+          </text>
+          <text id="/data/grp_ringworm/_data_antifungal_cream_ringworm_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm:label">
+            <value>Avez-vous distribué 84 comprimés de griséofulvine 125 mg ?</value>
+          </text>
+          <text id="/data/grp_ringworm/_data_griseofulvin_tabs_ringworm_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_ringworm/ringworm_notes:label">
             <value>Notes cliniques :</value>
@@ -1148,6 +1493,24 @@
             <value>Conseils :
 - Traiter TOUS les membres du foyer en même temps
 - Laver toute la literie et les vêtements à l'eau chaude et sécher au soleil</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_calamine_lotion_scabies:label">
+            <value>Avez-vous distribué 1 flacon de lotion à la calamine ?</value>
+          </text>
+          <text id="/data/grp_scabies/_data_calamine_lotion_scabies_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_benzyl_benzoate_scabies:label">
+            <value>Avez-vous distribué 1 flacon de lotion benzoate de benzyle 25% ?</value>
+          </text>
+          <text id="/data/grp_scabies/_data_benzyl_benzoate_scabies_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Notes cliniques :</value>
@@ -1172,67 +1535,31 @@
 - Alimentation riche en fer : feuilles vertes (moringa, panzou, manioc), fruits, carottes, betteraves
 - Déparasitage régulier et vitamine A tous les 6 mois</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
-            <value>Notes cliniques :</value>
-          </text>
-          <text id="/data/grp_pediatric_medication:label">
-            <value>Prescriptions pédiatriques et distribution</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_amoxicillin_suspension:label">
-            <value> Avez-vous distribué <output value=" /data/qty_amoxicillin_suspension "/> ml d'amoxicilline suspension ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_paracetamol_syrup:label">
-            <value> Avez-vous administré/distribué <output value=" /data/qty_paracetamol_syrup "/> ml de paracétamol sirop ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_salbutamol_syrup:label">
-            <value> Avez-vous distribué <output value=" /data/qty_salbutamol_syrup "/> ml de sirop de salbutamol ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ors:label">
-            <value>Avez-vous distribué des sachets de SRO ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_zinc_tablets:label">
-            <value>Avez-vous distribué 10 comprimés de zinc 20 mg ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension:label">
-            <value> Avez-vous distribué <output value=" /data/qty_ciprofloxacin_suspension "/> ml de ciprofloxacine suspension ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_litacid_gel:label">
-            <value>Avez-vous distribué 1 flacon de gel Litacid ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_cloxacillin_suspension:label">
-            <value> Avez-vous distribué <output value=" /data/qty_cloxacillin_suspension "/> ml de cloxacilline solution ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_triple_antibiotic:label">
-            <value>Avez-vous appliqué la pommade triple antibiotique ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_antifungal_cream:label">
-            <value>Avez-vous distribué 1 tube de crème au kétoconazole ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_griseofulvin_tabs:label">
-            <value>Avez-vous distribué 84 comprimés de griséofulvine 125 mg ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_calamine_lotion:label">
-            <value>Avez-vous distribué 1 flacon de lotion à la calamine ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_benzyl_benzoate:label">
-            <value>Avez-vous distribué 1 flacon de lotion benzoate de benzyle 25% ?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_iron_folic_acid:label">
+          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Avez-vous distribué 14 comprimés de fer et acide folique ?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_albendazole_dewormer:label">
+          <text id="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Avez-vous distribué l'albendazole 400 mg déparasitant ?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_vitamin_a:label">
+          <text id="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Avez-vous administré la capsule de vitamine A ?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:label">
+          <text id="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
             <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:hint">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
             <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_notes:label">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
             <value>Notes cliniques :</value>
           </text>
           <text id="/data/referrals:label">
@@ -1490,55 +1817,10 @@
           <text id="/data/qty_albendazole:label">
             <value>-</value>
           </text>
+          <text id="/data/qty_vitamin_a:jr:constraintMsg">
+            <value>-</value>
+          </text>
           <text id="/data/qty_vitamin_a:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_amoxicillin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_paracetamol_syrup_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_salbutamol_syrup_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_ors_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_zinc_tablets_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_ciprofloxacin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_litacid_gel_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_cloxacillin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_triple_antibiotic_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_antifungal_cream_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_griseofulvin_tabs_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_calamine_lotion_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_benzyl_benzoate_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_iron_folic_acid_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_albendazole_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_vitamin_a_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/total_amoxicillin_suspension:label">
@@ -1984,6 +2266,24 @@
 - Bay ti bwè dlo pwòp oswa bay tete souvan si timoun nan ka vale
 - Pa retade transfè a ditou</value>
           </text>
+          <text id="/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu:label">
+            <value> Èske ou te distribye <output value=" /data/qty_amoxicillin_suspension "/> ml siwo Amoksisilin?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/_data_amoxicillin_suspension_sev_pneu_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu:label">
+            <value> Èske ou te bay <output value=" /data/qty_paracetamol_syrup "/> ml siwo Parasetamol?</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/_data_paracetamol_syrup_sev_pneu_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_severe_pneumonia/sev_pneu_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2007,6 +2307,24 @@
 - Kontinye bay tete epi bay anpil likid (soup, ji, dlo trete)
 - Enfimyè ap rele nan 7 jou pou pran nouvèl timoun nan</value>
           </text>
+          <text id="/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu:label">
+            <value> Èske ou te distribye <output value=" /data/qty_amoxicillin_suspension "/> ml siwo Amoksisilin?</value>
+          </text>
+          <text id="/data/grp_pneumonia/_data_amoxicillin_suspension_pneu_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_pneumonia/confirm_salbutamol_syrup_pneu:label">
+            <value> Èske ou te distribye <output value=" /data/qty_salbutamol_syrup "/> ml siwo Salbutamol?</value>
+          </text>
+          <text id="/data/grp_pneumonia/_data_salbutamol_syrup_pneu_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_pneumonia/pneu_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_pneumonia/pneu_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2026,6 +2344,18 @@
             <value>Konsèy:
 - Kenbe timoun nan cho, alèz, epi ba li anpil likid
 - Veye siy danje tankou respirasyon rapid, pwatrin k ap rale antre, oswa si l pa ka bwè</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold:label">
+            <value> Èske ou te bay <output value=" /data/qty_paracetamol_syrup "/> ml siwo Parasetamol?</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/_data_paracetamol_syrup_cough_cold_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_cough_or_cold/cough_cold_notes:label">
             <value>Nòt klinik:</value>
@@ -2047,6 +2377,24 @@
 - Fini tout tretman antibyotik 5 jou a nèt menm si timoun nan santi l miyò
 - Enfimyè ap rele nan 7 jou</value>
           </text>
+          <text id="/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis:label">
+            <value> Èske ou te distribye <output value=" /data/qty_amoxicillin_suspension "/> ml siwo Amoksisilin?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/_data_amoxicillin_suspension_tonsillitis_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis:label">
+            <value> Èske ou te bay <output value=" /data/qty_paracetamol_syrup "/> ml siwo Parasetamol?</value>
+          </text>
+          <text id="/data/grp_tonsillitis/_data_paracetamol_syrup_tonsillitis_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_tonsillitis/tonsillitis_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2067,6 +2415,18 @@
 - Repo ak bwè dlo pwòp, bay tete, ak ji fwi san rete
 - Retounen nan klinik si lafyèv la dire plis pase 3 jou oswa si gen difikilte pou respire</value>
           </text>
+          <text id="/data/grp_flu_like/confirm_paracetamol_syrup_flu_like:label">
+            <value> Èske ou te bay <output value=" /data/qty_paracetamol_syrup "/> ml siwo Parasetamol?</value>
+          </text>
+          <text id="/data/grp_flu_like/_data_paracetamol_syrup_flu_like_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_flu_like/flu_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_flu_like/flu_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2086,6 +2446,18 @@
             <value>Konsèy:
 - Kenbe timoun nan cho epi ba li ti bwè ORS san rete pandan vwayaj la
 - Swen medikal ijan esansyèl pou evite konplikasyon grav</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/confirm_ors_sev_dehyd:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/_data_ors_sev_dehyd_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_severe_dehydration/sev_dehyd_notes:label">
             <value>Nòt klinik:</value>
@@ -2108,6 +2480,24 @@
 - Bay ORS apre chak fwa timoun nan poupou dlo
 - Retounen touswit si gen lafyèv cho, vomisman repete, oswa san nan poupou a</value>
           </text>
+          <text id="/data/grp_some_dehydration/confirm_ors_some_dehyd:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/_data_ors_some_dehyd_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd:label">
+            <value>Èske ou te distribye 10 grenn Zenk 20mg?</value>
+          </text>
+          <text id="/data/grp_some_dehydration/_data_zinc_tablets_some_dehyd_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_some_dehydration/some_dehyd_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2129,6 +2519,24 @@
 - Lave men byen ak savon anvan prepare manje ak apre poupou
 - Chèche swen si dyare a dire plis pase 5 jou oswa si gen siy danje</value>
           </text>
+          <text id="/data/grp_no_dehydration/confirm_ors_no_dehyd:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/_data_ors_no_dehyd_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd:label">
+            <value>Èske ou te distribye 10 grenn Zenk 20mg?</value>
+          </text>
+          <text id="/data/grp_no_dehydration/_data_zinc_tablets_no_dehyd_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_no_dehydration/no_dehyd_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2147,6 +2555,18 @@
             <value>Konsèy:
 - Kontinye bay ti repa fasil pou dijere souvan ansanm ak ORS
 - Mete aksan sou enpòtans pou ale lopital pou jwenn kòz pwoblèm nan</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/_data_ors_pers_diarrhea_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_persistent_diarrhea/pers_diarrhea_notes:label">
             <value>Nòt klinik:</value>
@@ -2167,6 +2587,24 @@
 - Fini tout 3 jou siprofloksasin nan menm si san an disparèt nan poupou a
 - Ale lopital touswit si pa gen amelyorasyon nan 48 èdtan oswa si lafyèv monte</value>
           </text>
+          <text id="/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery:label">
+            <value> Èske ou te distribye <output value=" /data/qty_ciprofloxacin_suspension "/> ml siwo Siprofloksasin?</value>
+          </text>
+          <text id="/data/grp_dysentery/_data_ciprofloxacin_suspension_dysentery_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_dysentery/confirm_ors_dysentery:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_dysentery/_data_ors_dysentery_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_dysentery/dysentery_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_dysentery/dysentery_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2186,6 +2624,24 @@
 - Manje: pa gen epis, manje fri, sòs tomat; bay ti repa dou souvan (soup, legim)
 - Lave men ak savon anvan prepare manje; lave tout fwi byen</value>
           </text>
+          <text id="/data/grp_gastritis/confirm_litacid_gel_gastritis:label">
+            <value>Èske ou te distribye 1 boutèy jèl Litacid?</value>
+          </text>
+          <text id="/data/grp_gastritis/_data_litacid_gel_gastritis_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_gastritis/confirm_ors_gastritis:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_gastritis/_data_ors_gastritis_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_gastritis/gastritis_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_gastritis/gastritis_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2204,6 +2660,18 @@
             <value>Konsèy:
 - Kontwòl enfeksyon: trete dlo pou bwè nan kay la ak Aquatabs oswa bouyi l; dezenfekte ak klò
 - Tout moun nan kay la dwe lave men yo byen souvan</value>
+          </text>
+          <text id="/data/grp_cholera/confirm_ors_cholera:label">
+            <value>Èske ou te distribye pake SRO?</value>
+          </text>
+          <text id="/data/grp_cholera/_data_ors_cholera_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_cholera/cholera_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_cholera/cholera_notes:label">
             <value>Nòt klinik:</value>
@@ -2226,6 +2694,24 @@
 - Koupe zong kout epi kenbe yo pwòp; pa grate oswa rache kwout yo
 - Lave rad ak sèvyèt timoun nan apa ak dlo tyèd ak savon</value>
           </text>
+          <text id="/data/grp_impetigo/confirm_triple_antibiotic_impetigo:label">
+            <value>Èske ou te aplike odè trip antibyotik la?</value>
+          </text>
+          <text id="/data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo:label">
+            <value> Èske ou te distribye <output value=" /data/qty_cloxacillin_suspension "/> ml siwo Cloxacillin?</value>
+          </text>
+          <text id="/data/grp_impetigo/_data_cloxacillin_suspension_impetigo_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_impetigo/impetigo_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
           <text id="/data/grp_impetigo/impetigo_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -2244,6 +2730,24 @@
             <value>Konsèy:
 - Kenbe zòn nan pwòp epi sèch; pa prete chapo, peny, oswa zòrye
 - Pran griseofulvin ak manje ki gen grès oswa lèt pou l ka absòbe byen</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_antifungal_cream_ringworm:label">
+            <value>Èske ou te distribye 1 tib krèm Ketoconazole?</value>
+          </text>
+          <text id="/data/grp_ringworm/_data_antifungal_cream_ringworm_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm:label">
+            <value>Èske ou te distribye 84 grenn Griseofulvin 125mg?</value>
+          </text>
+          <text id="/data/grp_ringworm/_data_griseofulvin_tabs_ringworm_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_ringworm/ringworm_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_ringworm/ringworm_notes:label">
             <value>Nòt klinik:</value>
@@ -2265,6 +2769,24 @@
             <value>Konsèy:
 - Trete TOUT moun nan kay la ansanm menm si yo poko grate
 - Lave tout dra, rad, ak sèvyèt nan dlo tyèd epi seche yo nan gwo solèy cho</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_calamine_lotion_scabies:label">
+            <value>Èske ou te distribye 1 boutèy losyon Kalamin?</value>
+          </text>
+          <text id="/data/grp_scabies/_data_calamine_lotion_scabies_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_scabies/confirm_benzyl_benzoate_scabies:label">
+            <value>Èske ou te distribye 1 boutèy losyon Benzyl Benzoate 25%?</value>
+          </text>
+          <text id="/data/grp_scabies/_data_benzyl_benzoate_scabies_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_scabies/scabies_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Nòt klinik:</value>
@@ -2289,67 +2811,31 @@
 - Bon manje ki rich an fè: fèy vèt (moringa, panzou, lyann panye, boujon manyok, boujon pwa), fwi, kawòt gratine, bètrav
 - Vèminasyon ak Vitamin A regilye chak 6 mwa pou tout timoun plis pase 6 mwa</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
-            <value>Nòt klinik:</value>
-          </text>
-          <text id="/data/grp_pediatric_medication:label">
-            <value>Preskripsyon pou timoun ak distribisyon medikaman</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_amoxicillin_suspension:label">
-            <value> Èske ou te distribye <output value=" /data/qty_amoxicillin_suspension "/> ml siwo Amoksisilin?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_paracetamol_syrup:label">
-            <value> Èske ou te bay <output value=" /data/qty_paracetamol_syrup "/> ml siwo Parasetamol?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_salbutamol_syrup:label">
-            <value> Èske ou te distribye <output value=" /data/qty_salbutamol_syrup "/> ml siwo Salbutamol?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ors:label">
-            <value>Èske ou te distribye pake SRO?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_zinc_tablets:label">
-            <value>Èske ou te distribye 10 grenn Zenk 20mg?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension:label">
-            <value> Èske ou te distribye <output value=" /data/qty_ciprofloxacin_suspension "/> ml siwo Siprofloksasin?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_litacid_gel:label">
-            <value>Èske ou te distribye 1 boutèy jèl Litacid?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_cloxacillin_suspension:label">
-            <value> Èske ou te distribye <output value=" /data/qty_cloxacillin_suspension "/> ml siwo Cloxacillin?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_triple_antibiotic:label">
-            <value>Èske ou te aplike odè trip antibyotik la?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_antifungal_cream:label">
-            <value>Èske ou te distribye 1 tib krèm Ketoconazole?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_griseofulvin_tabs:label">
-            <value>Èske ou te distribye 84 grenn Griseofulvin 125mg?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_calamine_lotion:label">
-            <value>Èske ou te distribye 1 boutèy losyon Kalamin?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_benzyl_benzoate:label">
-            <value>Èske ou te distribye 1 boutèy losyon Benzyl Benzoate 25%?</value>
-          </text>
-          <text id="/data/grp_pediatric_medication/confirm_iron_folic_acid:label">
+          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Èske ou te distribye 14 grenn fè ak asid folik?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_albendazole_dewormer:label">
+          <text id="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Èske ou te distribye Albendazole 400mg pou vè?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/confirm_vitamin_a:label">
+          <text id="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Èske ou te bay kapsil Vitamin A a?</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:label">
+          <text id="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
             <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_not_confirmed_reason:hint">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
             <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
-          <text id="/data/grp_pediatric_medication/ped_med_notes:label">
+          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
             <value>Nòt klinik:</value>
           </text>
           <text id="/data/referrals:label">
@@ -2607,55 +3093,10 @@
           <text id="/data/qty_albendazole:label">
             <value>-</value>
           </text>
+          <text id="/data/qty_vitamin_a:jr:constraintMsg">
+            <value>-</value>
+          </text>
           <text id="/data/qty_vitamin_a:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_amoxicillin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_paracetamol_syrup_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_salbutamol_syrup_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_ors_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_zinc_tablets_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_ciprofloxacin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_litacid_gel_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_cloxacillin_suspension_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_triple_antibiotic_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_antifungal_cream_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_griseofulvin_tabs_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_calamine_lotion_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_benzyl_benzoate_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_iron_folic_acid_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_albendazole_distributed:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_data_vitamin_a_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/total_amoxicillin_suspension:label">
@@ -2934,7 +3375,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="CHD_Form009_Summary" version="20261014021138" prefix="J1!CHD_Form009_Summary!" delimiter="#">
+        <data id="CHD_Form009_Summary" version="20261014221708" prefix="J1!CHD_Form009_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -3018,6 +3459,22 @@
           <_result_urgent_referral/>
           <has_positive_condition/>
           <child_weight_num/>
+          <qty_amoxicillin_suspension/>
+          <qty_paracetamol_syrup/>
+          <qty_salbutamol_syrup/>
+          <qty_ciprofloxacin_suspension/>
+          <qty_cloxacillin_suspension/>
+          <qty_ors/>
+          <qty_zinc_tablets/>
+          <qty_litacid_gel/>
+          <qty_triple_antibiotic/>
+          <qty_antifungal_cream/>
+          <qty_griseofulvin_tabs/>
+          <qty_calamine_lotion/>
+          <qty_benzyl_benzoate/>
+          <qty_iron_folic_acid/>
+          <qty_albendazole/>
+          <qty_vitamin_a/>
           <summary_header>
             <summary_overview/>
             <summary_instructions/>
@@ -3066,154 +3523,174 @@
             <sev_pneu_notification/>
             <sev_pneu_protocol/>
             <sev_pneu_counseling/>
+            <confirm_amoxicillin_suspension_sev_pneu/>
+            <_data_amoxicillin_suspension_sev_pneu_distributed/>
+            <confirm_paracetamol_syrup_sev_pneu/>
+            <_data_paracetamol_syrup_sev_pneu_distributed/>
+            <sev_pneu_med_not_confirmed_reason/>
             <sev_pneu_notes/>
           </grp_severe_pneumonia>
           <grp_pneumonia>
             <pneu_notification/>
             <pneu_protocol/>
             <pneu_counseling/>
+            <confirm_amoxicillin_suspension_pneu/>
+            <_data_amoxicillin_suspension_pneu_distributed/>
+            <confirm_salbutamol_syrup_pneu/>
+            <_data_salbutamol_syrup_pneu_distributed/>
+            <pneu_med_not_confirmed_reason/>
             <pneu_notes/>
           </grp_pneumonia>
           <grp_cough_or_cold>
             <cough_cold_notification/>
             <cough_cold_protocol/>
             <cough_cold_counseling/>
+            <confirm_paracetamol_syrup_cough_cold/>
+            <_data_paracetamol_syrup_cough_cold_distributed/>
+            <cough_cold_med_not_confirmed_reason/>
             <cough_cold_notes/>
           </grp_cough_or_cold>
           <grp_tonsillitis>
             <tonsillitis_notification/>
             <tonsillitis_protocol/>
             <tonsillitis_counseling/>
+            <confirm_amoxicillin_suspension_tonsillitis/>
+            <_data_amoxicillin_suspension_tonsillitis_distributed/>
+            <confirm_paracetamol_syrup_tonsillitis/>
+            <_data_paracetamol_syrup_tonsillitis_distributed/>
+            <tonsillitis_med_not_confirmed_reason/>
             <tonsillitis_notes/>
           </grp_tonsillitis>
           <grp_flu_like>
             <flu_notification/>
             <flu_protocol/>
             <flu_counseling/>
+            <confirm_paracetamol_syrup_flu_like/>
+            <_data_paracetamol_syrup_flu_like_distributed/>
+            <flu_med_not_confirmed_reason/>
             <flu_notes/>
           </grp_flu_like>
           <grp_severe_dehydration>
             <sev_dehyd_notification/>
             <sev_dehyd_protocol/>
             <sev_dehyd_counseling/>
+            <confirm_ors_sev_dehyd/>
+            <_data_ors_sev_dehyd_distributed/>
+            <sev_dehyd_med_not_confirmed_reason/>
             <sev_dehyd_notes/>
           </grp_severe_dehydration>
           <grp_some_dehydration>
             <some_dehyd_notification/>
             <some_dehyd_protocol/>
             <some_dehyd_counseling/>
+            <confirm_ors_some_dehyd/>
+            <_data_ors_some_dehyd_distributed/>
+            <confirm_zinc_tablets_some_dehyd/>
+            <_data_zinc_tablets_some_dehyd_distributed/>
+            <some_dehyd_med_not_confirmed_reason/>
             <some_dehyd_notes/>
           </grp_some_dehydration>
           <grp_no_dehydration>
             <no_dehyd_notification/>
             <no_dehyd_protocol/>
             <no_dehyd_counseling/>
+            <confirm_ors_no_dehyd/>
+            <_data_ors_no_dehyd_distributed/>
+            <confirm_zinc_tablets_no_dehyd/>
+            <_data_zinc_tablets_no_dehyd_distributed/>
+            <no_dehyd_med_not_confirmed_reason/>
             <no_dehyd_notes/>
           </grp_no_dehydration>
           <grp_persistent_diarrhea>
             <pers_diarrhea_notification/>
             <pers_diarrhea_protocol/>
             <pers_diarrhea_counseling/>
+            <confirm_ors_pers_diarrhea/>
+            <_data_ors_pers_diarrhea_distributed/>
+            <pers_diarrhea_med_not_confirmed_reason/>
             <pers_diarrhea_notes/>
           </grp_persistent_diarrhea>
           <grp_dysentery>
             <dysentery_notification/>
             <dysentery_protocol/>
             <dysentery_counseling/>
+            <confirm_ciprofloxacin_suspension_dysentery/>
+            <_data_ciprofloxacin_suspension_dysentery_distributed/>
+            <confirm_ors_dysentery/>
+            <_data_ors_dysentery_distributed/>
+            <dysentery_med_not_confirmed_reason/>
             <dysentery_notes/>
           </grp_dysentery>
           <grp_gastritis>
             <gastritis_notification/>
             <gastritis_protocol/>
             <gastritis_counseling/>
+            <confirm_litacid_gel_gastritis/>
+            <_data_litacid_gel_gastritis_distributed/>
+            <confirm_ors_gastritis/>
+            <_data_ors_gastritis_distributed/>
+            <gastritis_med_not_confirmed_reason/>
             <gastritis_notes/>
           </grp_gastritis>
           <grp_cholera>
             <cholera_notification/>
             <cholera_protocol/>
             <cholera_counseling/>
+            <confirm_ors_cholera/>
+            <_data_ors_cholera_distributed/>
+            <cholera_med_not_confirmed_reason/>
             <cholera_notes/>
           </grp_cholera>
           <grp_impetigo>
             <impetigo_notification/>
             <impetigo_protocol/>
             <impetigo_counseling/>
+            <confirm_triple_antibiotic_impetigo/>
+            <_data_triple_antibiotic_impetigo_distributed/>
+            <confirm_cloxacillin_suspension_impetigo/>
+            <_data_cloxacillin_suspension_impetigo_distributed/>
+            <impetigo_med_not_confirmed_reason/>
             <impetigo_notes/>
           </grp_impetigo>
           <grp_ringworm>
             <ringworm_notification/>
             <ringworm_protocol/>
             <ringworm_counseling/>
+            <confirm_antifungal_cream_ringworm/>
+            <_data_antifungal_cream_ringworm_distributed/>
+            <confirm_griseofulvin_tabs_ringworm/>
+            <_data_griseofulvin_tabs_ringworm_distributed/>
+            <ringworm_med_not_confirmed_reason/>
             <ringworm_notes/>
           </grp_ringworm>
           <grp_scabies>
             <scabies_notification/>
             <scabies_protocol/>
             <scabies_counseling/>
+            <confirm_calamine_lotion_scabies/>
+            <_data_calamine_lotion_scabies_distributed/>
+            <confirm_benzyl_benzoate_scabies/>
+            <_data_benzyl_benzoate_scabies_distributed/>
+            <scabies_med_not_confirmed_reason/>
             <scabies_notes/>
           </grp_scabies>
           <grp_malnutrition_anemia>
             <malnutrition_notification/>
             <malnutrition_protocol/>
             <malnutrition_counseling/>
+            <confirm_iron_folic_acid_malnutrition/>
+            <_data_iron_folic_acid_malnutrition_distributed/>
+            <confirm_albendazole_dewormer_malnutrition/>
+            <_data_albendazole_malnutrition_distributed/>
+            <confirm_vitamin_a_malnutrition/>
+            <_data_vitamin_a_malnutrition_distributed/>
+            <malnutrition_med_not_confirmed_reason/>
             <malnutrition_notes/>
           </grp_malnutrition_anemia>
-          <qty_amoxicillin_suspension/>
-          <qty_paracetamol_syrup/>
-          <qty_salbutamol_syrup/>
-          <qty_ciprofloxacin_suspension/>
-          <qty_cloxacillin_suspension/>
-          <qty_ors/>
-          <qty_zinc_tablets/>
-          <qty_litacid_gel/>
-          <qty_triple_antibiotic/>
-          <qty_antifungal_cream/>
-          <qty_griseofulvin_tabs/>
-          <qty_calamine_lotion/>
-          <qty_benzyl_benzoate/>
-          <qty_iron_folic_acid/>
-          <qty_albendazole/>
-          <qty_vitamin_a/>
-          <grp_pediatric_medication>
-            <confirm_amoxicillin_suspension/>
-            <confirm_paracetamol_syrup/>
-            <confirm_salbutamol_syrup/>
-            <confirm_ors/>
-            <confirm_zinc_tablets/>
-            <confirm_ciprofloxacin_suspension/>
-            <confirm_litacid_gel/>
-            <confirm_cloxacillin_suspension/>
-            <confirm_triple_antibiotic/>
-            <confirm_antifungal_cream/>
-            <confirm_griseofulvin_tabs/>
-            <confirm_calamine_lotion/>
-            <confirm_benzyl_benzoate/>
-            <confirm_iron_folic_acid/>
-            <confirm_albendazole_dewormer/>
-            <confirm_vitamin_a/>
-            <ped_med_not_confirmed_reason/>
-            <ped_med_notes/>
-          </grp_pediatric_medication>
           <referrals>
             <referral_location/>
             <referral_location_other/>
           </referrals>
-          <_data_amoxicillin_suspension_distributed/>
-          <_data_paracetamol_syrup_distributed/>
-          <_data_salbutamol_syrup_distributed/>
-          <_data_ors_distributed/>
-          <_data_zinc_tablets_distributed/>
-          <_data_ciprofloxacin_suspension_distributed/>
-          <_data_litacid_gel_distributed/>
-          <_data_cloxacillin_suspension_distributed/>
-          <_data_triple_antibiotic_distributed/>
-          <_data_antifungal_cream_distributed/>
-          <_data_griseofulvin_tabs_distributed/>
-          <_data_calamine_lotion_distributed/>
-          <_data_benzyl_benzoate_distributed/>
-          <_data_iron_folic_acid_distributed/>
-          <_data_albendazole_distributed/>
-          <_data_vitamin_a_distributed/>
           <total_amoxicillin_suspension/>
           <total_paracetamol_syrup/>
           <total_salbutamol_syrup/>
@@ -3419,6 +3896,22 @@
       <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_severe_pneumonia  = 'true' or  /data/_result_severe_dehydration  = 'true' or  /data/_calc_severe_dehydration  = 'true' or  /data/_result_persistent_diarrhea  = 'true' or  /data/_calc_persistent_diarrhea  = 'true' or  /data/_result_cholera  = 'true' or  /data/_calc_cholera  = 'true' or  /data/_result_severe_malnutrition_anemia  = 'true' or  /data/_result_severe_anemia  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_cough_or_cold  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true' or  /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true' or  /data/_result_impetigo  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_moderate_anemia  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/child_weight_num" type="string" calculate="if( /data/_child_weight  != '' and number( /data/_child_weight ) &gt; 0, number( /data/_child_weight ), 10)"/>
+      <bind nodeset="/data/qty_amoxicillin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 10, 50, if( /data/child_weight_num  &lt; 15, 100, 150))"/>
+      <bind nodeset="/data/qty_paracetamol_syrup" type="string" calculate="if( /data/child_weight_num  &lt; 6, 15, if( /data/child_weight_num  &lt; 10, 30, if( /data/child_weight_num  &lt; 14, 45, 60)))"/>
+      <bind nodeset="/data/qty_salbutamol_syrup" type="string" calculate="if( /data/child_weight_num  &lt; 6, 15, if( /data/child_weight_num  &lt; 10, 30, if( /data/child_weight_num  &lt; 14, 40, 60)))"/>
+      <bind nodeset="/data/qty_ciprofloxacin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 8, 12, if( /data/child_weight_num  &lt; 15, 18, 30))"/>
+      <bind nodeset="/data/qty_cloxacillin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 10, 40, if( /data/child_weight_num  &lt; 15, 60, 75))"/>
+      <bind nodeset="/data/qty_ors" type="string" calculate="3"/>
+      <bind nodeset="/data/qty_zinc_tablets" type="string" calculate="10"/>
+      <bind nodeset="/data/qty_litacid_gel" type="string" calculate="1"/>
+      <bind nodeset="/data/qty_triple_antibiotic" type="string" calculate="1"/>
+      <bind nodeset="/data/qty_antifungal_cream" type="string" calculate="1"/>
+      <bind nodeset="/data/qty_griseofulvin_tabs" type="string" calculate="84"/>
+      <bind nodeset="/data/qty_calamine_lotion" type="string" calculate="1"/>
+      <bind nodeset="/data/qty_benzyl_benzoate" type="string" calculate="1"/>
+      <bind nodeset="/data/qty_iron_folic_acid" type="string" calculate="14"/>
+      <bind nodeset="/data/qty_albendazole" type="string" calculate="if( /data/patient_age_in_months  &gt;= 24, 1, 0.5)"/>
+      <bind nodeset="/data/qty_vitamin_a" type="string" constraint="," jr:constraintMsg="jr:itext('/data/qty_vitamin_a:jr:constraintMsg')" calculate="1"/>
       <bind nodeset="/data/summary_header/summary_overview" readonly="true()" type="string"/>
       <bind nodeset="/data/summary_header/summary_instructions" readonly="true()" type="string"/>
       <bind nodeset="/data/summary_header/res_severe_pneumonia" readonly="true()" type="string" relevant=" /data/_result_severe_pneumonia  = 'true'"/>
@@ -3465,152 +3958,173 @@
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu" type="string"/>
+      <bind nodeset="/data/grp_severe_pneumonia/_data_amoxicillin_suspension_sev_pneu_distributed" type="string" calculate="if(selected( /data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu , 'confirmation'),  /data/qty_amoxicillin_suspension , 0)"/>
+      <bind nodeset="/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu" type="string"/>
+      <bind nodeset="/data/grp_severe_pneumonia/_data_paracetamol_syrup_sev_pneu_distributed" type="string" calculate="if(selected( /data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu , 'confirmation'),  /data/qty_paracetamol_syrup , 0)"/>
+      <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu , 'confirmation')) or not(selected( /data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu , 'confirmation'))"/>
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_notes" type="string"/>
       <bind nodeset="/data/grp_pneumonia" relevant=" /data/_result_pneumonia  = 'true'"/>
       <bind nodeset="/data/grp_pneumonia/pneu_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_pneumonia/pneu_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_pneumonia/pneu_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu" type="string"/>
+      <bind nodeset="/data/grp_pneumonia/_data_amoxicillin_suspension_pneu_distributed" type="string" calculate="if(selected( /data/grp_pneumonia/confirm_amoxicillin_suspension_pneu , 'confirmation'),  /data/qty_amoxicillin_suspension , 0)"/>
+      <bind nodeset="/data/grp_pneumonia/confirm_salbutamol_syrup_pneu" type="string"/>
+      <bind nodeset="/data/grp_pneumonia/_data_salbutamol_syrup_pneu_distributed" type="string" calculate="if(selected( /data/grp_pneumonia/confirm_salbutamol_syrup_pneu , 'confirmation'),  /data/qty_salbutamol_syrup , 0)"/>
+      <bind nodeset="/data/grp_pneumonia/pneu_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_pneumonia/confirm_amoxicillin_suspension_pneu , 'confirmation'))"/>
       <bind nodeset="/data/grp_pneumonia/pneu_notes" type="string"/>
       <bind nodeset="/data/grp_cough_or_cold" relevant=" /data/_result_cough_or_cold  = 'true'"/>
       <bind nodeset="/data/grp_cough_or_cold/cough_cold_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_cough_or_cold/cough_cold_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_cough_or_cold/cough_cold_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold" type="string"/>
+      <bind nodeset="/data/grp_cough_or_cold/_data_paracetamol_syrup_cough_cold_distributed" type="string" calculate="if(selected( /data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold , 'confirmation'),  /data/qty_paracetamol_syrup , 0)"/>
+      <bind nodeset="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold , 'confirmation'))"/>
       <bind nodeset="/data/grp_cough_or_cold/cough_cold_notes" type="string"/>
       <bind nodeset="/data/grp_tonsillitis" relevant=" /data/_result_tonsillitis  = 'true'"/>
       <bind nodeset="/data/grp_tonsillitis/tonsillitis_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_tonsillitis/tonsillitis_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_tonsillitis/tonsillitis_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis" type="string"/>
+      <bind nodeset="/data/grp_tonsillitis/_data_amoxicillin_suspension_tonsillitis_distributed" type="string" calculate="if(selected( /data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis , 'confirmation'),  /data/qty_amoxicillin_suspension , 0)"/>
+      <bind nodeset="/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis" type="string"/>
+      <bind nodeset="/data/grp_tonsillitis/_data_paracetamol_syrup_tonsillitis_distributed" type="string" calculate="if(selected( /data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis , 'confirmation'),  /data/qty_paracetamol_syrup , 0)"/>
+      <bind nodeset="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis , 'confirmation')) or not(selected( /data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis , 'confirmation'))"/>
       <bind nodeset="/data/grp_tonsillitis/tonsillitis_notes" type="string"/>
       <bind nodeset="/data/grp_flu_like" relevant=" /data/_result_flu_like_syndrome  = 'true'"/>
       <bind nodeset="/data/grp_flu_like/flu_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_flu_like/flu_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_flu_like/flu_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_flu_like/confirm_paracetamol_syrup_flu_like" type="string"/>
+      <bind nodeset="/data/grp_flu_like/_data_paracetamol_syrup_flu_like_distributed" type="string" calculate="if(selected( /data/grp_flu_like/confirm_paracetamol_syrup_flu_like , 'confirmation'),  /data/qty_paracetamol_syrup , 0)"/>
+      <bind nodeset="/data/grp_flu_like/flu_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_flu_like/confirm_paracetamol_syrup_flu_like , 'confirmation'))"/>
       <bind nodeset="/data/grp_flu_like/flu_notes" type="string"/>
       <bind nodeset="/data/grp_severe_dehydration" relevant=" /data/_result_severe_dehydration  = 'true' or  /data/_calc_severe_dehydration  = 'true'"/>
       <bind nodeset="/data/grp_severe_dehydration/sev_dehyd_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_severe_dehydration/sev_dehyd_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_severe_dehydration/sev_dehyd_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_dehydration/confirm_ors_sev_dehyd" type="string"/>
+      <bind nodeset="/data/grp_severe_dehydration/_data_ors_sev_dehyd_distributed" type="string" calculate="if(selected( /data/grp_severe_dehydration/confirm_ors_sev_dehyd , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_severe_dehydration/confirm_ors_sev_dehyd , 'confirmation'))"/>
       <bind nodeset="/data/grp_severe_dehydration/sev_dehyd_notes" type="string"/>
       <bind nodeset="/data/grp_some_dehydration" relevant=" /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true'"/>
       <bind nodeset="/data/grp_some_dehydration/some_dehyd_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_some_dehydration/some_dehyd_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_some_dehydration/some_dehyd_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_some_dehydration/confirm_ors_some_dehyd" type="string"/>
+      <bind nodeset="/data/grp_some_dehydration/_data_ors_some_dehyd_distributed" type="string" calculate="if(selected( /data/grp_some_dehydration/confirm_ors_some_dehyd , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd" type="string"/>
+      <bind nodeset="/data/grp_some_dehydration/_data_zinc_tablets_some_dehyd_distributed" type="string" calculate="if(selected( /data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd , 'confirmation'),  /data/qty_zinc_tablets , 0)"/>
+      <bind nodeset="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_some_dehydration/confirm_ors_some_dehyd , 'confirmation')) or not(selected( /data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd , 'confirmation'))"/>
       <bind nodeset="/data/grp_some_dehydration/some_dehyd_notes" type="string"/>
       <bind nodeset="/data/grp_no_dehydration" relevant=" /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true'"/>
       <bind nodeset="/data/grp_no_dehydration/no_dehyd_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_no_dehydration/no_dehyd_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_no_dehydration/no_dehyd_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_no_dehydration/confirm_ors_no_dehyd" type="string"/>
+      <bind nodeset="/data/grp_no_dehydration/_data_ors_no_dehyd_distributed" type="string" calculate="if(selected( /data/grp_no_dehydration/confirm_ors_no_dehyd , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd" type="string"/>
+      <bind nodeset="/data/grp_no_dehydration/_data_zinc_tablets_no_dehyd_distributed" type="string" calculate="if(selected( /data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd , 'confirmation'),  /data/qty_zinc_tablets , 0)"/>
+      <bind nodeset="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_no_dehydration/confirm_ors_no_dehyd , 'confirmation')) or not(selected( /data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd , 'confirmation'))"/>
       <bind nodeset="/data/grp_no_dehydration/no_dehyd_notes" type="string"/>
       <bind nodeset="/data/grp_persistent_diarrhea" relevant=" /data/_result_persistent_diarrhea  = 'true' or  /data/_calc_persistent_diarrhea  = 'true'"/>
       <bind nodeset="/data/grp_persistent_diarrhea/pers_diarrhea_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_persistent_diarrhea/pers_diarrhea_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_persistent_diarrhea/pers_diarrhea_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea" type="string"/>
+      <bind nodeset="/data/grp_persistent_diarrhea/_data_ors_pers_diarrhea_distributed" type="string" calculate="if(selected( /data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea , 'confirmation'))"/>
       <bind nodeset="/data/grp_persistent_diarrhea/pers_diarrhea_notes" type="string"/>
       <bind nodeset="/data/grp_dysentery" relevant=" /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true'"/>
       <bind nodeset="/data/grp_dysentery/dysentery_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_dysentery/dysentery_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_dysentery/dysentery_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery" type="string"/>
+      <bind nodeset="/data/grp_dysentery/_data_ciprofloxacin_suspension_dysentery_distributed" type="string" calculate="if(selected( /data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery , 'confirmation'),  /data/qty_ciprofloxacin_suspension , 0)"/>
+      <bind nodeset="/data/grp_dysentery/confirm_ors_dysentery" type="string"/>
+      <bind nodeset="/data/grp_dysentery/_data_ors_dysentery_distributed" type="string" calculate="if(selected( /data/grp_dysentery/confirm_ors_dysentery , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_dysentery/dysentery_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery , 'confirmation')) or not(selected( /data/grp_dysentery/confirm_ors_dysentery , 'confirmation'))"/>
       <bind nodeset="/data/grp_dysentery/dysentery_notes" type="string"/>
       <bind nodeset="/data/grp_gastritis" relevant=" /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true'"/>
       <bind nodeset="/data/grp_gastritis/gastritis_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_gastritis/gastritis_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_gastritis/gastritis_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_gastritis/confirm_litacid_gel_gastritis" type="string"/>
+      <bind nodeset="/data/grp_gastritis/_data_litacid_gel_gastritis_distributed" type="string" calculate="if(selected( /data/grp_gastritis/confirm_litacid_gel_gastritis , 'confirmation'),  /data/qty_litacid_gel , 0)"/>
+      <bind nodeset="/data/grp_gastritis/confirm_ors_gastritis" type="string"/>
+      <bind nodeset="/data/grp_gastritis/_data_ors_gastritis_distributed" type="string" calculate="if(selected( /data/grp_gastritis/confirm_ors_gastritis , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_gastritis/gastritis_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_gastritis/confirm_litacid_gel_gastritis , 'confirmation')) or not(selected( /data/grp_gastritis/confirm_ors_gastritis , 'confirmation'))"/>
       <bind nodeset="/data/grp_gastritis/gastritis_notes" type="string"/>
       <bind nodeset="/data/grp_cholera" relevant=" /data/_result_cholera  = 'true' or  /data/_calc_cholera  = 'true'"/>
       <bind nodeset="/data/grp_cholera/cholera_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_cholera/cholera_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_cholera/cholera_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_cholera/confirm_ors_cholera" type="string"/>
+      <bind nodeset="/data/grp_cholera/_data_ors_cholera_distributed" type="string" calculate="if(selected( /data/grp_cholera/confirm_ors_cholera , 'confirmation'),  /data/qty_ors , 0)"/>
+      <bind nodeset="/data/grp_cholera/cholera_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_cholera/confirm_ors_cholera , 'confirmation'))"/>
       <bind nodeset="/data/grp_cholera/cholera_notes" type="string"/>
       <bind nodeset="/data/grp_impetigo" relevant=" /data/_result_impetigo  = 'true'"/>
       <bind nodeset="/data/grp_impetigo/impetigo_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_impetigo/impetigo_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_impetigo/impetigo_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_impetigo/confirm_triple_antibiotic_impetigo" type="string"/>
+      <bind nodeset="/data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed" type="string" calculate="if(selected( /data/grp_impetigo/confirm_triple_antibiotic_impetigo , 'confirmation'),  /data/qty_triple_antibiotic , 0)"/>
+      <bind nodeset="/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo" type="string"/>
+      <bind nodeset="/data/grp_impetigo/_data_cloxacillin_suspension_impetigo_distributed" type="string" calculate="if(selected( /data/grp_impetigo/confirm_cloxacillin_suspension_impetigo , 'confirmation'),  /data/qty_cloxacillin_suspension , 0)"/>
+      <bind nodeset="/data/grp_impetigo/impetigo_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_impetigo/confirm_triple_antibiotic_impetigo , 'confirmation'))"/>
       <bind nodeset="/data/grp_impetigo/impetigo_notes" type="string"/>
       <bind nodeset="/data/grp_ringworm" relevant=" /data/_result_ring_worm  = 'true'"/>
       <bind nodeset="/data/grp_ringworm/ringworm_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_ringworm/ringworm_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_ringworm/ringworm_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_ringworm/confirm_antifungal_cream_ringworm" type="string"/>
+      <bind nodeset="/data/grp_ringworm/_data_antifungal_cream_ringworm_distributed" type="string" calculate="if(selected( /data/grp_ringworm/confirm_antifungal_cream_ringworm , 'confirmation'),  /data/qty_antifungal_cream , 0)"/>
+      <bind nodeset="/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm" type="string" relevant=" /data/patient_age_in_years  &gt;= 2"/>
+      <bind nodeset="/data/grp_ringworm/_data_griseofulvin_tabs_ringworm_distributed" type="string" calculate="if(selected( /data/grp_ringworm/confirm_griseofulvin_tabs_ringworm , 'confirmation'),  /data/qty_griseofulvin_tabs , 0)"/>
+      <bind nodeset="/data/grp_ringworm/ringworm_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_ringworm/confirm_antifungal_cream_ringworm , 'confirmation'))"/>
       <bind nodeset="/data/grp_ringworm/ringworm_notes" type="string"/>
       <bind nodeset="/data/grp_scabies" relevant=" /data/_result_scabies  = 'true'"/>
       <bind nodeset="/data/grp_scabies/scabies_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_scabies/scabies_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_scabies/scabies_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_scabies/confirm_calamine_lotion_scabies" type="string"/>
+      <bind nodeset="/data/grp_scabies/_data_calamine_lotion_scabies_distributed" type="string" calculate="if(selected( /data/grp_scabies/confirm_calamine_lotion_scabies , 'confirmation'),  /data/qty_calamine_lotion , 0)"/>
+      <bind nodeset="/data/grp_scabies/confirm_benzyl_benzoate_scabies" type="string"/>
+      <bind nodeset="/data/grp_scabies/_data_benzyl_benzoate_scabies_distributed" type="string" calculate="if(selected( /data/grp_scabies/confirm_benzyl_benzoate_scabies , 'confirmation'),  /data/qty_benzyl_benzoate , 0)"/>
+      <bind nodeset="/data/grp_scabies/scabies_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_scabies/confirm_calamine_lotion_scabies , 'confirmation')) or not(selected( /data/grp_scabies/confirm_benzyl_benzoate_scabies , 'confirmation'))"/>
       <bind nodeset="/data/grp_scabies/scabies_notes" type="string"/>
       <bind nodeset="/data/grp_malnutrition_anemia" relevant=" /data/_result_severe_malnutrition_anemia  = 'true' or  /data/_result_severe_anemia  = 'true' or  /data/_result_moderate_anemia  = 'true'"/>
       <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true'"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation'),  /data/qty_iron_folic_acid , 0)"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 12"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation'),  /data/qty_albendazole , 0)"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 6"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition , 'confirmation'),  /data/qty_vitamin_a , 0)"/>
+      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason" type="string" required="true()" relevant=" /data/_result_moderate_anemia  = 'true' and not(selected( /data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation'))"/>
       <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_notes" type="string"/>
-      <bind nodeset="/data/qty_amoxicillin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 10, 50, if( /data/child_weight_num  &lt; 15, 100, 150))"/>
-      <bind nodeset="/data/qty_paracetamol_syrup" type="string" calculate="if( /data/child_weight_num  &lt; 6, 15, if( /data/child_weight_num  &lt; 10, 30, if( /data/child_weight_num  &lt; 14, 45, 60)))"/>
-      <bind nodeset="/data/qty_salbutamol_syrup" type="string" calculate="if( /data/child_weight_num  &lt; 6, 15, if( /data/child_weight_num  &lt; 10, 30, if( /data/child_weight_num  &lt; 14, 40, 60)))"/>
-      <bind nodeset="/data/qty_ciprofloxacin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 8, 12, if( /data/child_weight_num  &lt; 15, 18, 30))"/>
-      <bind nodeset="/data/qty_cloxacillin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 10, 40, if( /data/child_weight_num  &lt; 15, 60, 75))"/>
-      <bind nodeset="/data/qty_ors" type="string" calculate="3"/>
-      <bind nodeset="/data/qty_zinc_tablets" type="string" calculate="10"/>
-      <bind nodeset="/data/qty_litacid_gel" type="string" calculate="1"/>
-      <bind nodeset="/data/qty_triple_antibiotic" type="string" calculate="1"/>
-      <bind nodeset="/data/qty_antifungal_cream" type="string" calculate="1"/>
-      <bind nodeset="/data/qty_griseofulvin_tabs" type="string" calculate="84"/>
-      <bind nodeset="/data/qty_calamine_lotion" type="string" calculate="1"/>
-      <bind nodeset="/data/qty_benzyl_benzoate" type="string" calculate="1"/>
-      <bind nodeset="/data/qty_iron_folic_acid" type="string" calculate="14"/>
-      <bind nodeset="/data/qty_albendazole" type="string" calculate="if( /data/patient_age_in_months  &gt;= 24, 1, 0.5)"/>
-      <bind nodeset="/data/qty_vitamin_a" type="string" calculate="1"/>
-      <bind nodeset="/data/grp_pediatric_medication" relevant=" /data/has_positive_condition  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_amoxicillin_suspension" type="string" relevant=" /data/_result_severe_pneumonia  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_tonsillitis  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_paracetamol_syrup" type="string" relevant=" /data/_result_severe_pneumonia  = 'true' or  /data/_result_cough_or_cold  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_flu_like_syndrome  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_salbutamol_syrup" type="string" relevant=" /data/_result_pneumonia  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_ors" type="string" relevant=" /data/_result_severe_dehydration  = 'true' or  /data/_calc_severe_dehydration  = 'true' or  /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true' or  /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true' or  /data/_result_persistent_diarrhea  = 'true' or  /data/_calc_persistent_diarrhea  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true' or  /data/_result_cholera  = 'true' or  /data/_calc_cholera  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_zinc_tablets" type="string" relevant=" /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true' or  /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension" type="string" relevant=" /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_litacid_gel" type="string" relevant=" /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_cloxacillin_suspension" type="string" relevant=" /data/_result_impetigo  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_triple_antibiotic" type="string" relevant=" /data/_result_impetigo  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_antifungal_cream" type="string" relevant=" /data/_result_ring_worm  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_griseofulvin_tabs" type="string" relevant=" /data/_result_ring_worm  = 'true' and  /data/patient_age_in_years  &gt;= 2"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_calamine_lotion" type="string" relevant=" /data/_result_scabies  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_benzyl_benzoate" type="string" relevant=" /data/_result_scabies  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_iron_folic_acid" type="string" relevant=" /data/_result_moderate_anemia  = 'true'"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_albendazole_dewormer" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 12"/>
-      <bind nodeset="/data/grp_pediatric_medication/confirm_vitamin_a" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 6"/>
-      <bind nodeset="/data/grp_pediatric_medication/ped_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_pediatric_medication/confirm_amoxicillin_suspension , 'confirmation')) or not(selected( /data/grp_pediatric_medication/confirm_paracetamol_syrup , 'confirmation')) or not(selected( /data/grp_pediatric_medication/confirm_ors , 'confirmation'))"/>
-      <bind nodeset="/data/grp_pediatric_medication/ped_med_notes" type="string"/>
       <bind nodeset="/data/referrals" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/referrals/referral_location" type="string" required="true()"/>
       <bind nodeset="/data/referrals/referral_location_other" type="string" required="true()" relevant="selected( /data/referrals/referral_location , 'other')"/>
-      <bind nodeset="/data/_data_amoxicillin_suspension_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_amoxicillin_suspension , 'confirmation'),  /data/qty_amoxicillin_suspension , 0)"/>
-      <bind nodeset="/data/_data_paracetamol_syrup_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_paracetamol_syrup , 'confirmation'),  /data/qty_paracetamol_syrup , 0)"/>
-      <bind nodeset="/data/_data_salbutamol_syrup_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_salbutamol_syrup , 'confirmation'),  /data/qty_salbutamol_syrup , 0)"/>
-      <bind nodeset="/data/_data_ors_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_ors , 'confirmation'),  /data/qty_ors , 0)"/>
-      <bind nodeset="/data/_data_zinc_tablets_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_zinc_tablets , 'confirmation'),  /data/qty_zinc_tablets , 0)"/>
-      <bind nodeset="/data/_data_ciprofloxacin_suspension_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_ciprofloxacin_suspension , 'confirmation'),  /data/qty_ciprofloxacin_suspension , 0)"/>
-      <bind nodeset="/data/_data_litacid_gel_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_litacid_gel , 'confirmation'),  /data/qty_litacid_gel , 0)"/>
-      <bind nodeset="/data/_data_cloxacillin_suspension_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_cloxacillin_suspension , 'confirmation'),  /data/qty_cloxacillin_suspension , 0)"/>
-      <bind nodeset="/data/_data_triple_antibiotic_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_triple_antibiotic , 'confirmation'),  /data/qty_triple_antibiotic , 0)"/>
-      <bind nodeset="/data/_data_antifungal_cream_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_antifungal_cream , 'confirmation'),  /data/qty_antifungal_cream , 0)"/>
-      <bind nodeset="/data/_data_griseofulvin_tabs_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_griseofulvin_tabs , 'confirmation'),  /data/qty_griseofulvin_tabs , 0)"/>
-      <bind nodeset="/data/_data_calamine_lotion_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_calamine_lotion , 'confirmation'),  /data/qty_calamine_lotion , 0)"/>
-      <bind nodeset="/data/_data_benzyl_benzoate_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_benzyl_benzoate , 'confirmation'),  /data/qty_benzyl_benzoate , 0)"/>
-      <bind nodeset="/data/_data_iron_folic_acid_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_iron_folic_acid , 'confirmation'),  /data/qty_iron_folic_acid , 0)"/>
-      <bind nodeset="/data/_data_albendazole_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_albendazole_dewormer , 'confirmation'),  /data/qty_albendazole , 0)"/>
-      <bind nodeset="/data/_data_vitamin_a_distributed" type="string" calculate="if(selected( /data/grp_pediatric_medication/confirm_vitamin_a , 'confirmation'),  /data/qty_vitamin_a , 0)"/>
-      <bind nodeset="/data/total_amoxicillin_suspension" type="string" calculate=" /data/_data_amoxicillin_suspension_distributed "/>
-      <bind nodeset="/data/total_paracetamol_syrup" type="string" calculate=" /data/_data_paracetamol_syrup_distributed "/>
-      <bind nodeset="/data/total_salbutamol_syrup" type="string" calculate=" /data/_data_salbutamol_syrup_distributed "/>
-      <bind nodeset="/data/total_ors" type="string" calculate=" /data/_data_ors_distributed "/>
-      <bind nodeset="/data/total_zinc_tablets" type="string" calculate=" /data/_data_zinc_tablets_distributed "/>
-      <bind nodeset="/data/total_ciprofloxacin_suspension" type="string" calculate=" /data/_data_ciprofloxacin_suspension_distributed "/>
-      <bind nodeset="/data/total_litacid_gel" type="string" calculate=" /data/_data_litacid_gel_distributed "/>
-      <bind nodeset="/data/total_cloxacillin_suspension" type="string" calculate=" /data/_data_cloxacillin_suspension_distributed "/>
-      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate=" /data/_data_triple_antibiotic_distributed "/>
-      <bind nodeset="/data/total_antifungal_cream" type="string" calculate=" /data/_data_antifungal_cream_distributed "/>
-      <bind nodeset="/data/total_griseofulvin_tabs" type="string" calculate=" /data/_data_griseofulvin_tabs_distributed "/>
-      <bind nodeset="/data/total_calamine_lotion" type="string" calculate=" /data/_data_calamine_lotion_distributed "/>
-      <bind nodeset="/data/total_benzyl_benzoate" type="string" calculate=" /data/_data_benzyl_benzoate_distributed "/>
-      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/_data_iron_folic_acid_distributed "/>
-      <bind nodeset="/data/total_albendazole" type="string" calculate=" /data/_data_albendazole_distributed "/>
-      <bind nodeset="/data/total_vitamin_a" type="string" calculate=" /data/_data_vitamin_a_distributed "/>
+      <bind nodeset="/data/total_amoxicillin_suspension" type="string" calculate=" /data/grp_severe_pneumonia/_data_amoxicillin_suspension_sev_pneu_distributed  +  /data/grp_pneumonia/_data_amoxicillin_suspension_pneu_distributed  +  /data/grp_tonsillitis/_data_amoxicillin_suspension_tonsillitis_distributed "/>
+      <bind nodeset="/data/total_paracetamol_syrup" type="string" calculate=" /data/grp_severe_pneumonia/_data_paracetamol_syrup_sev_pneu_distributed  +  /data/grp_cough_or_cold/_data_paracetamol_syrup_cough_cold_distributed  +  /data/grp_tonsillitis/_data_paracetamol_syrup_tonsillitis_distributed  +  /data/grp_flu_like/_data_paracetamol_syrup_flu_like_distributed "/>
+      <bind nodeset="/data/total_salbutamol_syrup" type="string" calculate=" /data/grp_pneumonia/_data_salbutamol_syrup_pneu_distributed "/>
+      <bind nodeset="/data/total_ors" type="string" calculate=" /data/grp_severe_dehydration/_data_ors_sev_dehyd_distributed  +  /data/grp_some_dehydration/_data_ors_some_dehyd_distributed  +  /data/grp_no_dehydration/_data_ors_no_dehyd_distributed  +  /data/grp_persistent_diarrhea/_data_ors_pers_diarrhea_distributed  +  /data/grp_dysentery/_data_ors_dysentery_distributed  +  /data/grp_gastritis/_data_ors_gastritis_distributed  +  /data/grp_cholera/_data_ors_cholera_distributed "/>
+      <bind nodeset="/data/total_zinc_tablets" type="string" calculate=" /data/grp_some_dehydration/_data_zinc_tablets_some_dehyd_distributed  +  /data/grp_no_dehydration/_data_zinc_tablets_no_dehyd_distributed "/>
+      <bind nodeset="/data/total_ciprofloxacin_suspension" type="string" calculate=" /data/grp_dysentery/_data_ciprofloxacin_suspension_dysentery_distributed "/>
+      <bind nodeset="/data/total_litacid_gel" type="string" calculate=" /data/grp_gastritis/_data_litacid_gel_gastritis_distributed "/>
+      <bind nodeset="/data/total_cloxacillin_suspension" type="string" calculate=" /data/grp_impetigo/_data_cloxacillin_suspension_impetigo_distributed "/>
+      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate=" /data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed "/>
+      <bind nodeset="/data/total_antifungal_cream" type="string" calculate=" /data/grp_ringworm/_data_antifungal_cream_ringworm_distributed "/>
+      <bind nodeset="/data/total_griseofulvin_tabs" type="string" calculate=" /data/grp_ringworm/_data_griseofulvin_tabs_ringworm_distributed "/>
+      <bind nodeset="/data/total_calamine_lotion" type="string" calculate=" /data/grp_scabies/_data_calamine_lotion_scabies_distributed "/>
+      <bind nodeset="/data/total_benzyl_benzoate" type="string" calculate=" /data/grp_scabies/_data_benzyl_benzoate_scabies_distributed "/>
+      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed "/>
+      <bind nodeset="/data/total_albendazole" type="string" calculate=" /data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed "/>
+      <bind nodeset="/data/total_vitamin_a" type="string" calculate=" /data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed "/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
       <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
@@ -3848,6 +4362,24 @@
       <input ref="/data/grp_severe_pneumonia/sev_pneu_counseling">
         <label ref="jr:itext('/data/grp_severe_pneumonia/sev_pneu_counseling:label')"/>
       </input>
+      <select ref="/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu">
+        <label ref="jr:itext('/data/grp_severe_pneumonia/confirm_amoxicillin_suspension_sev_pneu:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu">
+        <label ref="jr:itext('/data/grp_severe_pneumonia/confirm_paracetamol_syrup_sev_pneu:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_severe_pneumonia/sev_pneu_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_severe_pneumonia/sev_pneu_notes">
         <label ref="jr:itext('/data/grp_severe_pneumonia/sev_pneu_notes:label')"/>
       </input>
@@ -3862,6 +4394,24 @@
       </input>
       <input ref="/data/grp_pneumonia/pneu_counseling">
         <label ref="jr:itext('/data/grp_pneumonia/pneu_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu">
+        <label ref="jr:itext('/data/grp_pneumonia/confirm_amoxicillin_suspension_pneu:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_pneumonia/confirm_salbutamol_syrup_pneu">
+        <label ref="jr:itext('/data/grp_pneumonia/confirm_salbutamol_syrup_pneu:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_pneumonia/pneu_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_pneumonia/pneu_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_pneumonia/pneu_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_pneumonia/pneu_notes">
         <label ref="jr:itext('/data/grp_pneumonia/pneu_notes:label')"/>
@@ -3878,6 +4428,17 @@
       <input ref="/data/grp_cough_or_cold/cough_cold_counseling">
         <label ref="jr:itext('/data/grp_cough_or_cold/cough_cold_counseling:label')"/>
       </input>
+      <select ref="/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold">
+        <label ref="jr:itext('/data/grp_cough_or_cold/confirm_paracetamol_syrup_cough_cold:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_cough_or_cold/cough_cold_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_cough_or_cold/cough_cold_notes">
         <label ref="jr:itext('/data/grp_cough_or_cold/cough_cold_notes:label')"/>
       </input>
@@ -3892,6 +4453,24 @@
       </input>
       <input ref="/data/grp_tonsillitis/tonsillitis_counseling">
         <label ref="jr:itext('/data/grp_tonsillitis/tonsillitis_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis">
+        <label ref="jr:itext('/data/grp_tonsillitis/confirm_amoxicillin_suspension_tonsillitis:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis">
+        <label ref="jr:itext('/data/grp_tonsillitis/confirm_paracetamol_syrup_tonsillitis:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_tonsillitis/tonsillitis_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_tonsillitis/tonsillitis_notes">
         <label ref="jr:itext('/data/grp_tonsillitis/tonsillitis_notes:label')"/>
@@ -3908,6 +4487,17 @@
       <input ref="/data/grp_flu_like/flu_counseling">
         <label ref="jr:itext('/data/grp_flu_like/flu_counseling:label')"/>
       </input>
+      <select ref="/data/grp_flu_like/confirm_paracetamol_syrup_flu_like">
+        <label ref="jr:itext('/data/grp_flu_like/confirm_paracetamol_syrup_flu_like:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_flu_like/flu_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_flu_like/flu_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_flu_like/flu_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_flu_like/flu_notes">
         <label ref="jr:itext('/data/grp_flu_like/flu_notes:label')"/>
       </input>
@@ -3922,6 +4512,17 @@
       </input>
       <input ref="/data/grp_severe_dehydration/sev_dehyd_counseling">
         <label ref="jr:itext('/data/grp_severe_dehydration/sev_dehyd_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_severe_dehydration/confirm_ors_sev_dehyd">
+        <label ref="jr:itext('/data/grp_severe_dehydration/confirm_ors_sev_dehyd:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_severe_dehydration/sev_dehyd_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_severe_dehydration/sev_dehyd_notes">
         <label ref="jr:itext('/data/grp_severe_dehydration/sev_dehyd_notes:label')"/>
@@ -3938,6 +4539,24 @@
       <input ref="/data/grp_some_dehydration/some_dehyd_counseling">
         <label ref="jr:itext('/data/grp_some_dehydration/some_dehyd_counseling:label')"/>
       </input>
+      <select ref="/data/grp_some_dehydration/confirm_ors_some_dehyd">
+        <label ref="jr:itext('/data/grp_some_dehydration/confirm_ors_some_dehyd:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd">
+        <label ref="jr:itext('/data/grp_some_dehydration/confirm_zinc_tablets_some_dehyd:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_some_dehydration/some_dehyd_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_some_dehydration/some_dehyd_notes">
         <label ref="jr:itext('/data/grp_some_dehydration/some_dehyd_notes:label')"/>
       </input>
@@ -3952,6 +4571,24 @@
       </input>
       <input ref="/data/grp_no_dehydration/no_dehyd_counseling">
         <label ref="jr:itext('/data/grp_no_dehydration/no_dehyd_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_no_dehydration/confirm_ors_no_dehyd">
+        <label ref="jr:itext('/data/grp_no_dehydration/confirm_ors_no_dehyd:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd">
+        <label ref="jr:itext('/data/grp_no_dehydration/confirm_zinc_tablets_no_dehyd:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_no_dehydration/no_dehyd_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_no_dehydration/no_dehyd_notes">
         <label ref="jr:itext('/data/grp_no_dehydration/no_dehyd_notes:label')"/>
@@ -3968,6 +4605,17 @@
       <input ref="/data/grp_persistent_diarrhea/pers_diarrhea_counseling">
         <label ref="jr:itext('/data/grp_persistent_diarrhea/pers_diarrhea_counseling:label')"/>
       </input>
+      <select ref="/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea">
+        <label ref="jr:itext('/data/grp_persistent_diarrhea/confirm_ors_pers_diarrhea:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_persistent_diarrhea/pers_diarrhea_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_persistent_diarrhea/pers_diarrhea_notes">
         <label ref="jr:itext('/data/grp_persistent_diarrhea/pers_diarrhea_notes:label')"/>
       </input>
@@ -3982,6 +4630,24 @@
       </input>
       <input ref="/data/grp_dysentery/dysentery_counseling">
         <label ref="jr:itext('/data/grp_dysentery/dysentery_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery">
+        <label ref="jr:itext('/data/grp_dysentery/confirm_ciprofloxacin_suspension_dysentery:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_dysentery/confirm_ors_dysentery">
+        <label ref="jr:itext('/data/grp_dysentery/confirm_ors_dysentery:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_dysentery/dysentery_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_dysentery/dysentery_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_dysentery/dysentery_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_dysentery/dysentery_notes">
         <label ref="jr:itext('/data/grp_dysentery/dysentery_notes:label')"/>
@@ -3998,6 +4664,24 @@
       <input ref="/data/grp_gastritis/gastritis_counseling">
         <label ref="jr:itext('/data/grp_gastritis/gastritis_counseling:label')"/>
       </input>
+      <select ref="/data/grp_gastritis/confirm_litacid_gel_gastritis">
+        <label ref="jr:itext('/data/grp_gastritis/confirm_litacid_gel_gastritis:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_gastritis/confirm_ors_gastritis">
+        <label ref="jr:itext('/data/grp_gastritis/confirm_ors_gastritis:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_gastritis/gastritis_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_gastritis/gastritis_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_gastritis/gastritis_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_gastritis/gastritis_notes">
         <label ref="jr:itext('/data/grp_gastritis/gastritis_notes:label')"/>
       </input>
@@ -4012,6 +4696,17 @@
       </input>
       <input ref="/data/grp_cholera/cholera_counseling">
         <label ref="jr:itext('/data/grp_cholera/cholera_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_cholera/confirm_ors_cholera">
+        <label ref="jr:itext('/data/grp_cholera/confirm_ors_cholera:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_cholera/cholera_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_cholera/cholera_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_cholera/cholera_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_cholera/cholera_notes">
         <label ref="jr:itext('/data/grp_cholera/cholera_notes:label')"/>
@@ -4028,6 +4723,24 @@
       <input ref="/data/grp_impetigo/impetigo_counseling">
         <label ref="jr:itext('/data/grp_impetigo/impetigo_counseling:label')"/>
       </input>
+      <select ref="/data/grp_impetigo/confirm_triple_antibiotic_impetigo">
+        <label ref="jr:itext('/data/grp_impetigo/confirm_triple_antibiotic_impetigo:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo">
+        <label ref="jr:itext('/data/grp_impetigo/confirm_cloxacillin_suspension_impetigo:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_impetigo/impetigo_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_impetigo/impetigo_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_impetigo/impetigo_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_impetigo/impetigo_notes">
         <label ref="jr:itext('/data/grp_impetigo/impetigo_notes:label')"/>
       </input>
@@ -4042,6 +4755,24 @@
       </input>
       <input ref="/data/grp_ringworm/ringworm_counseling">
         <label ref="jr:itext('/data/grp_ringworm/ringworm_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_ringworm/confirm_antifungal_cream_ringworm">
+        <label ref="jr:itext('/data/grp_ringworm/confirm_antifungal_cream_ringworm:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm">
+        <label ref="jr:itext('/data/grp_ringworm/confirm_griseofulvin_tabs_ringworm:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_ringworm/ringworm_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_ringworm/ringworm_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_ringworm/ringworm_med_not_confirmed_reason:hint')"/>
       </input>
       <input ref="/data/grp_ringworm/ringworm_notes">
         <label ref="jr:itext('/data/grp_ringworm/ringworm_notes:label')"/>
@@ -4058,6 +4789,24 @@
       <input ref="/data/grp_scabies/scabies_counseling">
         <label ref="jr:itext('/data/grp_scabies/scabies_counseling:label')"/>
       </input>
+      <select ref="/data/grp_scabies/confirm_calamine_lotion_scabies">
+        <label ref="jr:itext('/data/grp_scabies/confirm_calamine_lotion_scabies:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_scabies/confirm_benzyl_benzoate_scabies">
+        <label ref="jr:itext('/data/grp_scabies/confirm_benzyl_benzoate_scabies:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_scabies/scabies_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_scabies/scabies_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_scabies/scabies_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_scabies/scabies_notes">
         <label ref="jr:itext('/data/grp_scabies/scabies_notes:label')"/>
       </input>
@@ -4073,130 +4822,33 @@
       <input ref="/data/grp_malnutrition_anemia/malnutrition_counseling">
         <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_counseling:label')"/>
       </input>
+      <select ref="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition">
+        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition">
+        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition">
+        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint')"/>
+      </input>
       <input ref="/data/grp_malnutrition_anemia/malnutrition_notes">
         <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_notes:label')"/>
-      </input>
-    </group>
-    <group appearance="field-list" ref="/data/grp_pediatric_medication">
-      <label ref="jr:itext('/data/grp_pediatric_medication:label')"/>
-      <select ref="/data/grp_pediatric_medication/confirm_amoxicillin_suspension">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_amoxicillin_suspension:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_paracetamol_syrup">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_paracetamol_syrup:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_salbutamol_syrup">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_salbutamol_syrup:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_ors">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_ors:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_zinc_tablets">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_zinc_tablets:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_ciprofloxacin_suspension:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_litacid_gel">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_litacid_gel:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_cloxacillin_suspension">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_cloxacillin_suspension:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_triple_antibiotic">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_triple_antibiotic:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_antifungal_cream">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_antifungal_cream:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_griseofulvin_tabs">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_griseofulvin_tabs:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_calamine_lotion">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_calamine_lotion:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_benzyl_benzoate">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_benzyl_benzoate:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_iron_folic_acid">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_iron_folic_acid:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_albendazole_dewormer">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_albendazole_dewormer:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <select ref="/data/grp_pediatric_medication/confirm_vitamin_a">
-        <label ref="jr:itext('/data/grp_pediatric_medication/confirm_vitamin_a:label')"/>
-        <itemset nodeset="instance('drug_confirmation')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select>
-      <input ref="/data/grp_pediatric_medication/ped_med_not_confirmed_reason">
-        <label ref="jr:itext('/data/grp_pediatric_medication/ped_med_not_confirmed_reason:label')"/>
-        <hint ref="jr:itext('/data/grp_pediatric_medication/ped_med_not_confirmed_reason:hint')"/>
-      </input>
-      <input ref="/data/grp_pediatric_medication/ped_med_notes">
-        <label ref="jr:itext('/data/grp_pediatric_medication/ped_med_notes:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/referrals">

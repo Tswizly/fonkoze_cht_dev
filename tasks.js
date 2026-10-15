@@ -41,7 +41,6 @@ const CHILDREN_ROUTE_FORM_MAPPING = {
   route_skin: ['CHD_Form003_SkinConditions'],
   route_wound: ['CHD_Form005_Wounds'],
   route_vision: ['CHD_Form004_Vision'],
-  route_vaccinations: ['CHD_Form006_Vaccines_and_Dewormer']
 };
 
 // Mapping of route flags in triage forms to Youth/Adolescent follow-up form names
@@ -143,20 +142,34 @@ module.exports = [
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
           
-          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
-          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
-          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
-          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
-          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
-          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
-          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
-          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
+          // Respiratory Infections (from CHD_Form002)
+          content._result_severe_pneumonia = getEncounterFieldValue(encounterReports, '_result_severe_pneumonia');
           content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          content._result_cough_or_cold = getEncounterFieldValue(encounterReports, '_result_cough_or_cold');
+          content._result_tonsillitis = getEncounterFieldValue(encounterReports, '_result_tonsillitis');
           content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
-          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+
+          // Digestive Conditions (from CHD_Form001 - Note: source form uses _calc_ prefix)
+          content._result_severe_dehydration = getEncounterFieldValue(encounterReports, '_calc_severe_dehydration');
+          content._result_some_dehydration = getEncounterFieldValue(encounterReports, '_calc_some_dehydration');
+          content._result_no_dehydration = getEncounterFieldValue(encounterReports, '_calc_no_dehydration');
+          content._result_persistent_diarrhea = getEncounterFieldValue(encounterReports, '_calc_persistent_diarrhea');
+          content._result_dysentery = getEncounterFieldValue(encounterReports, '_calc_dysentery');
+          content._result_gastritis = getEncounterFieldValue(encounterReports, '_calc_gastritis');
+          content._result_cholera = getEncounterFieldValue(encounterReports, '_calc_cholera');
+
+          // Skin Conditions (from CHD_Form003)
+          content._result_impetigo = getEncounterFieldValue(encounterReports, '_result_impetigo');
           content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
           content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
+
+          // Malnutrition & Anemia (from CHD_Form008)
+          content._result_severe_malnutrition_anemia = getEncounterFieldValue(encounterReports, '_result_severe_malnutrition_anemia');
+          content._result_severe_anemia = getEncounterFieldValue(encounterReports, '_result_severe_anemia');
           content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
+          
+          // General / Referral 
+          content._result_urgent_referral = getEncounterFieldValue(encounterReports, '_result_urgent_referral');
         }
       }
     ],
@@ -204,23 +217,33 @@ module.exports = [
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
           
-          content._result_risk_of_cholera = getEncounterFieldValue(encounterReports, '_result_risk_of_cholera');
-          content._result_acute_diarrhea = getEncounterFieldValue(encounterReports, '_result_acute_diarrhea');
-          content._result_amoeba_giardia = getEncounterFieldValue(encounterReports, '_result_amoeba_giardia');
-          content._result_appendicitis_cholecystitis = getEncounterFieldValue(encounterReports, '_result_appendicitis_cholecystitis');
-          content._result_risk_malaria = getEncounterFieldValue(encounterReports, '_result_risk_malaria');
-          content._malaria_rapid_test_result = getEncounterFieldValue(encounterReports, '_malaria_rapid_test_result', '');
-          content._result_tuberculosis = getEncounterFieldValue(encounterReports, '_result_tuberculosis');
-          content._result_asthma = getEncounterFieldValue(encounterReports, '_result_asthma');
-          content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
+          // Respiratory Conditions (from YAA_Form002)
           content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
-          content._result_impetigo_folliculitis = getEncounterFieldValue(encounterReports, '_result_impetigo_folliculitis');
+          content._result_pneumonia_pink = getEncounterFieldValue(encounterReports, '_result_pneumonia_pink');
+          content._result_pneumonia_yellow = getEncounterFieldValue(encounterReports, '_result_pneumonia_yellow');
+          content._result_tonsillitis = getEncounterFieldValue(encounterReports, '_result_tonsillitis');
+
+          // Digestive Conditions (from YAA_Form001)
+          content._result_gastritis = getEncounterFieldValue(encounterReports, '_result_gastritis');
+          content._result_dehydration = getEncounterFieldValue(encounterReports, '_result_dehydration');
+          content._result_dysentery = getEncounterFieldValue(encounterReports, '_result_dysentery');
+
+          // Skin Conditions (from YAA_Form003)
+          content._result_impetigo = getEncounterFieldValue(encounterReports, '_result_impetigo');
           content._result_ring_worm = getEncounterFieldValue(encounterReports, '_result_ring_worm');
           content._result_scabies = getEncounterFieldValue(encounterReports, '_result_scabies');
+
+          // UTI and STD (from YAA_Form004)
           content._result_uti = getEncounterFieldValue(encounterReports, '_result_uti');
-          content._result_std_discharge = getEncounterFieldValue(encounterReports, '_result_std_discharge');
-          content._result_std_ulcer = getEncounterFieldValue(encounterReports, '_result_std_ulcer');
-          content._result_moderate_anemia = getEncounterFieldValue(encounterReports, '_result_moderate_anemia');
+          content._result_glomerulonephritis = getEncounterFieldValue(encounterReports, '_result_glomerulonephritis');
+          content._result_syphilis = getEncounterFieldValue(encounterReports, '_result_syphilis');
+          content._result_other_std = getEncounterFieldValue(encounterReports, '_result_other_std');
+
+          // Malnutrition & Anemia (from YAA_Form008)
+          content._result_anemia = getEncounterFieldValue(encounterReports, '_result_anemia');
+          
+          // General / Referral
+          content._result_urgent_referral = getEncounterFieldValue(encounterReports, '_result_urgent_referral');
         }
       }
     ],
@@ -773,20 +796,5 @@ module.exports = [
     actions: [{ form: 'ADT_Form001_Diabetes' }],
     events: [{ start: 1, days: 1, end: 0 }]
   },
-    // ----------------------------------------------------
-  // Vaccinations and Deowormer
-  // ----------------------------------------------------
-  {
-    name: 'child_triage_route_vac',
-    title: 'Vaccinations and Dewormer Follow-up Assessment',
-    icon: 'icon-healthcare',
-    appliesTo: 'reports',
-    appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
-    appliesIf: function(c, r) {
-      return !c.contact.muted && r.fields.route_vaccinations === 'true' && r.fields.patient_age_in_years >= 0 && r.fields.patient_age_in_years <= 5;
-    },
-    actions: [{ form: 'CHD_Form006_Vaccines_and_Dewormer' }],
-    events: [{ start: 1, days: 1, end: 0 }]
-  }
 ];
 

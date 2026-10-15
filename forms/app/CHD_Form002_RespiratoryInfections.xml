@@ -200,9 +200,6 @@
           <text id="/data/null_results_group/null_results_note:label">
             <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
-          <text id="/data/nebulizer_administered:label">
-            <value>-</value>
-          </text>
         </translation>
         <translation lang="fr">
           <text id="yes_no-0">
@@ -360,9 +357,6 @@
           </text>
           <text id="/data/respiratory_checkup_group/throat_appearance:label">
             <value>La gorge paraît-elle rouge, enflée ou recouverte de pus à l'examen ?</value>
-          </text>
-          <text id="/data/nebulizer_administered:label">
-            <value>Le traitement par nébulisation a-t-il été administré à l'enfant ?</value>
           </text>
           <text id="/data/results_group:label">
             <value>Résultats</value>
@@ -618,9 +612,6 @@
           <text id="/data/respiratory_checkup_group/throat_appearance:label">
             <value>Èske gòj la parèt wouj, anfle, oswa kouvri ak pi lè ou enspekte li?</value>
           </text>
-          <text id="/data/nebulizer_administered:label">
-            <value>Èske tretman nebulizè a te administre bay timoun nan?</value>
-          </text>
           <text id="/data/results_group:label">
             <value>Rezilta yo</value>
           </text>
@@ -720,7 +711,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="CHD_Form002_RespiratoryInfections" version="20261011180619" prefix="J1!CHD_Form002_RespiratoryInfections!" delimiter="#">
+        <data id="CHD_Form002_RespiratoryInfections" version="20261014114909" prefix="J1!CHD_Form002_RespiratoryInfections!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -794,8 +785,8 @@
           <calc_severe_pneumonia/>
           <calc_pneumonia/>
           <calc_tonsillitis/>
-          <calc_cough_or_cold/>
           <calc_flu_like_syndrome/>
+          <calc_cough_or_cold/>
           <results_group>
             <res_severe_pneumonia/>
             <res_severe_pneumonia_action/>
@@ -941,12 +932,12 @@
       <bind nodeset="/data/respiratory_checkup_group/poor_appetite" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/sore_throat" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_checkup_group/throat_appearance" type="string" required="true()"/>
-      <bind nodeset="/data/nebulizer_administered" type="string" calculate="if( /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes' and  /data/respiratory_checkup_group/after_nebulising_breathing  != '' and  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  != '', 'true', false')"/>
+      <bind nodeset="/data/nebulizer_administered" type="string" calculate="if( /data/respiratory_checkup_group/has_nebulizer_equipment  = 'yes' and  /data/respiratory_checkup_group/after_nebulising_breathing  != '' and  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  != '', 'true', 'false')"/>
       <bind nodeset="/data/calc_severe_pneumonia" type="string" calculate="if(count-selected( /data/respiratory_checkup_group/respiratory_danger_signs ) &gt; 0 or selected( /data/respiratory_checkup_group/cough_danger_signs , 'stridor') or  /data/respiratory_checkup_group/oxygen_saturation  &lt; 90, 'true', 'false')"/>
       <bind nodeset="/data/calc_pneumonia" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and (selected( /data/respiratory_checkup_group/cough_danger_signs , 'nasal_flaring') or (selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing') and ( /data/respiratory_checkup_group/after_nebulising_breathing  = 'yes' or  /data/respiratory_checkup_group/after_nebulising_chest_indrawing  = 'yes')) or (not(selected( /data/respiratory_checkup_group/cough_danger_signs , 'wheezing')) and ( /data/calc_fast_breathing  = 'true' or selected( /data/respiratory_checkup_group/cough_danger_signs , 'chest_indrawing')))), 'true', 'false')"/>
       <bind nodeset="/data/calc_tonsillitis" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/sore_throat  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes' and  /data/respiratory_checkup_group/throat_appearance  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/calc_cough_or_cold" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_flu_like_syndrome  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')"/>
       <bind nodeset="/data/calc_flu_like_syndrome" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/respiratory_checkup_group/fever_presence  = 'yes' and  /data/respiratory_checkup_group/runny_nose  = 'yes' and  /data/respiratory_checkup_group/child_coughing  = 'yes' and  /data/respiratory_checkup_group/poor_appetite  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/calc_cough_or_cold" type="string" calculate="if( /data/calc_severe_pneumonia  != 'true' and  /data/calc_pneumonia  != 'true' and  /data/calc_tonsillitis  != 'true' and  /data/calc_flu_like_syndrome  != 'true' and ( /data/respiratory_checkup_group/child_coughing  = 'yes' or  /data/respiratory_checkup_group/runny_nose  = 'yes' or  /data/respiratory_checkup_group/sore_throat  = 'yes'), 'true', 'false')"/>
       <bind nodeset="/data/results_group" relevant=" /data/calc_severe_pneumonia  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_tonsillitis  = 'true' or  /data/calc_cough_or_cold  = 'true' or  /data/calc_flu_like_syndrome  = 'true'"/>
       <bind nodeset="/data/results_group/res_severe_pneumonia" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_severe_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_severe_pneumonia  = 'true'"/>

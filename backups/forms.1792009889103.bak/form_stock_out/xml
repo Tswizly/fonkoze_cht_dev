@@ -1,0 +1,1898 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Stock Out</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Medicine</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_name:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/hctz_25mg_at_hand___set "/> box of <output value=" /data/summary/hctz_25mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/hctz_25mg_required___set "/> box of <output value=" /data/summary/hctz_25mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_name:label">
+            <value>Calamine Lotion</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/calamine_lotion_at_hand___set "/> box of <output value=" /data/summary/calamine_lotion_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/calamine_lotion_required___set "/> box of <output value=" /data/summary/calamine_lotion_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_name:label">
+            <value>Tinidazole 500mg</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/tinidazole_500mg_at_hand___set "/> box of <output value=" /data/summary/tinidazole_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/tinidazole_500mg_required___set "/> box of <output value=" /data/summary/tinidazole_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_name:label">
+            <value>Omeprazole 20mg</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_20mg_at_hand___set "/> box of <output value=" /data/summary/omeprazole_20mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_20mg_required___set "/> box of <output value=" /data/summary/omeprazole_20mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_name:label">
+            <value>Nifedipine 20mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_20mg_at_hand___set "/> box of <output value=" /data/summary/nifedipine_20mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_20mg_required___set "/> box of <output value=" /data/summary/nifedipine_20mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_name:label">
+            <value>Griseofulvin 125mg</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/griseofulvin_125mg_at_hand___set "/> box of <output value=" /data/summary/griseofulvin_125mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/griseofulvin_125mg_required___set "/> box of <output value=" /data/summary/griseofulvin_125mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/lancets_name:label">
+            <value>Lancets</value>
+          </text>
+          <text id="/data/summary/lancets_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/lancets_at_hand___set "/> box of <output value=" /data/summary/lancets_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/lancets_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/lancets_required___set "/> box of <output value=" /data/summary/lancets_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_name:label">
+            <value>Malaria Rapid Test</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/malaria_rapid_test_at_hand___set "/> box of <output value=" /data/summary/malaria_rapid_test_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/malaria_rapid_test_required___set "/> box of <output value=" /data/summary/malaria_rapid_test_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_name:label">
+            <value>Metronidazole 500mg</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metronidazole_500mg_at_hand___set "/> box of <output value=" /data/summary/metronidazole_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metronidazole_500mg_required___set "/> box of <output value=" /data/summary/metronidazole_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_name:label">
+            <value>Doxycycline 100mg</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/doxycycline_100mg_at_hand___set "/> box of <output value=" /data/summary/doxycycline_100mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/doxycycline_100mg_required___set "/> box of <output value=" /data/summary/doxycycline_100mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_name:label">
+            <value>Metformin 500mg</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metformin_500mg_at_hand___set "/> box of <output value=" /data/summary/metformin_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metformin_500mg_required___set "/> box of <output value=" /data/summary/metformin_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/strips_name:label">
+            <value>Strips</value>
+          </text>
+          <text id="/data/summary/strips_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/strips_at_hand___set "/> box of <output value=" /data/summary/strips_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/strips_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/strips_required___set "/> box of <output value=" /data/summary/strips_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_name:label">
+            <value>Dexamethasone Injectable</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/dexamethasone_injectable_at_hand___set "/> box of <output value=" /data/summary/dexamethasone_injectable_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/dexamethasone_injectable_required___set "/> box of <output value=" /data/summary/dexamethasone_injectable_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/ors_name:label">
+            <value>ORS</value>
+          </text>
+          <text id="/data/summary/ors_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ors_at_hand___set "/> box of <output value=" /data/summary/ors_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/ors_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ors_required___set "/> box of <output value=" /data/summary/ors_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_name:label">
+            <value>Triple Antibiotic Ointment</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/triple_antibiotic_ointment_at_hand___set "/> box of <output value=" /data/summary/triple_antibiotic_ointment_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/triple_antibiotic_ointment_required___set "/> box of <output value=" /data/summary/triple_antibiotic_ointment_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_name:label">
+            <value>H. Pylori Rapid Test</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/h_pylori_rapid_test_at_hand___set "/> box of <output value=" /data/summary/h_pylori_rapid_test_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/h_pylori_rapid_test_required___set "/> box of <output value=" /data/summary/h_pylori_rapid_test_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_name:label">
+            <value>Nifedipine 10mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_10mg_at_hand___set "/> box of <output value=" /data/summary/nifedipine_10mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_10mg_required___set "/> box of <output value=" /data/summary/nifedipine_10mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_name:label">
+            <value>Salbutamol 4mg</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/salbutamol_4mg_at_hand___set "/> box of <output value=" /data/summary/salbutamol_4mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/salbutamol_4mg_required___set "/> box of <output value=" /data/summary/salbutamol_4mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_name:label">
+            <value>Litacid Gel</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/litacid_gel_at_hand___set "/> box of <output value=" /data/summary/litacid_gel_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/litacid_gel_required___set "/> box of <output value=" /data/summary/litacid_gel_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_name:label">
+            <value>Omeprazole Injectable</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_injectable_at_hand___set "/> box of <output value=" /data/summary/omeprazole_injectable_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_injectable_required___set "/> box of <output value=" /data/summary/omeprazole_injectable_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_name:label">
+            <value>Antifungal Cream</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/antifungal_cream_at_hand___set "/> box of <output value=" /data/summary/antifungal_cream_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/antifungal_cream_required___set "/> box of <output value=" /data/summary/antifungal_cream_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_name:label">
+            <value>Chloroquine 150mg</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/chloroquine_150mg_at_hand___set "/> box of <output value=" /data/summary/chloroquine_150mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/chloroquine_150mg_required___set "/> box of <output value=" /data/summary/chloroquine_150mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_name:label">
+            <value>Ciprofloxacin 500mg</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ciprofloxacin_500mg_at_hand___set "/> box of <output value=" /data/summary/ciprofloxacin_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ciprofloxacin_500mg_required___set "/> box of <output value=" /data/summary/ciprofloxacin_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_name:label">
+            <value>Benzathine Penicillin Injectable</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzathine_penicillin_injectable_at_hand___set "/> box of <output value=" /data/summary/benzathine_penicillin_injectable_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzathine_penicillin_injectable_required___set "/> box of <output value=" /data/summary/benzathine_penicillin_injectable_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_name:label">
+            <value>Iron and Folic Acid</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/iron_folic_acid_at_hand___set "/> box of <output value=" /data/summary/iron_folic_acid_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/iron_folic_acid_required___set "/> box of <output value=" /data/summary/iron_folic_acid_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_name:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/buscopan_injectable_at_hand___set "/> box of <output value=" /data/summary/buscopan_injectable_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/buscopan_injectable_required___set "/> box of <output value=" /data/summary/buscopan_injectable_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_name:label">
+            <value>Pregnancy Test</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/pregnancy_test_at_hand___set "/> box of <output value=" /data/summary/pregnancy_test_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/pregnancy_test_required___set "/> box of <output value=" /data/summary/pregnancy_test_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_name:label">
+            <value>Paracetamol 500mg</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/paracetamol_500mg_at_hand___set "/> box of <output value=" /data/summary/paracetamol_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/paracetamol_500mg_required___set "/> box of <output value=" /data/summary/paracetamol_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_name:label">
+            <value>Cloxacillin 500mg</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/cloxacillin_500mg_at_hand___set "/> box of <output value=" /data/summary/cloxacillin_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/cloxacillin_500mg_required___set "/> box of <output value=" /data/summary/cloxacillin_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_name:label">
+            <value>Amoxicillin 500mg</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/amoxycillin_500mg_at_hand___set "/> box of <output value=" /data/summary/amoxycillin_500mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/amoxycillin_500mg_required___set "/> box of <output value=" /data/summary/amoxycillin_500mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_name:label">
+            <value>Enalapril 10mg</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/enalapril_10mg_at_hand___set "/> box of <output value=" /data/summary/enalapril_10mg_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/enalapril_10mg_required___set "/> box of <output value=" /data/summary/enalapril_10mg_required___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_name:label">
+            <value>Benzyl Benzoate 25%</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzyl_benzoate_25_at_hand___set "/> box of <output value=" /data/summary/benzyl_benzoate_25_at_hand___unit "/> unit**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzyl_benzoate_25_required___set "/> box of <output value=" /data/summary/benzyl_benzoate_25_required___unit "/> unit**</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Medikaman</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_name:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/hctz_25mg_at_hand___set "/> bwat <output value=" /data/summary/hctz_25mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/hctz_25mg_required___set "/> bwat <output value=" /data/summary/hctz_25mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_name:label">
+            <value>Losyon Kalamin</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/calamine_lotion_at_hand___set "/> bwat <output value=" /data/summary/calamine_lotion_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/calamine_lotion_required___set "/> bwat <output value=" /data/summary/calamine_lotion_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_name:label">
+            <value>Tinidazol 500mg</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/tinidazole_500mg_at_hand___set "/> bwat <output value=" /data/summary/tinidazole_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/tinidazole_500mg_required___set "/> bwat <output value=" /data/summary/tinidazole_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_name:label">
+            <value>Omeprazol 20mg</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_20mg_at_hand___set "/> bwat <output value=" /data/summary/omeprazole_20mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_20mg_required___set "/> bwat <output value=" /data/summary/omeprazole_20mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_name:label">
+            <value>Nifedipin 20mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_20mg_at_hand___set "/> bwat <output value=" /data/summary/nifedipine_20mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_20mg_required___set "/> bwat <output value=" /data/summary/nifedipine_20mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_name:label">
+            <value>Grizeyofulvin 125mg</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/griseofulvin_125mg_at_hand___set "/> bwat <output value=" /data/summary/griseofulvin_125mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/griseofulvin_125mg_required___set "/> bwat <output value=" /data/summary/griseofulvin_125mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/lancets_name:label">
+            <value>Lansèt</value>
+          </text>
+          <text id="/data/summary/lancets_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/lancets_at_hand___set "/> bwat <output value=" /data/summary/lancets_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/lancets_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/lancets_required___set "/> bwat <output value=" /data/summary/lancets_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_name:label">
+            <value>Tès Rapid Malarya</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/malaria_rapid_test_at_hand___set "/> bwat <output value=" /data/summary/malaria_rapid_test_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/malaria_rapid_test_required___set "/> bwat <output value=" /data/summary/malaria_rapid_test_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_name:label">
+            <value>Metronidazol 500mg</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metronidazole_500mg_at_hand___set "/> bwat <output value=" /data/summary/metronidazole_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metronidazole_500mg_required___set "/> bwat <output value=" /data/summary/metronidazole_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_name:label">
+            <value>Doksiklin 100mg</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/doxycycline_100mg_at_hand___set "/> bwat <output value=" /data/summary/doxycycline_100mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/doxycycline_100mg_required___set "/> bwat <output value=" /data/summary/doxycycline_100mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_name:label">
+            <value>Mètformin 500mg</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metformin_500mg_at_hand___set "/> bwat <output value=" /data/summary/metformin_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metformin_500mg_required___set "/> bwat <output value=" /data/summary/metformin_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/strips_name:label">
+            <value>Bann (Tès Sik)</value>
+          </text>
+          <text id="/data/summary/strips_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/strips_at_hand___set "/> bwat <output value=" /data/summary/strips_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/strips_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/strips_required___set "/> bwat <output value=" /data/summary/strips_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_name:label">
+            <value>Deksametazon Enjektab</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/dexamethasone_injectable_at_hand___set "/> bwat <output value=" /data/summary/dexamethasone_injectable_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/dexamethasone_injectable_required___set "/> bwat <output value=" /data/summary/dexamethasone_injectable_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/ors_name:label">
+            <value>Sewòm Oral</value>
+          </text>
+          <text id="/data/summary/ors_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ors_at_hand___set "/> bwat <output value=" /data/summary/ors_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/ors_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ors_required___set "/> bwat <output value=" /data/summary/ors_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_name:label">
+            <value>Pomad Trip Antibyotik</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/triple_antibiotic_ointment_at_hand___set "/> bwat <output value=" /data/summary/triple_antibiotic_ointment_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/triple_antibiotic_ointment_required___set "/> bwat <output value=" /data/summary/triple_antibiotic_ointment_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_name:label">
+            <value>Tès Rapid H. Pylori</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/h_pylori_rapid_test_at_hand___set "/> bwat <output value=" /data/summary/h_pylori_rapid_test_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/h_pylori_rapid_test_required___set "/> bwat <output value=" /data/summary/h_pylori_rapid_test_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_name:label">
+            <value>Nifedipin 10mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_10mg_at_hand___set "/> bwat <output value=" /data/summary/nifedipine_10mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_10mg_required___set "/> bwat <output value=" /data/summary/nifedipine_10mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_name:label">
+            <value>Salbitamol 4mg</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/salbutamol_4mg_at_hand___set "/> bwat <output value=" /data/summary/salbutamol_4mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/salbutamol_4mg_required___set "/> bwat <output value=" /data/summary/salbutamol_4mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_name:label">
+            <value>Jèl Litacid</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/litacid_gel_at_hand___set "/> bwat <output value=" /data/summary/litacid_gel_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/litacid_gel_required___set "/> bwat <output value=" /data/summary/litacid_gel_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_name:label">
+            <value>Omeprazol Enjektab</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_injectable_at_hand___set "/> bwat <output value=" /data/summary/omeprazole_injectable_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_injectable_required___set "/> bwat <output value=" /data/summary/omeprazole_injectable_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_name:label">
+            <value>Krèm Antifonjik</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/antifungal_cream_at_hand___set "/> bwat <output value=" /data/summary/antifungal_cream_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/antifungal_cream_required___set "/> bwat <output value=" /data/summary/antifungal_cream_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_name:label">
+            <value>Klokwokin 150mg</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/chloroquine_150mg_at_hand___set "/> bwat <output value=" /data/summary/chloroquine_150mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/chloroquine_150mg_required___set "/> bwat <output value=" /data/summary/chloroquine_150mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_name:label">
+            <value>Siprofloksasin 500mg</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ciprofloxacin_500mg_at_hand___set "/> bwat <output value=" /data/summary/ciprofloxacin_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ciprofloxacin_500mg_required___set "/> bwat <output value=" /data/summary/ciprofloxacin_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_name:label">
+            <value>Penisilin Benzatin Enjektab</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzathine_penicillin_injectable_at_hand___set "/> bwat <output value=" /data/summary/benzathine_penicillin_injectable_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzathine_penicillin_injectable_required___set "/> bwat <output value=" /data/summary/benzathine_penicillin_injectable_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_name:label">
+            <value>Fè ak Asid Folik</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/iron_folic_acid_at_hand___set "/> bwat <output value=" /data/summary/iron_folic_acid_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/iron_folic_acid_required___set "/> bwat <output value=" /data/summary/iron_folic_acid_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_name:label">
+            <value>Biskopan Enjektab</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/buscopan_injectable_at_hand___set "/> bwat <output value=" /data/summary/buscopan_injectable_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/buscopan_injectable_required___set "/> bwat <output value=" /data/summary/buscopan_injectable_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_name:label">
+            <value>Tès Gwosès</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/pregnancy_test_at_hand___set "/> bwat <output value=" /data/summary/pregnancy_test_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/pregnancy_test_required___set "/> bwat <output value=" /data/summary/pregnancy_test_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_name:label">
+            <value>Parasetamol 500mg</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/paracetamol_500mg_at_hand___set "/> bwat <output value=" /data/summary/paracetamol_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/paracetamol_500mg_required___set "/> bwat <output value=" /data/summary/paracetamol_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_name:label">
+            <value>Kloksasilin 500mg</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/cloxacillin_500mg_at_hand___set "/> bwat <output value=" /data/summary/cloxacillin_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/cloxacillin_500mg_required___set "/> bwat <output value=" /data/summary/cloxacillin_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_name:label">
+            <value>Amoksisilin 500mg</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/amoxycillin_500mg_at_hand___set "/> bwat <output value=" /data/summary/amoxycillin_500mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/amoxycillin_500mg_required___set "/> bwat <output value=" /data/summary/amoxycillin_500mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_name:label">
+            <value>Enalapril 10mg</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/enalapril_10mg_at_hand___set "/> bwat <output value=" /data/summary/enalapril_10mg_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/enalapril_10mg_required___set "/> bwat <output value=" /data/summary/enalapril_10mg_required___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_name:label">
+            <value>Benzoat Benzil 25%</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzyl_benzoate_25_at_hand___set "/> bwat <output value=" /data/summary/benzyl_benzoate_25_at_hand___unit "/> inite**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzyl_benzoate_25_required___set "/> bwat <output value=" /data/summary/benzyl_benzoate_25_required___unit "/> inite**</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/data/summary/s_submit:label">
+            <value><output value=" /data/contact_name "/> has low stock of the following items</value>
+          </text>
+          <text id="/data/summary/r_summary:label">
+            <value>Stock out</value>
+          </text>
+          <text id="/data/summary/Medicine:label">
+            <value>Médicament</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_name:label">
+            <value>HCTZ 25mg</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/hctz_25mg_at_hand___set "/> boîte de <output value=" /data/summary/hctz_25mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/hctz_25mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/hctz_25mg_required___set "/> boîte de <output value=" /data/summary/hctz_25mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_name:label">
+            <value>Lotion à la calamine</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/calamine_lotion_at_hand___set "/> boîte de <output value=" /data/summary/calamine_lotion_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/calamine_lotion_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/calamine_lotion_required___set "/> boîte de <output value=" /data/summary/calamine_lotion_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_name:label">
+            <value>Tinidazole 500mg</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/tinidazole_500mg_at_hand___set "/> boîte de <output value=" /data/summary/tinidazole_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/tinidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/tinidazole_500mg_required___set "/> boîte de <output value=" /data/summary/tinidazole_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_name:label">
+            <value>Oméprazole 20mg</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_20mg_at_hand___set "/> boîte de <output value=" /data/summary/omeprazole_20mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/omeprazole_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_20mg_required___set "/> boîte de <output value=" /data/summary/omeprazole_20mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_name:label">
+            <value>Nifédipine 20mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_20mg_at_hand___set "/> boîte de <output value=" /data/summary/nifedipine_20mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/nifedipine_20mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_20mg_required___set "/> boîte de <output value=" /data/summary/nifedipine_20mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_name:label">
+            <value>Griséofulvine 125mg</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/griseofulvin_125mg_at_hand___set "/> boîte de <output value=" /data/summary/griseofulvin_125mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/griseofulvin_125mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/griseofulvin_125mg_required___set "/> boîte de <output value=" /data/summary/griseofulvin_125mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/lancets_name:label">
+            <value>Lancettes</value>
+          </text>
+          <text id="/data/summary/lancets_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/lancets_at_hand___set "/> boîte de <output value=" /data/summary/lancets_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/lancets_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/lancets_required___set "/> boîte de <output value=" /data/summary/lancets_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_name:label">
+            <value>Test Rapide Paludisme</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/malaria_rapid_test_at_hand___set "/> boîte de <output value=" /data/summary/malaria_rapid_test_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/malaria_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/malaria_rapid_test_required___set "/> boîte de <output value=" /data/summary/malaria_rapid_test_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_name:label">
+            <value>Métronidazole 500mg</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metronidazole_500mg_at_hand___set "/> boîte de <output value=" /data/summary/metronidazole_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/metronidazole_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metronidazole_500mg_required___set "/> boîte de <output value=" /data/summary/metronidazole_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_name:label">
+            <value>Doxycycline 100mg</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/doxycycline_100mg_at_hand___set "/> boîte de <output value=" /data/summary/doxycycline_100mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/doxycycline_100mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/doxycycline_100mg_required___set "/> boîte de <output value=" /data/summary/doxycycline_100mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_name:label">
+            <value>Metformine 500mg</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/metformin_500mg_at_hand___set "/> boîte de <output value=" /data/summary/metformin_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/metformin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/metformin_500mg_required___set "/> boîte de <output value=" /data/summary/metformin_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/strips_name:label">
+            <value>Bandelettes</value>
+          </text>
+          <text id="/data/summary/strips_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/strips_at_hand___set "/> boîte de <output value=" /data/summary/strips_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/strips_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/strips_required___set "/> boîte de <output value=" /data/summary/strips_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_name:label">
+            <value>Dexaméthasone Injectable</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/dexamethasone_injectable_at_hand___set "/> boîte de <output value=" /data/summary/dexamethasone_injectable_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/dexamethasone_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/dexamethasone_injectable_required___set "/> boîte de <output value=" /data/summary/dexamethasone_injectable_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/ors_name:label">
+            <value>SRO</value>
+          </text>
+          <text id="/data/summary/ors_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ors_at_hand___set "/> boîte de <output value=" /data/summary/ors_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/ors_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ors_required___set "/> boîte de <output value=" /data/summary/ors_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_name:label">
+            <value>Pommade Triple Antibiotique</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/triple_antibiotic_ointment_at_hand___set "/> boîte de <output value=" /data/summary/triple_antibiotic_ointment_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/triple_antibiotic_ointment_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/triple_antibiotic_ointment_required___set "/> boîte de <output value=" /data/summary/triple_antibiotic_ointment_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_name:label">
+            <value>Test Rapide H. Pylori</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/h_pylori_rapid_test_at_hand___set "/> boîte de <output value=" /data/summary/h_pylori_rapid_test_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/h_pylori_rapid_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/h_pylori_rapid_test_required___set "/> boîte de <output value=" /data/summary/h_pylori_rapid_test_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_name:label">
+            <value>Nifédipine 10mg</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/nifedipine_10mg_at_hand___set "/> boîte de <output value=" /data/summary/nifedipine_10mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/nifedipine_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/nifedipine_10mg_required___set "/> boîte de <output value=" /data/summary/nifedipine_10mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_name:label">
+            <value>Salbutamol 4mg</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/salbutamol_4mg_at_hand___set "/> boîte de <output value=" /data/summary/salbutamol_4mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/salbutamol_4mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/salbutamol_4mg_required___set "/> boîte de <output value=" /data/summary/salbutamol_4mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_name:label">
+            <value>Gel Litacid</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/litacid_gel_at_hand___set "/> boîte de <output value=" /data/summary/litacid_gel_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/litacid_gel_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/litacid_gel_required___set "/> boîte de <output value=" /data/summary/litacid_gel_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_name:label">
+            <value>Oméprazole Injectable</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/omeprazole_injectable_at_hand___set "/> boîte de <output value=" /data/summary/omeprazole_injectable_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/omeprazole_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/omeprazole_injectable_required___set "/> boîte de <output value=" /data/summary/omeprazole_injectable_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_name:label">
+            <value>Crème Antifongique</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/antifungal_cream_at_hand___set "/> boîte de <output value=" /data/summary/antifungal_cream_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/antifungal_cream_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/antifungal_cream_required___set "/> boîte de <output value=" /data/summary/antifungal_cream_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_name:label">
+            <value>Chloroquine 150mg</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/chloroquine_150mg_at_hand___set "/> boîte de <output value=" /data/summary/chloroquine_150mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/chloroquine_150mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/chloroquine_150mg_required___set "/> boîte de <output value=" /data/summary/chloroquine_150mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_name:label">
+            <value>Ciprofloxacine 500mg</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/ciprofloxacin_500mg_at_hand___set "/> boîte de <output value=" /data/summary/ciprofloxacin_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/ciprofloxacin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/ciprofloxacin_500mg_required___set "/> boîte de <output value=" /data/summary/ciprofloxacin_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_name:label">
+            <value>Pénicilline Benzathine Injectable</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzathine_penicillin_injectable_at_hand___set "/> boîte de <output value=" /data/summary/benzathine_penicillin_injectable_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/benzathine_penicillin_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzathine_penicillin_injectable_required___set "/> boîte de <output value=" /data/summary/benzathine_penicillin_injectable_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_name:label">
+            <value>Fer et Acide Folique</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/iron_folic_acid_at_hand___set "/> boîte de <output value=" /data/summary/iron_folic_acid_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/iron_folic_acid_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/iron_folic_acid_required___set "/> boîte de <output value=" /data/summary/iron_folic_acid_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_name:label">
+            <value>Buscopan Injectable</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/buscopan_injectable_at_hand___set "/> boîte de <output value=" /data/summary/buscopan_injectable_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/buscopan_injectable_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/buscopan_injectable_required___set "/> boîte de <output value=" /data/summary/buscopan_injectable_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_name:label">
+            <value>Test de Grossesse</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/pregnancy_test_at_hand___set "/> boîte de <output value=" /data/summary/pregnancy_test_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/pregnancy_test_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/pregnancy_test_required___set "/> boîte de <output value=" /data/summary/pregnancy_test_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_name:label">
+            <value>Paracétamol 500mg</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/paracetamol_500mg_at_hand___set "/> boîte de <output value=" /data/summary/paracetamol_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/paracetamol_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/paracetamol_500mg_required___set "/> boîte de <output value=" /data/summary/paracetamol_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_name:label">
+            <value>Cloxacilline 500mg</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/cloxacillin_500mg_at_hand___set "/> boîte de <output value=" /data/summary/cloxacillin_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/cloxacillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/cloxacillin_500mg_required___set "/> boîte de <output value=" /data/summary/cloxacillin_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_name:label">
+            <value>Amoxicilline 500mg</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/amoxycillin_500mg_at_hand___set "/> boîte de <output value=" /data/summary/amoxycillin_500mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/amoxycillin_500mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/amoxycillin_500mg_required___set "/> boîte de <output value=" /data/summary/amoxycillin_500mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_name:label">
+            <value>Énalapril 10mg</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/enalapril_10mg_at_hand___set "/> boîte de <output value=" /data/summary/enalapril_10mg_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/enalapril_10mg_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/enalapril_10mg_required___set "/> boîte de <output value=" /data/summary/enalapril_10mg_required___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_name:label">
+            <value>Benzoate de Benzyle 25%</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_at_hand:label">
+            <value> Stock at hand: **<output value=" /data/summary/benzyl_benzoate_25_at_hand___set "/> boîte de <output value=" /data/summary/benzyl_benzoate_25_at_hand___unit "/> unité**</value>
+          </text>
+          <text id="/data/summary/benzyl_benzoate_25_note_required:label">
+            <value> Stock required: **<output value=" /data/summary/benzyl_benzoate_25_required___set "/> boîte de <output value=" /data/summary/benzyl_benzoate_25_required___unit "/> unité**</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="stock_out" version="now()" prefix="J1!stock_out!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <hctz_25mg_required/>
+            <hctz_25mg_at_hand/>
+            <calamine_lotion_required/>
+            <calamine_lotion_at_hand/>
+            <tinidazole_500mg_required/>
+            <tinidazole_500mg_at_hand/>
+            <omeprazole_20mg_required/>
+            <omeprazole_20mg_at_hand/>
+            <nifedipine_20mg_required/>
+            <nifedipine_20mg_at_hand/>
+            <griseofulvin_125mg_required/>
+            <griseofulvin_125mg_at_hand/>
+            <lancets_required/>
+            <lancets_at_hand/>
+            <malaria_rapid_test_required/>
+            <malaria_rapid_test_at_hand/>
+            <metronidazole_500mg_required/>
+            <metronidazole_500mg_at_hand/>
+            <doxycycline_100mg_required/>
+            <doxycycline_100mg_at_hand/>
+            <metformin_500mg_required/>
+            <metformin_500mg_at_hand/>
+            <strips_required/>
+            <strips_at_hand/>
+            <dexamethasone_injectable_required/>
+            <dexamethasone_injectable_at_hand/>
+            <ors_required/>
+            <ors_at_hand/>
+            <triple_antibiotic_ointment_required/>
+            <triple_antibiotic_ointment_at_hand/>
+            <h_pylori_rapid_test_required/>
+            <h_pylori_rapid_test_at_hand/>
+            <nifedipine_10mg_required/>
+            <nifedipine_10mg_at_hand/>
+            <salbutamol_4mg_required/>
+            <salbutamol_4mg_at_hand/>
+            <litacid_gel_required/>
+            <litacid_gel_at_hand/>
+            <omeprazole_injectable_required/>
+            <omeprazole_injectable_at_hand/>
+            <antifungal_cream_required/>
+            <antifungal_cream_at_hand/>
+            <chloroquine_150mg_required/>
+            <chloroquine_150mg_at_hand/>
+            <ciprofloxacin_500mg_required/>
+            <ciprofloxacin_500mg_at_hand/>
+            <benzathine_penicillin_injectable_required/>
+            <benzathine_penicillin_injectable_at_hand/>
+            <iron_folic_acid_required/>
+            <iron_folic_acid_at_hand/>
+            <buscopan_injectable_required/>
+            <buscopan_injectable_at_hand/>
+            <pregnancy_test_required/>
+            <pregnancy_test_at_hand/>
+            <paracetamol_500mg_required/>
+            <paracetamol_500mg_at_hand/>
+            <cloxacillin_500mg_required/>
+            <cloxacillin_500mg_at_hand/>
+            <amoxycillin_500mg_required/>
+            <amoxycillin_500mg_at_hand/>
+            <enalapril_10mg_required/>
+            <enalapril_10mg_at_hand/>
+            <benzyl_benzoate_25_required/>
+            <benzyl_benzoate_25_at_hand/>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <parent>
+                <_id/>
+              </parent>
+            </contact>
+          </inputs>
+          <place_id/>
+          <contact_name/>
+          <summary>
+            <s_submit/>
+            <r_summary/>
+            <Medicine/>
+            <hctz_25mg_name/>
+            <hctz_25mg_note_at_hand/>
+            <hctz_25mg_note_required/>
+            <hctz_25mg_at_hand___set/>
+            <hctz_25mg_at_hand___unit/>
+            <hctz_25mg_required___set/>
+            <hctz_25mg_required___unit/>
+            <calamine_lotion_name/>
+            <calamine_lotion_note_at_hand/>
+            <calamine_lotion_note_required/>
+            <calamine_lotion_at_hand___set/>
+            <calamine_lotion_at_hand___unit/>
+            <calamine_lotion_required___set/>
+            <calamine_lotion_required___unit/>
+            <tinidazole_500mg_name/>
+            <tinidazole_500mg_note_at_hand/>
+            <tinidazole_500mg_note_required/>
+            <tinidazole_500mg_at_hand___set/>
+            <tinidazole_500mg_at_hand___unit/>
+            <tinidazole_500mg_required___set/>
+            <tinidazole_500mg_required___unit/>
+            <omeprazole_20mg_name/>
+            <omeprazole_20mg_note_at_hand/>
+            <omeprazole_20mg_note_required/>
+            <omeprazole_20mg_at_hand___set/>
+            <omeprazole_20mg_at_hand___unit/>
+            <omeprazole_20mg_required___set/>
+            <omeprazole_20mg_required___unit/>
+            <nifedipine_20mg_name/>
+            <nifedipine_20mg_note_at_hand/>
+            <nifedipine_20mg_note_required/>
+            <nifedipine_20mg_at_hand___set/>
+            <nifedipine_20mg_at_hand___unit/>
+            <nifedipine_20mg_required___set/>
+            <nifedipine_20mg_required___unit/>
+            <griseofulvin_125mg_name/>
+            <griseofulvin_125mg_note_at_hand/>
+            <griseofulvin_125mg_note_required/>
+            <griseofulvin_125mg_at_hand___set/>
+            <griseofulvin_125mg_at_hand___unit/>
+            <griseofulvin_125mg_required___set/>
+            <griseofulvin_125mg_required___unit/>
+            <lancets_name/>
+            <lancets_note_at_hand/>
+            <lancets_note_required/>
+            <lancets_at_hand___set/>
+            <lancets_at_hand___unit/>
+            <lancets_required___set/>
+            <lancets_required___unit/>
+            <malaria_rapid_test_name/>
+            <malaria_rapid_test_note_at_hand/>
+            <malaria_rapid_test_note_required/>
+            <malaria_rapid_test_at_hand___set/>
+            <malaria_rapid_test_at_hand___unit/>
+            <malaria_rapid_test_required___set/>
+            <malaria_rapid_test_required___unit/>
+            <metronidazole_500mg_name/>
+            <metronidazole_500mg_note_at_hand/>
+            <metronidazole_500mg_note_required/>
+            <metronidazole_500mg_at_hand___set/>
+            <metronidazole_500mg_at_hand___unit/>
+            <metronidazole_500mg_required___set/>
+            <metronidazole_500mg_required___unit/>
+            <doxycycline_100mg_name/>
+            <doxycycline_100mg_note_at_hand/>
+            <doxycycline_100mg_note_required/>
+            <doxycycline_100mg_at_hand___set/>
+            <doxycycline_100mg_at_hand___unit/>
+            <doxycycline_100mg_required___set/>
+            <doxycycline_100mg_required___unit/>
+            <metformin_500mg_name/>
+            <metformin_500mg_note_at_hand/>
+            <metformin_500mg_note_required/>
+            <metformin_500mg_at_hand___set/>
+            <metformin_500mg_at_hand___unit/>
+            <metformin_500mg_required___set/>
+            <metformin_500mg_required___unit/>
+            <strips_name/>
+            <strips_note_at_hand/>
+            <strips_note_required/>
+            <strips_at_hand___set/>
+            <strips_at_hand___unit/>
+            <strips_required___set/>
+            <strips_required___unit/>
+            <dexamethasone_injectable_name/>
+            <dexamethasone_injectable_note_at_hand/>
+            <dexamethasone_injectable_note_required/>
+            <dexamethasone_injectable_at_hand___set/>
+            <dexamethasone_injectable_at_hand___unit/>
+            <dexamethasone_injectable_required___set/>
+            <dexamethasone_injectable_required___unit/>
+            <ors_name/>
+            <ors_note_at_hand/>
+            <ors_note_required/>
+            <ors_at_hand___set/>
+            <ors_at_hand___unit/>
+            <ors_required___set/>
+            <ors_required___unit/>
+            <triple_antibiotic_ointment_name/>
+            <triple_antibiotic_ointment_note_at_hand/>
+            <triple_antibiotic_ointment_note_required/>
+            <triple_antibiotic_ointment_at_hand___set/>
+            <triple_antibiotic_ointment_at_hand___unit/>
+            <triple_antibiotic_ointment_required___set/>
+            <triple_antibiotic_ointment_required___unit/>
+            <h_pylori_rapid_test_name/>
+            <h_pylori_rapid_test_note_at_hand/>
+            <h_pylori_rapid_test_note_required/>
+            <h_pylori_rapid_test_at_hand___set/>
+            <h_pylori_rapid_test_at_hand___unit/>
+            <h_pylori_rapid_test_required___set/>
+            <h_pylori_rapid_test_required___unit/>
+            <nifedipine_10mg_name/>
+            <nifedipine_10mg_note_at_hand/>
+            <nifedipine_10mg_note_required/>
+            <nifedipine_10mg_at_hand___set/>
+            <nifedipine_10mg_at_hand___unit/>
+            <nifedipine_10mg_required___set/>
+            <nifedipine_10mg_required___unit/>
+            <salbutamol_4mg_name/>
+            <salbutamol_4mg_note_at_hand/>
+            <salbutamol_4mg_note_required/>
+            <salbutamol_4mg_at_hand___set/>
+            <salbutamol_4mg_at_hand___unit/>
+            <salbutamol_4mg_required___set/>
+            <salbutamol_4mg_required___unit/>
+            <litacid_gel_name/>
+            <litacid_gel_note_at_hand/>
+            <litacid_gel_note_required/>
+            <litacid_gel_at_hand___set/>
+            <litacid_gel_at_hand___unit/>
+            <litacid_gel_required___set/>
+            <litacid_gel_required___unit/>
+            <omeprazole_injectable_name/>
+            <omeprazole_injectable_note_at_hand/>
+            <omeprazole_injectable_note_required/>
+            <omeprazole_injectable_at_hand___set/>
+            <omeprazole_injectable_at_hand___unit/>
+            <omeprazole_injectable_required___set/>
+            <omeprazole_injectable_required___unit/>
+            <antifungal_cream_name/>
+            <antifungal_cream_note_at_hand/>
+            <antifungal_cream_note_required/>
+            <antifungal_cream_at_hand___set/>
+            <antifungal_cream_at_hand___unit/>
+            <antifungal_cream_required___set/>
+            <antifungal_cream_required___unit/>
+            <chloroquine_150mg_name/>
+            <chloroquine_150mg_note_at_hand/>
+            <chloroquine_150mg_note_required/>
+            <chloroquine_150mg_at_hand___set/>
+            <chloroquine_150mg_at_hand___unit/>
+            <chloroquine_150mg_required___set/>
+            <chloroquine_150mg_required___unit/>
+            <ciprofloxacin_500mg_name/>
+            <ciprofloxacin_500mg_note_at_hand/>
+            <ciprofloxacin_500mg_note_required/>
+            <ciprofloxacin_500mg_at_hand___set/>
+            <ciprofloxacin_500mg_at_hand___unit/>
+            <ciprofloxacin_500mg_required___set/>
+            <ciprofloxacin_500mg_required___unit/>
+            <benzathine_penicillin_injectable_name/>
+            <benzathine_penicillin_injectable_note_at_hand/>
+            <benzathine_penicillin_injectable_note_required/>
+            <benzathine_penicillin_injectable_at_hand___set/>
+            <benzathine_penicillin_injectable_at_hand___unit/>
+            <benzathine_penicillin_injectable_required___set/>
+            <benzathine_penicillin_injectable_required___unit/>
+            <iron_folic_acid_name/>
+            <iron_folic_acid_note_at_hand/>
+            <iron_folic_acid_note_required/>
+            <iron_folic_acid_at_hand___set/>
+            <iron_folic_acid_at_hand___unit/>
+            <iron_folic_acid_required___set/>
+            <iron_folic_acid_required___unit/>
+            <buscopan_injectable_name/>
+            <buscopan_injectable_note_at_hand/>
+            <buscopan_injectable_note_required/>
+            <buscopan_injectable_at_hand___set/>
+            <buscopan_injectable_at_hand___unit/>
+            <buscopan_injectable_required___set/>
+            <buscopan_injectable_required___unit/>
+            <pregnancy_test_name/>
+            <pregnancy_test_note_at_hand/>
+            <pregnancy_test_note_required/>
+            <pregnancy_test_at_hand___set/>
+            <pregnancy_test_at_hand___unit/>
+            <pregnancy_test_required___set/>
+            <pregnancy_test_required___unit/>
+            <paracetamol_500mg_name/>
+            <paracetamol_500mg_note_at_hand/>
+            <paracetamol_500mg_note_required/>
+            <paracetamol_500mg_at_hand___set/>
+            <paracetamol_500mg_at_hand___unit/>
+            <paracetamol_500mg_required___set/>
+            <paracetamol_500mg_required___unit/>
+            <cloxacillin_500mg_name/>
+            <cloxacillin_500mg_note_at_hand/>
+            <cloxacillin_500mg_note_required/>
+            <cloxacillin_500mg_at_hand___set/>
+            <cloxacillin_500mg_at_hand___unit/>
+            <cloxacillin_500mg_required___set/>
+            <cloxacillin_500mg_required___unit/>
+            <amoxycillin_500mg_name/>
+            <amoxycillin_500mg_note_at_hand/>
+            <amoxycillin_500mg_note_required/>
+            <amoxycillin_500mg_at_hand___set/>
+            <amoxycillin_500mg_at_hand___unit/>
+            <amoxycillin_500mg_required___set/>
+            <amoxycillin_500mg_required___unit/>
+            <enalapril_10mg_name/>
+            <enalapril_10mg_note_at_hand/>
+            <enalapril_10mg_note_required/>
+            <enalapril_10mg_at_hand___set/>
+            <enalapril_10mg_at_hand___unit/>
+            <enalapril_10mg_required___set/>
+            <enalapril_10mg_required___unit/>
+            <benzyl_benzoate_25_name/>
+            <benzyl_benzoate_25_note_at_hand/>
+            <benzyl_benzoate_25_note_required/>
+            <benzyl_benzoate_25_at_hand___set/>
+            <benzyl_benzoate_25_at_hand___unit/>
+            <benzyl_benzoate_25_required___set/>
+            <benzyl_benzoate_25_required___unit/>
+          </summary>
+          <out>
+            <prevent_empty_group_error/>
+          </out>
+          <needs_signoff/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <bind nodeset="/data/inputs" relevant="./source='user'"/>
+      <bind nodeset="/data/inputs/hctz_25mg_required" type="string"/>
+      <bind nodeset="/data/inputs/hctz_25mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/calamine_lotion_required" type="string"/>
+      <bind nodeset="/data/inputs/calamine_lotion_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/tinidazole_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/tinidazole_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/omeprazole_20mg_required" type="string"/>
+      <bind nodeset="/data/inputs/omeprazole_20mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/nifedipine_20mg_required" type="string"/>
+      <bind nodeset="/data/inputs/nifedipine_20mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/griseofulvin_125mg_required" type="string"/>
+      <bind nodeset="/data/inputs/griseofulvin_125mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/lancets_required" type="string"/>
+      <bind nodeset="/data/inputs/lancets_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/malaria_rapid_test_required" type="string"/>
+      <bind nodeset="/data/inputs/malaria_rapid_test_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/metronidazole_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/metronidazole_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/doxycycline_100mg_required" type="string"/>
+      <bind nodeset="/data/inputs/doxycycline_100mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/metformin_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/metformin_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/strips_required" type="string"/>
+      <bind nodeset="/data/inputs/strips_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/dexamethasone_injectable_required" type="string"/>
+      <bind nodeset="/data/inputs/dexamethasone_injectable_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/ors_required" type="string"/>
+      <bind nodeset="/data/inputs/ors_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/triple_antibiotic_ointment_required" type="string"/>
+      <bind nodeset="/data/inputs/triple_antibiotic_ointment_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/h_pylori_rapid_test_required" type="string"/>
+      <bind nodeset="/data/inputs/h_pylori_rapid_test_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/nifedipine_10mg_required" type="string"/>
+      <bind nodeset="/data/inputs/nifedipine_10mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/salbutamol_4mg_required" type="string"/>
+      <bind nodeset="/data/inputs/salbutamol_4mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/litacid_gel_required" type="string"/>
+      <bind nodeset="/data/inputs/litacid_gel_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/omeprazole_injectable_required" type="string"/>
+      <bind nodeset="/data/inputs/omeprazole_injectable_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/antifungal_cream_required" type="string"/>
+      <bind nodeset="/data/inputs/antifungal_cream_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/chloroquine_150mg_required" type="string"/>
+      <bind nodeset="/data/inputs/chloroquine_150mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/ciprofloxacin_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/ciprofloxacin_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/benzathine_penicillin_injectable_required" type="string"/>
+      <bind nodeset="/data/inputs/benzathine_penicillin_injectable_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/iron_folic_acid_required" type="string"/>
+      <bind nodeset="/data/inputs/iron_folic_acid_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/buscopan_injectable_required" type="string"/>
+      <bind nodeset="/data/inputs/buscopan_injectable_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/pregnancy_test_required" type="string"/>
+      <bind nodeset="/data/inputs/pregnancy_test_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/paracetamol_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/paracetamol_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/cloxacillin_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/cloxacillin_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/amoxycillin_500mg_required" type="string"/>
+      <bind nodeset="/data/inputs/amoxycillin_500mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/enalapril_10mg_required" type="string"/>
+      <bind nodeset="/data/inputs/enalapril_10mg_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/benzyl_benzoate_25_required" type="string"/>
+      <bind nodeset="/data/inputs/benzyl_benzoate_25_at_hand" type="string"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person" required="true()"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/place_id" type="string" calculate="../inputs/contact/parent/_id"/>
+      <bind nodeset="/data/contact_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/summary/s_submit" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/r_summary" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary/Medicine" readonly="true()" type="string" relevant=" /data/inputs/hctz_25mg_at_hand  &lt; /data/inputs/hctz_25mg_required  or  /data/inputs/calamine_lotion_at_hand  &lt; /data/inputs/calamine_lotion_required  or  /data/inputs/tinidazole_500mg_at_hand  &lt; /data/inputs/tinidazole_500mg_required  or  /data/inputs/omeprazole_20mg_at_hand  &lt; /data/inputs/omeprazole_20mg_required  or  /data/inputs/nifedipine_20mg_at_hand  &lt; /data/inputs/nifedipine_20mg_required  or  /data/inputs/griseofulvin_125mg_at_hand  &lt; /data/inputs/griseofulvin_125mg_required  or  /data/inputs/lancets_at_hand  &lt; /data/inputs/lancets_required  or  /data/inputs/malaria_rapid_test_at_hand  &lt; /data/inputs/malaria_rapid_test_required  or  /data/inputs/metronidazole_500mg_at_hand  &lt; /data/inputs/metronidazole_500mg_required  or  /data/inputs/doxycycline_100mg_at_hand  &lt; /data/inputs/doxycycline_100mg_required  or  /data/inputs/metformin_500mg_at_hand  &lt; /data/inputs/metformin_500mg_required  or  /data/inputs/strips_at_hand  &lt; /data/inputs/strips_required  or  /data/inputs/dexamethasone_injectable_at_hand  &lt; /data/inputs/dexamethasone_injectable_required  or  /data/inputs/ors_at_hand  &lt; /data/inputs/ors_required  or  /data/inputs/triple_antibiotic_ointment_at_hand  &lt; /data/inputs/triple_antibiotic_ointment_required  or  /data/inputs/h_pylori_rapid_test_at_hand  &lt; /data/inputs/h_pylori_rapid_test_required  or  /data/inputs/nifedipine_10mg_at_hand  &lt; /data/inputs/nifedipine_10mg_required  or  /data/inputs/salbutamol_4mg_at_hand  &lt; /data/inputs/salbutamol_4mg_required  or  /data/inputs/litacid_gel_at_hand  &lt; /data/inputs/litacid_gel_required  or  /data/inputs/omeprazole_injectable_at_hand  &lt; /data/inputs/omeprazole_injectable_required  or  /data/inputs/antifungal_cream_at_hand  &lt; /data/inputs/antifungal_cream_required  or  /data/inputs/chloroquine_150mg_at_hand  &lt; /data/inputs/chloroquine_150mg_required  or  /data/inputs/ciprofloxacin_500mg_at_hand  &lt; /data/inputs/ciprofloxacin_500mg_required  or  /data/inputs/benzathine_penicillin_injectable_at_hand  &lt; /data/inputs/benzathine_penicillin_injectable_required  or  /data/inputs/iron_folic_acid_at_hand  &lt; /data/inputs/iron_folic_acid_required  or  /data/inputs/buscopan_injectable_at_hand  &lt; /data/inputs/buscopan_injectable_required  or  /data/inputs/pregnancy_test_at_hand  &lt; /data/inputs/pregnancy_test_required  or  /data/inputs/paracetamol_500mg_at_hand  &lt; /data/inputs/paracetamol_500mg_required  or  /data/inputs/cloxacillin_500mg_at_hand  &lt; /data/inputs/cloxacillin_500mg_required  or  /data/inputs/amoxycillin_500mg_at_hand  &lt; /data/inputs/amoxycillin_500mg_required  or  /data/inputs/enalapril_10mg_at_hand  &lt; /data/inputs/enalapril_10mg_required  or  /data/inputs/benzyl_benzoate_25_at_hand  &lt; /data/inputs/benzyl_benzoate_25_required "/>
+      <bind nodeset="/data/summary/hctz_25mg_name" readonly="true()" type="string" relevant=" /data/inputs/hctz_25mg_at_hand  &lt;= /data/inputs/hctz_25mg_required "/>
+      <bind nodeset="/data/summary/hctz_25mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/hctz_25mg_at_hand  &lt;= /data/inputs/hctz_25mg_required "/>
+      <bind nodeset="/data/summary/hctz_25mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/hctz_25mg_at_hand  &lt;= /data/inputs/hctz_25mg_required "/>
+      <bind nodeset="/data/summary/hctz_25mg_at_hand___set" type="string" calculate="int( /data/inputs/hctz_25mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/hctz_25mg_at_hand___unit" type="string" calculate=" /data/inputs/hctz_25mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/hctz_25mg_required___set" type="string" calculate="int( /data/inputs/hctz_25mg_required  div 1)"/>
+      <bind nodeset="/data/summary/hctz_25mg_required___unit" type="string" calculate=" /data/inputs/hctz_25mg_required  mod 1"/>
+      <bind nodeset="/data/summary/calamine_lotion_name" readonly="true()" type="string" relevant=" /data/inputs/calamine_lotion_at_hand  &lt;= /data/inputs/calamine_lotion_required "/>
+      <bind nodeset="/data/summary/calamine_lotion_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/calamine_lotion_at_hand  &lt;= /data/inputs/calamine_lotion_required "/>
+      <bind nodeset="/data/summary/calamine_lotion_note_required" readonly="true()" type="string" relevant=" /data/inputs/calamine_lotion_at_hand  &lt;= /data/inputs/calamine_lotion_required "/>
+      <bind nodeset="/data/summary/calamine_lotion_at_hand___set" type="string" calculate="int( /data/inputs/calamine_lotion_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/calamine_lotion_at_hand___unit" type="string" calculate=" /data/inputs/calamine_lotion_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/calamine_lotion_required___set" type="string" calculate="int( /data/inputs/calamine_lotion_required  div 1)"/>
+      <bind nodeset="/data/summary/calamine_lotion_required___unit" type="string" calculate=" /data/inputs/calamine_lotion_required  mod 1"/>
+      <bind nodeset="/data/summary/tinidazole_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/tinidazole_500mg_at_hand  &lt;= /data/inputs/tinidazole_500mg_required "/>
+      <bind nodeset="/data/summary/tinidazole_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/tinidazole_500mg_at_hand  &lt;= /data/inputs/tinidazole_500mg_required "/>
+      <bind nodeset="/data/summary/tinidazole_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/tinidazole_500mg_at_hand  &lt;= /data/inputs/tinidazole_500mg_required "/>
+      <bind nodeset="/data/summary/tinidazole_500mg_at_hand___set" type="string" calculate="int( /data/inputs/tinidazole_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/tinidazole_500mg_at_hand___unit" type="string" calculate=" /data/inputs/tinidazole_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/tinidazole_500mg_required___set" type="string" calculate="int( /data/inputs/tinidazole_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/tinidazole_500mg_required___unit" type="string" calculate=" /data/inputs/tinidazole_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/omeprazole_20mg_name" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_20mg_at_hand  &lt;= /data/inputs/omeprazole_20mg_required "/>
+      <bind nodeset="/data/summary/omeprazole_20mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_20mg_at_hand  &lt;= /data/inputs/omeprazole_20mg_required "/>
+      <bind nodeset="/data/summary/omeprazole_20mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_20mg_at_hand  &lt;= /data/inputs/omeprazole_20mg_required "/>
+      <bind nodeset="/data/summary/omeprazole_20mg_at_hand___set" type="string" calculate="int( /data/inputs/omeprazole_20mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/omeprazole_20mg_at_hand___unit" type="string" calculate=" /data/inputs/omeprazole_20mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/omeprazole_20mg_required___set" type="string" calculate="int( /data/inputs/omeprazole_20mg_required  div 1)"/>
+      <bind nodeset="/data/summary/omeprazole_20mg_required___unit" type="string" calculate=" /data/inputs/omeprazole_20mg_required  mod 1"/>
+      <bind nodeset="/data/summary/nifedipine_20mg_name" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_20mg_at_hand  &lt;= /data/inputs/nifedipine_20mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_20mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_20mg_at_hand  &lt;= /data/inputs/nifedipine_20mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_20mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_20mg_at_hand  &lt;= /data/inputs/nifedipine_20mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_20mg_at_hand___set" type="string" calculate="int( /data/inputs/nifedipine_20mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/nifedipine_20mg_at_hand___unit" type="string" calculate=" /data/inputs/nifedipine_20mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/nifedipine_20mg_required___set" type="string" calculate="int( /data/inputs/nifedipine_20mg_required  div 1)"/>
+      <bind nodeset="/data/summary/nifedipine_20mg_required___unit" type="string" calculate=" /data/inputs/nifedipine_20mg_required  mod 1"/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_name" readonly="true()" type="string" relevant=" /data/inputs/griseofulvin_125mg_at_hand  &lt;= /data/inputs/griseofulvin_125mg_required "/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/griseofulvin_125mg_at_hand  &lt;= /data/inputs/griseofulvin_125mg_required "/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/griseofulvin_125mg_at_hand  &lt;= /data/inputs/griseofulvin_125mg_required "/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_at_hand___set" type="string" calculate="int( /data/inputs/griseofulvin_125mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_at_hand___unit" type="string" calculate=" /data/inputs/griseofulvin_125mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_required___set" type="string" calculate="int( /data/inputs/griseofulvin_125mg_required  div 1)"/>
+      <bind nodeset="/data/summary/griseofulvin_125mg_required___unit" type="string" calculate=" /data/inputs/griseofulvin_125mg_required  mod 1"/>
+      <bind nodeset="/data/summary/lancets_name" readonly="true()" type="string" relevant=" /data/inputs/lancets_at_hand  &lt;= /data/inputs/lancets_required "/>
+      <bind nodeset="/data/summary/lancets_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/lancets_at_hand  &lt;= /data/inputs/lancets_required "/>
+      <bind nodeset="/data/summary/lancets_note_required" readonly="true()" type="string" relevant=" /data/inputs/lancets_at_hand  &lt;= /data/inputs/lancets_required "/>
+      <bind nodeset="/data/summary/lancets_at_hand___set" type="string" calculate="int( /data/inputs/lancets_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/lancets_at_hand___unit" type="string" calculate=" /data/inputs/lancets_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/lancets_required___set" type="string" calculate="int( /data/inputs/lancets_required  div 1)"/>
+      <bind nodeset="/data/summary/lancets_required___unit" type="string" calculate=" /data/inputs/lancets_required  mod 1"/>
+      <bind nodeset="/data/summary/malaria_rapid_test_name" readonly="true()" type="string" relevant=" /data/inputs/malaria_rapid_test_at_hand  &lt;= /data/inputs/malaria_rapid_test_required "/>
+      <bind nodeset="/data/summary/malaria_rapid_test_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/malaria_rapid_test_at_hand  &lt;= /data/inputs/malaria_rapid_test_required "/>
+      <bind nodeset="/data/summary/malaria_rapid_test_note_required" readonly="true()" type="string" relevant=" /data/inputs/malaria_rapid_test_at_hand  &lt;= /data/inputs/malaria_rapid_test_required "/>
+      <bind nodeset="/data/summary/malaria_rapid_test_at_hand___set" type="string" calculate="int( /data/inputs/malaria_rapid_test_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/malaria_rapid_test_at_hand___unit" type="string" calculate=" /data/inputs/malaria_rapid_test_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/malaria_rapid_test_required___set" type="string" calculate="int( /data/inputs/malaria_rapid_test_required  div 1)"/>
+      <bind nodeset="/data/summary/malaria_rapid_test_required___unit" type="string" calculate=" /data/inputs/malaria_rapid_test_required  mod 1"/>
+      <bind nodeset="/data/summary/metronidazole_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/metronidazole_500mg_at_hand  &lt;= /data/inputs/metronidazole_500mg_required "/>
+      <bind nodeset="/data/summary/metronidazole_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/metronidazole_500mg_at_hand  &lt;= /data/inputs/metronidazole_500mg_required "/>
+      <bind nodeset="/data/summary/metronidazole_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/metronidazole_500mg_at_hand  &lt;= /data/inputs/metronidazole_500mg_required "/>
+      <bind nodeset="/data/summary/metronidazole_500mg_at_hand___set" type="string" calculate="int( /data/inputs/metronidazole_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/metronidazole_500mg_at_hand___unit" type="string" calculate=" /data/inputs/metronidazole_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/metronidazole_500mg_required___set" type="string" calculate="int( /data/inputs/metronidazole_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/metronidazole_500mg_required___unit" type="string" calculate=" /data/inputs/metronidazole_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/doxycycline_100mg_name" readonly="true()" type="string" relevant=" /data/inputs/doxycycline_100mg_at_hand  &lt;= /data/inputs/doxycycline_100mg_required "/>
+      <bind nodeset="/data/summary/doxycycline_100mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/doxycycline_100mg_at_hand  &lt;= /data/inputs/doxycycline_100mg_required "/>
+      <bind nodeset="/data/summary/doxycycline_100mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/doxycycline_100mg_at_hand  &lt;= /data/inputs/doxycycline_100mg_required "/>
+      <bind nodeset="/data/summary/doxycycline_100mg_at_hand___set" type="string" calculate="int( /data/inputs/doxycycline_100mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/doxycycline_100mg_at_hand___unit" type="string" calculate=" /data/inputs/doxycycline_100mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/doxycycline_100mg_required___set" type="string" calculate="int( /data/inputs/doxycycline_100mg_required  div 1)"/>
+      <bind nodeset="/data/summary/doxycycline_100mg_required___unit" type="string" calculate=" /data/inputs/doxycycline_100mg_required  mod 1"/>
+      <bind nodeset="/data/summary/metformin_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/metformin_500mg_at_hand  &lt;= /data/inputs/metformin_500mg_required "/>
+      <bind nodeset="/data/summary/metformin_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/metformin_500mg_at_hand  &lt;= /data/inputs/metformin_500mg_required "/>
+      <bind nodeset="/data/summary/metformin_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/metformin_500mg_at_hand  &lt;= /data/inputs/metformin_500mg_required "/>
+      <bind nodeset="/data/summary/metformin_500mg_at_hand___set" type="string" calculate="int( /data/inputs/metformin_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/metformin_500mg_at_hand___unit" type="string" calculate=" /data/inputs/metformin_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/metformin_500mg_required___set" type="string" calculate="int( /data/inputs/metformin_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/metformin_500mg_required___unit" type="string" calculate=" /data/inputs/metformin_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/strips_name" readonly="true()" type="string" relevant=" /data/inputs/strips_at_hand  &lt;= /data/inputs/strips_required "/>
+      <bind nodeset="/data/summary/strips_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/strips_at_hand  &lt;= /data/inputs/strips_required "/>
+      <bind nodeset="/data/summary/strips_note_required" readonly="true()" type="string" relevant=" /data/inputs/strips_at_hand  &lt;= /data/inputs/strips_required "/>
+      <bind nodeset="/data/summary/strips_at_hand___set" type="string" calculate="int( /data/inputs/strips_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/strips_at_hand___unit" type="string" calculate=" /data/inputs/strips_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/strips_required___set" type="string" calculate="int( /data/inputs/strips_required  div 1)"/>
+      <bind nodeset="/data/summary/strips_required___unit" type="string" calculate=" /data/inputs/strips_required  mod 1"/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_name" readonly="true()" type="string" relevant=" /data/inputs/dexamethasone_injectable_at_hand  &lt;= /data/inputs/dexamethasone_injectable_required "/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/dexamethasone_injectable_at_hand  &lt;= /data/inputs/dexamethasone_injectable_required "/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_note_required" readonly="true()" type="string" relevant=" /data/inputs/dexamethasone_injectable_at_hand  &lt;= /data/inputs/dexamethasone_injectable_required "/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_at_hand___set" type="string" calculate="int( /data/inputs/dexamethasone_injectable_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_at_hand___unit" type="string" calculate=" /data/inputs/dexamethasone_injectable_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_required___set" type="string" calculate="int( /data/inputs/dexamethasone_injectable_required  div 1)"/>
+      <bind nodeset="/data/summary/dexamethasone_injectable_required___unit" type="string" calculate=" /data/inputs/dexamethasone_injectable_required  mod 1"/>
+      <bind nodeset="/data/summary/ors_name" readonly="true()" type="string" relevant=" /data/inputs/ors_at_hand  &lt;= /data/inputs/ors_required "/>
+      <bind nodeset="/data/summary/ors_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/ors_at_hand  &lt;= /data/inputs/ors_required "/>
+      <bind nodeset="/data/summary/ors_note_required" readonly="true()" type="string" relevant=" /data/inputs/ors_at_hand  &lt;= /data/inputs/ors_required "/>
+      <bind nodeset="/data/summary/ors_at_hand___set" type="string" calculate="int( /data/inputs/ors_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/ors_at_hand___unit" type="string" calculate=" /data/inputs/ors_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/ors_required___set" type="string" calculate="int( /data/inputs/ors_required  div 1)"/>
+      <bind nodeset="/data/summary/ors_required___unit" type="string" calculate=" /data/inputs/ors_required  mod 1"/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_name" readonly="true()" type="string" relevant=" /data/inputs/triple_antibiotic_ointment_at_hand  &lt;= /data/inputs/triple_antibiotic_ointment_required "/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/triple_antibiotic_ointment_at_hand  &lt;= /data/inputs/triple_antibiotic_ointment_required "/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_note_required" readonly="true()" type="string" relevant=" /data/inputs/triple_antibiotic_ointment_at_hand  &lt;= /data/inputs/triple_antibiotic_ointment_required "/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_at_hand___set" type="string" calculate="int( /data/inputs/triple_antibiotic_ointment_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_at_hand___unit" type="string" calculate=" /data/inputs/triple_antibiotic_ointment_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_required___set" type="string" calculate="int( /data/inputs/triple_antibiotic_ointment_required  div 1)"/>
+      <bind nodeset="/data/summary/triple_antibiotic_ointment_required___unit" type="string" calculate=" /data/inputs/triple_antibiotic_ointment_required  mod 1"/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_name" readonly="true()" type="string" relevant=" /data/inputs/h_pylori_rapid_test_at_hand  &lt;= /data/inputs/h_pylori_rapid_test_required "/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/h_pylori_rapid_test_at_hand  &lt;= /data/inputs/h_pylori_rapid_test_required "/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_note_required" readonly="true()" type="string" relevant=" /data/inputs/h_pylori_rapid_test_at_hand  &lt;= /data/inputs/h_pylori_rapid_test_required "/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_at_hand___set" type="string" calculate="int( /data/inputs/h_pylori_rapid_test_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_at_hand___unit" type="string" calculate=" /data/inputs/h_pylori_rapid_test_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_required___set" type="string" calculate="int( /data/inputs/h_pylori_rapid_test_required  div 1)"/>
+      <bind nodeset="/data/summary/h_pylori_rapid_test_required___unit" type="string" calculate=" /data/inputs/h_pylori_rapid_test_required  mod 1"/>
+      <bind nodeset="/data/summary/nifedipine_10mg_name" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_10mg_at_hand  &lt;= /data/inputs/nifedipine_10mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_10mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_10mg_at_hand  &lt;= /data/inputs/nifedipine_10mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_10mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/nifedipine_10mg_at_hand  &lt;= /data/inputs/nifedipine_10mg_required "/>
+      <bind nodeset="/data/summary/nifedipine_10mg_at_hand___set" type="string" calculate="int( /data/inputs/nifedipine_10mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/nifedipine_10mg_at_hand___unit" type="string" calculate=" /data/inputs/nifedipine_10mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/nifedipine_10mg_required___set" type="string" calculate="int( /data/inputs/nifedipine_10mg_required  div 1)"/>
+      <bind nodeset="/data/summary/nifedipine_10mg_required___unit" type="string" calculate=" /data/inputs/nifedipine_10mg_required  mod 1"/>
+      <bind nodeset="/data/summary/salbutamol_4mg_name" readonly="true()" type="string" relevant=" /data/inputs/salbutamol_4mg_at_hand  &lt;= /data/inputs/salbutamol_4mg_required "/>
+      <bind nodeset="/data/summary/salbutamol_4mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/salbutamol_4mg_at_hand  &lt;= /data/inputs/salbutamol_4mg_required "/>
+      <bind nodeset="/data/summary/salbutamol_4mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/salbutamol_4mg_at_hand  &lt;= /data/inputs/salbutamol_4mg_required "/>
+      <bind nodeset="/data/summary/salbutamol_4mg_at_hand___set" type="string" calculate="int( /data/inputs/salbutamol_4mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/salbutamol_4mg_at_hand___unit" type="string" calculate=" /data/inputs/salbutamol_4mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/salbutamol_4mg_required___set" type="string" calculate="int( /data/inputs/salbutamol_4mg_required  div 1)"/>
+      <bind nodeset="/data/summary/salbutamol_4mg_required___unit" type="string" calculate=" /data/inputs/salbutamol_4mg_required  mod 1"/>
+      <bind nodeset="/data/summary/litacid_gel_name" readonly="true()" type="string" relevant=" /data/inputs/litacid_gel_at_hand  &lt;= /data/inputs/litacid_gel_required "/>
+      <bind nodeset="/data/summary/litacid_gel_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/litacid_gel_at_hand  &lt;= /data/inputs/litacid_gel_required "/>
+      <bind nodeset="/data/summary/litacid_gel_note_required" readonly="true()" type="string" relevant=" /data/inputs/litacid_gel_at_hand  &lt;= /data/inputs/litacid_gel_required "/>
+      <bind nodeset="/data/summary/litacid_gel_at_hand___set" type="string" calculate="int( /data/inputs/litacid_gel_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/litacid_gel_at_hand___unit" type="string" calculate=" /data/inputs/litacid_gel_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/litacid_gel_required___set" type="string" calculate="int( /data/inputs/litacid_gel_required  div 1)"/>
+      <bind nodeset="/data/summary/litacid_gel_required___unit" type="string" calculate=" /data/inputs/litacid_gel_required  mod 1"/>
+      <bind nodeset="/data/summary/omeprazole_injectable_name" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_injectable_at_hand  &lt;= /data/inputs/omeprazole_injectable_required "/>
+      <bind nodeset="/data/summary/omeprazole_injectable_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_injectable_at_hand  &lt;= /data/inputs/omeprazole_injectable_required "/>
+      <bind nodeset="/data/summary/omeprazole_injectable_note_required" readonly="true()" type="string" relevant=" /data/inputs/omeprazole_injectable_at_hand  &lt;= /data/inputs/omeprazole_injectable_required "/>
+      <bind nodeset="/data/summary/omeprazole_injectable_at_hand___set" type="string" calculate="int( /data/inputs/omeprazole_injectable_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/omeprazole_injectable_at_hand___unit" type="string" calculate=" /data/inputs/omeprazole_injectable_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/omeprazole_injectable_required___set" type="string" calculate="int( /data/inputs/omeprazole_injectable_required  div 1)"/>
+      <bind nodeset="/data/summary/omeprazole_injectable_required___unit" type="string" calculate=" /data/inputs/omeprazole_injectable_required  mod 1"/>
+      <bind nodeset="/data/summary/antifungal_cream_name" readonly="true()" type="string" relevant=" /data/inputs/antifungal_cream_at_hand  &lt;= /data/inputs/antifungal_cream_required "/>
+      <bind nodeset="/data/summary/antifungal_cream_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/antifungal_cream_at_hand  &lt;= /data/inputs/antifungal_cream_required "/>
+      <bind nodeset="/data/summary/antifungal_cream_note_required" readonly="true()" type="string" relevant=" /data/inputs/antifungal_cream_at_hand  &lt;= /data/inputs/antifungal_cream_required "/>
+      <bind nodeset="/data/summary/antifungal_cream_at_hand___set" type="string" calculate="int( /data/inputs/antifungal_cream_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/antifungal_cream_at_hand___unit" type="string" calculate=" /data/inputs/antifungal_cream_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/antifungal_cream_required___set" type="string" calculate="int( /data/inputs/antifungal_cream_required  div 1)"/>
+      <bind nodeset="/data/summary/antifungal_cream_required___unit" type="string" calculate=" /data/inputs/antifungal_cream_required  mod 1"/>
+      <bind nodeset="/data/summary/chloroquine_150mg_name" readonly="true()" type="string" relevant=" /data/inputs/chloroquine_150mg_at_hand  &lt;= /data/inputs/chloroquine_150mg_required "/>
+      <bind nodeset="/data/summary/chloroquine_150mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/chloroquine_150mg_at_hand  &lt;= /data/inputs/chloroquine_150mg_required "/>
+      <bind nodeset="/data/summary/chloroquine_150mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/chloroquine_150mg_at_hand  &lt;= /data/inputs/chloroquine_150mg_required "/>
+      <bind nodeset="/data/summary/chloroquine_150mg_at_hand___set" type="string" calculate="int( /data/inputs/chloroquine_150mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/chloroquine_150mg_at_hand___unit" type="string" calculate=" /data/inputs/chloroquine_150mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/chloroquine_150mg_required___set" type="string" calculate="int( /data/inputs/chloroquine_150mg_required  div 1)"/>
+      <bind nodeset="/data/summary/chloroquine_150mg_required___unit" type="string" calculate=" /data/inputs/chloroquine_150mg_required  mod 1"/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/ciprofloxacin_500mg_at_hand  &lt;= /data/inputs/ciprofloxacin_500mg_required "/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/ciprofloxacin_500mg_at_hand  &lt;= /data/inputs/ciprofloxacin_500mg_required "/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/ciprofloxacin_500mg_at_hand  &lt;= /data/inputs/ciprofloxacin_500mg_required "/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_at_hand___set" type="string" calculate="int( /data/inputs/ciprofloxacin_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_at_hand___unit" type="string" calculate=" /data/inputs/ciprofloxacin_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_required___set" type="string" calculate="int( /data/inputs/ciprofloxacin_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/ciprofloxacin_500mg_required___unit" type="string" calculate=" /data/inputs/ciprofloxacin_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_name" readonly="true()" type="string" relevant=" /data/inputs/benzathine_penicillin_injectable_at_hand  &lt;= /data/inputs/benzathine_penicillin_injectable_required "/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/benzathine_penicillin_injectable_at_hand  &lt;= /data/inputs/benzathine_penicillin_injectable_required "/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_note_required" readonly="true()" type="string" relevant=" /data/inputs/benzathine_penicillin_injectable_at_hand  &lt;= /data/inputs/benzathine_penicillin_injectable_required "/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_at_hand___set" type="string" calculate="int( /data/inputs/benzathine_penicillin_injectable_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_at_hand___unit" type="string" calculate=" /data/inputs/benzathine_penicillin_injectable_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_required___set" type="string" calculate="int( /data/inputs/benzathine_penicillin_injectable_required  div 1)"/>
+      <bind nodeset="/data/summary/benzathine_penicillin_injectable_required___unit" type="string" calculate=" /data/inputs/benzathine_penicillin_injectable_required  mod 1"/>
+      <bind nodeset="/data/summary/iron_folic_acid_name" readonly="true()" type="string" relevant=" /data/inputs/iron_folic_acid_at_hand  &lt;= /data/inputs/iron_folic_acid_required "/>
+      <bind nodeset="/data/summary/iron_folic_acid_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/iron_folic_acid_at_hand  &lt;= /data/inputs/iron_folic_acid_required "/>
+      <bind nodeset="/data/summary/iron_folic_acid_note_required" readonly="true()" type="string" relevant=" /data/inputs/iron_folic_acid_at_hand  &lt;= /data/inputs/iron_folic_acid_required "/>
+      <bind nodeset="/data/summary/iron_folic_acid_at_hand___set" type="string" calculate="int( /data/inputs/iron_folic_acid_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/iron_folic_acid_at_hand___unit" type="string" calculate=" /data/inputs/iron_folic_acid_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/iron_folic_acid_required___set" type="string" calculate="int( /data/inputs/iron_folic_acid_required  div 1)"/>
+      <bind nodeset="/data/summary/iron_folic_acid_required___unit" type="string" calculate=" /data/inputs/iron_folic_acid_required  mod 1"/>
+      <bind nodeset="/data/summary/buscopan_injectable_name" readonly="true()" type="string" relevant=" /data/inputs/buscopan_injectable_at_hand  &lt;= /data/inputs/buscopan_injectable_required "/>
+      <bind nodeset="/data/summary/buscopan_injectable_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/buscopan_injectable_at_hand  &lt;= /data/inputs/buscopan_injectable_required "/>
+      <bind nodeset="/data/summary/buscopan_injectable_note_required" readonly="true()" type="string" relevant=" /data/inputs/buscopan_injectable_at_hand  &lt;= /data/inputs/buscopan_injectable_required "/>
+      <bind nodeset="/data/summary/buscopan_injectable_at_hand___set" type="string" calculate="int( /data/inputs/buscopan_injectable_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/buscopan_injectable_at_hand___unit" type="string" calculate=" /data/inputs/buscopan_injectable_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/buscopan_injectable_required___set" type="string" calculate="int( /data/inputs/buscopan_injectable_required  div 1)"/>
+      <bind nodeset="/data/summary/buscopan_injectable_required___unit" type="string" calculate=" /data/inputs/buscopan_injectable_required  mod 1"/>
+      <bind nodeset="/data/summary/pregnancy_test_name" readonly="true()" type="string" relevant=" /data/inputs/pregnancy_test_at_hand  &lt;= /data/inputs/pregnancy_test_required "/>
+      <bind nodeset="/data/summary/pregnancy_test_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/pregnancy_test_at_hand  &lt;= /data/inputs/pregnancy_test_required "/>
+      <bind nodeset="/data/summary/pregnancy_test_note_required" readonly="true()" type="string" relevant=" /data/inputs/pregnancy_test_at_hand  &lt;= /data/inputs/pregnancy_test_required "/>
+      <bind nodeset="/data/summary/pregnancy_test_at_hand___set" type="string" calculate="int( /data/inputs/pregnancy_test_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/pregnancy_test_at_hand___unit" type="string" calculate=" /data/inputs/pregnancy_test_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/pregnancy_test_required___set" type="string" calculate="int( /data/inputs/pregnancy_test_required  div 1)"/>
+      <bind nodeset="/data/summary/pregnancy_test_required___unit" type="string" calculate=" /data/inputs/pregnancy_test_required  mod 1"/>
+      <bind nodeset="/data/summary/paracetamol_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/paracetamol_500mg_at_hand  &lt;= /data/inputs/paracetamol_500mg_required "/>
+      <bind nodeset="/data/summary/paracetamol_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/paracetamol_500mg_at_hand  &lt;= /data/inputs/paracetamol_500mg_required "/>
+      <bind nodeset="/data/summary/paracetamol_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/paracetamol_500mg_at_hand  &lt;= /data/inputs/paracetamol_500mg_required "/>
+      <bind nodeset="/data/summary/paracetamol_500mg_at_hand___set" type="string" calculate="int( /data/inputs/paracetamol_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/paracetamol_500mg_at_hand___unit" type="string" calculate=" /data/inputs/paracetamol_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/paracetamol_500mg_required___set" type="string" calculate="int( /data/inputs/paracetamol_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/paracetamol_500mg_required___unit" type="string" calculate=" /data/inputs/paracetamol_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/cloxacillin_500mg_at_hand  &lt;= /data/inputs/cloxacillin_500mg_required "/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/cloxacillin_500mg_at_hand  &lt;= /data/inputs/cloxacillin_500mg_required "/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/cloxacillin_500mg_at_hand  &lt;= /data/inputs/cloxacillin_500mg_required "/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_at_hand___set" type="string" calculate="int( /data/inputs/cloxacillin_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_at_hand___unit" type="string" calculate=" /data/inputs/cloxacillin_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_required___set" type="string" calculate="int( /data/inputs/cloxacillin_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/cloxacillin_500mg_required___unit" type="string" calculate=" /data/inputs/cloxacillin_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_name" readonly="true()" type="string" relevant=" /data/inputs/amoxycillin_500mg_at_hand  &lt;= /data/inputs/amoxycillin_500mg_required "/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/amoxycillin_500mg_at_hand  &lt;= /data/inputs/amoxycillin_500mg_required "/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/amoxycillin_500mg_at_hand  &lt;= /data/inputs/amoxycillin_500mg_required "/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_at_hand___set" type="string" calculate="int( /data/inputs/amoxycillin_500mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_at_hand___unit" type="string" calculate=" /data/inputs/amoxycillin_500mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_required___set" type="string" calculate="int( /data/inputs/amoxycillin_500mg_required  div 1)"/>
+      <bind nodeset="/data/summary/amoxycillin_500mg_required___unit" type="string" calculate=" /data/inputs/amoxycillin_500mg_required  mod 1"/>
+      <bind nodeset="/data/summary/enalapril_10mg_name" readonly="true()" type="string" relevant=" /data/inputs/enalapril_10mg_at_hand  &lt;= /data/inputs/enalapril_10mg_required "/>
+      <bind nodeset="/data/summary/enalapril_10mg_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/enalapril_10mg_at_hand  &lt;= /data/inputs/enalapril_10mg_required "/>
+      <bind nodeset="/data/summary/enalapril_10mg_note_required" readonly="true()" type="string" relevant=" /data/inputs/enalapril_10mg_at_hand  &lt;= /data/inputs/enalapril_10mg_required "/>
+      <bind nodeset="/data/summary/enalapril_10mg_at_hand___set" type="string" calculate="int( /data/inputs/enalapril_10mg_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/enalapril_10mg_at_hand___unit" type="string" calculate=" /data/inputs/enalapril_10mg_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/enalapril_10mg_required___set" type="string" calculate="int( /data/inputs/enalapril_10mg_required  div 1)"/>
+      <bind nodeset="/data/summary/enalapril_10mg_required___unit" type="string" calculate=" /data/inputs/enalapril_10mg_required  mod 1"/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_name" readonly="true()" type="string" relevant=" /data/inputs/benzyl_benzoate_25_at_hand  &lt;= /data/inputs/benzyl_benzoate_25_required "/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_note_at_hand" readonly="true()" type="string" relevant=" /data/inputs/benzyl_benzoate_25_at_hand  &lt;= /data/inputs/benzyl_benzoate_25_required "/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_note_required" readonly="true()" type="string" relevant=" /data/inputs/benzyl_benzoate_25_at_hand  &lt;= /data/inputs/benzyl_benzoate_25_required "/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_at_hand___set" type="string" calculate="int( /data/inputs/benzyl_benzoate_25_at_hand  div 1)"/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_at_hand___unit" type="string" calculate=" /data/inputs/benzyl_benzoate_25_at_hand  mod 1"/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_required___set" type="string" calculate="int( /data/inputs/benzyl_benzoate_25_required  div 1)"/>
+      <bind nodeset="/data/summary/benzyl_benzoate_25_required___unit" type="string" calculate=" /data/inputs/benzyl_benzoate_25_required  mod 1"/>
+      <bind nodeset="/data/out/prevent_empty_group_error" type="string"/>
+      <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <label ref="jr:itext('/data/inputs:label')"/>
+      <input ref="/data/inputs/source" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source:label')"/>
+      </input>
+      <input ref="/data/inputs/source_id" appearance="hidden">
+        <label ref="jr:itext('/data/inputs/source_id:label')"/>
+      </input>
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id" appearance="db-object"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object"/>
+        <input ref="/data/inputs/contact/name" appearance="hidden"/>
+        <group appearance="hidden" ref="/data/inputs/contact/parent">
+          <input ref="/data/inputs/contact/parent/_id"/>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
+      <input ref="/data/summary/s_submit">
+        <label ref="jr:itext('/data/summary/s_submit:label')"/>
+      </input>
+      <input ref="/data/summary/r_summary" appearance="h1 yellow">
+        <label ref="jr:itext('/data/summary/r_summary:label')"/>
+      </input>
+      <input ref="/data/summary/Medicine" appearance="h1 green">
+        <label ref="jr:itext('/data/summary/Medicine:label')"/>
+      </input>
+      <input ref="/data/summary/hctz_25mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/hctz_25mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/hctz_25mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/hctz_25mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/hctz_25mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/hctz_25mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/calamine_lotion_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/calamine_lotion_name:label')"/>
+      </input>
+      <input ref="/data/summary/calamine_lotion_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/calamine_lotion_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/calamine_lotion_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/calamine_lotion_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/tinidazole_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/tinidazole_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/tinidazole_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/tinidazole_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/tinidazole_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/tinidazole_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_20mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/omeprazole_20mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_20mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/omeprazole_20mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_20mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/omeprazole_20mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_20mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/nifedipine_20mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_20mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/nifedipine_20mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_20mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/nifedipine_20mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/griseofulvin_125mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/griseofulvin_125mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/griseofulvin_125mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/griseofulvin_125mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/griseofulvin_125mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/griseofulvin_125mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/lancets_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/lancets_name:label')"/>
+      </input>
+      <input ref="/data/summary/lancets_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/lancets_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/lancets_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/lancets_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/malaria_rapid_test_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/malaria_rapid_test_name:label')"/>
+      </input>
+      <input ref="/data/summary/malaria_rapid_test_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/malaria_rapid_test_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/malaria_rapid_test_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/malaria_rapid_test_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/metronidazole_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/metronidazole_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/metronidazole_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/metronidazole_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/metronidazole_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/metronidazole_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/doxycycline_100mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/doxycycline_100mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/doxycycline_100mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/doxycycline_100mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/doxycycline_100mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/doxycycline_100mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/metformin_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/metformin_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/metformin_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/metformin_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/metformin_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/metformin_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/strips_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/strips_name:label')"/>
+      </input>
+      <input ref="/data/summary/strips_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/strips_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/strips_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/strips_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/dexamethasone_injectable_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/dexamethasone_injectable_name:label')"/>
+      </input>
+      <input ref="/data/summary/dexamethasone_injectable_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/dexamethasone_injectable_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/dexamethasone_injectable_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/dexamethasone_injectable_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/ors_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/ors_name:label')"/>
+      </input>
+      <input ref="/data/summary/ors_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/ors_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/ors_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/ors_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/triple_antibiotic_ointment_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/triple_antibiotic_ointment_name:label')"/>
+      </input>
+      <input ref="/data/summary/triple_antibiotic_ointment_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/triple_antibiotic_ointment_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/triple_antibiotic_ointment_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/triple_antibiotic_ointment_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/h_pylori_rapid_test_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/h_pylori_rapid_test_name:label')"/>
+      </input>
+      <input ref="/data/summary/h_pylori_rapid_test_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/h_pylori_rapid_test_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/h_pylori_rapid_test_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/h_pylori_rapid_test_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_10mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/nifedipine_10mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_10mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/nifedipine_10mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/nifedipine_10mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/nifedipine_10mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/salbutamol_4mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/salbutamol_4mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/salbutamol_4mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/salbutamol_4mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/salbutamol_4mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/salbutamol_4mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/litacid_gel_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/litacid_gel_name:label')"/>
+      </input>
+      <input ref="/data/summary/litacid_gel_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/litacid_gel_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/litacid_gel_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/litacid_gel_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_injectable_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/omeprazole_injectable_name:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_injectable_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/omeprazole_injectable_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/omeprazole_injectable_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/omeprazole_injectable_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/antifungal_cream_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/antifungal_cream_name:label')"/>
+      </input>
+      <input ref="/data/summary/antifungal_cream_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/antifungal_cream_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/antifungal_cream_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/antifungal_cream_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/chloroquine_150mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/chloroquine_150mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/chloroquine_150mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/chloroquine_150mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/chloroquine_150mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/chloroquine_150mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/ciprofloxacin_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/ciprofloxacin_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/ciprofloxacin_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/ciprofloxacin_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/ciprofloxacin_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/ciprofloxacin_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/benzathine_penicillin_injectable_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/benzathine_penicillin_injectable_name:label')"/>
+      </input>
+      <input ref="/data/summary/benzathine_penicillin_injectable_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/benzathine_penicillin_injectable_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/benzathine_penicillin_injectable_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/benzathine_penicillin_injectable_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/iron_folic_acid_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/iron_folic_acid_name:label')"/>
+      </input>
+      <input ref="/data/summary/iron_folic_acid_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/iron_folic_acid_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/iron_folic_acid_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/iron_folic_acid_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/buscopan_injectable_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/buscopan_injectable_name:label')"/>
+      </input>
+      <input ref="/data/summary/buscopan_injectable_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/buscopan_injectable_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/buscopan_injectable_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/buscopan_injectable_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/pregnancy_test_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/pregnancy_test_name:label')"/>
+      </input>
+      <input ref="/data/summary/pregnancy_test_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/pregnancy_test_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/pregnancy_test_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/pregnancy_test_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/paracetamol_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/paracetamol_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/paracetamol_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/paracetamol_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/paracetamol_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/paracetamol_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/cloxacillin_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/cloxacillin_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/cloxacillin_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/cloxacillin_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/cloxacillin_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/cloxacillin_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/amoxycillin_500mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/amoxycillin_500mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/amoxycillin_500mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/amoxycillin_500mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/amoxycillin_500mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/amoxycillin_500mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/enalapril_10mg_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/enalapril_10mg_name:label')"/>
+      </input>
+      <input ref="/data/summary/enalapril_10mg_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/enalapril_10mg_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/enalapril_10mg_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/enalapril_10mg_note_required:label')"/>
+      </input>
+      <input ref="/data/summary/benzyl_benzoate_25_name" appearance="h2 lime">
+        <label ref="jr:itext('/data/summary/benzyl_benzoate_25_name:label')"/>
+      </input>
+      <input ref="/data/summary/benzyl_benzoate_25_note_at_hand" appearance="li">
+        <label ref="jr:itext('/data/summary/benzyl_benzoate_25_note_at_hand:label')"/>
+      </input>
+      <input ref="/data/summary/benzyl_benzoate_25_note_required" appearance="li">
+        <label ref="jr:itext('/data/summary/benzyl_benzoate_25_note_required:label')"/>
+      </input>
+    </group>
+    <group appearance="hidden" ref="/data/out"/>
+  </h:body>
+</h:html>

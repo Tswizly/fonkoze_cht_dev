@@ -14,12 +14,6 @@
           <text id="additional_medication-1">
             <value>Iron and Folic Acid</value>
           </text>
-          <text id="additional_medication-2">
-            <value>Mioflex</value>
-          </text>
-          <text id="additional_medication-3">
-            <value>Dolex</value>
-          </text>
           <text id="refer_location-0">
             <value>Zanmi Lsante health center in Cerca La Source</value>
           </text>
@@ -1387,12 +1381,6 @@ OR
           </text>
           <text id="additional_medication-1">
             <value>Fer et acide folique</value>
-          </text>
-          <text id="additional_medication-2">
-            <value>Mioflex</value>
-          </text>
-          <text id="additional_medication-3">
-            <value>Dolex</value>
           </text>
           <text id="refer_location-0">
             <value>Centre de santé Zanmi Lsante à Cerca La Source</value>
@@ -3056,12 +3044,6 @@ OU
           <text id="additional_medication-1">
             <value>Fè ak asid folik</value>
           </text>
-          <text id="additional_medication-2">
-            <value>Mioflex</value>
-          </text>
-          <text id="additional_medication-3">
-            <value>Dolex</value>
-          </text>
           <text id="refer_location-0">
             <value>Sant sante Zanmi Lsante nan Cerca La Source</value>
           </text>
@@ -4585,7 +4567,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ELD_Form012_Summary" version="20261014021544" prefix="J1!ELD_Form012_Summary!" delimiter="#">
+        <data id="ELD_Form012_Summary" version="20261014120910" prefix="J1!ELD_Form012_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -5217,14 +5199,6 @@ OSWA
           <item>
             <itextId>additional_medication-1</itextId>
             <name>iron_folic_acid</name>
-          </item>
-          <item>
-            <itextId>additional_medication-2</itextId>
-            <name>mioflex</name>
-          </item>
-          <item>
-            <itextId>additional_medication-3</itextId>
-            <name>dolex</name>
           </item>
         </root>
       </instance>
