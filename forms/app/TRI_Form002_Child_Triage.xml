@@ -65,6 +65,54 @@
           <text id="general_symptoms_youth-6">
             <value>Malnutrition, anemia, weight loss, or pale skin</value>
           </text>
+          <text id="triage_choice-0">
+            <value>Begin triage</value>
+          </text>
+          <text id="triage_choice-1">
+            <value>Manually select condition forms</value>
+          </text>
+          <text id="forms_youth-0">
+            <value>Anemia Screening</value>
+          </text>
+          <text id="forms_youth-1">
+            <value>Digestive Conditions Screening</value>
+          </text>
+          <text id="forms_youth-2">
+            <value>Respiratory Conditions Screening</value>
+          </text>
+          <text id="forms_youth-3">
+            <value>Skin Conditions Screening</value>
+          </text>
+          <text id="forms_youth-4">
+            <value>Vision Screening</value>
+          </text>
+          <text id="forms_youth-5">
+            <value>UTI and STD Screening</value>
+          </text>
+          <text id="forms_youth-6">
+            <value>Wound Care</value>
+          </text>
+          <text id="forms_child-0">
+            <value>Anemia and Malnutrition Screening</value>
+          </text>
+          <text id="forms_child-1">
+            <value>Digestive Conditions Screening</value>
+          </text>
+          <text id="forms_child-2">
+            <value>Respiratory Conditions Screening</value>
+          </text>
+          <text id="forms_child-3">
+            <value>Skin Conditions Screening</value>
+          </text>
+          <text id="forms_child-4">
+            <value>Wound Care</value>
+          </text>
+          <text id="forms_child-5">
+            <value>Vision Screening</value>
+          </text>
+          <text id="forms_child-6">
+            <value>Vaccination and Deworming</value>
+          </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
           </text>
@@ -106,6 +154,9 @@
           </text>
           <text id="/data/inputs/contact/parent/parent/contact/phone:label">
             <value>Nurse phone</value>
+          </text>
+          <text id="/data/intake_mode:label">
+            <value>Would you like to begin triage or manually select condition forms to fill out?</value>
           </text>
           <text id="/data/emergency_triage_group:label">
             <value>Emergency Triage</value>
@@ -182,6 +233,15 @@
           <text id="/data/vitals_general_group/general_symptoms_children:label">
             <value>What symptoms is the patient experiencing?</value>
           </text>
+          <text id="/data/select_form:label">
+            <value>Select Forms</value>
+          </text>
+          <text id="/data/select_form/forms_youths:label">
+            <value>Please select any forms the patient requires from the list below:</value>
+          </text>
+          <text id="/data/select_form/forms_children:label">
+            <value>Please select any forms the patient requires from the list below:</value>
+          </text>
           <text id="/data/child_assessment:label">
             <value>Child Assessment</value>
           </text>
@@ -198,7 +258,7 @@
             <value>Has the child received Vitamin A?</value>
           </text>
           <text id="/data/next_steps_group:label">
-            <value>Based on the Triage, the patient will have to do the following forms:</value>
+            <value>Based on the assessment/selections, the patient will have to do the following forms:</value>
           </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Diabetes Form</value>
@@ -236,11 +296,14 @@
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Malnutrition and Anemia Form</value>
           </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Vaccination and Deworming Form</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
-            <value>You will recieve tasks to complete the forms above. Submit the triage form.</value>
+            <value>You will receive tasks to complete the forms above. Submit the form.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>No additional forms are required based on the current assessment. To see manually select forms, begin a "Form Select" form.</value>
+            <value>No additional forms are required based on the current assessment or selection. Submit the form.</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -304,6 +367,54 @@
           <text id="general_symptoms_youth-6">
             <value>Malnutrition, anémie, perte de poids ou pâleur</value>
           </text>
+          <text id="triage_choice-0">
+            <value>Commencer le triage</value>
+          </text>
+          <text id="triage_choice-1">
+            <value>Sélectionner manuellement les formulaires d'état de santé</value>
+          </text>
+          <text id="forms_youth-0">
+            <value>Dépistage de l'anémie</value>
+          </text>
+          <text id="forms_youth-1">
+            <value>Dépistage des troubles digestifs</value>
+          </text>
+          <text id="forms_youth-2">
+            <value>Dépistage des affections respiratoires</value>
+          </text>
+          <text id="forms_youth-3">
+            <value>Dépistage des affections cutanées</value>
+          </text>
+          <text id="forms_youth-4">
+            <value>Dépistage visuel</value>
+          </text>
+          <text id="forms_youth-5">
+            <value>Dépistage des infections urinaires et des IST</value>
+          </text>
+          <text id="forms_youth-6">
+            <value>Soins des plaies</value>
+          </text>
+          <text id="forms_child-0">
+            <value>Dépistage de l'anémie et de la malnutrition</value>
+          </text>
+          <text id="forms_child-1">
+            <value>Dépistage des troubles digestifs</value>
+          </text>
+          <text id="forms_child-2">
+            <value>Dépistage des affections respiratoires</value>
+          </text>
+          <text id="forms_child-3">
+            <value>Dépistage des affections cutanées</value>
+          </text>
+          <text id="forms_child-4">
+            <value>Soins des plaies</value>
+          </text>
+          <text id="forms_child-5">
+            <value>Dépistage visuel</value>
+          </text>
+          <text id="forms_child-6">
+            <value>Vaccination et vermifugation</value>
+          </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
           </text>
@@ -345,6 +456,9 @@
           </text>
           <text id="/data/inputs/contact/parent/parent/contact/phone:label">
             <value>Téléphone de l'infirmier(ère)</value>
+          </text>
+          <text id="/data/intake_mode:label">
+            <value>Souhaitez-vous commencer le triage ou sélectionner manuellement les formulaires à remplir ?</value>
           </text>
           <text id="/data/emergency_triage_group:label">
             <value>Triage d'urgence</value>
@@ -421,6 +535,15 @@
           <text id="/data/vitals_general_group/general_symptoms_children:label">
             <value>Quels symptômes le patient présente-t-il ?</value>
           </text>
+          <text id="/data/select_form:label">
+            <value>Sélectionner les formulaires</value>
+          </text>
+          <text id="/data/select_form/forms_youths:label">
+            <value>Veuillez sélectionner dans la liste ci-dessous les formulaires dont le patient a besoin :</value>
+          </text>
+          <text id="/data/select_form/forms_children:label">
+            <value>Veuillez sélectionner dans la liste ci-dessous les formulaires dont le patient a besoin :</value>
+          </text>
           <text id="/data/child_assessment:label">
             <value>Évaluation de l'enfant</value>
           </text>
@@ -437,7 +560,7 @@
             <value>L'enfant a-t-il reçu de la vitamine A ?</value>
           </text>
           <text id="/data/next_steps_group:label">
-            <value>D'après le triage, le patient devra remplir les formulaires suivants :</value>
+            <value>D'après l'évaluation ou les sélections, le patient devra remplir les formulaires suivants :</value>
           </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Formulaire Diabète</value>
@@ -475,11 +598,14 @@
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Formulaire Malnutrition et anémie</value>
           </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Formulaire Vaccination et vermifugation</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
-            <value>Vous recevrez des tâches pour remplir les formulaires ci-dessus. Soumettez le formulaire de triage.</value>
+            <value>Vous recevrez des tâches pour remplir les formulaires ci-dessus. Soumettez le formulaire.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Aucun formulaire supplémentaire n'est requis suite à l'évaluation actuelle. Pour afficher les formulaires à sélectionner manuellement, veuillez ouvrir un formulaire de « Sélection de formulaire ».</value>
+            <value>Aucun formulaire supplémentaire n'est requis suite à l'évaluation ou sélection actuelle. Soumettez le formulaire.</value>
           </text>
         </translation>
         <translation lang="cr">
@@ -543,6 +669,54 @@
           <text id="general_symptoms_youth-6">
             <value>Malnitrisyon, anemi, pèdi pwa oswa po pal</value>
           </text>
+          <text id="triage_choice-0">
+            <value>Kòmanse triyaj</value>
+          </text>
+          <text id="triage_choice-1">
+            <value>Chwazi fòmilè kondisyon yo alamen</value>
+          </text>
+          <text id="forms_youth-0">
+            <value>Depistaj anemi</value>
+          </text>
+          <text id="forms_youth-1">
+            <value>Dépistage des troubles digestifs</value>
+          </text>
+          <text id="forms_youth-2">
+            <value>Dépistage des affections respiratoires</value>
+          </text>
+          <text id="forms_youth-3">
+            <value>Dépistage des affections cutanées</value>
+          </text>
+          <text id="forms_youth-4">
+            <value>Depistaj vizyèl</value>
+          </text>
+          <text id="forms_youth-5">
+            <value>Dépistage des infections urinaires et des IST</value>
+          </text>
+          <text id="forms_youth-6">
+            <value>Swen jwèt yo</value>
+          </text>
+          <text id="forms_child-0">
+            <value>Dépistage de l'anémie et de la malnutrition</value>
+          </text>
+          <text id="forms_child-1">
+            <value>Dépistage des troubles digestifs</value>
+          </text>
+          <text id="forms_child-2">
+            <value>Dépistage des affections respiratoires</value>
+          </text>
+          <text id="forms_child-3">
+            <value>Dépistage des affections cutanées</value>
+          </text>
+          <text id="forms_child-4">
+            <value>Swen jwèt yo</value>
+          </text>
+          <text id="forms_child-5">
+            <value>Depistaj vizyèl</value>
+          </text>
+          <text id="forms_child-6">
+            <value>Vaksinasyon ak vèmifigasyon</value>
+          </text>
           <text id="/data/inputs/source:label">
             <value>Sous</value>
           </text>
@@ -584,6 +758,9 @@
           </text>
           <text id="/data/inputs/contact/parent/parent/contact/phone:label">
             <value>Nimewo telefòn enfimyè/enfimye a</value>
+          </text>
+          <text id="/data/intake_mode:label">
+            <value>Èske ou ta renmen kòmanse triyaj oswa chwazi fòmilè kondisyon yo alamen?</value>
           </text>
           <text id="/data/emergency_triage_group:label">
             <value>Triyaj Dijans</value>
@@ -660,6 +837,15 @@
           <text id="/data/vitals_general_group/general_symptoms_children:label">
             <value>Ki sentòm pasyan an genyen ?</value>
           </text>
+          <text id="/data/select_form:label">
+            <value>Chwazi Fòmilè yo</value>
+          </text>
+          <text id="/data/select_form/forms_youths:label">
+            <value>Tanpri chwazi nan lis la anba fòm yo, pa bezwen pasyan an :</value>
+          </text>
+          <text id="/data/select_form/forms_children:label">
+            <value>Tanpri chwazi nan lis la anba fòm yo, pa bezwen pasyan an :</value>
+          </text>
           <text id="/data/child_assessment:label">
             <value>Evalyasyon Timoun</value>
           </text>
@@ -676,7 +862,7 @@
             <value>Èske timoun nan te resevwa Vitamin A ?</value>
           </text>
           <text id="/data/next_steps_group:label">
-            <value>Dapre Triyaj la, pasyan an ap gen pou ranpli fòmilè sa yo :</value>
+            <value>Dapre evalyasyon oswa seleksyon yo, pasyan an ap gen pou ranpli fòmilè sa yo :</value>
           </text>
           <text id="/data/next_steps_group/note_diabetes:label">
             <value>- Fòmilè Dyabèt</value>
@@ -714,16 +900,19 @@
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Fòmilè Malnitrisyon ak Anemi</value>
           </text>
+          <text id="/data/next_steps_group/note_vaccinations:label">
+            <value>- Fòmilè Vaksinasyon ak Vèmifijasyon</value>
+          </text>
           <text id="/data/next_steps_group/note_tasks_will_appear:label">
-            <value>W ap resevwa tach pou konplete fòmilè ki anwo yo. Soumèt fòmilè triyaj la.</value>
+            <value>W ap resevwa tach pou konplete fòmilè ki anwo yo. Soumèt fòmilè a.</value>
           </text>
           <text id="/data/next_steps_group/note_no_forms:label">
-            <value>Pa gen okenn lòt fòm ki nesesè dapre evalyasyon aktyèl la. Pou wè fòm yo chwazi manyèlman, kòmanse yon fòm "Seleksyon Fòm".</value>
+            <value>Pa gen okenn lòt fòmilè ki nesesè dapre evalyasyon oswa seleksyon aktyèl la. Soumèt fòmilè a.</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form002_Child_Triage" version="20261017190842" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+        <data id="TRI_Form002_Child_Triage" version="20261017221251" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -771,6 +960,7 @@
           <patient_age_in_months/>
           <patient_age_in_days/>
           <patient_age_in_weeks/>
+          <intake_mode/>
           <emergency_triage_group>
             <has_emergency_symptoms/>
             <emergency_symptoms/>
@@ -797,6 +987,10 @@
             <general_symptoms_youths/>
             <general_symptoms_children/>
           </vitals_general_group>
+          <select_form>
+            <forms_youths/>
+            <forms_children/>
+          </select_form>
           <child_assessment>
             <vaccination_card/>
             <vaccinated_expected/>
@@ -815,6 +1009,7 @@
           <route_vision/>
           <route_diabetes/>
           <route_malnutrition_anemia/>
+          <route_vaccinations/>
           <_has_emergency_symptoms/>
           <_emergency_dehydration/>
           <_emergency_respiratory_distress/>
@@ -837,6 +1032,7 @@
             <note_wound/>
             <note_vision/>
             <note_malnutrition_anemia/>
+            <note_vaccinations/>
             <note_tasks_will_appear/>
             <note_no_forms/>
           </next_steps_group>
@@ -943,6 +1139,82 @@
           </item>
         </root>
       </instance>
+      <instance id="triage_choice">
+        <root>
+          <item>
+            <itextId>triage_choice-0</itextId>
+            <name>triage</name>
+          </item>
+          <item>
+            <itextId>triage_choice-1</itextId>
+            <name>manual_select</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="forms_youth">
+        <root>
+          <item>
+            <itextId>forms_youth-0</itextId>
+            <name>yaa_anemia</name>
+          </item>
+          <item>
+            <itextId>forms_youth-1</itextId>
+            <name>yaa_digestive</name>
+          </item>
+          <item>
+            <itextId>forms_youth-2</itextId>
+            <name>yaa_respiratory</name>
+          </item>
+          <item>
+            <itextId>forms_youth-3</itextId>
+            <name>yaa_skin</name>
+          </item>
+          <item>
+            <itextId>forms_youth-4</itextId>
+            <name>yaa_vision</name>
+          </item>
+          <item>
+            <itextId>forms_youth-5</itextId>
+            <name>yaa_uti</name>
+          </item>
+          <item>
+            <itextId>forms_youth-6</itextId>
+            <name>yaa_wound</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="forms_child">
+        <root>
+          <item>
+            <itextId>forms_child-0</itextId>
+            <name>chd_anemia</name>
+          </item>
+          <item>
+            <itextId>forms_child-1</itextId>
+            <name>chd_digestive</name>
+          </item>
+          <item>
+            <itextId>forms_child-2</itextId>
+            <name>chd_respiratory</name>
+          </item>
+          <item>
+            <itextId>forms_child-3</itextId>
+            <name>chd_skin</name>
+          </item>
+          <item>
+            <itextId>forms_child-4</itextId>
+            <name>chd_wound</name>
+          </item>
+          <item>
+            <itextId>forms_child-5</itextId>
+            <name>chd_vision</name>
+          </item>
+          <item>
+            <itextId>forms_child-6</itextId>
+            <name>chd_vac</name>
+          </item>
+        </root>
+      </instance>
       <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/data/inputs/source" type="string"/>
       <bind nodeset="/data/inputs/source_id" type="string"/>
@@ -969,9 +1241,11 @@
       <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/intake_mode" type="string" required="true()"/>
+      <bind nodeset="/data/emergency_triage_group" relevant=" /data/intake_mode  = 'triage'"/>
       <bind nodeset="/data/emergency_triage_group/has_emergency_symptoms" type="string" required="true()"/>
       <bind nodeset="/data/emergency_triage_group/emergency_symptoms" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/emergency_triage_summary" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary" relevant=" /data/intake_mode  = 'triage' and  /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/emergency_header" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/emergency_subheader" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/treatment_severe_dehydration" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'severe_dehydration')"/>
@@ -979,6 +1253,7 @@
       <bind nodeset="/data/emergency_triage_summary/treatment_altered_consciousness" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'altered_consciousness_convulsions')"/>
       <bind nodeset="/data/emergency_triage_summary/treatment_acute_malnutrition" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'complicated_acute_malnutrition')"/>
       <bind nodeset="/data/emergency_triage_summary/treatment_bloated_extremities" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
+      <bind nodeset="/data/vitals_general_group" relevant=" /data/intake_mode  = 'triage' and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/vitals_general_group/weight" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/vitals_general_group/height" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
@@ -990,23 +1265,27 @@
       <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
       <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/vitals_general_group/general_symptoms_children" type="string" relevant=" /data/patient_age_in_years  &lt; 6 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
-      <bind nodeset="/data/child_assessment" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no' and  /data/patient_age_in_years  &lt; 5"/>
+      <bind nodeset="/data/select_form" relevant=" /data/intake_mode  = 'manual_select'"/>
+      <bind nodeset="/data/select_form/forms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18"/>
+      <bind nodeset="/data/select_form/forms_children" type="string" relevant=" /data/patient_age_in_years  &lt; 6"/>
+      <bind nodeset="/data/child_assessment" relevant=" /data/intake_mode  = 'triage' and  /data/emergency_triage_group/has_emergency_symptoms  = 'no' and  /data/patient_age_in_years  &lt; 5"/>
       <bind nodeset="/data/child_assessment/vaccination_card" type="string" required="true()"/>
       <bind nodeset="/data/child_assessment/vaccinated_expected" type="string" required="true()"/>
       <bind nodeset="/data/child_assessment/received_albendazole" type="string" required="true()"/>
       <bind nodeset="/data/child_assessment/received_vitamin_a" type="string" required="true()"/>
-      <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_digestive') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_digestive'), 'true', 'false')"/>
+      <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_digestive') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_digestive') or selected( /data/select_form/forms_youths , 'yaa_digestive') or selected( /data/select_form/forms_children , 'chd_digestive'), 'true', 'false')"/>
       <bind nodeset="/data/route_fever" type="string" calculate="if( /data/vitals_general_group/temperature  &gt; 38, 'true', 'false')"/>
       <bind nodeset="/data/route_hypertension" type="string" calculate="if( /data/vitals_general_group/bp_systolic  &gt;= 140 or  /data/vitals_general_group/bp_diastolic  &gt;= 90, 'true', 'false')"/>
       <bind nodeset="/data/route_pregnancy" type="string" calculate="if( /data/vitals_general_group/pregnancy_status  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/route_respiratory" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_respiratory') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_respiratory') or  /data/vitals_general_group/respiratory_rate  &gt; 20 or  /data/vitals_general_group/pulse_ox  &lt; 95, 'true', 'false')"/>
-      <bind nodeset="/data/route_skin" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_skin') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_skin'), 'true', 'false')"/>
+      <bind nodeset="/data/route_respiratory" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_respiratory') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_respiratory') or  /data/vitals_general_group/respiratory_rate  &gt; 20 or  /data/vitals_general_group/pulse_ox  &lt; 95 or selected( /data/select_form/forms_youths , 'yaa_respiratory') or selected( /data/select_form/forms_children , 'chd_respiratory'), 'true', 'false')"/>
+      <bind nodeset="/data/route_skin" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_skin') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_skin') or selected( /data/select_form/forms_youths , 'yaa_skin') or selected( /data/select_form/forms_children , 'chd_skin'), 'true', 'false')"/>
       <bind nodeset="/data/route_stroke" type="string" calculate="'false'"/>
-      <bind nodeset="/data/route_uti_std" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_uti'), 'true', 'false')"/>
-      <bind nodeset="/data/route_wound" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_wound') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_wound'), 'true', 'false')"/>
-      <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision'), 'true', 'false')"/>
+      <bind nodeset="/data/route_uti_std" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_uti') or selected( /data/select_form/forms_youths , 'yaa_uti'), 'true', 'false')"/>
+      <bind nodeset="/data/route_wound" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_wound') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_wound') or selected( /data/select_form/forms_youths , 'yaa_wound') or selected( /data/select_form/forms_children , 'chd_wound'), 'true', 'false')"/>
+      <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision') or selected( /data/select_form/forms_youths , 'yaa_vision') or selected( /data/select_form/forms_children , 'chd_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="'false'"/>
-      <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5 or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_malnutrition_anemia') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_malnutrition_anemia'), 'true', 'false')"/>
+      <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5 or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_malnutrition_anemia') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_malnutrition_anemia') or selected( /data/select_form/forms_youths , 'yaa_anemia') or selected( /data/select_form/forms_children , 'chd_anemia'), 'true', 'false')"/>
+      <bind nodeset="/data/route_vaccinations" type="string" calculate="if(selected( /data/select_form/forms_children , 'chd_vac'), 'true', 'false')"/>
       <bind nodeset="/data/_has_emergency_symptoms" type="string" calculate="if( /data/emergency_triage_group/has_emergency_symptoms  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/_emergency_dehydration" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'severe_dehydration'), 'true', 'false')"/>
       <bind nodeset="/data/_emergency_respiratory_distress" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'respiratory_distress'), 'true', 'false')"/>
@@ -1016,7 +1295,7 @@
       <bind nodeset="/data/_needs_vitamin_a" type="string" calculate="if( /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
       <bind nodeset="/data/_needs_albendazole" type="string" calculate="if( /data/child_assessment/received_albendazole  = 'no', 'true', 'false')"/>
       <bind nodeset="/data/_vaccinated_as_expected" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'yes', 'true', 'false')"/>
-      <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
+      <bind nodeset="/data/next_steps_group" relevant="( /data/intake_mode  = 'triage' and  /data/emergency_triage_group/has_emergency_symptoms  = 'no') or  /data/intake_mode  = 'manual_select'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_fever" readonly="true()" type="string" relevant=" /data/route_fever  = 'true'"/>
@@ -1029,8 +1308,9 @@
       <bind nodeset="/data/next_steps_group/note_wound" readonly="true()" type="string" relevant=" /data/route_wound  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_vision" readonly="true()" type="string" relevant=" /data/route_vision  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_malnutrition_anemia" readonly="true()" type="string" relevant=" /data/route_malnutrition_anemia  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_malnutrition_anemia  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_malnutrition_anemia  = 'false'"/>
+      <bind nodeset="/data/next_steps_group/note_vaccinations" readonly="true()" type="string" relevant=" /data/route_vaccinations  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_malnutrition_anemia  = 'true' or  /data/route_vaccinations  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_malnutrition_anemia  = 'false' and  /data/route_vaccinations  = 'false'"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1054,6 +1334,13 @@
         </group>
       </group>
     </group>
+    <select1 ref="/data/intake_mode">
+      <label ref="jr:itext('/data/intake_mode:label')"/>
+      <itemset nodeset="instance('triage_choice')/root/item">
+        <value ref="name"/>
+        <label ref="jr:itext(itextId)"/>
+      </itemset>
+    </select1>
     <group appearance="field-list" ref="/data/emergency_triage_group">
       <label ref="jr:itext('/data/emergency_triage_group:label')"/>
       <select1 ref="/data/emergency_triage_group/has_emergency_symptoms">
@@ -1145,6 +1432,23 @@
         </itemset>
       </select>
     </group>
+    <group appearance="field-list" ref="/data/select_form">
+      <label ref="jr:itext('/data/select_form:label')"/>
+      <select ref="/data/select_form/forms_youths">
+        <label ref="jr:itext('/data/select_form/forms_youths:label')"/>
+        <itemset nodeset="instance('forms_youth')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/select_form/forms_children">
+        <label ref="jr:itext('/data/select_form/forms_children:label')"/>
+        <itemset nodeset="instance('forms_child')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+    </group>
     <group appearance="field-list" ref="/data/child_assessment">
       <label ref="jr:itext('/data/child_assessment:label')"/>
       <select1 ref="/data/child_assessment/vaccination_card">
@@ -1213,6 +1517,9 @@
       </input>
       <input ref="/data/next_steps_group/note_malnutrition_anemia">
         <label ref="jr:itext('/data/next_steps_group/note_malnutrition_anemia:label')"/>
+      </input>
+      <input ref="/data/next_steps_group/note_vaccinations">
+        <label ref="jr:itext('/data/next_steps_group/note_vaccinations:label')"/>
       </input>
       <input ref="/data/next_steps_group/note_tasks_will_appear">
         <label ref="jr:itext('/data/next_steps_group/note_tasks_will_appear:label')"/>

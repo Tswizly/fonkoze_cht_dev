@@ -96,7 +96,7 @@
             <value>Rapid Test</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test:label">
-            <value>Are you able to give the patient a rapid test?</value>
+            <value>The patient exhibits some signs of malaria. If you are in an area where the patient could have malaria, it is up to your discretion to administer a rapid test. Will you be administering a rapid test?</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test_result:label">
             <value>Give the rapid test. What is rapid test result?</value>
@@ -227,7 +227,7 @@
             <value>Test Rapide</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test:label">
-            <value>Êtes-vous en mesure de faire passer un test rapide au patient ?</value>
+            <value>Le patient présente certains signes de paludisme. Si vous vous trouvez dans une zone à risque, il vous appartient de décider de réaliser ou non un test rapide. Allez-vous réaliser un test rapide ?</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test_result:label">
             <value>Effectuez le test rapide. Quel est le résultat du test rapide ?</value>
@@ -358,7 +358,7 @@
             <value>Tès Rapid</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test:label">
-            <value>Èske ou kapab bay pasyan an yon tès rapid?</value>
+            <value>Pasyan an montre kèk siy malarya. Si w nan yon zòn kote pasyan an ta ka gen malarya, se ou menm ki deside si w ap fè yon tès rapid. Èske w ap fè yon tès rapid?</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test_result:label">
             <value>Bay tès rapid la. Ki rezilta tès rapid la ye?</value>
@@ -370,7 +370,7 @@
             <value>Malarya</value>
           </text>
           <text id="/data/results_group/res_malaria_positive_action:label">
-            <value>Pasyan an teste pozitif pou malarya. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+            <value>Pasyan an teste pozitif pou malarya. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/results_group/res_malaria_negative:label">
             <value>Negatif pou malarya</value>
@@ -399,7 +399,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form003_Fever" version="20261012105309" prefix="J1!ADT_Form003_Fever!" delimiter="#">
+        <data id="ADT_Form003_Fever" version="20261017194158" prefix="J1!ADT_Form003_Fever!" delimiter="#">
           <inputs>
             <meta>
               <location>

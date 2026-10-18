@@ -157,7 +157,7 @@ module.exports = [
           content._needs_vitamin_a = getEncounterFieldValue(encounterReports, '_needs_vitamin_a');
           content._needs_albendazole = getEncounterFieldValue(encounterReports, '_needs_albendazole');
           content._vaccinated_as_expected = getEncounterFieldValue(encounterReports, '_vaccinated_as_expected');
-          
+
           // Respiratory Infections (from CHD_Form002)
           content._result_severe_pneumonia = getEncounterFieldValue(encounterReports, '_result_severe_pneumonia');
           content._result_pneumonia = getEncounterFieldValue(encounterReports, '_result_pneumonia');
@@ -568,7 +568,7 @@ module.exports = [
     appliesTo: 'reports',
     appliesToType: ['TRI_Form001_Triage', 'TRI_Form002_Child_Triage','GEN_Form001_FormSelect'],
     appliesIf: function(c, r) {
-      return !c.contact.muted && r.fields.route_hypertension === 'true' && r.fields.patient_age_in_years >= 18;
+      return !c.contact.muted && (r.fields.route_hypertension === 'true' || r.fields.route_stroke === 'true') && r.fields.patient_age_in_years >= 18;
     },
     actions: [{ form: 'ADT_Form004_Hypertension' }],
     events: [{ start: 1, days: 1, end: 0 }]

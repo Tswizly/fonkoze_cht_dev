@@ -296,16 +296,15 @@ const targetForms = [
   'ELD_Form012_Summary', 
   'YAA_Form009_Summary', 
   'CHD_Form009_Summary', 
-  'assessment'
 ];
 
 const assessmentHistoryFields = allReports
   .filter(report => targetForms.includes(report.form))
   .sort((a, b) => b.reported_date - a.reported_date) // Newest first
-  .map(report => {
+  .flatMap(report => { // Changed from .map to .flatMap
     const dateStr = new Date(report.reported_date).toLocaleDateString();
     
-    // 1. Get positive conditions using the updated getReportConditions function
+    // 1. Get positive conditions
     const conditionsFound = getReportConditions(report);
     const conditionsText = conditionsFound.length > 0 
       ? conditionsFound.map(c => c.name).join(', ') 
@@ -314,13 +313,18 @@ const assessmentHistoryFields = allReports
     // 2. Get the specific drugs and their quantities
     const drugsText = getDrugsDistributed(report.fields || {});
     
-    return {
-      label: `Assessment on ${dateStr}`,
-      // Use standard string formatting (the \n creates a new line in most CHT versions, 
-      // otherwise it will render as a space separating the two statements)
-      value: `Screened positive for: ${conditionsText} \nDrugs distributed: ${drugsText}`,
-      width: 12
-    };
+    return [
+      {
+        label: `Assessment on ${dateStr}`,
+        value: `Screened positive for: ${conditionsText}`,
+        width: 12
+      },
+      {
+        label: '', // Leaving the label empty visually groups it with the assessment above
+        value: `Drugs distributed: ${drugsText}`,
+        width: 12
+      }
+    ];
   });
 
 const assessmentHistoryCard = {
