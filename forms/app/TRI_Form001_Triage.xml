@@ -182,20 +182,11 @@
           <text id="/data/emergency_triage_summary:label">
             <value>Emergency Triage Summary</value>
           </text>
+          <text id="/data/emergency_triage_summary/emergency_action_note:label">
+            <value>Emergency!</value>
+          </text>
           <text id="/data/emergency_triage_summary/emergency_action:label">
-            <value>Emergency! Refer patient immediately. Position patient, establish IV line if needed. Alert referral hospital. Inform patient about specific measures to take during referral. Make sure to note triage time and vital signs in application for referral.</value>
-          </text>
-          <text id="/data/emergency_triage_summary/iv_line_use:label">
-            <value>Was an IV line used?</value>
-          </text>
-          <text id="/data/referal_summary:label">
-            <value>Referral Summary</value>
-          </text>
-          <text id="/data/referal_summary/referal_location:label">
-            <value>Where was the patient referred?</value>
-          </text>
-          <text id="/data/referal_summary/referal_other:label">
-            <value>Specify other location</value>
+            <value>Refer patient immediately. Establish IV line if needed. Inform patient about specific measures to take during referral.</value>
           </text>
           <text id="/data/vitals_general_group:label">
             <value>Vitals and General Assessment</value>
@@ -460,20 +451,11 @@
           <text id="/data/emergency_triage_summary:label">
             <value>Résumé du triage d'urgence</value>
           </text>
+          <text id="/data/emergency_triage_summary/emergency_action_note:label">
+            <value>Urgence!</value>
+          </text>
           <text id="/data/emergency_triage_summary/emergency_action:label">
-            <value>Urgence ! Référer le patient immédiatement. Installer le patient, poser une voie veineuse si nécessaire. Alerter l'hôpital de référence. Informer le patient des mesures spécifiques à prendre pendant le transfert. Veiller à noter l'heure du triage et les signes vitaux dans la demande de transfert.</value>
-          </text>
-          <text id="/data/emergency_triage_summary/iv_line_use:label">
-            <value>Une perfusion intraveineuse a-t-elle été utilisée ?</value>
-          </text>
-          <text id="/data/referal_summary:label">
-            <value>Résumé de la référence</value>
-          </text>
-          <text id="/data/referal_summary/referal_location:label">
-            <value>Où le patient a-t-il été référé ?</value>
-          </text>
-          <text id="/data/referal_summary/referal_other:label">
-            <value>Précisez l'autre lieu</value>
+            <value>Orienter immédiatement le patient vers un autre établissement. Poser une voie intraveineuse si nécessaire. Informer le patient des mesures spécifiques à prendre pendant son transfert.</value>
           </text>
           <text id="/data/vitals_general_group:label">
             <value>Signes vitaux et évaluation générale</value>
@@ -738,20 +720,11 @@
           <text id="/data/emergency_triage_summary:label">
             <value>Rezime Triyaj Dijans</value>
           </text>
+          <text id="/data/emergency_triage_summary/emergency_action_note:label">
+            <value>Ijans!</value>
+          </text>
           <text id="/data/emergency_triage_summary/emergency_action:label">
-            <value>Ijans ! Refere pasyan an imedyatman. Pozisyone pasyan an, mete yon sewòm (IV) si sa nesesè. Avèti lopital referans lan. Enfòme pasyan an sou mezi espesyal pou pran pandan transfè a. Asire w ou note lè triyaj la ak tout siy vital yo nan demann referans lan.</value>
-          </text>
-          <text id="/data/emergency_triage_summary/iv_line_use:label">
-            <value>Èske yo te itilize yon liy IV?</value>
-          </text>
-          <text id="/data/referal_summary:label">
-            <value>Rezime Referans</value>
-          </text>
-          <text id="/data/referal_summary/referal_location:label">
-            <value>Ki kote yo te refere pasyan an ?</value>
-          </text>
-          <text id="/data/referal_summary/referal_other:label">
-            <value>Presize lòt kote a</value>
+            <value>Voye pasyan an imedyatman. Mete an plas yon liy IV si sa nesesè. Enfòme pasyan an sou mezi espesifik pou l pran pandan referans lan.</value>
           </text>
           <text id="/data/vitals_general_group:label">
             <value>Siy Vital ak Evalyasyon Jeneral</value>
@@ -840,7 +813,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form001_Triage" version="20261012102213" prefix="J1!TRI_Form001_Triage!" delimiter="#">
+        <data id="TRI_Form001_Triage" version="20261017190202" prefix="J1!TRI_Form001_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -889,17 +862,13 @@
           <patient_age_in_days/>
           <patient_age_in_weeks/>
           <emergency_triage_group>
-            <has_emergency_symptoms/>
+            <has_emergency_symptoms tag="hidden"/>
             <emergency_symptoms/>
           </emergency_triage_group>
           <emergency_triage_summary>
+            <emergency_action_note/>
             <emergency_action/>
-            <iv_line_use/>
           </emergency_triage_summary>
-          <referal_summary>
-            <referal_location/>
-            <referal_other/>
-          </referal_summary>
           <vitals_general_group>
             <bp_systolic/>
             <bp_diastolic/>
@@ -914,19 +883,19 @@
             <general_symptoms_adults/>
             <general_symptoms_youths/>
           </vitals_general_group>
-          <route_digestive/>
-          <route_fever/>
-          <route_hypertension/>
-          <route_pregnancy/>
-          <route_respiratory/>
-          <route_skin/>
-          <route_stroke/>
-          <route_uti_std/>
-          <route_wound/>
-          <route_vision/>
-          <route_diabetes/>
-          <route_anemia/>
-          <iv_line_used/>
+          <route_digestive tag="hidden"/>
+          <route_fever tag="hidden"/>
+          <route_hypertension tag="hidden"/>
+          <route_pregnancy tag="hidden"/>
+          <route_respiratory tag="hidden"/>
+          <route_skin tag="hidden"/>
+          <route_stroke tag="hidden"/>
+          <route_uti_std tag="hidden"/>
+          <route_wound tag="hidden"/>
+          <route_vision tag="hidden"/>
+          <route_diabetes tag="hidden"/>
+          <route_anemia tag="hidden"/>
+          <_has_emergency_symptoms tag="hidden"/>
           <next_steps_group>
             <note_anemia/>
             <note_diabetes/>
@@ -1170,23 +1139,20 @@
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
       <bind nodeset="/data/emergency_triage_group/has_emergency_symptoms" type="string" required="true()"/>
       <bind nodeset="/data/emergency_triage_group/emergency_symptoms" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
+      <bind nodeset="/data/emergency_triage_summary/emergency_action_note" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
       <bind nodeset="/data/emergency_triage_summary/emergency_action" readonly="true()" type="string" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/emergency_triage_summary/iv_line_use" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/referal_summary" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/referal_summary/referal_location" type="string" required="true()"/>
-      <bind nodeset="/data/referal_summary/referal_other" type="string" required="true()" relevant=" /data/referal_summary/referal_location  = 'other'"/>
-      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/weight" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/height" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required="true()" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
-      <bind nodeset="/data/vitals_general_group/general_symptoms_elderly" type="string" relevant=" /data/patient_age_in_years  &gt; 64"/>
-      <bind nodeset="/data/vitals_general_group/general_symptoms_adults" type="string" relevant=" /data/patient_age_in_years  &gt; 17 and  /data/patient_age_in_years  &lt; 65"/>
-      <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18"/>
+      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/weight" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/height" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female' and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_elderly" type="string" relevant=" /data/patient_age_in_years  &gt; 64 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_adults" type="string" relevant=" /data/patient_age_in_years  &gt; 17 and  /data/patient_age_in_years  &lt; 65 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_digestive') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_digestive') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_digestive'), 'true', 'false')"/>
       <bind nodeset="/data/route_fever" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_fever') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_fever') or  /data/vitals_general_group/temperature  &gt; 38, 'true', 'false')"/>
       <bind nodeset="/data/route_hypertension" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_hypertension') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_hypertension') or  /data/vitals_general_group/bp_systolic  &gt;= 140 or  /data/vitals_general_group/bp_diastolic  &gt;= 90, 'true', 'false')"/>
@@ -1199,7 +1165,7 @@
       <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_vision') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_vision') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_diabetes') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_diabetes'), 'true', 'false')"/>
       <bind nodeset="/data/route_anemia" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_elderly , 'eld_anemia') or selected( /data/vitals_general_group/general_symptoms_adults , 'adt_anemia') or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_anemia'), 'true', 'false')"/>
-      <bind nodeset="/data/iv_line_used" type="string" calculate="if( /data/emergency_triage_summary/iv_line_use  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/_has_emergency_symptoms" type="string" calculate="if( /data/emergency_triage_group/has_emergency_symptoms  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/next_steps_group/note_anemia" readonly="true()" type="string" relevant=" /data/route_anemia  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
@@ -1255,30 +1221,13 @@
         </itemset>
       </select>
     </group>
-    <group appearance="field-list" ref="/data/emergency_triage_summary">
+    <group appearance="field-list summary" ref="/data/emergency_triage_summary">
       <label ref="jr:itext('/data/emergency_triage_summary:label')"/>
+      <input ref="/data/emergency_triage_summary/emergency_action_note" appearance="h1 red">
+        <label ref="jr:itext('/data/emergency_triage_summary/emergency_action_note:label')"/>
+      </input>
       <input ref="/data/emergency_triage_summary/emergency_action">
         <label ref="jr:itext('/data/emergency_triage_summary/emergency_action:label')"/>
-      </input>
-      <select1 ref="/data/emergency_triage_summary/iv_line_use">
-        <label ref="jr:itext('/data/emergency_triage_summary/iv_line_use:label')"/>
-        <itemset nodeset="instance('yes_no')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-    </group>
-    <group appearance="field-list" ref="/data/referal_summary">
-      <label ref="jr:itext('/data/referal_summary:label')"/>
-      <select1 ref="/data/referal_summary/referal_location">
-        <label ref="jr:itext('/data/referal_summary/referal_location:label')"/>
-        <itemset nodeset="instance('referal_locations')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/referal_summary/referal_other">
-        <label ref="jr:itext('/data/referal_summary/referal_other:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/vitals_general_group">

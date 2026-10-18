@@ -1,6 +1,9 @@
 reference_id:excluded,parent:place WHERE reference_id=COL_VAL,name,sex,role,date_of_birth
 t1_nurse_zone_1_nurse,t1_nurse_1_zone,Territory 1 Zone 1 Nurse,female,nurse,1960-01-01
-t1_nurse_zone_1_patient,t1_nurse_1_zone,Territory 1 Zone 1 Patient,female,patient,2000-01-01
+t1_nurse_zone_1_patient_adult,t1_nurse_1_zone,Territory 1 Zone 1 Adult Patient,female,patient,2000-01-01
+t1_nurse_zone_1_patient_elderly,t1_nurse_1_zone,Territory 1 Zone 1 Elderly Patient,female,patient,1960-01-01
+t1_nurse_zone_1_patient_child,t1_nurse_1_zone,Territory 1 Zone 1 Child Patient,female,patient,2023-01-01
+t1_nurse_zone_1_patient_teen,t1_nurse_1_zone,Territory 1 Zone 1 Teen Patient,female,patient,2013-01-01
 t1_nurse_zone_1_che,t1_nurse_1_zone,Territory 1 Zone 1 CHE,female,che,2000-01-01
 t1_nurse_zone_2_nurse,t1_nurse_2_zone,Territory 1 Zone 2 Nurse,female,nurse,1960-01-01
 t1_nurse_zone_2_patient,t1_nurse_2_zone,Territory 1 Zone 2 Patient,female,patient,2000-01-01

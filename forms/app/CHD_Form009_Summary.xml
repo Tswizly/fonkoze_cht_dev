@@ -74,6 +74,33 @@
           <text id="/data/_child_height:label">
             <value>Passed from task</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_needs_vitamin_a:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_needs_albendazole:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_vaccinated_as_expected:label">
+            <value>Passed from task</value>
+          </text>
           <text id="/data/_muac_result:label">
             <value>Passed from task</value>
           </text>
@@ -158,12 +185,6 @@
           <text id="/data/_result_moderate_anemia:label">
             <value>Passed from task</value>
           </text>
-          <text id="/data/_child_vaccinated:label">
-            <value>Passed from task</value>
-          </text>
-          <text id="/data/_received_albendazole_vit_a:label">
-            <value>Passed from task</value>
-          </text>
           <text id="/data/qty_vitamin_a:jr:constraintMsg">
             <value>,</value>
           </text>
@@ -175,6 +196,12 @@
           </text>
           <text id="/data/summary_header/summary_instructions:label">
             <value>Clinical Findings &amp; Recommended Actions</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>If you have not already, you will treat and refer the patient. If they have been treated and referred, use this form to record information and notes.</value>
           </text>
           <text id="/data/summary_header/res_severe_pneumonia:label">
             <value>Severe Pneumonia or Very Severe Disease</value>
@@ -295,6 +322,51 @@
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>You may provide routine health, immunization check, and preventive wellness counseling.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>The patient had Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Severe Dehydration: Place Levine tube, provide ORS via tube, advise mother to give frequent sips of ORS and continue breastfeeding during transfer.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Did you place a Levine tube?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Did you provide 1 ORS packet via Levine tube?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Respiratory Distress: Give first dose of amoxicillin oral suspension, administer oxygen if available, keep airway clear and position child comfortably.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Did you administer the first dose of amoxicillin oral suspension?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Altered Consciousness / Convulsions / Whimpering: Manage airway, position on side (recovery position), give diazepam if actively convulsing, treat to prevent hypoglycemia, and keep warm.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Did you give 1 diazepam?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Complicated Acute Malnutrition: Keep child warm to prevent hypothermia, give oral glucose/sugar water to prevent low blood sugar, do not force-feed.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Did you give the child orgal glucose?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Bloated Child / Inflamed Lower Limbs / Anuria: Position upright, monitor vitals closely, avoid fluid overload, and prepare for immediate specialized renal/pediatric transfer.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Clinical notes:</value>
           </text>
           <text id="/data/grp_severe_pneumonia:label">
             <value>Severe Pneumonia or Very Severe Disease</value>
@@ -771,42 +843,117 @@
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Clinical notes:</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia:label">
-            <value>Malnutrition and Anemia</value>
+          <text id="/data/grp_severe_malnutrition:label">
+            <value>Severe or Moderate Acute Malnutrition with Anemia</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notification:label">
-            <value>The child has Malnutrition or Anemia</value>
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notification:label">
+            <value>The child has Severe or Moderate Acute Malnutrition with Anemia</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_protocol:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_protocol:label">
             <value>Protocol:
-- If Severe/Moderate Acute Malnutrition with Anemia: REFER IMMEDIATELY to malnutrition clinic
-- If Severe Anemia: REFER URGENTLY to hospital for investigations
-- If Moderate Anemia:
- * Distribute 14 Iron + Folic acid tablets (1 tablet once daily for 14 days)
- * Deworming Albendazole 400mg: 12-23 months: 1/2 tablet (200mg); 24-59 months: 1 tablet (400mg)
- * Vitamin A: 6-11 months: 100,000 UI; 12-59 months: 200,000 UI</value>
+- REFER IMMEDIATELY to the malnutrition treatment clinic.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_counseling:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notes:label">
+            <value>Clinical notes:</value>
+          </text>
+          <text id="/data/grp_severe_anemia:label">
+            <value>Severe Anemia</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notification:label">
+            <value>The child has Severe Anemia</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_protocol:label">
+            <value>Protocol:
+- REFER URGENTLY to the hospital for investigation and blood transfusion assessment.</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notes:label">
+            <value>Clinical notes:</value>
+          </text>
+          <text id="/data/grp_moderate_anemia:label">
+            <value>Moderate Anemia</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notification:label">
+            <value>The child has Moderate Anemia</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_protocol:label">
+            <value>Protocol:
+- Distribute 14 Iron + Folic acid tablets (1 tablet once daily for 14 days)
+- Deworming Albendazole 400mg:
+ * 12-23 months: 1/2 tablet (200mg)
+ * 24-59 months: 1 tablet (400mg)
+- Routine Vitamin A (if due):
+ * 6-11 months: 100,000 UI
+ * 12-59 months: 200,000 UI</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_counseling:label">
             <value>Counseling:
 - Nutrition counseling: encourage dark green leaves (moringa, panzou, lyann panye, boujon manyok, boujon pwa), fruits, grated carrots, and beets
 - Encourage routine deworming and Vitamin A every 6 months for all children &gt;6 months</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Did you distribute 14 Iron + Folic Acid tablets?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Did you distribute Albendazole 400mg dewormer?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Did you administer Vitamin A capsule?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:label">
             <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:hint">
             <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notes:label">
+            <value>Clinical notes:</value>
+          </text>
+          <text id="/data/grp_vaccinations:label">
+            <value>Vaccination Status</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_notification:label">
+            <value>Child is Not Vaccinated as Expected</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_protocol:label">
+            <value>Protocol:
+- Ask for vaccination card
+- Child is not vaccinated as expected: Refer the child to a vaccination post.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer:label">
+            <value>Routine Deworming &amp; Vitamin A</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notification:label">
+            <value>Routine Vitamin A and Deworming Administration</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_protocol:label">
+            <value>Protocol:
+- Routine administration only for children over 6 months
+- Vitamin A:
+ * 6-11 months: 100,000 UI every 6 months
+ * 12-59 months: 200,000 UI every 6 months
+- Albendazole (400 mg):
+ * 12-23 months: 1/2 tablet (200 mg) every 6 months
+ * 24-59 months: 1 tablet (400 mg) every 6 months</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer:label">
+            <value>Did you administer Vitamin A 100,000 UI capsule (6-11 months)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer:label">
+            <value>Did you administer Vitamin A 200,000 UI capsule (12-59 months)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer:label">
+            <value>Did you distribute 1/2 tablet Albendazole 400mg (200mg) (12-23 months)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer:label">
+            <value>Did you distribute 1 tablet Albendazole 400mg (24-59 months)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notes:label">
             <value>Clinical notes:</value>
           </text>
           <text id="/data/referrals:label">
@@ -852,6 +999,12 @@
           </text>
           <text id="/data/summary_header/summary_instructions:label">
             <value>Résultats cliniques et actions recommandées</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ce n'est déjà fait, vous prendrez en charge le patient et l'orienterez vers un spécialiste. S'il a déjà été pris en charge et orienté, veuillez utiliser ce formulaire pour consigner les informations et les notes.</value>
           </text>
           <text id="/data/summary_header/res_severe_pneumonia:label">
             <value>Pneumonie grave ou maladie très grave</value>
@@ -972,6 +1125,51 @@
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>Vous fournirez des conseils de santé générale, vérifierez les vaccins et donnerez des conseils préventifs.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Le patient présentait des symptômes d'urgence lors du triage.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Déshydratation sévère : Mettre en place une sonde de Levine, administrer une solution de réhydratation orale par sonde, conseiller à la mère de prendre fréquemment de petites gorgées de solution de réhydratation orale et de poursuivre l'allaitement maternel pendant le transfert.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Avez-vous posé un tube de Levine ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Avez-vous administré 1 sachet de SRO via un tube de Levine ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Détresse respiratoire : Administrer la première dose de suspension orale d'amoxicilline, administrer de l'oxygène si disponible, maintenir les voies respiratoires dégagées et installer confortablement l'enfant.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Avez-vous administré la première dose de suspension orale d'amoxicilline ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Altération de la conscience / Convulsions / Gémissements : Gérer les voies respiratoires, placer sur le côté (position latérale de sécurité), administrer du diazépam en cas de convulsions actives, traiter pour prévenir l'hypoglycémie et maintenir au chaud.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Avez-vous administré 1 comprimé de diazépam ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Malnutrition aiguë compliquée : Garder l'enfant au chaud pour prévenir l'hypothermie, donner du glucose oral ou de l'eau sucrée pour prévenir l'hypoglycémie, ne pas forcer à manger.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Avez-vous donné du glucose oral à l'enfant ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Enfant bouffi / Membres inférieurs enflammés / Anurie : Poser en position assise, surveiller étroitement les signes vitaux, éviter la surcharge liquidienne et préparer le transfert immédiat en pédiatrie/néphrologie.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Notes cliniques :</value>
           </text>
           <text id="/data/grp_severe_pneumonia:label">
             <value>Pneumonie grave ou maladie très grave</value>
@@ -1515,51 +1713,134 @@
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Notes cliniques :</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia:label">
-            <value>Malnutrition et anémie</value>
+          <text id="/data/grp_severe_malnutrition:label">
+            <value>Malnutrition aiguë sévère/modérée avec anémie</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notification:label">
-            <value>L'enfant présente une malnutrition ou une anémie</value>
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notification:label">
+            <value>L'enfant présente une malnutrition aiguë sévère ou modérée avec anémie</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_protocol:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_protocol:label">
             <value>Protocole :
-- Malnutrition aiguë avec anémie : RÉFÉRER IMMÉDIATEMENT au centre nutritionnel
-- Anémie sévère : RÉFÉRER D'URGENCE à l'hôpital
-- Anémie modérée :
- * 14 comprimés de fer et acide folique (1 comp/j pendant 14 jours)
- * Albendazole 400mg déparasitage (12-23 mois: 1/2 comp; 24-59 mois: 1 comp)
- * Vitamine A selon l'âge</value>
+- RÉFÉRER IMMÉDIATEMENT au centre nutritionnel.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_counseling:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notes:label">
+            <value>Notes cliniques :</value>
+          </text>
+          <text id="/data/grp_severe_anemia:label">
+            <value>Anémie sévère</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notification:label">
+            <value>L'enfant présente une anémie sévère</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_protocol:label">
+            <value>Protocole :
+- RÉFÉRER D'URGENCE à l'hôpital pour bilan approfondi.</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notes:label">
+            <value>Notes cliniques :</value>
+          </text>
+          <text id="/data/grp_moderate_anemia:label">
+            <value>Anémie modérée</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notification:label">
+            <value>L'enfant présente une anémie modérée</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_protocol:label">
+            <value>Protocole :
+- Distribuer 14 comprimés de fer et acide folique (1 comp/j pendant 14 jours)
+- Déparasitage Albendazole 400mg (12-23 mois: 1/2 comp; 24-59 mois: 1 comp)
+- Vitamine A selon l'âge</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_counseling:label">
             <value>Conseils :
 - Alimentation riche en fer : feuilles vertes (moringa, panzou, manioc), fruits, carottes, betteraves
 - Déparasitage régulier et vitamine A tous les 6 mois</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Avez-vous distribué 14 comprimés de fer et acide folique ?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Avez-vous distribué l'albendazole 400 mg déparasitant ?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_albendazole_malnutrition_distributed:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Avez-vous administré la capsule de vitamine A ?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_vitamin_a_malnutrition_distributed:label">
             <value>SANS ÉTIQUETTE</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:label">
             <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:hint">
             <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notes:label">
+            <value>Notes cliniques :</value>
+          </text>
+          <text id="/data/grp_vaccinations:label">
+            <value>Statut vaccinal</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_notification:label">
+            <value>L'enfant n'est pas vacciné comme prévu</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_protocol:label">
+            <value>Protocole :
+- Demander le carnet de vaccination
+- L'enfant n'est pas vacciné comme prévu : Référer l'enfant à un poste de vaccination.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer:label">
+            <value>Déparasitage de routine et vitamine A</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notification:label">
+            <value>Administration systématique de vitamine A et déparasitant</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_protocol:label">
+            <value>Protocole :
+- Administration systématique uniquement pour les enfants de plus de 6 mois
+- Vitamine A :
+ * 6-11 mois : 100 000 UI tous les 6 mois
+ * 12-59 mois : 200 000 UI tous les 6 mois
+- Albendazole (400 mg) :
+ * 12-23 mois : 1/2 comprimé (200 mg) tous les 6 mois
+ * 24-59 mois : 1 comprimé (400 mg) tous les 6 mois</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer:label">
+            <value>Avez-vous administré la capsule de vitamine A 100 000 UI (6-11 mois) ?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_vitamin_a_6_11mo_dewormer_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer:label">
+            <value>Avez-vous administré la capsule de vitamine A 200 000 UI (12-59 mois) ?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_vitamin_a_12_59mo_dewormer_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer:label">
+            <value>Avez-vous distribué 1/2 comprimé d'albendazole 400 mg (200 mg) (12-23 mois) ?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_albendazole_12_23mo_dewormer_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer:label">
+            <value>Avez-vous distribué 1 comprimé d'albendazole 400 mg (24-59 mois) ?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_albendazole_24_59mo_dewormer_distributed:label">
+            <value>SANS ÉTIQUETTE</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notes:label">
             <value>Notes cliniques :</value>
           </text>
           <text id="/data/referrals:label">
@@ -1673,6 +1954,33 @@
           <text id="/data/_child_height:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_needs_vitamin_a:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_needs_albendazole:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_vaccinated_as_expected:label">
+            <value>-</value>
+          </text>
           <text id="/data/_muac_result:label">
             <value>-</value>
           </text>
@@ -1757,12 +2065,6 @@
           <text id="/data/_result_moderate_anemia:label">
             <value>-</value>
           </text>
-          <text id="/data/_child_vaccinated:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_received_albendazole_vit_a:label">
-            <value>-</value>
-          </text>
           <text id="/data/_result_urgent_referral:label">
             <value>-</value>
           </text>
@@ -1821,6 +2123,18 @@
             <value>-</value>
           </text>
           <text id="/data/qty_vitamin_a:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/total_amoxicillin_suspension:label">
@@ -2128,6 +2442,12 @@
           <text id="/data/summary_header/summary_instructions:label">
             <value>Rezilta Klinik ak Aksyon Rekòmande</value>
           </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ou poko fè sa, ou pral trete epi refere pasyan an. Si yo te trete epi refere, sèvi ak fòm sa a pou anrejistre enfòmasyon ak nòt.</value>
+          </text>
           <text id="/data/summary_header/res_severe_pneumonia:label">
             <value>Nemoni grav oswa maladi ki trè grav</value>
           </text>
@@ -2247,6 +2567,51 @@
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>W ap bay konsèy sou bon sante, tcheke vaksen yo, epi bay konsèy prevantif.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Pasyan an te gen sentòm ijans pandan triyaj la.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Dezidratasyon grav: Mete yon tib Levine, bay ORS atravè tib la, konseye manman an pou l bay ORS souvan epi kontinye bay tete pandan transfè a.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Èske ou te mete yon tib Levine?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Èske ou te bay 1 pake ORS atravè tib Levine lan?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Pwoblèm respiratwa: Bay premye dòz sispansyon oral amoksisilin lan, administre oksijèn si genyen, kenbe pasaj lè a klè epi mete timoun nan nan yon pozisyon konfòtab.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Èske ou te bay premye dòz sispansyon oral amoksisilin lan?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Chanjman Konsyans / Konvulsion / Jemi: Jere pasaj lè a, mete kò a sou kote (pozisyon rekiperasyon), bay diazepam si l ap gen konvulsion aktivman, trete pou anpeche ipoglisemi, epi kenbe l cho.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Èske ou te bay 1 diazepam?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Malnitrisyon egi konplike: Kenbe timoun nan cho pou evite ipotèmi, bay dlo sikre oswa glikoz nan bouch pou evite ipoglisemi, pa fòse l manje.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Èske ou te bay timoun nan glikoz òganik?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Timoun anfle / Janm anfle anflame / Aniri (pa ka fè pipi): Mete chita dwat, siveye siy vital yo byen pre, evite twòp likid, epi prepare pou transfè ijan imedyat nan lopital espesyalize.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Nòt klinik:</value>
           </text>
           <text id="/data/grp_severe_pneumonia:label">
             <value>Nemoni grav oswa maladi ki trè grav</value>
@@ -2791,51 +3156,134 @@
           <text id="/data/grp_scabies/scabies_notes:label">
             <value>Nòt klinik:</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia:label">
-            <value>Malnitrisyon ak anemi</value>
+          <text id="/data/grp_severe_malnutrition:label">
+            <value>Malnitrisyon egi grav/modere ak anemi</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notification:label">
-            <value>Timoun nan gen malnitrisyon oswa anemi</value>
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notification:label">
+            <value>Timoun nan gen malnitrisyon egi grav oswa modere ak anemi</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_protocol:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_protocol:label">
             <value>Pwotokòl:
-- Malnitrisyon egi ak anemi: REFERE IMEDYATMAN nan klinik malnitrisyon
-- Anemi grav: REFERE AN IJANS nan lopital
-- Anemi modere:
- * 14 grenn Fè ak asid folik (1 grenn chak jou pandan 14 jou)
- * Albendazole 400mg pou vè (12-23 mwa: 1/2 grenn; 24-59 mwa: 1 grenn)
- * Vitamin A selon laj timoun nan</value>
+- REFERE IMEDYATMAN nan klinik malnitrisyon an.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_counseling:label">
+          <text id="/data/grp_severe_malnutrition/sev_malnutrition_notes:label">
+            <value>Nòt klinik:</value>
+          </text>
+          <text id="/data/grp_severe_anemia:label">
+            <value>Anemi grav</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notification:label">
+            <value>Timoun nan gen anemi grav</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_protocol:label">
+            <value>Pwotokòl:
+- REFERE AN IJANS nan lopital pou egzamen apwofondi.</value>
+          </text>
+          <text id="/data/grp_severe_anemia/severe_anemia_notes:label">
+            <value>Nòt klinik:</value>
+          </text>
+          <text id="/data/grp_moderate_anemia:label">
+            <value>Anemi modere</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notification:label">
+            <value>Timoun nan gen anemi modere</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_protocol:label">
+            <value>Pwotokòl:
+- Distribye 14 grenn Fè ak asid folik (1 grenn chak jou pandan 14 jou)
+- Albendazole 400mg pou vè (12-23 mwa: 1/2 grenn; 24-59 mwa: 1 grenn)
+- Vitamin A selon laj timoun nan</value>
+          </text>
+          <text id="/data/grp_moderate_anemia/moderate_anemia_counseling:label">
             <value>Konsèy:
 - Bon manje ki rich an fè: fèy vèt (moringa, panzou, lyann panye, boujon manyok, boujon pwa), fwi, kawòt gratine, bètrav
 - Vèminasyon ak Vitamin A regilye chak 6 mwa pou tout timoun plis pase 6 mwa</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition:label">
             <value>Èske ou te distribye 14 grenn fè ak asid folik?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_iron_folic_acid_malnutrition_distributed:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition:label">
             <value>Èske ou te distribye Albendazole 400mg pou vè?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_albendazole_malnutrition_distributed:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label">
+          <text id="/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition:label">
             <value>Èske ou te bay kapsil Vitamin A a?</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed:label">
+          <text id="/data/grp_moderate_anemia/_data_vitamin_a_malnutrition_distributed:label">
             <value>PA GEN_ETIKÈT</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:label">
             <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:hint">
             <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
-          <text id="/data/grp_malnutrition_anemia/malnutrition_notes:label">
+          <text id="/data/grp_moderate_anemia/moderate_anemia_notes:label">
+            <value>Nòt klinik:</value>
+          </text>
+          <text id="/data/grp_vaccinations:label">
+            <value>Estati Vaksen</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_notification:label">
+            <value>Timoun nan pa pran vaksen jan yo te prevwa a</value>
+          </text>
+          <text id="/data/grp_vaccinations/vaccination_protocol:label">
+            <value>Pwotokòl:
+- Mande kanè vaksen an
+- Timoun nan pa pran vaksen jan yo te prevwa a: Refere timoun nan nan yon pòs vaksinasyon.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer:label">
+            <value>Vèminasyon ak Vitamin A woutin</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notification:label">
+            <value>Administrasyon woutin Vitamin A ak medikaman pou vè</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_protocol:label">
+            <value>Pwotokòl:
+- Administrasyon woutin sèlman pou timoun ki gen plis pase 6 mwa
+- Vitamin A:
+ * 6-11 mwa: 100,000 UI chak 6 mwa
+ * 12-59 mwa: 200,000 UI chak 6 mwa
+- Albendazole (400 mg):
+ * 12-23 mwa: 1/2 grenn (200 mg) chak 6 mwa
+ * 24-59 mwa: 1 grenn (400 mg) chak 6 mwa</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer:label">
+            <value>Èske ou te bay kapsil Vitamin A 100,000 UI (6-11 mwa)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_vitamin_a_6_11mo_dewormer_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer:label">
+            <value>Èske ou te bay kapsil Vitamin A 200,000 UI (12-59 mwa)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_vitamin_a_12_59mo_dewormer_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer:label">
+            <value>Èske ou te distribye 1/2 grenn Albendazole 400mg (200mg) (12-23 mwa)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_albendazole_12_23mo_dewormer_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer:label">
+            <value>Èske ou te distribye 1 grenn Albendazole 400mg (24-59 mwa)?</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/_data_albendazole_24_59mo_dewormer_distributed:label">
+            <value>PA GEN_ETIKÈT</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
+          <text id="/data/grp_vit_a_dewormer/vit_a_dewormer_notes:label">
             <value>Nòt klinik:</value>
           </text>
           <text id="/data/referrals:label">
@@ -2949,6 +3397,33 @@
           <text id="/data/_child_height:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_needs_vitamin_a:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_needs_albendazole:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_vaccinated_as_expected:label">
+            <value>-</value>
+          </text>
           <text id="/data/_muac_result:label">
             <value>-</value>
           </text>
@@ -3033,12 +3508,6 @@
           <text id="/data/_result_moderate_anemia:label">
             <value>-</value>
           </text>
-          <text id="/data/_child_vaccinated:label">
-            <value>-</value>
-          </text>
-          <text id="/data/_received_albendazole_vit_a:label">
-            <value>-</value>
-          </text>
           <text id="/data/_result_urgent_referral:label">
             <value>-</value>
           </text>
@@ -3097,6 +3566,18 @@
             <value>-</value>
           </text>
           <text id="/data/qty_vitamin_a:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/total_amoxicillin_suspension:label">
@@ -3375,7 +3856,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="CHD_Form009_Summary" version="20261014221708" prefix="J1!CHD_Form009_Summary!" delimiter="#">
+        <data id="CHD_Form009_Summary" version="20261017192434" prefix="J1!CHD_Form009_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -3426,6 +3907,15 @@
           <patient_age_in_weeks/>
           <_child_weight/>
           <_child_height/>
+          <_has_emergency_symptoms/>
+          <_emergency_dehydration/>
+          <_emergency_respiratory_distress/>
+          <_emergency_altered_consciousness/>
+          <_emergency_acute_malnutrition/>
+          <_emergency_bloated_extremities/>
+          <_needs_vitamin_a/>
+          <_needs_albendazole/>
+          <_vaccinated_as_expected/>
           <_muac_result/>
           <_result_severe_pneumonia/>
           <_result_pneumonia/>
@@ -3454,8 +3944,6 @@
           <_result_severe_malnutrition_anemia/>
           <_result_severe_anemia/>
           <_result_moderate_anemia/>
-          <_child_vaccinated/>
-          <_received_albendazole_vit_a/>
           <_result_urgent_referral/>
           <has_positive_condition/>
           <child_weight_num/>
@@ -3478,6 +3966,8 @@
           <summary_header>
             <summary_overview/>
             <summary_instructions/>
+            <res_triage_emergency/>
+            <res_triage_emergency_protocol/>
             <res_severe_pneumonia/>
             <res_severe_pneumonia_protocol/>
             <res_pneumonia/>
@@ -3519,6 +4009,25 @@
             <res_no_condition/>
             <res_no_condition_protocol/>
           </summary_header>
+          <grp_triage_emergency>
+            <emergency_symptoms_during_triage_notification/>
+            <treatment_severe_dehydration/>
+            <confirm_treatment_severe_dehydration_levin_tube/>
+            <confirm_treatment_severe_dehydration_ORS/>
+            <_data_treatment_severe_dehydration_distributed/>
+            <treatment_respiratory_distress/>
+            <confirm_treatment_respiratory_distress/>
+            <_data_treatment_respiratory_distress_distributed/>
+            <treatment_altered_consciousness/>
+            <confirm_treatment_altered_consciousness/>
+            <_data_treatment_altered_consciousness_distributed/>
+            <treatment_acute_malnutrition/>
+            <confirm_treatment_acute_malnutrition/>
+            <_data_treatment_acute_malnutrition_distributed/>
+            <treatment_bloated_extremities/>
+            <emergency_symptoms_during_triage_not_confirmed_reason/>
+            <emergency_symptoms_during_triage_notes/>
+          </grp_triage_emergency>
           <grp_severe_pneumonia>
             <sev_pneu_notification/>
             <sev_pneu_protocol/>
@@ -3674,19 +4183,47 @@
             <scabies_med_not_confirmed_reason/>
             <scabies_notes/>
           </grp_scabies>
-          <grp_malnutrition_anemia>
-            <malnutrition_notification/>
-            <malnutrition_protocol/>
-            <malnutrition_counseling/>
+          <grp_severe_malnutrition>
+            <sev_malnutrition_notification/>
+            <sev_malnutrition_protocol/>
+            <sev_malnutrition_notes/>
+          </grp_severe_malnutrition>
+          <grp_severe_anemia>
+            <severe_anemia_notification/>
+            <severe_anemia_protocol/>
+            <severe_anemia_notes/>
+          </grp_severe_anemia>
+          <grp_moderate_anemia>
+            <moderate_anemia_notification/>
+            <moderate_anemia_protocol/>
+            <moderate_anemia_counseling/>
             <confirm_iron_folic_acid_malnutrition/>
             <_data_iron_folic_acid_malnutrition_distributed/>
             <confirm_albendazole_dewormer_malnutrition/>
             <_data_albendazole_malnutrition_distributed/>
             <confirm_vitamin_a_malnutrition/>
             <_data_vitamin_a_malnutrition_distributed/>
-            <malnutrition_med_not_confirmed_reason/>
-            <malnutrition_notes/>
-          </grp_malnutrition_anemia>
+            <moderate_anemia_med_not_confirmed_reason/>
+            <moderate_anemia_notes/>
+          </grp_moderate_anemia>
+          <grp_vaccinations>
+            <vaccination_notification/>
+            <vaccination_protocol/>
+          </grp_vaccinations>
+          <grp_vit_a_dewormer>
+            <vit_a_dewormer_notification/>
+            <vit_a_dewormer_protocol/>
+            <confirm_vitamin_a_6_11mo_dewormer/>
+            <_data_vitamin_a_6_11mo_dewormer_distributed/>
+            <confirm_vitamin_a_12_59mo_dewormer/>
+            <_data_vitamin_a_12_59mo_dewormer_distributed/>
+            <confirm_albendazole_12_23mo_dewormer/>
+            <_data_albendazole_12_23mo_dewormer_distributed/>
+            <confirm_albendazole_24_59mo_dewormer/>
+            <_data_albendazole_24_59mo_dewormer_distributed/>
+            <vit_a_dewormer_med_not_confirmed_reason/>
+            <vit_a_dewormer_notes/>
+          </grp_vit_a_dewormer>
           <referrals>
             <referral_location/>
             <referral_location_other/>
@@ -3863,6 +4400,15 @@
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
       <bind nodeset="/data/_child_weight" type="string"/>
       <bind nodeset="/data/_child_height" type="string"/>
+      <bind nodeset="/data/_has_emergency_symptoms" type="string"/>
+      <bind nodeset="/data/_emergency_dehydration" type="string"/>
+      <bind nodeset="/data/_emergency_respiratory_distress" type="string"/>
+      <bind nodeset="/data/_emergency_altered_consciousness" type="string"/>
+      <bind nodeset="/data/_emergency_acute_malnutrition" type="string"/>
+      <bind nodeset="/data/_emergency_bloated_extremities" type="string"/>
+      <bind nodeset="/data/_needs_vitamin_a" type="string"/>
+      <bind nodeset="/data/_needs_albendazole" type="string"/>
+      <bind nodeset="/data/_vaccinated_as_expected" type="string"/>
       <bind nodeset="/data/_muac_result" type="string"/>
       <bind nodeset="/data/_result_severe_pneumonia" type="string"/>
       <bind nodeset="/data/_result_pneumonia" type="string"/>
@@ -3891,10 +4437,8 @@
       <bind nodeset="/data/_result_severe_malnutrition_anemia" type="string"/>
       <bind nodeset="/data/_result_severe_anemia" type="string"/>
       <bind nodeset="/data/_result_moderate_anemia" type="string"/>
-      <bind nodeset="/data/_child_vaccinated" type="string"/>
-      <bind nodeset="/data/_received_albendazole_vit_a" type="string"/>
-      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_severe_pneumonia  = 'true' or  /data/_result_severe_dehydration  = 'true' or  /data/_calc_severe_dehydration  = 'true' or  /data/_result_persistent_diarrhea  = 'true' or  /data/_calc_persistent_diarrhea  = 'true' or  /data/_result_cholera  = 'true' or  /data/_calc_cholera  = 'true' or  /data/_result_severe_malnutrition_anemia  = 'true' or  /data/_result_severe_anemia  = 'true', 'true', 'false')"/>
-      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_cough_or_cold  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true' or  /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true' or  /data/_result_impetigo  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_moderate_anemia  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_severe_pneumonia  = 'true' or  /data/_result_severe_dehydration  = 'true' or  /data/_calc_severe_dehydration  = 'true' or  /data/_result_persistent_diarrhea  = 'true' or  /data/_calc_persistent_diarrhea  = 'true' or  /data/_result_cholera  = 'true' or  /data/_calc_cholera  = 'true' or  /data/_result_severe_malnutrition_anemia  = 'true' or  /data/_result_severe_anemia  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_cough_or_cold  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_some_dehydration  = 'true' or  /data/_calc_some_dehydration  = 'true' or  /data/_result_no_dehydration  = 'true' or  /data/_calc_no_dehydration  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_calc_dysentery  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_calc_gastritis  = 'true' or  /data/_result_impetigo  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_moderate_anemia  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/child_weight_num" type="string" calculate="if( /data/_child_weight  != '' and number( /data/_child_weight ) &gt; 0, number( /data/_child_weight ), 10)"/>
       <bind nodeset="/data/qty_amoxicillin_suspension" type="string" calculate="if( /data/child_weight_num  &lt; 10, 50, if( /data/child_weight_num  &lt; 15, 100, 150))"/>
       <bind nodeset="/data/qty_paracetamol_syrup" type="string" calculate="if( /data/child_weight_num  &lt; 6, 15, if( /data/child_weight_num  &lt; 10, 30, if( /data/child_weight_num  &lt; 14, 45, 60)))"/>
@@ -3914,6 +4458,8 @@
       <bind nodeset="/data/qty_vitamin_a" type="string" constraint="," jr:constraintMsg="jr:itext('/data/qty_vitamin_a:jr:constraintMsg')" calculate="1"/>
       <bind nodeset="/data/summary_header/summary_overview" readonly="true()" type="string"/>
       <bind nodeset="/data/summary_header/summary_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency_protocol" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
       <bind nodeset="/data/summary_header/res_severe_pneumonia" readonly="true()" type="string" relevant=" /data/_result_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/summary_header/res_severe_pneumonia_protocol" readonly="true()" type="string" relevant=" /data/_result_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/summary_header/res_pneumonia" readonly="true()" type="string" relevant=" /data/_result_pneumonia  = 'true'"/>
@@ -3954,6 +4500,24 @@
       <bind nodeset="/data/summary_header/res_urgent_ref_protocol" readonly="true()" type="string" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/summary_header/res_no_condition" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
       <bind nodeset="/data/summary_header/res_no_condition_protocol" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
+      <bind nodeset="/data/grp_triage_emergency" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_severe_dehydration" readonly="true()" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed" type="string" relevant=" /data/_emergency_dehydration  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_respiratory_distress" readonly="true()" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_respiratory_distress" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_respiratory_distress , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_altered_consciousness" readonly="true()" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_altered_consciousness" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_altered_consciousness , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_acute_malnutrition" readonly="true()" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_acute_malnutrition , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_bloated_extremities" readonly="true()" type="string" relevant=" /data/_emergency_bloated_extremities  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason" type="string" required="true()" relevant="( /data/_emergency_dehydration  = 'true' and (not(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube , 'confirmation')) or not(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS , 'confirmation')))) or ( /data/_emergency_respiratory_distress  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_respiratory_distress , 'confirmation'))) or ( /data/_emergency_altered_consciousness  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_altered_consciousness , 'confirmation'))) or ( /data/_emergency_acute_malnutrition  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_acute_malnutrition , 'confirmation')))"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes" type="string"/>
       <bind nodeset="/data/grp_severe_pneumonia" relevant=" /data/_result_severe_pneumonia  = 'true'"/>
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_severe_pneumonia/sev_pneu_protocol" readonly="true()" type="string"/>
@@ -4094,18 +4658,42 @@
       <bind nodeset="/data/grp_scabies/_data_benzyl_benzoate_scabies_distributed" type="string" calculate="if(selected( /data/grp_scabies/confirm_benzyl_benzoate_scabies , 'confirmation'),  /data/qty_benzyl_benzoate , 0)"/>
       <bind nodeset="/data/grp_scabies/scabies_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_scabies/confirm_calamine_lotion_scabies , 'confirmation')) or not(selected( /data/grp_scabies/confirm_benzyl_benzoate_scabies , 'confirmation'))"/>
       <bind nodeset="/data/grp_scabies/scabies_notes" type="string"/>
-      <bind nodeset="/data/grp_malnutrition_anemia" relevant=" /data/_result_severe_malnutrition_anemia  = 'true' or  /data/_result_severe_anemia  = 'true' or  /data/_result_moderate_anemia  = 'true'"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_notification" readonly="true()" type="string"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_protocol" readonly="true()" type="string"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_counseling" readonly="true()" type="string"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true'"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation'),  /data/qty_iron_folic_acid , 0)"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 12"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation'),  /data/qty_albendazole , 0)"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition" type="string" relevant=" /data/_result_moderate_anemia  = 'true' or  /data/patient_age_in_months  &gt;= 6"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition , 'confirmation'),  /data/qty_vitamin_a , 0)"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason" type="string" required="true()" relevant=" /data/_result_moderate_anemia  = 'true' and not(selected( /data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation'))"/>
-      <bind nodeset="/data/grp_malnutrition_anemia/malnutrition_notes" type="string"/>
+      <bind nodeset="/data/grp_severe_malnutrition" relevant=" /data/_result_severe_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/grp_severe_malnutrition/sev_malnutrition_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_malnutrition/sev_malnutrition_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_malnutrition/sev_malnutrition_notes" type="string"/>
+      <bind nodeset="/data/grp_severe_anemia" relevant=" /data/_result_severe_anemia  = 'true' and  /data/_result_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/grp_severe_anemia/severe_anemia_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_anemia/severe_anemia_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_severe_anemia/severe_anemia_notes" type="string"/>
+      <bind nodeset="/data/grp_moderate_anemia" relevant=" /data/_result_moderate_anemia  = 'true' and  /data/_result_severe_anemia  != 'true' and  /data/_result_severe_malnutrition_anemia  != 'true'"/>
+      <bind nodeset="/data/grp_moderate_anemia/moderate_anemia_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_moderate_anemia/moderate_anemia_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_moderate_anemia/moderate_anemia_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition" type="string"/>
+      <bind nodeset="/data/grp_moderate_anemia/_data_iron_folic_acid_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation'),  /data/qty_iron_folic_acid , 0)"/>
+      <bind nodeset="/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition" type="string" relevant=" /data/patient_age_in_months  &gt;= 12"/>
+      <bind nodeset="/data/grp_moderate_anemia/_data_albendazole_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation'),  /data/qty_albendazole , 0)"/>
+      <bind nodeset="/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition" type="string" relevant=" /data/patient_age_in_months  &gt;= 6"/>
+      <bind nodeset="/data/grp_moderate_anemia/_data_vitamin_a_malnutrition_distributed" type="string" calculate="if(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation'),  /data/qty_vitamin_a , 0)"/>
+      <bind nodeset="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition , 'confirmation')) or ( /data/patient_age_in_months  &gt;= 12 and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation')))"/>
+      <bind nodeset="/data/grp_moderate_anemia/moderate_anemia_notes" type="string"/>
+      <bind nodeset="/data/grp_vaccinations" relevant=" /data/_vaccinated_as_expected  = 'false'"/>
+      <bind nodeset="/data/grp_vaccinations/vaccination_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_vaccinations/vaccination_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_vit_a_dewormer" relevant="( /data/_needs_vitamin_a  = 'true' and not(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation'))) or ( /data/_needs_albendazole  = 'true' and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation')))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/vit_a_dewormer_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/vit_a_dewormer_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer" type="string" relevant=" /data/_needs_vitamin_a  = 'true' and  /data/patient_age_in_months  &gt;= 6 and  /data/patient_age_in_months  &lt; 12 and not(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation'))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/_data_vitamin_a_6_11mo_dewormer_distributed" type="string" calculate="if(selected( /data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer" type="string" relevant=" /data/_needs_vitamin_a  = 'true' and  /data/patient_age_in_months  &gt;= 12 and  /data/patient_age_in_months  &lt; 60 and not(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation'))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/_data_vitamin_a_12_59mo_dewormer_distributed" type="string" calculate="if(selected( /data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer" type="string" relevant=" /data/_needs_albendazole  = 'true' and  /data/patient_age_in_months  &gt;= 12 and  /data/patient_age_in_months  &lt; 24 and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation'))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/_data_albendazole_12_23mo_dewormer_distributed" type="string" calculate="if(selected( /data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer , 'confirmation'), 0.5, 0)"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer" type="string" relevant=" /data/_needs_albendazole  = 'true' and  /data/patient_age_in_months  &gt;= 24 and  /data/patient_age_in_months  &lt; 60 and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation'))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/_data_albendazole_24_59mo_dewormer_distributed" type="string" calculate="if(selected( /data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason" type="string" required="true()" relevant="( /data/_needs_vitamin_a  = 'true' and  /data/patient_age_in_months  &gt;= 6 and  /data/patient_age_in_months  &lt; 12 and not(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation')) and not(selected( /data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer , 'confirmation'))) or ( /data/_needs_vitamin_a  = 'true' and  /data/patient_age_in_months  &gt;= 12 and  /data/patient_age_in_months  &lt; 60 and not(selected( /data/grp_moderate_anemia/confirm_vitamin_a_malnutrition , 'confirmation')) and not(selected( /data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer , 'confirmation'))) or ( /data/_needs_albendazole  = 'true' and  /data/patient_age_in_months  &gt;= 12 and  /data/patient_age_in_months  &lt; 24 and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation')) and not(selected( /data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer , 'confirmation'))) or ( /data/_needs_albendazole  = 'true' and  /data/patient_age_in_months  &gt;= 24 and  /data/patient_age_in_months  &lt; 60 and not(selected( /data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition , 'confirmation')) and not(selected( /data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer , 'confirmation')))"/>
+      <bind nodeset="/data/grp_vit_a_dewormer/vit_a_dewormer_notes" type="string"/>
       <bind nodeset="/data/referrals" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/referrals/referral_location" type="string" required="true()"/>
       <bind nodeset="/data/referrals/referral_location_other" type="string" required="true()" relevant="selected( /data/referrals/referral_location , 'other')"/>
@@ -4122,9 +4710,9 @@
       <bind nodeset="/data/total_griseofulvin_tabs" type="string" calculate=" /data/grp_ringworm/_data_griseofulvin_tabs_ringworm_distributed "/>
       <bind nodeset="/data/total_calamine_lotion" type="string" calculate=" /data/grp_scabies/_data_calamine_lotion_scabies_distributed "/>
       <bind nodeset="/data/total_benzyl_benzoate" type="string" calculate=" /data/grp_scabies/_data_benzyl_benzoate_scabies_distributed "/>
-      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/grp_malnutrition_anemia/_data_iron_folic_acid_malnutrition_distributed "/>
-      <bind nodeset="/data/total_albendazole" type="string" calculate=" /data/grp_malnutrition_anemia/_data_albendazole_malnutrition_distributed "/>
-      <bind nodeset="/data/total_vitamin_a" type="string" calculate=" /data/grp_malnutrition_anemia/_data_vitamin_a_malnutrition_distributed "/>
+      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/grp_moderate_anemia/_data_iron_folic_acid_malnutrition_distributed "/>
+      <bind nodeset="/data/total_albendazole" type="string" calculate=" /data/grp_moderate_anemia/_data_albendazole_malnutrition_distributed  +  /data/grp_vit_a_dewormer/_data_albendazole_12_23mo_dewormer_distributed  +  /data/grp_vit_a_dewormer/_data_albendazole_24_59mo_dewormer_distributed "/>
+      <bind nodeset="/data/total_vitamin_a" type="string" calculate=" /data/grp_moderate_anemia/_data_vitamin_a_malnutrition_distributed  +  /data/grp_vit_a_dewormer/_data_vitamin_a_6_11mo_dewormer_distributed  +  /data/grp_vit_a_dewormer/_data_vitamin_a_12_59mo_dewormer_distributed "/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
       <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
@@ -4229,6 +4817,12 @@
       </input>
       <input ref="/data/summary_header/summary_instructions" appearance="h2">
         <label ref="jr:itext('/data/summary_header/summary_instructions:label')"/>
+      </input>
+      <input ref="/data/summary_header/res_triage_emergency" appearance="h1 red">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency:label')"/>
+      </input>
+      <input ref="/data/summary_header/res_triage_emergency_protocol">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency_protocol:label')"/>
       </input>
       <input ref="/data/summary_header/res_severe_pneumonia" appearance="h1 red">
         <label ref="jr:itext('/data/summary_header/res_severe_pneumonia:label')"/>
@@ -4349,6 +4943,69 @@
       </input>
       <input ref="/data/summary_header/res_no_condition_protocol">
         <label ref="jr:itext('/data/summary_header/res_no_condition_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/grp_triage_emergency">
+      <label ref="jr:itext('/data/grp_triage_emergency:label')"/>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" appearance="h1 red">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/treatment_severe_dehydration">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_severe_dehydration:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_respiratory_distress">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_respiratory_distress:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_respiratory_distress">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_altered_consciousness">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_altered_consciousness:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_altered_consciousness">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_acute_malnutrition">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_acute_malnutrition:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_bloated_extremities">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_bloated_extremities:label')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/grp_severe_pneumonia">
@@ -4811,44 +5468,121 @@
         <label ref="jr:itext('/data/grp_scabies/scabies_notes:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/grp_malnutrition_anemia">
-      <label ref="jr:itext('/data/grp_malnutrition_anemia:label')"/>
-      <input ref="/data/grp_malnutrition_anemia/malnutrition_notification" appearance="h1 yellow">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_notification:label')"/>
+    <group appearance="field-list" ref="/data/grp_severe_malnutrition">
+      <label ref="jr:itext('/data/grp_severe_malnutrition:label')"/>
+      <input ref="/data/grp_severe_malnutrition/sev_malnutrition_notification" appearance="h1 red">
+        <label ref="jr:itext('/data/grp_severe_malnutrition/sev_malnutrition_notification:label')"/>
       </input>
-      <input ref="/data/grp_malnutrition_anemia/malnutrition_protocol">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_protocol:label')"/>
+      <input ref="/data/grp_severe_malnutrition/sev_malnutrition_protocol">
+        <label ref="jr:itext('/data/grp_severe_malnutrition/sev_malnutrition_protocol:label')"/>
       </input>
-      <input ref="/data/grp_malnutrition_anemia/malnutrition_counseling">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_counseling:label')"/>
+      <input ref="/data/grp_severe_malnutrition/sev_malnutrition_notes">
+        <label ref="jr:itext('/data/grp_severe_malnutrition/sev_malnutrition_notes:label')"/>
       </input>
-      <select ref="/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_iron_folic_acid_malnutrition:label')"/>
+    </group>
+    <group appearance="field-list" ref="/data/grp_severe_anemia">
+      <label ref="jr:itext('/data/grp_severe_anemia:label')"/>
+      <input ref="/data/grp_severe_anemia/severe_anemia_notification" appearance="h1 red">
+        <label ref="jr:itext('/data/grp_severe_anemia/severe_anemia_notification:label')"/>
+      </input>
+      <input ref="/data/grp_severe_anemia/severe_anemia_protocol">
+        <label ref="jr:itext('/data/grp_severe_anemia/severe_anemia_protocol:label')"/>
+      </input>
+      <input ref="/data/grp_severe_anemia/severe_anemia_notes">
+        <label ref="jr:itext('/data/grp_severe_anemia/severe_anemia_notes:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/grp_moderate_anemia">
+      <label ref="jr:itext('/data/grp_moderate_anemia:label')"/>
+      <input ref="/data/grp_moderate_anemia/moderate_anemia_notification" appearance="h1 yellow">
+        <label ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_notification:label')"/>
+      </input>
+      <input ref="/data/grp_moderate_anemia/moderate_anemia_protocol">
+        <label ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_protocol:label')"/>
+      </input>
+      <input ref="/data/grp_moderate_anemia/moderate_anemia_counseling">
+        <label ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_counseling:label')"/>
+      </input>
+      <select ref="/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition">
+        <label ref="jr:itext('/data/grp_moderate_anemia/confirm_iron_folic_acid_malnutrition:label')"/>
         <itemset nodeset="instance('drug_confirmation')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <select ref="/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_albendazole_dewormer_malnutrition:label')"/>
+      <select ref="/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition">
+        <label ref="jr:itext('/data/grp_moderate_anemia/confirm_albendazole_dewormer_malnutrition:label')"/>
         <itemset nodeset="instance('drug_confirmation')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <select ref="/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/confirm_vitamin_a_malnutrition:label')"/>
+      <select ref="/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition">
+        <label ref="jr:itext('/data/grp_moderate_anemia/confirm_vitamin_a_malnutrition:label')"/>
         <itemset nodeset="instance('drug_confirmation')/root/item">
           <value ref="name"/>
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select>
-      <input ref="/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:label')"/>
-        <hint ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_med_not_confirmed_reason:hint')"/>
+      <input ref="/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_med_not_confirmed_reason:hint')"/>
       </input>
-      <input ref="/data/grp_malnutrition_anemia/malnutrition_notes">
-        <label ref="jr:itext('/data/grp_malnutrition_anemia/malnutrition_notes:label')"/>
+      <input ref="/data/grp_moderate_anemia/moderate_anemia_notes">
+        <label ref="jr:itext('/data/grp_moderate_anemia/moderate_anemia_notes:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/grp_vaccinations">
+      <label ref="jr:itext('/data/grp_vaccinations:label')"/>
+      <input ref="/data/grp_vaccinations/vaccination_notification" appearance="h1 yellow">
+        <label ref="jr:itext('/data/grp_vaccinations/vaccination_notification:label')"/>
+      </input>
+      <input ref="/data/grp_vaccinations/vaccination_protocol">
+        <label ref="jr:itext('/data/grp_vaccinations/vaccination_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/grp_vit_a_dewormer">
+      <label ref="jr:itext('/data/grp_vit_a_dewormer:label')"/>
+      <input ref="/data/grp_vit_a_dewormer/vit_a_dewormer_notification" appearance="h1 yellow">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/vit_a_dewormer_notification:label')"/>
+      </input>
+      <input ref="/data/grp_vit_a_dewormer/vit_a_dewormer_protocol">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/vit_a_dewormer_protocol:label')"/>
+      </input>
+      <select ref="/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/confirm_vitamin_a_6_11mo_dewormer:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/confirm_vitamin_a_12_59mo_dewormer:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/confirm_albendazole_12_23mo_dewormer:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/confirm_albendazole_24_59mo_dewormer:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_vit_a_dewormer/vit_a_dewormer_med_not_confirmed_reason:hint')"/>
+      </input>
+      <input ref="/data/grp_vit_a_dewormer/vit_a_dewormer_notes">
+        <label ref="jr:itext('/data/grp_vit_a_dewormer/vit_a_dewormer_notes:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/referrals">

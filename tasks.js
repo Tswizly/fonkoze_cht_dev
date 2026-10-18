@@ -129,6 +129,9 @@ module.exports = [
         }
       });
 
+      // Check if patient was flagged for emergency symptoms in the triage form
+      if (r.fields && r.fields.has_emergency_symptoms === 'true') return true;
+
       if (requiredFormGroups.length === 0) return true;
 
       return requiredFormGroups.every(formNames =>
@@ -141,6 +144,19 @@ module.exports = [
         form: 'CHD_Form009_Summary',
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+
+          // Emergency Symptoms Mapping
+          content._has_emergency_symptoms = getEncounterFieldValue(encounterReports, '_has_emergency_symptoms');
+          content._emergency_dehydration = getEncounterFieldValue(encounterReports, '_emergency_dehydration');
+          content._emergency_respiratory_distress = getEncounterFieldValue(encounterReports, '_emergency_respiratory_distress');
+          content._emergency_altered_consciousness = getEncounterFieldValue(encounterReports, '_emergency_altered_consciousness');
+          content._emergency_acute_malnutrition = getEncounterFieldValue(encounterReports, '_emergency_acute_malnutrition');
+          content._emergency_bloated_extremities = getEncounterFieldValue(encounterReports, '_emergency_bloated_extremities');
+
+          // Preventive Care Mapping
+          content._needs_vitamin_a = getEncounterFieldValue(encounterReports, '_needs_vitamin_a');
+          content._needs_albendazole = getEncounterFieldValue(encounterReports, '_needs_albendazole');
+          content._vaccinated_as_expected = getEncounterFieldValue(encounterReports, '_vaccinated_as_expected');
           
           // Respiratory Infections (from CHD_Form002)
           content._result_severe_pneumonia = getEncounterFieldValue(encounterReports, '_result_severe_pneumonia');
@@ -204,6 +220,9 @@ module.exports = [
         }
       });
 
+      // Check if patient was flagged for emergency symptoms in the triage form
+      if (r.fields && r.fields.has_emergency_symptoms === 'true') return true;
+
       if (requiredFormGroups.length === 0) return true;
 
       return requiredFormGroups.every(formNames =>
@@ -216,6 +235,14 @@ module.exports = [
         form: 'YAA_Form009_Summary',
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+
+          // Emergency Symptoms Mapping from Triage
+          content._has_emergency_symptoms = getEncounterFieldValue(encounterReports, '_has_emergency_symptoms');
+          content._emergency_dehydration = getEncounterFieldValue(encounterReports, '_emergency_dehydration');
+          content._emergency_respiratory_distress = getEncounterFieldValue(encounterReports, '_emergency_respiratory_distress');
+          content._emergency_altered_consciousness = getEncounterFieldValue(encounterReports, '_emergency_altered_consciousness');
+          content._emergency_acute_malnutrition = getEncounterFieldValue(encounterReports, '_emergency_acute_malnutrition');
+          content._emergency_bloated_extremities = getEncounterFieldValue(encounterReports, '_emergency_bloated_extremities');
           
           // Respiratory Conditions (from YAA_Form002)
           content._result_flu_like_syndrome = getEncounterFieldValue(encounterReports, '_result_flu_like_syndrome');
@@ -278,6 +305,9 @@ module.exports = [
         }
       });
 
+      // Check if patient was flagged for emergency symptoms in the triage form
+      if (r.fields && r.fields.has_emergency_symptoms === 'true') return true;
+
       if (requiredFormGroups.length === 0) return true;
 
       return requiredFormGroups.every(formNames =>
@@ -290,6 +320,8 @@ module.exports = [
         form: 'ADT_Form014_Summary',
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+
+          content._has_emergency_symptoms = getEncounterFieldValue(encounterReports,'_has_emergency_symptoms');
           
           content._result_hyperglycemia_mild = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_mild');
           content._result_hyperglycemia_moderate = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_moderate');
@@ -371,6 +403,9 @@ module.exports = [
         }
       });
 
+      // Check if patient was flagged for emergency symptoms in the triage form
+      if (r.fields && r.fields.has_emergency_symptoms === 'true') return true;
+
       if (requiredFormGroups.length === 0) return true;
 
       return requiredFormGroups.every(formNames =>
@@ -383,6 +418,8 @@ module.exports = [
         form: 'ELD_Form012_Summary',
         modifyContent: function(content, c, r) {
           const encounterReports = (c.reports || []).filter(report => report.reported_date >= r.reported_date);
+
+                    content._has_emergency_symptoms = getEncounterFieldValue(encounterReports,'_has_emergency_symptoms');
           
           content._result_hyperglycemia_mild = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_mild');
           content._result_hyperglycemia_moderate = getEncounterFieldValue(encounterReports, '_result_hyperglycemia_moderate');

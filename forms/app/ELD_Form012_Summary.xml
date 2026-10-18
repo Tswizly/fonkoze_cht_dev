@@ -74,6 +74,9 @@
           <text id="/data/inputs/contact/parent/parent/contact/phone:label">
             <value>Nurse phone</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>Passed from task</value>
+          </text>
           <text id="/data/_result_hyperglycemia_mild:label">
             <value>Passed from task</value>
           </text>
@@ -187,6 +190,12 @@
           </text>
           <text id="/data/summary_header/summary_instructions:label">
             <value>Clinical Findings &amp; Recommended Actions</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>If you have not already, you will refer the patient. If they have been referred, use this form to record information and notes.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Mild Hyperglycemia</value>
@@ -397,6 +406,21 @@
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>You may provide routine health and preventive wellness counseling.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>The patient had Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol:label">
+            <value>If patient is not refered already, refer patient immediately. Establish IV line if needed. Inform patient about specific measures to take during referral.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_iv_line:label">
+            <value>Did you use an IV?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Clinical notes:</value>
           </text>
           <text id="/data/grp_arthroses_arthritis:label">
             <value>Arthroses / Arthritis</value>
@@ -1409,6 +1433,12 @@ OR
           <text id="/data/summary_header/summary_instructions:label">
             <value>Résultats cliniques et actions recommandées</value>
           </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ce n'est déjà fait, vous orienterez le patient. S'il a déjà été orienté, utilisez ce formulaire pour consigner les informations et les notes.</value>
+          </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Hyperglycémie légère</value>
           </text>
@@ -1578,7 +1608,7 @@ OR
             <value>Vous maintiendrez les fonctions vitales et transférerez d'urgence à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
-            <value>Ancien AVC / AVC antérieur</value>
+            <value>AVC ancien / antérieur</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
             <value>Vous donnerez des conseils de prévention, contrôlerez la tension et référerez en réadaptation.</value>
@@ -1618,6 +1648,21 @@ OR
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>Vous fournirez des conseils de santé générale et de prévention.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Le patient présentait des symptômes d'urgence lors du triage.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol:label">
+            <value>Si le patient n'a pas encore été orienté, orientez-le immédiatement. Posez une voie intraveineuse si nécessaire. Informez le patient des mesures spécifiques à prendre pendant son orientation.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_iv_line:label">
+            <value>Avez-vous utilisé une perfusion intraveineuse ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Notes cliniques :</value>
           </text>
           <text id="/data/grp_arthroses_arthritis:label">
             <value>Arthrose / Arthrite</value>
@@ -1795,7 +1840,7 @@ OR
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_2/confirm_hctz_25mg_g2:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1838,7 +1883,7 @@ OR
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_1/confirm_hctz_25mg_g1:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2214,9 +2259,9 @@ Protocole :
           <text id="/data/grp_amoeba_giardia/amoeba_protocol:label">
             <value>Protocole :
 
-- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à prendre à raison de 4 comprimés une fois par jour pendant 3 jours.
+- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à raison de 4 comprimés une fois par jour pendant 3 jours.
 
-- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à prendre 3 fois par jour pendant 5 jours.</value>
+- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à raison de 3 comprimés trois fois par jour pendant 5 jours.</value>
           </text>
           <text id="/data/grp_amoeba_giardia/amoeba_counseling:label">
             <value>Accompagnement psychologique :
@@ -2476,6 +2521,7 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
             <value>Conseils :
 
 - Fournir des conseils sur l'utilisation du préservatif
+
 - S'assurer que tous les partenaires sexuels reçoivent un traitement</value>
           </text>
           <text id="/data/grp_std_ulcer/confirm_benzathine_penicillin:label">
@@ -2512,6 +2558,7 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
             <value>Conseils :
 
 - Fournir des conseils sur l'utilisation du préservatif
+
 - S'assurer que tous les partenaires sexuels reçoivent un traitement</value>
           </text>
           <text id="/data/grp_std_discharge/confirm_ciprofloxacin_500mg_std:label">
@@ -2904,6 +2951,9 @@ OU
           <text id="/data/patient_age_in_weeks:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_hyperglycemia_mild:label">
             <value>-</value>
           </text>
@@ -3070,6 +3120,12 @@ OU
           </text>
           <text id="/data/summary_header/summary_instructions:label">
             <value>Rezilta Klinik ak Aksyon Rekòmande</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ou poko fè sa, ou pral refere pasyan an. Si yo te deja refere yo, sèvi ak fòm sa a pou anrejistre enfòmasyon ak nòt.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Ipèglisemi lejè</value>
@@ -3280,6 +3336,21 @@ OU
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>W ap bay konsèy sou bon sante ak prevansyon woutin.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Pasyan an te gen sentòm ijans pandan triyaj la.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol:label">
+            <value>Si pasyan an poko resevwa yon referans, refere li imedyatman. Mete an plas yon liy IV si sa nesesè. Enfòme pasyan an sou mezi espesifik pou pran pandan referans lan.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_iv_line:label">
+            <value>Èske ou te itilize yon IV?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Nòt klinik:</value>
           </text>
           <text id="/data/grp_arthroses_arthritis:label">
             <value>Atrit / Artroz</value>
@@ -3620,7 +3691,7 @@ Pwotokòl:
 - Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon rafine
 - Chwazi grenn antye, pwa, legim, ak fwi fre
 - Mete pwoteyin mèg (pwa, pwason, ze, bèt volay) nan repa yo
-- Evite manje ki fri ak gra twòp
+- Evite twòp manje fri ak gra
 - Konseye pasyan an pou l retounen pou yon tès glikoz nan san nan 1-2 semèn. Enfòme pasyan an pou l pa manje anvan l vini.</value>
           </text>
           <text id="/data/grp_diabetes_mod/confirm_metformin_500mg:label">
@@ -3654,7 +3725,7 @@ Pwotokòl:
 - Limite gwo pòsyon diri, pen, pasta, ak lòt lanmidon rafine
 - Chwazi grenn antye, pwa, legim, ak fwi fre
 - Mete pwoteyin mèg (pwa, pwason, ze, bèt volay) nan repa yo
-- Evite manje ki fri ak gra twòp
+- Evite twòp manje fri ak gra
 - Konseye pasyan an pou l retounen pou yon tès glikoz nan san nan 1-2 semèn. Enfòme pasyan an pou l pa manje anvan l vini.</value>
           </text>
           <text id="/data/grp_diabetes_mild/diabetes_mild_notes:label">
@@ -3746,10 +3817,10 @@ Pwotokòl:
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_protocol_positive_pylori:label">
             <value>Pwotokòl:
-- Distribye 28 Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
-- Distribye 20cc Litacid jèl pou pran 30 minit apre repa yo.
-- Distribye 42 Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
-- Distribye 42 Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
+- Distribye 28 grenn Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
+- Distribye 20cc jèl Litacid pou pran 30 minit apre repa yo.
+- Distribye 42 grenn Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
+- Distribye 42 grenn Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_counseling_hpylori_negative:label">
             <value>Konsèy:
@@ -4441,6 +4512,9 @@ OSWA
           <text id="/data/patient_age_in_weeks:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_hyperglycemia_mild:label">
             <value>-</value>
           </text>
@@ -4567,7 +4641,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ELD_Form012_Summary" version="20261014120910" prefix="J1!ELD_Form012_Summary!" delimiter="#">
+        <data id="ELD_Form012_Summary" version="20261017192515" prefix="J1!ELD_Form012_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -4616,6 +4690,7 @@ OSWA
           <patient_age_in_months/>
           <patient_age_in_days/>
           <patient_age_in_weeks/>
+          <_has_emergency_symptoms/>
           <_result_hyperglycemia_mild/>
           <_result_hyperglycemia_moderate/>
           <_result_hyperglycemia_severe/>
@@ -4656,6 +4731,8 @@ OSWA
           <summary_header>
             <summary_overview/>
             <summary_instructions/>
+            <res_triage_emergency/>
+            <res_triage_emergency_protocol/>
             <res_diabetes_mild/>
             <res_diabetes_mild_protocol/>
             <res_diabetes_mod/>
@@ -4727,6 +4804,12 @@ OSWA
             <res_no_condition/>
             <res_no_condition_protocol/>
           </summary_header>
+          <grp_triage_emergency>
+            <emergency_symptoms_during_triage_notification/>
+            <emergency_symptoms_during_triage_protocol/>
+            <confirm_iv_line/>
+            <emergency_symptoms_during_triage_notes/>
+          </grp_triage_emergency>
           <grp_arthroses_arthritis>
             <arthroses_notification/>
             <arthroses_protocol/>
@@ -5046,6 +5129,7 @@ OSWA
             <referral_location/>
             <referral_location_other/>
           </referrals>
+          <total_iv_line/>
           <total_nifedipine_20mg/>
           <total_paracetamol_500mg/>
           <total_amoxycillin_500mg/>
@@ -5088,6 +5172,7 @@ OSWA
             </contact>
             <fields>
               <Medicine_out/>
+              <iv_line_used_in_ELD_Form012_Summary/>
               <litacid_gel_used_in_ELD_Form012_Summary/>
               <omeprazole_injectable_used_in_ELD_Form012_Summary/>
               <buscopan_injectable_used_in_ELD_Form012_Summary/>
@@ -5261,6 +5346,7 @@ OSWA
       <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/_has_emergency_symptoms" type="string"/>
       <bind nodeset="/data/_result_hyperglycemia_mild" type="string"/>
       <bind nodeset="/data/_result_hyperglycemia_moderate" type="string"/>
       <bind nodeset="/data/_result_hyperglycemia_severe" type="string"/>
@@ -5296,10 +5382,12 @@ OSWA
       <bind nodeset="/data/_result_std_discharge" type="string"/>
       <bind nodeset="/data/_result_std_ulcer" type="string"/>
       <bind nodeset="/data/_result_moderate_anemia" type="string"/>
-      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_hyperglycemia_severe  = 'true' or  /data/_result_gastritis_serious  = 'true' or  /data/_result_risk_of_cholera  = 'true' or  /data/_result_appendicitis_cholecystitis  = 'true' or  /data/_result_risk_malaria  = 'true' or  /data/_result_hypertensive_urgency  = 'true' or  /data/_result_hypertension_grade_3  = 'true' or  /data/_result_tuberculosis  = 'true' or  /data/_result_transient_ischemic_attack  = 'true' or  /data/_result_stroke  = 'true' or  /data/_result_cardiac_decompensation  = 'true' or  /data/_result_cardiac_decompensation_risk  = 'true' or  /data/_result_prostate_concerns  = 'true', 'true', 'false')"/>
-      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_hyperglycemia_mild  = 'true' or  /data/_result_hyperglycemia_moderate  = 'true' or  /data/_result_hyperglycemia_severe  = 'true' or  /data/_result_gastritis_serious  = 'true' or  /data/_result_gastritis_not_serious  = 'true' or  /data/_result_risk_of_cholera  = 'true' or  /data/_result_acute_diarrhea  = 'true' or  /data/_result_amoeba_giardia  = 'true' or  /data/_result_appendicitis_cholecystitis  = 'true' or  /data/_result_risk_malaria  = 'true' or  /data/_result_hypertensive_urgency  = 'true' or  /data/_result_hypertension_grade_1  = 'true' or  /data/_result_hypertension_grade_2  = 'true' or  /data/_result_hypertension_grade_3  = 'true' or  /data/_result_arthroses_arthritis  = 'true' or  /data/_result_cardiac_decompensation_risk  = 'true' or  /data/_result_cardiac_decompensation  = 'true' or  /data/_result_prostate_concerns  = 'true' or  /data/_result_tuberculosis  = 'true' or  /data/_result_asthma  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_impetigo_folliculitis  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_transient_ischemic_attack  = 'true' or  /data/_result_stroke  = 'true' or  /data/_result_old_stroke  = 'true' or  /data/_result_uti  = 'true' or  /data/_result_std_discharge  = 'true' or  /data/_result_std_ulcer  = 'true' or  /data/_result_moderate_anemia  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_hyperglycemia_severe  = 'true' or  /data/_result_gastritis_serious  = 'true' or  /data/_result_risk_of_cholera  = 'true' or  /data/_result_appendicitis_cholecystitis  = 'true' or  /data/_result_risk_malaria  = 'true' or  /data/_result_hypertensive_urgency  = 'true' or  /data/_result_hypertension_grade_3  = 'true' or  /data/_result_tuberculosis  = 'true' or  /data/_result_transient_ischemic_attack  = 'true' or  /data/_result_stroke  = 'true' or  /data/_result_cardiac_decompensation  = 'true' or  /data/_result_cardiac_decompensation_risk  = 'true' or  /data/_result_prostate_concerns  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_hyperglycemia_mild  = 'true' or  /data/_result_hyperglycemia_moderate  = 'true' or  /data/_result_hyperglycemia_severe  = 'true' or  /data/_result_gastritis_serious  = 'true' or  /data/_result_gastritis_not_serious  = 'true' or  /data/_result_risk_of_cholera  = 'true' or  /data/_result_acute_diarrhea  = 'true' or  /data/_result_amoeba_giardia  = 'true' or  /data/_result_appendicitis_cholecystitis  = 'true' or  /data/_result_risk_malaria  = 'true' or  /data/_result_hypertensive_urgency  = 'true' or  /data/_result_hypertension_grade_1  = 'true' or  /data/_result_hypertension_grade_2  = 'true' or  /data/_result_hypertension_grade_3  = 'true' or  /data/_result_arthroses_arthritis  = 'true' or  /data/_result_cardiac_decompensation_risk  = 'true' or  /data/_result_cardiac_decompensation  = 'true' or  /data/_result_prostate_concerns  = 'true' or  /data/_result_tuberculosis  = 'true' or  /data/_result_asthma  = 'true' or  /data/_result_pneumonia  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_impetigo_folliculitis  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_transient_ischemic_attack  = 'true' or  /data/_result_stroke  = 'true' or  /data/_result_old_stroke  = 'true' or  /data/_result_uti  = 'true' or  /data/_result_std_discharge  = 'true' or  /data/_result_std_ulcer  = 'true' or  /data/_result_moderate_anemia  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/summary_header/summary_overview" readonly="true()" type="string"/>
       <bind nodeset="/data/summary_header/summary_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency_protocol" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
       <bind nodeset="/data/summary_header/res_diabetes_mild" readonly="true()" type="string" relevant=" /data/_result_hyperglycemia_mild  = 'true'"/>
       <bind nodeset="/data/summary_header/res_diabetes_mild_protocol" readonly="true()" type="string" relevant=" /data/_result_hyperglycemia_mild  = 'true'"/>
       <bind nodeset="/data/summary_header/res_diabetes_mod" readonly="true()" type="string" relevant=" /data/_result_hyperglycemia_moderate  = 'true'"/>
@@ -5370,6 +5458,11 @@ OSWA
       <bind nodeset="/data/summary_header/res_urgent_ref_protocol" readonly="true()" type="string" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/summary_header/res_no_condition" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
       <bind nodeset="/data/summary_header/res_no_condition_protocol" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
+      <bind nodeset="/data/grp_triage_emergency" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_iv_line" type="string" required="true()"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes" type="string"/>
       <bind nodeset="/data/grp_arthroses_arthritis" relevant=" /data/_result_arthroses_arthritis  = 'true'"/>
       <bind nodeset="/data/grp_arthroses_arthritis/arthroses_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_arthroses_arthritis/arthroses_protocol" readonly="true()" type="string"/>
@@ -5654,6 +5747,7 @@ OSWA
       <bind nodeset="/data/referrals" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/referrals/referral_location" type="string" required="true()"/>
       <bind nodeset="/data/referrals/referral_location_other" type="string" required="true()" relevant="selected( /data/referrals/referral_location , 'other')"/>
+      <bind nodeset="/data/total_iv_line" type="string" calculate="if( /data/grp_triage_emergency/confirm_iv_line  = 'yes', 1, 0)"/>
       <bind nodeset="/data/total_nifedipine_20mg" type="string" calculate="0"/>
       <bind nodeset="/data/total_paracetamol_500mg" type="string" calculate="if(selected( /data/grp_malaria_neg/confirm_paracetamol_500mg_mal_neg , 'confirmation'), 18, 0) +  /data/grp_additional_prescriptions/_data_paracetamol_500mg_additional_distributed "/>
       <bind nodeset="/data/total_amoxycillin_500mg" type="string" calculate=" /data/grp_gastritis_mild/_data_amoxycilline_500mg_distributed  +  /data/grp_pneumonia/_data_amoxicillin_500mg_pneu_distributed "/>
@@ -5692,6 +5786,7 @@ OSWA
       <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
       <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
       <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/iv_line_used_in_ELD_Form012_Summary" type="string" calculate=" /data/total_iv_line "/>
       <bind nodeset="/data/prescription_summary/fields/litacid_gel_used_in_ELD_Form012_Summary" type="string" calculate=" /data/total_litacid_gel "/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_injectable_used_in_ELD_Form012_Summary" type="string" calculate=" /data/total_omeprazole_40mg "/>
       <bind nodeset="/data/prescription_summary/fields/buscopan_injectable_used_in_ELD_Form012_Summary" type="string" calculate=" /data/total_buscopan_20mg "/>
@@ -5807,6 +5902,12 @@ OSWA
       </input>
       <input ref="/data/summary_header/summary_instructions" appearance="h2">
         <label ref="jr:itext('/data/summary_header/summary_instructions:label')"/>
+      </input>
+      <input ref="/data/summary_header/res_triage_emergency" appearance="h1 red">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency:label')"/>
+      </input>
+      <input ref="/data/summary_header/res_triage_emergency_protocol">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency_protocol:label')"/>
       </input>
       <input ref="/data/summary_header/res_diabetes_mild" appearance="h1 yellow">
         <label ref="jr:itext('/data/summary_header/res_diabetes_mild:label')"/>
@@ -6017,6 +6118,25 @@ OSWA
       </input>
       <input ref="/data/summary_header/res_no_condition_protocol">
         <label ref="jr:itext('/data/summary_header/res_no_condition_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/grp_triage_emergency">
+      <label ref="jr:itext('/data/grp_triage_emergency:label')"/>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" appearance="h1 red">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_protocol:label')"/>
+      </input>
+      <select1 ref="/data/grp_triage_emergency/confirm_iv_line">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_iv_line:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/grp_arthroses_arthritis">

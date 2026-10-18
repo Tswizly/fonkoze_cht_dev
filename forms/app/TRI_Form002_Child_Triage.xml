@@ -65,15 +65,6 @@
           <text id="general_symptoms_youth-6">
             <value>Malnutrition, anemia, weight loss, or pale skin</value>
           </text>
-          <text id="referral_facility-0">
-            <value>Zanmi Lasante health center in Cerca La Source</value>
-          </text>
-          <text id="referral_facility-1">
-            <value>Hopital Sainte Thérèse</value>
-          </text>
-          <text id="referral_facility-2">
-            <value>Other</value>
-          </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
           </text>
@@ -149,12 +140,6 @@
           <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
             <value>- Bloated Child / Inflamed Lower Limbs / Anuria: Position upright, monitor vitals closely, avoid fluid overload, and prepare for immediate specialized renal/pediatric transfer.</value>
           </text>
-          <text id="/data/emergency_triage_summary/referral_facility:label">
-            <value>Where is the patient referred?</value>
-          </text>
-          <text id="/data/emergency_triage_summary/referral_facility_other:label">
-            <value>Please specify referral facility:</value>
-          </text>
           <text id="/data/vitals_general_group:label">
             <value>Vitals and General Assessment</value>
           </text>
@@ -206,9 +191,6 @@
           <text id="/data/child_assessment/vaccinated_expected:label">
             <value>Is the child vaccinated as expected?</value>
           </text>
-          <text id="/data/child_assessment/refer_vaccination:label">
-            <value>Refer the child to a vaccination post.</value>
-          </text>
           <text id="/data/child_assessment/received_albendazole:label">
             <value>Has the child received Albendazole (deworming)?</value>
           </text>
@@ -250,9 +232,6 @@
           </text>
           <text id="/data/next_steps_group/note_vision:label">
             <value>- Vision Form</value>
-          </text>
-          <text id="/data/next_steps_group/note_vaccinations:label">
-            <value>- Vaccination and Deworming</value>
           </text>
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Malnutrition and Anemia Form</value>
@@ -324,15 +303,6 @@
           </text>
           <text id="general_symptoms_youth-6">
             <value>Malnutrition, anémie, perte de poids ou pâleur</value>
-          </text>
-          <text id="referral_facility-0">
-            <value>Centre de santé Zanmi Lasante à Cerca La Source</value>
-          </text>
-          <text id="referral_facility-1">
-            <value>Hôpital Sainte Thérèse</value>
-          </text>
-          <text id="referral_facility-2">
-            <value>Autre</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Source</value>
@@ -409,12 +379,6 @@
           <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
             <value>- Enfant ballonné / Membres inférieurs enflammés / Anurie : Installer en position semi-assise, surveiller étroitement les signes vitaux, éviter la surcharge liquidienne et préparer le transfert rénal/pédiatrique immédiat.</value>
           </text>
-          <text id="/data/emergency_triage_summary/referral_facility:label">
-            <value>Où le patient est-il référé ?</value>
-          </text>
-          <text id="/data/emergency_triage_summary/referral_facility_other:label">
-            <value>Veuillez préciser l'établissement de référence :</value>
-          </text>
           <text id="/data/vitals_general_group:label">
             <value>Signes vitaux et évaluation générale</value>
           </text>
@@ -466,9 +430,6 @@
           <text id="/data/child_assessment/vaccinated_expected:label">
             <value>L'enfant est-il vacciné comme prévu ?</value>
           </text>
-          <text id="/data/child_assessment/refer_vaccination:label">
-            <value>Référer l'enfant à un poste de vaccination.</value>
-          </text>
           <text id="/data/child_assessment/received_albendazole:label">
             <value>L'enfant a-t-il reçu de l'Albendazole (déparasitage) ?</value>
           </text>
@@ -510,9 +471,6 @@
           </text>
           <text id="/data/next_steps_group/note_vision:label">
             <value>- Formulaire Vision</value>
-          </text>
-          <text id="/data/next_steps_group/note_vaccinations:label">
-            <value>- Vaccination et déparasitage</value>
           </text>
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Formulaire Malnutrition et anémie</value>
@@ -584,15 +542,6 @@
           </text>
           <text id="general_symptoms_youth-6">
             <value>Malnitrisyon, anemi, pèdi pwa oswa po pal</value>
-          </text>
-          <text id="referral_facility-0">
-            <value>Sant sante Zanmi Lasante nan Cerca La Source</value>
-          </text>
-          <text id="referral_facility-1">
-            <value>Lopital Sainte Thérèse</value>
-          </text>
-          <text id="referral_facility-2">
-            <value>Lòt</value>
           </text>
           <text id="/data/inputs/source:label">
             <value>Sous</value>
@@ -669,12 +618,6 @@
           <text id="/data/emergency_triage_summary/treatment_bloated_extremities:label">
             <value>- Timoun anfle / Manm anba anfle / Pa pipi : Enstale timoun nan chita/apiye, swiv tout siy vital yo, evite ba li twòp likid, epi pare transfè imedyat nan lopital.</value>
           </text>
-          <text id="/data/emergency_triage_summary/referral_facility:label">
-            <value>Ki kote yo refere pasyan an ?</value>
-          </text>
-          <text id="/data/emergency_triage_summary/referral_facility_other:label">
-            <value>Tanpri presize etablisman referans lan :</value>
-          </text>
           <text id="/data/vitals_general_group:label">
             <value>Siy Vital ak Evalyasyon Jeneral</value>
           </text>
@@ -688,13 +631,13 @@
             <value>Tansyon sistolik</value>
           </text>
           <text id="/data/vitals_general_group/bp_systolic:hint">
-            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
+            <value>Se sèlman nesesè si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
           </text>
           <text id="/data/vitals_general_group/bp_diastolic:label">
             <value>Tansyon dyastolik</value>
           </text>
           <text id="/data/vitals_general_group/bp_diastolic:hint">
-            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
+            <value>Se sèlman nesesè si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
           </text>
           <text id="/data/vitals_general_group/temperature:label">
             <value>Tanperati</value>
@@ -725,9 +668,6 @@
           </text>
           <text id="/data/child_assessment/vaccinated_expected:label">
             <value>Èske timoun nan pran tout vaksen li dwe pran yo ?</value>
-          </text>
-          <text id="/data/child_assessment/refer_vaccination:label">
-            <value>Refere timoun nan nan yon pòs vaksinasyon.</value>
           </text>
           <text id="/data/child_assessment/received_albendazole:label">
             <value>Èske timoun nan te resevwa Albendazòl (degouman) ?</value>
@@ -771,9 +711,6 @@
           <text id="/data/next_steps_group/note_vision:label">
             <value>- Fòmilè Pwoblèm Je / Vizyon</value>
           </text>
-          <text id="/data/next_steps_group/note_vaccinations:label">
-            <value>- Vaksinasyon ak Degouman</value>
-          </text>
           <text id="/data/next_steps_group/note_malnutrition_anemia:label">
             <value>- Fòmilè Malnitrisyon ak Anemi</value>
           </text>
@@ -786,7 +723,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form002_Child_Triage" version="20261012102831" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+        <data id="TRI_Form002_Child_Triage" version="20261017190842" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -846,8 +783,6 @@
             <treatment_altered_consciousness/>
             <treatment_acute_malnutrition/>
             <treatment_bloated_extremities/>
-            <referral_facility/>
-            <referral_facility_other/>
           </emergency_triage_summary>
           <vitals_general_group>
             <weight/>
@@ -865,7 +800,6 @@
           <child_assessment>
             <vaccination_card/>
             <vaccinated_expected/>
-            <refer_vaccination/>
             <received_albendazole/>
             <received_vitamin_a/>
           </child_assessment>
@@ -880,8 +814,16 @@
           <route_wound/>
           <route_vision/>
           <route_diabetes/>
-          <route_vaccinations/>
           <route_malnutrition_anemia/>
+          <_has_emergency_symptoms/>
+          <_emergency_dehydration/>
+          <_emergency_respiratory_distress/>
+          <_emergency_altered_consciousness/>
+          <_emergency_acute_malnutrition/>
+          <_emergency_bloated_extremities/>
+          <_needs_vitamin_a/>
+          <_needs_albendazole/>
+          <_vaccinated_as_expected/>
           <next_steps_group>
             <note_diabetes/>
             <note_digestive/>
@@ -894,7 +836,6 @@
             <note_uti_std/>
             <note_wound/>
             <note_vision/>
-            <note_vaccinations/>
             <note_malnutrition_anemia/>
             <note_tasks_will_appear/>
             <note_no_forms/>
@@ -1002,22 +943,6 @@
           </item>
         </root>
       </instance>
-      <instance id="referral_facility">
-        <root>
-          <item>
-            <itextId>referral_facility-0</itextId>
-            <name>zl</name>
-          </item>
-          <item>
-            <itextId>referral_facility-1</itextId>
-            <name>hst</name>
-          </item>
-          <item>
-            <itextId>referral_facility-2</itextId>
-            <name>other</name>
-          </item>
-        </root>
-      </instance>
       <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/data/inputs/source" type="string"/>
       <bind nodeset="/data/inputs/source_id" type="string"/>
@@ -1054,23 +979,20 @@
       <bind nodeset="/data/emergency_triage_summary/treatment_altered_consciousness" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'altered_consciousness_convulsions')"/>
       <bind nodeset="/data/emergency_triage_summary/treatment_acute_malnutrition" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'complicated_acute_malnutrition')"/>
       <bind nodeset="/data/emergency_triage_summary/treatment_bloated_extremities" readonly="true()" type="string" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
-      <bind nodeset="/data/emergency_triage_summary/referral_facility" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes'"/>
-      <bind nodeset="/data/emergency_triage_summary/referral_facility_other" type="string" required="true()" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'yes' and  /data/emergency_triage_summary/referral_facility  = 'other'"/>
-      <bind nodeset="/data/vitals_general_group/weight" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/height" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required="true()" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
-      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required="true()" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
-      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required="true()"/>
-      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required="true()" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
-      <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18"/>
-      <bind nodeset="/data/vitals_general_group/general_symptoms_children" type="string" relevant=" /data/patient_age_in_years  &lt; 6"/>
+      <bind nodeset="/data/vitals_general_group/weight" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/height" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/bp_systolic" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
+      <bind nodeset="/data/vitals_general_group/bp_diastolic" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant="selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria')"/>
+      <bind nodeset="/data/vitals_general_group/temperature" type="decimal" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/pulse_ox" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/respiratory_rate" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/heart_rate" type="int" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/pregnancy_status" type="string" required=" /data/emergency_triage_group/has_emergency_symptoms  != 'yes'" relevant=" /data/patient_age_in_years  &gt; 10 and  /data/patient_sex  = 'female'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_youths" type="string" relevant=" /data/patient_age_in_years  &gt; 5 and  /data/patient_age_in_years  &lt; 18 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
+      <bind nodeset="/data/vitals_general_group/general_symptoms_children" type="string" relevant=" /data/patient_age_in_years  &lt; 6 and  /data/emergency_triage_group/has_emergency_symptoms  != 'yes'"/>
       <bind nodeset="/data/child_assessment" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no' and  /data/patient_age_in_years  &lt; 5"/>
       <bind nodeset="/data/child_assessment/vaccination_card" type="string" required="true()"/>
       <bind nodeset="/data/child_assessment/vaccinated_expected" type="string" required="true()"/>
-      <bind nodeset="/data/child_assessment/refer_vaccination" readonly="true()" type="string" relevant=" /data/child_assessment/vaccinated_expected  = 'no'"/>
       <bind nodeset="/data/child_assessment/received_albendazole" type="string" required="true()"/>
       <bind nodeset="/data/child_assessment/received_vitamin_a" type="string" required="true()"/>
       <bind nodeset="/data/route_digestive" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_digestive') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_digestive'), 'true', 'false')"/>
@@ -1084,8 +1006,16 @@
       <bind nodeset="/data/route_wound" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_wound') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_wound'), 'true', 'false')"/>
       <bind nodeset="/data/route_vision" type="string" calculate="if(selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_vision') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_vision'), 'true', 'false')"/>
       <bind nodeset="/data/route_diabetes" type="string" calculate="'false'"/>
-      <bind nodeset="/data/route_vaccinations" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'no' or  /data/child_assessment/received_albendazole  = 'no' or  /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
       <bind nodeset="/data/route_malnutrition_anemia" type="string" calculate="if( /data/patient_age_in_years  &lt; 5 or selected( /data/vitals_general_group/general_symptoms_youths , 'yaa_malnutrition_anemia') or selected( /data/vitals_general_group/general_symptoms_children , 'chd_malnutrition_anemia'), 'true', 'false')"/>
+      <bind nodeset="/data/_has_emergency_symptoms" type="string" calculate="if( /data/emergency_triage_group/has_emergency_symptoms  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/_emergency_dehydration" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'severe_dehydration'), 'true', 'false')"/>
+      <bind nodeset="/data/_emergency_respiratory_distress" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'respiratory_distress'), 'true', 'false')"/>
+      <bind nodeset="/data/_emergency_altered_consciousness" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'altered_consciousness_convulsions'), 'true', 'false')"/>
+      <bind nodeset="/data/_emergency_acute_malnutrition" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'complicated_acute_malnutrition'), 'true', 'false')"/>
+      <bind nodeset="/data/_emergency_bloated_extremities" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria'), 'true', 'false')"/>
+      <bind nodeset="/data/_needs_vitamin_a" type="string" calculate="if( /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/_needs_albendazole" type="string" calculate="if( /data/child_assessment/received_albendazole  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/_vaccinated_as_expected" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'yes', 'true', 'false')"/>
       <bind nodeset="/data/next_steps_group" relevant=" /data/emergency_triage_group/has_emergency_symptoms  = 'no'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>
@@ -1098,10 +1028,9 @@
       <bind nodeset="/data/next_steps_group/note_uti_std" readonly="true()" type="string" relevant=" /data/route_uti_std  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_wound" readonly="true()" type="string" relevant=" /data/route_wound  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_vision" readonly="true()" type="string" relevant=" /data/route_vision  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_vaccinations" readonly="true()" type="string" relevant=" /data/route_vaccinations  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_malnutrition_anemia" readonly="true()" type="string" relevant=" /data/route_malnutrition_anemia  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_vaccinations  = 'true' or  /data/route_malnutrition_anemia  = 'true'"/>
-      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_vaccinations  = 'false' and  /data/route_malnutrition_anemia  = 'false'"/>
+      <bind nodeset="/data/next_steps_group/note_tasks_will_appear" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true' or  /data/route_digestive  = 'true' or  /data/route_fever  = 'true' or  /data/route_hypertension  = 'true' or  /data/route_pregnancy  = 'true' or  /data/route_respiratory  = 'true' or  /data/route_skin  = 'true' or  /data/route_stroke  = 'true' or  /data/route_uti_std  = 'true' or  /data/route_wound  = 'true' or  /data/route_vision  = 'true' or  /data/route_malnutrition_anemia  = 'true'"/>
+      <bind nodeset="/data/next_steps_group/note_no_forms" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'false' and  /data/route_digestive  = 'false' and  /data/route_fever  = 'false' and  /data/route_hypertension  = 'false' and  /data/route_pregnancy  = 'false' and  /data/route_respiratory  = 'false' and  /data/route_skin  = 'false' and  /data/route_stroke  = 'false' and  /data/route_uti_std  = 'false' and  /data/route_wound  = 'false' and  /data/route_vision  = 'false' and  /data/route_malnutrition_anemia  = 'false'"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1164,16 +1093,6 @@
       </input>
       <input ref="/data/emergency_triage_summary/treatment_bloated_extremities">
         <label ref="jr:itext('/data/emergency_triage_summary/treatment_bloated_extremities:label')"/>
-      </input>
-      <select1 ref="/data/emergency_triage_summary/referral_facility">
-        <label ref="jr:itext('/data/emergency_triage_summary/referral_facility:label')"/>
-        <itemset nodeset="instance('referral_facility')/root/item">
-          <value ref="name"/>
-          <label ref="jr:itext(itextId)"/>
-        </itemset>
-      </select1>
-      <input ref="/data/emergency_triage_summary/referral_facility_other">
-        <label ref="jr:itext('/data/emergency_triage_summary/referral_facility_other:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/vitals_general_group">
@@ -1242,9 +1161,6 @@
           <label ref="jr:itext(itextId)"/>
         </itemset>
       </select1>
-      <input ref="/data/child_assessment/refer_vaccination">
-        <label ref="jr:itext('/data/child_assessment/refer_vaccination:label')"/>
-      </input>
       <select1 ref="/data/child_assessment/received_albendazole">
         <label ref="jr:itext('/data/child_assessment/received_albendazole:label')"/>
         <itemset nodeset="instance('yes_no')/root/item">
@@ -1294,9 +1210,6 @@
       </input>
       <input ref="/data/next_steps_group/note_vision">
         <label ref="jr:itext('/data/next_steps_group/note_vision:label')"/>
-      </input>
-      <input ref="/data/next_steps_group/note_vaccinations">
-        <label ref="jr:itext('/data/next_steps_group/note_vaccinations:label')"/>
       </input>
       <input ref="/data/next_steps_group/note_malnutrition_anemia">
         <label ref="jr:itext('/data/next_steps_group/note_malnutrition_anemia:label')"/>

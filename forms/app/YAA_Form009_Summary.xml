@@ -80,6 +80,24 @@
           <text id="/data/patient_height:label">
             <value>Passed from task</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>Passed from task</value>
+          </text>
           <text id="/data/_result_flu_like_syndrome:label">
             <value>Passed from task</value>
           </text>
@@ -133,6 +151,12 @@
           </text>
           <text id="/data/summary_header/summary_instructions:label">
             <value>Clinical Findings &amp; Recommended Actions</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>If you have not already, you will treat and refer the patient. If they have been treated and referred, use this form to record information and notes.</value>
           </text>
           <text id="/data/summary_header/res_pneumonia_pink:label">
             <value>Severe Pneumonia</value>
@@ -235,6 +259,51 @@
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>You may provide routine health education, nutritional guidance, and wellness counseling.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>The patient had Emergency Symptoms During Triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Severe Dehydration: Place Levine tube, provide ORS via tube, advise mother to give frequent sips of ORS and continue breastfeeding during transfer.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Did you place a Levine tube?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Did you provide 1 ORS packet via Levine tube?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Respiratory Distress: Give first dose of amoxicillin oral suspension, administer oxygen if available, keep airway clear and position child comfortably.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Did you administer the first dose of amoxicillin oral suspension?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Altered Consciousness / Convulsions / Whimpering: Manage airway, position on side (recovery position), give diazepam if actively convulsing, treat to prevent hypoglycemia, and keep warm.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Did you give 1 diazepam?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Complicated Acute Malnutrition: Keep child warm to prevent hypothermia, give oral glucose/sugar water to prevent low blood sugar, do not force-feed.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Did you give the child orgal glucose?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Bloated Child / Inflamed Lower Limbs / Anuria: Position upright, monitor vitals closely, avoid fluid overload, and prepare for immediate specialized renal/pediatric transfer.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>You have left at least one drug confirmation blank. If this is intentional, record why below.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>If you distributed a different amount of drugs, record how many.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Clinical notes:</value>
           </text>
           <text id="/data/grp_pneumonia_severe:label">
             <value>Severe Pneumonia</value>
@@ -806,6 +875,12 @@ OR
           <text id="/data/summary_header/summary_instructions:label">
             <value>Résultats cliniques et actions recommandées</value>
           </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ce n'est déjà fait, vous prendrez en charge le patient et l'orienterez vers un spécialiste. S'il a déjà été pris en charge et orienté, veuillez utiliser ce formulaire pour consigner les informations et les notes.</value>
+          </text>
           <text id="/data/summary_header/res_pneumonia_pink:label">
             <value>Pneumonie grave</value>
           </text>
@@ -907,6 +982,51 @@ OR
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>Vous fournirez des conseils de santé générale et de prévention.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Symptômes d'urgence lors du triage</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Le patient présentait des symptômes d'urgence lors du triage.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Déshydratation sévère : Mettre en place une sonde de Levine, administrer une solution de réhydratation orale par sonde, conseiller à la mère de prendre fréquemment de petites gorgées de solution de réhydratation orale et de poursuivre l'allaitement maternel pendant le transfert.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Avez-vous posé un tube de Levine ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Avez-vous administré 1 sachet de SRO via un tube de Levine ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Détresse respiratoire : Administrer la première dose de suspension orale d'amoxicilline, administrer de l'oxygène si disponible, maintenir les voies respiratoires dégagées et installer confortablement l'enfant.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Avez-vous administré la première dose de suspension orale d'amoxicilline ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Altération de la conscience / Convulsions / Gémissements : Gérer les voies respiratoires, placer sur le côté (position latérale de sécurité), administrer du diazépam en cas de convulsions actives, traiter pour prévenir l'hypoglycémie et maintenir au chaud.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Avez-vous administré 1 comprimé de diazépam ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Malnutrition aiguë compliquée : Garder l'enfant au chaud pour prévenir l'hypothermie, donner du glucose oral ou de l'eau sucrée pour prévenir l'hypoglycémie, ne pas forcer à manger.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Avez-vous donné du glucose oral à l'enfant ?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Enfant bouffi / Membres inférieurs enflammés / Anurie : Poser en position assise, surveiller étroitement les signes vitaux, éviter la surcharge liquidienne et préparer le transfert immédiat en pédiatrie/néphrologie.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Notes cliniques :</value>
           </text>
           <text id="/data/grp_pneumonia_severe:label">
             <value>Pneumonie grave</value>
@@ -1542,6 +1662,24 @@ OU
           <text id="/data/patient_height:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_flu_like_syndrome:label">
             <value>-</value>
           </text>
@@ -1591,6 +1729,18 @@ OU
             <value>-</value>
           </text>
           <text id="/data/has_positive_condition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/grp_pneumonia_severe/metamizol_dose_ml:label">
@@ -1883,6 +2033,12 @@ OU
           <text id="/data/summary_header/summary_instructions:label">
             <value>Rezilta Klinik ak Aksyon Rekòmande</value>
           </text>
+          <text id="/data/summary_header/res_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/summary_header/res_triage_emergency_protocol:label">
+            <value>Si ou poko fè sa, ou pral trete epi refere pasyan an. Si yo te trete epi refere, sèvi ak fòm sa a pou anrejistre enfòmasyon ak nòt.</value>
+          </text>
           <text id="/data/summary_header/res_pneumonia_pink:label">
             <value>Nemoni grav</value>
           </text>
@@ -1984,6 +2140,51 @@ OU
           </text>
           <text id="/data/summary_header/res_no_condition_protocol:label">
             <value>W ap bay konsèy sou bon sante ak prevansyon woutin.</value>
+          </text>
+          <text id="/data/grp_triage_emergency:label">
+            <value>Sentòm Ijans Pandan Triyaj</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label">
+            <value>Pasyan an te gen sentòm ijans pandan triyaj la.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
+            <value>Dezidratasyon grav: Mete yon tib Levine, bay ORS atravè tib la, konseye manman an pou l bay ORS souvan epi kontinye bay tete pandan transfè a.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
+            <value>Èske ou te mete yon tib Levine?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label">
+            <value>Èske ou te bay 1 pake ORS atravè tib Levine lan?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
+            <value>Pwoblèm respiratwa: Bay premye dòz sispansyon oral amoksisilin lan, administre oksijèn si genyen, kenbe pasaj lè a klè epi mete timoun nan nan yon pozisyon konfòtab.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
+            <value>Èske ou te bay premye dòz sispansyon oral amoksisilin lan?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_altered_consciousness:label">
+            <value>Chanjman Konsyans / Konvulsion / Jemi: Jere pasaj lè a, mete kò a sou kote (pozisyon rekiperasyon), bay diazepam si l ap gen konvulsion aktivman, trete pou anpeche ipoglisemi, epi kenbe l cho.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label">
+            <value>Èske ou te bay 1 diazepam?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_acute_malnutrition:label">
+            <value>Malnitrisyon egi konplike: Kenbe timoun nan cho pou evite ipotèmi, bay dlo sikre oswa glikoz nan bouch pou evite ipoglisemi, pa fòse l manje.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label">
+            <value>Èske ou te bay timoun nan glikoz òganik?</value>
+          </text>
+          <text id="/data/grp_triage_emergency/treatment_bloated_extremities:label">
+            <value>Timoun anfle / Janm anfle anflame / Aniri (pa ka fè pipi): Mete chita dwat, siveye siy vital yo byen pre, evite twòp likid, epi prepare pou transfè ijan imedyat nan lopital espesyalize.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label">
+            <value>Ou kite omwen yon konfimasyon medikaman vid. Si se espre, ekri poukisa anba a.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint">
+            <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
+          </text>
+          <text id="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label">
+            <value>Nòt klinik:</value>
           </text>
           <text id="/data/grp_pneumonia_severe:label">
             <value>Nemoni grav</value>
@@ -2619,6 +2820,24 @@ OSWA
           <text id="/data/patient_height:label">
             <value>-</value>
           </text>
+          <text id="/data/_has_emergency_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_dehydration:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_respiratory_distress:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_altered_consciousness:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_acute_malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_emergency_bloated_extremities:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_flu_like_syndrome:label">
             <value>-</value>
           </text>
@@ -2668,6 +2887,18 @@ OSWA
             <value>-</value>
           </text>
           <text id="/data/has_positive_condition:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed:label">
+            <value>-</value>
+          </text>
+          <text id="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed:label">
             <value>-</value>
           </text>
           <text id="/data/grp_pneumonia_severe/metamizol_dose_ml:label">
@@ -2976,6 +3207,12 @@ OSWA
           <patient_age_in_weeks/>
           <patient_weight/>
           <patient_height/>
+          <_has_emergency_symptoms/>
+          <_emergency_dehydration/>
+          <_emergency_respiratory_distress/>
+          <_emergency_altered_consciousness/>
+          <_emergency_acute_malnutrition/>
+          <_emergency_bloated_extremities/>
           <_result_flu_like_syndrome/>
           <_result_pneumonia_pink/>
           <_result_pneumonia_yellow/>
@@ -2996,6 +3233,8 @@ OSWA
           <summary_header>
             <summary_overview/>
             <summary_instructions/>
+            <res_triage_emergency/>
+            <res_triage_emergency_protocol/>
             <res_pneumonia_pink/>
             <res_pneumonia_pink_protocol/>
             <res_pneumonia_yellow/>
@@ -3031,6 +3270,25 @@ OSWA
             <res_no_condition/>
             <res_no_condition_protocol/>
           </summary_header>
+          <grp_triage_emergency>
+            <emergency_symptoms_during_triage_notification/>
+            <treatment_severe_dehydration/>
+            <confirm_treatment_severe_dehydration_levin_tube/>
+            <confirm_treatment_severe_dehydration_ORS/>
+            <_data_treatment_severe_dehydration_distributed/>
+            <treatment_respiratory_distress/>
+            <confirm_treatment_respiratory_distress/>
+            <_data_treatment_respiratory_distress_distributed/>
+            <treatment_altered_consciousness/>
+            <confirm_treatment_altered_consciousness/>
+            <_data_treatment_altered_consciousness_distributed/>
+            <treatment_acute_malnutrition/>
+            <confirm_treatment_acute_malnutrition/>
+            <_data_treatment_acute_malnutrition_distributed/>
+            <treatment_bloated_extremities/>
+            <emergency_symptoms_during_triage_not_confirmed_reason/>
+            <emergency_symptoms_during_triage_notes/>
+          </grp_triage_emergency>
           <grp_pneumonia_severe>
             <pneu_sev_notification/>
             <pneu_sev_protocol/>
@@ -3359,6 +3617,12 @@ OSWA
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
       <bind nodeset="/data/patient_weight" type="string"/>
       <bind nodeset="/data/patient_height" type="string"/>
+      <bind nodeset="/data/_has_emergency_symptoms" type="string"/>
+      <bind nodeset="/data/_emergency_dehydration" type="string"/>
+      <bind nodeset="/data/_emergency_respiratory_distress" type="string"/>
+      <bind nodeset="/data/_emergency_altered_consciousness" type="string"/>
+      <bind nodeset="/data/_emergency_acute_malnutrition" type="string"/>
+      <bind nodeset="/data/_emergency_bloated_extremities" type="string"/>
       <bind nodeset="/data/_result_flu_like_syndrome" type="string"/>
       <bind nodeset="/data/_result_pneumonia_pink" type="string"/>
       <bind nodeset="/data/_result_pneumonia_yellow" type="string"/>
@@ -3374,10 +3638,12 @@ OSWA
       <bind nodeset="/data/_result_syphilis" type="string"/>
       <bind nodeset="/data/_result_other_std" type="string"/>
       <bind nodeset="/data/_result_anemia" type="string"/>
-      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_pneumonia_pink  = 'true' or  /data/_result_glomerulonephritis  = 'true' or  /data/_result_gastritis  = 'true', 'true', 'false')"/>
-      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_pneumonia_yellow  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_result_dehydration  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_result_impetigo  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_uti  = 'true' or  /data/_result_glomerulonephritis  = 'true' or  /data/_result_syphilis  = 'true' or  /data/_result_other_std  = 'true' or  /data/_result_anemia  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/_result_urgent_referral" type="string" calculate="if( /data/_result_pneumonia_pink  = 'true' or  /data/_result_glomerulonephritis  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
+      <bind nodeset="/data/has_positive_condition" type="string" calculate="if( /data/_result_urgent_referral  = 'true' or  /data/_result_flu_like_syndrome  = 'true' or  /data/_result_pneumonia_yellow  = 'true' or  /data/_result_tonsillitis  = 'true' or  /data/_result_gastritis  = 'true' or  /data/_result_dehydration  = 'true' or  /data/_result_dysentery  = 'true' or  /data/_result_impetigo  = 'true' or  /data/_result_ring_worm  = 'true' or  /data/_result_scabies  = 'true' or  /data/_result_uti  = 'true' or  /data/_result_glomerulonephritis  = 'true' or  /data/_result_syphilis  = 'true' or  /data/_result_other_std  = 'true' or  /data/_result_anemia  = 'true' or  /data/_has_emergency_symptoms  = 'true', 'true', 'false')"/>
       <bind nodeset="/data/summary_header/summary_overview" readonly="true()" type="string"/>
       <bind nodeset="/data/summary_header/summary_instructions" readonly="true()" type="string"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/summary_header/res_triage_emergency_protocol" readonly="true()" type="string" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
       <bind nodeset="/data/summary_header/res_pneumonia_pink" readonly="true()" type="string" relevant=" /data/_result_pneumonia_pink  = 'true'"/>
       <bind nodeset="/data/summary_header/res_pneumonia_pink_protocol" readonly="true()" type="string" relevant=" /data/_result_pneumonia_pink  = 'true'"/>
       <bind nodeset="/data/summary_header/res_pneumonia_yellow" readonly="true()" type="string" relevant=" /data/_result_pneumonia_yellow  = 'true' and  /data/_result_pneumonia_pink  != 'true'"/>
@@ -3412,6 +3678,24 @@ OSWA
       <bind nodeset="/data/summary_header/res_urgent_ref_protocol" readonly="true()" type="string" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/summary_header/res_no_condition" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
       <bind nodeset="/data/summary_header/res_no_condition_protocol" readonly="true()" type="string" relevant=" /data/has_positive_condition  = 'false'"/>
+      <bind nodeset="/data/grp_triage_emergency" relevant=" /data/_has_emergency_symptoms  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_severe_dehydration" readonly="true()" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS" type="string" relevant=" /data/_emergency_dehydration  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_severe_dehydration_distributed" type="string" relevant=" /data/_emergency_dehydration  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_respiratory_distress" readonly="true()" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_respiratory_distress" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_respiratory_distress_distributed" type="string" relevant=" /data/_emergency_respiratory_distress  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_respiratory_distress , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_altered_consciousness" readonly="true()" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_altered_consciousness" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_altered_consciousness_distributed" type="string" relevant=" /data/_emergency_altered_consciousness  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_altered_consciousness , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_acute_malnutrition" readonly="true()" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/_data_treatment_acute_malnutrition_distributed" type="string" relevant=" /data/_emergency_acute_malnutrition  = 'true'" calculate="if(selected( /data/grp_triage_emergency/confirm_treatment_acute_malnutrition , 'confirmation'), 1, 0)"/>
+      <bind nodeset="/data/grp_triage_emergency/treatment_bloated_extremities" readonly="true()" type="string" relevant=" /data/_emergency_bloated_extremities  = 'true'"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason" type="string" required="true()" relevant="( /data/_emergency_dehydration  = 'true' and (not(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube , 'confirmation')) or not(selected( /data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS , 'confirmation')))) or ( /data/_emergency_respiratory_distress  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_respiratory_distress , 'confirmation'))) or ( /data/_emergency_altered_consciousness  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_altered_consciousness , 'confirmation'))) or ( /data/_emergency_acute_malnutrition  = 'true' and not(selected( /data/grp_triage_emergency/confirm_treatment_acute_malnutrition , 'confirmation')))"/>
+      <bind nodeset="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes" type="string"/>
       <bind nodeset="/data/grp_pneumonia_severe" relevant=" /data/_result_pneumonia_pink  = 'true'"/>
       <bind nodeset="/data/grp_pneumonia_severe/pneu_sev_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_pneumonia_severe/pneu_sev_protocol" readonly="true()" type="string"/>
@@ -3661,6 +3945,12 @@ OSWA
       <input ref="/data/summary_header/summary_instructions" appearance="h2">
         <label ref="jr:itext('/data/summary_header/summary_instructions:label')"/>
       </input>
+      <input ref="/data/summary_header/res_triage_emergency" appearance="h1 red">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency:label')"/>
+      </input>
+      <input ref="/data/summary_header/res_triage_emergency_protocol">
+        <label ref="jr:itext('/data/summary_header/res_triage_emergency_protocol:label')"/>
+      </input>
       <input ref="/data/summary_header/res_pneumonia_pink" appearance="h1 red">
         <label ref="jr:itext('/data/summary_header/res_pneumonia_pink:label')"/>
       </input>
@@ -3762,6 +4052,69 @@ OSWA
       </input>
       <input ref="/data/summary_header/res_no_condition_protocol">
         <label ref="jr:itext('/data/summary_header/res_no_condition_protocol:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/grp_triage_emergency">
+      <label ref="jr:itext('/data/grp_triage_emergency:label')"/>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notification" appearance="h1 red">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notification:label')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/treatment_severe_dehydration">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_severe_dehydration:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_severe_dehydration_ORS:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_respiratory_distress">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_respiratory_distress:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_respiratory_distress">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_altered_consciousness">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_altered_consciousness:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_altered_consciousness">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_altered_consciousness:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_acute_malnutrition">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_acute_malnutrition:label')"/>
+      </input>
+      <select ref="/data/grp_triage_emergency/confirm_treatment_acute_malnutrition">
+        <label ref="jr:itext('/data/grp_triage_emergency/confirm_treatment_acute_malnutrition:label')"/>
+        <itemset nodeset="instance('drug_confirmation')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/grp_triage_emergency/treatment_bloated_extremities">
+        <label ref="jr:itext('/data/grp_triage_emergency/treatment_bloated_extremities:label')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:label')"/>
+        <hint ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_not_confirmed_reason:hint')"/>
+      </input>
+      <input ref="/data/grp_triage_emergency/emergency_symptoms_during_triage_notes">
+        <label ref="jr:itext('/data/grp_triage_emergency/emergency_symptoms_during_triage_notes:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/data/grp_pneumonia_severe">

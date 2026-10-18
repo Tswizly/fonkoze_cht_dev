@@ -1,0 +1,12 @@
+"username","password","roles","contact","phone","place","fullname","email"
+"t1z1nurse","Secret_1","nurse","05c5d96e-f6a8-5ef5-a0b0-899ee4053d8e","+9779841608188","5146a832-aa70-5bdf-8129-620635e2b8bc",,
+"t1z1che","Secret_1","che","016c2b30-1969-5bee-ac5c-8061e45dd120","+9779841608188","5146a832-aa70-5bdf-8129-620635e2b8bc",,
+"t1z2nurse","Secret_1","nurse","e89e0efe-6ecb-56a7-ac42-a453bdfcb7bc","+9779841608188","728cfd81-4d43-5f31-8092-045ca0b77556",,
+"t1z2che","Secret_1","che","56f046a7-46ce-5349-aa85-0893f6ac12a3","+9779841608188","728cfd81-4d43-5f31-8092-045ca0b77556",,
+"t2z1nurse","Secret_1","nurse","195a44f4-55d7-52f6-8846-ff63b0e3b53f","+9779841608188","ae38afb4-efd2-5779-bf3a-6bec5440e961",,
+"t2z1che","Secret_1","che","cf0613a1-76ef-5ea0-a129-00a9d0c0f218","+9779841608188","ae38afb4-efd2-5779-bf3a-6bec5440e961",,
+"t2z2nurse","Secret_1","nurse","b236b875-c6c0-56ca-bc3a-e09c0f3cfa7f","+9779841608188","1e929eb6-4176-5205-b9e7-e303e8b0b139",,
+"t2z2che","Secret_1","che","8bce18e1-8933-5b2f-ab3a-480c9a9aa507","+9779841608188","1e929eb6-4176-5205-b9e7-e303e8b0b139",,
+"t1supervisor","Secret_1","nurse_supervisor","6d06f85c-ddfa-5bf6-91c2-67ffc1ee3937","+9779841608188","34908e1e-cd03-506d-bfa0-9ff120396cef",,
+"t2supervisor","Secret_1","nurse_supervisor","9eb03cb3-309b-5a58-b574-6e250bdc493a","+9779841608188","7eb4dd0a-3067-52f5-94ef-3753b6f97eb6",,
+"program_officer","Secret_1","program_officer","1f2e446f-6519-591e-91a1-af7ab4484bd6","+9779841608188","4ed3e63d-da30-5162-9b13-0bd8e448e8af",,

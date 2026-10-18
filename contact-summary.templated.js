@@ -96,6 +96,34 @@ const getReportConditions = (report) => {
   // TEMPORARY CONDITIONS
   // ==============================
   
+  // Emergency Triage Symptoms
+  if (isPositive(fields._has_emergency_symptoms)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage', type: 'temporary' });
+  }
+  if (isPositive(fields._emergency_dehydration)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage: Dehydration', type: 'temporary' });
+  }
+  if (isPositive(fields._emergency_respiratory_distress)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage: Respiratory Distress', type: 'temporary' });
+  }
+  if (isPositive(fields._emergency_altered_consciousness)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage: Altered Consciousness', type: 'temporary' });
+  }
+  if (isPositive(fields._emergency_acute_malnutrition)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage: Acute Malnutrition', type: 'temporary' });
+  }
+  if (isPositive(fields._emergency_bloated_extremities)) {
+    conditions.push({ name: 'Emergency Symptoms During Triage: Bloated Extremities', type: 'temporary' });
+  }
+
+  // Preventive Care Needs (Children)
+  if (isPositive(fields._needs_vitamin_a)) {
+    conditions.push({ name: 'Needed Vitamin A', type: 'temporary' });
+  }
+  if (isPositive(fields._needs_albendazole)) {
+    conditions.push({ name: 'Needed Albendazole', type: 'temporary' });
+  }
+
   // Respiratory & Fever
   if (isPositive(fields.flu)) {
     conditions.push({ name: 'Flu', type: 'temporary' });
@@ -217,14 +245,6 @@ const getReportConditions = (report) => {
   // Pregnancy Complications
   if (isPositive(fields._result_threatened_miscarriage_less20) || isPositive(fields._result_threatened_miscarriage_greater20)) {
     conditions.push({ name: 'Threatened Miscarriage', type: 'temporary' });
-  }
-
-  // Generic / System
-  if (isPositive(fields.general_ailment)) {
-    conditions.push({ name: 'Ailment', type: 'temporary' });
-  }
-  if (isPositive(fields._result_urgent_referral)) {
-    conditions.push({ name: 'Urgent Referral Required', type: 'temporary' });
   }
 
   return conditions;
