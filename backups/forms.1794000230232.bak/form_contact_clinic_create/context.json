@@ -1,0 +1,4 @@
+{
+  "expression": "user.role === 'nurse_supervisor'",
+  "permission": "can_create_places"
+}

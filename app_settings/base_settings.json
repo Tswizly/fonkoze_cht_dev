@@ -6,8 +6,8 @@
       "name": "English"
     },
     {
-      "code": "es",
-      "name": "Spanish"
+      "code": "cr",
+      "name": "Creole"
     },
     {
       "code": "fr",
@@ -20,12 +20,12 @@
       "enabled": true
     },
     {
-      "locale": "es",
-      "enabled": false
+      "locale": "cr",
+      "enabled": true
     },
     {
       "locale": "fr",
-      "enabled": false
+      "enabled": true
     }
   ],
   "locale": "en",

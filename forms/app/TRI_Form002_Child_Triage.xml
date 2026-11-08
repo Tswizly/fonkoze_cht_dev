@@ -808,13 +808,13 @@
             <value>Tansyon sistolik</value>
           </text>
           <text id="/data/vitals_general_group/bp_systolic:hint">
-            <value>Se sèlman nesesè si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
+            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
           </text>
           <text id="/data/vitals_general_group/bp_diastolic:label">
             <value>Tansyon dyastolik</value>
           </text>
           <text id="/data/vitals_general_group/bp_diastolic:hint">
-            <value>Se sèlman nesesè si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
+            <value>Li nesesè sèlman si gen siy yon pwoblèm ren tankou gonfleman ak sispann pipi.</value>
           </text>
           <text id="/data/vitals_general_group/temperature:label">
             <value>Tanperati</value>
@@ -912,7 +912,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="TRI_Form002_Child_Triage" version="20261017221251" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
+        <data id="TRI_Form002_Child_Triage" version="20261107180715" prefix="J1!TRI_Form002_Child_Triage!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -1294,7 +1294,7 @@
       <bind nodeset="/data/_emergency_bloated_extremities" type="string" calculate="if(selected( /data/emergency_triage_group/emergency_symptoms , 'bloated_inflamed_extremities_anuria'), 'true', 'false')"/>
       <bind nodeset="/data/_needs_vitamin_a" type="string" calculate="if( /data/child_assessment/received_vitamin_a  = 'no', 'true', 'false')"/>
       <bind nodeset="/data/_needs_albendazole" type="string" calculate="if( /data/child_assessment/received_albendazole  = 'no', 'true', 'false')"/>
-      <bind nodeset="/data/_vaccinated_as_expected" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/_vaccinated_as_expected" type="string" calculate="if( /data/child_assessment/vaccinated_expected  = 'yes' or  /data/child_assessment/vaccinated_expected  = '', 'true', 'false')"/>
       <bind nodeset="/data/next_steps_group" relevant="( /data/intake_mode  = 'triage' and  /data/emergency_triage_group/has_emergency_symptoms  = 'no') or  /data/intake_mode  = 'manual_select'"/>
       <bind nodeset="/data/next_steps_group/note_diabetes" readonly="true()" type="string" relevant=" /data/route_diabetes  = 'true'"/>
       <bind nodeset="/data/next_steps_group/note_digestive" readonly="true()" type="string" relevant=" /data/route_digestive  = 'true'"/>

@@ -412,7 +412,7 @@
             <value>Enfeksyon nan pipi</value>
           </text>
           <text id="/data/results_group/res_uti_action:label">
-            <value>Pasyan an ka gen yon enfeksyon nan aparèy urinè. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
+            <value>Pasyan an ka gen yon enfeksyon nan aparèy urinè. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/results_group/res_std_discharge:label">
             <value>Risk MST (Ekoulman)</value>
@@ -435,86 +435,82 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form009_UTIandSTD" version="20261011180603" prefix="J1!ADT_Form009_UTIandSTD!" delimiter="#">
-          <inputs>
-            <meta>
-              <location>
-                <lat/>
-                <long/>
-                <error/>
-                <message/>
-              </location>
-            </meta>
-            <source>user</source>
-            <source_id/>
-            <user>
-              <contact_id/>
-              <parent>
-                <_id/>
+        <data id="ADT_Form009_UTIandSTD" version="20261104232736" prefix="J1!ADT_Form009_UTIandSTD!" delimiter="#">
+          <inputs tag="hidden">
+            <source tag="hidden">user</source>
+            <source_id tag="hidden"/>
+            <user tag="hidden">
+              <contact_id tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
               </parent>
-              <facility_id/>
+              <facility_id tag="hidden"/>
             </user>
-            <contact>
-              <_id/>
-              <name/>
-              <short_name/>
-              <patient_id/>
-              <date_of_birth>0</date_of_birth>
-              <sex/>
-              <parent>
-                <_id/>
-                <parent>
-                  <contact>
-                    <nurse_name/>
-                    <phone/>
+            <contact tag="hidden">
+              <_id tag="hidden"/>
+              <name tag="hidden"/>
+              <short_name tag="hidden"/>
+              <patient_id tag="hidden"/>
+              <date_of_birth tag="hidden">0</date_of_birth>
+              <sex tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
+                <parent tag="hidden">
+                  <contact tag="hidden">
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
                   </contact>
                 </parent>
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <female_uti_std_group>
-            <urination_qualifiers_f/>
-            <pain_during_sex_f/>
-            <ulcer_presence_f/>
-            <discharge_qualifiers_f/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <female_uti_std_group tag="hidden">
+            <urination_qualifiers_f tag="hidden"/>
+            <pain_during_sex_f tag="hidden"/>
+            <ulcer_presence_f tag="hidden"/>
+            <discharge_qualifiers_f tag="hidden"/>
           </female_uti_std_group>
-          <male_uti_std_group>
-            <urination_qualifiers_m/>
-            <pain_during_sex_m/>
-            <ulcer_presence_m/>
-            <urethral_discharge_m/>
+          <male_uti_std_group tag="hidden">
+            <urination_qualifiers_m tag="hidden"/>
+            <pain_during_sex_m tag="hidden"/>
+            <ulcer_presence_m tag="hidden"/>
+            <urethral_discharge_m tag="hidden"/>
           </male_uti_std_group>
-          <calc_uti/>
-          <calc_std_discharge/>
-          <calc_std_ulcer/>
-          <results_group>
-            <res_uti/>
-            <res_uti_action/>
-            <res_std_discharge/>
-            <res_std_discharge_action/>
-            <res_std_ulcer/>
-            <res_std_ulcer_action/>
+          <calc_uti tag="hidden"/>
+          <calc_std_discharge tag="hidden"/>
+          <calc_std_ulcer tag="hidden"/>
+          <results_group tag="hidden">
+            <res_uti tag="hidden"/>
+            <res_uti_action tag="hidden"/>
+            <res_std_discharge tag="hidden"/>
+            <res_std_discharge_action tag="hidden"/>
+            <res_std_ulcer tag="hidden"/>
+            <res_std_ulcer_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <null_results_note/>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
           </null_results_group>
-          <data>
-            <_result_uti/>
-            <_result_std_discharge/>
-            <_result_std_ulcer/>
+          <data tag="hidden">
+            <_result_uti tag="hidden"/>
+            <_result_std_discharge tag="hidden"/>
+            <_result_std_ulcer tag="hidden"/>
           </data>
+          <summary_patient_info/>
+          <summary_symptoms/>
+          <summary_diagnostic_findings/>
+          <summary_clinical_action/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -646,6 +642,10 @@
       <bind nodeset="/data/data/_result_uti" type="string" calculate="if( /data/calc_uti ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_std_discharge" type="string" calculate="if( /data/calc_std_discharge ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_std_ulcer" type="string" calculate="if( /data/calc_std_ulcer ='true', 'true', 'false')"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_symptoms" type="string" calculate="if(( /data/calc_uti  = 'false' or  /data/calc_uti  = '') and ( /data/calc_std_discharge  = 'false' or  /data/calc_std_discharge  = '') and ( /data/calc_std_ulcer  = 'false' or  /data/calc_std_ulcer  = '') and  /data/female_uti_std_group/pain_during_sex_f  != 'yes' and  /data/male_uti_std_group/pain_during_sex_m  != 'yes', 'Symptoms Reported: None', concat('Symptoms Reported: ', if(selected( /data/female_uti_std_group/urination_qualifiers_f , 'pain_when_urinating') or selected( /data/male_uti_std_group/urination_qualifiers_m , 'pain_when_urinating'), 'Pain when urinating; ', ''), if(selected( /data/female_uti_std_group/urination_qualifiers_f , 'frequent_urination') or selected( /data/male_uti_std_group/urination_qualifiers_m , 'frequent_urination'), 'Frequent urination; ', ''), if(selected( /data/female_uti_std_group/urination_qualifiers_f , 'dark_urine') or selected( /data/male_uti_std_group/urination_qualifiers_m , 'dark_urine'), 'Dark urine; ', ''), if( /data/female_uti_std_group/pain_during_sex_f  = 'yes' or  /data/male_uti_std_group/pain_during_sex_m  = 'yes', 'Pain during sex; ', ''), if( /data/female_uti_std_group/ulcer_presence_f  = 'yes' or  /data/male_uti_std_group/ulcer_presence_m  = 'yes', 'Genital ulcer; ', ''), if(selected( /data/female_uti_std_group/discharge_qualifiers_f , 'dark_discharge'), 'Dark discharge; ', ''), if(selected( /data/female_uti_std_group/discharge_qualifiers_f , 'more_discharge_than_usual'), 'Increased discharge; ', ''), if(selected( /data/female_uti_std_group/discharge_qualifiers_f , 'smelly_discharge'), 'Foul-smelling discharge; ', ''), if( /data/male_uti_std_group/urethral_discharge_m  = 'yes', 'Urethral discharge; ', '')))"/>
+      <bind nodeset="/data/summary_diagnostic_findings" type="string" calculate="if( /data/calc_uti  != 'true' and  /data/calc_std_discharge  != 'true' and  /data/calc_std_ulcer  != 'true', 'Diagnostic Findings: No conditions met / Normal', concat('Diagnostic Findings: ', if( /data/calc_uti  = 'true', 'Urinary Tract Infection (UTI); ', ''), if( /data/calc_std_discharge  = 'true', 'Risk of STD (Discharge); ', ''), if( /data/calc_std_ulcer  = 'true', 'Risk of STD (Ulcer / Syphilis); ', '')))"/>
+      <bind nodeset="/data/summary_clinical_action" type="string" calculate="if( /data/calc_uti  != 'true' and  /data/calc_std_discharge  != 'true' and  /data/calc_std_ulcer  != 'true', 'Action: No conditions met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.', concat('Action: ', if( /data/calc_std_ulcer  = 'true', 'Patient has risk of STD (Ulcer/Syphilis). ', ''), if( /data/calc_std_discharge  = 'true', 'Patient has risk of STD (Discharge). ', ''), if( /data/calc_uti  = 'true', 'Patient may have urinary tract infection. ', ''), 'Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.'))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

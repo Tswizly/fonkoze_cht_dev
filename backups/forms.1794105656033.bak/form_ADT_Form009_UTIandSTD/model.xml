@@ -1,0 +1,160 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form009_UTIandSTD" version="20261104232736" prefix="J1!ADT_Form009_UTIandSTD!" delimiter="#">
+          <inputs tag="hidden">
+            <source tag="hidden">user</source>
+            <source_id tag="hidden"/>
+            <user tag="hidden">
+              <contact_id tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
+              </parent>
+              <facility_id tag="hidden"/>
+            </user>
+            <contact tag="hidden">
+              <_id tag="hidden"/>
+              <name tag="hidden"/>
+              <short_name tag="hidden"/>
+              <patient_id tag="hidden"/>
+              <date_of_birth tag="hidden">0</date_of_birth>
+              <sex tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
+                <parent tag="hidden">
+                  <contact tag="hidden">
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <female_uti_std_group tag="hidden">
+            <urination_qualifiers_f tag="hidden"/>
+            <pain_during_sex_f tag="hidden"/>
+            <ulcer_presence_f tag="hidden"/>
+            <discharge_qualifiers_f tag="hidden"/>
+          </female_uti_std_group>
+          <male_uti_std_group tag="hidden">
+            <urination_qualifiers_m tag="hidden"/>
+            <pain_during_sex_m tag="hidden"/>
+            <ulcer_presence_m tag="hidden"/>
+            <urethral_discharge_m tag="hidden"/>
+          </male_uti_std_group>
+          <calc_uti tag="hidden"/>
+          <calc_std_discharge tag="hidden"/>
+          <calc_std_ulcer tag="hidden"/>
+          <results_group tag="hidden">
+            <res_uti tag="hidden"/>
+            <res_uti_action tag="hidden"/>
+            <res_std_discharge tag="hidden"/>
+            <res_std_discharge_action tag="hidden"/>
+            <res_std_ulcer tag="hidden"/>
+            <res_std_ulcer_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_result_uti tag="hidden"/>
+            <_result_std_discharge tag="hidden"/>
+            <_result_std_ulcer tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_symptoms/>
+          <summary_diagnostic_findings/>
+          <summary_clinical_action/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="urination_qualifiers">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>urination_qualifiers-0</itextId>
+            <name>frequent_urination</name>
+          </item>
+          <item>
+            <itextId>urination_qualifiers-1</itextId>
+            <name>pain_when_urinating</name>
+          </item>
+          <item>
+            <itextId>urination_qualifiers-2</itextId>
+            <name>dark_urine</name>
+          </item>
+          <item>
+            <itextId>urination_qualifiers-3</itextId>
+            <name>yellow_urine</name>
+          </item>
+          <item>
+            <itextId>urination_qualifiers-4</itextId>
+            <name>red_urine</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="female_discharge_qualifiers">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>female_discharge_qualifiers-0</itextId>
+            <name>dark_discharge</name>
+          </item>
+          <item>
+            <itextId>female_discharge_qualifiers-1</itextId>
+            <name>more_discharge_than_usual</name>
+          </item>
+          <item>
+            <itextId>female_discharge_qualifiers-2</itextId>
+            <name>smelly_discharge</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="followed_up_conditions">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>uti</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>std_discharge</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>std_ulcer</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>dysmenorrhea</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

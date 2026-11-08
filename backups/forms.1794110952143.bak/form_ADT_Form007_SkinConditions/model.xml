@@ -1,0 +1,152 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form007_SkinConditions" version="20261104232733" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <skin_conditions_group tag="hidden">
+            <skin_symptoms tag="hidden"/>
+          </skin_conditions_group>
+          <calc_impetigo_folliculitis tag="hidden"/>
+          <calc_ring_worm tag="hidden"/>
+          <calc_scabies tag="hidden"/>
+          <results_group tag="hidden">
+            <res_impetigo_folliculitis tag="hidden"/>
+            <res_impetigo_folliculitis_action tag="hidden"/>
+            <res_ring_worm tag="hidden"/>
+            <res_ring_worm_action tag="hidden"/>
+            <res_scabies tag="hidden"/>
+            <res_scabies_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_skin_symptoms tag="hidden"/>
+            <_result_impetigo_folliculitis tag="hidden"/>
+            <_result_ring_worm tag="hidden"/>
+            <_result_scabies tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_symptoms/>
+          <summary_conditions/>
+          <summary_action_protocol/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="skin_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>skin_symptoms-0</itextId>
+            <name>itching</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-1</itextId>
+            <name>blisters_sores_pustules</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-2</itextId>
+            <name>crusts_or_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-3</itextId>
+            <name>itchy_lesions</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-4</itextId>
+            <name>rash</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-5</itextId>
+            <name>web_space_and_wrists</name>
+          </item>
+          <item>
+            <itextId>skin_symptoms-6</itextId>
+            <name>face_spared</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="followed_up_conditions">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>impetigo_folliculitis</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>ring_worm</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>scabies</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>moderate_anemia</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

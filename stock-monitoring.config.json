@@ -19,7 +19,7 @@
             "title": {
                 "en": "Stock Count",
                 "fr": "Comptage des stocks",
-                "es": "Konte Stok"
+                "cr": "Konte Stok"
             }
         },
         "stock_supply": {
@@ -27,14 +27,14 @@
             "title": {
                 "en": "Stock Supply",
                 "fr": "Approvisionnement des stocks",
-                "es": "Pwovizyon Stok"
+                "cr": "Pwovizyon Stok"
             },
             "confirm_supply": {
                 "form_name": "stock_recieved",
                 "title": {
                     "en": "Stock Received",
                     "fr": "Stock Reu",
-                    "es": "Stok Resevwa"
+                    "cr": "Stok Resevwa"
                 },
                 "active": true
             },
@@ -43,7 +43,7 @@
                 "title": {
                     "en": "Stock Discrepancy Resolution",
                     "fr": "Rsolution des carts de stock",
-                    "es": "Rezolisyon Diferans Stok"
+                    "cr": "Rezolisyon Diferans Stok"
                 }
             }
         },
@@ -53,7 +53,7 @@
             "title": {
                 "en": "Stock Out",
                 "fr": "Rupture de stock",
-                "es": "Stok Fini"
+                "cr": "Stok Fini"
             }
         },
         "stock_return": {
@@ -61,14 +61,14 @@
             "title": {
                 "en": "Stock Return",
                 "fr": "Retour de stock",
-                "es": "Retounen Stok"
+                "cr": "Retounen Stok"
             },
             "confirmation": {
                 "form_name": "stock_returned",
                 "title": {
-                    "en": "Stock Returned",
+                    "en": "Stock Retourn",
                     "fr": "Stock Retourn",
-                    "es": "Stok Retounen"
+                    "cr": "Stok Retounen"
                 }
             }
         },
@@ -78,14 +78,14 @@
             "title": {
                 "en": "Stock Order",
                 "fr": "Commande de stock",
-                "es": "Kmand Stok"
+                "cr": "Kmand Stok"
             },
             "stock_supply": {
                 "form_name": "stock_order_supply",
                 "title": {
                     "en": "Stock Order Supply",
                     "fr": "Approvisionnement de commande de stock",
-                    "es": "Pwovizyon Kmand Stok"
+                    "cr": "Pwovizyon Kmand Stok"
                 }
             }
         }
@@ -104,57 +104,87 @@
     },
     "languages": [
         "en",
-        "es",
+        "cr",
         "fr"
     ],
     "defaultLanguage": "en",
     "forms": {
-        "ADT_Form001_Diabetes": {
+        "CHD_Form009_Summary": {
             "items": {
-                "lancets": {
+                "amoxicillin_suspension": {
                     "deduction_type": "formula",
-                    "formular": "${lancets_used_in_ADT_Form001_Diabetes}"
+                    "formular": "${amoxicillin_suspension_used_in_CHD_Form009_Summary}"
                 },
-                "strips": {
+                "paracetamol_syrup": {
                     "deduction_type": "formula",
-                    "formular": "${strips_used_in_ADT_Form001_Diabetes}"
+                    "formular": "${paracetamol_syrup_used_in_CHD_Form009_Summary}"
+                },
+                "salbutamol_syrup": {
+                    "deduction_type": "formula",
+                    "formular": "${salbutamol_syrup_used_in_CHD_Form009_Summary}"
+                },
+                "ors": {
+                    "deduction_type": "formula",
+                    "formular": "${ors_used_in_CHD_Form009_Summary}"
+                },
+                "zinc_tablets": {
+                    "deduction_type": "formula",
+                    "formular": "${zinc_tablets_used_in_CHD_Form009_Summary}"
+                },
+                "ciprofloxacin_suspension": {
+                    "deduction_type": "formula",
+                    "formular": "${ciprofloxacin_suspension_used_in_CHD_Form009_Summary}"
+                },
+                "litacid_gel": {
+                    "deduction_type": "formula",
+                    "formular": "${litacid_gel_used_in_CHD_Form009_Summary}"
+                },
+                "cloxacillin_suspension": {
+                    "deduction_type": "formula",
+                    "formular": "${cloxacillin_suspension_used_in_CHD_Form009_Summary}"
+                },
+                "triple_antibiotic": {
+                    "deduction_type": "formula",
+                    "formular": "${triple_antibiotic_used_in_CHD_Form009_Summary}"
+                },
+                "antifungal_cream": {
+                    "deduction_type": "formula",
+                    "formular": "${antifungal_cream_used_in_CHD_Form009_Summary}"
+                },
+                "griseofulvin_tabs": {
+                    "deduction_type": "formula",
+                    "formular": "${griseofulvin_tabs_used_in_CHD_Form009_Summary}"
+                },
+                "calamine_lotion": {
+                    "deduction_type": "formula",
+                    "formular": "${calamine_lotion_used_in_CHD_Form009_Summary}"
+                },
+                "benzyl_benzoate": {
+                    "deduction_type": "formula",
+                    "formular": "${benzyl_benzoate_used_in_CHD_Form009_Summary}"
+                },
+                "iron_folic_acid": {
+                    "deduction_type": "formula",
+                    "formular": "${iron_folic_acid_used_in_CHD_Form009_Summary}"
+                },
+                "albendazole": {
+                    "deduction_type": "formula",
+                    "formular": "${albendazole_used_in_CHD_Form009_Summary}"
+                },
+                "vitamin_a": {
+                    "deduction_type": "formula",
+                    "formular": "${vitamin_a_used_in_CHD_Form009_Summary}"
                 }
             },
-            "name": "ADT_Form001_Diabetes",
-            "reportedDate": "now()"
-        },
-        "ADT_Form002_DigestiveConditions": {
-            "items": {
-                "h_pylori_rapid_test": {
-                    "deduction_type": "formula",
-                    "formular": "${h_pylori_rapid_test_used_in_ADT_Form002_DigestiveConditions}"
-                }
-            },
-            "name": "ADT_Form002_DigestiveConditions",
-            "reportedDate": "now()"
-        },
-        "ADT_Form003_Fever": {
-            "items": {
-                "malaria_rapid_test": {
-                    "deduction_type": "formula",
-                    "formular": "${malaria_rapid_test_used_in_ADT_Form003_Fever}"
-                }
-            },
-            "name": "ADT_Form003_Fever",
-            "reportedDate": "now()"
-        },
-        "ADT_Form005_Pregnancy": {
-            "items": {
-                "pregnancy_test": {
-                    "deduction_type": "formula",
-                    "formular": "${pregnancy_test_used_in_ADT_Form005_Pregnancy}"
-                }
-            },
-            "name": "ADT_Form005_Pregnancy",
+            "name": "CHD_Form009_Summary",
             "reportedDate": "now()"
         },
         "ADT_Form014_Summary": {
             "items": {
+                "iv_line": {
+                    "deduction_type": "formula",
+                    "formular": "${iv_line_used_in_ADT_Form014_Summary}"
+                },
                 "litacid_gel": {
                     "deduction_type": "formula",
                     "formular": "${litacid_gel_used_in_ADT_Form014_Summary}"
@@ -190,6 +220,14 @@
                 "antifungal_cream": {
                     "deduction_type": "formula",
                     "formular": "${antifungal_cream_used_in_ADT_Form014_Summary}"
+                },
+                "lancets": {
+                    "deduction_type": "formula",
+                    "formular": "${lancets_used_in_ADT_Form014_Summary}"
+                },
+                "strips": {
+                    "deduction_type": "formula",
+                    "formular": "${strips_used_in_ADT_Form014_Summary}"
                 },
                 "nifedipine_20mg": {
                     "deduction_type": "formula",
@@ -266,30 +304,234 @@
             },
             "name": "ADT_Form014_Summary",
             "reportedDate": "now()"
+        },
+        "ELD_Form012_Summary": {
+            "items": {
+                "iv_line": {
+                    "deduction_type": "formula",
+                    "formular": "${iv_line_used_in_ELD_Form012_Summary}"
+                },
+                "litacid_gel": {
+                    "deduction_type": "formula",
+                    "formular": "${litacid_gel_used_in_ELD_Form012_Summary}"
+                },
+                "omeprazole_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${omeprazole_injectable_used_in_ELD_Form012_Summary}"
+                },
+                "buscopan_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${buscopan_injectable_used_in_ELD_Form012_Summary}"
+                },
+                "benzathine_penicillin_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${benzathine_penicillin_injectable_used_in_ELD_Form012_Summary}"
+                },
+                "dexamethasone_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${dexamethasone_injectable_used_in_ELD_Form012_Summary}"
+                },
+                "triple_antibiotic_ointment": {
+                    "deduction_type": "formula",
+                    "formular": "${triple_antibiotic_ointment_used_in_ELD_Form012_Summary}"
+                },
+                "benzyl_benzoate_25": {
+                    "deduction_type": "formula",
+                    "formular": "${benzyl_benzoate_25_used_in_ELD_Form012_Summary}"
+                },
+                "calamine_lotion": {
+                    "deduction_type": "formula",
+                    "formular": "${calamine_lotion_used_in_ELD_Form012_Summary}"
+                },
+                "antifungal_cream": {
+                    "deduction_type": "formula",
+                    "formular": "${antifungal_cream_used_in_ELD_Form012_Summary}"
+                },
+                "nifedipine_20mg": {
+                    "deduction_type": "formula",
+                    "formular": "${nifedipine_20mg_used_in_ELD_Form012_Summary}"
+                },
+                "paracetamol_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${paracetamol_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "amoxycillin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${amoxycillin_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "nifedipine_10mg": {
+                    "deduction_type": "formula",
+                    "formular": "${nifedipine_10mg_used_in_ELD_Form012_Summary}"
+                },
+                "hctz_25mg": {
+                    "deduction_type": "formula",
+                    "formular": "${hctz_25mg_used_in_ELD_Form012_Summary}"
+                },
+                "enalapril_10mg": {
+                    "deduction_type": "formula",
+                    "formular": "${enalapril_10mg_used_in_ELD_Form012_Summary}"
+                },
+                "metformin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${metformin_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "omeprazole_20mg": {
+                    "deduction_type": "formula",
+                    "formular": "${omeprazole_20mg_used_in_ELD_Form012_Summary}"
+                },
+                "metronidazole_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${metronidazole_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "tinidazole_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${tinidazole_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "ors": {
+                    "deduction_type": "formula",
+                    "formular": "${ors_used_in_ELD_Form012_Summary}"
+                },
+                "salbutamol_4mg": {
+                    "deduction_type": "formula",
+                    "formular": "${salbutamol_4mg_used_in_ELD_Form012_Summary}"
+                },
+                "chloroquine_150mg": {
+                    "deduction_type": "formula",
+                    "formular": "${chloroquine_150mg_used_in_ELD_Form012_Summary}"
+                },
+                "ciprofloxacin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${ciprofloxacin_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "doxycycline_100mg": {
+                    "deduction_type": "formula",
+                    "formular": "${doxycycline_100mg_used_in_ELD_Form012_Summary}"
+                },
+                "cloxacillin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${cloxacillin_500mg_used_in_ELD_Form012_Summary}"
+                },
+                "griseofulvin_125mg": {
+                    "deduction_type": "formula",
+                    "formular": "${griseofulvin_125mg_used_in_ELD_Form012_Summary}"
+                },
+                "iron_folic_acid": {
+                    "deduction_type": "formula",
+                    "formular": "${iron_folic_acid_used_in_ELD_Form012_Summary}"
+                },
+                "mioflex": {
+                    "deduction_type": "formula",
+                    "formular": "${mioflex_used_in_ELD_Form012_Summary}"
+                }
+            },
+            "name": "ELD_Form012_Summary",
+            "reportedDate": "now()"
+        },
+        "YAA_Form009_Summary": {
+            "items": {
+                "litacid_gel": {
+                    "deduction_type": "formula",
+                    "formular": "${litacid_gel_used_in_YAA_Form009_Summary}"
+                },
+                "metamizol_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${metamizol_injectable_used_in_YAA_Form009_Summary}"
+                },
+                "furosemide_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${furosemide_injectable_used_in_YAA_Form009_Summary}"
+                },
+                "benzathine_penicillin_injectable": {
+                    "deduction_type": "formula",
+                    "formular": "${benzathine_penicillin_injectable_used_in_YAA_Form009_Summary}"
+                },
+                "triple_antibiotic_ointment": {
+                    "deduction_type": "formula",
+                    "formular": "${triple_antibiotic_ointment_used_in_YAA_Form009_Summary}"
+                },
+                "benzyl_benzoate_25": {
+                    "deduction_type": "formula",
+                    "formular": "${benzyl_benzoate_25_used_in_YAA_Form009_Summary}"
+                },
+                "calamine_lotion": {
+                    "deduction_type": "formula",
+                    "formular": "${calamine_lotion_used_in_YAA_Form009_Summary}"
+                },
+                "antifungal_cream": {
+                    "deduction_type": "formula",
+                    "formular": "${antifungal_cream_used_in_YAA_Form009_Summary}"
+                },
+                "amoxycillin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${amoxycillin_500mg_used_in_YAA_Form009_Summary}"
+                },
+                "paracetamol_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${paracetamol_500mg_used_in_YAA_Form009_Summary}"
+                },
+                "ciprofloxacin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${ciprofloxacin_500mg_used_in_YAA_Form009_Summary}"
+                },
+                "cloxacillin_500mg": {
+                    "deduction_type": "formula",
+                    "formular": "${cloxacillin_500mg_used_in_YAA_Form009_Summary}"
+                },
+                "cotrimoxazole_400_80mg": {
+                    "deduction_type": "formula",
+                    "formular": "${cotrimoxazole_400_80mg_used_in_YAA_Form009_Summary}"
+                },
+                "doxycycline_100mg": {
+                    "deduction_type": "formula",
+                    "formular": "${doxycycline_100mg_used_in_YAA_Form009_Summary}"
+                },
+                "griseofulvin_125mg": {
+                    "deduction_type": "formula",
+                    "formular": "${griseofulvin_125mg_used_in_YAA_Form009_Summary}"
+                },
+                "iron_folic_acid": {
+                    "deduction_type": "formula",
+                    "formular": "${iron_folic_acid_used_in_YAA_Form009_Summary}"
+                },
+                "albendazole_400mg": {
+                    "deduction_type": "formula",
+                    "formular": "${albendazole_400mg_used_in_YAA_Form009_Summary}"
+                },
+                "zinc_20mg": {
+                    "deduction_type": "formula",
+                    "formular": "${zinc_20mg_used_in_YAA_Form009_Summary}"
+                },
+                "ors": {
+                    "deduction_type": "formula",
+                    "formular": "${ors_used_in_YAA_Form009_Summary}"
+                }
+            },
+            "name": "YAA_Form009_Summary",
+            "reportedDate": "now()"
         }
     },
     "items": {
-        "hctz_25mg": {
-            "name": "hctz_25mg",
+        "litacid_gel": {
+            "name": "litacid_gel",
             "label": {
-                "en": "HCTZ 25mg",
-                "fr": "HCTZ 25mg",
-                "es": "HCTZ 25mg"
+                "en": "Litacid Gel",
+                "fr": "Gel Litacid",
+                "cr": "Jl Litacid"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -302,22 +544,22 @@
             "label": {
                 "en": "Calamine Lotion",
                 "fr": "Lotion la calamine",
-                "es": "Losyon Kalamin"
+                "cr": "Losyon Kalamin"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -325,27 +567,27 @@
             "max_total": -1,
             "category": "Medicine"
         },
-        "tinidazole_500mg": {
-            "name": "tinidazole_500mg",
+        "cotrimoxazole_400_80mg": {
+            "name": "cotrimoxazole_400_80mg",
             "label": {
-                "en": "Tinidazole 500mg",
-                "fr": "Tinidazole 500mg",
-                "es": "Tinidazol 500mg"
+                "en": "Cotrimoxazole 400 80Mg",
+                "fr": "Cotrimoxazole 400 80Mg",
+                "cr": "Cotrimoxazole 400 80Mg"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -353,615 +595,27 @@
             "max_total": -1,
             "category": "Medicine"
         },
-        "omeprazole_20mg": {
-            "name": "omeprazole_20mg",
+        "albendazole_400mg": {
+            "name": "albendazole_400mg",
             "label": {
-                "en": "Omeprazole 20mg",
-                "fr": "Omprazole 20mg",
-                "es": "Omeprazol 20mg"
+                "en": "Albendazole 400Mg",
+                "fr": "Albendazole 400Mg",
+                "cr": "Albendazole 400Mg"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "nifedipine_20mg": {
-            "name": "nifedipine_20mg",
-            "label": {
-                "en": "Nifedipine 20mg",
-                "fr": "Nifdipine 20mg",
-                "es": "Nifedipin 20mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "griseofulvin_125mg": {
-            "name": "griseofulvin_125mg",
-            "label": {
-                "en": "Griseofulvin 125mg",
-                "fr": "Grisofulvine 125mg",
-                "es": "Grizeyofulvin 125mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "lancets": {
-            "name": "lancets",
-            "label": {
-                "en": "Lancets",
-                "fr": "Lancettes",
-                "es": "Lanst"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "malaria_rapid_test": {
-            "name": "malaria_rapid_test",
-            "label": {
-                "en": "Malaria Rapid Test",
-                "fr": "Test Rapide Paludisme",
-                "es": "Ts Rapid Malarya"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metronidazole_500mg": {
-            "name": "metronidazole_500mg",
-            "label": {
-                "en": "Metronidazole 500mg",
-                "fr": "Mtronidazole 500mg",
-                "es": "Metronidazol 500mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "doxycycline_100mg": {
-            "name": "doxycycline_100mg",
-            "label": {
-                "en": "Doxycycline 100mg",
-                "fr": "Doxycycline 100mg",
-                "es": "Doksiklin 100mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "metformin_500mg": {
-            "name": "metformin_500mg",
-            "label": {
-                "en": "Metformin 500mg",
-                "fr": "Metformine 500mg",
-                "es": "Mtformin 500mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "strips": {
-            "name": "strips",
-            "label": {
-                "en": "Strips",
-                "fr": "Bandelettes",
-                "es": "Bann (Ts Sik)"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "dexamethasone_injectable": {
-            "name": "dexamethasone_injectable",
-            "label": {
-                "en": "Dexamethasone Injectable",
-                "fr": "Dexamthasone Injectable",
-                "es": "Deksametazon Enjektab"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ors": {
-            "name": "ors",
-            "label": {
-                "en": "ORS",
-                "fr": "SRO",
-                "es": "Sewm Oral"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "triple_antibiotic_ointment": {
-            "name": "triple_antibiotic_ointment",
-            "label": {
-                "en": "Triple Antibiotic Ointment",
-                "fr": "Pommade Triple Antibiotique",
-                "es": "Pomad Trip Antibyotik"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "h_pylori_rapid_test": {
-            "name": "h_pylori_rapid_test",
-            "label": {
-                "en": "H. Pylori Rapid Test",
-                "fr": "Test Rapide H. Pylori",
-                "es": "Ts Rapid H. Pylori"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "nifedipine_10mg": {
-            "name": "nifedipine_10mg",
-            "label": {
-                "en": "Nifedipine 10mg",
-                "fr": "Nifdipine 10mg",
-                "es": "Nifedipin 10mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "salbutamol_4mg": {
-            "name": "salbutamol_4mg",
-            "label": {
-                "en": "Salbutamol 4mg",
-                "fr": "Salbutamol 4mg",
-                "es": "Salbitamol 4mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "litacid_gel": {
-            "name": "litacid_gel",
-            "label": {
-                "en": "Litacid Gel",
-                "fr": "Gel Litacid",
-                "es": "Jl Litacid"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "omeprazole_injectable": {
-            "name": "omeprazole_injectable",
-            "label": {
-                "en": "Omeprazole Injectable",
-                "fr": "Omprazole Injectable",
-                "es": "Omeprazol Enjektab"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "antifungal_cream": {
-            "name": "antifungal_cream",
-            "label": {
-                "en": "Antifungal Cream",
-                "fr": "Crme Antifongique",
-                "es": "Krm Antifonjik"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "chloroquine_150mg": {
-            "name": "chloroquine_150mg",
-            "label": {
-                "en": "Chloroquine 150mg",
-                "fr": "Chloroquine 150mg",
-                "es": "Klokwokin 150mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "ciprofloxacin_500mg": {
-            "name": "ciprofloxacin_500mg",
-            "label": {
-                "en": "Ciprofloxacin 500mg",
-                "fr": "Ciprofloxacine 500mg",
-                "es": "Siprofloksasin 500mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "benzathine_penicillin_injectable": {
-            "name": "benzathine_penicillin_injectable",
-            "label": {
-                "en": "Benzathine Penicillin Injectable",
-                "fr": "Pnicilline Benzathine Injectable",
-                "es": "Penisilin Benzatin Enjektab"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "iron_folic_acid": {
-            "name": "iron_folic_acid",
-            "label": {
-                "en": "Iron and Folic Acid",
-                "fr": "Fer et Acide Folique",
-                "es": "F ak Asid Folik"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -974,78 +628,22 @@
             "label": {
                 "en": "Buscopan Injectable",
                 "fr": "Buscopan Injectable",
-                "es": "Biskopan Enjektab"
+                "cr": "Biskopan Enjektab"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "pregnancy_test": {
-            "name": "pregnancy_test",
-            "label": {
-                "en": "Pregnancy Test",
-                "fr": "Test de Grossesse",
-                "es": "Ts Gwoss"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
-                }
-            },
-            "warning_total": 10,
-            "danger_total": 1,
-            "max_total": -1,
-            "category": "Medicine"
-        },
-        "paracetamol_500mg": {
-            "name": "paracetamol_500mg",
-            "label": {
-                "en": "Paracetamol 500mg",
-                "fr": "Paractamol 500mg",
-                "es": "Parasetamol 500mg"
-            },
-            "isInSet": true,
-            "set": {
-                "label": {
-                    "en": "Box of ",
-                    "fr": "Bote de ",
-                    "es": "Bwat "
-                },
-                "count": 1
-            },
-            "unit": {
-                "label": {
-                    "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1058,22 +656,22 @@
             "label": {
                 "en": "Cloxacillin 500mg",
                 "fr": "Cloxacilline 500mg",
-                "es": "Kloksasilin 500mg"
+                "cr": "Kloksasilin 500mg"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1081,27 +679,167 @@
             "max_total": -1,
             "category": "Medicine"
         },
-        "amoxycillin_500mg": {
-            "name": "amoxycillin_500mg",
+        "benzathine_penicillin_injectable": {
+            "name": "benzathine_penicillin_injectable",
             "label": {
-                "en": "Amoxicillin 500mg",
-                "fr": "Amoxicilline 500mg",
-                "es": "Amoksisilin 500mg"
+                "en": "Benzathine Penicillin Injectable",
+                "fr": "Pnicilline Benzathine Injectable",
+                "cr": "Penisilin Benzatin Enjektab"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "vitamin_a": {
+            "name": "vitamin_a",
+            "label": {
+                "en": "Vitamin A",
+                "fr": "Vitamin A",
+                "cr": "Vitamin A"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "strips": {
+            "name": "strips",
+            "label": {
+                "en": "Strips",
+                "fr": "Bandelettes",
+                "cr": "Bann (Ts Sik)"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "triple_antibiotic": {
+            "name": "triple_antibiotic",
+            "label": {
+                "en": "Triple Antibiotic",
+                "fr": "Triple Antibiotic",
+                "cr": "Triple Antibiotic"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "furosemide_injectable": {
+            "name": "furosemide_injectable",
+            "label": {
+                "en": "Furosemide Injectable",
+                "fr": "Furosemide Injectable",
+                "cr": "Furosemide Injectable"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "nifedipine_20mg": {
+            "name": "nifedipine_20mg",
+            "label": {
+                "en": "Nifedipine 20mg",
+                "fr": "Nifdipine 20mg",
+                "cr": "Nifedipin 20mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1114,22 +852,358 @@
             "label": {
                 "en": "Enalapril 10mg",
                 "fr": "nalapril 10mg",
-                "es": "Enalapril 10mg"
+                "cr": "Enalapril 10mg"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "salbutamol_syrup": {
+            "name": "salbutamol_syrup",
+            "label": {
+                "en": "Salbutamol Syrup",
+                "fr": "Salbutamol Syrup",
+                "cr": "Salbutamol Syrup"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "ors": {
+            "name": "ors",
+            "label": {
+                "en": "ORS",
+                "fr": "SRO",
+                "cr": "Sewm Oral"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "benzyl_benzoate": {
+            "name": "benzyl_benzoate",
+            "label": {
+                "en": "Benzyl Benzoate",
+                "fr": "Benzyl Benzoate",
+                "cr": "Benzyl Benzoate"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "metronidazole_500mg": {
+            "name": "metronidazole_500mg",
+            "label": {
+                "en": "Metronidazole 500mg",
+                "fr": "Mtronidazole 500mg",
+                "cr": "Metronidazol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "omeprazole_20mg": {
+            "name": "omeprazole_20mg",
+            "label": {
+                "en": "Omeprazole 20mg",
+                "fr": "Omprazole 20mg",
+                "cr": "Omeprazol 20mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "nifedipine_10mg": {
+            "name": "nifedipine_10mg",
+            "label": {
+                "en": "Nifedipine 10mg",
+                "fr": "Nifdipine 10mg",
+                "cr": "Nifedipin 10mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "mioflex": {
+            "name": "mioflex",
+            "label": {
+                "en": "Mioflex",
+                "fr": "Mioflex",
+                "cr": "Mioflex"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "paracetamol_syrup": {
+            "name": "paracetamol_syrup",
+            "label": {
+                "en": "Paracetamol Syrup",
+                "fr": "Paracetamol Syrup",
+                "cr": "Paracetamol Syrup"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "tinidazole_500mg": {
+            "name": "tinidazole_500mg",
+            "label": {
+                "en": "Tinidazole 500mg",
+                "fr": "Tinidazole 500mg",
+                "cr": "Tinidazol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "dexamethasone_injectable": {
+            "name": "dexamethasone_injectable",
+            "label": {
+                "en": "Dexamethasone Injectable",
+                "fr": "Dexamthasone Injectable",
+                "cr": "Deksametazon Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "griseofulvin_tabs": {
+            "name": "griseofulvin_tabs",
+            "label": {
+                "en": "Griseofulvin Tabs",
+                "fr": "Griseofulvin Tabs",
+                "cr": "Griseofulvin Tabs"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "chloroquine_150mg": {
+            "name": "chloroquine_150mg",
+            "label": {
+                "en": "Chloroquine 150mg",
+                "fr": "Chloroquine 150mg",
+                "cr": "Klokwokin 150mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1142,22 +1216,610 @@
             "label": {
                 "en": "Benzyl Benzoate 25%",
                 "fr": "Benzoate de Benzyle 25%",
-                "es": "Benzoat Benzil 25%"
+                "cr": "Benzoat Benzil 25%"
             },
             "isInSet": true,
             "set": {
                 "label": {
                     "en": "Box of ",
                     "fr": "Bote de ",
-                    "es": "Bwat "
+                    "cr": "Bwat "
                 },
                 "count": 1
             },
             "unit": {
                 "label": {
                     "en": "Unit",
-                    "fr": "Unit",
-                    "es": "Inite"
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "doxycycline_100mg": {
+            "name": "doxycycline_100mg",
+            "label": {
+                "en": "Doxycycline 100mg",
+                "fr": "Doxycycline 100mg",
+                "cr": "Doksiklin 100mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "hctz_25mg": {
+            "name": "hctz_25mg",
+            "label": {
+                "en": "HCTZ 25mg",
+                "fr": "HCTZ 25mg",
+                "cr": "HCTZ 25mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "zinc_20mg": {
+            "name": "zinc_20mg",
+            "label": {
+                "en": "Zinc 20Mg",
+                "fr": "Zinc 20Mg",
+                "cr": "Zinc 20Mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "ciprofloxacin_suspension": {
+            "name": "ciprofloxacin_suspension",
+            "label": {
+                "en": "Ciprofloxacin Suspension",
+                "fr": "Ciprofloxacin Suspension",
+                "cr": "Ciprofloxacin Suspension"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "metamizol_injectable": {
+            "name": "metamizol_injectable",
+            "label": {
+                "en": "Metamizol Injectable",
+                "fr": "Metamizol Injectable",
+                "cr": "Metamizol Injectable"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "albendazole": {
+            "name": "albendazole",
+            "label": {
+                "en": "Albendazole",
+                "fr": "Albendazole",
+                "cr": "Albendazole"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "omeprazole_injectable": {
+            "name": "omeprazole_injectable",
+            "label": {
+                "en": "Omeprazole Injectable",
+                "fr": "Omprazole Injectable",
+                "cr": "Omeprazol Enjektab"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "paracetamol_500mg": {
+            "name": "paracetamol_500mg",
+            "label": {
+                "en": "Paracetamol 500mg",
+                "fr": "Paractamol 500mg",
+                "cr": "Parasetamol 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "ciprofloxacin_500mg": {
+            "name": "ciprofloxacin_500mg",
+            "label": {
+                "en": "Ciprofloxacin 500mg",
+                "fr": "Ciprofloxacine 500mg",
+                "cr": "Siprofloksasin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "griseofulvin_125mg": {
+            "name": "griseofulvin_125mg",
+            "label": {
+                "en": "Griseofulvin 125mg",
+                "fr": "Grisofulvine 125mg",
+                "cr": "Grizeyofulvin 125mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "amoxycillin_500mg": {
+            "name": "amoxycillin_500mg",
+            "label": {
+                "en": "Amoxicillin 500mg",
+                "fr": "Amoxicilline 500mg",
+                "cr": "Amoksisilin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "cloxacillin_suspension": {
+            "name": "cloxacillin_suspension",
+            "label": {
+                "en": "Cloxacillin Suspension",
+                "fr": "Cloxacillin Suspension",
+                "cr": "Cloxacillin Suspension"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "triple_antibiotic_ointment": {
+            "name": "triple_antibiotic_ointment",
+            "label": {
+                "en": "Triple Antibiotic Ointment",
+                "fr": "Pommade Triple Antibiotique",
+                "cr": "Pomad Trip Antibyotik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "metformin_500mg": {
+            "name": "metformin_500mg",
+            "label": {
+                "en": "Metformin 500mg",
+                "fr": "Metformine 500mg",
+                "cr": "Mtformin 500mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "antifungal_cream": {
+            "name": "antifungal_cream",
+            "label": {
+                "en": "Antifungal Cream",
+                "fr": "Crme Antifongique",
+                "cr": "Krm Antifonjik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "iron_folic_acid": {
+            "name": "iron_folic_acid",
+            "label": {
+                "en": "Iron and Folic Acid",
+                "fr": "Fer et Acide Folique",
+                "cr": "F ak Asid Folik"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "salbutamol_4mg": {
+            "name": "salbutamol_4mg",
+            "label": {
+                "en": "Salbutamol 4mg",
+                "fr": "Salbutamol 4mg",
+                "cr": "Salbitamol 4mg"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "zinc_tablets": {
+            "name": "zinc_tablets",
+            "label": {
+                "en": "Zinc Tablets",
+                "fr": "Zinc Tablets",
+                "cr": "Zinc Tablets"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "iv_line": {
+            "name": "iv_line",
+            "label": {
+                "en": "Iv Line",
+                "fr": "Iv Line",
+                "cr": "Iv Line"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "amoxicillin_suspension": {
+            "name": "amoxicillin_suspension",
+            "label": {
+                "en": "Amoxicillin Suspension",
+                "fr": "Amoxicillin Suspension",
+                "cr": "Amoxicillin Suspension"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
+                }
+            },
+            "warning_total": 10,
+            "danger_total": 1,
+            "max_total": -1,
+            "category": "Medicine"
+        },
+        "lancets": {
+            "name": "lancets",
+            "label": {
+                "en": "Lancets",
+                "fr": "Lancettes",
+                "cr": "Lanst"
+            },
+            "isInSet": true,
+            "set": {
+                "label": {
+                    "en": "Box of ",
+                    "fr": "Bote de ",
+                    "cr": "Bwat "
+                },
+                "count": 1
+            },
+            "unit": {
+                "label": {
+                    "en": "Unit",
+                    "fr": "Unit9",
+                    "cr": "Inite"
                 }
             },
             "warning_total": 10,
@@ -1172,15 +1834,15 @@
             "label": {
                 "en": "Medicine",
                 "fr": "Mdicament",
-                "es": "Medikaman"
+                "cr": "Medikaman"
             },
             "description": {
                 "en": "Distributable drugs",
                 "fr": "Mdicaments distribuables",
-                "es": "Medikaman pou distribye"
+                "cr": "Medikaman pou distribye"
             }
         }
     },
     "version": "1.2.2",
-    "last_update_date": "2026-10-12T00:00:00.000Z"
+    "last_update_date": "2026-11-07T00:00:00.000Z"
 }

@@ -1,0 +1,169 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form008_Stroke" version="20261106134838" prefix="J1!ADT_Form008_Stroke!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_stroke/>
+              <chronic_hypertension/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden">per</patient_age_in_days>
+          <patient_age_in_weeks tag="hidden"/>
+          <stroke_assessment_group tag="hidden">
+            <stroke_warning tag="hidden"/>
+            <hypertensive_warning tag="hidden"/>
+            <stroke_danger_signs tag="hidden"/>
+            <symptom_duration tag="hidden"/>
+            <hypertensive tag="hidden"/>
+            <hypertension_treatment tag="hidden"/>
+            <seen_clinician_previously tag="hidden"/>
+          </stroke_assessment_group>
+          <calc_transient_ischemic_attack tag="hidden"/>
+          <calc_stroke tag="hidden"/>
+          <calc_old_stroke tag="hidden"/>
+          <results_group tag="hidden">
+            <res_transient_ischemic_attack tag="hidden"/>
+            <res_transient_ischemic_attack_action tag="hidden"/>
+            <res_stroke tag="hidden"/>
+            <res_stroke_action tag="hidden"/>
+            <res_old_stroke tag="hidden"/>
+            <res_old_stroke_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <res_null tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_stroke_danger_signs tag="hidden"/>
+            <_symptom_duration tag="hidden"/>
+            <_hypertensive tag="hidden"/>
+            <_hypertension_treatment tag="hidden"/>
+            <_seen_clinician_previously tag="hidden"/>
+            <_result_transient_ischemic_attack tag="hidden"/>
+            <_result_stroke tag="hidden"/>
+            <_result_old_stroke tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_danger_signs/>
+          <summary_assessment_details/>
+          <summary_stroke_condition/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="stroke_danger_signs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>stroke_danger_signs-0</itextId>
+            <name>loss_of_motricity</name>
+          </item>
+          <item>
+            <itextId>stroke_danger_signs-1</itextId>
+            <name>facial_paralysis</name>
+          </item>
+          <item>
+            <itextId>stroke_danger_signs-2</itextId>
+            <name>altered_consciousness</name>
+          </item>
+          <item>
+            <itextId>stroke_danger_signs-3</itextId>
+            <name>vertigo</name>
+          </item>
+          <item>
+            <itextId>stroke_danger_signs-4</itextId>
+            <name>altered_speech</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="followed_up_conditions">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>transient_ischemic_attack</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>stroke</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>old_stroke</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="referal_locations">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>referal_locations-0</itextId>
+            <name>zl</name>
+          </item>
+          <item>
+            <itextId>referal_locations-1</itextId>
+            <name>hst</name>
+          </item>
+          <item>
+            <itextId>referal_locations-2</itextId>
+            <name>ham</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -65,6 +65,9 @@
           <text id="/data/respiratory_conditions_group:label">
             <value>Respiratory Conditions</value>
           </text>
+          <text id="/data/respiratory_conditions_group/asthma_exists:label">
+            <value><output value=" /data/patient_name "/> has Asthma listed as a known condition.</value>
+          </text>
           <text id="/data/respiratory_conditions_group/adult_coughing:label">
             <value>Does the adult have a cough?</value>
           </text>
@@ -207,6 +210,9 @@
           </text>
           <text id="/data/respiratory_conditions_group:label">
             <value>Conditions Respiratoires</value>
+          </text>
+          <text id="/data/respiratory_conditions_group/asthma_exists:label">
+            <value> Le patient <output value=" /data/patient_name "/> souffre d'asthme, une affection connue.</value>
           </text>
           <text id="/data/respiratory_conditions_group/adult_coughing:label">
             <value>L'adulte a-t-il une toux ?</value>
@@ -354,6 +360,9 @@
           <text id="/data/respiratory_conditions_group:label">
             <value>Kondisyon Respiratwa</value>
           </text>
+          <text id="/data/respiratory_conditions_group/asthma_exists:label">
+            <value><output value=" /data/patient_name "/> gen Asm nan lis kòm yon kondisyon li te ye.</value>
+          </text>
           <text id="/data/respiratory_conditions_group/adult_coughing:label">
             <value>Èske granmoun nan gen tous?</value>
           </text>
@@ -385,7 +394,7 @@
             <value>Inite a se jou</value>
           </text>
           <text id="/data/respiratory_conditions_group/wheezing:label">
-            <value>Èske granmoun nan ap respire avèk difikilte?</value>
+            <value>Èske granmoun nan ap respire avèk yon ti bri?</value>
           </text>
           <text id="/data/respiratory_conditions_group/respiratory_distress:label">
             <value>Èske granmoun nan gen pwoblèm pou respire?</value>
@@ -441,7 +450,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form006_RespiratoryConditions" version="20261011180553" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
+        <data id="ADT_Form006_RespiratoryConditions" version="20261104235345" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -479,71 +488,77 @@
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <respiratory_conditions_group>
-            <adult_coughing/>
-            <cough_duration/>
-            <qualify_cough/>
-            <breathing_rate/>
-            <oxygen_saturation/>
-            <fever/>
-            <temperature/>
-            <fever_duration/>
-            <wheezing/>
-            <respiratory_distress/>
-            <weight_loss/>
-            <night_sweats/>
-            <recurring_condition/>
-            <tb_exposure/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <respiratory_conditions_group tag="hidden">
+            <asthma_exists tag="hidden"/>
+            <adult_coughing tag="hidden"/>
+            <cough_duration tag="hidden"/>
+            <qualify_cough tag="hidden"/>
+            <breathing_rate tag="hidden"/>
+            <oxygen_saturation tag="hidden"/>
+            <fever tag="hidden"/>
+            <temperature tag="hidden"/>
+            <fever_duration tag="hidden"/>
+            <wheezing tag="hidden"/>
+            <respiratory_distress tag="hidden"/>
+            <weight_loss tag="hidden"/>
+            <night_sweats tag="hidden"/>
+            <recurring_condition tag="hidden"/>
+            <tb_exposure tag="hidden"/>
           </respiratory_conditions_group>
-          <calc_tuberculosis/>
-          <calc_asthma/>
-          <calc_pneumonia/>
-          <calc_flu_like_syndrome/>
-          <results_group>
-            <res_tuberculosis/>
-            <res_tuberculosis_action/>
-            <res_asthma/>
-            <res_asthma_action/>
-            <res_pneumonia/>
-            <res_pneumonia_action/>
-            <res_flu_like_syndrome/>
-            <res_flu_like_syndrome_action/>
+          <calc_tuberculosis tag="hidden"/>
+          <calc_asthma tag="hidden"/>
+          <calc_pneumonia tag="hidden"/>
+          <calc_flu_like_syndrome tag="hidden"/>
+          <results_group tag="hidden">
+            <res_tuberculosis tag="hidden"/>
+            <res_tuberculosis_action tag="hidden"/>
+            <res_asthma tag="hidden"/>
+            <res_asthma_action tag="hidden"/>
+            <res_pneumonia tag="hidden"/>
+            <res_pneumonia_action tag="hidden"/>
+            <res_flu_like_syndrome tag="hidden"/>
+            <res_flu_like_syndrome_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <no_treatment_note/>
+          <null_results_group tag="hidden">
+            <no_treatment_note tag="hidden"/>
           </null_results_group>
-          <data>
-            <_adult_coughing/>
-            <_cough_duration/>
-            <_qualify_cough/>
-            <_breathing_rate/>
-            <_oxygen_saturation/>
-            <_fever/>
-            <_temperature/>
-            <_fever_duration/>
-            <_wheezing/>
-            <_respiratory_distress/>
-            <_weight_loss/>
-            <_night_sweats/>
-            <_recurring_condition/>
-            <_tb_exposure/>
-            <_result_tuberculosis/>
-            <_result_asthma/>
-            <_result_pneumonia/>
-            <_result_flu_like_syndrome/>
+          <data tag="hidden">
+            <_adult_coughing tag="hidden"/>
+            <_cough_duration tag="hidden"/>
+            <_qualify_cough tag="hidden"/>
+            <_breathing_rate tag="hidden"/>
+            <_oxygen_saturation tag="hidden"/>
+            <_fever tag="hidden"/>
+            <_temperature tag="hidden"/>
+            <_fever_duration tag="hidden"/>
+            <_wheezing tag="hidden"/>
+            <_respiratory_distress tag="hidden"/>
+            <_weight_loss tag="hidden"/>
+            <_night_sweats tag="hidden"/>
+            <_recurring_condition tag="hidden"/>
+            <_tb_exposure tag="hidden"/>
+            <_result_tuberculosis tag="hidden"/>
+            <_result_asthma tag="hidden"/>
+            <_result_pneumonia tag="hidden"/>
+            <_result_flu_like_syndrome tag="hidden"/>
           </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_symptoms/>
+          <summary_vital_readings/>
+          <summary_condition_assessment/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -603,6 +618,7 @@
       <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
       <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
       <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/respiratory_conditions_group/asthma_exists" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_asthma  = 'true'"/>
       <bind nodeset="/data/respiratory_conditions_group/adult_coughing" type="string" required="true()"/>
       <bind nodeset="/data/respiratory_conditions_group/cough_duration" type="int" relevant=" /data/respiratory_conditions_group/adult_coughing  = 'yes'" constraint=". &lt;= 999"/>
       <bind nodeset="/data/respiratory_conditions_group/qualify_cough" type="string" relevant=" /data/respiratory_conditions_group/adult_coughing  = 'yes'"/>
@@ -624,8 +640,8 @@
       <bind nodeset="/data/results_group" relevant=" /data/calc_tuberculosis  = 'true' or  /data/calc_asthma  = 'true' or  /data/calc_pneumonia  = 'true' or  /data/calc_flu_like_syndrome  = 'true'"/>
       <bind nodeset="/data/results_group/res_tuberculosis" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
       <bind nodeset="/data/results_group/res_tuberculosis_action" readonly="true()" type="string" relevant=" /data/calc_tuberculosis  = 'true'"/>
-      <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true' and  /data/inputs/contact/chronic_asthma  != 'true'"/>
-      <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true' and  /data/inputs/contact/chronic_asthma  != 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
+      <bind nodeset="/data/results_group/res_asthma_action" readonly="true()" type="string" relevant=" /data/calc_asthma  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_pneumonia_action" readonly="true()" type="string" relevant=" /data/calc_pneumonia  = 'true'"/>
       <bind nodeset="/data/results_group/res_flu_like_syndrome" readonly="true()" type="string" relevant=" /data/calc_flu_like_syndrome  = 'true'"/>
@@ -650,6 +666,11 @@
       <bind nodeset="/data/data/_result_asthma" type="string" calculate="if( /data/calc_asthma ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_pneumonia" type="string" calculate="if( /data/calc_pneumonia ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_flu_like_syndrome" type="string" calculate="if( /data/calc_flu_like_syndrome ='true', 'true', 'false')"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_chronic_status" type="string" calculate="if( /data/inputs/contact/chronic_asthma  = 'true', 'Known Chronic Asthma: Yes', 'Known Chronic Asthma: No')"/>
+      <bind nodeset="/data/summary_symptoms" type="string" calculate="if( /data/respiratory_conditions_group/adult_coughing  != 'yes' and  /data/respiratory_conditions_group/wheezing  != 'yes' and  /data/respiratory_conditions_group/respiratory_distress  != 'yes' and  /data/respiratory_conditions_group/fever  != 'yes' and  /data/respiratory_conditions_group/weight_loss  != 'yes' and  /data/respiratory_conditions_group/night_sweats  != 'yes', 'Symptoms Reported: None', concat('Symptoms Reported: ', if( /data/respiratory_conditions_group/adult_coughing  = 'yes', 'Cough; ', ''), if( /data/respiratory_conditions_group/wheezing  = 'yes', 'Wheezing; ', ''), if( /data/respiratory_conditions_group/respiratory_distress  = 'yes', 'Respiratory distress; ', ''), if( /data/respiratory_conditions_group/fever  = 'yes', 'Fever; ', ''), if( /data/respiratory_conditions_group/weight_loss  = 'yes', 'Weight loss; ', ''), if( /data/respiratory_conditions_group/night_sweats  = 'yes', 'Night sweats; ', ''), if( /data/respiratory_conditions_group/recurring_condition  = 'yes', 'Recurring symptoms; ', ''), if( /data/respiratory_conditions_group/tb_exposure  = 'yes', 'TB exposure; ', '')))"/>
+      <bind nodeset="/data/summary_vital_readings" type="string" calculate="concat('Vital Readings: Breathing Rate: ', if( /data/respiratory_conditions_group/breathing_rate  != '', concat( /data/respiratory_conditions_group/breathing_rate , ' bpm'), 'N/A'), ' | O2 Saturation: ', if( /data/respiratory_conditions_group/oxygen_saturation  != '', concat( /data/respiratory_conditions_group/oxygen_saturation , '%'), 'N/A'), ' | Temperature: ', if( /data/respiratory_conditions_group/temperature  != '', concat( /data/respiratory_conditions_group/temperature , ' °C'), 'Not recorded'))"/>
+      <bind nodeset="/data/summary_condition_assessment" type="string" calculate="if( /data/calc_tuberculosis  = 'false' and  /data/calc_asthma  = 'false' and  /data/calc_pneumonia  = 'false' and  /data/calc_flu_like_syndrome  = 'false', 'Condition Assessment: No respiratory conditions identified', concat('Condition Assessment: ', if( /data/calc_tuberculosis  = 'true', 'Risk of Tuberculosis; ', ''), if( /data/calc_pneumonia  = 'true', 'Risk of Pneumonia; ', ''), if( /data/calc_asthma  = 'true', 'Asthma; ', ''), if( /data/calc_flu_like_syndrome  = 'true', 'Flu-Like Syndrome; ', '')))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -673,8 +694,11 @@
         </group>
       </group>
     </group>
-    <group appearance="field-list" ref="/data/respiratory_conditions_group">
+    <group appearance="field-list summary" ref="/data/respiratory_conditions_group">
       <label ref="jr:itext('/data/respiratory_conditions_group:label')"/>
+      <input ref="/data/respiratory_conditions_group/asthma_exists" appearance="h1 yellow">
+        <label ref="jr:itext('/data/respiratory_conditions_group/asthma_exists:label')"/>
+      </input>
       <select1 ref="/data/respiratory_conditions_group/adult_coughing">
         <label ref="jr:itext('/data/respiratory_conditions_group/adult_coughing:label')"/>
         <itemset nodeset="instance('yes_no')/root/item">

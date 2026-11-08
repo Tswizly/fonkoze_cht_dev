@@ -1,0 +1,5 @@
+{
+  "person": true,
+  "place": false,
+  "permission": "can_conduct_assessment_forms"
+}

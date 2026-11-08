@@ -8,15 +8,15 @@
     "title": [
         {
             "locale": "en",
-            "content": "Stock Returned"
+            "content": "Stock Retourn"
         },
         {
-            "locale": "es",
+            "locale": "cr",
             "content": "Stok Retounen"
         },
         {
             "locale": "fr",
-            "content": "Stock Retourné"
+            "content": "Stock Retourn"
         }
     ]
 }

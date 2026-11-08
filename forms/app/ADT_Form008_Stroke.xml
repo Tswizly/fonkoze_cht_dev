@@ -427,7 +427,7 @@ Pwotokòl:
             <value>Ansyen konjesyon serebral</value>
           </text>
           <text id="/data/results_group/res_old_stroke_action:label">
-            <value>Pasyan an te fè yon konjesyon serebral nan yon moman. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
+            <value>Pasyan an te fè yon konjesyon serebral nan yon moman. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime pou medikaman ak pwosedi konsèy yo.</value>
           </text>
           <text id="/data/null_results_group:label">
             <value>Rezilta nil</value>
@@ -444,7 +444,7 @@ Pwotokòl:
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form008_Stroke" version="20261011182504" prefix="J1!ADT_Form008_Stroke!" delimiter="#">
+        <data id="ADT_Form008_Stroke" version="20261106134838" prefix="J1!ADT_Form008_Stroke!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -483,51 +483,56 @@ Pwotokòl:
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days>per</patient_age_in_days>
-          <patient_age_in_weeks/>
-          <stroke_assessment_group>
-            <stroke_warning/>
-            <hypertensive_warning/>
-            <stroke_danger_signs/>
-            <symptom_duration/>
-            <hypertensive/>
-            <hypertension_treatment/>
-            <seen_clinician_previously/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden">per</patient_age_in_days>
+          <patient_age_in_weeks tag="hidden"/>
+          <stroke_assessment_group tag="hidden">
+            <stroke_warning tag="hidden"/>
+            <hypertensive_warning tag="hidden"/>
+            <stroke_danger_signs tag="hidden"/>
+            <symptom_duration tag="hidden"/>
+            <hypertensive tag="hidden"/>
+            <hypertension_treatment tag="hidden"/>
+            <seen_clinician_previously tag="hidden"/>
           </stroke_assessment_group>
-          <calc_transient_ischemic_attack/>
-          <calc_stroke/>
-          <calc_old_stroke/>
-          <results_group>
-            <res_transient_ischemic_attack/>
-            <res_transient_ischemic_attack_action/>
-            <res_stroke/>
-            <res_stroke_action/>
-            <res_old_stroke/>
-            <res_old_stroke_action/>
+          <calc_transient_ischemic_attack tag="hidden"/>
+          <calc_stroke tag="hidden"/>
+          <calc_old_stroke tag="hidden"/>
+          <results_group tag="hidden">
+            <res_transient_ischemic_attack tag="hidden"/>
+            <res_transient_ischemic_attack_action tag="hidden"/>
+            <res_stroke tag="hidden"/>
+            <res_stroke_action tag="hidden"/>
+            <res_old_stroke tag="hidden"/>
+            <res_old_stroke_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <res_null/>
+          <null_results_group tag="hidden">
+            <res_null tag="hidden"/>
           </null_results_group>
-          <data>
-            <_stroke_danger_signs/>
-            <_symptom_duration/>
-            <_hypertensive/>
-            <_hypertension_treatment/>
-            <_seen_clinician_previously/>
-            <_result_transient_ischemic_attack/>
-            <_result_stroke/>
-            <_result_old_stroke/>
+          <data tag="hidden">
+            <_stroke_danger_signs tag="hidden"/>
+            <_symptom_duration tag="hidden"/>
+            <_hypertensive tag="hidden"/>
+            <_hypertension_treatment tag="hidden"/>
+            <_seen_clinician_previously tag="hidden"/>
+            <_result_transient_ischemic_attack tag="hidden"/>
+            <_result_stroke tag="hidden"/>
+            <_result_old_stroke tag="hidden"/>
           </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_danger_signs/>
+          <summary_assessment_details/>
+          <summary_stroke_condition/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -659,6 +664,11 @@ Pwotokòl:
       <bind nodeset="/data/data/_result_transient_ischemic_attack" type="string" calculate="if( /data/calc_transient_ischemic_attack ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_stroke" type="string" calculate="if( /data/calc_stroke ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_old_stroke" type="string" calculate="if( /data/calc_old_stroke ='true', 'true', 'false')"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_chronic_status" type="string" calculate="concat('Prior Stroke: ', if( /data/inputs/contact/chronic_stroke  = 'true', 'Yes', 'No'), ' | Chronic Hypertension: ', if( /data/inputs/contact/chronic_hypertension  = 'true', 'Yes', 'No'))"/>
+      <bind nodeset="/data/summary_danger_signs" type="string" calculate="if(count-selected( /data/stroke_assessment_group/stroke_danger_signs ) = 0, 'Danger Signs Reported: None', concat('Danger Signs Reported: ', if(selected( /data/stroke_assessment_group/stroke_danger_signs , 'loss_of_motricity'), 'Loss of motricity; ', ''), if(selected( /data/stroke_assessment_group/stroke_danger_signs , 'facial_paralysis'), 'Facial paralysis; ', ''), if(selected( /data/stroke_assessment_group/stroke_danger_signs , 'altered_consciousness'), 'Altered consciousness; ', ''), if(selected( /data/stroke_assessment_group/stroke_danger_signs , 'vertigo'), 'Vertigo; ', ''), if(selected( /data/stroke_assessment_group/stroke_danger_signs , 'altered_speech'), 'Altered speech; ', '')))"/>
+      <bind nodeset="/data/summary_assessment_details" type="string" calculate="concat('Symptom Duration: ', if( /data/stroke_assessment_group/symptom_duration  != '', concat( /data/stroke_assessment_group/symptom_duration , ' day(s)'), 'None'), ' | Hypertensive: ', if( /data/stroke_assessment_group/hypertensive  = 'yes', 'Yes', 'No'), ' | On HTN Meds: ', if( /data/stroke_assessment_group/hypertension_treatment  = 'yes', 'Yes', 'No'), ' | Prior Clinic Visit: ', if( /data/stroke_assessment_group/seen_clinician_previously  = 'yes', 'Yes', 'No'))"/>
+      <bind nodeset="/data/summary_stroke_condition" type="string" calculate="if( /data/calc_transient_ischemic_attack  = 'true', 'Assessment Result: Transient Ischemic Attack (TIA) - Urgent Protocol / Refer', if( /data/calc_stroke  = 'true', 'Assessment Result: Stroke - Complete Checkup &amp; Treatment Procedures', if( /data/calc_old_stroke  = 'true', 'Assessment Result: Old Stroke - Complete Checkup &amp; Follow-up', 'Assessment Result: No Acute Stroke Conditions Detected')))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

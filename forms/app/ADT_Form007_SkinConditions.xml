@@ -462,7 +462,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form007_SkinConditions" version="20261011182407" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
+        <data id="ADT_Form007_SkinConditions" version="20261104232733" prefix="J1!ADT_Form007_SkinConditions!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -499,41 +499,45 @@
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <skin_conditions_group>
-            <skin_symptoms/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <skin_conditions_group tag="hidden">
+            <skin_symptoms tag="hidden"/>
           </skin_conditions_group>
-          <calc_impetigo_folliculitis/>
-          <calc_ring_worm/>
-          <calc_scabies/>
-          <results_group>
-            <res_impetigo_folliculitis/>
-            <res_impetigo_folliculitis_action/>
-            <res_ring_worm/>
-            <res_ring_worm_action/>
-            <res_scabies/>
-            <res_scabies_action/>
+          <calc_impetigo_folliculitis tag="hidden"/>
+          <calc_ring_worm tag="hidden"/>
+          <calc_scabies tag="hidden"/>
+          <results_group tag="hidden">
+            <res_impetigo_folliculitis tag="hidden"/>
+            <res_impetigo_folliculitis_action tag="hidden"/>
+            <res_ring_worm tag="hidden"/>
+            <res_ring_worm_action tag="hidden"/>
+            <res_scabies tag="hidden"/>
+            <res_scabies_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <null_results_note/>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
           </null_results_group>
-          <data>
-            <_skin_symptoms/>
-            <_result_impetigo_folliculitis/>
-            <_result_ring_worm/>
-            <_result_scabies/>
+          <data tag="hidden">
+            <_skin_symptoms tag="hidden"/>
+            <_result_impetigo_folliculitis tag="hidden"/>
+            <_result_ring_worm tag="hidden"/>
+            <_result_scabies tag="hidden"/>
           </data>
+          <summary_patient_info/>
+          <summary_symptoms/>
+          <summary_conditions/>
+          <summary_action_protocol/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -649,6 +653,10 @@
       <bind nodeset="/data/data/_result_impetigo_folliculitis" type="string" calculate="if( /data/calc_impetigo_folliculitis ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_ring_worm" type="string" calculate="if( /data/calc_ring_worm ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_scabies" type="string" calculate="if( /data/calc_scabies ='true', 'true', 'false')"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_symptoms" type="string" calculate="if(count-selected( /data/skin_conditions_group/skin_symptoms ) = 0, 'Symptoms Reported: None', concat('Symptoms Reported: ', if(selected( /data/skin_conditions_group/skin_symptoms , 'itching'), 'Skin is itchy; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'blisters_sores_pustules'), 'Blisters, sores, or pustules; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'crusts_or_lesions'), 'Crusts or small lesions; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'itchy_lesions'), 'Itchy circular scaly lesion; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'rash'), 'Rash and excoriations; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'web_space_and_wrists'), 'Rash in web space and wrists; ', ''), if(selected( /data/skin_conditions_group/skin_symptoms , 'face_spared'), 'Rash on body (face spared); ', '')))"/>
+      <bind nodeset="/data/summary_conditions" type="string" calculate="if( /data/calc_impetigo_folliculitis  = 'false' and  /data/calc_ring_worm  = 'false' and  /data/calc_scabies  = 'false', 'Conditions Detected: None', concat('Conditions Detected: ', if( /data/calc_impetigo_folliculitis  = 'true', 'Impetigo or Folliculitis; ', ''), if( /data/calc_ring_worm  = 'true', 'Ringworm; ', ''), if( /data/calc_scabies  = 'true', 'Scabies; ', '')))"/>
+      <bind nodeset="/data/summary_action_protocol" type="string" calculate="if( /data/calc_impetigo_folliculitis  = 'true' or  /data/calc_ring_worm  = 'true' or  /data/calc_scabies  = 'true', 'Clinical Protocol: Condition identified. Submit form and complete checkup, then proceed to summary form for medicine and counseling procedures.', 'Clinical Protocol: No conditions met. Submit form and complete checkup, then proceed to summary form for routine counseling.')"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

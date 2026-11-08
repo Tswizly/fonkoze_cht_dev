@@ -11,12 +11,12 @@
             "content": "Stock Received"
         },
         {
-            "locale": "es",
+            "locale": "cr",
             "content": "Stok Resevwa"
         },
         {
             "locale": "fr",
-            "content": "Stock Reçu"
+            "content": "Stock Reu"
         }
     ]
 }

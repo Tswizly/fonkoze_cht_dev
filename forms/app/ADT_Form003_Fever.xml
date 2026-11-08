@@ -227,7 +227,7 @@
             <value>Test Rapide</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test:label">
-            <value>Le patient présente certains signes de paludisme. Si vous vous trouvez dans une zone à risque, il vous appartient de décider de réaliser ou non un test rapide. Allez-vous réaliser un test rapide ?</value>
+            <value>Le patient présente certains signes de paludisme. Si vous vous trouvez dans une zone à risque, il vous appartient de décider de réaliser un test rapide. Allez-vous réaliser un test rapide ?</value>
           </text>
           <text id="/data/rapid_test_group/rapid_test_result:label">
             <value>Effectuez le test rapide. Quel est le résultat du test rapide ?</value>
@@ -399,7 +399,7 @@
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form003_Fever" version="20261017194158" prefix="J1!ADT_Form003_Fever!" delimiter="#">
+        <data id="ADT_Form003_Fever" version="20261107183545" prefix="J1!ADT_Form003_Fever!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -436,80 +436,85 @@
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <fever_malaria_group>
-            <fever_presence/>
-            <temperature/>
-            <fever_duration/>
-            <previous_fever/>
-            <fever_recurrance/>
-            <malaria_symptoms/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <fever_malaria_group tag="hidden">
+            <fever_presence tag="hidden"/>
+            <temperature tag="hidden"/>
+            <fever_duration tag="hidden"/>
+            <previous_fever tag="hidden"/>
+            <fever_recurrance tag="hidden"/>
+            <malaria_symptoms tag="hidden"/>
           </fever_malaria_group>
-          <calc_risk_malaria/>
-          <rapid_test_group>
-            <rapid_test/>
-            <rapid_test_result/>
+          <calc_risk_malaria tag="hidden"/>
+          <rapid_test_group tag="hidden">
+            <rapid_test tag="hidden"/>
+            <rapid_test_result tag="hidden"/>
           </rapid_test_group>
-          <calc_malaria_positive/>
-          <calc_malaria_negative/>
-          <calc_malaria_unclear/>
-          <results_group>
-            <res_malaria_positive/>
-            <res_malaria_positive_action/>
-            <res_malaria_negative/>
-            <res_malaria_negative_action/>
-            <res_malaria_unclear/>
-            <res_malaria_unclear_action/>
+          <calc_malaria_positive tag="hidden"/>
+          <calc_malaria_negative tag="hidden"/>
+          <calc_malaria_unclear tag="hidden"/>
+          <results_group tag="hidden">
+            <res_malaria_positive tag="hidden"/>
+            <res_malaria_positive_action tag="hidden"/>
+            <res_malaria_negative tag="hidden"/>
+            <res_malaria_negative_action tag="hidden"/>
+            <res_malaria_unclear tag="hidden"/>
+            <res_malaria_unclear_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <null_results_group_note/>
+          <null_results_group tag="hidden">
+            <null_results_group_note tag="hidden"/>
           </null_results_group>
-          <actions_confirmation>
-            <malaria_rapid_test/>
-            <malaria_rapid_test_other/>
+          <actions_confirmation tag="hidden">
+            <malaria_rapid_test tag="hidden"/>
+            <malaria_rapid_test_other tag="hidden"/>
           </actions_confirmation>
-          <data>
-            <_fever_presence/>
-            <_temperature/>
-            <_fever_duration/>
-            <_previous_fever/>
-            <_fever_recurrance/>
-            <_malaria_symptoms/>
-            <_rapid_test/>
-            <_rapid_test_result/>
-            <_result_risk_malaria/>
-            <_result_malaria_positive/>
-            <_result_malaria_negative/>
-            <_malaria_rapid_test/>
+          <data tag="hidden">
+            <_fever_presence tag="hidden"/>
+            <_temperature tag="hidden"/>
+            <_fever_duration tag="hidden"/>
+            <_previous_fever tag="hidden"/>
+            <_fever_recurrance tag="hidden"/>
+            <_malaria_symptoms tag="hidden"/>
+            <_rapid_test tag="hidden"/>
+            <_rapid_test_result tag="hidden"/>
+            <_result_risk_malaria tag="hidden"/>
+            <_result_malaria_positive tag="hidden"/>
+            <_result_malaria_negative tag="hidden"/>
+            <_malaria_rapid_test tag="hidden"/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
+          <clinic_id tag="hidden"/>
+          <prescription_summary db-doc="TRUE" tag="hidden">
+            <stock_monitoring_reported_date tag="hidden"/>
+            <place_id tag="hidden"/>
+            <type tag="hidden"/>
+            <created_from db-doc-ref="/data" tag="hidden"/>
+            <created_from_name tag="hidden"/>
+            <content_type tag="hidden"/>
+            <form tag="hidden"/>
+            <contact tag="hidden">
+              <_id tag="hidden"/>
             </contact>
-            <fields>
-              <Medicine_out/>
-              <malaria_rapid_test_used_in_ADT_Form003_Fever/>
+            <fields tag="hidden">
+              <Medicine_out tag="hidden"/>
+              <malaria_rapid_test_used_in_ADT_Form003_Fever tag="hidden"/>
             </fields>
           </prescription_summary>
+          <summary_patient_info/>
+          <summary_fever_status/>
+          <summary_malaria_symptoms/>
+          <summary_rapid_test/>
+          <summary_diagnostic_condition/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -636,6 +641,11 @@
       <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
       <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
       <bind nodeset="/data/prescription_summary/fields/malaria_rapid_test_used_in_ADT_Form003_Fever" type="string" calculate="if( /data/actions_confirmation/malaria_rapid_test  = 'yes', 1, 0)"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_fever_status" type="string" calculate="if( /data/fever_malaria_group/fever_presence  = 'yes', concat('Fever: Present | Temperature: ', if( /data/fever_malaria_group/temperature  != '',  /data/fever_malaria_group/temperature , 'N/A'), ' | Duration: ', if( /data/fever_malaria_group/fever_duration  != '', concat( /data/fever_malaria_group/fever_duration , ' days'), 'N/A'), ' | Recurring: ',  /data/fever_malaria_group/fever_recurrance ), if( /data/fever_malaria_group/previous_fever  = 'yes', concat('Fever: Reported previously | Recurring: ',  /data/fever_malaria_group/fever_recurrance ), 'Fever: None reported'))"/>
+      <bind nodeset="/data/summary_malaria_symptoms" type="string" calculate="if(count-selected( /data/fever_malaria_group/malaria_symptoms ) = 0, 'Symptoms Reported: None', concat('Symptoms Reported: ', if(selected( /data/fever_malaria_group/malaria_symptoms , 'chills'), 'Chills; ', ''), if(selected( /data/fever_malaria_group/malaria_symptoms , 'heavy_headache'), 'Heavy headache; ', ''), if(selected( /data/fever_malaria_group/malaria_symptoms , 'profuse_sweating'), 'Profuse sweating; ', '')))"/>
+      <bind nodeset="/data/summary_rapid_test" type="string" calculate="if( /data/rapid_test_group/rapid_test  = 'yes', concat('Rapid Diagnostic Test: Administered | Result: ', if( /data/rapid_test_group/rapid_test_result  = 'positive', 'Positive', if( /data/rapid_test_group/rapid_test_result  = 'negative', 'Negative', if( /data/rapid_test_group/rapid_test_result  = 'unclear', 'Unclear', 'None recorded')))), 'Rapid Diagnostic Test: Not administered')"/>
+      <bind nodeset="/data/summary_diagnostic_condition" type="string" calculate="if( /data/calc_malaria_positive  = 'true', 'Condition: Positive for Malaria - Proceed to summary form for medicine and counseling procedures', if( /data/calc_malaria_negative  = 'true', 'Condition: Negative for Malaria - Proceed to summary form for medicine and counseling procedures', if( /data/calc_malaria_unclear  = 'true' or  /data/rapid_test_group/rapid_test  = 'no', 'Condition: Unclear for Malaria - Symptoms present, assumed negative; proceed to summary form', if( /data/calc_risk_malaria  = 'false', 'Condition: No Malaria Risk Detected - No conditions met', 'Condition: Malaria assessment incomplete'))))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

@@ -507,7 +507,7 @@ Procédure :
             <value>Rezilta</value>
           </text>
           <text id="/data/results_group/res_hypertensive_urgency:label">
-            <value>Ijans Ipertansif</value>
+            <value>Ijans Ipètansif</value>
           </text>
           <text id="/data/results_group/res_hypertensive_urgency_action:label">
             <value>Pasyan an ka gen tansyon wo.
@@ -520,13 +520,13 @@ Pwosedi:
             <value>Tansyon wo nivo 1</value>
           </text>
           <text id="/data/results_group/res_hypertension_grade_1_action:label">
-            <value>Pasyan an gen tansyon wo nivo 1. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy.</value>
+            <value>Pasyan an gen tansyon wo nivo 1. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/results_group/res_hypertension_grade_2:label">
             <value>Tansyon wo nivo 2</value>
           </text>
           <text id="/data/results_group/res_hypertension_grade_2_action:label">
-            <value>Pasyan an gen tansyon wo nivo 2. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
+            <value>Pasyan an gen tansyon wo nivo 2. Soumèt fòm lan epi ranpli egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy.</value>
           </text>
           <text id="/data/results_group/res_hypertension_grade_3:label">
             <value>Tansyon wo nivo 3</value>
@@ -552,7 +552,7 @@ Pwosedi:
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form004_Hypertension" version="20261011180550" prefix="J1!ADT_Form004_Hypertension!" delimiter="#">
+        <data id="ADT_Form004_Hypertension" version="20261104232730" prefix="J1!ADT_Form004_Hypertension!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -590,63 +590,68 @@ Pwosedi:
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <form_purpose_group>
-            <form_purpose/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <form_purpose_group tag="hidden">
+            <form_purpose tag="hidden"/>
           </form_purpose_group>
-          <hypertension_assessment_group>
-            <known_hypertensive_note/>
-            <danger_signs/>
-            <bp_systolic/>
-            <bp_diastolic/>
-            <bp_remeasure/>
-            <bp_remeasure_note/>
-            <bp_systolic_remeasure/>
-            <bp_diastolic_remeasure/>
+          <hypertension_assessment_group tag="hidden">
+            <known_hypertensive_note tag="hidden"/>
+            <danger_signs tag="hidden"/>
+            <bp_systolic tag="hidden"/>
+            <bp_diastolic tag="hidden"/>
+            <bp_remeasure tag="hidden"/>
+            <bp_remeasure_note tag="hidden"/>
+            <bp_systolic_remeasure tag="hidden"/>
+            <bp_diastolic_remeasure tag="hidden"/>
           </hypertension_assessment_group>
-          <final_bp_systolic/>
-          <final_bp_diastolic/>
-          <calc_hypertensive_urgency/>
-          <calc_hypertension_grade_3/>
-          <calc_hypertension_grade_2/>
-          <calc_hypertension_grade_1/>
-          <results_group>
-            <res_hypertensive_urgency/>
-            <res_hypertensive_urgency_action/>
-            <res_hypertension_grade_1/>
-            <res_hypertension_grade_1_action/>
-            <res_hypertension_grade_2/>
-            <res_hypertension_grade_2_action/>
-            <res_hypertension_grade_3/>
-            <res_hypertension_grade_3_action/>
+          <final_bp_systolic tag="hidden"/>
+          <final_bp_diastolic tag="hidden"/>
+          <calc_hypertensive_urgency tag="hidden"/>
+          <calc_hypertension_grade_3 tag="hidden"/>
+          <calc_hypertension_grade_2 tag="hidden"/>
+          <calc_hypertension_grade_1 tag="hidden"/>
+          <results_group tag="hidden">
+            <res_hypertensive_urgency tag="hidden"/>
+            <res_hypertensive_urgency_action tag="hidden"/>
+            <res_hypertension_grade_1 tag="hidden"/>
+            <res_hypertension_grade_1_action tag="hidden"/>
+            <res_hypertension_grade_2 tag="hidden"/>
+            <res_hypertension_grade_2_action tag="hidden"/>
+            <res_hypertension_grade_3 tag="hidden"/>
+            <res_hypertension_grade_3_action tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <null_results_note/>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
           </null_results_group>
-          <data>
-            <_form_purpose/>
-            <_danger_signs/>
-            <_bp_systolic/>
-            <_bp_diastolic/>
-            <_bp_remeasure/>
-            <_bp_systolic_remeasure/>
-            <_bp_diastolic_remeasure/>
-            <_result_hypertensive_urgency/>
-            <_result_hypertension_grade_1/>
-            <_result_hypertension_grade_2/>
-            <_result_hypertension_grade_3/>
+          <data tag="hidden">
+            <_form_purpose tag="hidden"/>
+            <_danger_signs tag="hidden"/>
+            <_bp_systolic tag="hidden"/>
+            <_bp_diastolic tag="hidden"/>
+            <_bp_remeasure tag="hidden"/>
+            <_bp_systolic_remeasure tag="hidden"/>
+            <_bp_diastolic_remeasure tag="hidden"/>
+            <_result_hypertensive_urgency tag="hidden"/>
+            <_result_hypertension_grade_1 tag="hidden"/>
+            <_result_hypertension_grade_2 tag="hidden"/>
+            <_result_hypertension_grade_3 tag="hidden"/>
           </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_danger_signs/>
+          <summary_blood_pressure/>
+          <summary_diagnostic_result/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -800,6 +805,11 @@ Pwosedi:
       <bind nodeset="/data/data/_result_hypertension_grade_1" type="string" calculate="if( /data/calc_hypertension_grade_1 ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_hypertension_grade_2" type="string" calculate="if( /data/calc_hypertension_grade_2 ='true', 'true', 'false')"/>
       <bind nodeset="/data/data/_result_hypertension_grade_3" type="string" calculate="if( /data/calc_hypertension_grade_3 ='true', 'true', 'false')"/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_chronic_status" type="string" calculate="if( /data/inputs/contact/chronic_hypertension  = 'true', 'Known Chronic Hypertension: Yes', 'Known Chronic Hypertension: No')"/>
+      <bind nodeset="/data/summary_danger_signs" type="string" calculate="if(count-selected( /data/hypertension_assessment_group/danger_signs ) = 0, 'Danger Signs Reported: None', concat('Danger Signs Reported: ', if(selected( /data/hypertension_assessment_group/danger_signs , 'headache'), 'Headache; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'neck_pain'), 'Neck pain; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'neck_stiffness'), 'Neck stiffness; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'vertigo'), 'Vertigo; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'nausea'), 'Nausea; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'blurry_vision'), 'Blurry vision; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'difficulty_speaking'), 'Difficulty speaking; ', ''), if(selected( /data/hypertension_assessment_group/danger_signs , 'disoriented'), 'Disoriented; ', '')))"/>
+      <bind nodeset="/data/summary_blood_pressure" type="string" calculate="if( /data/hypertension_assessment_group/bp_remeasure  = 'true', concat('Blood Pressure Reading: ',  /data/final_bp_systolic , '/',  /data/final_bp_diastolic , ' mmHg (Initial: ',  /data/hypertension_assessment_group/bp_systolic , '/',  /data/hypertension_assessment_group/bp_diastolic , ', Remeasure: ',  /data/hypertension_assessment_group/bp_systolic_remeasure , '/',  /data/hypertension_assessment_group/bp_diastolic_remeasure , ')'), if( /data/hypertension_assessment_group/bp_systolic  != '', concat('Blood Pressure Reading: ',  /data/hypertension_assessment_group/bp_systolic , '/',  /data/hypertension_assessment_group/bp_diastolic , ' mmHg'), 'Blood Pressure Reading: None recorded'))"/>
+      <bind nodeset="/data/summary_diagnostic_result" type="string" calculate="if( /data/calc_hypertensive_urgency  = 'true', 'Condition: Hypertensive Urgency - Urgent Referral Required', if( /data/calc_hypertension_grade_3  = 'true', 'Condition: Hypertension Grade 3 (&gt; 180 or &gt; 110 mmHg) - Immediate Referral Required', if( /data/calc_hypertension_grade_2  = 'true', 'Condition: Hypertension Grade 2 (&gt; 150 or &gt; 100 mmHg)', if( /data/calc_hypertension_grade_1  = 'true', 'Condition: Hypertension Grade 1 (&gt;= 140 or &gt;= 90 mmHg)', if( /data/hypertension_assessment_group/bp_systolic  != '', 'Condition: Normal Blood Pressure - No Hypertension Detected', 'Condition: Blood pressure not tested')))))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

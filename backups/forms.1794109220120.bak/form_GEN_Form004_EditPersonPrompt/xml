@@ -1,0 +1,627 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Edit Person Prompt</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_diabetes:label">
+            <value>Chronic Diabetes</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>Chronic Hypertension</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>Chronic Stroke</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_asthma:label">
+            <value>Chronic Asthma</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/new_conditions_detected:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/profile_update_prompt:label">
+            <value>Profile Update Required</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_title:label">
+            <value>Existing Chronic Conditions</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_note_lsit:label">
+            <value><output value=" /data/existing_conditions_list "/></value>
+          </text>
+          <text id="/data/profile_update_prompt/notice_title:label">
+            <value>Unrecorded Chronic Condition Detected</value>
+          </text>
+          <text id="/data/profile_update_prompt/instruction_overview:label">
+            <value> Patient <output value=" /data/patient_name "/> was evaluated and identified as having the following newly detected condition(s):</value>
+          </text>
+          <text id="/data/profile_update_prompt/condition_list:label">
+            <value><output value=" /data/new_conditions_detected "/></value>
+          </text>
+          <text id="/data/profile_update_prompt/step_by_step_heading:label">
+            <value>Instructions to Update Profile:</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_1:label">
+            <value> 1. Navigate to <output value=" /data/patient_name "/>'s contact profile.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_2:label">
+            <value>2. Click the three dots in the top corner and select Edit Person.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_3:label">
+            <value>3. Scroll to Select all that the person has previously been diagnosed with.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_4:label">
+            <value> 4. Check the box for <output value=" /data/new_conditions_detected "/> and save the form.</value>
+          </text>
+          <text id="/data/profile_update_prompt/acknowledged:label">
+            <value> Leave this form and update the <output value=" /data/patient_name "/>'s profile. One you have performed these actions, please return to this form and confirm by selecting "Yes".</value>
+          </text>
+          <text id="/data/profile_update_prompt/notes:label">
+            <value>Additional Clinical Notes</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_asthma:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/new_conditions_detected:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_title:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_note_lsit:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/notice_title:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/instruction_overview:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/condition_list:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_by_step_heading:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_1:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_2:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_3:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_4:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/acknowledged:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt/notes:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_title:label">
+            <value>Maladi kwonik ki egziste deja</value>
+          </text>
+          <text id="/data/profile_update_prompt/existing_conditions_note_lsit:label">
+            <value><output value=" /data/existing_conditions_list "/></value>
+          </text>
+          <text id="/data/profile_update_prompt/notice_title:label">
+            <value>Maladi kwonik ki pa anrejistre detekte</value>
+          </text>
+          <text id="/data/profile_update_prompt/instruction_overview:label">
+            <value> Yo te evalye pasyan <output value=" /data/patient_name "/> la epi yo te idantifye li kòm yon pasyan ki gen kondisyon sa yo ki fèk detekte:</value>
+          </text>
+          <text id="/data/profile_update_prompt/condition_list:label">
+            <value><output value=" /data/new_conditions_detected "/></value>
+          </text>
+          <text id="/data/profile_update_prompt/step_by_step_heading:label">
+            <value>Enstriksyon pou mete ajou pwofil la:</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_1:label">
+            <value> 1. Ale nan pwofil kontak <output value=" /data/patient_name "/> la.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_2:label">
+            <value>2. Klike sou twa pwen ki nan kwen anwo a epi chwazi Modifye Moun.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_3:label">
+            <value>3. Desann pou rive nan Chwazi tout sa moun nan te deja dyagnostike avèk yo.</value>
+          </text>
+          <text id="/data/profile_update_prompt/step_4:label">
+            <value> 4. Tcheke kaz ki pou <output value=" /data/new_conditions_detected "/> la epi sove fòm lan.</value>
+          </text>
+          <text id="/data/profile_update_prompt/acknowledged:label">
+            <value> Kite fòm sa a epi mete pwofil <output value=" /data/patient_name "/> a ajou. Yon fwa ou fin fè aksyon sa yo, tanpri retounen nan fòm sa a epi konfime lè w chwazi "Wi".</value>
+          </text>
+          <text id="/data/profile_update_prompt/notes:label">
+            <value>Nòt Klinik Anplis</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_diabetes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_hypertension:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_stroke:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/chronic_asthma:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+          <text id="/data/new_conditions_detected:label">
+            <value>-</value>
+          </text>
+          <text id="/data/profile_update_prompt:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="GEN_Form004_EditPersonPrompt" version="20261107155301" prefix="J1!GEN_Form004_EditPersonPrompt!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_diabetes/>
+              <chronic_hypertension/>
+              <chronic_stroke/>
+              <chronic_asthma/>
+              <parent>
+                <_id tag="hidden"/>
+                <parent>
+                  <contact>
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <new_conditions_detected tag="hidden"/>
+          <existing_conditions_list tag="hidden"/>
+          <profile_update_prompt tag="hidden">
+            <existing_conditions_title/>
+            <existing_conditions_note_lsit/>
+            <notice_title/>
+            <instruction_overview/>
+            <condition_list/>
+            <step_by_step_heading/>
+            <step_1/>
+            <step_2/>
+            <step_3/>
+            <step_4/>
+            <acknowledged/>
+            <notes/>
+          </profile_update_prompt>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_diabetes" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_hypertension" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_stroke" type="string"/>
+      <bind nodeset="/data/inputs/contact/chronic_asthma" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/new_conditions_detected" type="string"/>
+      <bind nodeset="/data/existing_conditions_list" type="string" calculate="concat(if( /data/inputs/contact/chronic_diabetes  = 'true', 'Chronic Diabetes', ''), if( /data/inputs/contact/chronic_hypertension  = 'true', concat(if( /data/inputs/contact/chronic_diabetes  = 'true', ', ', ''), 'Chronic Hypertension'), ''), if( /data/inputs/contact/chronic_stroke  = 'true', concat(if( /data/inputs/contact/chronic_diabetes  = 'true' or  /data/inputs/contact/chronic_hypertension  = 'true', ', ', ''), 'Chronic Stroke'), ''), if( /data/inputs/contact/chronic_asthma  = 'true', concat(if( /data/inputs/contact/chronic_diabetes  = 'true' or  /data/inputs/contact/chronic_hypertension  = 'true' or  /data/inputs/contact/chronic_stroke  = 'true', ', ', ''), 'Chronic Asthma'), ''))"/>
+      <bind nodeset="/data/profile_update_prompt/existing_conditions_title" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_diabetes  = 'true' or  /data/inputs/contact/chronic_hypertension  = 'true' or  /data/inputs/contact/chronic_stroke  = 'true' or  /data/inputs/contact/chronic_asthma  = 'true'"/>
+      <bind nodeset="/data/profile_update_prompt/existing_conditions_note_lsit" readonly="true()" type="string" relevant=" /data/inputs/contact/chronic_diabetes  = 'true' or  /data/inputs/contact/chronic_hypertension  = 'true' or  /data/inputs/contact/chronic_stroke  = 'true' or  /data/inputs/contact/chronic_asthma  = 'true'"/>
+      <bind nodeset="/data/profile_update_prompt/notice_title" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/instruction_overview" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/condition_list" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/step_by_step_heading" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/step_1" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/step_2" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/step_3" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/step_4" readonly="true()" type="string"/>
+      <bind nodeset="/data/profile_update_prompt/acknowledged" type="string" required="true()"/>
+      <bind nodeset="/data/profile_update_prompt/notes" type="string"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list summary" ref="/data/profile_update_prompt">
+      <label ref="jr:itext('/data/profile_update_prompt:label')"/>
+      <input ref="/data/profile_update_prompt/existing_conditions_title" appearance="h1 green">
+        <label ref="jr:itext('/data/profile_update_prompt/existing_conditions_title:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/existing_conditions_note_lsit">
+        <label ref="jr:itext('/data/profile_update_prompt/existing_conditions_note_lsit:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/notice_title" appearance="h1 yellow">
+        <label ref="jr:itext('/data/profile_update_prompt/notice_title:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/instruction_overview">
+        <label ref="jr:itext('/data/profile_update_prompt/instruction_overview:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/condition_list">
+        <label ref="jr:itext('/data/profile_update_prompt/condition_list:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/step_by_step_heading">
+        <label ref="jr:itext('/data/profile_update_prompt/step_by_step_heading:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/step_1">
+        <label ref="jr:itext('/data/profile_update_prompt/step_1:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/step_2">
+        <label ref="jr:itext('/data/profile_update_prompt/step_2:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/step_3">
+        <label ref="jr:itext('/data/profile_update_prompt/step_3:label')"/>
+      </input>
+      <input ref="/data/profile_update_prompt/step_4">
+        <label ref="jr:itext('/data/profile_update_prompt/step_4:label')"/>
+      </input>
+      <select1 ref="/data/profile_update_prompt/acknowledged">
+        <label ref="jr:itext('/data/profile_update_prompt/acknowledged:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <input ref="/data/profile_update_prompt/notes">
+        <label ref="jr:itext('/data/profile_update_prompt/notes:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

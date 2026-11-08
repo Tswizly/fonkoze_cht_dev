@@ -128,6 +128,12 @@
           <text id="/data/_result_hypertension_grade_3:label">
             <value>Passed from task</value>
           </text>
+          <text id="/data/_pregnancy_form_purpose:label">
+            <value>Passed from task</value>
+          </text>
+          <text id="/data/_pregnancy_test_result:label">
+            <value>Passed from task</value>
+          </text>
           <text id="/data/_result_gestational_hypertension_no_serious:label">
             <value>Passed from task</value>
           </text>
@@ -607,6 +613,15 @@
           <text id="/data/grp_preg_uti/preg_uti_notes:label">
             <value>Clinical notes:</value>
           </text>
+          <text id="/data/grp_pregnancy_registration_summary:label">
+            <value>Pregnancy Registration Summary</value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/pregnancy_test_result_display:label">
+            <value> Pregnancy test result: <output value=" /data/_pregnancy_test_result "/></value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder:label">
+            <value>Remind the patient to attend her prenatal appointments.</value>
+          </text>
           <text id="/data/grp_htn_urgency:label">
             <value>Hypertensive Urgency</value>
           </text>
@@ -782,6 +797,18 @@
             <value>Counseling: 
 - (TODO counseling not provided in care protocols - added as place holder for nurse feedback)</value>
           </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:label">
+            <value>How many lancets did you use?</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:label">
+            <value>How many blood glucose strips did you use?</value>
+          </text>
           <text id="/data/grp_diabetes_severe/diabetes_sev_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -854,6 +881,18 @@ Protocol:
           <text id="/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason:hint">
             <value>If you distributed a different amount of drugs, record how many.</value>
           </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:label">
+            <value>How many lancets did you use?</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:label">
+            <value>How many blood glucose strips did you use?</value>
+          </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_notes:label">
             <value>Clinical notes:</value>
           </text>
@@ -878,6 +917,18 @@ Protocol:
 - Include lean protein (beans, fish, eggs, poultry) with meals
 - Avoid excessive fried and fatty foods 
 - Advise patient to return for a blood glucose test in 1-2 weeks. Inform patient to not eat before coming.</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:label">
+            <value>How many lancets did you use?</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:jr:constraintMsg">
+            <value>Cannot be greater than 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:label">
+            <value>How many blood glucose strips did you use?</value>
           </text>
           <text id="/data/grp_diabetes_mild/diabetes_mild_notes:label">
             <value>Clinical notes:</value>
@@ -1485,6 +1536,9 @@ OR
           <text id="/data/referrals/referral_location_other:label">
             <value>If other, which location?</value>
           </text>
+          <text id="/data/summary:label">
+            <value>Summary</value>
+          </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:jr:constraintMsg">
             <value>-</value>
           </text>
@@ -1716,7 +1770,7 @@ OR
             <value>Vous maintiendrez les fonctions vitales et transférerez d'urgence à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
-            <value>AVC ancien / antérieur</value>
+            <value>Ancien AVC / AVC antérieur</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
             <value>Vous donnerez des conseils de prévention, contrôlerez la tension et référerez en réadaptation.</value>
@@ -1857,7 +1911,7 @@ OR
 
 - Administrer immédiatement 1 comprimé de paracétamol 500 mg
 
-- Transporter immédiatement le patient à l'hôpital</value>
+- Se rendre immédiatement à l'hôpital</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_lt20/miscarriage_lt20_counseling:label">
             <value>Accompagnement psychologique :
@@ -1890,7 +1944,7 @@ OR
 
 - Administrer immédiatement 1 comprimé de nifédipine 20 mg
 
-- Transférer immédiatement le patient à l'hôpital</value>
+- Transporter immédiatement le patient à l'hôpital</value>
           </text>
           <text id="/data/grp_gestational_htn_sev/gest_htn_sev_counseling:label">
             <value>Accompagnement psychologique :
@@ -1925,7 +1979,7 @@ OR
           <text id="/data/grp_gestational_htn_mild/gest_htn_mild_counseling:label">
             <value>Conseils :
 
-- Informer la patiente qu'elle ne doit pas trop tarder à se rendre à la consultation prénatale.
+- Informer la patiente qu'elle ne tardera pas trop à se rendre à sa consultation prénatale.
 
 - Conseiller la patiente de réduire sa consommation de sel.</value>
           </text>
@@ -1974,6 +2028,15 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
           </text>
           <text id="/data/grp_preg_uti/preg_uti_notes:label">
             <value>Notes cliniques :</value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary:label">
+            <value>Résumé de l'enregistrement de la grossesse</value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/pregnancy_test_result_display:label">
+            <value> Résultat du test de grossesse : <output value=" /data/_pregnancy_test_result "/></value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder:label">
+            <value>Rappelez à la patiente d'assister à ses consultations prénatales.</value>
           </text>
           <text id="/data/grp_htn_urgency:label">
             <value>Urgence hypertensive</value>
@@ -2052,7 +2115,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_2/confirm_hctz_25mg_g2:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2095,7 +2158,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_1/confirm_hctz_25mg_g1:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2186,6 +2249,18 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:label">
+            <value>Combien de lancettes avez-vous utilisées ?</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:label">
+            <value>Combien de bandelettes de glycémie avez-vous utilisées ?</value>
+          </text>
           <text id="/data/grp_diabetes_severe/diabetes_sev_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -2269,6 +2344,18 @@ Protocole :
           <text id="/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason:hint">
             <value>Si vous avez distribué une quantité différente de médicaments, notez combien.</value>
           </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:label">
+            <value>Combien de lancettes avez-vous utilisées ?</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:label">
+            <value>Combien de bandelettes de glycémie avez-vous utilisées ?</value>
+          </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_notes:label">
             <value>Notes cliniques :</value>
           </text>
@@ -2303,6 +2390,18 @@ Protocole :
 - Évitez les aliments frits et gras en excès.
 
 - Conseillez au patient de revenir pour un test de glycémie dans 1 à 2 semaines. Précisez-lui de ne pas manger avant ce rendez-vous.</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:label">
+            <value>Combien de lancettes avez-vous utilisées ?</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:jr:constraintMsg">
+            <value>Ne peut pas être supérieur à 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:label">
+            <value>Combien de bandelettes de glycémie avez-vous utilisées ?</value>
           </text>
           <text id="/data/grp_diabetes_mild/diabetes_mild_notes:label">
             <value>Notes cliniques :</value>
@@ -2471,9 +2570,9 @@ Protocole :
           <text id="/data/grp_amoeba_giardia/amoeba_protocol:label">
             <value>Protocole :
 
-- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à prendre à raison de 4 comprimés une fois par jour pendant 3 jours.
+- Si disponible, distribuer 12 comprimés de tinidazole 500 mg, à raison de 4 comprimés une fois par jour pendant 3 jours.
 
-- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à prendre 3 fois par jour pendant 5 jours.</value>
+- Si le tinidazole n'est pas disponible, distribuer 15 comprimés de métronidazole 500 mg, à raison de 3 comprimés trois fois par jour pendant 5 jours.</value>
           </text>
           <text id="/data/grp_amoeba_giardia/amoeba_counseling:label">
             <value>Accompagnement psychologique :
@@ -3060,10 +3159,13 @@ OU
             <value>Référer</value>
           </text>
           <text id="/data/referrals/referral_location:label">
-            <value>De quel lieu parliez-vous ?</value>
+            <value>De quel endroit parliez-vous ?</value>
           </text>
           <text id="/data/referrals/referral_location_other:label">
             <value>Si autre, quel lieu ?</value>
+          </text>
+          <text id="/data/summary:label">
+            <value>Sommaire</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -3215,6 +3317,12 @@ OU
           <text id="/data/_result_hypertension_grade_3:label">
             <value>-</value>
           </text>
+          <text id="/data/_pregnancy_form_purpose:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_pregnancy_test_result:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_gestational_hypertension_no_serious:label">
             <value>-</value>
           </text>
@@ -3296,6 +3404,21 @@ OU
           <text id="/data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed:label">
             <value>-</value>
           </text>
+          <text id="/data/summary/summary_patient_info:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_urgent_referral:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_conditions:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_diagnostic_tests:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_clinical_notes:label">
+            <value>-</value>
+          </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:jr:constraintMsg">
             <value>-</value>
           </text>
@@ -3344,7 +3467,7 @@ OU
             <value>Sentòm Ijans Pandan Triyaj</value>
           </text>
           <text id="/data/summary_header/res_triage_emergency_protocol:label">
-            <value>Si ou poko fè sa, ou pral refere pasyan an. Si yo te deja refere yo, sèvi ak fòm sa a pou anrejistre enfòmasyon ak nòt.</value>
+            <value>Si ou poko fè sa, ou pral refere pasyan an. Si yo te refere yo, sèvi ak fòm sa a pou anrejistre enfòmasyon ak nòt.</value>
           </text>
           <text id="/data/summary_header/res_diabetes_mild:label">
             <value>Ipèglisemi lejè</value>
@@ -3413,7 +3536,7 @@ OU
             <value>W ap trete sentòm yo epi chèche lòt kòz lafyèv la.</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency:label">
-            <value>Ijans Ipètansif</value>
+            <value>Ijans Ipertansif</value>
           </text>
           <text id="/data/summary_header/res_htn_urgency_protocol:label">
             <value>W ap bay medikaman ijans epi refere imedyatman nan lopital.</value>
@@ -3767,6 +3890,15 @@ OU
           <text id="/data/grp_preg_uti/preg_uti_notes:label">
             <value>Nòt klinik:</value>
           </text>
+          <text id="/data/grp_pregnancy_registration_summary:label">
+            <value>Rezime Enskripsyon Gwosès</value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/pregnancy_test_result_display:label">
+            <value> Rezilta tès gwosès : <output value=" /data/_pregnancy_test_result "/></value>
+          </text>
+          <text id="/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder:label">
+            <value>Sonje pasyan an pou l ale nan randevou prenatal li yo.</value>
+          </text>
           <text id="/data/grp_htn_urgency:label">
             <value>Ijans Ipertansif</value>
           </text>
@@ -3960,6 +4092,18 @@ OU
             <value>Konsèy:
 - (Konsèy TODO pa bay nan pwotokòl swen yo - ajoute kòm espas vid pou fidbak enfimyè yo)</value>
           </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/lancets_used_sev:label">
+            <value>Konbyen lansèt ou te itilize?</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_severe/strips_used_sev:label">
+            <value>Konbyen bann glikoz nan san ou te itilize?</value>
+          </text>
           <text id="/data/grp_diabetes_severe/diabetes_sev_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -4027,6 +4171,18 @@ Pwotokòl:
           <text id="/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason:hint">
             <value>Si ou te distribye yon kantite dwòg diferan, anrejistre konbyen.</value>
           </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/lancets_used_mod:label">
+            <value>Konbyen lansèt ou te itilize?</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mod/strips_used_mod:label">
+            <value>Konbyen bann glikoz nan san ou te itilize?</value>
+          </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_notes:label">
             <value>Nòt klinik:</value>
           </text>
@@ -4051,6 +4207,18 @@ Pwotokòl:
 - Mete pwoteyin mèg (pwa, pwason, ze, bèt volay) nan repa yo
 - Evite manje ki fri ak gra twòp
 - Konseye pasyan an pou l retounen pou yon tès glikoz nan san nan 1-2 semèn. Enfòme pasyan an pou l pa manje anvan l vini.</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/lancets_used_mild:label">
+            <value>Konbyen lansèt ou te itilize?</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:jr:constraintMsg">
+            <value>Pa ka pi gwo pase 9</value>
+          </text>
+          <text id="/data/grp_diabetes_mild/strips_used_mild:label">
+            <value>Konbyen bann glikoz nan san ou te itilize?</value>
           </text>
           <text id="/data/grp_diabetes_mild/diabetes_mild_notes:label">
             <value>Nòt klinik:</value>
@@ -4141,10 +4309,10 @@ Pwotokòl:
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_protocol_positive_pylori:label">
             <value>Pwotokòl:
-- Distribye 28 Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
-- Distribye 20cc Litacid jèl pou pran 30 minit apre repa yo.
-- Distribye 42 Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
-- Distribye 42 Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
+- Distribye 28 grenn Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
+- Distribye 20cc jèl Litacid pou pran 30 minit apre repa yo.
+- Distribye 42 grenn Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
+- Distribye 42 grenn Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_counseling_hpylori_negative:label">
             <value>Konsèy:
@@ -4740,6 +4908,9 @@ OSWA
           <text id="/data/referrals/referral_location_other:label">
             <value>Si se yon lòt kote, ki kote?</value>
           </text>
+          <text id="/data/summary:label">
+            <value>Rezime</value>
+          </text>
           <text id="/data/inputs:label">
             <value>-</value>
           </text>
@@ -4890,6 +5061,12 @@ OSWA
           <text id="/data/_result_hypertension_grade_3:label">
             <value>-</value>
           </text>
+          <text id="/data/_pregnancy_form_purpose:label">
+            <value>-</value>
+          </text>
+          <text id="/data/_pregnancy_test_result:label">
+            <value>-</value>
+          </text>
           <text id="/data/_result_gestational_hypertension_no_serious:label">
             <value>-</value>
           </text>
@@ -4971,10 +5148,25 @@ OSWA
           <text id="/data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed:label">
             <value>-</value>
           </text>
+          <text id="/data/summary/summary_patient_info:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_urgent_referral:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_conditions:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_diagnostic_tests:label">
+            <value>-</value>
+          </text>
+          <text id="/data/summary/summary_clinical_notes:label">
+            <value>-</value>
+          </text>
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form014_Summary" version="20261017192542" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+        <data id="ADT_Form014_Summary" version="20261107204254" prefix="J1!ADT_Form014_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -5011,522 +5203,544 @@ OSWA
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <_has_emergency_symptoms/>
-          <_result_hyperglycemia_mild/>
-          <_result_hyperglycemia_moderate/>
-          <_result_hyperglycemia_severe/>
-          <_metformin_dosage/>
-          <_result_gastritis_serious/>
-          <_result_gastritis_not_serious/>
-          <_h_pylori_rapid_test_result/>
-          <_result_risk_of_cholera/>
-          <_result_acute_diarrhea/>
-          <_result_amoeba_giardia/>
-          <_result_appendicitis_cholecystitis/>
-          <_result_risk_malaria/>
-          <_malaria_rapid_test_result/>
-          <_result_hypertensive_urgency/>
-          <_result_hypertension_grade_1/>
-          <_result_hypertension_grade_2/>
-          <_result_hypertension_grade_3/>
-          <_result_gestational_hypertension_no_serious/>
-          <_result_gestational_hypertension_serious/>
-          <_result_pre_eclampsia/>
-          <_result_genitourinary_infections/>
-          <_result_threatened_miscarriage_less20/>
-          <_result_threatened_miscarriage_greater20/>
-          <_result_tuberculosis/>
-          <_result_asthma/>
-          <_result_pneumonia/>
-          <_result_flu_like_syndrome/>
-          <_result_impetigo_folliculitis/>
-          <_result_ring_worm/>
-          <_result_scabies/>
-          <_result_transient_ischemic_attack/>
-          <_result_stroke/>
-          <_result_old_stroke/>
-          <_result_uti/>
-          <_result_std_discharge/>
-          <_result_std_ulcer/>
-          <_result_moderate_anemia/>
-          <_result_urgent_referral/>
-          <has_positive_condition/>
-          <summary_header>
-            <summary_overview/>
-            <summary_instructions/>
-            <res_triage_emergency/>
-            <res_triage_emergency_protocol/>
-            <res_diabetes_mild/>
-            <res_diabetes_mild_protocol/>
-            <res_diabetes_mod/>
-            <res_diabetes_mod_protocol/>
-            <res_diabetes_sev/>
-            <res_diabetes_sev_protocol/>
-            <res_gastritis_serious/>
-            <res_gastritis_serious_protocol/>
-            <res_gastritis_not_serious/>
-            <res_gastritis_not_serious_protocol/>
-            <res_cholera/>
-            <res_cholera_protocol/>
-            <res_acute_diarrhea/>
-            <res_acute_diarrhea_protocol/>
-            <res_amoeba_giardia/>
-            <res_amoeba_giardia_protocol/>
-            <res_appendicitis/>
-            <res_appendicitis_protocol/>
-            <res_malaria_pos/>
-            <res_malaria_pos_protocol/>
-            <res_malaria_neg/>
-            <res_malaria_neg_protocol/>
-            <res_htn_urgency/>
-            <res_htn_urgency_protocol/>
-            <res_htn_g1/>
-            <res_htn_g1_protocol/>
-            <res_htn_g2/>
-            <res_htn_g2_protocol/>
-            <res_htn_g3/>
-            <res_htn_g3_protocol/>
-            <res_preg_htn_mild/>
-            <res_preg_htn_mild_protocol/>
-            <res_preg_htn_sev/>
-            <res_preg_htn_sev_protocol/>
-            <res_pre_eclamp/>
-            <res_pre_eclamp_protocol/>
-            <res_preg_uti/>
-            <res_preg_uti_protocol/>
-            <res_miscarriage_less20/>
-            <res_miscarriage_less20_protocol/>
-            <res_miscarriage_great20/>
-            <res_miscarriage_great20_protocol/>
-            <res_tb/>
-            <res_tb_protocol/>
-            <res_asthma/>
-            <res_asthma_protocol/>
-            <res_pneumonia/>
-            <res_pneumonia_protocol/>
-            <res_flu/>
-            <res_flu_protocol/>
-            <res_impetigo/>
-            <res_impetigo_protocol/>
-            <res_ringworm/>
-            <res_ringworm_protocol/>
-            <res_scabies/>
-            <res_scabies_protocol/>
-            <res_tia/>
-            <res_tia_protocol/>
-            <res_stroke_active/>
-            <res_stroke_active_protocol/>
-            <res_old_stroke/>
-            <res_old_stroke_protocol/>
-            <res_uti/>
-            <res_uti_protocol/>
-            <res_std_disc/>
-            <res_std_disc_protocol/>
-            <res_std_ulc/>
-            <res_std_ulc_protocol/>
-            <res_anemia/>
-            <res_anemia_protocol/>
-            <res_urgent_ref/>
-            <res_urgent_ref_protocol/>
-            <res_no_condition/>
-            <res_no_condition_protocol/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <_has_emergency_symptoms tag="hidden"/>
+          <_result_hyperglycemia_mild tag="hidden"/>
+          <_result_hyperglycemia_moderate tag="hidden"/>
+          <_result_hyperglycemia_severe tag="hidden"/>
+          <_metformin_dosage tag="hidden"/>
+          <_result_gastritis_serious tag="hidden"/>
+          <_result_gastritis_not_serious tag="hidden"/>
+          <_h_pylori_rapid_test_result tag="hidden"/>
+          <_result_risk_of_cholera tag="hidden"/>
+          <_result_acute_diarrhea tag="hidden"/>
+          <_result_amoeba_giardia tag="hidden"/>
+          <_result_appendicitis_cholecystitis tag="hidden"/>
+          <_result_risk_malaria tag="hidden"/>
+          <_malaria_rapid_test_result tag="hidden"/>
+          <_result_hypertensive_urgency tag="hidden"/>
+          <_result_hypertension_grade_1 tag="hidden"/>
+          <_result_hypertension_grade_2 tag="hidden"/>
+          <_result_hypertension_grade_3 tag="hidden"/>
+          <_pregnancy_form_purpose tag="hidden"/>
+          <_pregnancy_test_result tag="hidden"/>
+          <_result_gestational_hypertension_no_serious tag="hidden"/>
+          <_result_gestational_hypertension_serious tag="hidden"/>
+          <_result_pre_eclampsia tag="hidden"/>
+          <_result_genitourinary_infections tag="hidden"/>
+          <_result_threatened_miscarriage_less20 tag="hidden"/>
+          <_result_threatened_miscarriage_greater20 tag="hidden"/>
+          <_result_tuberculosis tag="hidden"/>
+          <_result_asthma tag="hidden"/>
+          <_result_pneumonia tag="hidden"/>
+          <_result_flu_like_syndrome tag="hidden"/>
+          <_result_impetigo_folliculitis tag="hidden"/>
+          <_result_ring_worm tag="hidden"/>
+          <_result_scabies tag="hidden"/>
+          <_result_transient_ischemic_attack tag="hidden"/>
+          <_result_stroke tag="hidden"/>
+          <_result_old_stroke tag="hidden"/>
+          <_result_uti tag="hidden"/>
+          <_result_std_discharge tag="hidden"/>
+          <_result_std_ulcer tag="hidden"/>
+          <_result_moderate_anemia tag="hidden"/>
+          <_result_urgent_referral tag="hidden"/>
+          <has_positive_condition tag="hidden"/>
+          <summary_header tag="hidden">
+            <summary_overview tag="hidden"/>
+            <summary_instructions tag="hidden"/>
+            <res_triage_emergency tag="hidden"/>
+            <res_triage_emergency_protocol tag="hidden"/>
+            <res_diabetes_mild tag="hidden"/>
+            <res_diabetes_mild_protocol tag="hidden"/>
+            <res_diabetes_mod tag="hidden"/>
+            <res_diabetes_mod_protocol tag="hidden"/>
+            <res_diabetes_sev tag="hidden"/>
+            <res_diabetes_sev_protocol tag="hidden"/>
+            <res_gastritis_serious tag="hidden"/>
+            <res_gastritis_serious_protocol tag="hidden"/>
+            <res_gastritis_not_serious tag="hidden"/>
+            <res_gastritis_not_serious_protocol tag="hidden"/>
+            <res_cholera tag="hidden"/>
+            <res_cholera_protocol tag="hidden"/>
+            <res_acute_diarrhea tag="hidden"/>
+            <res_acute_diarrhea_protocol tag="hidden"/>
+            <res_amoeba_giardia tag="hidden"/>
+            <res_amoeba_giardia_protocol tag="hidden"/>
+            <res_appendicitis tag="hidden"/>
+            <res_appendicitis_protocol tag="hidden"/>
+            <res_malaria_pos tag="hidden"/>
+            <res_malaria_pos_protocol tag="hidden"/>
+            <res_malaria_neg tag="hidden"/>
+            <res_malaria_neg_protocol tag="hidden"/>
+            <res_htn_urgency tag="hidden"/>
+            <res_htn_urgency_protocol tag="hidden"/>
+            <res_htn_g1 tag="hidden"/>
+            <res_htn_g1_protocol tag="hidden"/>
+            <res_htn_g2 tag="hidden"/>
+            <res_htn_g2_protocol tag="hidden"/>
+            <res_htn_g3 tag="hidden"/>
+            <res_htn_g3_protocol tag="hidden"/>
+            <res_preg_htn_mild tag="hidden"/>
+            <res_preg_htn_mild_protocol tag="hidden"/>
+            <res_preg_htn_sev tag="hidden"/>
+            <res_preg_htn_sev_protocol tag="hidden"/>
+            <res_pre_eclamp tag="hidden"/>
+            <res_pre_eclamp_protocol tag="hidden"/>
+            <res_preg_uti tag="hidden"/>
+            <res_preg_uti_protocol tag="hidden"/>
+            <res_miscarriage_less20 tag="hidden"/>
+            <res_miscarriage_less20_protocol tag="hidden"/>
+            <res_miscarriage_great20 tag="hidden"/>
+            <res_miscarriage_great20_protocol tag="hidden"/>
+            <res_tb tag="hidden"/>
+            <res_tb_protocol tag="hidden"/>
+            <res_asthma tag="hidden"/>
+            <res_asthma_protocol tag="hidden"/>
+            <res_pneumonia tag="hidden"/>
+            <res_pneumonia_protocol tag="hidden"/>
+            <res_flu tag="hidden"/>
+            <res_flu_protocol tag="hidden"/>
+            <res_impetigo tag="hidden"/>
+            <res_impetigo_protocol tag="hidden"/>
+            <res_ringworm tag="hidden"/>
+            <res_ringworm_protocol tag="hidden"/>
+            <res_scabies tag="hidden"/>
+            <res_scabies_protocol tag="hidden"/>
+            <res_tia tag="hidden"/>
+            <res_tia_protocol tag="hidden"/>
+            <res_stroke_active tag="hidden"/>
+            <res_stroke_active_protocol tag="hidden"/>
+            <res_old_stroke tag="hidden"/>
+            <res_old_stroke_protocol tag="hidden"/>
+            <res_uti tag="hidden"/>
+            <res_uti_protocol tag="hidden"/>
+            <res_std_disc tag="hidden"/>
+            <res_std_disc_protocol tag="hidden"/>
+            <res_std_ulc tag="hidden"/>
+            <res_std_ulc_protocol tag="hidden"/>
+            <res_anemia tag="hidden"/>
+            <res_anemia_protocol tag="hidden"/>
+            <res_urgent_ref tag="hidden"/>
+            <res_urgent_ref_protocol tag="hidden"/>
+            <res_no_condition tag="hidden"/>
+            <res_no_condition_protocol tag="hidden"/>
           </summary_header>
-          <grp_triage_emergency>
-            <emergency_symptoms_during_triage_notification/>
-            <emergency_symptoms_during_triage_protocol/>
-            <confirm_iv_line/>
-            <emergency_symptoms_during_triage_notes/>
+          <grp_triage_emergency tag="hidden">
+            <emergency_symptoms_during_triage_notification tag="hidden"/>
+            <emergency_symptoms_during_triage_protocol tag="hidden"/>
+            <confirm_iv_line tag="hidden"/>
+            <emergency_symptoms_during_triage_notes tag="hidden"/>
           </grp_triage_emergency>
-          <grp_pre_eclampsia>
-            <pre_eclampsia_notification/>
-            <pre_eclampsia_protocol/>
-            <pre_eclampsia_counseling/>
-            <confirm_nifedipine_20mg_pre_eclampsia/>
-            <_data_nifedipine_20mg_pre_eclampsia_distributed/>
-            <pre_eclampsia_med_not_confirmed_reason/>
-            <pre_eclampsia_notes/>
+          <grp_pre_eclampsia tag="hidden">
+            <pre_eclampsia_notification tag="hidden"/>
+            <pre_eclampsia_protocol tag="hidden"/>
+            <pre_eclampsia_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_pre_eclampsia tag="hidden"/>
+            <_data_nifedipine_20mg_pre_eclampsia_distributed tag="hidden"/>
+            <pre_eclampsia_med_not_confirmed_reason tag="hidden"/>
+            <pre_eclampsia_notes tag="hidden"/>
           </grp_pre_eclampsia>
-          <grp_threatened_miscarriage_gt20>
-            <miscarriage_gt20_notification/>
-            <miscarriage_gt20_protocol/>
-            <miscarriage_gt20_counseling/>
-            <confirm_nifedipine_20mg_gt20/>
-            <_data_nifedipine_20mg_gt20_distributed/>
-            <confirm_paracetamol_500mg_gt20/>
-            <_data_paracetamol_500mg_gt20_distributed/>
-            <miscarriage_gt20_med_not_confirmed_reason/>
-            <miscarriage_gt20_notes/>
+          <grp_threatened_miscarriage_gt20 tag="hidden">
+            <miscarriage_gt20_notification tag="hidden"/>
+            <miscarriage_gt20_protocol tag="hidden"/>
+            <miscarriage_gt20_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gt20 tag="hidden"/>
+            <_data_nifedipine_20mg_gt20_distributed tag="hidden"/>
+            <confirm_paracetamol_500mg_gt20 tag="hidden"/>
+            <_data_paracetamol_500mg_gt20_distributed tag="hidden"/>
+            <miscarriage_gt20_med_not_confirmed_reason tag="hidden"/>
+            <miscarriage_gt20_notes tag="hidden"/>
           </grp_threatened_miscarriage_gt20>
-          <grp_threatened_miscarriage_lt20>
-            <miscarriage_lt20_notification/>
-            <miscarriage_lt20_protocol/>
-            <miscarriage_lt20_counseling/>
-            <confirm_paracetamol_500mg_lt20/>
-            <_data_paracetamol_500mg_lt20_distributed/>
-            <miscarriage_lt20_med_not_confirmed_reason/>
-            <miscarriage_lt20_notes/>
+          <grp_threatened_miscarriage_lt20 tag="hidden">
+            <miscarriage_lt20_notification tag="hidden"/>
+            <miscarriage_lt20_protocol tag="hidden"/>
+            <miscarriage_lt20_counseling tag="hidden"/>
+            <confirm_paracetamol_500mg_lt20 tag="hidden"/>
+            <_data_paracetamol_500mg_lt20_distributed tag="hidden"/>
+            <miscarriage_lt20_med_not_confirmed_reason tag="hidden"/>
+            <miscarriage_lt20_notes tag="hidden"/>
           </grp_threatened_miscarriage_lt20>
-          <grp_gestational_htn_sev>
-            <gest_htn_sev_notification/>
-            <gest_htn_sev_protocol/>
-            <gest_htn_sev_counseling/>
-            <confirm_nifedipine_20mg_gest_sev/>
-            <_data_nifedipine_20mg_gest_sev_distributed/>
-            <gest_htn_sev_med_not_confirmed_reason/>
-            <gest_htn_sev_notes/>
+          <grp_gestational_htn_sev tag="hidden">
+            <gest_htn_sev_notification tag="hidden"/>
+            <gest_htn_sev_protocol tag="hidden"/>
+            <gest_htn_sev_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gest_sev tag="hidden"/>
+            <_data_nifedipine_20mg_gest_sev_distributed tag="hidden"/>
+            <gest_htn_sev_med_not_confirmed_reason tag="hidden"/>
+            <gest_htn_sev_notes tag="hidden"/>
           </grp_gestational_htn_sev>
-          <grp_gestational_htn_mild>
-            <gest_htn_mild_notification/>
-            <gest_htn_mild_protocol/>
-            <gest_htn_mild_counseling/>
-            <confirm_nifedipine_20mg_gest_mild/>
-            <_data_nifedipine_20mg_gest_mild_distributed/>
-            <gest_htn_mild_med_not_confirmed_reason/>
-            <gest_htn_mild_notes/>
+          <grp_gestational_htn_mild tag="hidden">
+            <gest_htn_mild_notification tag="hidden"/>
+            <gest_htn_mild_protocol tag="hidden"/>
+            <gest_htn_mild_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gest_mild tag="hidden"/>
+            <_data_nifedipine_20mg_gest_mild_distributed tag="hidden"/>
+            <gest_htn_mild_med_not_confirmed_reason tag="hidden"/>
+            <gest_htn_mild_notes tag="hidden"/>
           </grp_gestational_htn_mild>
-          <grp_preg_uti>
-            <preg_uti_notification/>
-            <preg_uti_protocol/>
-            <preg_uti_counseling/>
-            <confirm_amoxicillin_500mg_preg/>
-            <_data_amoxicillin_500mg_preg_distributed/>
-            <preg_uti_med_not_confirmed_reason/>
-            <preg_uti_notes/>
+          <grp_preg_uti tag="hidden">
+            <preg_uti_notification tag="hidden"/>
+            <preg_uti_protocol tag="hidden"/>
+            <preg_uti_counseling tag="hidden"/>
+            <confirm_amoxicillin_500mg_preg tag="hidden"/>
+            <_data_amoxicillin_500mg_preg_distributed tag="hidden"/>
+            <preg_uti_med_not_confirmed_reason tag="hidden"/>
+            <preg_uti_notes tag="hidden"/>
           </grp_preg_uti>
-          <grp_htn_urgency>
-            <htn_urgency_notification/>
-            <htn_urgency_protocol/>
-            <htn_urgency_counseling/>
-            <confirm_nifedipine_10mg_urgency/>
-            <_data_nifedipine_10mg_urgency_distributed/>
-            <htn_urgency_med_not_confirmed_reason/>
-            <htn_urgency_notes/>
+          <grp_pregnancy_registration_summary tag="hidden">
+            <pregnancy_test_result_display tag="hidden"/>
+            <prenatal_appointments_reminder tag="hidden"/>
+          </grp_pregnancy_registration_summary>
+          <grp_htn_urgency tag="hidden">
+            <htn_urgency_notification tag="hidden"/>
+            <htn_urgency_protocol tag="hidden"/>
+            <htn_urgency_counseling tag="hidden"/>
+            <confirm_nifedipine_10mg_urgency tag="hidden"/>
+            <_data_nifedipine_10mg_urgency_distributed tag="hidden"/>
+            <htn_urgency_med_not_confirmed_reason tag="hidden"/>
+            <htn_urgency_notes tag="hidden"/>
           </grp_htn_urgency>
-          <grp_htn_grade_3>
-            <htn_g3_notification/>
-            <htn_g3_protocol/>
-            <htn_g3_counseling/>
-            <htn_g3_notes/>
+          <grp_htn_grade_3 tag="hidden">
+            <htn_g3_notification tag="hidden"/>
+            <htn_g3_protocol tag="hidden"/>
+            <htn_g3_counseling tag="hidden"/>
+            <htn_g3_notes tag="hidden"/>
           </grp_htn_grade_3>
-          <grp_htn_grade_2>
-            <htn_g2_notification/>
-            <htn_g2_protocol/>
-            <htn_g2_counseling/>
-            <confirm_hctz_25mg_g2/>
-            <_data_hctz_25mg_g2_distributed/>
-            <confirm_enalapril_10mg_g2/>
-            <_data_enalapril_10mg_g2_distributed/>
-            <htn_g2_med_not_confirmed_reason/>
-            <htn_g2_notes/>
+          <grp_htn_grade_2 tag="hidden">
+            <htn_g2_notification tag="hidden"/>
+            <htn_g2_protocol tag="hidden"/>
+            <htn_g2_counseling tag="hidden"/>
+            <confirm_hctz_25mg_g2 tag="hidden"/>
+            <_data_hctz_25mg_g2_distributed tag="hidden"/>
+            <confirm_enalapril_10mg_g2 tag="hidden"/>
+            <_data_enalapril_10mg_g2_distributed tag="hidden"/>
+            <htn_g2_med_not_confirmed_reason tag="hidden"/>
+            <htn_g2_notes tag="hidden"/>
           </grp_htn_grade_2>
-          <grp_htn_grade_1>
-            <htn_g1_notification/>
-            <htn_g1_protocol/>
-            <htn_g1_counseling/>
-            <confirm_hctz_25mg_g1/>
-            <_data_hctz_25mg_g1_distributed/>
-            <htn_g1_med_not_confirmed_reason/>
-            <htn_g1_notes/>
+          <grp_htn_grade_1 tag="hidden">
+            <htn_g1_notification tag="hidden"/>
+            <htn_g1_protocol tag="hidden"/>
+            <htn_g1_counseling tag="hidden"/>
+            <confirm_hctz_25mg_g1 tag="hidden"/>
+            <_data_hctz_25mg_g1_distributed tag="hidden"/>
+            <htn_g1_med_not_confirmed_reason tag="hidden"/>
+            <htn_g1_notes tag="hidden"/>
           </grp_htn_grade_1>
-          <grp_stroke_active>
-            <stroke_notification/>
-            <stroke_protocol/>
-            <stroke_counseling/>
-            <stroke_notes/>
+          <grp_stroke_active tag="hidden">
+            <stroke_notification tag="hidden"/>
+            <stroke_protocol tag="hidden"/>
+            <stroke_counseling tag="hidden"/>
+            <stroke_notes tag="hidden"/>
           </grp_stroke_active>
-          <grp_tia>
-            <tia_notification/>
-            <tia_protocol/>
-            <tia_counseling/>
-            <tia_notes/>
+          <grp_tia tag="hidden">
+            <tia_notification tag="hidden"/>
+            <tia_protocol tag="hidden"/>
+            <tia_counseling tag="hidden"/>
+            <tia_notes tag="hidden"/>
           </grp_tia>
-          <grp_old_stroke>
-            <old_stroke_notification/>
-            <old_stroke_protocol/>
-            <old_stroke_counseling/>
-            <old_stroke_notes/>
+          <grp_old_stroke tag="hidden">
+            <old_stroke_notification tag="hidden"/>
+            <old_stroke_protocol tag="hidden"/>
+            <old_stroke_counseling tag="hidden"/>
+            <old_stroke_notes tag="hidden"/>
           </grp_old_stroke>
-          <grp_diabetes_severe>
-            <diabetes_sev_notification/>
-            <diabetes_sev_protocol/>
-            <diabetes_sev_counseling/>
-            <diabetes_sev_notes/>
+          <grp_diabetes_severe tag="hidden">
+            <diabetes_sev_notification tag="hidden"/>
+            <diabetes_sev_protocol tag="hidden"/>
+            <diabetes_sev_counseling tag="hidden"/>
+            <lancets_used_sev tag="hidden"/>
+            <strips_used_sev tag="hidden"/>
+            <diabetes_sev_notes tag="hidden"/>
           </grp_diabetes_severe>
-          <grp_diabetes_mod>
-            <diabetes_mod_notification/>
-            <diabetes_mod_protocol1/>
-            <diabetes_mod_protocol2/>
-            <diabetes_mod_protocol2_1/>
-            <diabetes_mod_protocol2_2/>
-            <diabetes_mod_protocol3/>
-            <diabetes_mod_protocol3_1/>
-            <diabetes_mod_protocol3_2/>
-            <diabetes_mod_protocol4/>
-            <diabetes_mod_protocol4_1/>
-            <diabetes_mod_protocol4_2/>
-            <diabetes_mod_protocol5/>
-            <diabetes_mod_counseling/>
-            <metformin_to_distribute/>
-            <confirm_metformin_500mg/>
-            <_data_metformin_500mg_distributed/>
-            <diabetes_mod_med_not_confirmed_reason/>
-            <diabetes_mod_notes/>
+          <grp_diabetes_mod tag="hidden">
+            <diabetes_mod_notification tag="hidden"/>
+            <diabetes_mod_protocol1 tag="hidden"/>
+            <diabetes_mod_protocol2 tag="hidden"/>
+            <diabetes_mod_protocol2_1 tag="hidden"/>
+            <diabetes_mod_protocol2_2 tag="hidden"/>
+            <diabetes_mod_protocol3 tag="hidden"/>
+            <diabetes_mod_protocol3_1 tag="hidden"/>
+            <diabetes_mod_protocol3_2 tag="hidden"/>
+            <diabetes_mod_protocol4 tag="hidden"/>
+            <diabetes_mod_protocol4_1 tag="hidden"/>
+            <diabetes_mod_protocol4_2 tag="hidden"/>
+            <diabetes_mod_protocol5 tag="hidden"/>
+            <diabetes_mod_counseling tag="hidden"/>
+            <metformin_to_distribute tag="hidden"/>
+            <confirm_metformin_500mg tag="hidden"/>
+            <_data_metformin_500mg_distributed tag="hidden"/>
+            <diabetes_mod_med_not_confirmed_reason tag="hidden"/>
+            <lancets_used_mod tag="hidden"/>
+            <strips_used_mod tag="hidden"/>
+            <diabetes_mod_notes tag="hidden"/>
           </grp_diabetes_mod>
-          <grp_diabetes_mild>
-            <diabetes_mild_notification/>
-            <diabetes_mild_protocol/>
-            <diabetes_mild_counseling/>
-            <diabetes_mild_notes/>
+          <grp_diabetes_mild tag="hidden">
+            <diabetes_mild_notification tag="hidden"/>
+            <diabetes_mild_protocol tag="hidden"/>
+            <diabetes_mild_counseling tag="hidden"/>
+            <lancets_used_mild tag="hidden"/>
+            <strips_used_mild tag="hidden"/>
+            <diabetes_mild_notes tag="hidden"/>
           </grp_diabetes_mild>
-          <grp_appendicitis>
-            <appendicitis_notification/>
-            <appendicitis_protocol/>
-            <appendicitis_counseling/>
-            <appendicitis_notes/>
+          <grp_appendicitis tag="hidden">
+            <appendicitis_notification tag="hidden"/>
+            <appendicitis_protocol tag="hidden"/>
+            <appendicitis_counseling tag="hidden"/>
+            <appendicitis_notes tag="hidden"/>
           </grp_appendicitis>
-          <grp_cholera>
-            <cholera_notification/>
-            <cholera_protocol/>
-            <cholera_counseling/>
-            <cholera_notes/>
+          <grp_cholera tag="hidden">
+            <cholera_notification tag="hidden"/>
+            <cholera_protocol tag="hidden"/>
+            <cholera_counseling tag="hidden"/>
+            <cholera_notes tag="hidden"/>
           </grp_cholera>
-          <grp_gastritis_serious>
-            <gastritis_sev_notification/>
-            <gastritis_sev_protocol/>
-            <gastritis_sev_counseling/>
-            <confirm_litacid_gel_sev/>
-            <_data_litacid_gel_sev_distributed/>
-            <confirm_omeprazole_40mg_sev/>
-            <_data_omeprazole_40mg_sev_distributed/>
-            <confirm_buscopan_20mg_sev/>
-            <_data_buscopan_20mg_sev_distributed/>
-            <gastritis_sev_med_not_confirmed_reason/>
-            <gastritis_sev_notes/>
+          <grp_gastritis_serious tag="hidden">
+            <gastritis_sev_notification tag="hidden"/>
+            <gastritis_sev_protocol tag="hidden"/>
+            <gastritis_sev_counseling tag="hidden"/>
+            <confirm_litacid_gel_sev tag="hidden"/>
+            <_data_litacid_gel_sev_distributed tag="hidden"/>
+            <confirm_omeprazole_40mg_sev tag="hidden"/>
+            <_data_omeprazole_40mg_sev_distributed tag="hidden"/>
+            <confirm_buscopan_20mg_sev tag="hidden"/>
+            <_data_buscopan_20mg_sev_distributed tag="hidden"/>
+            <gastritis_sev_med_not_confirmed_reason tag="hidden"/>
+            <gastritis_sev_notes tag="hidden"/>
           </grp_gastritis_serious>
-          <grp_gastritis_mild>
-            <gastritis_mild_notification/>
-            <gastritis_h_pylori_test_note/>
-            <gastritis_mild_protocol_negative_pylori/>
-            <gastritis_mild_protocol_positive_pylori/>
-            <gastritis_mild_counseling_hpylori_negative/>
-            <gastritis_mild_counseling_hpylori_positive/>
-            <confirm_omeprazole_20mg/>
-            <_data_omeprazole_20mg_distributed/>
-            <confirm_litacid_gel/>
-            <_data_litacid_gel_distributed/>
-            <confirm_amoxycilline_500mg/>
-            <_data_amoxycilline_500mg_distributed/>
-            <confirm_metronidazole_500mg_gastritis/>
-            <_data_metronidazole_500mg_distributed_gastritis/>
-            <gastritis_mild_med_not_confirmed_reason/>
-            <gastritis_mild_notes/>
+          <grp_gastritis_mild tag="hidden">
+            <gastritis_mild_notification tag="hidden"/>
+            <gastritis_h_pylori_test_note tag="hidden"/>
+            <gastritis_mild_protocol_negative_pylori tag="hidden"/>
+            <gastritis_mild_protocol_positive_pylori tag="hidden"/>
+            <gastritis_mild_counseling_hpylori_negative tag="hidden"/>
+            <gastritis_mild_counseling_hpylori_positive tag="hidden"/>
+            <confirm_omeprazole_20mg tag="hidden"/>
+            <_data_omeprazole_20mg_distributed tag="hidden"/>
+            <confirm_litacid_gel tag="hidden"/>
+            <_data_litacid_gel_distributed tag="hidden"/>
+            <confirm_amoxycilline_500mg tag="hidden"/>
+            <_data_amoxycilline_500mg_distributed tag="hidden"/>
+            <confirm_metronidazole_500mg_gastritis tag="hidden"/>
+            <_data_metronidazole_500mg_distributed_gastritis tag="hidden"/>
+            <gastritis_mild_med_not_confirmed_reason tag="hidden"/>
+            <gastritis_mild_notes tag="hidden"/>
           </grp_gastritis_mild>
-          <grp_amoeba_giardia>
-            <amoeba_notification/>
-            <amoeba_protocol/>
-            <amoeba_counseling/>
-            <tinidazole_availability/>
-            <confirm_tinidazole_500mg/>
-            <_data_tinidazole_500mg_distributed/>
-            <confirm_metronidazole_500mg_amoeba_giardia/>
-            <_data_metronidazole_500mg_distributed_amoeba_giardia/>
-            <amoeba_med_not_confirmed_reason/>
-            <amoeba_notes/>
+          <grp_amoeba_giardia tag="hidden">
+            <amoeba_notification tag="hidden"/>
+            <amoeba_protocol tag="hidden"/>
+            <amoeba_counseling tag="hidden"/>
+            <tinidazole_availability tag="hidden"/>
+            <confirm_tinidazole_500mg tag="hidden"/>
+            <_data_tinidazole_500mg_distributed tag="hidden"/>
+            <confirm_metronidazole_500mg_amoeba_giardia tag="hidden"/>
+            <_data_metronidazole_500mg_distributed_amoeba_giardia tag="hidden"/>
+            <amoeba_med_not_confirmed_reason tag="hidden"/>
+            <amoeba_notes tag="hidden"/>
           </grp_amoeba_giardia>
-          <grp_acute_diarrhea>
-            <diarrhea_notification/>
-            <diarrhea_protocol/>
-            <diarrhea_counseling/>
-            <confirm_ors_acute_diarrhea/>
-            <_data_ors_diarrhea_distributed/>
-            <diarrhea_med_not_confirmed_reason/>
-            <diarrhea_notes/>
+          <grp_acute_diarrhea tag="hidden">
+            <diarrhea_notification tag="hidden"/>
+            <diarrhea_protocol tag="hidden"/>
+            <diarrhea_counseling tag="hidden"/>
+            <confirm_ors_acute_diarrhea tag="hidden"/>
+            <_data_ors_diarrhea_distributed tag="hidden"/>
+            <diarrhea_med_not_confirmed_reason tag="hidden"/>
+            <diarrhea_notes tag="hidden"/>
           </grp_acute_diarrhea>
-          <grp_tuberculosis>
-            <tb_notification/>
-            <tb_protocol/>
-            <tb_counseling/>
-            <tb_notes/>
+          <grp_tuberculosis tag="hidden">
+            <tb_notification tag="hidden"/>
+            <tb_protocol tag="hidden"/>
+            <tb_counseling tag="hidden"/>
+            <tb_notes tag="hidden"/>
           </grp_tuberculosis>
-          <grp_asthma>
-            <asthma_notification/>
-            <asthma_protocol/>
-            <asthma_counseling/>
-            <confirm_salbutamol_4mg/>
-            <_data_salbutamol_4mg_distributed/>
-            <confirm_dexamethasone_8mg/>
-            <_data_dexamethasone_8mg_distributed/>
-            <asthma_med_not_confirmed_reason/>
-            <asthma_notes/>
+          <grp_asthma tag="hidden">
+            <asthma_notification tag="hidden"/>
+            <asthma_protocol tag="hidden"/>
+            <asthma_counseling tag="hidden"/>
+            <confirm_salbutamol_4mg tag="hidden"/>
+            <_data_salbutamol_4mg_distributed tag="hidden"/>
+            <confirm_dexamethasone_8mg tag="hidden"/>
+            <_data_dexamethasone_8mg_distributed tag="hidden"/>
+            <asthma_med_not_confirmed_reason tag="hidden"/>
+            <asthma_notes tag="hidden"/>
           </grp_asthma>
-          <grp_pneumonia>
-            <pneumonia_notification/>
-            <pneumonia_protocol/>
-            <pneumonia_counseling/>
-            <confirm_amoxicillin_500mg_pneu/>
-            <_data_amoxicillin_500mg_pneu_distributed/>
-            <pneumonia_med_not_confirmed_reason/>
-            <pneumonia_notes/>
+          <grp_pneumonia tag="hidden">
+            <pneumonia_notification tag="hidden"/>
+            <pneumonia_protocol tag="hidden"/>
+            <pneumonia_counseling tag="hidden"/>
+            <confirm_amoxicillin_500mg_pneu tag="hidden"/>
+            <_data_amoxicillin_500mg_pneu_distributed tag="hidden"/>
+            <pneumonia_med_not_confirmed_reason tag="hidden"/>
+            <pneumonia_notes tag="hidden"/>
           </grp_pneumonia>
-          <grp_flu_like>
-            <flu_notification/>
-            <flu_protocol/>
-            <flu_counseling/>
-            <flu_notes/>
+          <grp_flu_like tag="hidden">
+            <flu_notification tag="hidden"/>
+            <flu_protocol tag="hidden"/>
+            <flu_counseling tag="hidden"/>
+            <flu_notes tag="hidden"/>
           </grp_flu_like>
-          <grp_malaria_pos>
-            <malaria_pos_notification/>
-            <malaria_pos_protocol/>
-            <malaria_pos_counseling/>
-            <confirm_chloroquine_150mg/>
-            <_data_chloroquine_150mg_distributed/>
-            <malaria_pos_med_not_confirmed_reason/>
-            <malaria_pos_notes/>
+          <grp_malaria_pos tag="hidden">
+            <malaria_pos_notification tag="hidden"/>
+            <malaria_pos_protocol tag="hidden"/>
+            <malaria_pos_counseling tag="hidden"/>
+            <confirm_chloroquine_150mg tag="hidden"/>
+            <_data_chloroquine_150mg_distributed tag="hidden"/>
+            <malaria_pos_med_not_confirmed_reason tag="hidden"/>
+            <malaria_pos_notes tag="hidden"/>
           </grp_malaria_pos>
-          <grp_malaria_neg>
-            <malaria_neg_notification/>
-            <malaria_neg_protocol/>
-            <malaria_neg_counseling/>
-            <confirm_paracetamol_500mg_mal_neg/>
-            <_data_paracetamol_500mg_mal_neg_distributed/>
-            <malaria_neg_med_not_confirmed_reason/>
-            <malaria_neg_notes/>
+          <grp_malaria_neg tag="hidden">
+            <malaria_neg_notification tag="hidden"/>
+            <malaria_neg_protocol tag="hidden"/>
+            <malaria_neg_counseling tag="hidden"/>
+            <confirm_paracetamol_500mg_mal_neg tag="hidden"/>
+            <_data_paracetamol_500mg_mal_neg_distributed tag="hidden"/>
+            <malaria_neg_med_not_confirmed_reason tag="hidden"/>
+            <malaria_neg_notes tag="hidden"/>
           </grp_malaria_neg>
-          <grp_std_ulcer>
-            <std_ulcer_notification/>
-            <std_ulcer_protocol/>
-            <std_ulcer_counseling/>
-            <confirm_benzathine_penicillin/>
-            <_data_benzathine_penicillin_distributed/>
-            <std_ulcer_med_not_confirmed_reason/>
-            <std_ulcer_notes/>
+          <grp_std_ulcer tag="hidden">
+            <std_ulcer_notification tag="hidden"/>
+            <std_ulcer_protocol tag="hidden"/>
+            <std_ulcer_counseling tag="hidden"/>
+            <confirm_benzathine_penicillin tag="hidden"/>
+            <_data_benzathine_penicillin_distributed tag="hidden"/>
+            <std_ulcer_med_not_confirmed_reason tag="hidden"/>
+            <std_ulcer_notes tag="hidden"/>
           </grp_std_ulcer>
-          <grp_std_discharge>
-            <std_disc_notification/>
-            <std_disc_protocol/>
-            <std_disc_counseling/>
-            <confirm_ciprofloxacin_500mg_std/>
-            <_data_ciprofloxacin_500mg_std_distributed/>
-            <confirm_doxycycline_100mg_std/>
-            <_data_doxycycline_100mg_std_distributed/>
-            <std_disc_med_not_confirmed_reason/>
-            <std_disc_notes/>
+          <grp_std_discharge tag="hidden">
+            <std_disc_notification tag="hidden"/>
+            <std_disc_protocol tag="hidden"/>
+            <std_disc_counseling tag="hidden"/>
+            <confirm_ciprofloxacin_500mg_std tag="hidden"/>
+            <_data_ciprofloxacin_500mg_std_distributed tag="hidden"/>
+            <confirm_doxycycline_100mg_std tag="hidden"/>
+            <_data_doxycycline_100mg_std_distributed tag="hidden"/>
+            <std_disc_med_not_confirmed_reason tag="hidden"/>
+            <std_disc_notes tag="hidden"/>
           </grp_std_discharge>
-          <grp_uti>
-            <uti_notification/>
-            <uti_protocol/>
-            <uti_counseling/>
-            <confirm_ciprofloxacin_500mg_uti/>
-            <_data_ciprofloxacin_500mg_uti_distributed/>
-            <uti_med_not_confirmed_reason/>
-            <uti_notes/>
+          <grp_uti tag="hidden">
+            <uti_notification tag="hidden"/>
+            <uti_protocol tag="hidden"/>
+            <uti_counseling tag="hidden"/>
+            <confirm_ciprofloxacin_500mg_uti tag="hidden"/>
+            <_data_ciprofloxacin_500mg_uti_distributed tag="hidden"/>
+            <uti_med_not_confirmed_reason tag="hidden"/>
+            <uti_notes tag="hidden"/>
           </grp_uti>
-          <grp_impetigo>
-            <impetigo_notification/>
-            <impetigo_protocol/>
-            <impetigo_counseling/>
-            <confirm_cloxacillin_500mg_yesno/>
-            <confirm_cloxacillin_500mg/>
-            <_data_cloxacillin_500mg_distributed/>
-            <confirm_triple_antibiotic_ointment/>
-            <_data_triple_antibiotic_distributed/>
-            <impetigo_med_not_confirmed_reason/>
-            <impetigo_notes/>
+          <grp_impetigo tag="hidden">
+            <impetigo_notification tag="hidden"/>
+            <impetigo_protocol tag="hidden"/>
+            <impetigo_counseling tag="hidden"/>
+            <confirm_cloxacillin_500mg_yesno tag="hidden"/>
+            <confirm_cloxacillin_500mg tag="hidden"/>
+            <_data_cloxacillin_500mg_distributed tag="hidden"/>
+            <confirm_triple_antibiotic_ointment tag="hidden"/>
+            <_data_triple_antibiotic_distributed tag="hidden"/>
+            <impetigo_med_not_confirmed_reason tag="hidden"/>
+            <impetigo_notes tag="hidden"/>
           </grp_impetigo>
-          <grp_scabies>
-            <scabies_notification/>
-            <scabies_protocol/>
-            <scabies_counseling/>
-            <confirm_benzyl_benzoate_25/>
-            <_data_benzyl_benzoate_distributed/>
-            <confirm_calamine_lotion/>
-            <_data_calamine_lotion_distributed/>
-            <confirm_cloxaciline_500mg_scabies_yesno/>
-            <confirm_cloxaciline_500mg_scabies/>
-            <_data_cloxacilline_500mg_distributed_scabies/>
-            <scabies_med_not_confirmed_reason/>
-            <scabies_notes/>
+          <grp_scabies tag="hidden">
+            <scabies_notification tag="hidden"/>
+            <scabies_protocol tag="hidden"/>
+            <scabies_counseling tag="hidden"/>
+            <confirm_benzyl_benzoate_25 tag="hidden"/>
+            <_data_benzyl_benzoate_distributed tag="hidden"/>
+            <confirm_calamine_lotion tag="hidden"/>
+            <_data_calamine_lotion_distributed tag="hidden"/>
+            <confirm_cloxaciline_500mg_scabies_yesno tag="hidden"/>
+            <confirm_cloxaciline_500mg_scabies tag="hidden"/>
+            <_data_cloxacilline_500mg_distributed_scabies tag="hidden"/>
+            <scabies_med_not_confirmed_reason tag="hidden"/>
+            <scabies_notes tag="hidden"/>
           </grp_scabies>
-          <grp_ringworm>
-            <ringworm_notification/>
-            <ringworm_protocol/>
-            <ringworm_counseling/>
-            <confirm_antifungal_cream/>
-            <_data_antifungal_cream_distributed/>
-            <confirm_griseofulvin_125mg_ringworm_yesno/>
-            <confirm_griseofulvin_125mg_ringworm/>
-            <_data_griseofulvin_125mg_distributed_ringworm/>
-            <confirm_cloxaciline_500mg_ringworm_yesno/>
-            <confirm_cloxaciline_500mg_ringworm/>
-            <_data_cloxacilline_500mg_distributed_ringworm/>
-            <ringworm_med_not_confirmed_reason/>
-            <ringworm_notes/>
+          <grp_ringworm tag="hidden">
+            <ringworm_notification tag="hidden"/>
+            <ringworm_protocol tag="hidden"/>
+            <ringworm_counseling tag="hidden"/>
+            <confirm_antifungal_cream tag="hidden"/>
+            <_data_antifungal_cream_distributed tag="hidden"/>
+            <confirm_griseofulvin_125mg_ringworm_yesno tag="hidden"/>
+            <confirm_griseofulvin_125mg_ringworm tag="hidden"/>
+            <_data_griseofulvin_125mg_distributed_ringworm tag="hidden"/>
+            <confirm_cloxaciline_500mg_ringworm_yesno tag="hidden"/>
+            <confirm_cloxaciline_500mg_ringworm tag="hidden"/>
+            <_data_cloxacilline_500mg_distributed_ringworm tag="hidden"/>
+            <ringworm_med_not_confirmed_reason tag="hidden"/>
+            <ringworm_notes tag="hidden"/>
           </grp_ringworm>
-          <grp_moderate_anemia>
-            <anemia_notification/>
-            <anemia_protocol/>
-            <anemia_counseling/>
-            <confirm_iron_folic_acid/>
-            <_data_iron_folic_acid_distributed/>
-            <anemia_med_not_confirmed_reason/>
-            <anemia_notes/>
+          <grp_moderate_anemia tag="hidden">
+            <anemia_notification tag="hidden"/>
+            <anemia_protocol tag="hidden"/>
+            <anemia_counseling tag="hidden"/>
+            <confirm_iron_folic_acid tag="hidden"/>
+            <_data_iron_folic_acid_distributed tag="hidden"/>
+            <anemia_med_not_confirmed_reason tag="hidden"/>
+            <anemia_notes tag="hidden"/>
           </grp_moderate_anemia>
-          <grp_additional_prescriptions>
-            <prescribe_additional_medication/>
-            <additional_med_protocol/>
-            <confirm_paracetamol_500mg_additional/>
-            <_data_paracetamol_500mg_additional_distributed/>
-            <confirm_iron_folic_acid_additional/>
-            <_data_iron_folic_acid_additional_distributed/>
-            <additional_med_not_confirmed_reason/>
-            <additional_med_notes/>
+          <grp_additional_prescriptions tag="hidden">
+            <prescribe_additional_medication tag="hidden"/>
+            <additional_med_protocol tag="hidden"/>
+            <confirm_paracetamol_500mg_additional tag="hidden"/>
+            <_data_paracetamol_500mg_additional_distributed tag="hidden"/>
+            <confirm_iron_folic_acid_additional tag="hidden"/>
+            <_data_iron_folic_acid_additional_distributed tag="hidden"/>
+            <additional_med_not_confirmed_reason tag="hidden"/>
+            <additional_med_notes tag="hidden"/>
           </grp_additional_prescriptions>
-          <referrals>
-            <referral_location/>
-            <referral_location_other/>
+          <referrals tag="hidden">
+            <referral_location tag="hidden"/>
+            <referral_location_other tag="hidden"/>
           </referrals>
-          <total_iv_line/>
-          <total_nifedipine_20mg/>
-          <total_paracetamol_500mg/>
-          <total_amoxycillin_500mg/>
-          <total_hctz_25mg/>
-          <total_ciprofloxacin_500mg/>
-          <total_metronidazole_500mg/>
-          <total_cloxacillin_500mg/>
-          <total_litacid_gel/>
-          <total_iron_folic_acid/>
-          <total_nifedipine_10mg/>
-          <total_enalapril_10mg/>
-          <total_metformin_500mg/>
-          <total_omeprazole_40mg/>
-          <total_buscopan_20mg/>
-          <total_omeprazole_20mg/>
-          <total_tinidazole_500mg/>
-          <total_ors/>
-          <total_salbutamol_4mg/>
-          <total_dexamethasone_8mg/>
-          <total_chloroquine_150mg/>
-          <total_benzathine_penicillin/>
-          <total_doxycycline_100mg/>
-          <total_triple_antibiotic/>
-          <total_benzyl_benzoate_25/>
-          <total_calamine_lotion/>
-          <total_antifungal_cream/>
-          <total_griseofulvin_125mg/>
+          <compiled_notes tag="hidden"/>
+          <total_iv_line tag="hidden"/>
+          <total_nifedipine_20mg tag="hidden"/>
+          <total_paracetamol_500mg tag="hidden"/>
+          <total_amoxycillin_500mg tag="hidden"/>
+          <total_hctz_25mg tag="hidden"/>
+          <total_ciprofloxacin_500mg tag="hidden"/>
+          <total_metronidazole_500mg tag="hidden"/>
+          <total_cloxacillin_500mg tag="hidden"/>
+          <total_litacid_gel tag="hidden"/>
+          <total_iron_folic_acid tag="hidden"/>
+          <total_nifedipine_10mg tag="hidden"/>
+          <total_enalapril_10mg tag="hidden"/>
+          <total_metformin_500mg tag="hidden"/>
+          <total_omeprazole_40mg tag="hidden"/>
+          <total_buscopan_20mg tag="hidden"/>
+          <total_omeprazole_20mg tag="hidden"/>
+          <total_tinidazole_500mg tag="hidden"/>
+          <total_ors tag="hidden"/>
+          <total_salbutamol_4mg tag="hidden"/>
+          <total_dexamethasone_8mg tag="hidden"/>
+          <total_chloroquine_150mg tag="hidden"/>
+          <total_benzathine_penicillin tag="hidden"/>
+          <total_doxycycline_100mg tag="hidden"/>
+          <total_triple_antibiotic tag="hidden"/>
+          <total_benzyl_benzoate_25 tag="hidden"/>
+          <total_calamine_lotion tag="hidden"/>
+          <total_antifungal_cream tag="hidden"/>
+          <total_griseofulvin_125mg tag="hidden"/>
+          <total_lancets tag="hidden"/>
+          <total_strips tag="hidden"/>
+          <summary>
+            <summary_patient_info/>
+            <summary_urgent_referral/>
+            <summary_conditions/>
+            <summary_diagnostic_tests/>
+            <summary_clinical_notes/>
+          </summary>
           <clinic_id/>
-          <prescription_summary db-doc="TRUE">
+          <prescription_summary db-doc="true">
             <stock_monitoring_reported_date/>
             <place_id/>
             <type/>
@@ -5549,6 +5763,8 @@ OSWA
               <benzyl_benzoate_25_used_in_ADT_Form014_Summary/>
               <calamine_lotion_used_in_ADT_Form014_Summary/>
               <antifungal_cream_used_in_ADT_Form014_Summary/>
+              <lancets_used_in_ADT_Form014_Summary/>
+              <strips_used_in_ADT_Form014_Summary/>
               <nifedipine_20mg_used_in/>
               <nifedipine_20mg___set/>
               <nifedipine_20mg___unit/>
@@ -5727,6 +5943,8 @@ OSWA
       <bind nodeset="/data/_result_hypertension_grade_1" type="string"/>
       <bind nodeset="/data/_result_hypertension_grade_2" type="string"/>
       <bind nodeset="/data/_result_hypertension_grade_3" type="string"/>
+      <bind nodeset="/data/_pregnancy_form_purpose" type="string"/>
+      <bind nodeset="/data/_pregnancy_test_result" type="string"/>
       <bind nodeset="/data/_result_gestational_hypertension_no_serious" type="string"/>
       <bind nodeset="/data/_result_gestational_hypertension_serious" type="string"/>
       <bind nodeset="/data/_result_pre_eclampsia" type="string"/>
@@ -5882,6 +6100,9 @@ OSWA
       <bind nodeset="/data/grp_preg_uti/_data_amoxicillin_500mg_preg_distributed" type="string" calculate="if(selected( /data/grp_preg_uti/confirm_amoxicillin_500mg_preg , 'confirmation'), 21, 0)"/>
       <bind nodeset="/data/grp_preg_uti/preg_uti_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_preg_uti/confirm_amoxicillin_500mg_preg , 'confirmation'))"/>
       <bind nodeset="/data/grp_preg_uti/preg_uti_notes" type="string"/>
+      <bind nodeset="/data/grp_pregnancy_registration_summary" relevant=" /data/_pregnancy_form_purpose  = 'register_pregnancy'"/>
+      <bind nodeset="/data/grp_pregnancy_registration_summary/pregnancy_test_result_display" readonly="true()" type="string" relevant=" /data/_pregnancy_test_result  != ''"/>
+      <bind nodeset="/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_htn_urgency" relevant=" /data/_result_hypertensive_urgency  = 'true'"/>
       <bind nodeset="/data/grp_htn_urgency/htn_urgency_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_htn_urgency/htn_urgency_protocol" readonly="true()" type="string"/>
@@ -5932,6 +6153,8 @@ OSWA
       <bind nodeset="/data/grp_diabetes_severe/diabetes_sev_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_diabetes_severe/diabetes_sev_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_diabetes_severe/diabetes_sev_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_diabetes_severe/lancets_used_sev" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_severe/lancets_used_sev:jr:constraintMsg')"/>
+      <bind nodeset="/data/grp_diabetes_severe/strips_used_sev" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_severe/strips_used_sev:jr:constraintMsg')"/>
       <bind nodeset="/data/grp_diabetes_severe/diabetes_sev_notes" type="string"/>
       <bind nodeset="/data/grp_diabetes_mod" relevant=" /data/_result_hyperglycemia_moderate  = 'true'"/>
       <bind nodeset="/data/grp_diabetes_mod/diabetes_mod_notification" readonly="true()" type="string"/>
@@ -5951,11 +6174,15 @@ OSWA
       <bind nodeset="/data/grp_diabetes_mod/confirm_metformin_500mg" type="string"/>
       <bind nodeset="/data/grp_diabetes_mod/_data_metformin_500mg_distributed" type="string" calculate="if(selected( /data/grp_diabetes_mod/confirm_metformin_500mg , 'confirmation'),  /data/grp_diabetes_mod/metformin_to_distribute , 0)"/>
       <bind nodeset="/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason" type="string" required="true()" relevant="not(selected( /data/grp_diabetes_mod/confirm_metformin_500mg , 'confirmation'))"/>
+      <bind nodeset="/data/grp_diabetes_mod/lancets_used_mod" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_mod/lancets_used_mod:jr:constraintMsg')"/>
+      <bind nodeset="/data/grp_diabetes_mod/strips_used_mod" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_mod/strips_used_mod:jr:constraintMsg')"/>
       <bind nodeset="/data/grp_diabetes_mod/diabetes_mod_notes" type="string"/>
       <bind nodeset="/data/grp_diabetes_mild" relevant=" /data/_result_hyperglycemia_mild  = 'true'"/>
       <bind nodeset="/data/grp_diabetes_mild/diabetes_mild_notification" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_diabetes_mild/diabetes_mild_protocol" readonly="true()" type="string"/>
       <bind nodeset="/data/grp_diabetes_mild/diabetes_mild_counseling" readonly="true()" type="string"/>
+      <bind nodeset="/data/grp_diabetes_mild/lancets_used_mild" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_mild/lancets_used_mild:jr:constraintMsg')"/>
+      <bind nodeset="/data/grp_diabetes_mild/strips_used_mild" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/grp_diabetes_mild/strips_used_mild:jr:constraintMsg')"/>
       <bind nodeset="/data/grp_diabetes_mild/diabetes_mild_notes" type="string"/>
       <bind nodeset="/data/grp_appendicitis" relevant=" /data/_result_appendicitis_cholecystitis  = 'true'"/>
       <bind nodeset="/data/grp_appendicitis/appendicitis_notification" readonly="true()" type="string"/>
@@ -6143,34 +6370,42 @@ OSWA
       <bind nodeset="/data/referrals" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/referrals/referral_location" type="string" required="true()"/>
       <bind nodeset="/data/referrals/referral_location_other" type="string" required="true()" relevant="selected( /data/referrals/referral_location , 'other')"/>
+      <bind nodeset="/data/compiled_notes" type="string" calculate="concat(if( /data/grp_triage_emergency/emergency_symptoms_during_triage_notes  != '', concat('Emergency Symptoms During Triage: ',  /data/grp_triage_emergency/emergency_symptoms_during_triage_notes , '. '), ''), if( /data/grp_pre_eclampsia/pre_eclampsia_notes  != '', concat('Pre-Eclampsia: ',  /data/grp_pre_eclampsia/pre_eclampsia_notes , '. '), ''), if( /data/grp_threatened_miscarriage_gt20/miscarriage_gt20_notes  != '', concat('Threatened Miscarriage (&gt;20 wks): ',  /data/grp_threatened_miscarriage_gt20/miscarriage_gt20_notes , '. '), ''), if( /data/grp_threatened_miscarriage_lt20/miscarriage_lt20_notes  != '', concat('Threatened Miscarriage (&lt;20 wks): ',  /data/grp_threatened_miscarriage_lt20/miscarriage_lt20_notes , '. '), ''), if( /data/grp_gestational_htn_sev/gest_htn_sev_notes  != '', concat('Gestational Hypertension (Severe): ',  /data/grp_gestational_htn_sev/gest_htn_sev_notes , '. '), ''), if( /data/grp_gestational_htn_mild/gest_htn_mild_notes  != '', concat('Gestational Hypertension (Mild): ',  /data/grp_gestational_htn_mild/gest_htn_mild_notes , '. '), ''), if( /data/grp_preg_uti/preg_uti_notes  != '', concat('Genitourinary Infection in Pregnancy: ',  /data/grp_preg_uti/preg_uti_notes , '. '), ''), if( /data/grp_htn_urgency/htn_urgency_notes  != '', concat('Hypertensive Urgency: ',  /data/grp_htn_urgency/htn_urgency_notes , '. '), ''), if( /data/grp_htn_grade_3/htn_g3_notes  != '', concat('Hypertension Grade 3: ',  /data/grp_htn_grade_3/htn_g3_notes , '. '), ''), if( /data/grp_htn_grade_2/htn_g2_notes  != '', concat('Hypertension Grade 2: ',  /data/grp_htn_grade_2/htn_g2_notes , '. '), ''), if( /data/grp_htn_grade_1/htn_g1_notes  != '', concat('Hypertension Grade 1: ',  /data/grp_htn_grade_1/htn_g1_notes , '. '), ''), if( /data/grp_stroke_active/stroke_notes  != '', concat('Active Stroke: ',  /data/grp_stroke_active/stroke_notes , '. '), ''), if( /data/grp_tia/tia_notes  != '', concat('Transient Ischemic Attack (TIA): ',  /data/grp_tia/tia_notes , '. '), ''), if( /data/grp_old_stroke/old_stroke_notes  != '', concat('Old / Prior Stroke: ',  /data/grp_old_stroke/old_stroke_notes , '. '), ''), if( /data/grp_diabetes_severe/diabetes_sev_notes  != '', concat('Diabetes - Severe Hyperglycemia: ',  /data/grp_diabetes_severe/diabetes_sev_notes , '. '), ''), if( /data/grp_diabetes_mod/diabetes_mod_notes  != '', concat('Diabetes - Hyperglycemia: ',  /data/grp_diabetes_mod/diabetes_mod_notes , '. '), ''), if( /data/grp_diabetes_mild/diabetes_mild_notes  != '', concat('Mild Hyperglycemia: ',  /data/grp_diabetes_mild/diabetes_mild_notes , '. '), ''), if( /data/grp_appendicitis/appendicitis_notes  != '', concat('Risk of Appendicitis / Cholecystitis: ',  /data/grp_appendicitis/appendicitis_notes , '. '), ''), if( /data/grp_cholera/cholera_notes  != '', concat('Risk of Cholera: ',  /data/grp_cholera/cholera_notes , '. '), ''), if( /data/grp_gastritis_serious/gastritis_sev_notes  != '', concat('Gastritis / Ulcer (Severe): ',  /data/grp_gastritis_serious/gastritis_sev_notes , '. '), ''), if( /data/grp_gastritis_mild/gastritis_mild_notes  != '', concat('Gastritis / Ulcer: ',  /data/grp_gastritis_mild/gastritis_mild_notes , '. '), ''), if( /data/grp_amoeba_giardia/amoeba_notes  != '', concat('Possible Amoeba or Giardia Infection: ',  /data/grp_amoeba_giardia/amoeba_notes , '. '), ''), if( /data/grp_acute_diarrhea/diarrhea_notes  != '', concat('Acute Diarrhea: ',  /data/grp_acute_diarrhea/diarrhea_notes , '. '), ''), if( /data/grp_tuberculosis/tb_notes  != '', concat('Risk of Tuberculosis: ',  /data/grp_tuberculosis/tb_notes , '. '), ''), if( /data/grp_asthma/asthma_notes  != '', concat('Asthma: ',  /data/grp_asthma/asthma_notes , '. '), ''), if( /data/grp_pneumonia/pneumonia_notes  != '', concat('Risk of Pneumonia: ',  /data/grp_pneumonia/pneumonia_notes , '. '), ''), if( /data/grp_flu_like/flu_notes  != '', concat('Flu-Like Syndrome: ',  /data/grp_flu_like/flu_notes , '. '), ''), if( /data/grp_malaria_pos/malaria_pos_notes  != '', concat('Malaria Positive: ',  /data/grp_malaria_pos/malaria_pos_notes , '. '), ''), if( /data/grp_malaria_neg/malaria_neg_notes  != '', concat('Malaria Negative: ',  /data/grp_malaria_neg/malaria_neg_notes , '. '), ''), if( /data/grp_std_ulcer/std_ulcer_notes  != '', concat('Risk of STD (Ulcer / Syphilis): ',  /data/grp_std_ulcer/std_ulcer_notes , '. '), ''), if( /data/grp_std_discharge/std_disc_notes  != '', concat('Risk of STD (Discharge): ',  /data/grp_std_discharge/std_disc_notes , '. '), ''), if( /data/grp_uti/uti_notes  != '', concat('Urinary Tract Infection: ',  /data/grp_uti/uti_notes , '. '), ''), if( /data/grp_impetigo/impetigo_notes  != '', concat('Impetigo or Folliculitis: ',  /data/grp_impetigo/impetigo_notes , '. '), ''), if( /data/grp_scabies/scabies_notes  != '', concat('Scabies: ',  /data/grp_scabies/scabies_notes , '. '), ''), if( /data/grp_ringworm/ringworm_notes  != '', concat('Ringworm (Tinea): ',  /data/grp_ringworm/ringworm_notes , '. '), ''), if( /data/grp_moderate_anemia/anemia_notes  != '', concat('Moderate Anemia: ',  /data/grp_moderate_anemia/anemia_notes , '. '), ''), if( /data/grp_additional_prescriptions/additional_med_notes  != '', concat('Additional Prescriptions: ',  /data/grp_additional_prescriptions/additional_med_notes , '. '), ''))"/>
       <bind nodeset="/data/total_iv_line" type="string" calculate="if( /data/grp_triage_emergency/confirm_iv_line  = 'yes', 1, 0)"/>
-      <bind nodeset="/data/total_nifedipine_20mg" type="string" calculate=" /data/grp_pre_eclampsia/_data_nifedipine_20mg_pre_eclampsia_distributed  +  /data/grp_threatened_miscarriage_gt20/_data_nifedipine_20mg_gt20_distributed  +  /data/grp_gestational_htn_sev/_data_nifedipine_20mg_gest_sev_distributed  +  /data/grp_gestational_htn_mild/_data_nifedipine_20mg_gest_mild_distributed "/>
-      <bind nodeset="/data/total_paracetamol_500mg" type="string" calculate=" /data/grp_threatened_miscarriage_gt20/_data_paracetamol_500mg_gt20_distributed  +  /data/grp_threatened_miscarriage_lt20/_data_paracetamol_500mg_lt20_distributed  + if(selected( /data/grp_malaria_neg/confirm_paracetamol_500mg_mal_neg , 'confirmation'), 18, 0) +  /data/grp_additional_prescriptions/_data_paracetamol_500mg_additional_distributed "/>
-      <bind nodeset="/data/total_amoxycillin_500mg" type="string" calculate=" /data/grp_preg_uti/_data_amoxicillin_500mg_preg_distributed  +  /data/grp_gastritis_mild/_data_amoxycilline_500mg_distributed  +  /data/grp_pneumonia/_data_amoxicillin_500mg_pneu_distributed "/>
-      <bind nodeset="/data/total_hctz_25mg" type="string" calculate=" /data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed  +  /data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed "/>
-      <bind nodeset="/data/total_ciprofloxacin_500mg" type="string" calculate=" /data/grp_std_discharge/_data_ciprofloxacin_500mg_std_distributed  +  /data/grp_uti/_data_ciprofloxacin_500mg_uti_distributed "/>
-      <bind nodeset="/data/total_metronidazole_500mg" type="string" calculate=" /data/grp_gastritis_mild/_data_metronidazole_500mg_distributed_gastritis  +  /data/grp_amoeba_giardia/_data_metronidazole_500mg_distributed_amoeba_giardia "/>
-      <bind nodeset="/data/total_cloxacillin_500mg" type="string" calculate=" /data/grp_impetigo/_data_cloxacillin_500mg_distributed  +  /data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies  +  /data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm "/>
-      <bind nodeset="/data/total_litacid_gel" type="string" calculate=" /data/grp_gastritis_serious/_data_litacid_gel_sev_distributed  +  /data/grp_gastritis_mild/_data_litacid_gel_distributed "/>
-      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/grp_moderate_anemia/_data_iron_folic_acid_distributed  +  /data/grp_additional_prescriptions/_data_iron_folic_acid_additional_distributed "/>
-      <bind nodeset="/data/total_nifedipine_10mg" type="string" calculate=" /data/grp_htn_urgency/_data_nifedipine_10mg_urgency_distributed "/>
-      <bind nodeset="/data/total_enalapril_10mg" type="string" calculate=" /data/grp_htn_grade_2/_data_enalapril_10mg_g2_distributed "/>
-      <bind nodeset="/data/total_metformin_500mg" type="string" calculate=" /data/grp_diabetes_mod/_data_metformin_500mg_distributed "/>
-      <bind nodeset="/data/total_omeprazole_40mg" type="string" calculate=" /data/grp_gastritis_serious/_data_omeprazole_40mg_sev_distributed "/>
-      <bind nodeset="/data/total_buscopan_20mg" type="string" calculate=" /data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed "/>
-      <bind nodeset="/data/total_omeprazole_20mg" type="string" calculate=" /data/grp_gastritis_mild/_data_omeprazole_20mg_distributed "/>
-      <bind nodeset="/data/total_tinidazole_500mg" type="string" calculate=" /data/grp_amoeba_giardia/_data_tinidazole_500mg_distributed "/>
-      <bind nodeset="/data/total_ors" type="string" calculate=" /data/grp_acute_diarrhea/_data_ors_diarrhea_distributed "/>
-      <bind nodeset="/data/total_salbutamol_4mg" type="string" calculate=" /data/grp_asthma/_data_salbutamol_4mg_distributed "/>
-      <bind nodeset="/data/total_dexamethasone_8mg" type="string" calculate=" /data/grp_asthma/_data_dexamethasone_8mg_distributed "/>
-      <bind nodeset="/data/total_chloroquine_150mg" type="string" calculate=" /data/grp_malaria_pos/_data_chloroquine_150mg_distributed "/>
-      <bind nodeset="/data/total_benzathine_penicillin" type="string" calculate=" /data/grp_std_ulcer/_data_benzathine_penicillin_distributed "/>
-      <bind nodeset="/data/total_doxycycline_100mg" type="string" calculate=" /data/grp_std_discharge/_data_doxycycline_100mg_std_distributed "/>
-      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate=" /data/grp_impetigo/_data_triple_antibiotic_distributed "/>
-      <bind nodeset="/data/total_benzyl_benzoate_25" type="string" calculate=" /data/grp_scabies/_data_benzyl_benzoate_distributed "/>
-      <bind nodeset="/data/total_calamine_lotion" type="string" calculate=" /data/grp_scabies/_data_calamine_lotion_distributed "/>
-      <bind nodeset="/data/total_antifungal_cream" type="string" calculate=" /data/grp_ringworm/_data_antifungal_cream_distributed "/>
-      <bind nodeset="/data/total_griseofulvin_125mg" type="string" calculate=" /data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm "/>
+      <bind nodeset="/data/total_nifedipine_20mg" type="string" calculate="coalesce( /data/grp_pre_eclampsia/_data_nifedipine_20mg_pre_eclampsia_distributed , 0) + coalesce( /data/grp_threatened_miscarriage_gt20/_data_nifedipine_20mg_gt20_distributed , 0) + coalesce( /data/grp_gestational_htn_sev/_data_nifedipine_20mg_gest_sev_distributed , 0) + coalesce( /data/grp_gestational_htn_mild/_data_nifedipine_20mg_gest_mild_distributed , 0)"/>
+      <bind nodeset="/data/total_paracetamol_500mg" type="string" calculate="coalesce( /data/grp_threatened_miscarriage_gt20/_data_paracetamol_500mg_gt20_distributed , 0) + coalesce( /data/grp_threatened_miscarriage_lt20/_data_paracetamol_500mg_lt20_distributed , 0) + if(selected( /data/grp_malaria_neg/confirm_paracetamol_500mg_mal_neg , 'confirmation'), 18, 0) + coalesce( /data/grp_additional_prescriptions/_data_paracetamol_500mg_additional_distributed , 0)"/>
+      <bind nodeset="/data/total_amoxycillin_500mg" type="string" calculate="coalesce( /data/grp_preg_uti/_data_amoxicillin_500mg_preg_distributed , 0) + coalesce( /data/grp_gastritis_mild/_data_amoxycilline_500mg_distributed , 0) + coalesce( /data/grp_pneumonia/_data_amoxicillin_500mg_pneu_distributed , 0)"/>
+      <bind nodeset="/data/total_hctz_25mg" type="string" calculate="coalesce( /data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed , 0) + coalesce( /data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed , 0)"/>
+      <bind nodeset="/data/total_ciprofloxacin_500mg" type="string" calculate="coalesce( /data/grp_std_discharge/_data_ciprofloxacin_500mg_std_distributed , 0) + coalesce( /data/grp_uti/_data_ciprofloxacin_500mg_uti_distributed , 0)"/>
+      <bind nodeset="/data/total_metronidazole_500mg" type="string" calculate="coalesce( /data/grp_gastritis_mild/_data_metronidazole_500mg_distributed_gastritis , 0) + coalesce( /data/grp_amoeba_giardia/_data_metronidazole_500mg_distributed_amoeba_giardia , 0)"/>
+      <bind nodeset="/data/total_cloxacillin_500mg" type="string" calculate="coalesce( /data/grp_impetigo/_data_cloxacillin_500mg_distributed , 0) + coalesce( /data/grp_scabies/_data_cloxacilline_500mg_distributed_scabies , 0) + coalesce( /data/grp_ringworm/_data_cloxacilline_500mg_distributed_ringworm , 0)"/>
+      <bind nodeset="/data/total_litacid_gel" type="string" calculate="coalesce( /data/grp_gastritis_serious/_data_litacid_gel_sev_distributed , 0) + coalesce( /data/grp_gastritis_mild/_data_litacid_gel_distributed , 0)"/>
+      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate="coalesce( /data/grp_moderate_anemia/_data_iron_folic_acid_distributed , 0) + coalesce( /data/grp_additional_prescriptions/_data_iron_folic_acid_additional_distributed , 0)"/>
+      <bind nodeset="/data/total_nifedipine_10mg" type="string" calculate="coalesce( /data/grp_htn_urgency/_data_nifedipine_10mg_urgency_distributed , 0)"/>
+      <bind nodeset="/data/total_enalapril_10mg" type="string" calculate="coalesce( /data/grp_htn_grade_2/_data_enalapril_10mg_g2_distributed , 0)"/>
+      <bind nodeset="/data/total_metformin_500mg" type="string" calculate="coalesce( /data/grp_diabetes_mod/_data_metformin_500mg_distributed , 0)"/>
+      <bind nodeset="/data/total_omeprazole_40mg" type="string" calculate="coalesce( /data/grp_gastritis_serious/_data_omeprazole_40mg_sev_distributed , 0)"/>
+      <bind nodeset="/data/total_buscopan_20mg" type="string" calculate="coalesce( /data/grp_gastritis_serious/_data_buscopan_20mg_sev_distributed , 0)"/>
+      <bind nodeset="/data/total_omeprazole_20mg" type="string" calculate="coalesce( /data/grp_gastritis_mild/_data_omeprazole_20mg_distributed , 0)"/>
+      <bind nodeset="/data/total_tinidazole_500mg" type="string" calculate="coalesce( /data/grp_amoeba_giardia/_data_tinidazole_500mg_distributed , 0)"/>
+      <bind nodeset="/data/total_ors" type="string" calculate="coalesce( /data/grp_acute_diarrhea/_data_ors_diarrhea_distributed , 0)"/>
+      <bind nodeset="/data/total_salbutamol_4mg" type="string" calculate="coalesce( /data/grp_asthma/_data_salbutamol_4mg_distributed , 0)"/>
+      <bind nodeset="/data/total_dexamethasone_8mg" type="string" calculate="coalesce( /data/grp_asthma/_data_dexamethasone_8mg_distributed , 0)"/>
+      <bind nodeset="/data/total_chloroquine_150mg" type="string" calculate="coalesce( /data/grp_malaria_pos/_data_chloroquine_150mg_distributed , 0)"/>
+      <bind nodeset="/data/total_benzathine_penicillin" type="string" calculate="coalesce( /data/grp_std_ulcer/_data_benzathine_penicillin_distributed , 0)"/>
+      <bind nodeset="/data/total_doxycycline_100mg" type="string" calculate="coalesce( /data/grp_std_discharge/_data_doxycycline_100mg_std_distributed , 0)"/>
+      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate="coalesce( /data/grp_impetigo/_data_triple_antibiotic_distributed , 0)"/>
+      <bind nodeset="/data/total_benzyl_benzoate_25" type="string" calculate="coalesce( /data/grp_scabies/_data_benzyl_benzoate_distributed , 0)"/>
+      <bind nodeset="/data/total_calamine_lotion" type="string" calculate="coalesce( /data/grp_scabies/_data_calamine_lotion_distributed , 0)"/>
+      <bind nodeset="/data/total_antifungal_cream" type="string" calculate="coalesce( /data/grp_ringworm/_data_antifungal_cream_distributed , 0)"/>
+      <bind nodeset="/data/total_griseofulvin_125mg" type="string" calculate="coalesce( /data/grp_ringworm/_data_griseofulvin_125mg_distributed_ringworm , 0)"/>
+      <bind nodeset="/data/total_lancets" type="string" calculate="coalesce( /data/grp_diabetes_severe/lancets_used_sev , 0) + coalesce( /data/grp_diabetes_mod/lancets_used_mod , 0) + coalesce( /data/grp_diabetes_mild/lancets_used_mild , 0)"/>
+      <bind nodeset="/data/total_strips" type="string" calculate="coalesce( /data/grp_diabetes_severe/strips_used_sev , 0) + coalesce( /data/grp_diabetes_mod/strips_used_mod , 0) + coalesce( /data/grp_diabetes_mild/strips_used_mild , 0)"/>
+      <bind nodeset="/data/summary/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary/summary_urgent_referral" type="string" calculate="if( /data/referrals/referral_location  != '', concat('Referral Made: Yes (Location: ', if(selected( /data/referrals/referral_location , 'zl_cls'), 'Zanmi Lsante health center in Cerca La Source', ''), if(selected( /data/referrals/referral_location , 'hopital_sainte_therese'), if(selected( /data/referrals/referral_location , 'zl_cls'), ', ', ''), ''), if(selected( /data/referrals/referral_location , 'hopital_sainte_therese'), 'Hopital Sainte Therese', ''), if(selected( /data/referrals/referral_location , 'hpital_alma_mater'), if(selected( /data/referrals/referral_location , 'zl_cls') or selected( /data/referrals/referral_location , 'hopital_sainte_therese'), ', ', ''), ''), if(selected( /data/referrals/referral_location , 'hpital_alma_mater'), 'Hopital Alma Mater', ''), if(selected( /data/referrals/referral_location , 'other'), if(selected( /data/referrals/referral_location , 'zl_cls') or selected( /data/referrals/referral_location , 'hopital_sainte_therese') or selected( /data/referrals/referral_location , 'hpital_alma_mater'), ', ', ''), ''), if(selected( /data/referrals/referral_location , 'other'), if( /data/referrals/referral_location_other  != '',  /data/referrals/referral_location_other , 'Other'), ''), ')'), 'Referral Made: No')"/>
+      <bind nodeset="/data/summary/summary_conditions" type="string" calculate="if( /data/has_positive_condition  != 'true', 'Conditions Identified: None', concat('Conditions Identified: ', if( /data/_has_emergency_symptoms  = 'true', 'Emergency Symptoms during Triage; ', ''), if( /data/_result_hyperglycemia_severe  = 'true', 'Severe Hyperglycemia; ', ''), if( /data/_result_hyperglycemia_moderate  = 'true', 'Hyperglycemia; ', ''), if( /data/_result_hyperglycemia_mild  = 'true', 'Mild Hyperglycemia; ', ''), if( /data/_result_hypertensive_urgency  = 'true', 'Hypertensive Urgency; ', ''), if( /data/_result_hypertension_grade_3  = 'true', 'Hypertension Grade 3; ', ''), if( /data/_result_hypertension_grade_2  = 'true', 'Hypertension Grade 2; ', ''), if( /data/_result_hypertension_grade_1  = 'true', 'Hypertension Grade 1; ', ''), if( /data/_result_pre_eclampsia  = 'true', 'Pre-Eclampsia; ', ''), if( /data/_result_gestational_hypertension_serious  = 'true', 'Gestational HTN (Severe); ', ''), if( /data/_result_gestational_hypertension_no_serious  = 'true', 'Gestational HTN (Mild); ', ''), if( /data/_result_threatened_miscarriage_less20  = 'true' or  /data/_result_threatened_miscarriage_greater20  = 'true', 'Threatened Miscarriage; ', ''), if( /data/_result_genitourinary_infections  = 'true', 'Pregnancy UTI; ', ''), if( /data/_result_stroke  = 'true', 'Active Stroke; ', ''), if( /data/_result_transient_ischemic_attack  = 'true', 'TIA; ', ''), if( /data/_result_old_stroke  = 'true', 'Prior Stroke; ', ''), if( /data/_result_appendicitis_cholecystitis  = 'true', 'Appendicitis/Cholecystitis; ', ''), if( /data/_result_risk_of_cholera  = 'true', 'Risk of Cholera; ', ''), if( /data/_result_acute_diarrhea  = 'true', 'Acute Diarrhea; ', ''), if( /data/_result_amoeba_giardia  = 'true', 'Amoeba/Giardia; ', ''), if( /data/_result_gastritis_serious  = 'true', 'Severe Gastritis; ', ''), if( /data/_result_gastritis_not_serious  = 'true', 'Gastritis; ', ''), if( /data/_result_risk_malaria  = 'true', 'Malaria; ', ''), if( /data/_result_tuberculosis  = 'true', 'Tuberculosis; ', ''), if( /data/_result_pneumonia  = 'true', 'Pneumonia; ', ''), if( /data/_result_asthma  = 'true', 'Asthma; ', ''), if( /data/_result_flu_like_syndrome  = 'true', 'Flu-Like Syndrome; ', ''), if( /data/_result_uti  = 'true', 'UTI; ', ''), if( /data/_result_std_discharge  = 'true' or  /data/_result_std_ulcer  = 'true', 'STD Risk; ', ''), if( /data/_result_moderate_anemia  = 'true', 'Moderate Anemia; ', ''), if( /data/_result_impetigo_folliculitis  = 'true', 'Impetigo/Folliculitis; ', ''), if( /data/_result_scabies  = 'true', 'Scabies; ', ''), if( /data/_result_ring_worm  = 'true', 'Ringworm; ', '')))"/>
+      <bind nodeset="/data/summary/summary_diagnostic_tests" type="string" calculate="if( /data/_malaria_rapid_test_result  = '' and  /data/_h_pylori_rapid_test_result  = '' and ( /data/_pregnancy_test_result  = '' or  /data/_pregnancy_test_result  = 'false') and  /data/_metformin_dosage  = '' and not( /data/total_iv_line  &gt; 0) and not( /data/total_nifedipine_20mg  &gt; 0) and not( /data/total_paracetamol_500mg  &gt; 0) and not( /data/total_amoxycillin_500mg  &gt; 0) and not( /data/total_hctz_25mg  &gt; 0) and not( /data/total_ciprofloxacin_500mg  &gt; 0) and not( /data/total_metronidazole_500mg  &gt; 0) and not( /data/total_cloxacillin_500mg  &gt; 0) and not( /data/total_litacid_gel  &gt; 0) and not( /data/total_iron_folic_acid  &gt; 0) and not( /data/total_nifedipine_10mg  &gt; 0) and not( /data/total_enalapril_10mg  &gt; 0) and not( /data/total_metformin_500mg  &gt; 0) and not( /data/total_omeprazole_40mg  &gt; 0) and not( /data/total_buscopan_20mg  &gt; 0) and not( /data/total_omeprazole_20mg  &gt; 0) and not( /data/total_tinidazole_500mg  &gt; 0) and not( /data/total_ors  &gt; 0) and not( /data/total_salbutamol_4mg  &gt; 0) and not( /data/total_dexamethasone_8mg  &gt; 0) and not( /data/total_chloroquine_150mg  &gt; 0) and not( /data/total_benzathine_penicillin  &gt; 0) and not( /data/total_doxycycline_100mg  &gt; 0) and not( /data/total_triple_antibiotic  &gt; 0) and not( /data/total_benzyl_benzoate_25  &gt; 0) and not( /data/total_calamine_lotion  &gt; 0) and not( /data/total_antifungal_cream  &gt; 0) and not( /data/total_griseofulvin_125mg  &gt; 0), 'Diagnostic Tests &amp; Medications: None recorded', concat('Diagnostic Tests &amp; Medications: ', if( /data/_malaria_rapid_test_result  != '', concat('Malaria RDT: ',  /data/_malaria_rapid_test_result , '; '), ''), if( /data/_h_pylori_rapid_test_result  != '', concat('H. Pylori RDT: ',  /data/_h_pylori_rapid_test_result , '; '), ''), if( /data/_pregnancy_test_result  != '' and  /data/_pregnancy_test_result  != 'false', concat('Pregnancy Test: ',  /data/_pregnancy_test_result , '; '), ''), if( /data/_metformin_dosage  != '', concat('Metformin Dosage: ',  /data/_metformin_dosage , '; '), ''), if( /data/total_iv_line  &gt; 0, concat('IV Line: ',  /data/total_iv_line , '; '), ''), if( /data/total_nifedipine_20mg  &gt; 0, concat('Nifedipine 20mg: ',  /data/total_nifedipine_20mg , '; '), ''), if( /data/total_paracetamol_500mg  &gt; 0, concat('Paracetamol 500mg: ',  /data/total_paracetamol_500mg , '; '), ''), if( /data/total_amoxycillin_500mg  &gt; 0, concat('Amoxicillin 500mg: ',  /data/total_amoxycillin_500mg , '; '), ''), if( /data/total_hctz_25mg  &gt; 0, concat('Hydrochlorothiazide 25mg: ',  /data/total_hctz_25mg , '; '), ''), if( /data/total_ciprofloxacin_500mg  &gt; 0, concat('Ciprofloxacin 500mg: ',  /data/total_ciprofloxacin_500mg , '; '), ''), if( /data/total_metronidazole_500mg  &gt; 0, concat('Metronidazole 500mg: ',  /data/total_metronidazole_500mg , '; '), ''), if( /data/total_cloxacillin_500mg  &gt; 0, concat('Cloxacillin 500mg: ',  /data/total_cloxacillin_500mg , '; '), ''), if( /data/total_litacid_gel  &gt; 0, concat('Litacid Gel: ',  /data/total_litacid_gel , '; '), ''), if( /data/total_iron_folic_acid  &gt; 0, concat('Iron + Folic Acid: ',  /data/total_iron_folic_acid , '; '), ''), if( /data/total_nifedipine_10mg  &gt; 0, concat('Nifedipine 10mg: ',  /data/total_nifedipine_10mg , '; '), ''), if( /data/total_enalapril_10mg  &gt; 0, concat('Enalapril 10mg: ',  /data/total_enalapril_10mg , '; '), ''), if( /data/total_metformin_500mg  &gt; 0, concat('Metformin 500mg: ',  /data/total_metformin_500mg , '; '), ''), if( /data/total_omeprazole_40mg  &gt; 0, concat('Omeprazole 40mg: ',  /data/total_omeprazole_40mg , '; '), ''), if( /data/total_buscopan_20mg  &gt; 0, concat('Buscopan 20mg: ',  /data/total_buscopan_20mg , '; '), ''), if( /data/total_omeprazole_20mg  &gt; 0, concat('Omeprazole 20mg: ',  /data/total_omeprazole_20mg , '; '), ''), if( /data/total_tinidazole_500mg  &gt; 0, concat('Tinidazole 500mg: ',  /data/total_tinidazole_500mg , '; '), ''), if( /data/total_ors  &gt; 0, concat('ORS: ',  /data/total_ors , '; '), ''), if( /data/total_salbutamol_4mg  &gt; 0, concat('Salbutamol 4mg: ',  /data/total_salbutamol_4mg , '; '), ''), if( /data/total_dexamethasone_8mg  &gt; 0, concat('Dexamethasone 8mg: ',  /data/total_dexamethasone_8mg , '; '), ''), if( /data/total_chloroquine_150mg  &gt; 0, concat('Chloroquine 150mg: ',  /data/total_chloroquine_150mg , '; '), ''), if( /data/total_benzathine_penicillin  &gt; 0, concat('Benzathine Penicillin: ',  /data/total_benzathine_penicillin , '; '), ''), if( /data/total_doxycycline_100mg  &gt; 0, concat('Doxycycline 100mg: ',  /data/total_doxycycline_100mg , '; '), ''), if( /data/total_triple_antibiotic  &gt; 0, concat('Triple Antibiotic Ointment: ',  /data/total_triple_antibiotic , '; '), ''), if( /data/total_benzyl_benzoate_25  &gt; 0, concat('Benzyl Benzoate 25%: ',  /data/total_benzyl_benzoate_25 , '; '), ''), if( /data/total_calamine_lotion  &gt; 0, concat('Calamine Lotion: ',  /data/total_calamine_lotion , '; '), ''), if( /data/total_antifungal_cream  &gt; 0, concat('Antifungal Cream: ',  /data/total_antifungal_cream , '; '), ''), if( /data/total_griseofulvin_125mg  &gt; 0, concat('Griseofulvin 125mg: ',  /data/total_griseofulvin_125mg , '; '), '')))"/>
+      <bind nodeset="/data/summary/summary_clinical_notes" type="string" calculate="if( /data/compiled_notes  != '', concat('Clinical Notes: ',  /data/compiled_notes ), 'Clinical Notes: None recorded')"/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
       <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
@@ -6191,78 +6426,80 @@ OSWA
       <bind nodeset="/data/prescription_summary/fields/benzyl_benzoate_25_used_in_ADT_Form014_Summary" type="string" calculate=" /data/total_benzyl_benzoate_25 "/>
       <bind nodeset="/data/prescription_summary/fields/calamine_lotion_used_in_ADT_Form014_Summary" type="string" calculate=" /data/total_calamine_lotion "/>
       <bind nodeset="/data/prescription_summary/fields/antifungal_cream_used_in_ADT_Form014_Summary" type="string" calculate=" /data/total_antifungal_cream "/>
+      <bind nodeset="/data/prescription_summary/fields/lancets_used_in_ADT_Form014_Summary" type="string" calculate=" /data/total_lancets "/>
+      <bind nodeset="/data/prescription_summary/fields/strips_used_in_ADT_Form014_Summary" type="string" calculate=" /data/total_strips "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in" type="string" calculate=" /data/total_nifedipine_20mg "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_20mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/nifedipine_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_20mg___set  * X +  /data/prescription_summary/fields/nifedipine_20mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_20mg___set  * 1 +  /data/prescription_summary/fields/nifedipine_20mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in" type="string" calculate=" /data/total_paracetamol_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/paracetamol_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/paracetamol_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/paracetamol_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/paracetamol_500mg___set  * X +  /data/prescription_summary/fields/paracetamol_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/paracetamol_500mg___set  * 1 +  /data/prescription_summary/fields/paracetamol_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in" type="string" calculate=" /data/total_amoxycillin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/amoxycillin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/amoxycillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/amoxycillin_500mg___set  * X +  /data/prescription_summary/fields/amoxycillin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/amoxycillin_500mg___set  * 1 +  /data/prescription_summary/fields/amoxycillin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in" type="string" calculate=" /data/total_nifedipine_10mg "/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_10mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/nifedipine_10mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/nifedipine_10mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_10mg___set  * X +  /data/prescription_summary/fields/nifedipine_10mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/nifedipine_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/nifedipine_10mg___set  * 1 +  /data/prescription_summary/fields/nifedipine_10mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in" type="string" calculate=" /data/total_hctz_25mg "/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/hctz_25mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/hctz_25mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/hctz_25mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/hctz_25mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/hctz_25mg___set  * X +  /data/prescription_summary/fields/hctz_25mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/hctz_25mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/hctz_25mg___set  * 1 +  /data/prescription_summary/fields/hctz_25mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in" type="string" calculate=" /data/total_enalapril_10mg "/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/enalapril_10mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/enalapril_10mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/enalapril_10mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/enalapril_10mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/enalapril_10mg___set  * X +  /data/prescription_summary/fields/enalapril_10mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/enalapril_10mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/enalapril_10mg___set  * 1 +  /data/prescription_summary/fields/enalapril_10mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in" type="string" calculate=" /data/total_metformin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/metformin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metformin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metformin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metformin_500mg___set  * X +  /data/prescription_summary/fields/metformin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/metformin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metformin_500mg___set  * 1 +  /data/prescription_summary/fields/metformin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in" type="string" calculate=" /data/total_omeprazole_20mg "/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/omeprazole_20mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/omeprazole_20mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/omeprazole_20mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/omeprazole_20mg___set  * X +  /data/prescription_summary/fields/omeprazole_20mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/omeprazole_20mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/omeprazole_20mg___set  * 1 +  /data/prescription_summary/fields/omeprazole_20mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in" type="string" calculate=" /data/total_metronidazole_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/metronidazole_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/metronidazole_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metronidazole_500mg___set  * X +  /data/prescription_summary/fields/metronidazole_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/metronidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/metronidazole_500mg___set  * 1 +  /data/prescription_summary/fields/metronidazole_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in" type="string" calculate=" /data/total_tinidazole_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/tinidazole_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/tinidazole_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/tinidazole_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/tinidazole_500mg___set  * X +  /data/prescription_summary/fields/tinidazole_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/tinidazole_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/tinidazole_500mg___set  * 1 +  /data/prescription_summary/fields/tinidazole_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/ors_used_in" type="string" calculate=" /data/total_ors "/>
       <bind nodeset="/data/prescription_summary/fields/ors___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/ors___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ors_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ors_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ors_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ors___set  * X +  /data/prescription_summary/fields/ors___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/ors_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ors___set  * 1 +  /data/prescription_summary/fields/ors___unit "/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in" type="string" calculate=" /data/total_salbutamol_4mg "/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_4mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/salbutamol_4mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/salbutamol_4mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/salbutamol_4mg___set  * X +  /data/prescription_summary/fields/salbutamol_4mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/salbutamol_4mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/salbutamol_4mg___set  * 1 +  /data/prescription_summary/fields/salbutamol_4mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in" type="string" calculate=" /data/total_chloroquine_150mg "/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/chloroquine_150mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/chloroquine_150mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/chloroquine_150mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/chloroquine_150mg___set  * X +  /data/prescription_summary/fields/chloroquine_150mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/chloroquine_150mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/chloroquine_150mg___set  * 1 +  /data/prescription_summary/fields/chloroquine_150mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in" type="string" calculate=" /data/total_ciprofloxacin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/ciprofloxacin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacin_500mg___set  * X +  /data/prescription_summary/fields/ciprofloxacin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/ciprofloxacin_500mg___set  * 1 +  /data/prescription_summary/fields/ciprofloxacin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in" type="string" calculate=" /data/total_doxycycline_100mg "/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycycline_100mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/doxycycline_100mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/doxycycline_100mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/doxycycline_100mg___set  * X +  /data/prescription_summary/fields/doxycycline_100mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/doxycycline_100mg___set  * 1 +  /data/prescription_summary/fields/doxycycline_100mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in" type="string" calculate=" /data/total_cloxacillin_500mg "/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cloxacillin_500mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/cloxacillin_500mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/cloxacillin_500mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/cloxacillin_500mg___set  * X +  /data/prescription_summary/fields/cloxacillin_500mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/cloxacillin_500mg___set  * 1 +  /data/prescription_summary/fields/cloxacillin_500mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in" type="string" calculate=" /data/total_griseofulvin_125mg "/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_125mg_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/griseofulvin_125mg_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/griseofulvin_125mg_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/griseofulvin_125mg___set  * X +  /data/prescription_summary/fields/griseofulvin_125mg___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/griseofulvin_125mg___set  * 1 +  /data/prescription_summary/fields/griseofulvin_125mg___unit "/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in" type="string" calculate=" /data/total_iron_folic_acid "/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_folic_acid_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)),0)"/>
       <bind nodeset="/data/prescription_summary/fields/iron_folic_acid___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/iron_folic_acid_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/iron_folic_acid_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/iron_folic_acid___set  * X +  /data/prescription_summary/fields/iron_folic_acid___unit "/>
+      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_ADT_Form014_Summary" type="string" calculate=" /data/prescription_summary/fields/iron_folic_acid___set  * 1 +  /data/prescription_summary/fields/iron_folic_acid___unit "/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -6705,6 +6942,15 @@ OSWA
         <label ref="jr:itext('/data/grp_preg_uti/preg_uti_notes:label')"/>
       </input>
     </group>
+    <group appearance="field-list" ref="/data/grp_pregnancy_registration_summary">
+      <label ref="jr:itext('/data/grp_pregnancy_registration_summary:label')"/>
+      <input ref="/data/grp_pregnancy_registration_summary/pregnancy_test_result_display">
+        <label ref="jr:itext('/data/grp_pregnancy_registration_summary/pregnancy_test_result_display:label')"/>
+      </input>
+      <input ref="/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder">
+        <label ref="jr:itext('/data/grp_pregnancy_registration_summary/prenatal_appointments_reminder:label')"/>
+      </input>
+    </group>
     <group appearance="field-list" ref="/data/grp_htn_urgency">
       <label ref="jr:itext('/data/grp_htn_urgency:label')"/>
       <input ref="/data/grp_htn_urgency/htn_urgency_notification" appearance="h1 red">
@@ -6861,6 +7107,12 @@ OSWA
       <input ref="/data/grp_diabetes_severe/diabetes_sev_counseling">
         <label ref="jr:itext('/data/grp_diabetes_severe/diabetes_sev_counseling:label')"/>
       </input>
+      <input ref="/data/grp_diabetes_severe/lancets_used_sev">
+        <label ref="jr:itext('/data/grp_diabetes_severe/lancets_used_sev:label')"/>
+      </input>
+      <input ref="/data/grp_diabetes_severe/strips_used_sev">
+        <label ref="jr:itext('/data/grp_diabetes_severe/strips_used_sev:label')"/>
+      </input>
       <input ref="/data/grp_diabetes_severe/diabetes_sev_notes">
         <label ref="jr:itext('/data/grp_diabetes_severe/diabetes_sev_notes:label')"/>
       </input>
@@ -6929,6 +7181,12 @@ OSWA
         <label ref="jr:itext('/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason:label')"/>
         <hint ref="jr:itext('/data/grp_diabetes_mod/diabetes_mod_med_not_confirmed_reason:hint')"/>
       </input>
+      <input ref="/data/grp_diabetes_mod/lancets_used_mod">
+        <label ref="jr:itext('/data/grp_diabetes_mod/lancets_used_mod:label')"/>
+      </input>
+      <input ref="/data/grp_diabetes_mod/strips_used_mod">
+        <label ref="jr:itext('/data/grp_diabetes_mod/strips_used_mod:label')"/>
+      </input>
       <input ref="/data/grp_diabetes_mod/diabetes_mod_notes">
         <label ref="jr:itext('/data/grp_diabetes_mod/diabetes_mod_notes:label')"/>
       </input>
@@ -6943,6 +7201,12 @@ OSWA
       </input>
       <input ref="/data/grp_diabetes_mild/diabetes_mild_counseling">
         <label ref="jr:itext('/data/grp_diabetes_mild/diabetes_mild_counseling:label')"/>
+      </input>
+      <input ref="/data/grp_diabetes_mild/lancets_used_mild">
+        <label ref="jr:itext('/data/grp_diabetes_mild/lancets_used_mild:label')"/>
+      </input>
+      <input ref="/data/grp_diabetes_mild/strips_used_mild">
+        <label ref="jr:itext('/data/grp_diabetes_mild/strips_used_mild:label')"/>
       </input>
       <input ref="/data/grp_diabetes_mild/diabetes_mild_notes">
         <label ref="jr:itext('/data/grp_diabetes_mild/diabetes_mild_notes:label')"/>
@@ -7580,6 +7844,9 @@ OSWA
       <input ref="/data/referrals/referral_location_other">
         <label ref="jr:itext('/data/referrals/referral_location_other:label')"/>
       </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/summary">
+      <label ref="jr:itext('/data/summary:label')"/>
     </group>
     <group appearance="field-list summary" ref="/data/prescription_summary">
       <group ref="/data/prescription_summary/contact"/>

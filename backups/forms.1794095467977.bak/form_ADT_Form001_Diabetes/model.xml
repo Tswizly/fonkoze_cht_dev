@@ -1,0 +1,173 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form001_Diabetes" version="20261104232643" prefix="J1!ADT_Form001_Diabetes!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_diabetes/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <calc_hyperglycemia_mild tag="hidden"/>
+          <calc_hyperglycemia_moderate tag="hidden"/>
+          <calc_hyperglycemia_severe tag="hidden"/>
+          <fasting_glucose tag="hidden"/>
+          <diabetes_checkup_group tag="hidden">
+            <has_diabetes_warning tag="hidden"/>
+            <diabetes_symptoms tag="hidden"/>
+            <hereditary_diabetes tag="hidden"/>
+            <time_of_last_meal tag="hidden"/>
+            <blood_glucose tag="hidden"/>
+            <patient_takes_medicine tag="hidden"/>
+            <metformin_dose tag="hidden"/>
+          </diabetes_checkup_group>
+          <results_group tag="hidden">
+            <res_hyperglycemia_mild tag="hidden"/>
+            <res_hyperglycemia_mild_declaration tag="hidden"/>
+            <res_hyperglycemia_moderate tag="hidden"/>
+            <res_hyperglycemia_moderate_declaration tag="hidden"/>
+            <res_hyperglycemia_moderate_declaration_diabetic tag="hidden"/>
+            <res_hyperglycemia_severe tag="hidden"/>
+            <res_hyperglycemia_severe_declaration tag="hidden"/>
+            <res_hyperglycemia_severe_declaration_diabetic tag="hidden"/>
+            <res_hyperglycemia_severe_protocol tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_group_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_metformin_dosage tag="hidden"/>
+            <_random_glucose_level tag="hidden"/>
+            <_fasting_glucose_level tag="hidden"/>
+            <_hereditary_diabetes tag="hidden"/>
+            <_result_hyperglycemia_mild tag="hidden"/>
+            <_result_hyperglycemia_moderate tag="hidden"/>
+            <_result_hyperglycemia_severe tag="hidden"/>
+            <_tiredness tag="hidden"/>
+            <_weight_loss tag="hidden"/>
+            <_frequent_urination tag="hidden"/>
+            <_frequent_eating tag="hidden"/>
+            <_frequent_drinking tag="hidden"/>
+            <_excessive_sweating tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_symptoms/>
+          <summary_glucose_reading/>
+          <summary_glucose_flag/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="diabetes_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>diabetes_symptoms-0</itextId>
+            <name>tiredness</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-1</itextId>
+            <name>weight_loss</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-2</itextId>
+            <name>frequent_urination</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-3</itextId>
+            <name>frequent_eating</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-4</itextId>
+            <name>frequent_drinking</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-5</itextId>
+            <name>excessive_sweating</name>
+          </item>
+          <item>
+            <itextId>diabetes_symptoms-6</itextId>
+            <name>bypass</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="metformin_dosage">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>metformin_dosage-0</itextId>
+            <name>new</name>
+          </item>
+          <item>
+            <itextId>metformin_dosage-1</itextId>
+            <name>low</name>
+          </item>
+          <item>
+            <itextId>metformin_dosage-2</itextId>
+            <name>medium</name>
+          </item>
+          <item>
+            <itextId>metformin_dosage-3</itextId>
+            <name>high</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

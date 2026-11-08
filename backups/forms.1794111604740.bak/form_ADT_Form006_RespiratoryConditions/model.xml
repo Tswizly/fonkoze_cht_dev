@@ -1,0 +1,145 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form006_RespiratoryConditions" version="20261104235345" prefix="J1!ADT_Form006_RespiratoryConditions!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_asthma/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <respiratory_conditions_group tag="hidden">
+            <asthma_exists tag="hidden"/>
+            <adult_coughing tag="hidden"/>
+            <cough_duration tag="hidden"/>
+            <qualify_cough tag="hidden"/>
+            <breathing_rate tag="hidden"/>
+            <oxygen_saturation tag="hidden"/>
+            <fever tag="hidden"/>
+            <temperature tag="hidden"/>
+            <fever_duration tag="hidden"/>
+            <wheezing tag="hidden"/>
+            <respiratory_distress tag="hidden"/>
+            <weight_loss tag="hidden"/>
+            <night_sweats tag="hidden"/>
+            <recurring_condition tag="hidden"/>
+            <tb_exposure tag="hidden"/>
+          </respiratory_conditions_group>
+          <calc_tuberculosis tag="hidden"/>
+          <calc_asthma tag="hidden"/>
+          <calc_pneumonia tag="hidden"/>
+          <calc_flu_like_syndrome tag="hidden"/>
+          <results_group tag="hidden">
+            <res_tuberculosis tag="hidden"/>
+            <res_tuberculosis_action tag="hidden"/>
+            <res_asthma tag="hidden"/>
+            <res_asthma_action tag="hidden"/>
+            <res_pneumonia tag="hidden"/>
+            <res_pneumonia_action tag="hidden"/>
+            <res_flu_like_syndrome tag="hidden"/>
+            <res_flu_like_syndrome_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <no_treatment_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_adult_coughing tag="hidden"/>
+            <_cough_duration tag="hidden"/>
+            <_qualify_cough tag="hidden"/>
+            <_breathing_rate tag="hidden"/>
+            <_oxygen_saturation tag="hidden"/>
+            <_fever tag="hidden"/>
+            <_temperature tag="hidden"/>
+            <_fever_duration tag="hidden"/>
+            <_wheezing tag="hidden"/>
+            <_respiratory_distress tag="hidden"/>
+            <_weight_loss tag="hidden"/>
+            <_night_sweats tag="hidden"/>
+            <_recurring_condition tag="hidden"/>
+            <_tb_exposure tag="hidden"/>
+            <_result_tuberculosis tag="hidden"/>
+            <_result_asthma tag="hidden"/>
+            <_result_pneumonia tag="hidden"/>
+            <_result_flu_like_syndrome tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_symptoms/>
+          <summary_vital_readings/>
+          <summary_condition_assessment/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="qualify_cough">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>qualify_cough-0</itextId>
+            <name>dry_cough</name>
+          </item>
+          <item>
+            <itextId>qualify_cough-1</itextId>
+            <name>mucus_cough</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

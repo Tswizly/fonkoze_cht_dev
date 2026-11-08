@@ -1,0 +1,192 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form004_Hypertension" version="20261104232730" prefix="J1!ADT_Form004_Hypertension!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_hypertension/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <form_purpose_group tag="hidden">
+            <form_purpose tag="hidden"/>
+          </form_purpose_group>
+          <hypertension_assessment_group tag="hidden">
+            <known_hypertensive_note tag="hidden"/>
+            <danger_signs tag="hidden"/>
+            <bp_systolic tag="hidden"/>
+            <bp_diastolic tag="hidden"/>
+            <bp_remeasure tag="hidden"/>
+            <bp_remeasure_note tag="hidden"/>
+            <bp_systolic_remeasure tag="hidden"/>
+            <bp_diastolic_remeasure tag="hidden"/>
+          </hypertension_assessment_group>
+          <final_bp_systolic tag="hidden"/>
+          <final_bp_diastolic tag="hidden"/>
+          <calc_hypertensive_urgency tag="hidden"/>
+          <calc_hypertension_grade_3 tag="hidden"/>
+          <calc_hypertension_grade_2 tag="hidden"/>
+          <calc_hypertension_grade_1 tag="hidden"/>
+          <results_group tag="hidden">
+            <res_hypertensive_urgency tag="hidden"/>
+            <res_hypertensive_urgency_action tag="hidden"/>
+            <res_hypertension_grade_1 tag="hidden"/>
+            <res_hypertension_grade_1_action tag="hidden"/>
+            <res_hypertension_grade_2 tag="hidden"/>
+            <res_hypertension_grade_2_action tag="hidden"/>
+            <res_hypertension_grade_3 tag="hidden"/>
+            <res_hypertension_grade_3_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_form_purpose tag="hidden"/>
+            <_danger_signs tag="hidden"/>
+            <_bp_systolic tag="hidden"/>
+            <_bp_diastolic tag="hidden"/>
+            <_bp_remeasure tag="hidden"/>
+            <_bp_systolic_remeasure tag="hidden"/>
+            <_bp_diastolic_remeasure tag="hidden"/>
+            <_result_hypertensive_urgency tag="hidden"/>
+            <_result_hypertension_grade_1 tag="hidden"/>
+            <_result_hypertension_grade_2 tag="hidden"/>
+            <_result_hypertension_grade_3 tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_danger_signs/>
+          <summary_blood_pressure/>
+          <summary_diagnostic_result/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="Form_purpose">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>Form_purpose-0</itextId>
+            <name>register_hypertension</name>
+          </item>
+          <item>
+            <itextId>Form_purpose-1</itextId>
+            <name>perform_followup</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="danger_signs">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>danger_signs-0</itextId>
+            <name>headache</name>
+          </item>
+          <item>
+            <itextId>danger_signs-1</itextId>
+            <name>neck_pain</name>
+          </item>
+          <item>
+            <itextId>danger_signs-2</itextId>
+            <name>neck_stiffness</name>
+          </item>
+          <item>
+            <itextId>danger_signs-3</itextId>
+            <name>vertigo</name>
+          </item>
+          <item>
+            <itextId>danger_signs-4</itextId>
+            <name>nausea</name>
+          </item>
+          <item>
+            <itextId>danger_signs-5</itextId>
+            <name>blurry_vision</name>
+          </item>
+          <item>
+            <itextId>danger_signs-6</itextId>
+            <name>difficulty_speaking</name>
+          </item>
+          <item>
+            <itextId>danger_signs-7</itextId>
+            <name>disoriented</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="followed_up_conditions">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>followed_up_conditions-0</itextId>
+            <name>hypertensive_urgency</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-1</itextId>
+            <name>hypertension_grade_1</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-2</itextId>
+            <name>hypertension_grade_2</name>
+          </item>
+          <item>
+            <itextId>followed_up_conditions-3</itextId>
+            <name>hypertension_grade_3</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

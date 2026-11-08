@@ -8,20 +8,6 @@ const { getStockMonitoringSummaryCards } = require('@medic/cht-stock-monitoring-
 
 // --- Helper Functions ---
 
-// Assuming the duration field in reports is something like 'medication_duration' in days
-const getMedicationDuration = (report) => {
-  const duration = report.fields && report.fields.medication_duration;
-  return duration ? parseInt(duration, 10) : 7; // default to 7 days if not explicitly defined
-};
-
-// Determines if a temporary condition is still active (duration * 2)
-const isConditionActive = (reportDate, durationDays) => {
-  const activeDurationMs = durationDays * 2 * 24 * 60 * 60 * 1000;
-  const now = new Date().getTime();
-  const reportTime = new Date(reportDate).getTime();
-  return (now - reportTime) <= activeDurationMs;
-};
-
 // Check for specific conditions in the report fields
 const getReportConditions = (report) => {
   const conditions = [];
@@ -336,33 +322,92 @@ const assessmentHistoryCard = {
 // --- Current Conditions Card ---
 
 const activeConditions = [];
-const chronicSet = new Set();
+const recentSet = new Set();
+let hasChronic = false;
+let hasRecent = false;
 
-// Current Conditions card will automatically include the new forms 
-// because allReports is processed as a whole and we rely on getReportConditions.
-allReports.forEach(report => {
-  const conditions = getReportConditions(report);
-  const medDuration = getMedicationDuration(report);
-  
-  conditions.forEach(cond => {
-    if (cond.type === 'chronic') {
-      if (!chronicSet.has(cond.name)) {
-        chronicSet.add(cond.name);
-        activeConditions.push({ label: 'Chronic Condition', value: cond.name, width: 6 });
-      }
-    } else if (cond.type === 'temporary') {
-      // Check if it's within the window of twice the medication duration
-      if (isConditionActive(report.reported_date, medDuration)) {
-        activeConditions.push({ label: 'Temporary Condition', value: `${cond.name} (Active)`, width: 6 });
-      }
+// 1. CHRONIC CONDITIONS (Calculated directly from the contact profile)
+const chronicFields = [];
+
+// Robust check: Look for the calculate field OR parse the raw select_multiple string
+const hasChronicCondition = (contact, calcFieldName, conditionKeyword) => {
+  const calcVal = contact[calcFieldName];
+  // Check if the calculation evaluated to true
+  if (calcVal === 'yes' || calcVal === 'true' || calcVal === true || calcVal === '1' || calcVal === 1) {
+    return true;
+  }
+  // Fallback: Check if the keyword exists in the select_multiple string (e.g., "hypertension diabetes")
+  const selectedConditions = contact.chronic_conditions || '';
+  if (typeof selectedConditions === 'string' && selectedConditions.includes(conditionKeyword)) {
+    return true;
+  }
+  return false;
+};
+
+if (hasChronicCondition(thisContact, 'chronic_hypertension', 'hypertension')) {
+  chronicFields.push({ label: '', value: 'Hypertension', width: 6 });
+}
+if (hasChronicCondition(thisContact, 'chronic_diabetes', 'diabetes')) {
+  chronicFields.push({ label: '', value: 'Diabetes', width: 6 });
+}
+// Note: your form uses 'previous_stroke' as the choice value for stroke
+if (hasChronicCondition(thisContact, 'chronic_stroke', 'previous_stroke')) {
+  chronicFields.push({ label: '', value: 'Previous Stroke', width: 6 });
+}
+if (hasChronicCondition(thisContact, 'chronic_asthma', 'asthma')) {
+  chronicFields.push({ label: '', value: 'Asthma', width: 6 });
+}
+
+if (chronicFields.length > 0) {
+  hasChronic = true;
+  // Add a header for Chronic Conditions
+  activeConditions.push({ label: 'Chronic Conditions', value: '', width: 12 });
+  activeConditions.push(...chronicFields);
+}
+
+// 2. TEMPORARY (RECENT) CONDITIONS (From reports)
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+const now = new Date().getTime();
+const recentFields = [];
+
+// Sort reports newest first to get the most recent screening dates
+[...allReports]
+  .sort((a, b) => b.reported_date - a.reported_date)
+  .forEach(report => {
+    const reportTime = new Date(report.reported_date).getTime();
+    const diffMs = now - reportTime;
+    const conditions = getReportConditions(report);
+    
+    // Everything from the report is treated as a recent condition if within 30 days
+    if (diffMs <= THIRTY_DAYS_MS) {
+      conditions.forEach(cond => {
+        // Exclude the primary chronic conditions if they happen to appear in the report
+        if (!['Hypertension', 'Diabetes', 'Stroke', 'Asthma'].includes(cond.name) && !recentSet.has(cond.name)) {
+          recentSet.add(cond.name);
+          const daysAgo = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+          const dayString = daysAgo === 0 ? 'today' : `${daysAgo} day${daysAgo === 1 ? '' : 's'} ago`;
+          
+          recentFields.push({ 
+            label: '', 
+            value: `${cond.name} (Screened ${dayString})`, 
+            width: 6 
+          });
+        }
+      });
     }
   });
-});
+
+if (recentFields.length > 0) {
+  hasRecent = true;
+  // Add a header for Recent Conditions
+  activeConditions.push({ label: 'Recent Conditions', value: '', width: 12 });
+  activeConditions.push(...recentFields);
+}
 
 const conditionsCard = {
   label: 'Current Conditions',
   appliesToType: 'person',
-  fields: activeConditions.length ? activeConditions : [{ label: 'Status', value: 'No active conditions', width: 12 }]
+  fields: (hasChronic || hasRecent) ? activeConditions : [{ label: 'Status', value: 'No active conditions', width: 12 }]
 };
 
 // --- Profile Fields ---

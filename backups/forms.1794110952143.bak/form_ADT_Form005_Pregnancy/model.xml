@@ -1,0 +1,213 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form005_Pregnancy" version="20260918001546" prefix="J1!ADT_Form005_Pregnancy!" delimiter="#">
+          <inputs tag="hidden">
+            <source tag="hidden">user</source>
+            <source_id tag="hidden"/>
+            <user tag="hidden">
+              <contact_id tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
+              </parent>
+              <facility_id tag="hidden"/>
+            </user>
+            <contact tag="hidden">
+              <_id tag="hidden"/>
+              <name tag="hidden"/>
+              <short_name tag="hidden"/>
+              <patient_id tag="hidden"/>
+              <date_of_birth tag="hidden">0</date_of_birth>
+              <sex tag="hidden"/>
+              <parent tag="hidden">
+                <_id tag="hidden"/>
+                <parent tag="hidden">
+                  <contact tag="hidden">
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <form_purpose_group tag="hidden">
+            <form_purpose tag="hidden"/>
+          </form_purpose_group>
+          <register_pregnancy_group tag="hidden">
+            <register_last_menstruation tag="hidden"/>
+            <pregnancy_test_viability tag="hidden"/>
+            <pregnancy_test_result tag="hidden"/>
+            <reg_followup_prenatal_clinic tag="hidden"/>
+          </register_pregnancy_group>
+          <perform_followup_group tag="hidden">
+            <confirm_pregnancy_duration_menstruation tag="hidden"/>
+            <confirm_pregnancy_duration_approximation tag="hidden"/>
+            <followup_prenatal_clinic tag="hidden"/>
+          </perform_followup_group>
+          <health_and_symptoms tag="hidden">
+            <bp_note tag="hidden"/>
+            <bp_systolic tag="hidden"/>
+            <bp_diastolic tag="hidden"/>
+            <measure_temperature tag="hidden"/>
+            <concerning_pregnancy_symptoms tag="hidden"/>
+          </health_and_symptoms>
+          <fever tag="hidden"/>
+          <calc_gestational_hypertension_no_serious tag="hidden"/>
+          <calc_gestational_hypertension_serious tag="hidden"/>
+          <calc_pre_eclampsia tag="hidden"/>
+          <calc_genitourinary_infections tag="hidden"/>
+          <calc_threatened_miscarriage_less20 tag="hidden"/>
+          <calc_threatened_miscarriage_greater20 tag="hidden"/>
+          <calc_prenatal_clinic tag="hidden"/>
+          <results_group tag="hidden">
+            <res_gestational_hypertension_no_serious tag="hidden"/>
+            <res_gestational_hypertension_no_serious_action tag="hidden"/>
+            <res_gestational_hypertension_serious tag="hidden"/>
+            <res_gestational_hypertesnion_serious_action tag="hidden"/>
+            <res_pre_eclampsia tag="hidden"/>
+            <res_pre_eclampsia_action tag="hidden"/>
+            <res_genitourinary_infections tag="hidden"/>
+            <res_genitourinary_infections_action tag="hidden"/>
+            <res_threatened_miscarriage_less20 tag="hidden"/>
+            <res_threatened_miscarriage_less20_action tag="hidden"/>
+            <res_threatened_miscarriage_greater20 tag="hidden"/>
+            <res_threatened_miscarriage_greater20_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_pregnancy_form_purpose tag="hidden"/>
+            <_register_last_menstruation tag="hidden"/>
+            <_pregnancy_test_result tag="hidden"/>
+            <_confirm_pregnancy_duration_menstruation tag="hidden"/>
+            <_confirm_pregnancy_duration_approximation tag="hidden"/>
+            <_bp_systolic tag="hidden"/>
+            <_bp_diastolic tag="hidden"/>
+            <_concerning_pregnancy_symptoms tag="hidden"/>
+            <_fever tag="hidden"/>
+            <_result_gestational_hypertension_no_serious tag="hidden"/>
+            <_result_gestational_hypertension_serious tag="hidden"/>
+            <_result_pre_eclampsia tag="hidden"/>
+            <_result_genitourinary_infections tag="hidden"/>
+            <_result_threatened_miscarriage_less20 tag="hidden"/>
+            <_result_threatened_miscarriage_greater20 tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_pregnancy_status/>
+          <summary_vitals/>
+          <summary_symptoms/>
+          <summary_clinical_findings/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="Form_purpose">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>Form_purpose-0</itextId>
+            <name>register_pregnancy</name>
+          </item>
+          <item>
+            <itextId>Form_purpose-1</itextId>
+            <name>perform_followup</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="concerning_pregnancy_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>concerning_pregnancy_symptoms-0</itextId>
+            <name>burning_urination</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-1</itextId>
+            <name>vaginal_itching</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-2</itextId>
+            <name>vaginal_discharge</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-3</itextId>
+            <name>positive_white_bloodcell_strip_in_urine</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-4</itextId>
+            <name>headache</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-5</itextId>
+            <name>neck_stiffness</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-6</itextId>
+            <name>blurred_vision</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-7</itextId>
+            <name>epigastric_pain</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-8</itextId>
+            <name>pain_general</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-9</itextId>
+            <name>edema</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-10</itextId>
+            <name>bleeding</name>
+          </item>
+          <item>
+            <itextId>concerning_pregnancy_symptoms-11</itextId>
+            <name>contractions</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="pregnancy_test_result">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>pregnancy_test_result-0</itextId>
+            <name>positive</name>
+          </item>
+          <item>
+            <itextId>pregnancy_test_result-1</itextId>
+            <name>negative</name>
+          </item>
+          <item>
+            <itextId>pregnancy_test_result-2</itextId>
+            <name>inconculsive</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

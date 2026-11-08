@@ -1,0 +1,92 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="GEN_Form004_EditPersonPrompt" version="20261107155301" prefix="J1!GEN_Form004_EditPersonPrompt!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <chronic_diabetes/>
+              <chronic_hypertension/>
+              <chronic_stroke/>
+              <chronic_asthma/>
+              <parent>
+                <_id tag="hidden"/>
+                <parent>
+                  <contact>
+                    <nurse_name tag="hidden"/>
+                    <phone tag="hidden"/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <new_conditions_detected tag="hidden"/>
+          <existing_conditions_list tag="hidden"/>
+          <profile_update_prompt tag="hidden">
+            <existing_conditions_title/>
+            <existing_conditions_note_lsit/>
+            <notice_title/>
+            <instruction_overview/>
+            <condition_list/>
+            <step_by_step_heading/>
+            <step_1/>
+            <step_2/>
+            <step_3/>
+            <step_4/>
+            <acknowledged/>
+            <notes/>
+          </profile_update_prompt>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

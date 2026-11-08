@@ -1,0 +1,559 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Malnutrition and Anemia</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Skin conditions</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_appearance_pale:label">
+            <value>Does the skin appear pale or light?</value>
+          </text>
+          <text id="/data/skin_conditions_group/sclera_appearance_abnormal:label">
+            <value>Does the sclera appear abnormal, or tinted a strange color?</value>
+          </text>
+          <text id="/data/skin_conditions_group/tiredness:label">
+            <value>Is the patient experiencing tiredness or shortness of breath?</value>
+          </text>
+          <text id="/data/skin_conditions_group/cold_hands_feet:label">
+            <value>Is the patient experiencing cold hands or feel?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_anemia:label">
+            <value>Moderate Anemia</value>
+          </text>
+          <text id="/data/results_group/res_anemia_action:label">
+            <value>The youth may have moderate anemia. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>No Results</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Affections cutanées</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_appearance_pale:label">
+            <value>La peau semble-t-elle pâle ou claire ?</value>
+          </text>
+          <text id="/data/skin_conditions_group/sclera_appearance_abnormal:label">
+            <value>La sclérotique semble-t-elle anormale ou teintée d'une couleur étrange ?</value>
+          </text>
+          <text id="/data/skin_conditions_group/tiredness:label">
+            <value>Le patient ressent-il de la fatigue ou un essoufflement ?</value>
+          </text>
+          <text id="/data/skin_conditions_group/cold_hands_feet:label">
+            <value>Le patient a-t-il les mains froides au toucher ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_anemia:label">
+            <value>Anémie modérée</value>
+          </text>
+          <text id="/data/results_group/res_anemia_action:label">
+            <value>Le jeune peut présenter une anémie modérée. Veuillez soumettre le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des procédures de traitement et de consultation.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Aucun résultat</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/skin_conditions_group:label">
+            <value>Kondisyon po</value>
+          </text>
+          <text id="/data/skin_conditions_group/skin_appearance_pale:label">
+            <value>Èske po a parèt pal oswa klè?</value>
+          </text>
+          <text id="/data/skin_conditions_group/sclera_appearance_abnormal:label">
+            <value>Èske blan je a parèt nòmal, oswa li gen yon koulè etranj?</value>
+          </text>
+          <text id="/data/skin_conditions_group/tiredness:label">
+            <value>Èske pasyan an ap santi l fatige oswa souf kout?</value>
+          </text>
+          <text id="/data/skin_conditions_group/cold_hands_feet:label">
+            <value>Èske pasyan an gen men oswa santiman frèt?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta</value>
+          </text>
+          <text id="/data/results_group/res_anemia:label">
+            <value>Anemi modere</value>
+          </text>
+          <text id="/data/results_group/res_anemia_action:label">
+            <value>Jèn nan ka gen anemi modere. Soumèt fòm lan epi ranpli tchèkòp la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Pa gen rezilta</value>
+          </text>
+          <text id="/data/null_results_group/null_results_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source:label">
+            <value>-</value>
+          </text>
+          <text id="/data/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_days:label">
+            <value>-</value>
+          </text>
+          <text id="/data/patient_age_in_weeks:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="YAA_Form008_Malnutrition_Anemia" version="20261011190122" prefix="J1!YAA_Form008_Malnutrition_Anemia!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <skin_conditions_group>
+            <skin_appearance_pale/>
+            <sclera_appearance_abnormal/>
+            <tiredness/>
+            <cold_hands_feet/>
+          </skin_conditions_group>
+          <calc_anemia/>
+          <results_group>
+            <res_anemia/>
+            <res_anemia_action/>
+          </results_group>
+          <null_results_group>
+            <null_results_note/>
+          </null_results_group>
+          <data>
+            <_skin_appearance_pale/>
+            <_sclera_appearance_abnormal/>
+            <_tiredness/>
+            <_cold_hands_feet/>
+            <_result_anemia/>
+          </data>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/skin_conditions_group/skin_appearance_pale" type="string"/>
+      <bind nodeset="/data/skin_conditions_group/sclera_appearance_abnormal" type="string"/>
+      <bind nodeset="/data/skin_conditions_group/tiredness" type="string" required="true()"/>
+      <bind nodeset="/data/skin_conditions_group/cold_hands_feet" type="string" required="true()"/>
+      <bind nodeset="/data/calc_anemia" type="string" calculate="if( /data/skin_conditions_group/skin_appearance_pale  = 'yes' or  /data/skin_conditions_group/sclera_appearance_abnormal  = 'yes' or  /data/skin_conditions_group/tiredness  = 'yes' or  /data/skin_conditions_group/cold_hands_feet  = 'yes', 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_anemia" readonly="true()" type="string" relevant=" /data/calc_anemia  = 'true'"/>
+      <bind nodeset="/data/results_group/res_anemia_action" readonly="true()" type="string" relevant=" /data/calc_anemia  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_anemia  = 'false'"/>
+      <bind nodeset="/data/null_results_group/null_results_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/_skin_appearance_pale" type="string" calculate="if( /data/skin_conditions_group/skin_appearance_pale  != '',  /data/skin_conditions_group/skin_appearance_pale , 'false')"/>
+      <bind nodeset="/data/data/_sclera_appearance_abnormal" type="string" calculate="if( /data/skin_conditions_group/sclera_appearance_abnormal  != '',  /data/skin_conditions_group/sclera_appearance_abnormal , 'false')"/>
+      <bind nodeset="/data/data/_tiredness" type="string" calculate="if( /data/skin_conditions_group/tiredness  != '',  /data/skin_conditions_group/tiredness , 'false')"/>
+      <bind nodeset="/data/data/_cold_hands_feet" type="string" calculate="if( /data/skin_conditions_group/cold_hands_feet  != '',  /data/skin_conditions_group/cold_hands_feet , 'false')"/>
+      <bind nodeset="/data/data/_result_anemia" type="string" calculate="if( /data/calc_anemia ='true', 'true', 'false')"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/skin_conditions_group">
+      <label ref="jr:itext('/data/skin_conditions_group:label')"/>
+      <select1 ref="/data/skin_conditions_group/skin_appearance_pale">
+        <label ref="jr:itext('/data/skin_conditions_group/skin_appearance_pale:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/skin_conditions_group/sclera_appearance_abnormal">
+        <label ref="jr:itext('/data/skin_conditions_group/sclera_appearance_abnormal:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/skin_conditions_group/tiredness">
+        <label ref="jr:itext('/data/skin_conditions_group/tiredness:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/skin_conditions_group/cold_hands_feet">
+        <label ref="jr:itext('/data/skin_conditions_group/cold_hands_feet:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_anemia" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_anemia:label')"/>
+      </input>
+      <input ref="/data/results_group/res_anemia_action">
+        <label ref="jr:itext('/data/results_group/res_anemia_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_results_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_results_note:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+  </h:body>
+</h:html>

@@ -1,0 +1,98 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form013_Anemia" version="20261104232741" prefix="J1!ADT_Form013_Anemia!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <anemia_group tag="hidden">
+            <skin_appearance tag="hidden"/>
+            <sclera_appearance tag="hidden"/>
+            <tiredness tag="hidden"/>
+            <cold_hands_feet tag="hidden"/>
+          </anemia_group>
+          <calc_moderate_anemia tag="hidden"/>
+          <results_group tag="hidden">
+            <res_moderate_anemia tag="hidden"/>
+            <res_moderate_anemia_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_note tag="hidden"/>
+          </null_results_group>
+          <data tag="hidden">
+            <_skin_appearance tag="hidden"/>
+            <_sclera_appearance tag="hidden"/>
+            <_tiredness tag="hidden"/>
+            <_cold_hands_feet tag="hidden"/>
+            <_result_moderate_anemia tag="hidden"/>
+          </data>
+          <summary_patient_info/>
+          <summary_symptoms/>
+          <summary_condition/>
+          <summary_action/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -999,7 +999,7 @@ OR
             <value>Avez-vous administré 1 sachet de SRO via un tube de Levine ?</value>
           </text>
           <text id="/data/grp_triage_emergency/treatment_respiratory_distress:label">
-            <value>Détresse respiratoire : Administrer la première dose de suspension orale d'amoxicilline, administrer de l'oxygène si disponible, maintenir les voies respiratoires dégagées et installer confortablement l'enfant.</value>
+            <value>Détresse respiratoire : Administrer la première dose de suspension orale d'amoxicilline, administrer de l'oxygène si disponible, dégager les voies respiratoires et installer confortablement l'enfant.</value>
           </text>
           <text id="/data/grp_triage_emergency/confirm_treatment_respiratory_distress:label">
             <value>Avez-vous administré la première dose de suspension orale d'amoxicilline ?</value>
@@ -2148,7 +2148,7 @@ OU
             <value>Pasyan an te gen sentòm ijans pandan triyaj la.</value>
           </text>
           <text id="/data/grp_triage_emergency/treatment_severe_dehydration:label">
-            <value>Dezidratasyon grav: Mete yon tib Levine, bay ORS atravè tib la, konseye manman an pou l bay ORS souvan epi kontinye bay tete pandan transfè a.</value>
+            <value>Dezidratasyon grav: Mete yon tib Levine, bay ORS atravè tib la, konseye manman an pou l bwè ORS souvan epi kontinye bay tete pandan transfè a.</value>
           </text>
           <text id="/data/grp_triage_emergency/confirm_treatment_severe_dehydration_levin_tube:label">
             <value>Èske ou te mete yon tib Levine?</value>
@@ -3495,7 +3495,7 @@ OSWA
           <total_iron_folic_acid/>
           <total_albendazole_400mg/>
           <clinic_id/>
-          <prescription_summary db-doc="TRUE">
+          <prescription_summary db-doc="true">
             <stock_monitoring_reported_date/>
             <place_id/>
             <type/>
@@ -3865,25 +3865,25 @@ OSWA
       <bind nodeset="/data/referrals" relevant=" /data/_result_urgent_referral  = 'true'"/>
       <bind nodeset="/data/referrals/referral_location" type="string" required="true()"/>
       <bind nodeset="/data/referrals/referral_location_other" type="string" required="true()" relevant="selected( /data/referrals/referral_location , 'other')"/>
-      <bind nodeset="/data/total_amoxycillin_500mg" type="string" calculate=" /data/grp_pneumonia/_data_amoxycillin_500mg_pneu_distributed  +  /data/grp_flu_like/_data_amoxicillin_flu_distributed  +  /data/grp_tonsillitis/_data_amoxicillin_tonsillitis_distributed "/>
-      <bind nodeset="/data/total_paracetamol_500mg" type="string" calculate=" /data/grp_pneumonia/_data_paracetamol_pneu_distributed  +  /data/grp_tonsillitis/_data_paracetamol_tonsillitis_distributed  +  /data/grp_additional_prescriptions/_data_paracetamol_500mg_additional_distributed "/>
-      <bind nodeset="/data/total_metamizol_inj" type="string" calculate=" /data/grp_pneumonia_severe/_data_metamizol_inj_distributed "/>
-      <bind nodeset="/data/total_litacid_gel" type="string" calculate=" /data/grp_gastritis/_data_litacid_gel_gastritis_distributed "/>
-      <bind nodeset="/data/total_ors" type="string" calculate=" /data/grp_gastritis/_data_ors_gastritis_distributed  +  /data/grp_dehydration/_data_ors_dehydration_distributed  +  /data/grp_dysentery/_data_ors_dysentery_distributed "/>
-      <bind nodeset="/data/total_zinc_20mg" type="string" calculate=" /data/grp_dehydration/_data_zinc_dehydration_distributed "/>
-      <bind nodeset="/data/total_ciprofloxacin_500mg" type="string" calculate=" /data/grp_dysentery/_data_cipro_dysentery_distributed  +  /data/grp_other_std/_data_cipro_std_youth_distributed "/>
-      <bind nodeset="/data/total_cloxacillin_500mg" type="string" calculate=" /data/grp_impetigo/_data_cloxacillin_impetigo_distributed  +  /data/grp_ringworm/_data_cloxacillin_ringworm_distributed  +  /data/grp_scabies/_data_cloxacillin_scabies_distributed "/>
-      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate=" /data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed "/>
-      <bind nodeset="/data/total_antifungal_cream" type="string" calculate=" /data/grp_ringworm/_data_antifungal_cream_ringworm_distributed "/>
-      <bind nodeset="/data/total_griseofulvin_125mg" type="string" calculate=" /data/grp_ringworm/_data_griseofulvin_ringworm_distributed "/>
-      <bind nodeset="/data/total_benzyl_benzoate_25" type="string" calculate=" /data/grp_scabies/_data_benzyl_benzoate_scabies_distributed "/>
-      <bind nodeset="/data/total_calamine_lotion" type="string" calculate=" /data/grp_scabies/_data_calamine_lotion_scabies_distributed "/>
-      <bind nodeset="/data/total_cotrimoxazole_400_80mg" type="string" calculate=" /data/grp_uti/_data_cotrimoxazole_uti_distributed "/>
-      <bind nodeset="/data/total_furosemide_inj" type="string" calculate=" /data/grp_glomerulonephritis/_data_furosemide_inj_distributed "/>
-      <bind nodeset="/data/total_benzathine_penicillin" type="string" calculate=" /data/grp_syphilis/_data_benzathine_penicillin_youth_distributed "/>
-      <bind nodeset="/data/total_doxycycline_100mg" type="string" calculate=" /data/grp_other_std/_data_doxycycline_std_youth_distributed "/>
-      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate=" /data/grp_anemia/_data_iron_folic_acid_youth_distributed  +  /data/grp_additional_prescriptions/_data_iron_folic_acid_additional_distributed "/>
-      <bind nodeset="/data/total_albendazole_400mg" type="string" calculate=" /data/grp_anemia/_data_albendazole_youth_distributed "/>
+      <bind nodeset="/data/total_amoxycillin_500mg" type="string" calculate="coalesce( /data/grp_pneumonia/_data_amoxycillin_500mg_pneu_distributed , 0) + coalesce( /data/grp_flu_like/_data_amoxicillin_flu_distributed , 0) + coalesce( /data/grp_tonsillitis/_data_amoxicillin_tonsillitis_distributed , 0)"/>
+      <bind nodeset="/data/total_paracetamol_500mg" type="string" calculate="coalesce( /data/grp_pneumonia/_data_paracetamol_pneu_distributed , 0) + coalesce( /data/grp_tonsillitis/_data_paracetamol_tonsillitis_distributed , 0) + coalesce( /data/grp_additional_prescriptions/_data_paracetamol_500mg_additional_distributed , 0)"/>
+      <bind nodeset="/data/total_metamizol_inj" type="string" calculate="coalesce( /data/grp_pneumonia_severe/_data_metamizol_inj_distributed , 0)"/>
+      <bind nodeset="/data/total_litacid_gel" type="string" calculate="coalesce( /data/grp_gastritis/_data_litacid_gel_gastritis_distributed , 0)"/>
+      <bind nodeset="/data/total_ors" type="string" calculate="coalesce( /data/grp_gastritis/_data_ors_gastritis_distributed , 0) + coalesce( /data/grp_dehydration/_data_ors_dehydration_distributed , 0) + coalesce( /data/grp_dysentery/_data_ors_dysentery_distributed , 0)"/>
+      <bind nodeset="/data/total_zinc_20mg" type="string" calculate="coalesce( /data/grp_dehydration/_data_zinc_dehydration_distributed , 0)"/>
+      <bind nodeset="/data/total_ciprofloxacin_500mg" type="string" calculate="coalesce( /data/grp_dysentery/_data_cipro_dysentery_distributed , 0) + coalesce( /data/grp_other_std/_data_cipro_std_youth_distributed , 0)"/>
+      <bind nodeset="/data/total_cloxacillin_500mg" type="string" calculate="coalesce( /data/grp_impetigo/_data_cloxacillin_impetigo_distributed , 0) + coalesce( /data/grp_ringworm/_data_cloxacillin_ringworm_distributed , 0) + coalesce( /data/grp_scabies/_data_cloxacillin_scabies_distributed , 0)"/>
+      <bind nodeset="/data/total_triple_antibiotic" type="string" calculate="coalesce( /data/grp_impetigo/_data_triple_antibiotic_impetigo_distributed , 0)"/>
+      <bind nodeset="/data/total_antifungal_cream" type="string" calculate="coalesce( /data/grp_ringworm/_data_antifungal_cream_ringworm_distributed , 0)"/>
+      <bind nodeset="/data/total_griseofulvin_125mg" type="string" calculate="coalesce( /data/grp_ringworm/_data_griseofulvin_ringworm_distributed , 0)"/>
+      <bind nodeset="/data/total_benzyl_benzoate_25" type="string" calculate="coalesce( /data/grp_scabies/_data_benzyl_benzoate_scabies_distributed , 0)"/>
+      <bind nodeset="/data/total_calamine_lotion" type="string" calculate="coalesce( /data/grp_scabies/_data_calamine_lotion_scabies_distributed , 0)"/>
+      <bind nodeset="/data/total_cotrimoxazole_400_80mg" type="string" calculate="coalesce( /data/grp_uti/_data_cotrimoxazole_uti_distributed , 0)"/>
+      <bind nodeset="/data/total_furosemide_inj" type="string" calculate="coalesce( /data/grp_glomerulonephritis/_data_furosemide_inj_distributed , 0)"/>
+      <bind nodeset="/data/total_benzathine_penicillin" type="string" calculate="coalesce( /data/grp_syphilis/_data_benzathine_penicillin_youth_distributed , 0)"/>
+      <bind nodeset="/data/total_doxycycline_100mg" type="string" calculate="coalesce( /data/grp_other_std/_data_doxycycline_std_youth_distributed , 0)"/>
+      <bind nodeset="/data/total_iron_folic_acid" type="string" calculate="coalesce( /data/grp_anemia/_data_iron_folic_acid_youth_distributed , 0) + coalesce( /data/grp_additional_prescriptions/_data_iron_folic_acid_additional_distributed , 0)"/>
+      <bind nodeset="/data/total_albendazole_400mg" type="string" calculate="coalesce( /data/grp_anemia/_data_albendazole_youth_distributed , 0)"/>
       <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
       <bind nodeset="/data/prescription_summary" relevant="field-list summary"/>
       <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
@@ -3895,25 +3895,25 @@ OSWA
       <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
       <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
       <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/litacid_gel_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_litacid_gel "/>
-      <bind nodeset="/data/prescription_summary/fields/metamizol_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_metamizol_inj "/>
-      <bind nodeset="/data/prescription_summary/fields/furosemide_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_furosemide_inj "/>
-      <bind nodeset="/data/prescription_summary/fields/benzathine_penicillin_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_benzathine_penicillin "/>
-      <bind nodeset="/data/prescription_summary/fields/triple_antibiotic_ointment_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_triple_antibiotic "/>
-      <bind nodeset="/data/prescription_summary/fields/benzyl_benzoate_25_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_benzyl_benzoate_25 "/>
-      <bind nodeset="/data/prescription_summary/fields/calamine_lotion_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_calamine_lotion "/>
-      <bind nodeset="/data/prescription_summary/fields/antifungal_cream_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_antifungal_cream "/>
-      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_amoxycillin_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_paracetamol_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_ciprofloxacin_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_cloxacillin_500mg "/>
-      <bind nodeset="/data/prescription_summary/fields/cotrimoxazole_400_80mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_cotrimoxazole_400_80mg "/>
-      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_doxycycline_100mg "/>
-      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_griseofulvin_125mg "/>
-      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_iron_folic_acid "/>
-      <bind nodeset="/data/prescription_summary/fields/albendazole_400mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_albendazole_400mg "/>
-      <bind nodeset="/data/prescription_summary/fields/zinc_20mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_zinc_20mg "/>
-      <bind nodeset="/data/prescription_summary/fields/ors_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_ors "/>
+      <bind nodeset="/data/prescription_summary/fields/litacid_gel_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_litacid_gel  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/metamizol_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_metamizol_inj  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/furosemide_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_furosemide_inj  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/benzathine_penicillin_injectable_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_benzathine_penicillin  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/triple_antibiotic_ointment_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_triple_antibiotic  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/benzyl_benzoate_25_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_benzyl_benzoate_25  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/calamine_lotion_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_calamine_lotion  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/antifungal_cream_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_antifungal_cream  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/amoxycillin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_amoxycillin_500mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/paracetamol_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_paracetamol_500mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/ciprofloxacin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_ciprofloxacin_500mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/cloxacillin_500mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_cloxacillin_500mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/cotrimoxazole_400_80mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_cotrimoxazole_400_80mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/doxycycline_100mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_doxycycline_100mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/griseofulvin_125mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_griseofulvin_125mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/iron_folic_acid_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_iron_folic_acid  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/albendazole_400mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_albendazole_400mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/zinc_20mg_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_zinc_20mg  * 1"/>
+      <bind nodeset="/data/prescription_summary/fields/ors_used_in_YAA_Form009_Summary" type="string" calculate=" /data/total_ors  * 1"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>

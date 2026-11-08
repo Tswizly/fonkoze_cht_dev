@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:odk="http://www.opendatakit.org/xforms">
+  <h:head>
+    <h:title>Youth UTI and STD</h:title>
+    <model odk:xforms-version="1.0.0">
+      <itext>
+        <translation lang="en">
+          <text id="yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Register condition</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Perform followup</value>
+          </text>
+          <text id="uti_std_symptoms-0">
+            <value>Fever above 38</value>
+          </text>
+          <text id="uti_std_symptoms-1">
+            <value>Nausea</value>
+          </text>
+          <text id="uti_std_symptoms-2">
+            <value>Diarrhea</value>
+          </text>
+          <text id="uti_std_symptoms-3">
+            <value>Abdominal pain</value>
+          </text>
+          <text id="uti_std_symptoms-4">
+            <value>Yellow urine</value>
+          </text>
+          <text id="uti_std_symptoms-5">
+            <value>Brown urine</value>
+          </text>
+          <text id="uti_std_symptoms-6">
+            <value>Vaginal or urethral discharge</value>
+          </text>
+          <text id="uti_std_symptoms-7">
+            <value>Ulcer of genital parts</value>
+          </text>
+          <text id="uti_std_symptoms-8">
+            <value>Oedema</value>
+          </text>
+          <text id="uti_std_symptoms-9">
+            <value>High blood pressure</value>
+          </text>
+          <text id="urine_strip_yes_no-0">
+            <value>Yes</value>
+          </text>
+          <text id="urine_strip_yes_no-1">
+            <value>No</value>
+          </text>
+          <text id="urine_strip_yes_no-2">
+            <value>Did not use urine strip</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ParentID</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>What is the patient's name?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Short Name</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>Parent ID</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nurse name</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Nurse phone</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Perform followup</value>
+          </text>
+          <text id="/data/perform_followup_group/uti_std_symptoms:label">
+            <value>Does the youth exhibit any of the following UTI or STD symptoms?</value>
+          </text>
+          <text id="/data/perform_followup_group/temperature:label">
+            <value>What is the youth's temperature?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_feasibility:label">
+            <value>Can a urinary strip be run?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_result:label">
+            <value>Does the urinary strip contain white blood cells?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Results</value>
+          </text>
+          <text id="/data/results_group/res_uti:label">
+            <value>UTI</value>
+          </text>
+          <text id="/data/results_group/res_uti_action:label">
+            <value>The youth has a Urinary Tract Infection. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis:label">
+            <value>Risk of glomerulonephritis</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis_action:label">
+            <value>The youth is at risk of glomerulonephritis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_syphilis:label">
+            <value>Risk of Syphilis</value>
+          </text>
+          <text id="/data/results_group/res_syphilis_action:label">
+            <value>The youth is at risk of Syphilis. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/results_group/res_other_std:label">
+            <value>Risk of other STD</value>
+          </text>
+          <text id="/data/results_group/res_other_std_action:label">
+            <value>The youth is at risk of other STD. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Null results</value>
+          </text>
+          <text id="/data/null_results_group/null_res_note:label">
+            <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Enregistrer la condition</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Effectuer le suivi</value>
+          </text>
+          <text id="uti_std_symptoms-0">
+            <value>Fièvre supérieure à 38</value>
+          </text>
+          <text id="uti_std_symptoms-1">
+            <value>Nausée</value>
+          </text>
+          <text id="uti_std_symptoms-2">
+            <value>Diarrhée</value>
+          </text>
+          <text id="uti_std_symptoms-3">
+            <value>Douleur abdominale</value>
+          </text>
+          <text id="uti_std_symptoms-4">
+            <value>Urine jaune</value>
+          </text>
+          <text id="uti_std_symptoms-5">
+            <value>Urine brune</value>
+          </text>
+          <text id="uti_std_symptoms-6">
+            <value>Écoulement vaginal ou urétral</value>
+          </text>
+          <text id="uti_std_symptoms-7">
+            <value>Ulcère des parties génitales</value>
+          </text>
+          <text id="uti_std_symptoms-8">
+            <value>Œdème</value>
+          </text>
+          <text id="uti_std_symptoms-9">
+            <value>Hypertension artérielle</value>
+          </text>
+          <text id="urine_strip_yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="urine_strip_yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="urine_strip_yes_no-2">
+            <value>Je n'ai pas utilisé de bandelette urinaire.</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Source</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Utilisateur</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Contact</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Quel est le nom du patient ?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID du patient</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Date de naissance</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sexe</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID parent</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Nom de l'infirmière</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Téléphone de l'infirmière</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Effectuer un suivi</value>
+          </text>
+          <text id="/data/perform_followup_group/uti_std_symptoms:label">
+            <value>Le jeune présente-t-il l'un des symptômes suivants d'infection urinaire ou d'IST ?</value>
+          </text>
+          <text id="/data/perform_followup_group/temperature:label">
+            <value>Quelle est la température des jeunes ?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_feasibility:label">
+            <value>Peut-on réaliser un test urinaire ?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_result:label">
+            <value>La bandelette urinaire contient-elle des globules blancs ?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Résultats</value>
+          </text>
+          <text id="/data/results_group/res_uti:label">
+            <value>infection urinaire</value>
+          </text>
+          <text id="/data/results_group/res_uti_action:label">
+            <value>Le jeune souffre d'une infection urinaire. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis:label">
+            <value>Risque de glomérulonéphrite</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis_action:label">
+            <value>Ce jeune présente un risque de glomérulonéphrite. Veuillez remplir le formulaire et compléter l'examen médical, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_syphilis:label">
+            <value>Risque de syphilis</value>
+          </text>
+          <text id="/data/results_group/res_syphilis_action:label">
+            <value>Ce jeune est exposé au risque de syphilis. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des traitements médicamenteux et des consultations.</value>
+          </text>
+          <text id="/data/results_group/res_other_std:label">
+            <value>Risque d'autres IST</value>
+          </text>
+          <text id="/data/results_group/res_other_std_action:label">
+            <value>Ce jeune est exposé à d'autres IST. Veuillez remplir le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures de traitement et de consultation.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Résultats nuls</value>
+          </text>
+          <text id="/data/null_results_group/null_res_note:label">
+            <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
+          </text>
+        </translation>
+        <translation lang="cr">
+          <text id="yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="Form_purpose-0">
+            <value>Anrejistre kondisyon</value>
+          </text>
+          <text id="Form_purpose-1">
+            <value>Fè swivi</value>
+          </text>
+          <text id="uti_std_symptoms-0">
+            <value>Lafyèv pi wo pase 38</value>
+          </text>
+          <text id="uti_std_symptoms-1">
+            <value>Kè plen</value>
+          </text>
+          <text id="uti_std_symptoms-2">
+            <value>Dyare</value>
+          </text>
+          <text id="uti_std_symptoms-3">
+            <value>Doulè nan vant</value>
+          </text>
+          <text id="uti_std_symptoms-4">
+            <value>Pipi jòn</value>
+          </text>
+          <text id="uti_std_symptoms-5">
+            <value>Pipi mawon</value>
+          </text>
+          <text id="uti_std_symptoms-6">
+            <value>Ekolman nan vajen oswa nan kanal pipi</value>
+          </text>
+          <text id="uti_std_symptoms-7">
+            <value>Ilsè nan pati jenital</value>
+          </text>
+          <text id="uti_std_symptoms-8">
+            <value>Anfle</value>
+          </text>
+          <text id="uti_std_symptoms-9">
+            <value>Tansyon wo</value>
+          </text>
+          <text id="urine_strip_yes_no-0">
+            <value>Wi</value>
+          </text>
+          <text id="urine_strip_yes_no-1">
+            <value>Non</value>
+          </text>
+          <text id="urine_strip_yes_no-2">
+            <value>Pa sèvi ak bann pipi</value>
+          </text>
+          <text id="/data/inputs/source:label">
+            <value>Sous</value>
+          </text>
+          <text id="/data/inputs/source_id:label">
+            <value>ID Sous</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>Itilizatè</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>ID Kontak</value>
+          </text>
+          <text id="/data/inputs/user/parent/_id:label">
+            <value>ID Paran</value>
+          </text>
+          <text id="/data/inputs/contact/_id:label">
+            <value>Ki non pasyan an?</value>
+          </text>
+          <text id="/data/inputs/contact/name:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/inputs/contact/short_name:label">
+            <value>Ti non</value>
+          </text>
+          <text id="/data/inputs/contact/patient_id:label">
+            <value>ID pasyan</value>
+          </text>
+          <text id="/data/inputs/contact/date_of_birth:label">
+            <value>Dat nesans</value>
+          </text>
+          <text id="/data/inputs/contact/sex:label">
+            <value>Sèks</value>
+          </text>
+          <text id="/data/inputs/contact/parent/_id:label">
+            <value>ID paran</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/nurse_name:label">
+            <value>Non enfimyè</value>
+          </text>
+          <text id="/data/inputs/contact/parent/parent/contact/phone:label">
+            <value>Telefòn enfimyè</value>
+          </text>
+          <text id="/data/perform_followup_group:label">
+            <value>Fè swivi</value>
+          </text>
+          <text id="/data/perform_followup_group/uti_std_symptoms:label">
+            <value>Èske jèn nan prezante nenpòt nan sentòm enfeksyon urin oswa maladi transmisib sa yo?</value>
+          </text>
+          <text id="/data/perform_followup_group/temperature:label">
+            <value>Ki tanperati jèn gason an?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_feasibility:label">
+            <value>Èske mwen ka fè yon tès urinè ak yon bann tès pipi?</value>
+          </text>
+          <text id="/data/perform_followup_group/urinary_strip_result:label">
+            <value>Èske bann pipi a gen globil blan ladan l?</value>
+          </text>
+          <text id="/data/results_group:label">
+            <value>Rezilta yo</value>
+          </text>
+          <text id="/data/results_group/res_uti:label">
+            <value>ITU</value>
+          </text>
+          <text id="/data/results_group/res_uti_action:label">
+            <value>Jèn nan gen yon enfeksyon urinè. Soumèt fòm lan epi ranpli egzamen medikal la, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis:label">
+            <value>Risk pou glomerulonefrit</value>
+          </text>
+          <text id="/data/results_group/res_glomerulonephritis_action:label">
+            <value>Jèn nan gen risk pou l gen glomerulonefrit. Soumèt fòm lan epi ranpli egzamen medikal la, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_syphilis:label">
+            <value>Risk pou sifilis</value>
+          </text>
+          <text id="/data/results_group/res_syphilis_action:label">
+            <value>Jèn nan an danje pou l pran sifilis. Soumèt fòm lan epi ranpli egzamen medikal la, apre sa kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/results_group/res_other_std:label">
+            <value>Risk pou lòt MST</value>
+          </text>
+          <text id="/data/results_group/res_other_std_action:label">
+            <value>Jèn nan gen risk pou l pran lòt MST. Soumèt fòm lan epi ranpli egzamen an, answit ale nan fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+          <text id="/data/null_results_group:label">
+            <value>Rezilta nil</value>
+          </text>
+          <text id="/data/null_results_group/null_res_note:label">
+            <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data id="YAA_Form004_UTIandSTD" version="20261011180707" prefix="J1!YAA_Form004_UTIandSTD!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source/>
+          <source_id/>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <patient_short_name/>
+          <patient_sex/>
+          <patient_date_of_birth/>
+          <patient_age_in_years/>
+          <patient_age_in_months/>
+          <patient_age_in_days/>
+          <patient_age_in_weeks/>
+          <perform_followup_group>
+            <uti_std_symptoms/>
+            <temperature/>
+            <urinary_strip_feasibility/>
+            <urinary_strip_result/>
+          </perform_followup_group>
+          <calc_uti/>
+          <calc_glomerulonephritis/>
+          <calc_syphilis/>
+          <calc_other_std/>
+          <results_group>
+            <res_uti/>
+            <res_uti_action/>
+            <res_glomerulonephritis/>
+            <res_glomerulonephritis_action/>
+            <res_syphilis/>
+            <res_syphilis_action/>
+            <res_other_std/>
+            <res_other_std_action/>
+          </results_group>
+          <null_results_group>
+            <null_res_note/>
+          </null_results_group>
+          <data>
+            <_uti_std_symptoms/>
+            <_temperature/>
+            <_urinary_strip_feasibility/>
+            <_urinary_strip_result/>
+            <_result_uti/>
+            <_result_glomerulonephritis/>
+            <_result_syphilis/>
+            <_result_other_std/>
+            <_urine_strip_used/>
+          </data>
+          <clinic_id/>
+          <prescription_summary db-doc="TRUE">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <urine_strips_used_in_YAA_Form004_UTIandSTD/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <instance id="contact-summary"/>
+      <instance id="user-contact-summary"/>
+      <instance id="yes_no">
+        <root>
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="Form_purpose">
+        <root>
+          <item>
+            <itextId>Form_purpose-0</itextId>
+            <name>register_condition</name>
+          </item>
+          <item>
+            <itextId>Form_purpose-1</itextId>
+            <name>perform_followup</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="uti_std_symptoms">
+        <root>
+          <item>
+            <itextId>uti_std_symptoms-0</itextId>
+            <name>fever_above_38</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-1</itextId>
+            <name>nausea</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-2</itextId>
+            <name>diarrhea</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-3</itextId>
+            <name>abdominal_pain</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-4</itextId>
+            <name>yellow_urine</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-5</itextId>
+            <name>brown_urine</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-6</itextId>
+            <name>vaginal_or_urethral_discharge</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-7</itextId>
+            <name>ulcer_of_genital_parts</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-8</itextId>
+            <name>oedema</name>
+          </item>
+          <item>
+            <itextId>uti_std_symptoms-9</itextId>
+            <name>high_blood_pressure</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="urine_strip_yes_no">
+        <root>
+          <item>
+            <itextId>urine_strip_yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>urine_strip_yes_no-1</itextId>
+            <name>no</name>
+          </item>
+          <item>
+            <itextId>urine_strip_yes_no-2</itextId>
+            <name>did_not_run</name>
+          </item>
+        </root>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/data/inputs/source" type="string"/>
+      <bind nodeset="/data/inputs/source_id" type="string"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/data/inputs/contact/name" type="string"/>
+      <bind nodeset="/data/inputs/contact/short_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/patient_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/data/inputs/contact/sex" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/nurse_name" type="string"/>
+      <bind nodeset="/data/inputs/contact/parent/parent/contact/phone" type="string"/>
+      <bind nodeset="/data/source" type="string" calculate="../inputs/source"/>
+      <bind nodeset="/data/source_id" type="string" calculate="../inputs/source_id"/>
+      <bind nodeset="/data/patient_uuid" type="string" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_id" type="string" required="true()" calculate="../inputs/contact/_id"/>
+      <bind nodeset="/data/patient_name" type="string" calculate="../inputs/contact/name"/>
+      <bind nodeset="/data/patient_short_name" type="string" calculate="../inputs/contact/short_name"/>
+      <bind nodeset="/data/patient_sex" type="string" calculate="../inputs/contact/sex"/>
+      <bind nodeset="/data/patient_date_of_birth" type="string" calculate="../inputs/contact/date_of_birth"/>
+      <bind nodeset="/data/patient_age_in_years" type="string" calculate="floor( difference-in-months(  /data/patient_date_of_birth , today() ) div 12 )"/>
+      <bind nodeset="/data/patient_age_in_months" type="string" calculate="difference-in-months(  /data/patient_date_of_birth , today() )"/>
+      <bind nodeset="/data/patient_age_in_days" type="string" calculate="floor( decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth ) )"/>
+      <bind nodeset="/data/patient_age_in_weeks" type="string" calculate="floor((decimal-date-time(today()) - decimal-date-time( /data/patient_date_of_birth )) div 7)"/>
+      <bind nodeset="/data/perform_followup_group/uti_std_symptoms" type="string" required="true()"/>
+      <bind nodeset="/data/perform_followup_group/temperature" type="decimal" required="true()" relevant="selected( /data/perform_followup_group/uti_std_symptoms , 'fever_above_38')"/>
+      <bind nodeset="/data/perform_followup_group/urinary_strip_feasibility" type="string" required="true()"/>
+      <bind nodeset="/data/perform_followup_group/urinary_strip_result" type="string" required="true()" relevant=" /data/perform_followup_group/urinary_strip_feasibility  = 'yes'"/>
+      <bind nodeset="/data/calc_uti" type="string" calculate="if((selected( /data/perform_followup_group/uti_std_symptoms , 'fever_above_38') or selected( /data/perform_followup_group/uti_std_symptoms , 'nausea') or selected( /data/perform_followup_group/uti_std_symptoms , 'diarrhea') or selected( /data/perform_followup_group/uti_std_symptoms , 'abdominal_pain') or selected( /data/perform_followup_group/uti_std_symptoms , 'yellow_urine') or  /data/perform_followup_group/urinary_strip_result  = 'yes') and not(selected( /data/perform_followup_group/uti_std_symptoms , 'vaginal_or_urethral_discharge')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'ulcer_of_genital_parts')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'oedema')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'brown_urine')) and not(selected( /data/perform_followup_group/uti_std_symptoms , 'high_blood_pressure')), 'true', 'false')"/>
+      <bind nodeset="/data/calc_glomerulonephritis" type="string" calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'oedema') or selected( /data/perform_followup_group/uti_std_symptoms , 'brown_urine') or selected( /data/perform_followup_group/uti_std_symptoms , 'high_blood_pressure'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_syphilis" type="string" calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'ulcer_of_genital_parts'), 'true', 'false')"/>
+      <bind nodeset="/data/calc_other_std" type="string" calculate="if(selected( /data/perform_followup_group/uti_std_symptoms , 'vaginal_or_urethral_discharge'), 'true', 'false')"/>
+      <bind nodeset="/data/results_group" relevant=" /data/calc_uti  = 'true' or  /data/calc_glomerulonephritis  = 'true' or  /data/calc_syphilis  = 'true' or  /data/calc_other_std  = 'true'"/>
+      <bind nodeset="/data/results_group/res_uti" readonly="true()" type="string" relevant=" /data/calc_uti  = 'true'"/>
+      <bind nodeset="/data/results_group/res_uti_action" readonly="true()" type="string" relevant=" /data/calc_uti  = 'true'"/>
+      <bind nodeset="/data/results_group/res_glomerulonephritis" readonly="true()" type="string" relevant=" /data/calc_glomerulonephritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_glomerulonephritis_action" readonly="true()" type="string" relevant=" /data/calc_glomerulonephritis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_syphilis" readonly="true()" type="string" relevant=" /data/calc_syphilis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_syphilis_action" readonly="true()" type="string" relevant=" /data/calc_syphilis  = 'true'"/>
+      <bind nodeset="/data/results_group/res_other_std" readonly="true()" type="string" relevant=" /data/calc_other_std  = 'true'"/>
+      <bind nodeset="/data/results_group/res_other_std_action" readonly="true()" type="string" relevant=" /data/calc_other_std  = 'true'"/>
+      <bind nodeset="/data/null_results_group" relevant=" /data/calc_uti  != 'true' and  /data/calc_glomerulonephritis  != 'true' and  /data/calc_syphilis  != 'true' and  /data/calc_other_std  != 'true'"/>
+      <bind nodeset="/data/null_results_group/null_res_note" readonly="true()" type="string"/>
+      <bind nodeset="/data/data/_uti_std_symptoms" type="string" calculate="if( /data/perform_followup_group/uti_std_symptoms  != '',  /data/perform_followup_group/uti_std_symptoms , 'false')"/>
+      <bind nodeset="/data/data/_temperature" type="string" calculate="if( /data/perform_followup_group/temperature  != '',  /data/perform_followup_group/temperature , -1)"/>
+      <bind nodeset="/data/data/_urinary_strip_feasibility" type="string" calculate="if( /data/perform_followup_group/urinary_strip_feasibility  != '',  /data/perform_followup_group/urinary_strip_feasibility , 'false')"/>
+      <bind nodeset="/data/data/_urinary_strip_result" type="string" calculate="if( /data/perform_followup_group/urinary_strip_result  != '',  /data/perform_followup_group/urinary_strip_result , 'false')"/>
+      <bind nodeset="/data/data/_result_uti" type="string" calculate="if( /data/calc_uti ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_glomerulonephritis" type="string" calculate="if( /data/calc_glomerulonephritis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_syphilis" type="string" calculate="if( /data/calc_syphilis ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_result_other_std" type="string" calculate="if( /data/calc_other_std ='true', 'true', 'false')"/>
+      <bind nodeset="/data/data/_urine_strip_used" type="string" calculate="if( /data/perform_followup_group/urinary_strip_result  = 'yes' or  /data/perform_followup_group/urinary_strip_result  = 'no', 'true', 'false')"/>
+      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
+      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
+      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
+      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
+      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;YAA_Form004_UTIandSTD&quot;"/>
+      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
+      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
+      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
+      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
+      <bind nodeset="/data/prescription_summary/fields/urine_strips_used_in_YAA_Form004_UTIandSTD" type="string" calculate="if( /data/data/_urine_strip_used  = 'true', 1, 0)"/>
+      <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <label ref="jr:itext('/data/inputs/user:label')"/>
+        <input ref="/data/inputs/user/contact_id" appearance="select-contact type-person">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <group ref="/data/inputs/user/parent"/>
+      </group>
+      <group ref="/data/inputs/contact">
+        <input ref="/data/inputs/contact/_id" appearance="db-object">
+          <label ref="jr:itext('/data/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/data/inputs/contact/parent">
+          <group ref="/data/inputs/contact/parent/parent">
+            <group ref="/data/inputs/contact/parent/parent/contact"/>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/perform_followup_group">
+      <label ref="jr:itext('/data/perform_followup_group:label')"/>
+      <select ref="/data/perform_followup_group/uti_std_symptoms">
+        <label ref="jr:itext('/data/perform_followup_group/uti_std_symptoms:label')"/>
+        <itemset nodeset="instance('uti_std_symptoms')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select>
+      <input ref="/data/perform_followup_group/temperature">
+        <label ref="jr:itext('/data/perform_followup_group/temperature:label')"/>
+      </input>
+      <select1 ref="/data/perform_followup_group/urinary_strip_feasibility">
+        <label ref="jr:itext('/data/perform_followup_group/urinary_strip_feasibility:label')"/>
+        <itemset nodeset="instance('yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+      <select1 ref="/data/perform_followup_group/urinary_strip_result">
+        <label ref="jr:itext('/data/perform_followup_group/urinary_strip_result:label')"/>
+        <itemset nodeset="instance('urine_strip_yes_no')/root/item">
+          <value ref="name"/>
+          <label ref="jr:itext(itextId)"/>
+        </itemset>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/data/results_group">
+      <label ref="jr:itext('/data/results_group:label')"/>
+      <input ref="/data/results_group/res_uti" appearance="h1 yellow">
+        <label ref="jr:itext('/data/results_group/res_uti:label')"/>
+      </input>
+      <input ref="/data/results_group/res_uti_action">
+        <label ref="jr:itext('/data/results_group/res_uti_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_glomerulonephritis" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_glomerulonephritis:label')"/>
+      </input>
+      <input ref="/data/results_group/res_glomerulonephritis_action">
+        <label ref="jr:itext('/data/results_group/res_glomerulonephritis_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_syphilis" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_syphilis:label')"/>
+      </input>
+      <input ref="/data/results_group/res_syphilis_action">
+        <label ref="jr:itext('/data/results_group/res_syphilis_action:label')"/>
+      </input>
+      <input ref="/data/results_group/res_other_std" appearance="h1 red">
+        <label ref="jr:itext('/data/results_group/res_other_std:label')"/>
+      </input>
+      <input ref="/data/results_group/res_other_std_action">
+        <label ref="jr:itext('/data/results_group/res_other_std_action:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/data/null_results_group">
+      <label ref="jr:itext('/data/null_results_group:label')"/>
+      <input ref="/data/null_results_group/null_res_note" appearance="h1 green">
+        <label ref="jr:itext('/data/null_results_group/null_res_note:label')"/>
+      </input>
+    </group>
+    <group ref="/data/data"/>
+    <group appearance="field-list summary" ref="/data/prescription_summary">
+      <group ref="/data/prescription_summary/contact"/>
+      <group ref="/data/prescription_summary/fields">
+        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
+      </group>
+    </group>
+  </h:body>
+</h:html>

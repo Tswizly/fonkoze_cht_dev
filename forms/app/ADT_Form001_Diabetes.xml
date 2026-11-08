@@ -153,21 +153,6 @@
           <text id="/data/null_results_group/null_results_group_note:label">
             <value>No conditions were met. Submit the form and complete the checkup, then proceed to the summary form for medicine and counseling procedures.</value>
           </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:jr:constraintMsg">
-            <value>Cannot be greater than 9</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:label">
-            <value>How many lancets did you use?</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:jr:constraintMsg">
-            <value>Cannot be greater than 9</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:label">
-            <value>How many blood glucose strips did you use?</value>
-          </text>
         </translation>
         <translation lang="fr">
           <text id="yes_no-0">
@@ -282,7 +267,7 @@
             <value>Le patient est diabétique. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
           </text>
           <text id="/data/results_group/res_hyperglycemia_moderate_declaration_diabetic:label">
-            <value>La glycémie du patient se situe dans la plage diabétique. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des médicaments et des consultations.</value>
+            <value>La glycémie du patient se situe dans la plage diabétique. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des prescriptions et des consultations.</value>
           </text>
           <text id="/data/results_group/res_hyperglycemia_severe:label">
             <value>Diabète - Hyperglycémie</value>
@@ -302,21 +287,6 @@
           </text>
           <text id="/data/null_results_group/null_results_group_note:label">
             <value>Aucune condition n'a été remplie. Veuillez soumettre le formulaire et compléter le bilan de santé, puis passer au formulaire récapitulatif des procédures médicales et de consultation.</value>
-          </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Actions</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:jr:constraintMsg">
-            <value>Ne peut pas être supérieur à 9</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:label">
-            <value>Combien de lancettes avez-vous utilisées ?</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:jr:constraintMsg">
-            <value>Ne peut pas être supérieur à 9</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:label">
-            <value>Combien de bandelettes de glycémie avez-vous utilisées ?</value>
           </text>
           <text id="/data/inputs:label">
             <value>-</value>
@@ -384,15 +354,6 @@
           <text id="/data/data/_excessive_sweating:label">
             <value>-</value>
           </text>
-          <text id="/data/data/_lancets_used:label">
-            <value>-</value>
-          </text>
-          <text id="/data/data/_strips_used:label">
-            <value>-</value>
-          </text>
-          <text id="/data/prescription_summary/fields/Medicine_out:label">
-            <value>-</value>
-          </text>
         </translation>
         <translation lang="cr">
           <text id="yes_no-0">
@@ -429,7 +390,7 @@
             <value>1000mg/jou: 500mg de fwa pa jou avèk repa</value>
           </text>
           <text id="metformin_dosage-2">
-            <value>1500mg/jou: 750mg de fwa pa jou avèk repa</value>
+            <value>1500mg/jou: 750mg de fwa pa jou avèk repa yo</value>
           </text>
           <text id="metformin_dosage-3">
             <value>2000mg/jou: 1000mg de fwa pa jou avèk repa yo</value>
@@ -528,21 +489,6 @@
           <text id="/data/null_results_group/null_results_group_note:label">
             <value>Pa gen okenn kondisyon ki te ranpli. Soumèt fòm lan epi konplete egzamen an, answit kontinye ak fòm rezime a pou medikaman ak pwosedi konsèy yo.</value>
           </text>
-          <text id="/data/actions_confirmation:label">
-            <value>Aksyon</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:jr:constraintMsg">
-            <value>Pa ka pi gwo pase 9</value>
-          </text>
-          <text id="/data/actions_confirmation/lancets_used:label">
-            <value>Konbyen lansèt ou te itilize?</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:jr:constraintMsg">
-            <value>Pa ka pi gwo pase 9</value>
-          </text>
-          <text id="/data/actions_confirmation/strips_used:label">
-            <value>Konbyen bann mezi glikoz nan san ou te itilize?</value>
-          </text>
           <text id="/data/inputs:label">
             <value>-</value>
           </text>
@@ -609,19 +555,10 @@
           <text id="/data/data/_excessive_sweating:label">
             <value>-</value>
           </text>
-          <text id="/data/data/_lancets_used:label">
-            <value>-</value>
-          </text>
-          <text id="/data/data/_strips_used:label">
-            <value>-</value>
-          </text>
-          <text id="/data/prescription_summary/fields/Medicine_out:label">
-            <value>-</value>
-          </text>
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form001_Diabetes" version="20261012105310" prefix="J1!ADT_Form001_Diabetes!" delimiter="#">
+        <data id="ADT_Form001_Diabetes" version="20261107183447" prefix="J1!ADT_Form001_Diabetes!" delimiter="#">
           <inputs>
             <meta>
               <location>
@@ -659,90 +596,65 @@
               </parent>
             </contact>
           </inputs>
-          <source/>
-          <source_id/>
-          <patient_uuid/>
-          <patient_id/>
-          <patient_name/>
-          <patient_short_name/>
-          <patient_sex/>
-          <patient_date_of_birth/>
-          <patient_age_in_years/>
-          <patient_age_in_months/>
-          <patient_age_in_days/>
-          <patient_age_in_weeks/>
-          <calc_hyperglycemia_mild/>
-          <calc_hyperglycemia_moderate/>
-          <calc_hyperglycemia_severe/>
-          <fasting_glucose/>
-          <diabetes_checkup_group>
-            <has_diabetes_warning/>
-            <diabetes_symptoms/>
-            <hereditary_diabetes/>
-            <time_of_last_meal/>
-            <blood_glucose/>
-            <patient_takes_medicine/>
-            <metformin_dose/>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <calc_hyperglycemia_mild tag="hidden"/>
+          <calc_hyperglycemia_moderate tag="hidden"/>
+          <calc_hyperglycemia_severe tag="hidden"/>
+          <fasting_glucose tag="hidden"/>
+          <diabetes_checkup_group tag="hidden">
+            <has_diabetes_warning tag="hidden"/>
+            <diabetes_symptoms tag="hidden"/>
+            <hereditary_diabetes tag="hidden"/>
+            <time_of_last_meal tag="hidden"/>
+            <blood_glucose tag="hidden"/>
+            <patient_takes_medicine tag="hidden"/>
+            <metformin_dose tag="hidden"/>
           </diabetes_checkup_group>
-          <results_group>
-            <res_hyperglycemia_mild/>
-            <res_hyperglycemia_mild_declaration/>
-            <res_hyperglycemia_moderate/>
-            <res_hyperglycemia_moderate_declaration/>
-            <res_hyperglycemia_moderate_declaration_diabetic/>
-            <res_hyperglycemia_severe/>
-            <res_hyperglycemia_severe_declaration/>
-            <res_hyperglycemia_severe_declaration_diabetic/>
-            <res_hyperglycemia_severe_protocol/>
+          <results_group tag="hidden">
+            <res_hyperglycemia_mild tag="hidden"/>
+            <res_hyperglycemia_mild_declaration tag="hidden"/>
+            <res_hyperglycemia_moderate tag="hidden"/>
+            <res_hyperglycemia_moderate_declaration tag="hidden"/>
+            <res_hyperglycemia_moderate_declaration_diabetic tag="hidden"/>
+            <res_hyperglycemia_severe tag="hidden"/>
+            <res_hyperglycemia_severe_declaration tag="hidden"/>
+            <res_hyperglycemia_severe_declaration_diabetic tag="hidden"/>
+            <res_hyperglycemia_severe_protocol tag="hidden"/>
           </results_group>
-          <null_results_group>
-            <null_results_group_note/>
+          <null_results_group tag="hidden">
+            <null_results_group_note tag="hidden"/>
           </null_results_group>
-          <actions_confirmation>
-            <lancets_used/>
-            <strips_used/>
-          </actions_confirmation>
-          <data>
-            <_metformin_dosage/>
-            <_random_glucose_level/>
-            <_fasting_glucose_level/>
-            <_hereditary_diabetes/>
-            <_result_hyperglycemia_mild/>
-            <_result_hyperglycemia_moderate/>
-            <_result_hyperglycemia_severe/>
-            <_tiredness/>
-            <_weight_loss/>
-            <_frequent_urination/>
-            <_frequent_eating/>
-            <_frequent_drinking/>
-            <_excessive_sweating/>
-            <_lancets_used/>
-            <_strips_used/>
+          <data tag="hidden">
+            <_metformin_dosage tag="hidden"/>
+            <_random_glucose_level tag="hidden"/>
+            <_fasting_glucose_level tag="hidden"/>
+            <_hereditary_diabetes tag="hidden"/>
+            <_result_hyperglycemia_mild tag="hidden"/>
+            <_result_hyperglycemia_moderate tag="hidden"/>
+            <_result_hyperglycemia_severe tag="hidden"/>
+            <_tiredness tag="hidden"/>
+            <_weight_loss tag="hidden"/>
+            <_frequent_urination tag="hidden"/>
+            <_frequent_eating tag="hidden"/>
+            <_frequent_drinking tag="hidden"/>
+            <_excessive_sweating tag="hidden"/>
           </data>
-          <clinic_id/>
-          <prescription_summary db-doc="TRUE">
-            <stock_monitoring_reported_date/>
-            <place_id/>
-            <type/>
-            <created_from db-doc-ref="/data"/>
-            <created_from_name/>
-            <content_type/>
-            <form/>
-            <contact>
-              <_id/>
-            </contact>
-            <fields>
-              <Medicine_out/>
-              <lancets_used_in/>
-              <lancets___set/>
-              <lancets___unit/>
-              <lancets_used_in_ADT_Form001_Diabetes/>
-              <strips_used_in/>
-              <strips___set/>
-              <strips___unit/>
-              <strips_used_in_ADT_Form001_Diabetes/>
-            </fields>
-          </prescription_summary>
+          <summary_patient_info/>
+          <summary_chronic_status/>
+          <summary_symptoms/>
+          <summary_glucose_reading/>
+          <summary_glucose_flag/>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -865,9 +777,6 @@
       <bind nodeset="/data/results_group/res_hyperglycemia_severe_protocol" readonly="true()" type="string" relevant=" /data/calc_hyperglycemia_severe  = 'true'"/>
       <bind nodeset="/data/null_results_group" relevant=" /data/calc_hyperglycemia_mild ='false' and  /data/calc_hyperglycemia_moderate ='false' and  /data/calc_hyperglycemia_severe ='false'"/>
       <bind nodeset="/data/null_results_group/null_results_group_note" readonly="true()" type="string"/>
-      <bind nodeset="/data/actions_confirmation" relevant=" /data/calc_hyperglycemia_mild ='true' or  /data/calc_hyperglycemia_moderate ='true' or  /data/calc_hyperglycemia_severe ='true'"/>
-      <bind nodeset="/data/actions_confirmation/lancets_used" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/actions_confirmation/lancets_used:jr:constraintMsg')"/>
-      <bind nodeset="/data/actions_confirmation/strips_used" type="int" required="true()" constraint=". &lt;= 9 and . &gt;= 0" jr:constraintMsg="jr:itext('/data/actions_confirmation/strips_used:jr:constraintMsg')"/>
       <bind nodeset="/data/data/_metformin_dosage" type="string" calculate="if( /data/diabetes_checkup_group/metformin_dose  = 'low', '1000mg/day', if( /data/diabetes_checkup_group/metformin_dose  = 'medium', '1500mg/day', if( /data/diabetes_checkup_group/metformin_dose  = 'high', '2000mg/day',&#10;if( /data/diabetes_checkup_group/metformin_dose  = 'new', '500mg/day', ''))))"/>
       <bind nodeset="/data/data/_random_glucose_level" type="string" calculate="if( /data/fasting_glucose  = 'false',  /data/diabetes_checkup_group/blood_glucose , -1)"/>
       <bind nodeset="/data/data/_fasting_glucose_level" type="string" calculate="if( /data/fasting_glucose  = 'true',  /data/diabetes_checkup_group/blood_glucose , -1)"/>
@@ -881,26 +790,11 @@
       <bind nodeset="/data/data/_frequent_eating" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_eating'), 'true', 'false')"/>
       <bind nodeset="/data/data/_frequent_drinking" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_drinking'), 'true', 'false')"/>
       <bind nodeset="/data/data/_excessive_sweating" type="string" calculate="if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'excessive_sweating'), 'true', 'false')"/>
-      <bind nodeset="/data/data/_lancets_used" type="string" calculate=" /data/actions_confirmation/lancets_used "/>
-      <bind nodeset="/data/data/_strips_used" type="string" calculate=" /data/actions_confirmation/strips_used "/>
-      <bind nodeset="/data/clinic_id" type="string" calculate="../inputs/user/facility_id"/>
-      <bind nodeset="/data/prescription_summary/stock_monitoring_reported_date" type="string" calculate="now()"/>
-      <bind nodeset="/data/prescription_summary/place_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/type" type="string" calculate="&quot;data_record&quot;"/>
-      <bind nodeset="/data/prescription_summary/created_from" type="string" calculate="."/>
-      <bind nodeset="/data/prescription_summary/created_from_name" type="string" calculate="&quot;ADT_Form001_Diabetes&quot;"/>
-      <bind nodeset="/data/prescription_summary/content_type" type="string" calculate="&quot;xml&quot;"/>
-      <bind nodeset="/data/prescription_summary/form" type="string" calculate="&quot;prescription_summary&quot;"/>
-      <bind nodeset="/data/prescription_summary/contact/_id" type="string" calculate=" /data/clinic_id "/>
-      <bind nodeset="/data/prescription_summary/fields/Medicine_out" readonly="true()" type="string"/>
-      <bind nodeset="/data/prescription_summary/fields/lancets_used_in" type="string" calculate=" /data/data/_lancets_used "/>
-      <bind nodeset="/data/prescription_summary/fields/lancets___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/lancets_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/lancets___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/lancets_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/lancets_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/lancets_used_in_ADT_Form001_Diabetes" type="string" calculate=" /data/prescription_summary/fields/lancets___set  * 8 +  /data/prescription_summary/fields/lancets___unit "/>
-      <bind nodeset="/data/prescription_summary/fields/strips_used_in" type="string" calculate=" /data/data/_strips_used "/>
-      <bind nodeset="/data/prescription_summary/fields/strips___set" type="string" calculate="if(count-selected( /data/prescription_summary/fields/strips_used_in ) &gt; 0 and count-selected(substring-before( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-before( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-before( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/strips___unit" type="string" calculate="if(count-selected( /data/prescription_summary/fields/strips_used_in ) &gt; 0 and count-selected(substring-after( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;)) &gt;= 0 and regex(substring-after( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;), '^[0-9]+$'),number(substring-after( /data/prescription_summary/fields/strips_used_in , &quot;/&quot;)),0)"/>
-      <bind nodeset="/data/prescription_summary/fields/strips_used_in_ADT_Form001_Diabetes" type="string" calculate=" /data/prescription_summary/fields/strips___set  * 8 +  /data/prescription_summary/fields/strips___unit "/>
+      <bind nodeset="/data/summary_patient_info" type="string" calculate="concat('Patient: ',  /data/patient_name , ' | DOB: ',  /data/patient_date_of_birth , ' | Age: ',  /data/patient_age_in_years , ' yrs | Sex: ',  /data/patient_sex )"/>
+      <bind nodeset="/data/summary_chronic_status" type="string" calculate="if( /data/inputs/contact/chronic_diabetes  = 'true', 'Known Chronic Diabetes: Yes', 'Known Chronic Diabetes: No')"/>
+      <bind nodeset="/data/summary_symptoms" type="string" calculate="if(count-selected( /data/diabetes_checkup_group/diabetes_symptoms ) = 0 or selected( /data/diabetes_checkup_group/diabetes_symptoms , 'bypass'), 'Symptoms Reported: None', concat('Symptoms Reported: ', if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'tiredness'), 'Tiredness; ', ''), if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'weight_loss'), 'Weight loss; ', ''), if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_urination'), 'Frequent urination; ', ''), if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_eating'), 'Frequent eating; ', ''), if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'frequent_drinking'), 'Frequent drinking; ', ''), if(selected( /data/diabetes_checkup_group/diabetes_symptoms , 'excessive_sweating'), 'Excessive sweating; ', '')))"/>
+      <bind nodeset="/data/summary_glucose_reading" type="string" calculate="if( /data/diabetes_checkup_group/blood_glucose  != '', concat('Blood Glucose Reading: ',  /data/diabetes_checkup_group/blood_glucose , ' mg/dL (Last meal within 14h: ',  /data/diabetes_checkup_group/time_of_last_meal , ')'), 'Blood Glucose Reading: None recorded')"/>
+      <bind nodeset="/data/summary_glucose_flag" type="string" calculate="if( /data/calc_hyperglycemia_severe  = 'true', 'Condition: Severe Hyperglycemia (&gt; 400 mg/dL) - Urgent Referral Required', if( /data/calc_hyperglycemia_moderate  = 'true', 'Condition: Moderate Hyperglycemia (201 - 400 mg/dL) - Diabetic Range', if( /data/calc_hyperglycemia_mild  = 'true', 'Condition: Mild Hyperglycemia (120 - 200 mg/dL)', if( /data/diabetes_checkup_group/blood_glucose  != '', 'Condition: Normal Blood Glucose - No Hyperglycemia Detected', 'Condition: Blood glucose not tested'))))"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>
   </h:head>
@@ -1004,21 +898,6 @@
         <label ref="jr:itext('/data/null_results_group/null_results_group_note:label')"/>
       </input>
     </group>
-    <group appearance="field-list" ref="/data/actions_confirmation">
-      <label ref="jr:itext('/data/actions_confirmation:label')"/>
-      <input ref="/data/actions_confirmation/lancets_used">
-        <label ref="jr:itext('/data/actions_confirmation/lancets_used:label')"/>
-      </input>
-      <input ref="/data/actions_confirmation/strips_used">
-        <label ref="jr:itext('/data/actions_confirmation/strips_used:label')"/>
-      </input>
-    </group>
     <group ref="/data/data"/>
-    <group appearance="field-list summary" ref="/data/prescription_summary">
-      <group ref="/data/prescription_summary/contact"/>
-      <group ref="/data/prescription_summary/fields">
-        <input ref="/data/prescription_summary/fields/Medicine_out" appearance="hidden"/>
-      </group>
-    </group>
   </h:body>
 </h:html>
