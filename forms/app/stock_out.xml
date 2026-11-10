@@ -1798,7 +1798,7 @@
             <lancets_required___unit/>
           </summary>
           <out>
-            <hidden_note_fix_error/>
+            <prevents_blank_group/>
           </out>
           <needs_signoff/>
           <meta tag="hidden">
@@ -2243,7 +2243,7 @@
       <bind nodeset="/data/summary/lancets_at_hand___unit" type="string" calculate=" /data/inputs/lancets_at_hand  mod 1"/>
       <bind nodeset="/data/summary/lancets_required___set" type="string" calculate="int( /data/inputs/lancets_required  div 1)"/>
       <bind nodeset="/data/summary/lancets_required___unit" type="string" calculate=" /data/inputs/lancets_required  mod 1"/>
-      <bind nodeset="/data/out/hidden_note_fix_error" type="string"/>
+      <bind nodeset="/data/out/prevents_blank_group" type="string"/>
       <bind nodeset="/data/needs_signoff" type="string" calculate="true()"/>
       <bind nodeset="/data/meta/instanceID" type="string" readonly="true()" jr:preload="uid"/>
     </model>

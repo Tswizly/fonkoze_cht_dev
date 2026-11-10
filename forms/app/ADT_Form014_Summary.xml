@@ -1845,7 +1845,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_pre_eclampsia/confirm_nifedipine_20mg_pre_eclampsia:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_pre_eclampsia/_data_nifedipine_20mg_pre_eclampsia_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1880,7 +1880,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_gt20/confirm_nifedipine_20mg_gt20:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_gt20/_data_nifedipine_20mg_gt20_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1911,7 +1911,7 @@ OR
 
 - Administrer immédiatement 1 comprimé de paracétamol 500 mg
 
-- Se rendre immédiatement à l'hôpital</value>
+- Transporter immédiatement le patient à l'hôpital</value>
           </text>
           <text id="/data/grp_threatened_miscarriage_lt20/miscarriage_lt20_counseling:label">
             <value>Accompagnement psychologique :
@@ -1952,7 +1952,7 @@ OR
 - (À FAIRE : l'accompagnement psychologique n'est pas prévu dans les protocoles de soins ; ajouté à titre indicatif pour les commentaires des infirmières)</value>
           </text>
           <text id="/data/grp_gestational_htn_sev/confirm_nifedipine_20mg_gest_sev:label">
-            <value>Avez-vous administré 1 comprimé de nifédipine de 20 mg ?</value>
+            <value>Avez-vous administré 1 comprimé de nifédipine 20 mg ?</value>
           </text>
           <text id="/data/grp_gestational_htn_sev/gest_htn_sev_med_not_confirmed_reason:label">
             <value>Vous avez laissé au moins une confirmation de médicament vide. Si cela est intentionnel, veuillez indiquer pourquoi ci-dessous.</value>
@@ -1979,7 +1979,7 @@ OR
           <text id="/data/grp_gestational_htn_mild/gest_htn_mild_counseling:label">
             <value>Conseils :
 
-- Informer la patiente qu'elle ne tardera pas trop à se rendre à sa consultation prénatale.
+- Informer la patiente qu'elle ne doit pas trop tarder à se rendre à la consultation prénatale.
 
 - Conseiller la patiente de réduire sa consommation de sel.</value>
           </text>
@@ -2007,7 +2007,7 @@ OR
           <text id="/data/grp_preg_uti/preg_uti_protocol:label">
             <value>Protocole :
 
-Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendant 7 jours</value>
+- Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendant 7 jours</value>
           </text>
           <text id="/data/grp_preg_uti/preg_uti_counseling:label">
             <value>Conseils :
@@ -2115,7 +2115,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_2/confirm_hctz_25mg_g2:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2158,7 +2158,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_1/confirm_hctz_25mg_g1:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -2286,7 +2286,7 @@ Distribuer 21 comprimés d'amoxicilline 500 mg à prendre 3 fois par jour pendan
 - Distribuer 60 comprimés de metformine 500 mg à prendre deux fois par jour, au moment des repas.</value>
           </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_protocol3:label">
-            <value> Le patient prend actuellement <output value=" /data/_metformin_dosage "/>. Si le contrôle glycémique est insuffisant, il est conseillé d'augmenter la posologie de 500 mg/jour en fonction de la tolérance. Souhaitez-vous augmenter sa posologie ?</value>
+            <value> Le patient prend actuellement <output value=" /data/_metformin_dosage "/>. Si le contrôle glycémique est insuffisant, il est conseillé d'augmenter la posologie de 500 mg/jour, selon la tolérance. Souhaitez-vous augmenter sa posologie ?</value>
           </text>
           <text id="/data/grp_diabetes_mod/diabetes_mod_protocol3_1:label">
             <value>Protocole :
@@ -3097,7 +3097,7 @@ Distribuer 18 comprimés de paracétamol 500 mg, à prendre à raison de 1 à 2 
           <text id="/data/grp_moderate_anemia/anemia_counseling:label">
             <value>Conseils diététiques :
 
-- Fournir des conseils nutritionnels sur les aliments riches en fer tels que les légumes verts à feuilles (moringa, lyann panye, boujon manyok, boujon pwa), les fruits, les carottes râpées et la betterave rouge.</value>
+- Fournir des conseils diététiques sur les aliments riches en fer tels que les légumes verts à feuilles (moringa, lyann panye, boujon manyok, boujon pwa), les fruits, les carottes râpées et la betterave rouge.</value>
           </text>
           <text id="/data/grp_moderate_anemia/confirm_iron_folic_acid:label">
             <value>Avez-vous distribué 14 comprimés de fer et d'acide folique ?</value>
@@ -3159,7 +3159,7 @@ OU
             <value>Référer</value>
           </text>
           <text id="/data/referrals/referral_location:label">
-            <value>De quel endroit parliez-vous ?</value>
+            <value>De quel lieu parliez-vous ?</value>
           </text>
           <text id="/data/referrals/referral_location_other:label">
             <value>Si autre, quel lieu ?</value>
@@ -4309,10 +4309,10 @@ Pwotokòl:
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_protocol_positive_pylori:label">
             <value>Pwotokòl:
-- Distribye 28 grenn Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
-- Distribye 20cc jèl Litacid pou pran 30 minit apre repa yo.
-- Distribye 42 grenn Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
-- Distribye 42 grenn Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
+- Distribye 28 Omeprazole 20mg pou pran de fwa pa jou pandan 14 jou
+- Distribye 20cc Litacid jèl pou pran 30 minit apre repa yo.
+- Distribye 42 Amoksisilin 500mg pou pran 3 fwa pa jou pandan 14 jou
+- Distribye 42 Metronidazole 500mg pou pran 3 fwa pa jou pandan 14 jou</value>
           </text>
           <text id="/data/grp_gastritis_mild/gastritis_mild_counseling_hpylori_negative:label">
             <value>Konsèy:
@@ -4541,7 +4541,7 @@ Pwotokòl:
           <text id="/data/grp_malaria_pos/malaria_pos_counseling:label">
             <value>Konsèy:
 - Konseye pasyan an pou l bwè anpil likid
-- Konseye pasyan an pou l veye siy danje tankou chanjman konsyans, detrès respiratwa, oswa doulè nan vant
+- Konseye pasyan an pou l veye siy danje tankou chanjman konsyans, pwoblèm respiratwa, oswa doulè nan vant
 - Si pasyan an remake nenpòt siy danje, ale lopital.</value>
           </text>
           <text id="/data/grp_malaria_pos/confirm_chloroquine_150mg:label">
@@ -4572,7 +4572,7 @@ Pwotokòl:
           <text id="/data/grp_malaria_neg/malaria_neg_counseling:label">
             <value>Konsèy:
 - Konseye pasyan an pou l bwè anpil likid
-- Konseye pasyan an pou l veye siy danje tankou chanjman konsyans, detrès respiratwa, oswa doulè nan vant
+- Konseye pasyan an pou l veye siy danje tankou chanjman konsyans, pwoblèm respiratwa, oswa doulè nan vant
 - Si pasyan an remake nenpòt siy danje, ale lopital.</value>
           </text>
           <text id="/data/grp_malaria_neg/confirm_paracetamol_500mg_mal_neg:label">
@@ -5166,7 +5166,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ADT_Form014_Summary" version="20261107204254" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+        <data id="ADT_Form014_Summary" version="20261110105653" prefix="J1!ADT_Form014_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>

@@ -1,0 +1,737 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form014_Summary" version="20261107204254" prefix="J1!ADT_Form014_Summary!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <_has_emergency_symptoms tag="hidden"/>
+          <_result_hyperglycemia_mild tag="hidden"/>
+          <_result_hyperglycemia_moderate tag="hidden"/>
+          <_result_hyperglycemia_severe tag="hidden"/>
+          <_metformin_dosage tag="hidden"/>
+          <_result_gastritis_serious tag="hidden"/>
+          <_result_gastritis_not_serious tag="hidden"/>
+          <_h_pylori_rapid_test_result tag="hidden"/>
+          <_result_risk_of_cholera tag="hidden"/>
+          <_result_acute_diarrhea tag="hidden"/>
+          <_result_amoeba_giardia tag="hidden"/>
+          <_result_appendicitis_cholecystitis tag="hidden"/>
+          <_result_risk_malaria tag="hidden"/>
+          <_malaria_rapid_test_result tag="hidden"/>
+          <_result_hypertensive_urgency tag="hidden"/>
+          <_result_hypertension_grade_1 tag="hidden"/>
+          <_result_hypertension_grade_2 tag="hidden"/>
+          <_result_hypertension_grade_3 tag="hidden"/>
+          <_pregnancy_form_purpose tag="hidden"/>
+          <_pregnancy_test_result tag="hidden"/>
+          <_result_gestational_hypertension_no_serious tag="hidden"/>
+          <_result_gestational_hypertension_serious tag="hidden"/>
+          <_result_pre_eclampsia tag="hidden"/>
+          <_result_genitourinary_infections tag="hidden"/>
+          <_result_threatened_miscarriage_less20 tag="hidden"/>
+          <_result_threatened_miscarriage_greater20 tag="hidden"/>
+          <_result_tuberculosis tag="hidden"/>
+          <_result_asthma tag="hidden"/>
+          <_result_pneumonia tag="hidden"/>
+          <_result_flu_like_syndrome tag="hidden"/>
+          <_result_impetigo_folliculitis tag="hidden"/>
+          <_result_ring_worm tag="hidden"/>
+          <_result_scabies tag="hidden"/>
+          <_result_transient_ischemic_attack tag="hidden"/>
+          <_result_stroke tag="hidden"/>
+          <_result_old_stroke tag="hidden"/>
+          <_result_uti tag="hidden"/>
+          <_result_std_discharge tag="hidden"/>
+          <_result_std_ulcer tag="hidden"/>
+          <_result_moderate_anemia tag="hidden"/>
+          <_result_urgent_referral tag="hidden"/>
+          <has_positive_condition tag="hidden"/>
+          <summary_header tag="hidden">
+            <summary_overview tag="hidden"/>
+            <summary_instructions tag="hidden"/>
+            <res_triage_emergency tag="hidden"/>
+            <res_triage_emergency_protocol tag="hidden"/>
+            <res_diabetes_mild tag="hidden"/>
+            <res_diabetes_mild_protocol tag="hidden"/>
+            <res_diabetes_mod tag="hidden"/>
+            <res_diabetes_mod_protocol tag="hidden"/>
+            <res_diabetes_sev tag="hidden"/>
+            <res_diabetes_sev_protocol tag="hidden"/>
+            <res_gastritis_serious tag="hidden"/>
+            <res_gastritis_serious_protocol tag="hidden"/>
+            <res_gastritis_not_serious tag="hidden"/>
+            <res_gastritis_not_serious_protocol tag="hidden"/>
+            <res_cholera tag="hidden"/>
+            <res_cholera_protocol tag="hidden"/>
+            <res_acute_diarrhea tag="hidden"/>
+            <res_acute_diarrhea_protocol tag="hidden"/>
+            <res_amoeba_giardia tag="hidden"/>
+            <res_amoeba_giardia_protocol tag="hidden"/>
+            <res_appendicitis tag="hidden"/>
+            <res_appendicitis_protocol tag="hidden"/>
+            <res_malaria_pos tag="hidden"/>
+            <res_malaria_pos_protocol tag="hidden"/>
+            <res_malaria_neg tag="hidden"/>
+            <res_malaria_neg_protocol tag="hidden"/>
+            <res_htn_urgency tag="hidden"/>
+            <res_htn_urgency_protocol tag="hidden"/>
+            <res_htn_g1 tag="hidden"/>
+            <res_htn_g1_protocol tag="hidden"/>
+            <res_htn_g2 tag="hidden"/>
+            <res_htn_g2_protocol tag="hidden"/>
+            <res_htn_g3 tag="hidden"/>
+            <res_htn_g3_protocol tag="hidden"/>
+            <res_preg_htn_mild tag="hidden"/>
+            <res_preg_htn_mild_protocol tag="hidden"/>
+            <res_preg_htn_sev tag="hidden"/>
+            <res_preg_htn_sev_protocol tag="hidden"/>
+            <res_pre_eclamp tag="hidden"/>
+            <res_pre_eclamp_protocol tag="hidden"/>
+            <res_preg_uti tag="hidden"/>
+            <res_preg_uti_protocol tag="hidden"/>
+            <res_miscarriage_less20 tag="hidden"/>
+            <res_miscarriage_less20_protocol tag="hidden"/>
+            <res_miscarriage_great20 tag="hidden"/>
+            <res_miscarriage_great20_protocol tag="hidden"/>
+            <res_tb tag="hidden"/>
+            <res_tb_protocol tag="hidden"/>
+            <res_asthma tag="hidden"/>
+            <res_asthma_protocol tag="hidden"/>
+            <res_pneumonia tag="hidden"/>
+            <res_pneumonia_protocol tag="hidden"/>
+            <res_flu tag="hidden"/>
+            <res_flu_protocol tag="hidden"/>
+            <res_impetigo tag="hidden"/>
+            <res_impetigo_protocol tag="hidden"/>
+            <res_ringworm tag="hidden"/>
+            <res_ringworm_protocol tag="hidden"/>
+            <res_scabies tag="hidden"/>
+            <res_scabies_protocol tag="hidden"/>
+            <res_tia tag="hidden"/>
+            <res_tia_protocol tag="hidden"/>
+            <res_stroke_active tag="hidden"/>
+            <res_stroke_active_protocol tag="hidden"/>
+            <res_old_stroke tag="hidden"/>
+            <res_old_stroke_protocol tag="hidden"/>
+            <res_uti tag="hidden"/>
+            <res_uti_protocol tag="hidden"/>
+            <res_std_disc tag="hidden"/>
+            <res_std_disc_protocol tag="hidden"/>
+            <res_std_ulc tag="hidden"/>
+            <res_std_ulc_protocol tag="hidden"/>
+            <res_anemia tag="hidden"/>
+            <res_anemia_protocol tag="hidden"/>
+            <res_urgent_ref tag="hidden"/>
+            <res_urgent_ref_protocol tag="hidden"/>
+            <res_no_condition tag="hidden"/>
+            <res_no_condition_protocol tag="hidden"/>
+          </summary_header>
+          <grp_triage_emergency tag="hidden">
+            <emergency_symptoms_during_triage_notification tag="hidden"/>
+            <emergency_symptoms_during_triage_protocol tag="hidden"/>
+            <confirm_iv_line tag="hidden"/>
+            <emergency_symptoms_during_triage_notes tag="hidden"/>
+          </grp_triage_emergency>
+          <grp_pre_eclampsia tag="hidden">
+            <pre_eclampsia_notification tag="hidden"/>
+            <pre_eclampsia_protocol tag="hidden"/>
+            <pre_eclampsia_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_pre_eclampsia tag="hidden"/>
+            <_data_nifedipine_20mg_pre_eclampsia_distributed tag="hidden"/>
+            <pre_eclampsia_med_not_confirmed_reason tag="hidden"/>
+            <pre_eclampsia_notes tag="hidden"/>
+          </grp_pre_eclampsia>
+          <grp_threatened_miscarriage_gt20 tag="hidden">
+            <miscarriage_gt20_notification tag="hidden"/>
+            <miscarriage_gt20_protocol tag="hidden"/>
+            <miscarriage_gt20_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gt20 tag="hidden"/>
+            <_data_nifedipine_20mg_gt20_distributed tag="hidden"/>
+            <confirm_paracetamol_500mg_gt20 tag="hidden"/>
+            <_data_paracetamol_500mg_gt20_distributed tag="hidden"/>
+            <miscarriage_gt20_med_not_confirmed_reason tag="hidden"/>
+            <miscarriage_gt20_notes tag="hidden"/>
+          </grp_threatened_miscarriage_gt20>
+          <grp_threatened_miscarriage_lt20 tag="hidden">
+            <miscarriage_lt20_notification tag="hidden"/>
+            <miscarriage_lt20_protocol tag="hidden"/>
+            <miscarriage_lt20_counseling tag="hidden"/>
+            <confirm_paracetamol_500mg_lt20 tag="hidden"/>
+            <_data_paracetamol_500mg_lt20_distributed tag="hidden"/>
+            <miscarriage_lt20_med_not_confirmed_reason tag="hidden"/>
+            <miscarriage_lt20_notes tag="hidden"/>
+          </grp_threatened_miscarriage_lt20>
+          <grp_gestational_htn_sev tag="hidden">
+            <gest_htn_sev_notification tag="hidden"/>
+            <gest_htn_sev_protocol tag="hidden"/>
+            <gest_htn_sev_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gest_sev tag="hidden"/>
+            <_data_nifedipine_20mg_gest_sev_distributed tag="hidden"/>
+            <gest_htn_sev_med_not_confirmed_reason tag="hidden"/>
+            <gest_htn_sev_notes tag="hidden"/>
+          </grp_gestational_htn_sev>
+          <grp_gestational_htn_mild tag="hidden">
+            <gest_htn_mild_notification tag="hidden"/>
+            <gest_htn_mild_protocol tag="hidden"/>
+            <gest_htn_mild_counseling tag="hidden"/>
+            <confirm_nifedipine_20mg_gest_mild tag="hidden"/>
+            <_data_nifedipine_20mg_gest_mild_distributed tag="hidden"/>
+            <gest_htn_mild_med_not_confirmed_reason tag="hidden"/>
+            <gest_htn_mild_notes tag="hidden"/>
+          </grp_gestational_htn_mild>
+          <grp_preg_uti tag="hidden">
+            <preg_uti_notification tag="hidden"/>
+            <preg_uti_protocol tag="hidden"/>
+            <preg_uti_counseling tag="hidden"/>
+            <confirm_amoxicillin_500mg_preg tag="hidden"/>
+            <_data_amoxicillin_500mg_preg_distributed tag="hidden"/>
+            <preg_uti_med_not_confirmed_reason tag="hidden"/>
+            <preg_uti_notes tag="hidden"/>
+          </grp_preg_uti>
+          <grp_pregnancy_registration_summary tag="hidden">
+            <pregnancy_test_result_display tag="hidden"/>
+            <prenatal_appointments_reminder tag="hidden"/>
+          </grp_pregnancy_registration_summary>
+          <grp_htn_urgency tag="hidden">
+            <htn_urgency_notification tag="hidden"/>
+            <htn_urgency_protocol tag="hidden"/>
+            <htn_urgency_counseling tag="hidden"/>
+            <confirm_nifedipine_10mg_urgency tag="hidden"/>
+            <_data_nifedipine_10mg_urgency_distributed tag="hidden"/>
+            <htn_urgency_med_not_confirmed_reason tag="hidden"/>
+            <htn_urgency_notes tag="hidden"/>
+          </grp_htn_urgency>
+          <grp_htn_grade_3 tag="hidden">
+            <htn_g3_notification tag="hidden"/>
+            <htn_g3_protocol tag="hidden"/>
+            <htn_g3_counseling tag="hidden"/>
+            <htn_g3_notes tag="hidden"/>
+          </grp_htn_grade_3>
+          <grp_htn_grade_2 tag="hidden">
+            <htn_g2_notification tag="hidden"/>
+            <htn_g2_protocol tag="hidden"/>
+            <htn_g2_counseling tag="hidden"/>
+            <confirm_hctz_25mg_g2 tag="hidden"/>
+            <_data_hctz_25mg_g2_distributed tag="hidden"/>
+            <confirm_enalapril_10mg_g2 tag="hidden"/>
+            <_data_enalapril_10mg_g2_distributed tag="hidden"/>
+            <htn_g2_med_not_confirmed_reason tag="hidden"/>
+            <htn_g2_notes tag="hidden"/>
+          </grp_htn_grade_2>
+          <grp_htn_grade_1 tag="hidden">
+            <htn_g1_notification tag="hidden"/>
+            <htn_g1_protocol tag="hidden"/>
+            <htn_g1_counseling tag="hidden"/>
+            <confirm_hctz_25mg_g1 tag="hidden"/>
+            <_data_hctz_25mg_g1_distributed tag="hidden"/>
+            <htn_g1_med_not_confirmed_reason tag="hidden"/>
+            <htn_g1_notes tag="hidden"/>
+          </grp_htn_grade_1>
+          <grp_stroke_active tag="hidden">
+            <stroke_notification tag="hidden"/>
+            <stroke_protocol tag="hidden"/>
+            <stroke_counseling tag="hidden"/>
+            <stroke_notes tag="hidden"/>
+          </grp_stroke_active>
+          <grp_tia tag="hidden">
+            <tia_notification tag="hidden"/>
+            <tia_protocol tag="hidden"/>
+            <tia_counseling tag="hidden"/>
+            <tia_notes tag="hidden"/>
+          </grp_tia>
+          <grp_old_stroke tag="hidden">
+            <old_stroke_notification tag="hidden"/>
+            <old_stroke_protocol tag="hidden"/>
+            <old_stroke_counseling tag="hidden"/>
+            <old_stroke_notes tag="hidden"/>
+          </grp_old_stroke>
+          <grp_diabetes_severe tag="hidden">
+            <diabetes_sev_notification tag="hidden"/>
+            <diabetes_sev_protocol tag="hidden"/>
+            <diabetes_sev_counseling tag="hidden"/>
+            <lancets_used_sev tag="hidden"/>
+            <strips_used_sev tag="hidden"/>
+            <diabetes_sev_notes tag="hidden"/>
+          </grp_diabetes_severe>
+          <grp_diabetes_mod tag="hidden">
+            <diabetes_mod_notification tag="hidden"/>
+            <diabetes_mod_protocol1 tag="hidden"/>
+            <diabetes_mod_protocol2 tag="hidden"/>
+            <diabetes_mod_protocol2_1 tag="hidden"/>
+            <diabetes_mod_protocol2_2 tag="hidden"/>
+            <diabetes_mod_protocol3 tag="hidden"/>
+            <diabetes_mod_protocol3_1 tag="hidden"/>
+            <diabetes_mod_protocol3_2 tag="hidden"/>
+            <diabetes_mod_protocol4 tag="hidden"/>
+            <diabetes_mod_protocol4_1 tag="hidden"/>
+            <diabetes_mod_protocol4_2 tag="hidden"/>
+            <diabetes_mod_protocol5 tag="hidden"/>
+            <diabetes_mod_counseling tag="hidden"/>
+            <metformin_to_distribute tag="hidden"/>
+            <confirm_metformin_500mg tag="hidden"/>
+            <_data_metformin_500mg_distributed tag="hidden"/>
+            <diabetes_mod_med_not_confirmed_reason tag="hidden"/>
+            <lancets_used_mod tag="hidden"/>
+            <strips_used_mod tag="hidden"/>
+            <diabetes_mod_notes tag="hidden"/>
+          </grp_diabetes_mod>
+          <grp_diabetes_mild tag="hidden">
+            <diabetes_mild_notification tag="hidden"/>
+            <diabetes_mild_protocol tag="hidden"/>
+            <diabetes_mild_counseling tag="hidden"/>
+            <lancets_used_mild tag="hidden"/>
+            <strips_used_mild tag="hidden"/>
+            <diabetes_mild_notes tag="hidden"/>
+          </grp_diabetes_mild>
+          <grp_appendicitis tag="hidden">
+            <appendicitis_notification tag="hidden"/>
+            <appendicitis_protocol tag="hidden"/>
+            <appendicitis_counseling tag="hidden"/>
+            <appendicitis_notes tag="hidden"/>
+          </grp_appendicitis>
+          <grp_cholera tag="hidden">
+            <cholera_notification tag="hidden"/>
+            <cholera_protocol tag="hidden"/>
+            <cholera_counseling tag="hidden"/>
+            <cholera_notes tag="hidden"/>
+          </grp_cholera>
+          <grp_gastritis_serious tag="hidden">
+            <gastritis_sev_notification tag="hidden"/>
+            <gastritis_sev_protocol tag="hidden"/>
+            <gastritis_sev_counseling tag="hidden"/>
+            <confirm_litacid_gel_sev tag="hidden"/>
+            <_data_litacid_gel_sev_distributed tag="hidden"/>
+            <confirm_omeprazole_40mg_sev tag="hidden"/>
+            <_data_omeprazole_40mg_sev_distributed tag="hidden"/>
+            <confirm_buscopan_20mg_sev tag="hidden"/>
+            <_data_buscopan_20mg_sev_distributed tag="hidden"/>
+            <gastritis_sev_med_not_confirmed_reason tag="hidden"/>
+            <gastritis_sev_notes tag="hidden"/>
+          </grp_gastritis_serious>
+          <grp_gastritis_mild tag="hidden">
+            <gastritis_mild_notification tag="hidden"/>
+            <gastritis_h_pylori_test_note tag="hidden"/>
+            <gastritis_mild_protocol_negative_pylori tag="hidden"/>
+            <gastritis_mild_protocol_positive_pylori tag="hidden"/>
+            <gastritis_mild_counseling_hpylori_negative tag="hidden"/>
+            <gastritis_mild_counseling_hpylori_positive tag="hidden"/>
+            <confirm_omeprazole_20mg tag="hidden"/>
+            <_data_omeprazole_20mg_distributed tag="hidden"/>
+            <confirm_litacid_gel tag="hidden"/>
+            <_data_litacid_gel_distributed tag="hidden"/>
+            <confirm_amoxycilline_500mg tag="hidden"/>
+            <_data_amoxycilline_500mg_distributed tag="hidden"/>
+            <confirm_metronidazole_500mg_gastritis tag="hidden"/>
+            <_data_metronidazole_500mg_distributed_gastritis tag="hidden"/>
+            <gastritis_mild_med_not_confirmed_reason tag="hidden"/>
+            <gastritis_mild_notes tag="hidden"/>
+          </grp_gastritis_mild>
+          <grp_amoeba_giardia tag="hidden">
+            <amoeba_notification tag="hidden"/>
+            <amoeba_protocol tag="hidden"/>
+            <amoeba_counseling tag="hidden"/>
+            <tinidazole_availability tag="hidden"/>
+            <confirm_tinidazole_500mg tag="hidden"/>
+            <_data_tinidazole_500mg_distributed tag="hidden"/>
+            <confirm_metronidazole_500mg_amoeba_giardia tag="hidden"/>
+            <_data_metronidazole_500mg_distributed_amoeba_giardia tag="hidden"/>
+            <amoeba_med_not_confirmed_reason tag="hidden"/>
+            <amoeba_notes tag="hidden"/>
+          </grp_amoeba_giardia>
+          <grp_acute_diarrhea tag="hidden">
+            <diarrhea_notification tag="hidden"/>
+            <diarrhea_protocol tag="hidden"/>
+            <diarrhea_counseling tag="hidden"/>
+            <confirm_ors_acute_diarrhea tag="hidden"/>
+            <_data_ors_diarrhea_distributed tag="hidden"/>
+            <diarrhea_med_not_confirmed_reason tag="hidden"/>
+            <diarrhea_notes tag="hidden"/>
+          </grp_acute_diarrhea>
+          <grp_tuberculosis tag="hidden">
+            <tb_notification tag="hidden"/>
+            <tb_protocol tag="hidden"/>
+            <tb_counseling tag="hidden"/>
+            <tb_notes tag="hidden"/>
+          </grp_tuberculosis>
+          <grp_asthma tag="hidden">
+            <asthma_notification tag="hidden"/>
+            <asthma_protocol tag="hidden"/>
+            <asthma_counseling tag="hidden"/>
+            <confirm_salbutamol_4mg tag="hidden"/>
+            <_data_salbutamol_4mg_distributed tag="hidden"/>
+            <confirm_dexamethasone_8mg tag="hidden"/>
+            <_data_dexamethasone_8mg_distributed tag="hidden"/>
+            <asthma_med_not_confirmed_reason tag="hidden"/>
+            <asthma_notes tag="hidden"/>
+          </grp_asthma>
+          <grp_pneumonia tag="hidden">
+            <pneumonia_notification tag="hidden"/>
+            <pneumonia_protocol tag="hidden"/>
+            <pneumonia_counseling tag="hidden"/>
+            <confirm_amoxicillin_500mg_pneu tag="hidden"/>
+            <_data_amoxicillin_500mg_pneu_distributed tag="hidden"/>
+            <pneumonia_med_not_confirmed_reason tag="hidden"/>
+            <pneumonia_notes tag="hidden"/>
+          </grp_pneumonia>
+          <grp_flu_like tag="hidden">
+            <flu_notification tag="hidden"/>
+            <flu_protocol tag="hidden"/>
+            <flu_counseling tag="hidden"/>
+            <flu_notes tag="hidden"/>
+          </grp_flu_like>
+          <grp_malaria_pos tag="hidden">
+            <malaria_pos_notification tag="hidden"/>
+            <malaria_pos_protocol tag="hidden"/>
+            <malaria_pos_counseling tag="hidden"/>
+            <confirm_chloroquine_150mg tag="hidden"/>
+            <_data_chloroquine_150mg_distributed tag="hidden"/>
+            <malaria_pos_med_not_confirmed_reason tag="hidden"/>
+            <malaria_pos_notes tag="hidden"/>
+          </grp_malaria_pos>
+          <grp_malaria_neg tag="hidden">
+            <malaria_neg_notification tag="hidden"/>
+            <malaria_neg_protocol tag="hidden"/>
+            <malaria_neg_counseling tag="hidden"/>
+            <confirm_paracetamol_500mg_mal_neg tag="hidden"/>
+            <_data_paracetamol_500mg_mal_neg_distributed tag="hidden"/>
+            <malaria_neg_med_not_confirmed_reason tag="hidden"/>
+            <malaria_neg_notes tag="hidden"/>
+          </grp_malaria_neg>
+          <grp_std_ulcer tag="hidden">
+            <std_ulcer_notification tag="hidden"/>
+            <std_ulcer_protocol tag="hidden"/>
+            <std_ulcer_counseling tag="hidden"/>
+            <confirm_benzathine_penicillin tag="hidden"/>
+            <_data_benzathine_penicillin_distributed tag="hidden"/>
+            <std_ulcer_med_not_confirmed_reason tag="hidden"/>
+            <std_ulcer_notes tag="hidden"/>
+          </grp_std_ulcer>
+          <grp_std_discharge tag="hidden">
+            <std_disc_notification tag="hidden"/>
+            <std_disc_protocol tag="hidden"/>
+            <std_disc_counseling tag="hidden"/>
+            <confirm_ciprofloxacin_500mg_std tag="hidden"/>
+            <_data_ciprofloxacin_500mg_std_distributed tag="hidden"/>
+            <confirm_doxycycline_100mg_std tag="hidden"/>
+            <_data_doxycycline_100mg_std_distributed tag="hidden"/>
+            <std_disc_med_not_confirmed_reason tag="hidden"/>
+            <std_disc_notes tag="hidden"/>
+          </grp_std_discharge>
+          <grp_uti tag="hidden">
+            <uti_notification tag="hidden"/>
+            <uti_protocol tag="hidden"/>
+            <uti_counseling tag="hidden"/>
+            <confirm_ciprofloxacin_500mg_uti tag="hidden"/>
+            <_data_ciprofloxacin_500mg_uti_distributed tag="hidden"/>
+            <uti_med_not_confirmed_reason tag="hidden"/>
+            <uti_notes tag="hidden"/>
+          </grp_uti>
+          <grp_impetigo tag="hidden">
+            <impetigo_notification tag="hidden"/>
+            <impetigo_protocol tag="hidden"/>
+            <impetigo_counseling tag="hidden"/>
+            <confirm_cloxacillin_500mg_yesno tag="hidden"/>
+            <confirm_cloxacillin_500mg tag="hidden"/>
+            <_data_cloxacillin_500mg_distributed tag="hidden"/>
+            <confirm_triple_antibiotic_ointment tag="hidden"/>
+            <_data_triple_antibiotic_distributed tag="hidden"/>
+            <impetigo_med_not_confirmed_reason tag="hidden"/>
+            <impetigo_notes tag="hidden"/>
+          </grp_impetigo>
+          <grp_scabies tag="hidden">
+            <scabies_notification tag="hidden"/>
+            <scabies_protocol tag="hidden"/>
+            <scabies_counseling tag="hidden"/>
+            <confirm_benzyl_benzoate_25 tag="hidden"/>
+            <_data_benzyl_benzoate_distributed tag="hidden"/>
+            <confirm_calamine_lotion tag="hidden"/>
+            <_data_calamine_lotion_distributed tag="hidden"/>
+            <confirm_cloxaciline_500mg_scabies_yesno tag="hidden"/>
+            <confirm_cloxaciline_500mg_scabies tag="hidden"/>
+            <_data_cloxacilline_500mg_distributed_scabies tag="hidden"/>
+            <scabies_med_not_confirmed_reason tag="hidden"/>
+            <scabies_notes tag="hidden"/>
+          </grp_scabies>
+          <grp_ringworm tag="hidden">
+            <ringworm_notification tag="hidden"/>
+            <ringworm_protocol tag="hidden"/>
+            <ringworm_counseling tag="hidden"/>
+            <confirm_antifungal_cream tag="hidden"/>
+            <_data_antifungal_cream_distributed tag="hidden"/>
+            <confirm_griseofulvin_125mg_ringworm_yesno tag="hidden"/>
+            <confirm_griseofulvin_125mg_ringworm tag="hidden"/>
+            <_data_griseofulvin_125mg_distributed_ringworm tag="hidden"/>
+            <confirm_cloxaciline_500mg_ringworm_yesno tag="hidden"/>
+            <confirm_cloxaciline_500mg_ringworm tag="hidden"/>
+            <_data_cloxacilline_500mg_distributed_ringworm tag="hidden"/>
+            <ringworm_med_not_confirmed_reason tag="hidden"/>
+            <ringworm_notes tag="hidden"/>
+          </grp_ringworm>
+          <grp_moderate_anemia tag="hidden">
+            <anemia_notification tag="hidden"/>
+            <anemia_protocol tag="hidden"/>
+            <anemia_counseling tag="hidden"/>
+            <confirm_iron_folic_acid tag="hidden"/>
+            <_data_iron_folic_acid_distributed tag="hidden"/>
+            <anemia_med_not_confirmed_reason tag="hidden"/>
+            <anemia_notes tag="hidden"/>
+          </grp_moderate_anemia>
+          <grp_additional_prescriptions tag="hidden">
+            <prescribe_additional_medication tag="hidden"/>
+            <additional_med_protocol tag="hidden"/>
+            <confirm_paracetamol_500mg_additional tag="hidden"/>
+            <_data_paracetamol_500mg_additional_distributed tag="hidden"/>
+            <confirm_iron_folic_acid_additional tag="hidden"/>
+            <_data_iron_folic_acid_additional_distributed tag="hidden"/>
+            <additional_med_not_confirmed_reason tag="hidden"/>
+            <additional_med_notes tag="hidden"/>
+          </grp_additional_prescriptions>
+          <referrals tag="hidden">
+            <referral_location tag="hidden"/>
+            <referral_location_other tag="hidden"/>
+          </referrals>
+          <compiled_notes tag="hidden"/>
+          <total_iv_line tag="hidden"/>
+          <total_nifedipine_20mg tag="hidden"/>
+          <total_paracetamol_500mg tag="hidden"/>
+          <total_amoxycillin_500mg tag="hidden"/>
+          <total_hctz_25mg tag="hidden"/>
+          <total_ciprofloxacin_500mg tag="hidden"/>
+          <total_metronidazole_500mg tag="hidden"/>
+          <total_cloxacillin_500mg tag="hidden"/>
+          <total_litacid_gel tag="hidden"/>
+          <total_iron_folic_acid tag="hidden"/>
+          <total_nifedipine_10mg tag="hidden"/>
+          <total_enalapril_10mg tag="hidden"/>
+          <total_metformin_500mg tag="hidden"/>
+          <total_omeprazole_40mg tag="hidden"/>
+          <total_buscopan_20mg tag="hidden"/>
+          <total_omeprazole_20mg tag="hidden"/>
+          <total_tinidazole_500mg tag="hidden"/>
+          <total_ors tag="hidden"/>
+          <total_salbutamol_4mg tag="hidden"/>
+          <total_dexamethasone_8mg tag="hidden"/>
+          <total_chloroquine_150mg tag="hidden"/>
+          <total_benzathine_penicillin tag="hidden"/>
+          <total_doxycycline_100mg tag="hidden"/>
+          <total_triple_antibiotic tag="hidden"/>
+          <total_benzyl_benzoate_25 tag="hidden"/>
+          <total_calamine_lotion tag="hidden"/>
+          <total_antifungal_cream tag="hidden"/>
+          <total_griseofulvin_125mg tag="hidden"/>
+          <total_lancets tag="hidden"/>
+          <total_strips tag="hidden"/>
+          <summary>
+            <summary_patient_info/>
+            <summary_urgent_referral/>
+            <summary_conditions/>
+            <summary_diagnostic_tests/>
+            <summary_clinical_notes/>
+          </summary>
+          <clinic_id/>
+          <prescription_summary db-doc="true">
+            <stock_monitoring_reported_date/>
+            <place_id/>
+            <type/>
+            <created_from db-doc-ref="/data"/>
+            <created_from_name/>
+            <content_type/>
+            <form/>
+            <contact>
+              <_id/>
+            </contact>
+            <fields>
+              <Medicine_out/>
+              <iv_line_used_in_ADT_Form014_Summary/>
+              <litacid_gel_used_in_ADT_Form014_Summary/>
+              <omeprazole_injectable_used_in_ADT_Form014_Summary/>
+              <buscopan_injectable_used_in_ADT_Form014_Summary/>
+              <benzathine_penicillin_injectable_used_in_ADT_Form014_Summary/>
+              <dexamethasone_injectable_used_in_ADT_Form014_Summary/>
+              <triple_antibiotic_ointment_used_in_ADT_Form014_Summary/>
+              <benzyl_benzoate_25_used_in_ADT_Form014_Summary/>
+              <calamine_lotion_used_in_ADT_Form014_Summary/>
+              <antifungal_cream_used_in_ADT_Form014_Summary/>
+              <lancets_used_in_ADT_Form014_Summary/>
+              <strips_used_in_ADT_Form014_Summary/>
+              <nifedipine_20mg_used_in/>
+              <nifedipine_20mg___set/>
+              <nifedipine_20mg___unit/>
+              <nifedipine_20mg_used_in_ADT_Form014_Summary/>
+              <paracetamol_500mg_used_in/>
+              <paracetamol_500mg___set/>
+              <paracetamol_500mg___unit/>
+              <paracetamol_500mg_used_in_ADT_Form014_Summary/>
+              <amoxycillin_500mg_used_in/>
+              <amoxycillin_500mg___set/>
+              <amoxycillin_500mg___unit/>
+              <amoxycillin_500mg_used_in_ADT_Form014_Summary/>
+              <nifedipine_10mg_used_in/>
+              <nifedipine_10mg___set/>
+              <nifedipine_10mg___unit/>
+              <nifedipine_10mg_used_in_ADT_Form014_Summary/>
+              <hctz_25mg_used_in/>
+              <hctz_25mg___set/>
+              <hctz_25mg___unit/>
+              <hctz_25mg_used_in_ADT_Form014_Summary/>
+              <enalapril_10mg_used_in/>
+              <enalapril_10mg___set/>
+              <enalapril_10mg___unit/>
+              <enalapril_10mg_used_in_ADT_Form014_Summary/>
+              <metformin_500mg_used_in/>
+              <metformin_500mg___set/>
+              <metformin_500mg___unit/>
+              <metformin_500mg_used_in_ADT_Form014_Summary/>
+              <omeprazole_20mg_used_in/>
+              <omeprazole_20mg___set/>
+              <omeprazole_20mg___unit/>
+              <omeprazole_20mg_used_in_ADT_Form014_Summary/>
+              <metronidazole_500mg_used_in/>
+              <metronidazole_500mg___set/>
+              <metronidazole_500mg___unit/>
+              <metronidazole_500mg_used_in_ADT_Form014_Summary/>
+              <tinidazole_500mg_used_in/>
+              <tinidazole_500mg___set/>
+              <tinidazole_500mg___unit/>
+              <tinidazole_500mg_used_in_ADT_Form014_Summary/>
+              <ors_used_in/>
+              <ors___set/>
+              <ors___unit/>
+              <ors_used_in_ADT_Form014_Summary/>
+              <salbutamol_4mg_used_in/>
+              <salbutamol_4mg___set/>
+              <salbutamol_4mg___unit/>
+              <salbutamol_4mg_used_in_ADT_Form014_Summary/>
+              <chloroquine_150mg_used_in/>
+              <chloroquine_150mg___set/>
+              <chloroquine_150mg___unit/>
+              <chloroquine_150mg_used_in_ADT_Form014_Summary/>
+              <ciprofloxacin_500mg_used_in/>
+              <ciprofloxacin_500mg___set/>
+              <ciprofloxacin_500mg___unit/>
+              <ciprofloxacin_500mg_used_in_ADT_Form014_Summary/>
+              <doxycycline_100mg_used_in/>
+              <doxycycline_100mg___set/>
+              <doxycycline_100mg___unit/>
+              <doxycycline_100mg_used_in_ADT_Form014_Summary/>
+              <cloxacillin_500mg_used_in/>
+              <cloxacillin_500mg___set/>
+              <cloxacillin_500mg___unit/>
+              <cloxacillin_500mg_used_in_ADT_Form014_Summary/>
+              <griseofulvin_125mg_used_in/>
+              <griseofulvin_125mg___set/>
+              <griseofulvin_125mg___unit/>
+              <griseofulvin_125mg_used_in_ADT_Form014_Summary/>
+              <iron_folic_acid_used_in/>
+              <iron_folic_acid___set/>
+              <iron_folic_acid___unit/>
+              <iron_folic_acid_used_in_ADT_Form014_Summary/>
+            </fields>
+          </prescription_summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="drug_confirmation">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>drug_confirmation-0</itextId>
+            <name>confirmation</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="additional_medication">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>additional_medication-0</itextId>
+            <name>paracetamol</name>
+          </item>
+          <item>
+            <itextId>additional_medication-1</itextId>
+            <name>iron_folic_acid</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="refer_location">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>refer_location-0</itextId>
+            <name>zl_cls</name>
+          </item>
+          <item>
+            <itextId>refer_location-1</itextId>
+            <name>hopital_sainte_therese</name>
+          </item>
+          <item>
+            <itextId>refer_location-2</itextId>
+            <name>hpital_alma_mater</name>
+          </item>
+          <item>
+            <itextId>refer_location-3</itextId>
+            <name>other</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

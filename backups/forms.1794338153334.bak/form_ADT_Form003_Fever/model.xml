@@ -1,0 +1,172 @@
+
+  <model xmlns:odk="http://www.opendatakit.org/xforms" odk:xforms-version="1.0.0">
+    <instance>
+        <data xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" id="ADT_Form003_Fever" version="20261107183545" prefix="J1!ADT_Form003_Fever!" delimiter="#">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <parent>
+                <_id/>
+              </parent>
+              <facility_id/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <short_name/>
+              <patient_id/>
+              <date_of_birth>0</date_of_birth>
+              <sex/>
+              <parent>
+                <_id/>
+                <parent>
+                  <contact>
+                    <nurse_name/>
+                    <phone/>
+                  </contact>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <source tag="hidden"/>
+          <source_id tag="hidden"/>
+          <patient_uuid tag="hidden"/>
+          <patient_id tag="hidden"/>
+          <patient_name tag="hidden"/>
+          <patient_short_name tag="hidden"/>
+          <patient_sex tag="hidden"/>
+          <patient_date_of_birth tag="hidden"/>
+          <patient_age_in_years tag="hidden"/>
+          <patient_age_in_months tag="hidden"/>
+          <patient_age_in_days tag="hidden"/>
+          <patient_age_in_weeks tag="hidden"/>
+          <fever_malaria_group tag="hidden">
+            <fever_presence tag="hidden"/>
+            <temperature tag="hidden"/>
+            <fever_duration tag="hidden"/>
+            <previous_fever tag="hidden"/>
+            <fever_recurrance tag="hidden"/>
+            <malaria_symptoms tag="hidden"/>
+          </fever_malaria_group>
+          <calc_risk_malaria tag="hidden"/>
+          <rapid_test_group tag="hidden">
+            <rapid_test tag="hidden"/>
+            <rapid_test_result tag="hidden"/>
+          </rapid_test_group>
+          <calc_malaria_positive tag="hidden"/>
+          <calc_malaria_negative tag="hidden"/>
+          <calc_malaria_unclear tag="hidden"/>
+          <results_group tag="hidden">
+            <res_malaria_positive tag="hidden"/>
+            <res_malaria_positive_action tag="hidden"/>
+            <res_malaria_negative tag="hidden"/>
+            <res_malaria_negative_action tag="hidden"/>
+            <res_malaria_unclear tag="hidden"/>
+            <res_malaria_unclear_action tag="hidden"/>
+          </results_group>
+          <null_results_group tag="hidden">
+            <null_results_group_note tag="hidden"/>
+          </null_results_group>
+          <actions_confirmation tag="hidden">
+            <malaria_rapid_test tag="hidden"/>
+            <malaria_rapid_test_other tag="hidden"/>
+          </actions_confirmation>
+          <data tag="hidden">
+            <_fever_presence tag="hidden"/>
+            <_temperature tag="hidden"/>
+            <_fever_duration tag="hidden"/>
+            <_previous_fever tag="hidden"/>
+            <_fever_recurrance tag="hidden"/>
+            <_malaria_symptoms tag="hidden"/>
+            <_rapid_test tag="hidden"/>
+            <_rapid_test_result tag="hidden"/>
+            <_result_risk_malaria tag="hidden"/>
+            <_result_malaria_positive tag="hidden"/>
+            <_result_malaria_negative tag="hidden"/>
+            <_malaria_rapid_test tag="hidden"/>
+          </data>
+          <clinic_id tag="hidden"/>
+          <prescription_summary db-doc="TRUE" tag="hidden">
+            <stock_monitoring_reported_date tag="hidden"/>
+            <place_id tag="hidden"/>
+            <type tag="hidden"/>
+            <created_from db-doc-ref="/data" tag="hidden"/>
+            <created_from_name tag="hidden"/>
+            <content_type tag="hidden"/>
+            <form tag="hidden"/>
+            <contact tag="hidden">
+              <_id tag="hidden"/>
+            </contact>
+            <fields tag="hidden">
+              <Medicine_out tag="hidden"/>
+              <malaria_rapid_test_used_in_ADT_Form003_Fever tag="hidden"/>
+            </fields>
+          </prescription_summary>
+          <summary_patient_info/>
+          <summary_fever_status/>
+          <summary_malaria_symptoms/>
+          <summary_rapid_test/>
+          <summary_diagnostic_condition/>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+    <instance id="contact-summary"/>
+    <instance id="user-contact-summary"/>
+    <instance id="yes_no">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>yes_no-0</itextId>
+            <name>yes</name>
+          </item>
+          <item>
+            <itextId>yes_no-1</itextId>
+            <name>no</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="malaria_symptoms">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>malaria_symptoms-0</itextId>
+            <name>chills</name>
+          </item>
+          <item>
+            <itextId>malaria_symptoms-1</itextId>
+            <name>heavy_headache</name>
+          </item>
+          <item>
+            <itextId>malaria_symptoms-2</itextId>
+            <name>profuse_sweating</name>
+          </item>
+        </root>
+      </instance>
+    <instance id="positive_negative">
+        <root xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms">
+          <item>
+            <itextId>positive_negative-0</itextId>
+            <name>positive</name>
+          </item>
+          <item>
+            <itextId>positive_negative-1</itextId>
+            <name>negative</name>
+          </item>
+          <item>
+            <itextId>positive_negative-2</itextId>
+            <name>unclear</name>
+          </item>
+        </root>
+      </instance>
+  </model>
+

@@ -1608,7 +1608,7 @@ OR
             <value>Vous maintiendrez les fonctions vitales et transférerez d'urgence à l'hôpital.</value>
           </text>
           <text id="/data/summary_header/res_old_stroke:label">
-            <value>AVC ancien / antérieur</value>
+            <value>Ancien AVC / AVC antérieur</value>
           </text>
           <text id="/data/summary_header/res_old_stroke_protocol:label">
             <value>Vous donnerez des conseils de prévention, contrôlerez la tension et référerez en réadaptation.</value>
@@ -1840,7 +1840,7 @@ OR
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_2/confirm_hctz_25mg_g2:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_2/_data_hctz_25mg_g2_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -1883,7 +1883,7 @@ OR
 - Prévoyez un rendez-vous de suivi dans un mois pour contrôler votre tension artérielle et renouveler votre ordonnance.</value>
           </text>
           <text id="/data/grp_htn_grade_1/confirm_hctz_25mg_g1:label">
-            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide 25 mg ?</value>
+            <value>Avez-vous distribué 30 comprimés d'hydrochlorothiazide de 25 mg ?</value>
           </text>
           <text id="/data/grp_htn_grade_1/_data_hctz_25mg_g1_distributed:label">
             <value>SANS ÉTIQUETTE</value>
@@ -4639,7 +4639,7 @@ OSWA
         </translation>
       </itext>
       <instance>
-        <data id="ELD_Form012_Summary" version="20261107203651" prefix="J1!ELD_Form012_Summary!" delimiter="#">
+        <data id="ELD_Form012_Summary" version="20261110111000" prefix="J1!ELD_Form012_Summary!" delimiter="#">
           <inputs>
             <meta>
               <location>
